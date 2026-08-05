@@ -66,7 +66,7 @@
         "product_1": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "the-3p-fulfilled-snowboard",
             "fallback_asset": "barkin/product-black.png",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",
@@ -76,7 +76,7 @@
         "product_2": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "the-3p-fulfilled-snowboard",
             "fallback_asset": "barkin/product-white.png",
             "title": "Moisturising Conditioner",
             "price": "$19.95",
@@ -86,7 +86,7 @@
         "product_3": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "the-3p-fulfilled-snowboard",
             "fallback_asset": "barkin/product-spray.png",
             "title": "Daily Care Spray",
             "price": "$19.95",
@@ -96,7 +96,27 @@
         "product_4": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "the-collection-snowboard-oxygen",
+            "fallback_asset": "barkin/product-dental.png",
+            "title": "Dental Essentials",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_FWknTG": {
+          "type": "product",
+          "settings": {
+            "product": "the-collection-snowboard-oxygen",
+            "fallback_asset": "barkin/product-dental.png",
+            "title": "Dental Essentials",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_HXP89C": {
+          "type": "product",
+          "settings": {
+            "product": "the-collection-snowboard-oxygen",
             "fallback_asset": "barkin/product-dental.png",
             "title": "Dental Essentials",
             "price": "$19.95",
@@ -108,7 +128,9 @@
         "product_1",
         "product_2",
         "product_3",
-        "product_4"
+        "product_4",
+        "product_FWknTG",
+        "product_HXP89C"
       ],
       "settings": {
         "heading": "Our Best Selling\nPremium Products.",

@@ -16,19 +16,11 @@
         "heading_tag": "h1",
         "image": "shopify://shop_images/hero-shopping.jpg",
         "fallback_asset": "barkin/hero-shopping.png",
-        "heading": "Shop Premium\nPet Care",
-        "text": "Explore grooming, wellness and home-care products made for discerning pets and their parents.",
+        "heading": "Shopping For\nPremium Products",
+        "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
         "button_label": "",
         "button_link": "",
         "desktop_height": 600
-      }
-    },
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
       }
     },
     "product-grid": {
@@ -42,7 +34,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
@@ -84,7 +76,6 @@
   },
   "order": [
     "barkin_hero",
-    "banner",
     "product-grid",
     "barkin_bundle",
     "barkin_quiz"

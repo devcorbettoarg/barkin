@@ -270,6 +270,13 @@
   opacity: .5;
 }
 
+.barkin-product-card__link {
+  position: absolute;
+  inset: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
 .barkin-product-card__media,
 .barkin-bundle-card__media {
   position: absolute;
@@ -297,6 +304,37 @@
   margin: 2px 0 0;
   color: var(--barkin-taupe);
   font-size: 1.2rem;
+}
+
+.barkin-product-card__form {
+  margin: 0;
+}
+
+.barkin-product-card__bag {
+  position: absolute;
+  z-index: 3;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  width: 39px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--barkin-white);
+  border-radius: 50%;
+  background: var(--barkin-black);
+  cursor: pointer;
+}
+
+.barkin-product-card__bag img {
+  width: 18px;
+  height: 19px;
+}
+
+.barkin-product-card__bag:disabled {
+  cursor: not-allowed;
+  opacity: .45;
 }
 
 .barkin-split {
@@ -487,7 +525,31 @@
 .barkin-mosaic-card--text { display: flex; flex-direction: column; justify-content: space-between; padding: 20px; background: rgba(255,253,252,.05); }
 
 .barkin-review {
-  padding: 79px 0 135px;
+  padding: 79px 0;
+}
+
+.barkin-review-carousel {
+  display: block;
+}
+
+.barkin-review-carousel__rail {
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.barkin-review-carousel__rail::-webkit-scrollbar {
+  display: none;
+}
+
+.barkin-review-slide {
+  min-width: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .barkin-review__grid {
@@ -509,6 +571,8 @@
 .barkin-review__buyer { margin-top: auto; padding-top: 18px; border-bottom: 1px solid var(--barkin-border); }
 .barkin-review__buyer-row { display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: center; padding-bottom: 12px; }
 .barkin-review__buyer img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+.barkin-muted { color: rgba(255,253,252,.5); }
+.barkin-review-carousel__dots { margin-top: 38px; }
 
 .barkin-bundle-card {
   overflow: visible;

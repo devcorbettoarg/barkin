@@ -34,21 +34,40 @@
             assign card_url = block.settings.link | default: routes.all_products_collection_url
           endif
         -%}
-        <a
+        <article
           class="barkin-product-card"
-          href="{{ card_url }}"
           data-carousel-slide
           aria-label="{{ card_title | escape }}, {{ card_price | escape }}"
           {{ block.shopify_attributes }}
         >
-          <span class="barkin-product-card__media">
-            <img class="barkin-card-image" src="{{ card_image }}" alt="{{ card_title | escape }}" width="704" height="942" loading="lazy">
-          </span>
-          <span class="barkin-product-card__info">
-            <span class="barkin-product-card__title">{{ card_title }}</span>
-            <span class="barkin-product-card__price">{{ card_price }}</span>
-          </span>
-        </a>
+          <a class="barkin-product-card__link" href="{{ card_url }}">
+            <span class="barkin-product-card__media">
+              <img class="barkin-card-image" src="{{ card_image }}" alt="{{ card_title | escape }}" width="704" height="942" loading="lazy">
+            </span>
+            <span class="barkin-product-card__info">
+              <span class="barkin-product-card__title">{{ card_title }}</span>
+              <span class="barkin-product-card__price">{{ card_price }}</span>
+            </span>
+          </a>
+
+          {% if card_product != blank %}
+            {%- form 'product', card_product, class: 'barkin-product-card__form' -%}
+              <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}">
+              <button
+                class="barkin-product-card__bag"
+                type="submit"
+                aria-label="{{ 'products.product.add_to_cart' | t }}: {{ card_title | escape }}"
+                {% unless card_product.available %}disabled{% endunless %}
+              >
+                <img src="{{ 'barkin/add-bag.svg' | asset_url }}" alt="" width="18" height="19">
+              </button>
+            {%- endform -%}
+          {% else %}
+            <a class="barkin-product-card__bag" href="{{ card_url }}" aria-label="{{ card_title | escape }}">
+              <img src="{{ 'barkin/add-bag.svg' | asset_url }}" alt="" width="18" height="19">
+            </a>
+          {% endif %}
+        </article>
       {% endfor %}
     </div>
 

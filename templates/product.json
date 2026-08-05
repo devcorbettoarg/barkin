@@ -76,13 +76,25 @@
     },
     "barkin_review": {
       "type": "barkin-review",
+      "blocks": {
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "image_alt": "Pet parents enjoying time with their dog",
+            "heading": "A Routine Made\nFor Your Pet.",
+            "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
+            "name": "Alessandra",
+            "buyer_label": "Verified Buyer",
+            "recommendation": "I recommend this product"
+          }
+        },
+        "review_2": { "type": "review", "settings": { "name": "Marta" } },
+        "review_3": { "type": "review", "settings": { "name": "Daniel" } }
+      },
+      "block_order": ["review_1", "review_2", "review_3"],
       "settings": {
-        "image_alt": "Pet parents enjoying time with their dog",
-        "heading": "A Routine Made\nFor Your Pet.",
-        "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-        "name": "Alessandra",
-        "buyer_label": "Verified Buyer",
-        "recommendation": "I recommend this product"
+        "carousel_label": "Customer reviews",
+        "pagination_label": "Choose customer review"
       }
     },
     "related-products": {

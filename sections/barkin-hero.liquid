@@ -1,5 +1,6 @@
 {%- liquid
   assign fallback_asset = section.settings.fallback_asset | default: 'barkin/hero-shopping.png'
+  assign heading_tag = section.settings.heading_tag | default: 'h2'
   if section.settings.image != blank
     assign hero_src = section.settings.image | image_url: width: 2400
   else
@@ -22,7 +23,7 @@
     {% if section.index == 1 %}fetchpriority="high"{% endif %}
   >
   <div class="barkin-hero__content">
-    <{{ section.settings.heading_tag }} class="barkin-title">{{ section.settings.heading | newline_to_br }}</{{ section.settings.heading_tag }}>
+    <{{ heading_tag }} class="barkin-title">{{ section.settings.heading | newline_to_br }}</{{ heading_tag }}>
     {% if section.settings.text != blank %}
       <div class="barkin-copy">{{ section.settings.text }}</div>
     {% endif %}

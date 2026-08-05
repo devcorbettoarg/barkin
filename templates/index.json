@@ -130,13 +130,26 @@
             "price": "$19.95",
             "link": ""
           }
+        },
+        "launch_product_5": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "fallback_asset": "barkin/collection-product.png",
+            "product_title": "Moisturising Conditioner",
+            "price": "$19.95",
+            "link": "",
+            "heading": "Soft, Healthy Coats",
+            "text": "Moisturising care for easy detangling and a soft finish."
+          }
         }
       },
       "block_order": [
         "launch_product_1",
         "launch_product_2",
         "launch_product_3",
-        "launch_product_4"
+        "launch_product_4",
+        "launch_product_5"
       ],
       "settings": {
         "left_heading": "Summer\nEssentials",
@@ -286,13 +299,27 @@
     },
     "barkin_review": {
       "type": "barkin-review",
+      "blocks": {
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "image_alt": "Pet parents enjoying time with their dog",
+            "heading": "Other Products That\nCompliment This One.",
+            "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
+            "name": "Alessandra",
+            "buyer_label": "Verified Buyer",
+            "recommendation": "I recommend this product"
+          }
+        },
+        "review_2": { "type": "review", "settings": { "name": "Marta" } },
+        "review_3": { "type": "review", "settings": { "name": "Daniel" } },
+        "review_4": { "type": "review", "settings": { "name": "Sofia" } },
+        "review_5": { "type": "review", "settings": { "name": "Alex" } }
+      },
+      "block_order": ["review_1", "review_2", "review_3", "review_4", "review_5"],
       "settings": {
-        "image_alt": "Pet parents enjoying time with their dog",
-        "heading": "Other Products That\nCompliment This One.",
-        "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-        "name": "Alessandra",
-        "buyer_label": "Verified Buyer",
-        "recommendation": "I recommend this product"
+        "carousel_label": "Customer reviews",
+        "pagination_label": "Choose customer review"
       }
     },
     "barkin_bundle": {

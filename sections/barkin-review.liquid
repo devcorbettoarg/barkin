@@ -1,55 +1,117 @@
-{%- liquid
-  if section.settings.image != blank
-    assign feature_image = section.settings.image | image_url: width: 1600
-  else
-    assign feature_image = 'barkin/review-feature.png' | asset_url
-  endif
-  if section.settings.avatar != blank
-    assign avatar_image = section.settings.avatar | image_url: width: 100
-  else
-    assign avatar_image = 'barkin/reviewer.png' | asset_url
-  endif
--%}
+<script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
 
 <section class="barkin-section barkin-review" data-node-id="20:1764">
-  <div class="barkin-shell barkin-review__grid">
-    <div class="barkin-review__image">
-      <img class="barkin-card-image" src="{{ feature_image }}" alt="{{ section.settings.image_alt | escape }}" width="1430" height="1200" loading="lazy">
-    </div>
-    <article class="barkin-review__content">
-      <div class="barkin-review__quote">
-        <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
-        <p class="barkin-copy">{{ section.settings.quote }}</p>
-      </div>
-      <div class="barkin-review__buyer">
-        <div class="barkin-review__buyer-row">
-          <img src="{{ avatar_image }}" alt="" width="34" height="34" loading="lazy">
-          <div>
-            <div>{{ section.settings.name }}</div>
-            <div class="barkin-copy" style="color:rgba(255,253,252,.5)">{{ section.settings.buyer_label }}</div>
+  <barkin-carousel
+    class="barkin-review-carousel"
+    data-carousel-edges="false"
+    role="region"
+    aria-roledescription="carousel"
+    aria-label="{{ section.settings.carousel_label | escape }}"
+  >
+    <div id="BarkinReviewRail-{{ section.id }}" class="barkin-review-carousel__rail" data-carousel-rail>
+      {% for block in section.blocks %}
+        {%- liquid
+          if block.settings.image != blank
+            assign feature_image = block.settings.image | image_url: width: 1600
+          else
+            assign feature_image = 'barkin/review-feature.png' | asset_url
+          endif
+          if block.settings.avatar != blank
+            assign avatar_image = block.settings.avatar | image_url: width: 100
+          else
+            assign avatar_image = 'barkin/reviewer.png' | asset_url
+          endif
+        -%}
+
+        <article class="barkin-review-slide" data-carousel-slide {{ block.shopify_attributes }}>
+          <div class="barkin-shell barkin-review__grid">
+            <div class="barkin-review__image">
+              <img
+                class="barkin-card-image"
+                src="{{ feature_image }}"
+                alt="{{ block.settings.image_alt | escape }}"
+                width="1430"
+                height="1200"
+                loading="lazy"
+              >
+            </div>
+            <div class="barkin-review__content">
+              <div class="barkin-review__quote">
+                <h2 class="barkin-title">{{ block.settings.heading | newline_to_br }}</h2>
+                <p class="barkin-copy">{{ block.settings.quote }}</p>
+              </div>
+              <div class="barkin-review__buyer">
+                <div class="barkin-review__buyer-row">
+                  <img src="{{ avatar_image }}" alt="" width="34" height="34" loading="lazy">
+                  <div>
+                    <div>{{ block.settings.name }}</div>
+                    <div class="barkin-copy barkin-muted">{{ block.settings.buyer_label }}</div>
+                  </div>
+                </div>
+                <p class="barkin-copy barkin-muted">✓ {{ block.settings.recommendation }}</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <p class="barkin-copy" style="color:rgba(255,253,252,.5)">✓ {{ section.settings.recommendation }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if section.blocks.size > 1 %}
+      <div class="barkin-showcase__dots barkin-review-carousel__dots" role="group" aria-label="{{ section.settings.pagination_label | escape }}">
+        {% for block in section.blocks %}
+          <button
+            class="barkin-showcase__dot{% if forloop.first %} is-active{% endif %}"
+            type="button"
+            data-carousel-dot="{{ forloop.index0 }}"
+            aria-label="Mostrar reseña {{ forloop.index }}"
+            aria-controls="BarkinReviewRail-{{ section.id }}"
+            aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+          >
+            <span class="visually-hidden">{{ forloop.index }}</span>
+          </button>
+        {% endfor %}
       </div>
-    </article>
-  </div>
+    {% endif %}
+  </barkin-carousel>
 </section>
 
 {% schema %}
 {
-  "name": "Barkin featured review",
+  "name": "Barkin featured reviews",
   "tag": "section",
   "class": "section",
+  "max_blocks": 5,
   "settings": [
-    { "type": "image_picker", "id": "image", "label": "Feature image" },
-    { "type": "text", "id": "image_alt", "label": "Image alt", "default": "Pet parents enjoying time with their dog" },
-    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Other Products That\nCompliment This One." },
-    { "type": "textarea", "id": "quote", "label": "Review", "default": "Choosing the right care routine made a visible difference to our dog’s skin and coat." },
-    { "type": "image_picker", "id": "avatar", "label": "Buyer avatar" },
-    { "type": "text", "id": "name", "label": "Buyer name", "default": "Alessandra" },
-    { "type": "text", "id": "buyer_label", "label": "Buyer label", "default": "Verified Buyer" },
-    { "type": "text", "id": "recommendation", "label": "Recommendation", "default": "I recommend this product" }
+    { "type": "text", "id": "carousel_label", "label": "Carousel accessibility label", "default": "Customer reviews" },
+    { "type": "text", "id": "pagination_label", "label": "Pagination accessibility label", "default": "Choose customer review" }
   ],
-  "presets": [{ "name": "Barkin featured review" }]
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Feature image" },
+        { "type": "text", "id": "image_alt", "label": "Image alt", "default": "Pet parents enjoying time with their dog" },
+        { "type": "textarea", "id": "heading", "label": "Heading", "default": "Other Products That\nCompliment This One." },
+        { "type": "textarea", "id": "quote", "label": "Review", "default": "Choosing the right care routine made a visible difference to our dog’s skin and coat." },
+        { "type": "image_picker", "id": "avatar", "label": "Buyer avatar" },
+        { "type": "text", "id": "name", "label": "Buyer name", "default": "Alessandra" },
+        { "type": "text", "id": "buyer_label", "label": "Buyer label", "default": "Verified Buyer" },
+        { "type": "text", "id": "recommendation", "label": "Recommendation", "default": "I recommend this product" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barkin featured reviews",
+      "blocks": [
+        { "type": "review" },
+        { "type": "review", "settings": { "name": "Marta" } },
+        { "type": "review", "settings": { "name": "Daniel" } },
+        { "type": "review", "settings": { "name": "Sofia" } },
+        { "type": "review", "settings": { "name": "Alex" } }
+      ]
+    }
+  ]
 }
 {% endschema %}

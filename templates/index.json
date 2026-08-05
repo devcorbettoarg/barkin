@@ -13,10 +13,10 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1757",
-        "heading_tag": "h1",
         "image": "shopify://shop_images/hero-shopping.jpg",
         "fallback_asset": "barkin/hero-shopping.png",
         "heading": "Shopping for\nPremium Products",
+        "heading_tag": "h1",
         "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
         "button_label": "",
         "button_link": "",
@@ -64,14 +64,81 @@
     "barkin_products": {
       "type": "barkin-product-showcase",
       "blocks": {
-        "product_1": { "type": "product", "settings": { "product": "", "image": "shopify://shop_images/product-black.jpg", "fallback_asset": "barkin/product-black.png", "title": "Gentle Care Shampoo", "price": "$19.95", "link": "" } },
-        "product_2": { "type": "product", "settings": { "product": "", "image": "shopify://shop_images/product-white.jpg", "fallback_asset": "barkin/product-white.png", "title": "Moisturising Conditioner", "price": "$19.95", "link": "" } },
-        "product_3": { "type": "product", "settings": { "product": "", "image": "shopify://shop_images/product-spray.jpg", "fallback_asset": "barkin/product-spray.png", "title": "Daily Care Spray", "price": "$19.95", "link": "" } },
-        "product_4": { "type": "product", "settings": { "product": "", "image": "shopify://shop_images/product-dental.jpg", "fallback_asset": "barkin/product-dental.png", "title": "Dental Essentials", "price": "$19.95", "link": "" } },
-        "product_5": { "type": "product", "settings": { "product": "", "image": "shopify://shop_images/product-black.jpg", "fallback_asset": "barkin/product-black.png", "title": "Gentle Care Shampoo", "price": "$19.95", "link": "" } },
-        "product_6": { "type": "product", "settings": { "product": "", "image": "shopify://shop_images/product-white.jpg", "fallback_asset": "barkin/product-white.png", "title": "Moisturising Conditioner", "price": "$19.95", "link": "" } }
+        "product_1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/product-black.jpg",
+            "fallback_asset": "barkin/product-black.png",
+            "title": "Gentle Care Shampoo",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_2": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/product-white.jpg",
+            "fallback_asset": "barkin/product-white.png",
+            "title": "Moisturising Conditioner",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_3": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/product-spray.jpg",
+            "fallback_asset": "barkin/product-spray.png",
+            "title": "Daily Care Spray",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_4": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/product-dental.jpg",
+            "fallback_asset": "barkin/product-dental.png",
+            "title": "Dental Essentials",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_5": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/product-black.jpg",
+            "fallback_asset": "barkin/product-black.png",
+            "title": "Gentle Care Shampoo",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_6": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/product-white.jpg",
+            "fallback_asset": "barkin/product-white.png",
+            "title": "Moisturising Conditioner",
+            "price": "$19.95",
+            "link": ""
+          }
+        }
       },
-      "block_order": ["product_1", "product_2", "product_3", "product_4", "product_5", "product_6"],
+      "block_order": [
+        "product_1",
+        "product_2",
+        "product_3",
+        "product_4",
+        "product_5",
+        "product_6"
+      ],
       "settings": {
         "heading": "Our Best Selling\nPremium Products.",
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat.",
@@ -297,10 +364,10 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1763",
-        "heading_tag": "h2",
         "image": "shopify://shop_images/hero-household.jpg",
         "fallback_asset": "barkin/hero-household.png",
         "heading": "Household\nProducts",
+        "heading_tag": "h2",
         "text": "A considered collection of home-care essentials designed around life with pets.",
         "button_label": "Shop Household",
         "button_link": "shopify://collections/all",
@@ -314,21 +381,55 @@
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/review-feature.jpg",
-            "avatar": "shopify://shop_images/reviewer.jpg",
             "image_alt": "Pet parents enjoying time with their dog",
             "heading": "Other Products That\nCompliment This One.",
             "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
+            "avatar": "shopify://shop_images/reviewer.jpg",
             "name": "Alessandra",
             "buyer_label": "Verified Buyer",
             "recommendation": "I recommend this product"
           }
         },
-        "review_2": { "type": "review", "settings": { "image": "shopify://shop_images/review-feature.jpg", "avatar": "shopify://shop_images/reviewer.jpg", "name": "Marta" } },
-        "review_3": { "type": "review", "settings": { "image": "shopify://shop_images/review-feature.jpg", "avatar": "shopify://shop_images/reviewer.jpg", "name": "Daniel" } },
-        "review_4": { "type": "review", "settings": { "image": "shopify://shop_images/review-feature.jpg", "avatar": "shopify://shop_images/reviewer.jpg", "name": "Sofia" } },
-        "review_5": { "type": "review", "settings": { "image": "shopify://shop_images/review-feature.jpg", "avatar": "shopify://shop_images/reviewer.jpg", "name": "Alex" } }
+        "review_2": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/review-feature.jpg",
+            "avatar": "shopify://shop_images/reviewer.jpg",
+            "name": "Marta"
+          }
+        },
+        "review_3": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/review-feature.jpg",
+            "avatar": "shopify://shop_images/reviewer.jpg",
+            "name": "Daniel"
+          }
+        },
+        "review_4": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/review-feature.jpg",
+            "avatar": "shopify://shop_images/reviewer.jpg",
+            "name": "Sofia"
+          }
+        },
+        "review_5": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/review-feature.jpg",
+            "avatar": "shopify://shop_images/reviewer.jpg",
+            "name": "Alex"
+          }
+        }
       },
-      "block_order": ["review_1", "review_2", "review_3", "review_4", "review_5"],
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3",
+        "review_4",
+        "review_5"
+      ],
       "settings": {
         "carousel_label": "Customer reviews",
         "pagination_label": "Choose customer review"
@@ -510,18 +611,17 @@
         "heading": "We’re Social, Come\nConnect With Us.",
         "text": "Join our community of discerning pets and their parents.",
         "button_label": "Connect With Us",
-        "button_link": "",
-        "carousel_label": "Barkin and Meowson social gallery"
+        "button_link": ""
       }
     },
     "barkin_quiz": {
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1768",
-        "heading_tag": "h2",
         "image": "shopify://shop_images/hero-quiz.jpg",
         "fallback_asset": "barkin/hero-quiz.png",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
+        "heading_tag": "h2",
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
         "button_label": "Take the product quiz",
         "button_link": "",

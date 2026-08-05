@@ -43,28 +43,60 @@
           {% if link.links != blank %}
             <div class="barkin-site-header__mega">
               <div class="barkin-site-header__mega-inner">
-                {% for child_link in link.links %}
-                  <div class="barkin-site-header__mega-column">
-                    <a class="barkin-site-header__mega-heading" href="{{ child_link.url }}">{{ child_link.title }}</a>
-                    {% for grandchild_link in child_link.links %}
-                      <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
-                    {% endfor %}
-                  </div>
-                {% endfor %}
-                <div class="barkin-site-header__mega-feature">
-                  {% if section.settings.mega_image != blank %}
-                    {{
-                      section.settings.mega_image
-                      | image_url: width: 700
-                      | image_tag: loading: 'lazy', widths: '360,520,700', alt: section.settings.mega_heading
-                    }}
-                  {% endif %}
-                  <div>
-                    <strong>{{ section.settings.mega_heading }}</strong>
-                    {% if section.settings.mega_link != blank %}
-                      <a class="barkin-button" href="{{ section.settings.mega_link }}">{{ section.settings.mega_label }}</a>
+                <div class="barkin-site-header__mega-links">
+                  {% for child_link in link.links %}
+                    <div class="barkin-site-header__mega-column">
+                      <a class="barkin-site-header__mega-heading" href="{{ child_link.url }}">{{ child_link.title }}</a>
+                      {% for grandchild_link in child_link.links %}
+                        <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                      {% endfor %}
+                    </div>
+                  {% endfor %}
+                </div>
+
+                <div class="barkin-site-header__mega-products">
+                  {% for i in (1..2) %}
+                    {%- liquid
+                      assign product_setting_id = 'mega_product_' | append: i
+                      assign mega_product = section.settings[product_setting_id]
+                    -%}
+                    {% if mega_product != blank %}
+                      <article class="barkin-site-header__mega-product">
+                        <a href="{{ mega_product.url }}">
+                          <span class="barkin-site-header__mega-product-media">
+                            {% if mega_product.featured_image != blank %}
+                              {{
+                                mega_product.featured_image
+                                | image_url: width: 600
+                                | image_tag: loading: 'lazy', widths: '240,360,480,600', alt: mega_product.title
+                              }}
+                            {% endif %}
+                          </span>
+                          <span class="barkin-site-header__mega-product-info">
+                            <span>
+                              <strong>{{ mega_product.title }}</strong>
+                              <small>{{ mega_product.price | money }}</small>
+                            </span>
+                          </span>
+                        </a>
+                        {% form 'product', mega_product, class: 'barkin-site-header__mega-product-form' %}
+                          <input type="hidden" name="id" value="{{ mega_product.selected_or_first_available_variant.id }}">
+                          <button
+                            type="submit"
+                            aria-label="{{ 'products.product.add_to_cart' | t }}: {{ mega_product.title | escape }}"
+                            {% unless mega_product.available %}disabled{% endunless %}
+                          >
+                            <img src="{{ 'barkin/add-bag.svg' | asset_url }}" alt="" width="18" height="19">
+                          </button>
+                        {% endform %}
+                      </article>
                     {% endif %}
-                  </div>
+                  {% endfor %}
+                  {% if section.settings.mega_product_1 == blank and section.settings.mega_product_2 == blank %}
+                    <div class="barkin-site-header__mega-empty">
+                      Select two featured products in the Barkin header settings.
+                    </div>
+                  {% endif %}
                 </div>
               </div>
             </div>
@@ -129,11 +161,9 @@
     { "type": "range", "id": "logo_width", "min": 120, "max": 320, "step": 10, "unit": "px", "label": "Logo width", "default": 240 },
     { "type": "text", "id": "logo_kicker", "label": "Fallback logo small text", "default": "Royale's Care" },
     { "type": "text", "id": "logo_text", "label": "Fallback logo text", "default": "BARKIN&MEOWSON" },
-    { "type": "header", "content": "Mega menu feature" },
-    { "type": "image_picker", "id": "mega_image", "label": "Featured image" },
-    { "type": "text", "id": "mega_heading", "label": "Featured heading", "default": "Premium pet-care essentials" },
-    { "type": "text", "id": "mega_label", "label": "Featured button label", "default": "Shop all" },
-    { "type": "url", "id": "mega_link", "label": "Featured button link" }
+    { "type": "header", "content": "Mega menu products" },
+    { "type": "product", "id": "mega_product_1", "label": "Featured product 1" },
+    { "type": "product", "id": "mega_product_2", "label": "Featured product 2" }
   ],
   "enabled_on": {
     "groups": ["header"]

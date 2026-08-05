@@ -1,5 +1,17 @@
 {
   "sections": {
+    "barkin_hero": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "20:1774",
+        "fallback_asset": "barkin/hero-shopping.png",
+        "heading": "Shop Premium\nPet Care",
+        "text": "Explore grooming, wellness and home-care products made for discerning pets and their parents.",
+        "button_label": "",
+        "button_link": "",
+        "desktop_height": 600
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -27,10 +39,41 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "barkin_bundle": {
+      "type": "barkin-bundle-builder",
+      "blocks": {
+        "bundle_1": { "type": "step", "settings": { "fallback_asset": "barkin/bundle-shampoo.png", "heading": "Shampoo", "text": "Get your pet squeaky clean." } },
+        "bundle_2": { "type": "step", "settings": { "fallback_asset": "barkin/bundle-conditioner.png", "heading": "Conditioner", "text": "Give them a beautifully soft coat." } },
+        "bundle_3": { "type": "step", "settings": { "fallback_asset": "barkin/bundle-grooming.png", "heading": "Grooming Essentials", "text": "The devil is in the details." } },
+        "bundle_4": { "type": "step", "settings": { "fallback_asset": "barkin/bundle-home.png", "heading": "Home Care", "text": "Easy cleanup, no hassle." } }
+      },
+      "block_order": ["bundle_1", "bundle_2", "bundle_3", "bundle_4"],
+      "settings": {
+        "heading": "Build Your Pet's Routine,\nGet A Discount.",
+        "text": "Add up to 6 products and save up to 15% on your bundle.",
+        "button_label": "Build Your Bundle",
+        "button_link": ""
+      }
+    },
+    "barkin_quiz": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "20:1777",
+        "fallback_asset": "barkin/hero-quiz.png",
+        "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
+        "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
+        "button_label": "Take the product quiz",
+        "button_link": "",
+        "desktop_height": 875
+      }
     }
   },
   "order": [
+    "barkin_hero",
     "banner",
-    "product-grid"
+    "product-grid",
+    "barkin_bundle",
+    "barkin_quiz"
   ]
 }

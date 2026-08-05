@@ -1,1 +1,116 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"text","settings":{"text":"{{ product.vendor }}","text_style":"uppercase"}},"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","swatch_shape":"circle"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"description":{"type":"description","settings":{}},"share":{"type":"share","settings":{"share_label":"Share"}}},"block_order":["vendor","title","price","variant_picker","quantity_selector","buy_buttons","description","share"],"settings":{"enable_sticky_info":true,"color_scheme":"scheme-1","media_size":"large","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"stacked","mobile_thumbnails":"hide","media_position":"left","image_zoom":"lightbox","hide_variants":true,"enable_video_looping":false,"padding_top":36,"padding_bottom":12}},"disclosures":{"type":"disclosures","settings":{"padding_top":36,"padding_bottom":0}},"related-products":{"type":"related-products","settings":{"heading":"You may also like","heading_size":"h2","products_to_show":4,"columns_desktop":4,"columns_mobile":"2","color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"padding_top":36,"padding_bottom":28}}},"order":["main","disclosures","related-products"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": { "type": "text", "settings": { "text": "{{ product.vendor }}", "text_style": "uppercase" } },
+        "title": { "type": "title", "settings": {} },
+        "price": { "type": "price", "settings": {} },
+        "variant_picker": { "type": "variant_picker", "settings": { "picker_type": "button", "swatch_shape": "circle" } },
+        "quantity_selector": { "type": "quantity_selector", "settings": {} },
+        "buy_buttons": { "type": "buy_buttons", "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": true } },
+        "description": { "type": "description", "settings": {} },
+        "share": { "type": "share", "settings": { "share_label": "Share" } }
+      },
+      "block_order": ["vendor", "title", "price", "variant_picker", "quantity_selector", "buy_buttons", "description", "share"],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "disclosures": { "type": "disclosures", "settings": { "padding_top": 36, "padding_bottom": 0 } },
+    "barkin_guarantees": {
+      "type": "barkin-guarantees",
+      "blocks": {
+        "guarantee_1": { "type": "guarantee", "settings": { "icon": "barkin/guarantee-cruelty-free.svg", "heading": "Always Cruelty Free.", "text": "Thoughtful formulas created without animal testing." } },
+        "guarantee_2": { "type": "guarantee", "settings": { "icon": "barkin/guarantee-paraben-free.svg", "heading": "Paraben & Sulfate Free.", "text": "Gentle formulas made for regular pet-care routines." } },
+        "guarantee_3": { "type": "guarantee", "settings": { "icon": "barkin/guarantee-gmp.svg", "heading": "GMP Certified.", "text": "Made with consistent standards and careful quality control." } },
+        "guarantee_4": { "type": "guarantee", "settings": { "icon": "barkin/guarantee-vet.svg", "heading": "Vet Recommended.", "text": "Pet-first care developed with expert guidance." } }
+      },
+      "block_order": ["guarantee_1", "guarantee_2", "guarantee_3", "guarantee_4"],
+      "settings": { "heading": "Premium Product\nGuarantees", "text": "Premium care made with the health of your pet and the planet in mind." }
+    },
+    "barkin_ingredients": {
+      "type": "barkin-ingredients",
+      "blocks": {
+        "ingredient_1": { "type": "image", "settings": { "fallback_asset": "barkin/ingredient-honey.png", "alt": "Honeycomb, a premium natural ingredient" } },
+        "ingredient_2": { "type": "text", "settings": { "heading": "Premium Grade\nIngredient", "text": "The care products you need to maintain impeccable hygiene and a healthy coat." } },
+        "ingredient_3": { "type": "image", "settings": { "fallback_asset": "barkin/ingredient-bubbles.png", "alt": "Moisturising ingredient texture" } },
+        "ingredient_4": { "type": "text", "settings": { "heading": "Premium Grade\nIngredient", "text": "Formulated to support gentle cleansing and everyday comfort." } }
+      },
+      "block_order": ["ingredient_1", "ingredient_2", "ingredient_3", "ingredient_4"],
+      "settings": { "heading": "Human Grade\nIngredients", "text": "Choosing premium ingredients helps support healthy skin and a beautiful coat.", "button_label": "Learn More", "button_link": "" }
+    },
+    "barkin_quiz": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "20:1768",
+        "fallback_asset": "barkin/hero-quiz.png",
+        "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
+        "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
+        "button_label": "Take the product quiz",
+        "button_link": "",
+        "desktop_height": 875
+      }
+    },
+    "barkin_review": {
+      "type": "barkin-review",
+      "settings": {
+        "image_alt": "Pet parents enjoying time with their dog",
+        "heading": "A Routine Made\nFor Your Pet.",
+        "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
+        "name": "Alessandra",
+        "buyer_label": "Verified Buyer",
+        "recommendation": "I recommend this product"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "barkin_blog": {
+      "type": "barkin-blog-guide",
+      "blocks": {
+        "article_1": { "type": "article", "settings": { "article": "", "fallback_asset": "barkin/blog-1.png", "tag": "Pet Grooming", "title": "How to Start Your Puppy's First At-Home Bath.", "link": "" } },
+        "article_2": { "type": "article", "settings": { "article": "", "fallback_asset": "barkin/blog-2.png", "tag": "Pet Grooming", "title": "Can You Use Human Shampoo on Dogs & Cats?", "link": "" } },
+        "article_3": { "type": "article", "settings": { "article": "", "fallback_asset": "barkin/blog-3.png", "tag": "Pet Grooming", "title": "What’s the right shampoo for my pet’s coat type?", "link": "" } }
+      },
+      "block_order": ["article_1", "article_2", "article_3"],
+      "settings": {
+        "heading": "Barkin&Meowson’s\nPet-Care Guide.",
+        "text": "Practical guides for healthier skin, better coats and happier pets.",
+        "button_label": "View Full Blog",
+        "button_link": "",
+        "feature_title": "How Natural Flea & Tick Protection Works.",
+        "feature_link": "",
+        "article_label": "Read Article"
+      }
+    }
+  },
+  "order": ["main", "disclosures", "barkin_guarantees", "barkin_ingredients", "barkin_quiz", "barkin_review", "related-products", "barkin_blog"]
+}

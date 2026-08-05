@@ -1,5 +1,3 @@
-{{ 'barkin-theme.css' | asset_url | stylesheet_tag }}
-
 {%- liquid
   if section.settings.image != blank
     assign feature_image = section.settings.image | image_url: width: 1600

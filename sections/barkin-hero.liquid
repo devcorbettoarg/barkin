@@ -1,5 +1,3 @@
-{{ 'barkin-theme.css' | asset_url | stylesheet_tag }}
-
 {%- liquid
   assign fallback_asset = section.settings.fallback_asset | default: 'barkin/hero-shopping.png'
   if section.settings.image != blank

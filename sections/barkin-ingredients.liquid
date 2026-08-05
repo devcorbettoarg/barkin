@@ -1,0 +1,96 @@
+{{ 'barkin-theme.css' | asset_url | stylesheet_tag }}
+
+<section class="barkin-section barkin-mosaic" data-node-id="20:1762">
+  <div class="barkin-shell">
+    <header class="barkin-mosaic__header">
+      <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
+      <div class="barkin-mosaic__side">
+        <p class="barkin-copy">{{ section.settings.text }}</p>
+        {% if section.settings.button_label != blank %}
+          <div><a class="barkin-button" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a></div>
+        {% endif %}
+      </div>
+    </header>
+    <div class="barkin-mosaic__grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'image' %}
+          {%- liquid
+            if block.settings.image != blank
+              assign image_src = block.settings.image | image_url: width: 900
+            else
+              assign image_src = block.settings.fallback_asset | asset_url
+            endif
+          -%}
+          <div class="barkin-mosaic-card" {{ block.shopify_attributes }}>
+            <img class="barkin-card-image" src="{{ image_src }}" alt="{{ block.settings.alt | escape }}" width="704" height="704" loading="lazy">
+          </div>
+        {% else %}
+          <article class="barkin-mosaic-card barkin-mosaic-card--text" {{ block.shopify_attributes }}>
+            <h3 class="barkin-card-title">{{ block.settings.heading | newline_to_br }}</h3>
+            <p class="barkin-copy">{{ block.settings.text }}</p>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Barkin ingredients",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Human Grade\nIngredients" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Choosing premium ingredients helps support healthy skin and a beautiful coat." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Learn More" },
+    { "type": "url", "id": "button_link", "label": "Button link" }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        {
+          "type": "select",
+          "id": "fallback_asset",
+          "label": "Design fallback",
+          "default": "barkin/ingredient-honey.png",
+          "options": [
+            { "value": "barkin/ingredient-honey.png", "label": "Honey" },
+            { "value": "barkin/ingredient-bubbles.png", "label": "Bubbles" },
+            { "value": "barkin/ingredient-dropper.png", "label": "Dropper" },
+            { "value": "barkin/ingredient-microscope.png", "label": "Microscope" }
+          ]
+        },
+        { "type": "text", "id": "alt", "label": "Alt text", "default": "Premium ingredient" }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        { "type": "textarea", "id": "heading", "label": "Heading", "default": "Premium Grade\nIngredient" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "The care products you need to maintain impeccable hygiene and a healthy coat." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barkin ingredients",
+      "blocks": [
+        { "type": "image", "settings": { "fallback_asset": "barkin/ingredient-honey.png" } },
+        { "type": "text" },
+        { "type": "image", "settings": { "fallback_asset": "barkin/ingredient-bubbles.png" } },
+        { "type": "text" },
+        { "type": "text" },
+        { "type": "image", "settings": { "fallback_asset": "barkin/ingredient-dropper.png" } },
+        { "type": "text" },
+        { "type": "image", "settings": { "fallback_asset": "barkin/ingredient-microscope.png" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

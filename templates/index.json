@@ -1,9 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "barkin_hero": {
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1757",
+        "image": "shopify://shop_images/hero-shopping.jpg",
         "fallback_asset": "barkin/hero-shopping.png",
         "heading": "Shopping for\nPremium Products",
         "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
@@ -15,13 +25,40 @@
     "barkin_promise": {
       "type": "barkin-promise-banner",
       "blocks": {
-        "promise_1": { "type": "promise", "settings": { "text": "Always Cruelty Free" } },
-        "promise_2": { "type": "promise", "settings": { "text": "Premium Grade Ingredients" } },
-        "promise_3": { "type": "promise", "settings": { "text": "Vet Recommended" } },
-        "promise_4": { "type": "promise", "settings": { "text": "Free Shipping Over $35" } }
+        "promise_1": {
+          "type": "promise",
+          "settings": {
+            "text": "Always Cruelty Free"
+          }
+        },
+        "promise_2": {
+          "type": "promise",
+          "settings": {
+            "text": "Premium Grade Ingredients"
+          }
+        },
+        "promise_3": {
+          "type": "promise",
+          "settings": {
+            "text": "Vet Recommended"
+          }
+        },
+        "promise_4": {
+          "type": "promise",
+          "settings": {
+            "text": "Free Shipping Over $35"
+          }
+        }
       },
-      "block_order": ["promise_1", "promise_2", "promise_3", "promise_4"],
-      "settings": { "accessibility_label": "Our promises" }
+      "block_order": [
+        "promise_1",
+        "promise_2",
+        "promise_3",
+        "promise_4"
+      ],
+      "settings": {
+        "accessibility_label": "Our promises"
+      }
     },
     "barkin_products": {
       "type": "barkin-product-showcase",
@@ -61,6 +98,7 @@
           "type": "card",
           "settings": {
             "style": "light",
+            "image": "shopify://shop_images/product-white.jpg",
             "fallback_asset": "barkin/collection-product.png",
             "heading": "Easy Detangling",
             "text": "Premium care for an easier, smoother grooming routine.",
@@ -69,34 +107,135 @@
           }
         }
       },
-      "block_order": ["launch_1", "launch_2"],
+      "block_order": [
+        "launch_1",
+        "launch_2"
+      ],
       "settings": {}
     },
     "barkin_guarantees": {
       "type": "barkin-guarantees",
       "blocks": {
-        "guarantee_1": { "type": "guarantee", "settings": { "icon": "barkin/guarantee-cruelty-free.svg", "heading": "Always Cruelty Free.", "text": "Thoughtful formulas created without animal testing." } },
-        "guarantee_2": { "type": "guarantee", "settings": { "icon": "barkin/guarantee-paraben-free.svg", "heading": "Paraben & Sulfate Free.", "text": "Gentle formulas made for regular pet-care routines." } },
-        "guarantee_3": { "type": "guarantee", "settings": { "icon": "barkin/guarantee-gmp.svg", "heading": "GMP Certified.", "text": "Made with consistent standards and careful quality control." } },
-        "guarantee_4": { "type": "guarantee", "settings": { "icon": "barkin/guarantee-vet.svg", "heading": "Vet Recommended.", "text": "Pet-first care developed with expert guidance." } }
+        "guarantee_1": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "barkin/guarantee-cruelty-free.svg",
+            "heading": "Always Cruelty Free.",
+            "text": "Thoughtful formulas created without animal testing."
+          }
+        },
+        "guarantee_2": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "barkin/guarantee-paraben-free.svg",
+            "heading": "Paraben & Sulfate Free.",
+            "text": "Gentle formulas made for regular pet-care routines."
+          }
+        },
+        "guarantee_3": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "barkin/guarantee-gmp.svg",
+            "heading": "GMP Certified.",
+            "text": "Made with consistent standards and careful quality control."
+          }
+        },
+        "guarantee_4": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "barkin/guarantee-vet.svg",
+            "heading": "Vet Recommended.",
+            "text": "Pet-first care developed with expert guidance."
+          }
+        }
       },
-      "block_order": ["guarantee_1", "guarantee_2", "guarantee_3", "guarantee_4"],
-      "settings": { "heading": "Premium Product\nGuarantees", "text": "Premium care made with the health of your pet and the planet in mind." }
+      "block_order": [
+        "guarantee_1",
+        "guarantee_2",
+        "guarantee_3",
+        "guarantee_4"
+      ],
+      "settings": {
+        "heading": "Premium Product\nGuarantees",
+        "text": "Premium care made with the health of your pet and the planet in mind."
+      }
     },
     "barkin_ingredients": {
       "type": "barkin-ingredients",
       "blocks": {
-        "ingredient_1": { "type": "image", "settings": { "fallback_asset": "barkin/ingredient-honey.png", "alt": "Honeycomb, a premium natural ingredient" } },
-        "ingredient_2": { "type": "text", "settings": { "heading": "Premium Grade\nIngredient", "text": "The care products you need to maintain impeccable hygiene and a healthy coat." } },
-        "ingredient_3": { "type": "image", "settings": { "fallback_asset": "barkin/ingredient-bubbles.png", "alt": "Moisturising ingredient texture" } },
-        "ingredient_4": { "type": "text", "settings": { "heading": "Premium Grade\nIngredient", "text": "Formulated to support gentle cleansing and everyday comfort." } },
-        "ingredient_5": { "type": "text", "settings": { "heading": "Premium Grade\nIngredient", "text": "Thoughtful, high-quality inputs for discerning pets and parents." } },
-        "ingredient_6": { "type": "image", "settings": { "fallback_asset": "barkin/ingredient-dropper.png", "alt": "Ingredient dropper" } },
-        "ingredient_7": { "type": "text", "settings": { "heading": "Premium Grade\nIngredient", "text": "A balanced routine designed for beautiful coats and healthy skin." } },
-        "ingredient_8": { "type": "image", "settings": { "fallback_asset": "barkin/ingredient-microscope.png", "alt": "Ingredient under a microscope" } }
+        "ingredient_1": {
+          "type": "image",
+          "settings": {
+            "fallback_asset": "barkin/ingredient-honey.png",
+            "alt": "Honeycomb, a premium natural ingredient"
+          }
+        },
+        "ingredient_2": {
+          "type": "text",
+          "settings": {
+            "heading": "Premium Grade\nIngredient",
+            "text": "The care products you need to maintain impeccable hygiene and a healthy coat."
+          }
+        },
+        "ingredient_3": {
+          "type": "image",
+          "settings": {
+            "fallback_asset": "barkin/ingredient-bubbles.png",
+            "alt": "Moisturising ingredient texture"
+          }
+        },
+        "ingredient_4": {
+          "type": "text",
+          "settings": {
+            "heading": "Premium Grade\nIngredient",
+            "text": "Formulated to support gentle cleansing and everyday comfort."
+          }
+        },
+        "ingredient_5": {
+          "type": "text",
+          "settings": {
+            "heading": "Premium Grade\nIngredient",
+            "text": "Thoughtful, high-quality inputs for discerning pets and parents."
+          }
+        },
+        "ingredient_6": {
+          "type": "image",
+          "settings": {
+            "fallback_asset": "barkin/ingredient-dropper.png",
+            "alt": "Ingredient dropper"
+          }
+        },
+        "ingredient_7": {
+          "type": "text",
+          "settings": {
+            "heading": "Premium Grade\nIngredient",
+            "text": "A balanced routine designed for beautiful coats and healthy skin."
+          }
+        },
+        "ingredient_8": {
+          "type": "image",
+          "settings": {
+            "fallback_asset": "barkin/ingredient-microscope.png",
+            "alt": "Ingredient under a microscope"
+          }
+        }
       },
-      "block_order": ["ingredient_1", "ingredient_2", "ingredient_3", "ingredient_4", "ingredient_5", "ingredient_6", "ingredient_7", "ingredient_8"],
-      "settings": { "heading": "Human Grade\nIngredients", "text": "Choosing premium ingredients helps support healthy skin and a beautiful coat.", "button_label": "Learn More", "button_link": "" }
+      "block_order": [
+        "ingredient_1",
+        "ingredient_2",
+        "ingredient_3",
+        "ingredient_4",
+        "ingredient_5",
+        "ingredient_6",
+        "ingredient_7",
+        "ingredient_8"
+      ],
+      "settings": {
+        "heading": "Human Grade\nIngredients",
+        "text": "Choosing premium ingredients helps support healthy skin and a beautiful coat.",
+        "button_label": "Learn More",
+        "button_link": ""
+      }
     },
     "barkin_household": {
       "type": "barkin-hero",
@@ -124,22 +263,91 @@
     "barkin_bundle": {
       "type": "barkin-bundle-builder",
       "blocks": {
-        "bundle_1": { "type": "step", "settings": { "fallback_asset": "barkin/bundle-shampoo.png", "heading": "Shampoo", "text": "Get your pet squeaky clean." } },
-        "bundle_2": { "type": "step", "settings": { "fallback_asset": "barkin/bundle-conditioner.png", "heading": "Conditioner", "text": "Give them a beautifully soft coat." } },
-        "bundle_3": { "type": "step", "settings": { "fallback_asset": "barkin/bundle-grooming.png", "heading": "Grooming Essentials", "text": "The devil is in the details." } },
-        "bundle_4": { "type": "step", "settings": { "fallback_asset": "barkin/bundle-home.png", "heading": "Home Care", "text": "Easy cleanup, no hassle." } }
+        "bundle_1": {
+          "type": "step",
+          "settings": {
+            "fallback_asset": "barkin/bundle-shampoo.png",
+            "heading": "Shampoo",
+            "text": "Get your pet squeaky clean."
+          }
+        },
+        "bundle_2": {
+          "type": "step",
+          "settings": {
+            "fallback_asset": "barkin/bundle-conditioner.png",
+            "heading": "Conditioner",
+            "text": "Give them a beautifully soft coat."
+          }
+        },
+        "bundle_3": {
+          "type": "step",
+          "settings": {
+            "fallback_asset": "barkin/bundle-grooming.png",
+            "heading": "Grooming Essentials",
+            "text": "The devil is in the details."
+          }
+        },
+        "bundle_4": {
+          "type": "step",
+          "settings": {
+            "fallback_asset": "barkin/bundle-home.png",
+            "heading": "Home Care",
+            "text": "Easy cleanup, no hassle."
+          }
+        }
       },
-      "block_order": ["bundle_1", "bundle_2", "bundle_3", "bundle_4"],
-      "settings": { "heading": "Build Your Pet's Routine,\nGet A Discount.", "text": "Add up to 6 products and save up to 15% on your bundle.", "button_label": "Build Your Bundle", "button_link": "" }
+      "block_order": [
+        "bundle_1",
+        "bundle_2",
+        "bundle_3",
+        "bundle_4"
+      ],
+      "settings": {
+        "heading": "Build Your Pet's Routine,\nGet A Discount.",
+        "text": "Add up to 6 products and save up to 15% on your bundle.",
+        "button_label": "Build Your Bundle",
+        "button_link": ""
+      }
     },
     "barkin_blog": {
       "type": "barkin-blog-guide",
       "blocks": {
-        "article_1": { "type": "article", "settings": { "article": "", "fallback_asset": "barkin/blog-1.png", "tag": "Pet Grooming", "title": "How to Start Your Puppy's First At-Home Bath.", "link": "" } },
-        "article_2": { "type": "article", "settings": { "article": "", "fallback_asset": "barkin/blog-2.png", "tag": "Pet Grooming", "title": "Can You Use Human Shampoo on Dogs & Cats?", "link": "" } },
-        "article_3": { "type": "article", "settings": { "article": "", "fallback_asset": "barkin/blog-3.png", "tag": "Pet Grooming", "title": "What’s the right shampoo for my pet’s coat type?", "link": "" } }
+        "article_1": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "fallback_asset": "barkin/blog-1.png",
+            "tag": "Pet Grooming",
+            "title": "How to Start Your Puppy's First At-Home Bath.",
+            "link": ""
+          }
+        },
+        "article_2": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "fallback_asset": "barkin/blog-2.png",
+            "tag": "Pet Grooming",
+            "title": "Can You Use Human Shampoo on Dogs & Cats?",
+            "link": ""
+          }
+        },
+        "article_3": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "fallback_asset": "barkin/blog-3.png",
+            "tag": "Pet Grooming",
+            "title": "What’s the right shampoo for my pet’s coat type?",
+            "link": ""
+          }
+        }
       },
-      "block_order": ["article_1", "article_2", "article_3"],
+      "block_order": [
+        "article_1",
+        "article_2",
+        "article_3"
+      ],
       "settings": {
         "heading": "Barkin&Meowson’s\nPet-Care Guide.",
         "text": "Practical guides for healthier skin, better coats and happier pets.",
@@ -153,13 +361,51 @@
     "barkin_social": {
       "type": "barkin-social-gallery",
       "blocks": {
-        "social_1": { "type": "image", "settings": { "fallback_asset": "barkin/social-1.png", "alt": "Pet parents and their dog", "link": "" } },
-        "social_2": { "type": "image", "settings": { "fallback_asset": "barkin/social-2.png", "alt": "A dog with its parent", "link": "" } },
-        "social_3": { "type": "image", "settings": { "fallback_asset": "barkin/social-3.png", "alt": "Barkin & Meowson product", "link": "" } },
-        "social_4": { "type": "image", "settings": { "fallback_asset": "barkin/social-4.png", "alt": "A pet parent holding a dog", "link": "" } }
+        "social_1": {
+          "type": "image",
+          "settings": {
+            "fallback_asset": "barkin/social-1.png",
+            "alt": "Pet parents and their dog",
+            "link": ""
+          }
+        },
+        "social_2": {
+          "type": "image",
+          "settings": {
+            "fallback_asset": "barkin/social-2.png",
+            "alt": "A dog with its parent",
+            "link": ""
+          }
+        },
+        "social_3": {
+          "type": "image",
+          "settings": {
+            "fallback_asset": "barkin/social-3.png",
+            "alt": "Barkin & Meowson product",
+            "link": ""
+          }
+        },
+        "social_4": {
+          "type": "image",
+          "settings": {
+            "fallback_asset": "barkin/social-4.png",
+            "alt": "A pet parent holding a dog",
+            "link": ""
+          }
+        }
       },
-      "block_order": ["social_1", "social_2", "social_3", "social_4"],
-      "settings": { "heading": "We’re Social, Come\nConnect With Us.", "text": "Join our community of discerning pets and their parents.", "button_label": "Connect With Us", "button_link": "" }
+      "block_order": [
+        "social_1",
+        "social_2",
+        "social_3",
+        "social_4"
+      ],
+      "settings": {
+        "heading": "We’re Social, Come\nConnect With Us.",
+        "text": "Join our community of discerning pets and their parents.",
+        "button_label": "Connect With Us",
+        "button_link": ""
+      }
     },
     "barkin_quiz": {
       "type": "barkin-hero",
@@ -176,14 +422,56 @@
     "barkin_faq": {
       "type": "barkin-faq",
       "blocks": {
-        "faq_1": { "type": "question", "settings": { "question": "What makes Barkin & Meowson different?", "answer": "<p>We combine premium-grade ingredients, thoughtful formulas and a pet-first approach to everyday care.</p>" } },
-        "faq_2": { "type": "question", "settings": { "question": "Are the products cruelty free?", "answer": "<p>Yes. Our formulas are created without animal testing.</p>" } },
-        "faq_3": { "type": "question", "settings": { "question": "How do I choose the right routine?", "answer": "<p>Use our product quiz or shop by coat and skin concern to build a routine that fits your pet.</p>" } },
-        "faq_4": { "type": "question", "settings": { "question": "Can I build a custom bundle?", "answer": "<p>Yes. Combine complementary products and save on a complete care routine.</p>" } },
-        "faq_5": { "type": "question", "settings": { "question": "When will my order arrive?", "answer": "<p>Delivery timing is shown during checkout and depends on your shipping destination.</p>" } }
+        "faq_1": {
+          "type": "question",
+          "settings": {
+            "question": "What makes Barkin & Meowson different?",
+            "answer": "<p>We combine premium-grade ingredients, thoughtful formulas and a pet-first approach to everyday care.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "question",
+          "settings": {
+            "question": "Are the products cruelty free?",
+            "answer": "<p>Yes. Our formulas are created without animal testing.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "question",
+          "settings": {
+            "question": "How do I choose the right routine?",
+            "answer": "<p>Use our product quiz or shop by coat and skin concern to build a routine that fits your pet.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "question",
+          "settings": {
+            "question": "Can I build a custom bundle?",
+            "answer": "<p>Yes. Combine complementary products and save on a complete care routine.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "question",
+          "settings": {
+            "question": "When will my order arrive?",
+            "answer": "<p>Delivery timing is shown during checkout and depends on your shipping destination.</p>"
+          }
+        }
       },
-      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4", "faq_5"],
-      "settings": { "heading": "Frequently Asked\nQuestions.", "text": "Everything you need to choose and use the best care for your pet.", "button_label": "See Full FAQ", "button_link": "", "open_first": true }
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5"
+      ],
+      "settings": {
+        "heading": "Frequently Asked\nQuestions.",
+        "text": "Everything you need to choose and use the best care for your pet.",
+        "button_label": "See Full FAQ",
+        "button_link": "",
+        "open_first": true
+      }
     }
   },
   "order": [

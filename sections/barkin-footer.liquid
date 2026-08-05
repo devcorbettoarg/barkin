@@ -64,6 +64,7 @@
       </div>
     {% endfor %}
   </div>
+  <p class="barkin-site-footer__copyright">© {{ 'now' | date: '%Y' }} {{ section.settings.copyright }}</p>
 </footer>
 
 {% schema %}
@@ -78,7 +79,8 @@
     { "type": "text", "id": "logo_kicker", "label": "Fallback logo small text", "default": "Royale's Care" },
     { "type": "text", "id": "logo_text", "label": "Fallback logo text", "default": "& BARKIN MEOWSON" },
     { "type": "text", "id": "newsletter_heading", "label": "Newsletter heading", "default": "Subscribe our Newsletter" },
-    { "type": "textarea", "id": "newsletter_text", "label": "Newsletter text", "default": "You will be kept up to date with all our latest news." }
+    { "type": "textarea", "id": "newsletter_text", "label": "Newsletter text", "default": "You will be kept up to date with all our latest news." },
+    { "type": "text", "id": "copyright", "label": "Copyright name", "default": "Barkin&Meowson" }
   ],
   "blocks": [
     {

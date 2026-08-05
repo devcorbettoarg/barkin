@@ -49,9 +49,15 @@
           <img src="{{ 'icon-account.svg' | asset_url }}" alt="" width="20" height="20">
         </a>
       {% endif %}
+      {%- liquid
+        assign cart_icon = 'icon-cart-empty.svg'
+        unless cart == empty
+          assign cart_icon = 'icon-cart.svg'
+        endunless
+      -%}
       <a href="{{ routes.cart_url }}" aria-label="{{ 'templates.cart.cart' | t }}">
         <img
-          src="{% if cart == empty %}{{ 'icon-cart-empty.svg' | asset_url }}{% else %}{{ 'icon-cart.svg' | asset_url }}{% endif %}"
+          src="{{ cart_icon | asset_url }}"
           alt=""
           width="20"
           height="20"

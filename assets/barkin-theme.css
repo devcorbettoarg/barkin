@@ -140,6 +140,12 @@
   height: 20px;
 }
 
+.barkin-site-header__actions img,
+.barkin-site-header__mobile-menu img {
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
 .barkin-site-header__currency {
   min-width: 55px;
   padding: 10px 12px;
@@ -262,6 +268,14 @@
 
 .barkin-site-footer__social {
   margin-top: 24px !important;
+}
+
+.barkin-site-footer__copyright {
+  width: calc(100% - 10vw);
+  max-width: 1440px;
+  margin: 20px auto 0;
+  color: rgba(255,253,252,.6) !important;
+  text-align: right;
 }
 
 /* Collection / PLP */

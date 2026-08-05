@@ -639,6 +639,190 @@ main[data-template="product"] .related-products .price {
   color: var(--barkin-black);
 }
 
+.barkin-coats {
+  padding: 79px 0;
+  overflow: hidden;
+}
+
+.barkin-coats__rail {
+  display: grid;
+  grid-auto-columns: minmax(360px, 715px);
+  grid-auto-flow: column;
+  gap: 10px;
+  margin-top: 70px;
+  padding-inline: max(0px, calc((100vw - 1440px) / 2));
+  overflow-x: auto;
+  scroll-padding-inline: max(0px, calc((100vw - 1440px) / 2));
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.barkin-coats__rail::-webkit-scrollbar { display: none; }
+
+.barkin-coat-card {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 4px;
+  scroll-snap-align: center;
+}
+
+.barkin-coat-card::after {
+  content: "";
+  position: absolute;
+  inset: 45% 0 0;
+  background: linear-gradient(0deg, rgba(0,0,0,.72), transparent);
+}
+
+.barkin-coat-card img,
+.barkin-coat-card__placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.barkin-coat-card__placeholder {
+  background:
+    radial-gradient(circle at 35% 35%, rgba(255,255,255,.15), transparent 30%),
+    repeating-linear-gradient(115deg, #88684f 0 5px, #4b382e 5px 11px);
+}
+
+.barkin-coat-card__content {
+  position: absolute;
+  z-index: 1;
+  right: 40px;
+  bottom: 40px;
+  left: 40px;
+}
+
+.barkin-product-reviews {
+  padding: 79px 0;
+}
+
+.barkin-product-reviews__summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 80px;
+  align-items: end;
+  padding-bottom: 50px;
+}
+
+.barkin-product-reviews__score {
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+}
+
+.barkin-product-reviews__score span,
+.barkin-product-reviews__summary p,
+.barkin-product-review p,
+.barkin-product-review small {
+  color: rgba(255,253,252,.6);
+}
+
+.barkin-product-reviews__bars {
+  width: min(100%, 330px);
+  display: grid;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.barkin-product-reviews__bars span {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.barkin-product-reviews__bars i {
+  height: 5px;
+  background: linear-gradient(90deg, var(--barkin-white) var(--bar-width), rgba(255,253,252,.18) var(--bar-width));
+}
+
+.barkin-product-reviews__photos {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.barkin-product-reviews__photos img {
+  width: 90px;
+  height: 90px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.barkin-product-reviews__toolbar {
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-block: 1px solid var(--barkin-border);
+  color: rgba(255,253,252,.6);
+  font-size: 1.2rem;
+}
+
+.barkin-product-review {
+  display: grid;
+  grid-template-columns: 280px 1fr 220px;
+  gap: 80px;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--barkin-border);
+}
+
+.barkin-product-review aside {
+  padding: 20px;
+  border: 1px solid var(--barkin-border);
+  border-radius: 4px;
+  background: rgba(255,253,252,.05);
+}
+
+.barkin-product-review__buyer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.barkin-product-review__buyer img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.barkin-product-review__buyer span {
+  display: block;
+  color: rgba(255,253,252,.6);
+  font-size: 1.1rem;
+}
+
+.barkin-product-review dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 20px 0 0;
+  font-size: 1.1rem;
+}
+
+.barkin-product-review dd { margin: 0; }
+.barkin-product-review__content h3 {
+  margin: 8px 0 16px;
+  color: inherit;
+  font-family: Inter, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.barkin-product-review > img {
+  width: 220px;
+  height: 220px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.barkin-product-reviews__more {
+  margin-top: 30px;
+  text-align: center;
+}
+
 .barkin-section {
   background: var(--barkin-black);
   color: var(--barkin-white);
@@ -1309,6 +1493,68 @@ main[data-template="product"] .related-products .price {
     grid-column: 1 / -1;
   }
   .barkin-site-footer__column:last-child { grid-column: 1 / -1; }
+  main[data-template="collection"] .facets-wrapper {
+    padding-inline: 20px;
+  }
+  main[data-template="collection"] .product-grid-container .collection,
+  main[data-template="product"] product-component > .page-width,
+  main[data-template="product"] .related-products {
+    width: calc(100% - 40px);
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  main[data-template="collection"] #product-grid {
+    row-gap: 10px;
+  }
+  main[data-template="collection"] .card__information {
+    min-height: 68px;
+    padding: 12px 52px 12px 12px;
+  }
+  main[data-template="product"] .product {
+    display: block;
+  }
+  .barkin-product-breadcrumb {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main[data-template="product"] .product__media-wrapper,
+  main[data-template="product"] .product__info-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+  main[data-template="product"] .product__info-wrapper {
+    margin-top: 40px;
+  }
+  main[data-template="product"] media-gallery {
+    grid-template-columns: 1fr;
+  }
+  main[data-template="product"] .thumbnail-slider {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  main[data-template="product"] .thumbnail-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .barkin-coats { padding-block: 50px; }
+  .barkin-coats__rail {
+    grid-auto-columns: 82vw;
+    margin-top: 50px;
+    padding-inline: 20px;
+    scroll-padding-inline: 20px;
+  }
+  .barkin-coat-card { height: 480px; }
+  .barkin-product-reviews__summary,
+  .barkin-product-review {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .barkin-product-reviews__summary > .barkin-button {
+    justify-self: start;
+  }
+  .barkin-product-review > img {
+    width: 100%;
+    height: 300px;
+  }
   .barkin-shell { width: calc(100% - 40px); }
   .barkin-title { font-size: 4rem; line-height: .95; }
   .barkin-card-title { font-size: 2.8rem; }
@@ -1338,6 +1584,38 @@ main[data-template="product"] .related-products .price {
   .barkin-blog-feature { min-height: 520px; }
   .barkin-blog-item { grid-template-columns: 1fr 120px; }
   .barkin-blog-item img { width: 120px; height: 150px; }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  .barkin-site-header__main { width: calc(100% - 60px); }
+  .barkin-site-header__nav { gap: 16px; }
+  .barkin-site-header__nav a { font-size: 1.2rem; }
+  .barkin-site-footer__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .barkin-site-footer__brand,
+  .barkin-site-footer__newsletter {
+    grid-column: span 1;
+  }
+  main[data-template="product"] .product {
+    column-gap: 5%;
+  }
+  main[data-template="product"] .product__media-wrapper {
+    width: 55%;
+    max-width: 55%;
+  }
+  main[data-template="product"] .product__info-wrapper {
+    width: 40%;
+    max-width: 40%;
+  }
+  main[data-template="product"] media-gallery {
+    grid-template-columns: minmax(0, 1fr) 74px;
+  }
+  .barkin-product-review {
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+  }
+  .barkin-product-review > img { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

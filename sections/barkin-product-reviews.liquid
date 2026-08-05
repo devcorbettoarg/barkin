@@ -1,0 +1,106 @@
+<section class="barkin-section barkin-product-reviews">
+  <div class="barkin-shell">
+    <header class="barkin-product-reviews__summary">
+      <div>
+        <div class="barkin-product-reviews__score">{{ section.settings.score }} ★★★★★ <span>({{ section.settings.review_count }} Reviews)</span></div>
+        <div class="barkin-product-reviews__bars" aria-hidden="true">
+          {% for i in (1..5) %}
+            <span>{{ 6 | minus: i }}★ <i style="--bar-width:{% if i == 1 %}82{% elsif i == 2 %}25{% else %}0{% endif %}%"></i></span>
+          {% endfor %}
+        </div>
+        <button class="barkin-button" type="button">{{ section.settings.filter_label }}</button>
+      </div>
+      <div>
+        <p><strong>{{ section.settings.recommendation_percent }}%</strong> of buyers would recommend this product.</p>
+        <div class="barkin-product-reviews__photos">
+          {% for block in section.blocks limit: 2 %}
+            {% if block.settings.image != blank %}
+              {{ block.settings.image | image_url: width: 200 | image_tag: loading: 'lazy', alt: block.settings.title }}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <button class="barkin-button" type="button">{{ section.settings.write_label }}</button>
+    </header>
+
+    <div class="barkin-product-reviews__toolbar">
+      <span>{{ section.settings.review_count }} Reviews</span>
+      <span>Sort by: {{ section.settings.sort_label }}</span>
+    </div>
+
+    <div class="barkin-product-reviews__list">
+      {% for block in section.blocks %}
+        <article class="barkin-product-review" {{ block.shopify_attributes }}>
+          <aside>
+            <div class="barkin-product-review__buyer">
+              {% if block.settings.avatar != blank %}
+                {{ block.settings.avatar | image_url: width: 80 | image_tag: loading: 'lazy', alt: '' }}
+              {% endif %}
+              <div><strong>{{ block.settings.name }}</strong><span>{{ block.settings.buyer_label }}</span></div>
+            </div>
+            <p>✓ {{ block.settings.recommendation }}</p>
+            <dl>
+              <dt>Type of Pet</dt><dd>{{ block.settings.pet_type }}</dd>
+              <dt>Type of Breed</dt><dd>{{ block.settings.breed }}</dd>
+            </dl>
+          </aside>
+          <div class="barkin-product-review__content">
+            <div>★★★★★</div>
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.review }}</p>
+            <small>{{ block.settings.date }}</small>
+          </div>
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 500 | image_tag: loading: 'lazy', alt: block.settings.title }}
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+    <div class="barkin-product-reviews__more"><button class="barkin-button" type="button">{{ section.settings.more_label }}</button></div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Barkin product reviews",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "text", "id": "score", "label": "Score", "default": "4.7" },
+    { "type": "text", "id": "review_count", "label": "Review count", "default": "39" },
+    { "type": "text", "id": "recommendation_percent", "label": "Recommendation percent", "default": "100" },
+    { "type": "text", "id": "filter_label", "label": "Filter button", "default": "Filter Comments" },
+    { "type": "text", "id": "write_label", "label": "Write button", "default": "Write a Review" },
+    { "type": "text", "id": "sort_label", "label": "Sort label", "default": "Photos & Videos" },
+    { "type": "text", "id": "more_label", "label": "Load more button", "default": "Load More" }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        { "type": "image_picker", "id": "avatar", "label": "Buyer avatar" },
+        { "type": "text", "id": "name", "label": "Name", "default": "Alessandra" },
+        { "type": "text", "id": "buyer_label", "label": "Buyer label", "default": "Verified Buyer" },
+        { "type": "text", "id": "recommendation", "label": "Recommendation", "default": "I recommend this product" },
+        { "type": "text", "id": "pet_type", "label": "Pet type", "default": "Dog" },
+        { "type": "text", "id": "breed", "label": "Breed", "default": "Labrador" },
+        { "type": "text", "id": "title", "label": "Title", "default": "We love Barkin & Meowson!" },
+        { "type": "textarea", "id": "review", "label": "Review", "default": "Choosing the right care routine made a visible difference to our pet's skin and coat." },
+        { "type": "text", "id": "date", "label": "Date", "default": "2 years ago" },
+        { "type": "image_picker", "id": "image", "label": "Review image" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barkin product reviews",
+      "blocks": [
+        { "type": "review" },
+        { "type": "review", "settings": { "title": "The best doggie conditioner!", "pet_type": "Cat", "breed": "Bengal" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,87 @@
+<script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
+
+<section class="barkin-section barkin-coats">
+  <div class="barkin-centered-intro">
+    <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
+    <p class="barkin-copy">{{ section.settings.text }}</p>
+  </div>
+
+  <barkin-carousel
+    class="barkin-coats__carousel"
+    data-initial-slide="{% if section.blocks.size > 2 %}1{% else %}0{% endif %}"
+    role="region"
+    aria-roledescription="carousel"
+    aria-label="{{ section.settings.carousel_label | escape }}"
+  >
+    <div id="BarkinCoatRail-{{ section.id }}" class="barkin-coats__rail" data-carousel-rail>
+      {% for block in section.blocks %}
+        <article class="barkin-coat-card" data-carousel-slide {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+            {{
+              block.settings.image
+              | image_url: width: 1200
+              | image_tag: loading: 'lazy', widths: '420,720,960,1200', alt: block.settings.heading
+            }}
+          {% else %}
+            <div class="barkin-coat-card__placeholder"></div>
+          {% endif %}
+          <div class="barkin-coat-card__content">
+            <h3 class="barkin-card-title">{{ block.settings.heading }}</h3>
+            <p class="barkin-copy">{{ block.settings.text }}</p>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if section.blocks.size > 1 %}
+      <div class="barkin-showcase__dots" role="group" aria-label="{{ section.settings.pagination_label | escape }}">
+        {% for block in section.blocks %}
+          <button
+            class="barkin-showcase__dot{% if forloop.first %} is-active{% endif %}"
+            type="button"
+            data-carousel-dot="{{ forloop.index0 }}"
+            aria-label="Show coat type {{ forloop.index }}"
+            aria-controls="BarkinCoatRail-{{ section.id }}"
+            aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+          ><span class="visually-hidden">{{ forloop.index }}</span></button>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </barkin-carousel>
+</section>
+
+{% schema %}
+{
+  "name": "Barkin coat guide",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 6,
+  "settings": [
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "This Product Is Fit For\nThese Pet Coats." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Different coats have unique needs in terms of hydration, cleansing, and protection." },
+    { "type": "text", "id": "carousel_label", "label": "Carousel accessibility label", "default": "Suitable pet coat types" },
+    { "type": "text", "id": "pagination_label", "label": "Pagination accessibility label", "default": "Choose coat type" }
+  ],
+  "blocks": [
+    {
+      "type": "coat",
+      "name": "Coat type",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Coat image" },
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Curly Coated" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "Care designed around the hydration and cleansing needs of this coat type." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barkin coat guide",
+      "blocks": [
+        { "type": "coat", "settings": { "heading": "Double Coated" } },
+        { "type": "coat", "settings": { "heading": "Curly Coated" } },
+        { "type": "coat", "settings": { "heading": "Summer Essentials" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

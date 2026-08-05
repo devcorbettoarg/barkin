@@ -44,7 +44,6 @@
         "padding_bottom": 12
       }
     },
-    "disclosures": { "type": "disclosures", "settings": { "padding_top": 36, "padding_bottom": 0 } },
     "barkin_guarantees": {
       "type": "barkin-guarantees",
       "blocks": {
@@ -81,6 +80,21 @@
         "desktop_height": 875
       }
     },
+    "barkin_coats": {
+      "type": "barkin-coat-guide",
+      "blocks": {
+        "coat_1": { "type": "coat", "settings": { "heading": "Double Coated", "text": "Care designed around the hydration and cleansing needs of this coat type." } },
+        "coat_2": { "type": "coat", "settings": { "heading": "Curly Coated", "text": "Care designed around the hydration and cleansing needs of this coat type." } },
+        "coat_3": { "type": "coat", "settings": { "heading": "Summer Essentials", "text": "Care designed around the hydration and cleansing needs of this coat type." } }
+      },
+      "block_order": ["coat_1", "coat_2", "coat_3"],
+      "settings": {
+        "heading": "This Product Is Fit For\nThese Pet Coats.",
+        "text": "Different coats have unique needs in terms of hydration, cleansing, and protection.",
+        "carousel_label": "Suitable pet coat types",
+        "pagination_label": "Choose coat type"
+      }
+    },
     "barkin_review": {
       "type": "barkin-review",
       "blocks": {
@@ -106,10 +120,54 @@
         "pagination_label": "Choose customer review"
       }
     },
+    "product_reviews": {
+      "type": "barkin-product-reviews",
+      "blocks": {
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "avatar": "shopify://shop_images/reviewer.jpg",
+            "name": "Alessandra",
+            "buyer_label": "Verified Buyer",
+            "recommendation": "I recommend this product",
+            "pet_type": "Dog",
+            "breed": "Labrador",
+            "title": "We love Barkin & Meowson!",
+            "review": "Choosing the right care routine made a visible difference to our pet's skin and coat.",
+            "date": "2 years ago",
+            "image": "shopify://shop_images/social-1.jpg"
+          }
+        },
+        "review_2": {
+          "type": "review",
+          "settings": {
+            "avatar": "shopify://shop_images/reviewer.jpg",
+            "name": "Alessandra",
+            "buyer_label": "Verified Buyer",
+            "recommendation": "I recommend this product",
+            "pet_type": "Cat",
+            "breed": "Bengal",
+            "title": "The best doggie conditioner!",
+            "review": "A gentle, dependable addition to our regular grooming routine.",
+            "date": "2 years ago"
+          }
+        }
+      },
+      "block_order": ["review_1", "review_2"],
+      "settings": {
+        "score": "4.7",
+        "review_count": "39",
+        "recommendation_percent": "100",
+        "filter_label": "Filter Comments",
+        "write_label": "Write a Review",
+        "sort_label": "Photos & Videos",
+        "more_label": "Load More"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Other Products That Compliment This One.",
         "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
@@ -144,5 +202,5 @@
       }
     }
   },
-  "order": ["main", "disclosures", "barkin_guarantees", "barkin_ingredients", "barkin_quiz", "barkin_review", "related-products", "barkin_blog"]
+  "order": ["main", "barkin_guarantees", "barkin_ingredients", "barkin_coats", "barkin_quiz", "product_reviews", "related-products", "barkin_blog"]
 }

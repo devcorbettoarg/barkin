@@ -15,12 +15,14 @@
       "type": "barkin-header",
       "settings": {
         "announcement": "Free shipping above $35 on all US orders",
-        "menu": "main-menu",
+        "menu": "customer-account-main-menu",
         "logo_width": 240,
         "logo_kicker": "Royale's Care",
         "logo_text": "BARKIN&MEOWSON"
       }
     }
   },
-  "order": ["barkin_header"]
+  "order": [
+    "barkin_header"
+  ]
 }

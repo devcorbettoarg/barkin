@@ -1,3 +1,5 @@
+<script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
+
 <section class="barkin-section barkin-showcase" data-node-id="20:1759">
   <div class="barkin-centered-intro">
     <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
@@ -9,33 +11,64 @@
     {% endif %}
   </div>
 
-  <div class="barkin-showcase__rail">
-    {% for block in section.blocks %}
-      {%- liquid
-        assign card_product = block.settings.product
-        if card_product != blank and card_product.featured_image != blank
-          assign card_image = card_product.featured_image | image_url: width: 900
-          assign card_title = card_product.title
-          assign card_price = card_product.price | money
-          assign card_url = card_product.url
-        else
-          assign card_image = block.settings.fallback_asset | asset_url
-          assign card_title = block.settings.title
-          assign card_price = block.settings.price
-          assign card_url = block.settings.link | default: routes.all_products_collection_url
-        endif
-      -%}
-      <a class="barkin-product-card" href="{{ card_url }}" {{ block.shopify_attributes }}>
-        <span class="barkin-product-card__media">
-          <img class="barkin-card-image" src="{{ card_image }}" alt="{{ card_title | escape }}" width="704" height="942" loading="lazy">
-        </span>
-        <span class="barkin-product-card__info">
-          <span class="barkin-product-card__title">{{ card_title }}</span>
-          <span class="barkin-product-card__price">{{ card_price }}</span>
-        </span>
-      </a>
-    {% endfor %}
-  </div>
+  <barkin-carousel
+    class="barkin-showcase__carousel"
+    data-initial-slide="{% if section.blocks.size > 4 %}1{% else %}0{% endif %}"
+    role="region"
+    aria-roledescription="carousel"
+    aria-label="{{ section.settings.carousel_label | escape }}"
+  >
+    <div id="BarkinRail-{{ section.id }}" class="barkin-showcase__rail" data-carousel-rail>
+      {% for block in section.blocks %}
+        {%- liquid
+          assign card_product = block.settings.product
+          if card_product != blank and card_product.featured_image != blank
+            assign card_image = card_product.featured_image | image_url: width: 900
+            assign card_title = card_product.title
+            assign card_price = card_product.price | money
+            assign card_url = card_product.url
+          else
+            assign card_image = block.settings.fallback_asset | asset_url
+            assign card_title = block.settings.title
+            assign card_price = block.settings.price
+            assign card_url = block.settings.link | default: routes.all_products_collection_url
+          endif
+        -%}
+        <a
+          class="barkin-product-card"
+          href="{{ card_url }}"
+          data-carousel-slide
+          aria-label="{{ card_title | escape }}, {{ card_price | escape }}"
+          {{ block.shopify_attributes }}
+        >
+          <span class="barkin-product-card__media">
+            <img class="barkin-card-image" src="{{ card_image }}" alt="{{ card_title | escape }}" width="704" height="942" loading="lazy">
+          </span>
+          <span class="barkin-product-card__info">
+            <span class="barkin-product-card__title">{{ card_title }}</span>
+            <span class="barkin-product-card__price">{{ card_price }}</span>
+          </span>
+        </a>
+      {% endfor %}
+    </div>
+
+    {% if section.blocks.size > 1 %}
+      <div class="barkin-showcase__dots" role="group" aria-label="{{ section.settings.pagination_label | escape }}">
+        {% for block in section.blocks limit: 5 %}
+          <button
+            class="barkin-showcase__dot{% if forloop.first %} is-active{% endif %}"
+            type="button"
+            data-carousel-dot="{{ forloop.index0 }}"
+            aria-label="Mostrar producto {{ forloop.index }}"
+            aria-controls="BarkinRail-{{ section.id }}"
+            aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+          >
+            <span class="visually-hidden">{{ forloop.index }}</span>
+          </button>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </barkin-carousel>
 </section>
 
 {% schema %}
@@ -53,7 +86,9 @@
       "default": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat."
     },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop All Items" },
-    { "type": "url", "id": "button_link", "label": "Button link" }
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "text", "id": "carousel_label", "label": "Carousel accessibility label", "default": "Best selling products" },
+    { "type": "text", "id": "pagination_label", "label": "Pagination accessibility label", "default": "Choose carousel position" }
   ],
   "blocks": [
     {
@@ -86,7 +121,9 @@
         { "type": "product", "settings": { "fallback_asset": "barkin/product-black.png" } },
         { "type": "product", "settings": { "fallback_asset": "barkin/product-white.png" } },
         { "type": "product", "settings": { "fallback_asset": "barkin/product-spray.png" } },
-        { "type": "product", "settings": { "fallback_asset": "barkin/product-dental.png" } }
+        { "type": "product", "settings": { "fallback_asset": "barkin/product-dental.png" } },
+        { "type": "product", "settings": { "fallback_asset": "barkin/product-black.png" } },
+        { "type": "product", "settings": { "fallback_asset": "barkin/product-white.png" } }
       ]
     }
   ]

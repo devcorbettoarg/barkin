@@ -205,7 +205,48 @@
   scrollbar-width: none;
 }
 
+.barkin-showcase__carousel {
+  display: block;
+}
+
+.barkin-showcase__rail {
+  grid-auto-columns: 352px;
+  padding-inline: max(79px, calc((100vw - 1440px) / 2));
+  scroll-padding-inline: max(79px, calc((100vw - 1440px) / 2));
+}
+
 .barkin-showcase__rail::-webkit-scrollbar { display: none; }
+
+.barkin-showcase__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 14px;
+  margin-top: 38px;
+}
+
+.barkin-showcase__dot {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 253, 252, 0.35);
+  cursor: pointer;
+  transition: width .2s ease, height .2s ease, background .2s ease;
+}
+
+.barkin-showcase__dot.is-active {
+  width: 8px;
+  height: 8px;
+  background: var(--barkin-white);
+}
+
+.barkin-showcase__dot:focus-visible {
+  outline: 2px solid var(--barkin-white);
+  outline-offset: 4px;
+}
 
 .barkin-product-card,
 .barkin-bundle-card {
@@ -217,6 +258,17 @@
   background: #eeece9;
   color: var(--barkin-black);
   scroll-snap-align: center;
+}
+
+.barkin-product-card {
+  opacity: 1;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  transition: opacity .25s ease;
+}
+
+.barkin-product-card.is-edge {
+  opacity: .5;
 }
 
 .barkin-product-card__media,
@@ -401,6 +453,10 @@
   .barkin-marquee__track { gap: 24px; }
   .barkin-showcase, .barkin-bundle, .barkin-social, .barkin-split, .barkin-guarantees, .barkin-mosaic, .barkin-review, .barkin-blog, .barkin-faq { padding-top: 50px; padding-bottom: 50px; }
   .barkin-showcase__rail, .barkin-bundle__grid, .barkin-social__rail { margin-top: 50px; grid-auto-columns: 82vw; }
+  .barkin-showcase__rail {
+    padding-inline: 20px;
+    scroll-padding-inline: 20px;
+  }
   .barkin-split__grid, .barkin-guarantees__layout, .barkin-mosaic__header, .barkin-review__grid, .barkin-blog__header, .barkin-blog__grid, .barkin-faq__layout { grid-template-columns: 1fr; gap: 40px; }
   .barkin-split-card { aspect-ratio: 4 / 5; }
   .barkin-split-card__content { left: 24px; right: 24px; bottom: 24px; }

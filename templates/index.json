@@ -29,14 +29,18 @@
         "product_1": { "type": "product", "settings": { "product": "", "fallback_asset": "barkin/product-black.png", "title": "Gentle Care Shampoo", "price": "$19.95", "link": "" } },
         "product_2": { "type": "product", "settings": { "product": "", "fallback_asset": "barkin/product-white.png", "title": "Moisturising Conditioner", "price": "$19.95", "link": "" } },
         "product_3": { "type": "product", "settings": { "product": "", "fallback_asset": "barkin/product-spray.png", "title": "Daily Care Spray", "price": "$19.95", "link": "" } },
-        "product_4": { "type": "product", "settings": { "product": "", "fallback_asset": "barkin/product-dental.png", "title": "Dental Essentials", "price": "$19.95", "link": "" } }
+        "product_4": { "type": "product", "settings": { "product": "", "fallback_asset": "barkin/product-dental.png", "title": "Dental Essentials", "price": "$19.95", "link": "" } },
+        "product_5": { "type": "product", "settings": { "product": "", "fallback_asset": "barkin/product-black.png", "title": "Gentle Care Shampoo", "price": "$19.95", "link": "" } },
+        "product_6": { "type": "product", "settings": { "product": "", "fallback_asset": "barkin/product-white.png", "title": "Moisturising Conditioner", "price": "$19.95", "link": "" } }
       },
-      "block_order": ["product_1", "product_2", "product_3", "product_4"],
+      "block_order": ["product_1", "product_2", "product_3", "product_4", "product_5", "product_6"],
       "settings": {
         "heading": "Our Best Selling\nPremium Products.",
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat.",
         "button_label": "Shop All Items",
-        "button_link": "shopify://collections/all"
+        "button_link": "shopify://collections/all",
+        "carousel_label": "Best selling products",
+        "pagination_label": "Choose carousel position"
       }
     },
     "barkin_launch": {

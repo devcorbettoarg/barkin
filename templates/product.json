@@ -65,6 +65,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1768",
+        "heading_tag": "h2",
         "fallback_asset": "barkin/hero-quiz.png",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",

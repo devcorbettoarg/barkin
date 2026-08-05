@@ -510,7 +510,40 @@
 .barkin-review__buyer-row { display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: center; padding-bottom: 12px; }
 .barkin-review__buyer img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
 
-.barkin-bundle-card__info { text-align: center; }
+.barkin-bundle-card {
+  overflow: visible;
+}
+
+.barkin-bundle-card__media {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.barkin-bundle-card:not(:last-child)::after {
+  content: "+";
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  right: -25px;
+  display: flex;
+  width: 39px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--barkin-white);
+  border-radius: 50%;
+  background: var(--barkin-black);
+  color: var(--barkin-white);
+  font-size: 1.8rem;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.barkin-bundle-card__info {
+  overflow: hidden;
+  border-radius: 0 0 4px 4px;
+  text-align: center;
+}
 
 .barkin-blog {
   padding: 79px 0;
@@ -531,16 +564,28 @@
 
 .barkin-social__rail {
   display: grid;
-  grid-auto-columns: minmax(260px, 352px);
+  grid-auto-columns: 352px;
   grid-auto-flow: column;
   gap: 10px;
   margin-top: 80px;
+  padding-inline: max(79px, calc((100vw - 1440px) / 2));
   overflow-x: auto;
+  scroll-padding-inline: max(79px, calc((100vw - 1440px) / 2));
+  scroll-snap-type: x mandatory;
   scrollbar-width: none;
 }
 
 .barkin-social__rail::-webkit-scrollbar { display: none; }
-.barkin-social__item { height: 471px; overflow: hidden; border-radius: 4px; scroll-snap-align: center; }
+.barkin-social__item {
+  height: 471px;
+  overflow: hidden;
+  border-radius: 4px;
+  opacity: 1;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  transition: opacity .25s ease;
+}
+.barkin-social__item.is-edge { opacity: .5; }
 
 .barkin-faq { padding: 79px 0; }
 .barkin-faq__intro { max-width: 473px; display: grid; gap: 20px; align-content: start; justify-items: start; }
@@ -563,6 +608,10 @@
   .barkin-showcase, .barkin-bundle, .barkin-social, .barkin-split, .barkin-guarantees, .barkin-mosaic, .barkin-review, .barkin-blog, .barkin-faq { padding-top: 50px; padding-bottom: 50px; }
   .barkin-showcase__rail, .barkin-bundle__grid, .barkin-social__rail { margin-top: 50px; grid-auto-columns: 82vw; }
   .barkin-showcase__rail {
+    padding-inline: 20px;
+    scroll-padding-inline: 20px;
+  }
+  .barkin-social__rail {
     padding-inline: 20px;
     scroll-padding-inline: 20px;
   }

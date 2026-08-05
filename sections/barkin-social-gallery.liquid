@@ -1,3 +1,5 @@
+<script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
+
 <section class="barkin-section barkin-social" data-node-id="20:1767">
   <div class="barkin-centered-intro">
     <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
@@ -6,20 +8,33 @@
       <a class="barkin-button" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
     {% endif %}
   </div>
-  <div class="barkin-social__rail">
-    {% for block in section.blocks %}
-      {%- liquid
-        if block.settings.image != blank
-          assign image_src = block.settings.image | image_url: width: 900
-        else
-          assign image_src = block.settings.fallback_asset | asset_url
-        endif
-      -%}
-      <a class="barkin-social__item" href="{{ block.settings.link | default: section.settings.button_link }}" {{ block.shopify_attributes }}>
-        <img class="barkin-card-image" src="{{ image_src }}" alt="{{ block.settings.alt | escape }}" width="704" height="942" loading="lazy">
-      </a>
-    {% endfor %}
-  </div>
+  <barkin-carousel
+    class="barkin-social__carousel"
+    data-initial-slide="{% if section.blocks.size > 4 %}1{% else %}0{% endif %}"
+    role="region"
+    aria-roledescription="carousel"
+    aria-label="{{ section.settings.carousel_label | escape }}"
+  >
+    <div class="barkin-social__rail" data-carousel-rail>
+      {% for block in section.blocks %}
+        {%- liquid
+          if block.settings.image != blank
+            assign image_src = block.settings.image | image_url: width: 900
+          else
+            assign image_src = block.settings.fallback_asset | asset_url
+          endif
+        -%}
+        <a
+          class="barkin-social__item"
+          href="{{ block.settings.link | default: section.settings.button_link | default: routes.root_url }}"
+          data-carousel-slide
+          {{ block.shopify_attributes }}
+        >
+          <img class="barkin-card-image" src="{{ image_src }}" alt="{{ block.settings.alt | escape }}" width="704" height="942" loading="lazy">
+        </a>
+      {% endfor %}
+    </div>
+  </barkin-carousel>
 </section>
 
 {% schema %}
@@ -32,7 +47,8 @@
     { "type": "textarea", "id": "heading", "label": "Heading", "default": "We’re Social, Come\nConnect With Us." },
     { "type": "textarea", "id": "text", "label": "Text", "default": "Join our community of discerning pets and their parents." },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Connect With Us" },
-    { "type": "url", "id": "button_link", "label": "Button link" }
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "text", "id": "carousel_label", "label": "Carousel accessibility label", "default": "Barkin and Meowson social gallery" }
   ],
   "blocks": [
     {
@@ -53,7 +69,9 @@
         { "type": "image" },
         { "type": "image", "settings": { "fallback_asset": "barkin/social-2.png" } },
         { "type": "image", "settings": { "fallback_asset": "barkin/social-3.png" } },
-        { "type": "image", "settings": { "fallback_asset": "barkin/social-4.png" } }
+        { "type": "image", "settings": { "fallback_asset": "barkin/social-4.png" } },
+        { "type": "image", "settings": { "fallback_asset": "barkin/social-1.png" } },
+        { "type": "image", "settings": { "fallback_asset": "barkin/social-2.png" } }
       ]
     }
   ]

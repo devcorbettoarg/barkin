@@ -13,6 +13,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1757",
+        "heading_tag": "h1",
         "image": "shopify://shop_images/hero-shopping.jpg",
         "fallback_asset": "barkin/hero-shopping.png",
         "heading": "Shopping for\nPremium Products",
@@ -274,6 +275,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1763",
+        "heading_tag": "h2",
         "fallback_asset": "barkin/hero-household.png",
         "heading": "Household\nProducts",
         "text": "A considered collection of home-care essentials designed around life with pets.",
@@ -425,25 +427,45 @@
             "alt": "A pet parent holding a dog",
             "link": ""
           }
+        },
+        "social_5": {
+          "type": "image",
+          "settings": {
+            "fallback_asset": "barkin/social-1.png",
+            "alt": "Pet parents and their dog",
+            "link": ""
+          }
+        },
+        "social_6": {
+          "type": "image",
+          "settings": {
+            "fallback_asset": "barkin/social-2.png",
+            "alt": "A dog with its parent",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "social_1",
         "social_2",
         "social_3",
-        "social_4"
+        "social_4",
+        "social_5",
+        "social_6"
       ],
       "settings": {
         "heading": "We’re Social, Come\nConnect With Us.",
         "text": "Join our community of discerning pets and their parents.",
         "button_label": "Connect With Us",
-        "button_link": ""
+        "button_link": "",
+        "carousel_label": "Barkin and Meowson social gallery"
       }
     },
     "barkin_quiz": {
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1768",
+        "heading_tag": "h2",
         "fallback_asset": "barkin/hero-quiz.png",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",

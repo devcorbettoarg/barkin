@@ -13,6 +13,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1774",
+        "heading_tag": "h1",
         "fallback_asset": "barkin/hero-shopping.png",
         "heading": "Shop Premium\nPet Care",
         "text": "Explore grooming, wellness and home-care products made for discerning pets and their parents.",
@@ -69,6 +70,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1777",
+        "heading_tag": "h2",
         "fallback_asset": "barkin/hero-quiz.png",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",

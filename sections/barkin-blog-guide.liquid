@@ -1,0 +1,100 @@
+{{ 'barkin-theme.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  if section.settings.feature_image != blank
+    assign feature_image = section.settings.feature_image | image_url: width: 1600
+  else
+    assign feature_image = 'barkin/blog-feature.png' | asset_url
+  endif
+-%}
+
+<section class="barkin-section barkin-blog" data-node-id="20:1766">
+  <div class="barkin-shell">
+    <header class="barkin-blog__header">
+      <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
+      <div class="barkin-blog__header-side">
+        <p class="barkin-copy">{{ section.settings.text }}</p>
+        {% if section.settings.button_label != blank %}
+          <div><a class="barkin-button" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a></div>
+        {% endif %}
+      </div>
+    </header>
+    <div class="barkin-blog__grid">
+      <article class="barkin-blog-feature">
+        <img class="barkin-card-image" src="{{ feature_image }}" alt="{{ section.settings.feature_title | escape }}" width="1430" height="1340" loading="lazy">
+        <div class="barkin-blog-feature__content">
+          <h3 class="barkin-card-title">{{ section.settings.feature_title }}</h3>
+          <a class="barkin-button" href="{{ section.settings.feature_link }}">{{ section.settings.article_label }}</a>
+        </div>
+      </article>
+      <div class="barkin-blog-list">
+        {% for block in section.blocks %}
+          {%- liquid
+            assign article = block.settings.article
+            if article != blank and article.image != blank
+              assign image_src = article.image | image_url: width: 500
+              assign article_title = article.title
+              assign article_url = article.url
+              assign article_tag = article.tags.first
+            else
+              assign image_src = block.settings.fallback_asset | asset_url
+              assign article_title = block.settings.title
+              assign article_url = block.settings.link
+              assign article_tag = block.settings.tag
+            endif
+          -%}
+          <article class="barkin-blog-item" {{ block.shopify_attributes }}>
+            <div class="barkin-blog-item__content">
+              <p class="barkin-copy" style="color:rgba(255,253,252,.5)">{{ article_tag }}</p>
+              <h3 class="barkin-product-card__title" style="color:inherit">{{ article_title }}</h3>
+              <a class="barkin-button" href="{{ article_url }}">{{ section.settings.article_label }}</a>
+            </div>
+            <img src="{{ image_src }}" alt="{{ article_title | escape }}" width="368" height="368" loading="lazy">
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Barkin blog guide",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 3,
+  "settings": [
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Barkin&Meowson’s\nPet-Care Guide." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Practical guides for healthier skin, better coats and happier pets." },
+    { "type": "text", "id": "button_label", "label": "Header button label", "default": "View Full Blog" },
+    { "type": "url", "id": "button_link", "label": "Header button link" },
+    { "type": "image_picker", "id": "feature_image", "label": "Feature image" },
+    { "type": "text", "id": "feature_title", "label": "Feature title", "default": "How Natural Flea & Tick Protection Works." },
+    { "type": "url", "id": "feature_link", "label": "Feature link" },
+    { "type": "text", "id": "article_label", "label": "Article button label", "default": "Read Article" }
+  ],
+  "blocks": [
+    {
+      "type": "article",
+      "name": "Article",
+      "settings": [
+        { "type": "article", "id": "article", "label": "Article" },
+        { "type": "select", "id": "fallback_asset", "label": "Design fallback", "default": "barkin/blog-1.png", "options": [{ "value": "barkin/blog-1.png", "label": "Article 1" }, { "value": "barkin/blog-2.png", "label": "Article 2" }, { "value": "barkin/blog-3.png", "label": "Article 3" }] },
+        { "type": "text", "id": "tag", "label": "Fallback tag", "default": "Pet Grooming" },
+        { "type": "textarea", "id": "title", "label": "Fallback title", "default": "How to Start Your Puppy's First At-Home Bath." },
+        { "type": "url", "id": "link", "label": "Fallback link" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barkin blog guide",
+      "blocks": [
+        { "type": "article" },
+        { "type": "article", "settings": { "fallback_asset": "barkin/blog-2.png", "title": "Can You Use Human Shampoo on Dogs & Cats?" } },
+        { "type": "article", "settings": { "fallback_asset": "barkin/blog-3.png", "title": "What’s the right shampoo for my pet’s coat type?" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

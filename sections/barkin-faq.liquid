@@ -1,0 +1,59 @@
+{{ 'barkin-theme.css' | asset_url | stylesheet_tag }}
+
+<section class="barkin-section barkin-faq" data-node-id="20:1769">
+  <div class="barkin-shell barkin-faq__layout">
+    <div class="barkin-faq__intro">
+      <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
+      <p class="barkin-copy">{{ section.settings.text }}</p>
+      {% if section.settings.button_label != blank %}
+        <a class="barkin-button" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+      {% endif %}
+    </div>
+    <div class="barkin-faq__items">
+      {% for block in section.blocks %}
+        <details {% if forloop.first and section.settings.open_first %}open{% endif %} {{ block.shopify_attributes }}>
+          <summary><span class="barkin-card-title">{{ block.settings.question }}</span></summary>
+          <div class="barkin-faq__answer rte">{{ block.settings.answer }}</div>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Barkin FAQ",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Frequently Asked\nQuestions." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Everything you need to choose and use the best care for your pet." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "See Full FAQ" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "checkbox", "id": "open_first", "label": "Open first question", "default": true }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question", "default": "What makes Barkin & Meowson different?" },
+        { "type": "richtext", "id": "answer", "label": "Answer", "default": "<p>We combine premium-grade ingredients, thoughtful formulas and a pet-first approach to everyday care.</p>" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barkin FAQ",
+      "blocks": [
+        { "type": "question" },
+        { "type": "question", "settings": { "question": "Are the products cruelty free?" } },
+        { "type": "question", "settings": { "question": "How do I choose the right routine?" } },
+        { "type": "question", "settings": { "question": "Can I build a custom bundle?" } },
+        { "type": "question", "settings": { "question": "When will my order arrive?" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

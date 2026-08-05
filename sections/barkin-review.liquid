@@ -1,0 +1,57 @@
+{{ 'barkin-theme.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  if section.settings.image != blank
+    assign feature_image = section.settings.image | image_url: width: 1600
+  else
+    assign feature_image = 'barkin/review-feature.png' | asset_url
+  endif
+  if section.settings.avatar != blank
+    assign avatar_image = section.settings.avatar | image_url: width: 100
+  else
+    assign avatar_image = 'barkin/reviewer.png' | asset_url
+  endif
+-%}
+
+<section class="barkin-section barkin-review" data-node-id="20:1764">
+  <div class="barkin-shell barkin-review__grid">
+    <div class="barkin-review__image">
+      <img class="barkin-card-image" src="{{ feature_image }}" alt="{{ section.settings.image_alt | escape }}" width="1430" height="1200" loading="lazy">
+    </div>
+    <article class="barkin-review__content">
+      <div class="barkin-review__quote">
+        <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
+        <p class="barkin-copy">{{ section.settings.quote }}</p>
+      </div>
+      <div class="barkin-review__buyer">
+        <div class="barkin-review__buyer-row">
+          <img src="{{ avatar_image }}" alt="" width="34" height="34" loading="lazy">
+          <div>
+            <div>{{ section.settings.name }}</div>
+            <div class="barkin-copy" style="color:rgba(255,253,252,.5)">{{ section.settings.buyer_label }}</div>
+          </div>
+        </div>
+        <p class="barkin-copy" style="color:rgba(255,253,252,.5)">✓ {{ section.settings.recommendation }}</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Barkin featured review",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Feature image" },
+    { "type": "text", "id": "image_alt", "label": "Image alt", "default": "Pet parents enjoying time with their dog" },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Other Products That\nCompliment This One." },
+    { "type": "textarea", "id": "quote", "label": "Review", "default": "Choosing the right care routine made a visible difference to our dog’s skin and coat." },
+    { "type": "image_picker", "id": "avatar", "label": "Buyer avatar" },
+    { "type": "text", "id": "name", "label": "Buyer name", "default": "Alessandra" },
+    { "type": "text", "id": "buyer_label", "label": "Buyer label", "default": "Verified Buyer" },
+    { "type": "text", "id": "recommendation", "label": "Recommendation", "default": "I recommend this product" }
+  ],
+  "presets": [{ "name": "Barkin featured review" }]
+}
+{% endschema %}

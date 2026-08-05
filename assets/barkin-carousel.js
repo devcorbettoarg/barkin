@@ -9,12 +9,25 @@ if (!customElements.get('barkin-carousel')) {
 
       this.onScroll = this.onScroll.bind(this);
       this.onResize = this.onResize.bind(this);
+      this.onPointerDown = this.onPointerDown.bind(this);
+      this.onPointerMove = this.onPointerMove.bind(this);
+      this.onPointerEnd = this.onPointerEnd.bind(this);
+      this.onClick = this.onClick.bind(this);
+      this.onDragStart = this.onDragStart.bind(this);
 
-      this.dots.forEach((dot) => {
-        dot.addEventListener('click', () => this.goTo(Number(dot.dataset.carouselDot)));
+      this.dotHandlers = this.dots.map((dot) => {
+        const handler = () => this.goTo(Number(dot.dataset.carouselDot));
+        dot.addEventListener('click', handler);
+        return handler;
       });
 
       this.rail.addEventListener('scroll', this.onScroll, { passive: true });
+      this.rail.addEventListener('pointerdown', this.onPointerDown);
+      this.rail.addEventListener('pointermove', this.onPointerMove);
+      this.rail.addEventListener('pointerup', this.onPointerEnd);
+      this.rail.addEventListener('pointercancel', this.onPointerEnd);
+      this.rail.addEventListener('click', this.onClick, true);
+      this.rail.addEventListener('dragstart', this.onDragStart);
       this.resizeObserver = new ResizeObserver(this.onResize);
       this.resizeObserver.observe(this.rail);
 
@@ -26,8 +39,63 @@ if (!customElements.get('barkin-carousel')) {
 
     disconnectedCallback() {
       this.rail?.removeEventListener('scroll', this.onScroll);
+      this.rail?.removeEventListener('pointerdown', this.onPointerDown);
+      this.rail?.removeEventListener('pointermove', this.onPointerMove);
+      this.rail?.removeEventListener('pointerup', this.onPointerEnd);
+      this.rail?.removeEventListener('pointercancel', this.onPointerEnd);
+      this.rail?.removeEventListener('click', this.onClick, true);
+      this.rail?.removeEventListener('dragstart', this.onDragStart);
+      this.dots?.forEach((dot, index) => dot.removeEventListener('click', this.dotHandlers?.[index]));
       this.resizeObserver?.disconnect();
       if (this.scrollFrame) cancelAnimationFrame(this.scrollFrame);
+    }
+
+    onPointerDown(event) {
+      if (event.pointerType === 'touch' || event.button !== 0) return;
+      if (event.target.closest('button, input, select, textarea')) return;
+
+      this.dragPointerId = event.pointerId;
+      this.dragStartX = event.clientX;
+      this.dragStartScrollLeft = this.rail.scrollLeft;
+      this.isPointerDown = true;
+      this.hasDragged = false;
+      this.rail.setPointerCapture?.(event.pointerId);
+      this.rail.classList.add('is-dragging');
+    }
+
+    onPointerMove(event) {
+      if (!this.isPointerDown || event.pointerId !== this.dragPointerId) return;
+
+      const distance = event.clientX - this.dragStartX;
+      if (Math.abs(distance) > 5) this.hasDragged = true;
+      if (!this.hasDragged) return;
+
+      event.preventDefault();
+      this.rail.scrollLeft = this.dragStartScrollLeft - distance;
+    }
+
+    onPointerEnd(event) {
+      if (!this.isPointerDown || event.pointerId !== this.dragPointerId) return;
+
+      this.isPointerDown = false;
+      this.rail.classList.remove('is-dragging');
+      if (this.rail.hasPointerCapture?.(event.pointerId)) {
+        this.rail.releasePointerCapture(event.pointerId);
+      }
+
+      window.setTimeout(() => {
+        this.hasDragged = false;
+      }, 0);
+    }
+
+    onClick(event) {
+      if (!this.hasDragged) return;
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    onDragStart(event) {
+      if (event.target.closest('img, a')) event.preventDefault();
     }
 
     getSideInset() {

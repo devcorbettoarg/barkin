@@ -213,6 +213,21 @@
   scrollbar-width: none;
 }
 
+[data-carousel-rail] {
+  cursor: grab;
+}
+
+[data-carousel-rail].is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
+}
+
+[data-carousel-rail].is-dragging a,
+[data-carousel-rail].is-dragging img {
+  pointer-events: none;
+}
+
 .barkin-showcase__carousel {
   display: block;
 }

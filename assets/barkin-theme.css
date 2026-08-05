@@ -24,16 +24,24 @@
 .header-wrapper {
   background: var(--barkin-white);
   color: var(--barkin-black);
+  font-family: Inter, var(--font-body-family), sans-serif;
 }
 
 .header-wrapper .header {
   max-width: 1440px;
 }
 
+@media screen and (min-width: 990px) {
+  .header-wrapper .header {
+    min-height: 99px;
+  }
+}
+
 .footer {
   background: var(--barkin-black);
   color: var(--barkin-white);
   border-top: 1px solid var(--barkin-border);
+  font-family: Inter, var(--font-body-family), sans-serif;
 }
 
 .footer .footer-block__heading,
@@ -54,7 +62,7 @@
   background: var(--barkin-black);
   color: var(--barkin-white);
   border-top: 1px solid var(--barkin-border);
-  font-family: var(--font-body-family), Inter, sans-serif;
+  font-family: Inter, var(--font-body-family), sans-serif;
 }
 
 .barkin-shell {
@@ -169,6 +177,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: Roboto, Inter, sans-serif;
   font-size: 1.8rem;
   white-space: nowrap;
 }
@@ -681,6 +690,7 @@
   }
   .barkin-split__grid, .barkin-guarantees__layout, .barkin-mosaic__header, .barkin-review__grid, .barkin-blog__header, .barkin-blog__grid, .barkin-faq__layout { grid-template-columns: 1fr; gap: 40px; }
   .barkin-split-card { aspect-ratio: 4 / 5; }
+  .barkin-launch-carousel { aspect-ratio: 4 / 5; }
   .barkin-split-card__content { left: 24px; right: 24px; bottom: 24px; }
   .barkin-guarantee { grid-template-columns: 64px 1fr; }
   .barkin-guarantee img { width: 64px; height: 64px; }

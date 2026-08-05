@@ -34,6 +34,11 @@
               assign article_title = article.title
               assign article_url = article.url
               assign article_tag = article.tags.first
+            elsif block.settings.image != blank
+              assign image_src = block.settings.image | image_url: width: 500
+              assign article_title = block.settings.title
+              assign article_url = block.settings.link
+              assign article_tag = block.settings.tag
             else
               assign image_src = block.settings.fallback_asset | asset_url
               assign article_title = block.settings.title
@@ -77,6 +82,7 @@
       "name": "Article",
       "settings": [
         { "type": "article", "id": "article", "label": "Article" },
+        { "type": "image_picker", "id": "image", "label": "Fallback image from Shopify Files" },
         { "type": "select", "id": "fallback_asset", "label": "Design fallback", "default": "barkin/blog-1.png", "options": [{ "value": "barkin/blog-1.png", "label": "Article 1" }, { "value": "barkin/blog-2.png", "label": "Article 2" }, { "value": "barkin/blog-3.png", "label": "Article 3" }] },
         { "type": "text", "id": "tag", "label": "Fallback tag", "default": "Pet Grooming" },
         { "type": "textarea", "id": "title", "label": "Fallback title", "default": "How to Start Your Puppy's First At-Home Bath." },

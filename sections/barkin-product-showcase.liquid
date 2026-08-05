@@ -27,6 +27,11 @@
             assign card_title = card_product.title
             assign card_price = card_product.price | money
             assign card_url = card_product.url
+          elsif block.settings.image != blank
+            assign card_image = block.settings.image | image_url: width: 900
+            assign card_title = block.settings.title
+            assign card_price = block.settings.price
+            assign card_url = block.settings.link | default: routes.all_products_collection_url
           else
             assign card_image = block.settings.fallback_asset | asset_url
             assign card_title = block.settings.title
@@ -115,6 +120,7 @@
       "name": "Product",
       "settings": [
         { "type": "product", "id": "product", "label": "Product" },
+        { "type": "image_picker", "id": "image", "label": "Fallback image from Shopify Files" },
         {
           "type": "select",
           "id": "fallback_asset",

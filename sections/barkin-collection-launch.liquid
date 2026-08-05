@@ -1,0 +1,61 @@
+{{ 'barkin-theme.css' | asset_url | stylesheet_tag }}
+
+<section class="barkin-section barkin-split" data-node-id="20:1760">
+  <div class="barkin-shell barkin-split__grid">
+    {% for block in section.blocks %}
+      {%- liquid
+        if block.settings.image != blank
+          assign image_src = block.settings.image | image_url: width: 1600
+        else
+          assign image_src = block.settings.fallback_asset | asset_url
+        endif
+      -%}
+      <article class="barkin-split-card barkin-split-card--{{ block.settings.style }}" {{ block.shopify_attributes }}>
+        <img class="barkin-card-image" src="{{ image_src }}" alt="{{ block.settings.heading | escape }}" width="1430" height="1430" loading="lazy">
+        <div class="barkin-split-card__content">
+          <h2 class="{% if block.settings.style == 'dark' %}barkin-title{% else %}barkin-card-title{% endif %}">
+            {{ block.settings.heading | newline_to_br }}
+          </h2>
+          <p class="barkin-copy">{{ block.settings.text }}</p>
+          {% if block.settings.button_label != blank %}
+            <div><a class="barkin-button" href="{{ block.settings.link }}">{{ block.settings.button_label }}</a></div>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Barkin collection launch",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 2,
+  "settings": [],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Launch card",
+      "settings": [
+        { "type": "select", "id": "style", "label": "Style", "default": "dark", "options": [{ "value": "dark", "label": "Dark overlay" }, { "value": "light", "label": "Light product" }] },
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "select", "id": "fallback_asset", "label": "Design fallback", "default": "barkin/collection-summer.png", "options": [{ "value": "barkin/collection-summer.png", "label": "Summer" }, { "value": "barkin/collection-product.png", "label": "Product" }] },
+        { "type": "textarea", "id": "heading", "label": "Heading", "default": "Summer\nEssentials" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "The care products you need to maintain impeccable hygiene and freshly scented company." },
+        { "type": "text", "id": "button_label", "label": "Button label", "default": "View All Essentials" },
+        { "type": "url", "id": "link", "label": "Link" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barkin collection launch",
+      "blocks": [
+        { "type": "card" },
+        { "type": "card", "settings": { "style": "light", "fallback_asset": "barkin/collection-product.png", "heading": "Easy Detangling", "button_label": "" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

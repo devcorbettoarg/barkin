@@ -43,29 +43,33 @@
           {% if link.links != blank %}
             <div class="barkin-site-header__mega">
               <div class="barkin-site-header__mega-inner">
-                <div class="barkin-site-header__mega-links">
-                  {% for child_link in link.links %}
-                    <div class="barkin-site-header__mega-column">
-                      <a class="barkin-site-header__mega-heading" href="{{ child_link.url }}">{{ child_link.title }}</a>
-                      {% for grandchild_link in child_link.links %}
-                        <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
-                      {% endfor %}
-                    </div>
-                  {% endfor %}
+                <div class="barkin-site-header__mega-content">
+                  <div class="barkin-site-header__mega-intro">
+                    {% if section.settings.mega_title != blank %}
+                      <h2>{{ section.settings.mega_title }}</h2>
+                    {% endif %}
+                    {% if section.settings.mega_text != blank %}
+                      <p>{{ section.settings.mega_text }}</p>
+                    {% endif %}
+                  </div>
+
+                  <div class="barkin-site-header__mega-links">
+                    {% for child_link in link.links %}
+                      <div class="barkin-site-header__mega-column">
+                        <a class="barkin-site-header__mega-heading" href="{{ child_link.url }}">{{ child_link.title }}</a>
+                        {% for grandchild_link in child_link.links %}
+                          <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                        {% endfor %}
+                      </div>
+                    {% endfor %}
+                  </div>
                 </div>
 
                 <div class="barkin-site-header__mega-products">
                   {% for i in (1..2) %}
                     {%- liquid
                       assign product_setting_id = 'mega_product_' | append: i
-                      assign title_setting_id = product_setting_id | append: '_title'
-                      assign description_setting_id = product_setting_id | append: '_description'
                       assign mega_product = section.settings[product_setting_id]
-                      assign mega_product_title = section.settings[title_setting_id] | default: mega_product.title
-                      assign mega_product_description = section.settings[description_setting_id]
-                      if mega_product_description == blank
-                        assign mega_product_description = mega_product.description | strip_html | truncate: 90
-                      endif
                     -%}
                     {% if mega_product != blank %}
                       <article class="barkin-site-header__mega-product">
@@ -81,10 +85,7 @@
                           </span>
                           <span class="barkin-site-header__mega-product-info">
                             <span>
-                              <strong>{{ mega_product_title }}</strong>
-                              {% if mega_product_description != blank %}
-                                <span class="barkin-site-header__mega-product-description">{{ mega_product_description }}</span>
-                              {% endif %}
+                              <strong>{{ mega_product.title }}</strong>
                               <small>{{ mega_product.price | money }}</small>
                             </span>
                           </span>
@@ -171,13 +172,11 @@
     { "type": "range", "id": "logo_width", "min": 120, "max": 320, "step": 10, "unit": "px", "label": "Logo width", "default": 240 },
     { "type": "text", "id": "logo_kicker", "label": "Fallback logo small text", "default": "Royale's Care" },
     { "type": "text", "id": "logo_text", "label": "Fallback logo text", "default": "BARKIN&MEOWSON" },
+    { "type": "text", "id": "mega_title", "label": "Mega menu title", "default": "Premium Petcare Products." },
+    { "type": "textarea", "id": "mega_text", "label": "Mega menu description", "default": "Discover premium grooming and care products thoughtfully selected for healthier, happier pets." },
     { "type": "header", "content": "Mega menu products" },
     { "type": "product", "id": "mega_product_1", "label": "Featured product 1" },
-    { "type": "text", "id": "mega_product_1_title", "label": "Product 1 custom title" },
-    { "type": "textarea", "id": "mega_product_1_description", "label": "Product 1 custom description" },
-    { "type": "product", "id": "mega_product_2", "label": "Featured product 2" },
-    { "type": "text", "id": "mega_product_2_title", "label": "Product 2 custom title" },
-    { "type": "textarea", "id": "mega_product_2_description", "label": "Product 2 custom description" }
+    { "type": "product", "id": "mega_product_2", "label": "Featured product 2" }
   ],
   "enabled_on": {
     "groups": ["header"]

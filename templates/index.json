@@ -157,6 +157,7 @@
           "type": "card",
           "settings": {
             "style": "light",
+            "image": "shopify://shop_images/product-white.jpg",
             "fallback_asset": "barkin/collection-product.png",
             "heading": "Easy Detangling",
             "text": "Premium care for an easier, smoother grooming routine.",

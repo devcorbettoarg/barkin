@@ -22,7 +22,7 @@
     {% if section.index == 1 %}fetchpriority="high"{% endif %}
   >
   <div class="barkin-hero__content">
-    <h1 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h1>
+    <{{ section.settings.heading_tag }} class="barkin-title">{{ section.settings.heading | newline_to_br }}</{{ section.settings.heading_tag }}>
     {% if section.settings.text != blank %}
       <div class="barkin-copy">{{ section.settings.text }}</div>
     {% endif %}
@@ -56,6 +56,7 @@
       ]
     },
     { "type": "textarea", "id": "heading", "label": "Heading", "default": "Shopping for\nPremium Products" },
+    { "type": "select", "id": "heading_tag", "label": "Heading level", "default": "h2", "options": [{ "value": "h1", "label": "H1" }, { "value": "h2", "label": "H2" }] },
     {
       "type": "textarea",
       "id": "text",

@@ -9,7 +9,7 @@
     </div>
     <div class="barkin-faq__items">
       {% for block in section.blocks %}
-        <details {% if forloop.first and section.settings.open_first %}open{% endif %} {{ block.shopify_attributes }}>
+        <details name="BarkinFaq-{{ section.id }}" {% if forloop.first and section.settings.open_first %}open{% endif %} {{ block.shopify_attributes }}>
           <summary><span class="barkin-card-title">{{ block.settings.question }}</span></summary>
           <div class="barkin-faq__answer rte">{{ block.settings.answer }}</div>
         </details>

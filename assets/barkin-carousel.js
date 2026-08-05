@@ -81,15 +81,17 @@ if (!customElements.get('barkin-carousel')) {
         dot.setAttribute('aria-current', isActive ? 'true' : 'false');
       });
 
-      const railRect = this.rail.getBoundingClientRect();
-      const visibleLeft = railRect.left + this.getSideInset();
-      const visibleRight = railRect.right - this.getSideInset();
+      if (this.dataset.carouselEdges !== 'false') {
+        const railRect = this.rail.getBoundingClientRect();
+        const visibleLeft = railRect.left + this.getSideInset();
+        const visibleRight = railRect.right - this.getSideInset();
 
-      this.cards.forEach((card) => {
-        const cardRect = card.getBoundingClientRect();
-        const isFullyVisible = cardRect.left >= visibleLeft - 1 && cardRect.right <= visibleRight + 1;
-        card.classList.toggle('is-edge', !isFullyVisible);
-      });
+        this.cards.forEach((card) => {
+          const cardRect = card.getBoundingClientRect();
+          const isFullyVisible = cardRect.left >= visibleLeft - 1 && cardRect.right <= visibleRight + 1;
+          card.classList.toggle('is-edge', !isFullyVisible);
+        });
+      }
     }
   }
 

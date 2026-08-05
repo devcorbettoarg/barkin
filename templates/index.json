@@ -83,35 +83,68 @@
     "barkin_launch": {
       "type": "barkin-collection-launch",
       "blocks": {
-        "launch_1": {
-          "type": "card",
+        "launch_product_1": {
+          "type": "product_slide",
           "settings": {
-            "style": "dark",
-            "fallback_asset": "barkin/collection-summer.png",
-            "heading": "Summer\nEssentials",
-            "text": "The care products you need to maintain impeccable hygiene and freshly scented company.",
-            "button_label": "View All Essentials",
-            "link": "shopify://collections/all"
-          }
-        },
-        "launch_2": {
-          "type": "card",
-          "settings": {
-            "style": "light",
+            "product": "",
             "image": "shopify://shop_images/product-white.jpg",
             "fallback_asset": "barkin/collection-product.png",
+            "product_title": "Gentle Care Shampoo",
+            "price": "$19.95",
+            "link": "",
             "heading": "Easy Detangling",
-            "text": "Premium care for an easier, smoother grooming routine.",
-            "button_label": "",
+            "text": "Premium care for an easier, smoother grooming routine."
+          }
+        },
+        "launch_product_2": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "fallback_asset": "barkin/product-black.png",
+            "product_title": "Gentle Care Shampoo",
+            "price": "$19.95",
+            "link": "",
+            "heading": "Gentle Cleansing",
+            "text": "A premium everyday cleanse for healthy skin and a beautiful coat."
+          }
+        },
+        "launch_product_3": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "fallback_asset": "barkin/product-spray.png",
+            "product_title": "Daily Care Spray",
+            "price": "$19.95",
+            "link": "",
+            "heading": "Everyday Freshness",
+            "text": "Simple daily care between washes."
+          }
+        },
+        "launch_product_4": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "fallback_asset": "barkin/product-dental.png",
+            "product_title": "Dental Essentials",
+            "price": "$19.95",
             "link": ""
           }
         }
       },
       "block_order": [
-        "launch_1",
-        "launch_2"
+        "launch_product_1",
+        "launch_product_2",
+        "launch_product_3",
+        "launch_product_4"
       ],
-      "settings": {}
+      "settings": {
+        "left_heading": "Summer\nEssentials",
+        "left_text": "The care products you need to maintain impeccable hygiene and freshly scented company.",
+        "left_button_label": "View All Essentials",
+        "left_link": "shopify://collections/all",
+        "carousel_label": "Featured collection products",
+        "pagination_label": "Choose featured product"
+      }
     },
     "barkin_guarantees": {
       "type": "barkin-guarantees",

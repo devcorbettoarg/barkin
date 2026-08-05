@@ -58,10 +58,9 @@
 }
 
 .barkin-shell {
+  width: calc(100% - 10vw);
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .barkin-title {
@@ -343,6 +342,114 @@
 .barkin-split-card--light .barkin-card-image { object-fit: contain; }
 .barkin-split-card--light .barkin-split-card__content { align-items: center; text-align: center; }
 
+.barkin-launch-carousel {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--barkin-border);
+  border-radius: 4px;
+  background: #eeece9;
+  color: var(--barkin-black);
+}
+
+.barkin-launch-carousel__rail {
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-flow: column;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.barkin-launch-carousel__rail::-webkit-scrollbar {
+  display: none;
+}
+
+.barkin-launch-slide {
+  position: relative;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.barkin-launch-slide__header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.barkin-launch-slide__form {
+  margin: 0;
+}
+
+.barkin-launch-slide__bag {
+  display: flex;
+  width: 39px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--barkin-white);
+  border-radius: 50%;
+  background: var(--barkin-black);
+  cursor: pointer;
+}
+
+.barkin-launch-slide__bag img {
+  width: 18px;
+  height: 19px;
+}
+
+.barkin-launch-slide__bag:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+}
+
+.barkin-launch-slide__media {
+  position: absolute;
+  inset: 76px 0 92px;
+  display: block;
+}
+
+.barkin-launch-slide__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.barkin-launch-slide__content {
+  position: absolute;
+  z-index: 1;
+  left: 40px;
+  right: 40px;
+  bottom: 42px;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.barkin-launch-carousel__dots {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 14px;
+  margin: 0;
+  transform: translateX(-50%);
+}
+
 .barkin-guarantees {
   padding: 79px 0;
 }
@@ -350,8 +457,9 @@
 .barkin-guarantees__layout,
 .barkin-faq__layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: minmax(0, 473px) minmax(0, 715px);
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .barkin-guarantees__intro { max-width: 473px; display: grid; gap: 20px; align-content: start; }
@@ -367,8 +475,9 @@
 
 .barkin-mosaic__header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: minmax(0, 473px) minmax(0, 715px);
+  justify-content: space-between;
+  gap: 40px;
   margin-bottom: 70px;
 }
 
@@ -407,9 +516,9 @@
   padding: 79px 0;
 }
 
-.barkin-blog__header { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-bottom: 70px; }
+.barkin-blog__header { display: grid; grid-template-columns: minmax(0, 715px) minmax(0, 594px); justify-content: space-between; gap: 40px; margin-bottom: 70px; }
 .barkin-blog__header-side { max-width: 473px; display: grid; gap: 20px; align-content: start; }
-.barkin-blog__grid { display: grid; grid-template-columns: 1fr .83fr; gap: 60px; }
+.barkin-blog__grid { display: grid; grid-template-columns: minmax(0, 715px) minmax(0, 594px); justify-content: space-between; gap: 40px; }
 .barkin-blog-feature { position: relative; min-height: 670px; overflow: hidden; border: 1px solid var(--barkin-border); border-radius: 4px; }
 .barkin-blog-feature::after { content: ""; position: absolute; inset: 40% 0 0; background: linear-gradient(0deg, rgba(0,0,0,.75), transparent); }
 .barkin-blog-feature__content { position: absolute; z-index: 1; left: 40px; right: 40px; bottom: 40px; display: grid; gap: 20px; justify-items: start; }
@@ -444,7 +553,7 @@
 .barkin-faq__answer { padding: 0 40px 20px 0; font-size: 1.4rem; line-height: 1.8rem; }
 
 @media screen and (max-width: 749px) {
-  .barkin-shell { padding-left: 20px; padding-right: 20px; }
+  .barkin-shell { width: calc(100% - 40px); }
   .barkin-title { font-size: 4rem; line-height: .95; }
   .barkin-card-title { font-size: 2.8rem; }
   .barkin-hero { min-height: 650px; }

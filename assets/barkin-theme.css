@@ -1087,6 +1087,9 @@ main[data-template="product"] .related-products .price {
   background: var(--barkin-black);
 }
 
+.barkin-hero--mobile-only { display: none; }
+.barkin-desktop-only { display: block; }
+
 .barkin-hero__image,
 .barkin-card-image {
   width: 100%;
@@ -1718,6 +1721,9 @@ main[data-template="product"] .related-products .price {
 .barkin-faq__answer { padding: 0 40px 20px 0; font-size: 1.4rem; line-height: 1.8rem; }
 
 @media screen and (max-width: 749px) {
+  .barkin-hero--desktop-only { display: none; }
+  .barkin-hero--mobile-only { display: block; }
+  .barkin-desktop-only { display: none; }
   .barkin-site-header__main {
     width: calc(100% - 40px);
     min-height: 72px;
@@ -1847,7 +1853,7 @@ main[data-template="product"] .related-products .price {
   .barkin-shell { width: calc(100% - 40px); }
   .barkin-title { font-size: 4rem; line-height: .95; }
   .barkin-card-title { font-size: 2.8rem; }
-  .barkin-hero { min-height: 650px; }
+  .barkin-hero { min-height: var(--barkin-hero-mobile-height, 650px); }
   .barkin-hero__content { left: 20px; right: 20px; bottom: 40px; width: auto; }
   .barkin-hero::after { background: linear-gradient(0deg, rgba(0,0,0,.72), transparent 72%); }
   .barkin-marquee__track { gap: 24px; }

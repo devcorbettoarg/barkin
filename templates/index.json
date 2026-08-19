@@ -20,7 +20,23 @@
         "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
         "button_label": "",
         "button_link": "",
-        "desktop_height": 600
+        "desktop_height": 600,
+        "desktop_only": true
+      }
+    },
+    "barkin_mobile_quiz": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "1:3876",
+        "image": "shopify://shop_images/hero-quiz.jpg",
+        "fallback_asset": "barkin/hero-quiz.png",
+        "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
+        "heading_tag": "h2",
+        "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
+        "button_label": "Take the product quiz",
+        "button_link": "",
+        "desktop_height": 596,
+        "mobile_only": true
       }
     },
     "barkin_promise": {
@@ -371,7 +387,8 @@
         "text": "A considered collection of home-care essentials designed around life with pets.",
         "button_label": "Shop Household",
         "button_link": "shopify://collections/all",
-        "desktop_height": 875
+        "desktop_height": 875,
+        "desktop_only": true
       }
     },
     "barkin_review": {
@@ -431,8 +448,25 @@
         "review_5"
       ],
       "settings": {
+        "desktop_only": true,
         "carousel_label": "Customer reviews",
         "pagination_label": "Choose customer review"
+      }
+    },
+    "barkin_mobile_quiz_mid": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "1:18429",
+        "image": "shopify://shop_images/hero-quiz.jpg",
+        "fallback_asset": "barkin/hero-quiz.png",
+        "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
+        "heading_tag": "h2",
+        "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
+        "button_label": "Take the product quiz",
+        "button_link": "",
+        "desktop_height": 596,
+        "mobile_height": 596,
+        "mobile_only": true
       }
     },
     "barkin_bundle": {
@@ -625,7 +659,8 @@
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
         "button_label": "Take the product quiz",
         "button_link": "",
-        "desktop_height": 875
+        "desktop_height": 875,
+        "mobile_height": 596
       }
     },
     "barkin_faq": {
@@ -685,11 +720,13 @@
   },
   "order": [
     "barkin_hero",
+    "barkin_mobile_quiz",
     "barkin_promise",
     "barkin_products",
     "barkin_launch",
     "barkin_guarantees",
     "barkin_ingredients",
+    "barkin_mobile_quiz_mid",
     "barkin_household",
     "barkin_review",
     "barkin_bundle",

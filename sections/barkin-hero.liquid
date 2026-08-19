@@ -9,8 +9,8 @@
 -%}
 
 <section
-  class="barkin-hero"
-  style="--barkin-hero-height: {{ section.settings.desktop_height }}px;"
+  class="barkin-hero{% if section.settings.mobile_only %} barkin-hero--mobile-only{% endif %}{% if section.settings.desktop_only %} barkin-hero--desktop-only{% endif %}"
+  style="--barkin-hero-height: {{ section.settings.desktop_height }}px; --barkin-hero-mobile-height: {{ section.settings.mobile_height | default: 650 }}px;"
   data-node-id="{{ section.settings.figma_node }}"
 >
   <img
@@ -66,7 +66,10 @@
     },
     { "type": "text", "id": "button_label", "label": "Button label" },
     { "type": "url", "id": "button_link", "label": "Button link" },
-    { "type": "range", "id": "desktop_height", "min": 500, "max": 1000, "step": 25, "unit": "px", "label": "Desktop height", "default": 875 }
+    { "type": "range", "id": "desktop_height", "min": 500, "max": 1000, "step": 25, "unit": "px", "label": "Desktop height", "default": 875 },
+    { "type": "range", "id": "mobile_height", "min": 300, "max": 1000, "step": 1, "unit": "px", "label": "Mobile height", "default": 650 },
+    { "type": "checkbox", "id": "mobile_only", "label": "Show only on mobile", "default": false },
+    { "type": "checkbox", "id": "desktop_only", "label": "Show only on desktop", "default": false }
   ],
   "presets": [{ "name": "Barkin hero" }]
 }

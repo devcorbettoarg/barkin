@@ -1,6 +1,6 @@
 <script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
 
-<section class="barkin-section barkin-review" data-node-id="20:1764">
+<section class="barkin-section barkin-review{% if section.settings.desktop_only %} barkin-desktop-only{% endif %}" data-node-id="20:1764">
   <barkin-carousel
     class="barkin-review-carousel"
     data-carousel-edges="false"
@@ -82,6 +82,7 @@
   "class": "section",
   "max_blocks": 5,
   "settings": [
+    { "type": "checkbox", "id": "desktop_only", "label": "Show only on desktop", "default": false },
     { "type": "text", "id": "carousel_label", "label": "Carousel accessibility label", "default": "Customer reviews" },
     { "type": "text", "id": "pagination_label", "label": "Pagination accessibility label", "default": "Choose customer review" }
   ],

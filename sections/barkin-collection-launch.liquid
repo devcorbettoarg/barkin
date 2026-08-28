@@ -4,7 +4,7 @@
   if section.settings.left_image != blank
     assign left_image = section.settings.left_image | image_url: width: 1600
   else
-    assign left_image = 'barkin/collection-summer.png' | asset_url
+    assign left_image = 'barkin/collection-summer.webp' | asset_url
   endif
 -%}
 
@@ -151,12 +151,12 @@
           "type": "select",
           "id": "fallback_asset",
           "label": "Design fallback",
-          "default": "barkin/collection-product.png",
+          "default": "barkin/collection-product.webp",
           "options": [
-            { "value": "barkin/collection-product.png", "label": "White product" },
-            { "value": "barkin/product-black.png", "label": "Black product" },
-            { "value": "barkin/product-spray.png", "label": "Spray product" },
-            { "value": "barkin/product-dental.png", "label": "Dental product" }
+            { "value": "barkin/collection-product.webp", "label": "White product" },
+            { "value": "barkin/product-black.webp", "label": "Black product" },
+            { "value": "barkin/product-spray.webp", "label": "Spray product" },
+            { "value": "barkin/product-dental.webp", "label": "Dental product" }
           ]
         },
         { "type": "text", "id": "product_title", "label": "Fallback product title", "default": "Gentle Care Shampoo" },
@@ -172,10 +172,10 @@
       "name": "Barkin collection launch",
       "blocks": [
         { "type": "product_slide" },
-        { "type": "product_slide", "settings": { "fallback_asset": "barkin/product-black.png", "product_title": "Gentle Care Shampoo", "heading": "Gentle Cleansing" } },
-        { "type": "product_slide", "settings": { "fallback_asset": "barkin/product-spray.png", "product_title": "Daily Care Spray", "heading": "Everyday Freshness" } },
-        { "type": "product_slide", "settings": { "fallback_asset": "barkin/product-dental.png", "product_title": "Dental Essentials", "heading": "Daily Dental Care" } },
-        { "type": "product_slide", "settings": { "fallback_asset": "barkin/collection-product.png", "product_title": "Moisturising Conditioner", "heading": "Soft, Healthy Coats" } }
+        { "type": "product_slide", "settings": { "fallback_asset": "barkin/product-black.webp", "product_title": "Gentle Care Shampoo", "heading": "Gentle Cleansing" } },
+        { "type": "product_slide", "settings": { "fallback_asset": "barkin/product-spray.webp", "product_title": "Daily Care Spray", "heading": "Everyday Freshness" } },
+        { "type": "product_slide", "settings": { "fallback_asset": "barkin/product-dental.webp", "product_title": "Dental Essentials", "heading": "Daily Dental Care" } },
+        { "type": "product_slide", "settings": { "fallback_asset": "barkin/collection-product.webp", "product_title": "Moisturising Conditioner", "heading": "Soft, Healthy Coats" } }
       ]
     }
   ]

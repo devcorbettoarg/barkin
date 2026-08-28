@@ -15,7 +15,7 @@
         "figma_node": "20:1774",
         "heading_tag": "h1",
         "image": "shopify://shop_images/hero-shopping.jpg",
-        "fallback_asset": "barkin/hero-shopping.png",
+        "fallback_asset": "barkin/hero-shopping.webp",
         "heading": "Shopping For\nPremium Products",
         "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
         "button_label": "",
@@ -46,10 +46,10 @@
     "barkin_bundle": {
       "type": "barkin-bundle-builder",
       "blocks": {
-        "bundle_1": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-shampoo.jpg", "fallback_asset": "barkin/bundle-shampoo.png", "heading": "Shampoo", "text": "Get your pet squeaky clean." } },
-        "bundle_2": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-conditioner.jpg", "fallback_asset": "barkin/bundle-conditioner.png", "heading": "Conditioner", "text": "Give them a beautifully soft coat." } },
-        "bundle_3": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-grooming.jpg", "fallback_asset": "barkin/bundle-grooming.png", "heading": "Grooming Essentials", "text": "The devil is in the details." } },
-        "bundle_4": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-home.jpg", "fallback_asset": "barkin/bundle-home.png", "heading": "Home Care", "text": "Easy cleanup, no hassle." } }
+        "bundle_1": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-shampoo.jpg", "fallback_asset": "barkin/bundle-shampoo.webp", "heading": "Shampoo", "text": "Get your pet squeaky clean." } },
+        "bundle_2": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-conditioner.jpg", "fallback_asset": "barkin/bundle-conditioner.webp", "heading": "Conditioner", "text": "Give them a beautifully soft coat." } },
+        "bundle_3": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-grooming.jpg", "fallback_asset": "barkin/bundle-grooming.webp", "heading": "Grooming Essentials", "text": "The devil is in the details." } },
+        "bundle_4": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-home.jpg", "fallback_asset": "barkin/bundle-home.webp", "heading": "Home Care", "text": "Easy cleanup, no hassle." } }
       },
       "block_order": ["bundle_1", "bundle_2", "bundle_3", "bundle_4"],
       "settings": {
@@ -65,7 +65,7 @@
         "figma_node": "20:1777",
         "heading_tag": "h2",
         "image": "shopify://shop_images/hero-quiz.jpg",
-        "fallback_asset": "barkin/hero-quiz.png",
+        "fallback_asset": "barkin/hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
         "button_label": "Take the product quiz",

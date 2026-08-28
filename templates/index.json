@@ -14,7 +14,7 @@
       "settings": {
         "figma_node": "20:1757",
         "image": "shopify://shop_images/hero-shopping.jpg",
-        "fallback_asset": "barkin/hero-shopping.png",
+        "fallback_asset": "barkin/hero-shopping.webp",
         "heading": "Shopping for\nPremium Products",
         "heading_tag": "h1",
         "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
@@ -29,7 +29,7 @@
       "settings": {
         "figma_node": "1:3876",
         "image": "shopify://shop_images/hero-quiz.jpg",
-        "fallback_asset": "barkin/hero-quiz.png",
+        "fallback_asset": "barkin/hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
@@ -85,7 +85,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-black.jpg",
-            "fallback_asset": "barkin/product-black.png",
+            "fallback_asset": "barkin/product-black.webp",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",
             "link": ""
@@ -96,7 +96,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-white.jpg",
-            "fallback_asset": "barkin/product-white.png",
+            "fallback_asset": "barkin/product-white.webp",
             "title": "Moisturising Conditioner",
             "price": "$19.95",
             "link": ""
@@ -107,7 +107,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-spray.jpg",
-            "fallback_asset": "barkin/product-spray.png",
+            "fallback_asset": "barkin/product-spray.webp",
             "title": "Daily Care Spray",
             "price": "$19.95",
             "link": ""
@@ -118,7 +118,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-dental.jpg",
-            "fallback_asset": "barkin/product-dental.png",
+            "fallback_asset": "barkin/product-dental.webp",
             "title": "Dental Essentials",
             "price": "$19.95",
             "link": ""
@@ -129,7 +129,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-black.jpg",
-            "fallback_asset": "barkin/product-black.png",
+            "fallback_asset": "barkin/product-black.webp",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",
             "link": ""
@@ -140,7 +140,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-white.jpg",
-            "fallback_asset": "barkin/product-white.png",
+            "fallback_asset": "barkin/product-white.webp",
             "title": "Moisturising Conditioner",
             "price": "$19.95",
             "link": ""
@@ -172,7 +172,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-white.jpg",
-            "fallback_asset": "barkin/collection-product.png",
+            "fallback_asset": "barkin/collection-product.webp",
             "product_title": "Gentle Care Shampoo",
             "price": "$19.95",
             "link": "",
@@ -185,7 +185,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-black.jpg",
-            "fallback_asset": "barkin/product-black.png",
+            "fallback_asset": "barkin/product-black.webp",
             "product_title": "Gentle Care Shampoo",
             "price": "$19.95",
             "link": "",
@@ -198,7 +198,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-spray.jpg",
-            "fallback_asset": "barkin/product-spray.png",
+            "fallback_asset": "barkin/product-spray.webp",
             "product_title": "Daily Care Spray",
             "price": "$19.95",
             "link": "",
@@ -211,7 +211,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-dental.jpg",
-            "fallback_asset": "barkin/product-dental.png",
+            "fallback_asset": "barkin/product-dental.webp",
             "product_title": "Dental Essentials",
             "price": "$19.95",
             "link": ""
@@ -222,7 +222,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/collection-product.jpg",
-            "fallback_asset": "barkin/collection-product.png",
+            "fallback_asset": "barkin/collection-product.webp",
             "product_title": "Moisturising Conditioner",
             "price": "$19.95",
             "link": "",
@@ -302,7 +302,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/ingredient-honey.jpg",
-            "fallback_asset": "barkin/ingredient-honey.png",
+            "fallback_asset": "barkin/ingredient-honey.webp",
             "alt": "Honeycomb, a premium natural ingredient"
           }
         },
@@ -317,7 +317,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/ingredient-bubbles.jpg",
-            "fallback_asset": "barkin/ingredient-bubbles.png",
+            "fallback_asset": "barkin/ingredient-bubbles.webp",
             "alt": "Moisturising ingredient texture"
           }
         },
@@ -339,7 +339,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/ingredient-dropper.jpg",
-            "fallback_asset": "barkin/ingredient-dropper.png",
+            "fallback_asset": "barkin/ingredient-dropper.webp",
             "alt": "Ingredient dropper"
           }
         },
@@ -354,7 +354,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/ingredient-microscope.jpg",
-            "fallback_asset": "barkin/ingredient-microscope.png",
+            "fallback_asset": "barkin/ingredient-microscope.webp",
             "alt": "Ingredient under a microscope"
           }
         }
@@ -381,7 +381,7 @@
       "settings": {
         "figma_node": "20:1763",
         "image": "shopify://shop_images/hero-household.jpg",
-        "fallback_asset": "barkin/hero-household.png",
+        "fallback_asset": "barkin/hero-household.webp",
         "heading": "Household\nProducts",
         "heading_tag": "h2",
         "text": "A considered collection of home-care essentials designed around life with pets.",
@@ -458,7 +458,7 @@
       "settings": {
         "figma_node": "1:18429",
         "image": "shopify://shop_images/hero-quiz.jpg",
-        "fallback_asset": "barkin/hero-quiz.png",
+        "fallback_asset": "barkin/hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
@@ -476,7 +476,7 @@
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/bundle-shampoo.jpg",
-            "fallback_asset": "barkin/bundle-shampoo.png",
+            "fallback_asset": "barkin/bundle-shampoo.webp",
             "heading": "Shampoo",
             "text": "Get your pet squeaky clean."
           }
@@ -485,7 +485,7 @@
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/bundle-conditioner.jpg",
-            "fallback_asset": "barkin/bundle-conditioner.png",
+            "fallback_asset": "barkin/bundle-conditioner.webp",
             "heading": "Conditioner",
             "text": "Give them a beautifully soft coat."
           }
@@ -494,7 +494,7 @@
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/bundle-grooming.jpg",
-            "fallback_asset": "barkin/bundle-grooming.png",
+            "fallback_asset": "barkin/bundle-grooming.webp",
             "heading": "Grooming Essentials",
             "text": "The devil is in the details."
           }
@@ -503,7 +503,7 @@
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/bundle-home.jpg",
-            "fallback_asset": "barkin/bundle-home.png",
+            "fallback_asset": "barkin/bundle-home.webp",
             "heading": "Home Care",
             "text": "Easy cleanup, no hassle."
           }
@@ -530,7 +530,7 @@
           "settings": {
             "article": "",
             "image": "shopify://shop_images/blog-1.jpg",
-            "fallback_asset": "barkin/blog-1.png",
+            "fallback_asset": "barkin/blog-1.webp",
             "tag": "Pet Grooming",
             "title": "How to Start Your Puppy's First At-Home Bath.",
             "link": ""
@@ -541,7 +541,7 @@
           "settings": {
             "article": "",
             "image": "shopify://shop_images/blog-2.jpg",
-            "fallback_asset": "barkin/blog-2.png",
+            "fallback_asset": "barkin/blog-2.webp",
             "tag": "Pet Grooming",
             "title": "Can You Use Human Shampoo on Dogs & Cats?",
             "link": ""
@@ -552,7 +552,7 @@
           "settings": {
             "article": "",
             "image": "shopify://shop_images/blog-3.jpg",
-            "fallback_asset": "barkin/blog-3.png",
+            "fallback_asset": "barkin/blog-3.webp",
             "tag": "Pet Grooming",
             "title": "What’s the right shampoo for my pet’s coat type?",
             "link": ""
@@ -582,7 +582,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/social-1.jpg",
-            "fallback_asset": "barkin/social-1.png",
+            "fallback_asset": "barkin/social-1.webp",
             "alt": "Pet parents and their dog",
             "link": ""
           }
@@ -591,7 +591,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/social-2.jpg",
-            "fallback_asset": "barkin/social-2.png",
+            "fallback_asset": "barkin/social-2.webp",
             "alt": "A dog with its parent",
             "link": ""
           }
@@ -600,7 +600,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/social-3.jpg",
-            "fallback_asset": "barkin/social-3.png",
+            "fallback_asset": "barkin/social-3.webp",
             "alt": "Barkin & Meowson product",
             "link": ""
           }
@@ -609,7 +609,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/social-4.jpg",
-            "fallback_asset": "barkin/social-4.png",
+            "fallback_asset": "barkin/social-4.webp",
             "alt": "A pet parent holding a dog",
             "link": ""
           }
@@ -618,7 +618,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/social-1.jpg",
-            "fallback_asset": "barkin/social-1.png",
+            "fallback_asset": "barkin/social-1.webp",
             "alt": "Pet parents and their dog",
             "link": ""
           }
@@ -627,7 +627,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/social-2.jpg",
-            "fallback_asset": "barkin/social-2.png",
+            "fallback_asset": "barkin/social-2.webp",
             "alt": "A dog with its parent",
             "link": ""
           }
@@ -653,7 +653,7 @@
       "settings": {
         "figma_node": "20:1768",
         "image": "shopify://shop_images/hero-quiz.jpg",
-        "fallback_asset": "barkin/hero-quiz.png",
+        "fallback_asset": "barkin/hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",

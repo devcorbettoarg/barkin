@@ -13,7 +13,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "28:8089",
-        "fallback_asset": "barkin/hero-shopping.png",
+        "fallback_asset": "barkin/hero-shopping.webp",
         "heading": "Care Fit for\nTheir Royal Highness.",
         "heading_tag": "h1",
         "text": "Barkin & Meowson creates thoughtful grooming and home care for pets and the people who love them.",
@@ -58,7 +58,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "28:8092",
-        "fallback_asset": "barkin/hero-household.png",
+        "fallback_asset": "barkin/hero-household.webp",
         "heading": "Born From Love.\nMade With Care.",
         "heading_tag": "h2",
         "text": "We set out to make premium pet care feel as intentional as every other part of the home.",
@@ -99,7 +99,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "28:8095",
-        "fallback_asset": "barkin/hero-quiz.png",
+        "fallback_asset": "barkin/hero-quiz.webp",
         "heading": "Better Care,\nWithout Compromise.",
         "heading_tag": "h2",
         "text": "Because the smallest rituals can make a meaningful difference to life together.",
@@ -111,11 +111,11 @@
     "about_social": {
       "type": "barkin-social-gallery",
       "blocks": {
-        "social_1": { "type": "image", "settings": { "fallback_asset": "barkin/social-1.png", "alt": "Pet parents and their dog", "link": "" } },
-        "social_2": { "type": "image", "settings": { "fallback_asset": "barkin/social-2.png", "alt": "A dog with its parent", "link": "" } },
-        "social_3": { "type": "image", "settings": { "fallback_asset": "barkin/social-3.png", "alt": "Barkin and Meowson product", "link": "" } },
-        "social_4": { "type": "image", "settings": { "fallback_asset": "barkin/social-4.png", "alt": "A pet parent holding a dog", "link": "" } },
-        "social_5": { "type": "image", "settings": { "fallback_asset": "barkin/social-1.png", "alt": "Barkin and Meowson community", "link": "" } }
+        "social_1": { "type": "image", "settings": { "fallback_asset": "barkin/social-1.webp", "alt": "Pet parents and their dog", "link": "" } },
+        "social_2": { "type": "image", "settings": { "fallback_asset": "barkin/social-2.webp", "alt": "A dog with its parent", "link": "" } },
+        "social_3": { "type": "image", "settings": { "fallback_asset": "barkin/social-3.webp", "alt": "Barkin and Meowson product", "link": "" } },
+        "social_4": { "type": "image", "settings": { "fallback_asset": "barkin/social-4.webp", "alt": "A pet parent holding a dog", "link": "" } },
+        "social_5": { "type": "image", "settings": { "fallback_asset": "barkin/social-1.webp", "alt": "Barkin and Meowson community", "link": "" } }
       },
       "block_order": ["social_1", "social_2", "social_3", "social_4", "social_5"],
       "settings": {
@@ -129,9 +129,9 @@
     "about_blog": {
       "type": "barkin-blog-guide",
       "blocks": {
-        "article_1": { "type": "article", "settings": { "fallback_asset": "barkin/blog-1.png", "tag": "Pet Grooming", "title": "How to Start Your Puppy's First At-Home Bath.", "link": "" } },
-        "article_2": { "type": "article", "settings": { "fallback_asset": "barkin/blog-2.png", "tag": "Pet Grooming", "title": "Can You Use Human Shampoo on Dogs & Cats?", "link": "" } },
-        "article_3": { "type": "article", "settings": { "fallback_asset": "barkin/blog-3.png", "tag": "Pet Grooming", "title": "What’s the right shampoo for my pet’s coat type?", "link": "" } }
+        "article_1": { "type": "article", "settings": { "fallback_asset": "barkin/blog-1.webp", "tag": "Pet Grooming", "title": "How to Start Your Puppy's First At-Home Bath.", "link": "" } },
+        "article_2": { "type": "article", "settings": { "fallback_asset": "barkin/blog-2.webp", "tag": "Pet Grooming", "title": "Can You Use Human Shampoo on Dogs & Cats?", "link": "" } },
+        "article_3": { "type": "article", "settings": { "fallback_asset": "barkin/blog-3.webp", "tag": "Pet Grooming", "title": "What’s the right shampoo for my pet’s coat type?", "link": "" } }
       },
       "block_order": ["article_1", "article_2", "article_3"],
       "settings": {

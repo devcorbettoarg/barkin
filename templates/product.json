@@ -59,9 +59,9 @@
     "barkin_ingredients": {
       "type": "barkin-ingredients",
       "blocks": {
-        "ingredient_1": { "type": "image", "settings": { "image": "shopify://shop_images/ingredient-honey.jpg", "fallback_asset": "barkin/ingredient-honey.png", "alt": "Honeycomb, a premium natural ingredient" } },
+        "ingredient_1": { "type": "image", "settings": { "image": "shopify://shop_images/ingredient-honey.jpg", "fallback_asset": "barkin/ingredient-honey.webp", "alt": "Honeycomb, a premium natural ingredient" } },
         "ingredient_2": { "type": "text", "settings": { "heading": "Premium Grade\nIngredient", "text": "The care products you need to maintain impeccable hygiene and a healthy coat." } },
-        "ingredient_3": { "type": "image", "settings": { "image": "shopify://shop_images/ingredient-bubbles.jpg", "fallback_asset": "barkin/ingredient-bubbles.png", "alt": "Moisturising ingredient texture" } },
+        "ingredient_3": { "type": "image", "settings": { "image": "shopify://shop_images/ingredient-bubbles.jpg", "fallback_asset": "barkin/ingredient-bubbles.webp", "alt": "Moisturising ingredient texture" } },
         "ingredient_4": { "type": "text", "settings": { "heading": "Premium Grade\nIngredient", "text": "Formulated to support gentle cleansing and everyday comfort." } }
       },
       "block_order": ["ingredient_1", "ingredient_2", "ingredient_3", "ingredient_4"],
@@ -73,7 +73,7 @@
         "figma_node": "20:1768",
         "heading_tag": "h2",
         "image": "shopify://shop_images/hero-quiz.jpg",
-        "fallback_asset": "barkin/hero-quiz.png",
+        "fallback_asset": "barkin/hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
         "button_label": "Take the product quiz",
@@ -127,9 +127,9 @@
     "barkin_blog": {
       "type": "barkin-blog-guide",
       "blocks": {
-        "article_1": { "type": "article", "settings": { "article": "", "image": "shopify://shop_images/blog-1.jpg", "fallback_asset": "barkin/blog-1.png", "tag": "Pet Grooming", "title": "How to Start Your Puppy's First At-Home Bath.", "link": "" } },
-        "article_2": { "type": "article", "settings": { "article": "", "image": "shopify://shop_images/blog-2.jpg", "fallback_asset": "barkin/blog-2.png", "tag": "Pet Grooming", "title": "Can You Use Human Shampoo on Dogs & Cats?", "link": "" } },
-        "article_3": { "type": "article", "settings": { "article": "", "image": "shopify://shop_images/blog-3.jpg", "fallback_asset": "barkin/blog-3.png", "tag": "Pet Grooming", "title": "What’s the right shampoo for my pet’s coat type?", "link": "" } }
+        "article_1": { "type": "article", "settings": { "article": "", "image": "shopify://shop_images/blog-1.jpg", "fallback_asset": "barkin/blog-1.webp", "tag": "Pet Grooming", "title": "How to Start Your Puppy's First At-Home Bath.", "link": "" } },
+        "article_2": { "type": "article", "settings": { "article": "", "image": "shopify://shop_images/blog-2.jpg", "fallback_asset": "barkin/blog-2.webp", "tag": "Pet Grooming", "title": "Can You Use Human Shampoo on Dogs & Cats?", "link": "" } },
+        "article_3": { "type": "article", "settings": { "article": "", "image": "shopify://shop_images/blog-3.jpg", "fallback_asset": "barkin/blog-3.webp", "tag": "Pet Grooming", "title": "What’s the right shampoo for my pet’s coat type?", "link": "" } }
       },
       "block_order": ["article_1", "article_2", "article_3"],
       "settings": {

@@ -1085,6 +1085,7 @@ main[data-template="product"] .related-products .price {
   min-height: var(--barkin-hero-height, 875px);
   overflow: hidden;
   background: var(--barkin-black);
+  color: var(--barkin-white);
 }
 
 .barkin-hero--mobile-only { display: none; }

@@ -1777,6 +1777,47 @@ main[data-template="product"] .related-products .price {
 .barkin-faq details[open] summary::after { content: "−"; }
 .barkin-faq__answer { padding: 0 40px 20px 0; font-size: 1.4rem; line-height: 1.8rem; }
 
+.barkin-journal {
+  padding: 79px 0 80px;
+  background: var(--barkin-black);
+  color: var(--barkin-white);
+}
+
+.barkin-journal__filters {
+  display: flex;
+  gap: 10px;
+  padding: 0 0 39px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--barkin-border);
+  scrollbar-width: none;
+}
+
+.barkin-journal__filters::-webkit-scrollbar { display: none; }
+.barkin-journal__filter { padding: 9px 14px 10px; border: 1px solid var(--barkin-border); border-radius: 4px; color: var(--barkin-white); font-size: 1.2rem; line-height: 1.6rem; text-decoration: none; white-space: nowrap; }
+.barkin-journal__filter:hover, .barkin-journal__filter.is-active { background: var(--barkin-white); color: var(--barkin-black); }
+
+.barkin-journal__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 10px;
+  padding-top: 40px;
+}
+
+.barkin-journal-card { min-height: 511px; overflow: hidden; border: 1px solid var(--barkin-border); border-radius: 4px; }
+.barkin-journal-card__media { display: block; height: 356px; }
+.barkin-journal-card__media img { width: 100%; height: 100%; object-fit: cover; }
+.barkin-journal-card__body { display: grid; gap: 20px; min-height: 154px; padding: 20px; border-top: 1px solid var(--barkin-border); }
+.barkin-journal-card__category, .barkin-journal-card__meta { margin: 0; color: rgba(255,253,252,.5); font-size: 1.2rem; line-height: 1.6rem; }
+.barkin-journal-card__title { margin: 0; font-family: Inter, var(--font-body-family), sans-serif; font-size: 2rem; font-weight: 400; line-height: 2.4rem; letter-spacing: -.04rem; }
+.barkin-journal-card__title a { color: inherit; text-decoration: none; }
+.barkin-journal-card .barkin-button { justify-self: start; }
+.barkin-button--outline { border-color: var(--barkin-white); background: transparent; color: var(--barkin-white); }
+.barkin-journal-card__meta { display: flex; justify-content: space-between; gap: 20px; padding: 0 20px 20px; }
+.barkin-journal__empty { padding: 80px 0; }
+.barkin-journal .pagination-wrapper { margin-top: 40px; }
+.barkin-journal .pagination__list > li { color: var(--barkin-white); }
+.barkin-journal .pagination__item { color: var(--barkin-white); }
+
 @media screen and (max-width: 749px) {
   .barkin-hero--desktop-only { display: none; }
   .barkin-hero--mobile-only { display: block; }
@@ -1951,6 +1992,13 @@ main[data-template="product"] .related-products .price {
   .barkin-blog-feature { min-height: 520px; }
   .barkin-blog-item { grid-template-columns: 1fr 120px; }
   .barkin-blog-item img { width: 120px; height: 150px; }
+  .barkin-journal { padding: 50px 0; }
+  .barkin-journal__filters { margin-inline: -20px; padding: 0 20px 30px; }
+  .barkin-journal__grid { grid-template-columns: 1fr; gap: 20px; padding-top: 30px; }
+  .barkin-journal-card { min-height: 0; }
+  .barkin-journal-card__media { height: 264px; }
+  .barkin-journal-card__body { min-height: 0; }
+  .barkin-journal-card__meta { display: grid; gap: 6px; }
 }
 
 /* Cart drawer — Barkin & Meowson visual system, retaining Dawn cart behaviour. */

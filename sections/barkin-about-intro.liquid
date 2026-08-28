@@ -1,0 +1,47 @@
+{%- liquid
+  assign fallback_asset = section.settings.fallback_asset | default: 'barkin/hero-household.webp'
+  if section.settings.image != blank
+    assign intro_image = section.settings.image | image_url: width: 1200
+  else
+    assign intro_image = fallback_asset | asset_url
+  endif
+-%}
+
+<section class="barkin-section barkin-about-intro" data-node-id="1:18778">
+  <div class="barkin-about-intro__backdrop" aria-hidden="true"></div>
+  <div class="barkin-about-intro__grid">
+    <div class="barkin-about-intro__image">
+      <img src="{{ intro_image }}" alt="{{ section.settings.image_alt | escape }}" width="594" height="594" loading="lazy">
+    </div>
+    <article class="barkin-about-intro__copy">
+      <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
+      <div class="barkin-copy">{{ section.settings.text }}</div>
+    </article>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Barkin about intro",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    {
+      "type": "select",
+      "id": "fallback_asset",
+      "label": "Design fallback",
+      "default": "barkin/hero-household.webp",
+      "options": [
+        { "value": "barkin/hero-household.webp", "label": "Household" },
+        { "value": "barkin/hero-shopping.webp", "label": "Shopping" },
+        { "value": "barkin/hero-quiz.webp", "label": "Product quiz" }
+      ]
+    },
+    { "type": "text", "id": "image_alt", "label": "Image alt", "default": "A pet enjoying time at home" },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Barkin&Meowson came to life thanks to a certain hair care product manager who felt like pets were underserved." },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Dorothy Miteva, proud rescuer of three cats, Oliver, Olivia and Gigi, mom of a golden retriever, Benji, and a regular helping hand at several rescue organizations, thought the pet care market is not reaching its potential in delivering products that help pets feel better in their skin, and shine brighter on the outside.</p><p>For her, bringing better at home care to pets and their parents, is a mission.</p>" }
+  ],
+  "presets": [{ "name": "Barkin about intro" }]
+}
+{% endschema %}

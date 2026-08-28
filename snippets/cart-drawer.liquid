@@ -74,6 +74,28 @@
           </span>
         </button>
       </div>
+      {%- if cart != empty and settings.free_shipping_threshold > 0 -%}
+        {%- liquid
+          assign free_shipping_threshold = settings.free_shipping_threshold | times: 100
+          assign free_shipping_remaining = free_shipping_threshold | minus: cart.total_price
+          assign free_shipping_progress = cart.total_price | times: 100 | divided_by: free_shipping_threshold
+          if free_shipping_progress > 100
+            assign free_shipping_progress = 100
+          endif
+        -%}
+        <div class="barkin-cart-progress" role="status">
+          <p class="barkin-cart-progress__message">
+            {% if free_shipping_remaining > 0 %}
+              You are {{ free_shipping_remaining | money }} away from free shipping
+            {% else %}
+              Your order qualifies for free shipping
+            {% endif %}
+          </p>
+          <div class="barkin-cart-progress__track" aria-hidden="true">
+            <span class="barkin-cart-progress__bar" style="width: {{ free_shipping_progress }}%"></span>
+          </div>
+        </div>
+      {%- endif -%}
       <cart-drawer-items
         view-event-payload="{{ cart | standard_event_data: 'view', context: 'dialog' | escape }}"
         view-event-trigger="manual"

@@ -21,7 +21,7 @@
         "button_label": "",
         "button_link": "",
         "desktop_height": 600,
-        "mobile_height": 650,
+        "mobile_height": 595,
         "mobile_only": false,
         "desktop_only": false
       }
@@ -390,7 +390,7 @@
         "button_label": "Shop Household",
         "button_link": "shopify://collections/all",
         "desktop_height": 875,
-        "mobile_height": 650,
+        "mobile_height": 595,
         "mobile_only": false,
         "desktop_only": true
       }

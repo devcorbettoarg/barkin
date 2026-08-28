@@ -14,9 +14,9 @@
       "settings": {
         "figma_node": "28:8089",
         "fallback_asset": "barkin/hero-shopping.webp",
-        "heading": "Care Fit for\nTheir Royal Highness.",
+        "heading": "Pet Luxury, thoughtfully defined.",
         "heading_tag": "h1",
-        "text": "Barkin & Meowson creates thoughtful grooming and home care for pets and the people who love them.",
+        "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
         "button_label": "",
         "button_link": "",
         "desktop_height": 600
@@ -33,25 +33,13 @@
       "block_order": ["promise_1", "promise_2", "promise_3", "promise_4"],
       "settings": { "accessibility_label": "What Barkin and Meowson stands for" }
     },
-    "about_reviews": {
-      "type": "barkin-review",
-      "blocks": {
-        "review_1": {
-          "type": "review",
-          "settings": {
-            "image_alt": "A pet and its family",
-            "heading": "Made for the bond\nwe never compromise on.",
-            "quote": "We believe everyday care should feel considered, effective and worthy of the animals who give us so much.",
-            "name": "Barkin & Meowson",
-            "buyer_label": "Our philosophy",
-            "recommendation": "Care with purpose"
-          }
-        }
-      },
-      "block_order": ["review_1"],
+    "about_intro": {
+      "type": "barkin-about-intro",
       "settings": {
-        "carousel_label": "Our philosophy",
-        "pagination_label": "Choose story"
+        "fallback_asset": "barkin/hero-household.webp",
+        "image_alt": "A pet enjoying time at home",
+        "heading": "Barkin&Meowson came to life thanks to a certain hair care product manager who felt like pets were underserved.",
+        "text": "<p>Dorothy Miteva, proud rescuer of three cats, Oliver, Olivia and Gigi, mom of a golden retriever, Benji, and a regular helping hand at several rescue organizations, thought the pet care market is not reaching its potential in delivering products that help pets feel better in their skin, and shine brighter on the outside.</p><p>For her, bringing better at home care to pets and their parents, is a mission.</p>"
       }
     },
     "about_story": {
@@ -59,9 +47,9 @@
       "settings": {
         "figma_node": "28:8092",
         "fallback_asset": "barkin/hero-household.webp",
-        "heading": "Born From Love.\nMade With Care.",
+        "heading": "Our Vision, Goal\n& Process",
         "heading_tag": "h2",
-        "text": "We set out to make premium pet care feel as intentional as every other part of the home.",
+        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
         "button_label": "",
         "button_link": "",
         "desktop_height": 875
@@ -77,8 +65,8 @@
       },
       "block_order": ["value_1", "value_2", "value_3", "value_4"],
       "settings": {
-        "heading": "Our\nNon-Negotiables.",
-        "text": "The standards behind every product we make and every choice we take."
+        "heading": "Barkin&Meowson’s\nNon-Negotiables",
+        "text": "Add up to 6 products and save up to 15% on your bundle."
       }
     },
     "about_guarantees": {
@@ -91,8 +79,8 @@
       },
       "block_order": ["guarantee_1", "guarantee_2", "guarantee_3", "guarantee_4"],
       "settings": {
-        "heading": "Premium Product\nGuarantees",
-        "text": "Premium care made with the health of your pet and the planet in mind."
+        "heading": "Barkin&Meowson’s\nProduct Standard",
+        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat."
       }
     },
     "about_manifesto": {
@@ -165,7 +153,7 @@
   "order": [
     "about_hero",
     "about_promise",
-    "about_reviews",
+    "about_intro",
     "about_story",
     "about_values",
     "about_guarantees",

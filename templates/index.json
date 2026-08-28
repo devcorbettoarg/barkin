@@ -9,13 +9,13 @@
  */
 {
   "sections": {
-    "barkin_hero": {
+    "barkin_hero_qDHxdw": {
       "type": "barkin-hero",
       "settings": {
-        "figma_node": "",
+        "figma_node": "20:1774",
         "image": "shopify://shop_images/hero-shopping.jpg",
         "fallback_asset": "barkin/hero-shopping.webp",
-        "heading": "Shopping for\nPremium Products",
+        "heading": "Shopping For\nPremium Products",
         "heading_tag": "h1",
         "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
         "button_label": "",
@@ -729,7 +729,7 @@
     }
   },
   "order": [
-    "barkin_hero",
+    "barkin_hero_qDHxdw",
     "barkin_promise",
     "barkin_products",
     "barkin_launch",

@@ -26,23 +26,6 @@
         "desktop_only": false
       }
     },
-    "barkin_mobile_quiz": {
-      "type": "barkin-hero",
-      "settings": {
-        "figma_node": "1:3876",
-        "image": "shopify://shop_images/hero-quiz.jpg",
-        "fallback_asset": "barkin/hero-quiz.webp",
-        "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
-        "heading_tag": "h2",
-        "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
-        "button_label": "Take the product quiz",
-        "button_link": "",
-        "desktop_height": 595,
-        "mobile_height": 650,
-        "mobile_only": true,
-        "desktop_only": false
-      }
-    },
     "barkin_promise": {
       "type": "barkin-promise-banner",
       "blocks": {
@@ -747,7 +730,6 @@
   },
   "order": [
     "barkin_hero",
-    "barkin_mobile_quiz",
     "barkin_promise",
     "barkin_products",
     "barkin_launch",

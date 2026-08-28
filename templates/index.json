@@ -35,7 +35,7 @@
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
         "button_label": "Take the product quiz",
         "button_link": "",
-        "desktop_height": 596,
+        "desktop_height": 595,
         "mobile_only": true
       }
     },
@@ -464,8 +464,8 @@
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
         "button_label": "Take the product quiz",
         "button_link": "",
-        "desktop_height": 596,
-        "mobile_height": 596,
+        "desktop_height": 595,
+        "mobile_height": 595,
         "mobile_only": true
       }
     },
@@ -660,7 +660,7 @@
         "button_label": "Take the product quiz",
         "button_link": "",
         "desktop_height": 875,
-        "mobile_height": 596
+        "mobile_height": 595
       }
     },
     "barkin_faq": {

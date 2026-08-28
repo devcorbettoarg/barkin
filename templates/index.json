@@ -12,7 +12,7 @@
     "barkin_hero": {
       "type": "barkin-hero",
       "settings": {
-        "figma_node": "20:1757",
+        "figma_node": "",
         "image": "shopify://shop_images/hero-shopping.jpg",
         "fallback_asset": "barkin/hero-shopping.webp",
         "heading": "Shopping for\nPremium Products",
@@ -21,7 +21,9 @@
         "button_label": "",
         "button_link": "",
         "desktop_height": 600,
-        "desktop_only": true
+        "mobile_height": 650,
+        "mobile_only": false,
+        "desktop_only": false
       }
     },
     "barkin_mobile_quiz": {
@@ -36,7 +38,9 @@
         "button_label": "Take the product quiz",
         "button_link": "",
         "desktop_height": 595,
-        "mobile_only": true
+        "mobile_height": 650,
+        "mobile_only": true,
+        "desktop_only": false
       }
     },
     "barkin_promise": {
@@ -84,7 +88,6 @@
           "type": "product",
           "settings": {
             "product": "",
-            "image": "shopify://shop_images/product-black.jpg",
             "fallback_asset": "barkin/product-black.webp",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",
@@ -128,7 +131,6 @@
           "type": "product",
           "settings": {
             "product": "",
-            "image": "shopify://shop_images/product-black.jpg",
             "fallback_asset": "barkin/product-black.webp",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",
@@ -184,7 +186,6 @@
           "type": "product_slide",
           "settings": {
             "product": "",
-            "image": "shopify://shop_images/product-black.jpg",
             "fallback_asset": "barkin/product-black.webp",
             "product_title": "Gentle Care Shampoo",
             "price": "$19.95",
@@ -214,14 +215,15 @@
             "fallback_asset": "barkin/product-dental.webp",
             "product_title": "Dental Essentials",
             "price": "$19.95",
-            "link": ""
+            "link": "",
+            "heading": "Easy Detangling",
+            "text": "Premium care for an easier, smoother grooming routine."
           }
         },
         "launch_product_5": {
           "type": "product_slide",
           "settings": {
             "product": "",
-            "image": "shopify://shop_images/collection-product.jpg",
             "fallback_asset": "barkin/collection-product.webp",
             "product_title": "Moisturising Conditioner",
             "price": "$19.95",
@@ -376,6 +378,23 @@
         "button_link": ""
       }
     },
+    "barkin_mobile_quiz_mid": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "1:18429",
+        "image": "shopify://shop_images/hero-quiz.jpg",
+        "fallback_asset": "barkin/hero-quiz.webp",
+        "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
+        "heading_tag": "h2",
+        "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
+        "button_label": "Take the product quiz",
+        "button_link": "",
+        "desktop_height": 595,
+        "mobile_height": 595,
+        "mobile_only": true,
+        "desktop_only": false
+      }
+    },
     "barkin_household": {
       "type": "barkin-hero",
       "settings": {
@@ -388,6 +407,8 @@
         "button_label": "Shop Household",
         "button_link": "shopify://collections/all",
         "desktop_height": 875,
+        "mobile_height": 650,
+        "mobile_only": false,
         "desktop_only": true
       }
     },
@@ -411,32 +432,52 @@
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/review-feature.jpg",
+            "image_alt": "Pet parents enjoying time with their dog",
+            "heading": "Other Products That\nCompliment This One.",
+            "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
             "avatar": "shopify://shop_images/reviewer.jpg",
-            "name": "Marta"
+            "name": "Marta",
+            "buyer_label": "Verified Buyer",
+            "recommendation": "I recommend this product"
           }
         },
         "review_3": {
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/review-feature.jpg",
+            "image_alt": "Pet parents enjoying time with their dog",
+            "heading": "Other Products That\nCompliment This One.",
+            "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
             "avatar": "shopify://shop_images/reviewer.jpg",
-            "name": "Daniel"
+            "name": "Daniel",
+            "buyer_label": "Verified Buyer",
+            "recommendation": "I recommend this product"
           }
         },
         "review_4": {
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/review-feature.jpg",
+            "image_alt": "Pet parents enjoying time with their dog",
+            "heading": "Other Products That\nCompliment This One.",
+            "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
             "avatar": "shopify://shop_images/reviewer.jpg",
-            "name": "Sofia"
+            "name": "Sofia",
+            "buyer_label": "Verified Buyer",
+            "recommendation": "I recommend this product"
           }
         },
         "review_5": {
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/review-feature.jpg",
+            "image_alt": "Pet parents enjoying time with their dog",
+            "heading": "Other Products That\nCompliment This One.",
+            "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
             "avatar": "shopify://shop_images/reviewer.jpg",
-            "name": "Alex"
+            "name": "Alex",
+            "buyer_label": "Verified Buyer",
+            "recommendation": "I recommend this product"
           }
         }
       },
@@ -451,22 +492,6 @@
         "desktop_only": true,
         "carousel_label": "Customer reviews",
         "pagination_label": "Choose customer review"
-      }
-    },
-    "barkin_mobile_quiz_mid": {
-      "type": "barkin-hero",
-      "settings": {
-        "figma_node": "1:18429",
-        "image": "shopify://shop_images/hero-quiz.jpg",
-        "fallback_asset": "barkin/hero-quiz.webp",
-        "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
-        "heading_tag": "h2",
-        "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
-        "button_label": "Take the product quiz",
-        "button_link": "",
-        "desktop_height": 595,
-        "mobile_height": 595,
-        "mobile_only": true
       }
     },
     "barkin_bundle": {
@@ -484,7 +509,6 @@
         "bundle_2": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/bundle-conditioner.jpg",
             "fallback_asset": "barkin/bundle-conditioner.webp",
             "heading": "Conditioner",
             "text": "Give them a beautifully soft coat."
@@ -645,7 +669,8 @@
         "heading": "We’re Social, Come\nConnect With Us.",
         "text": "Join our community of discerning pets and their parents.",
         "button_label": "Connect With Us",
-        "button_link": ""
+        "button_link": "",
+        "carousel_label": "Barkin and Meowson social gallery"
       }
     },
     "barkin_quiz": {
@@ -660,7 +685,9 @@
         "button_label": "Take the product quiz",
         "button_link": "",
         "desktop_height": 875,
-        "mobile_height": 595
+        "mobile_height": 595,
+        "mobile_only": false,
+        "desktop_only": false
       }
     },
     "barkin_faq": {

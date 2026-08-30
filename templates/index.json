@@ -284,14 +284,14 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1774",
-        "image": "shopify://shop_images/hero-shopping.jpg",
-        "fallback_asset": "hero-shopping.webp",
+        "image": "",
+        "fallback_asset": "hero-about.jpg",
         "heading": "More About\nBarkin&Meowson",
         "heading_tag": "h1",
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
         "button_label": "Learn About Us",
         "button_link": "shopify://collections/pet-shampoos-conditioners",
-        "desktop_height": 600,
+        "desktop_height": 875,
         "mobile_height": 595,
         "mobile_only": false,
         "desktop_only": false
@@ -423,7 +423,7 @@
         "desktop_height": 875,
         "mobile_height": 595,
         "mobile_only": false,
-        "desktop_only": true
+        "desktop_only": false
       }
     },
     "barkin_review": {

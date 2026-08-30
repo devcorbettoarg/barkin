@@ -19,7 +19,7 @@
             if article.image != blank
               assign image_src = article.image | image_url: width: 1000
             else
-              assign image_src = 'blog-feature.webp' | asset_url
+              assign image_src = 'barkin/blog-feature.webp' | asset_url
             endif
             assign category = article.tags.first | default: 'Journal'
           -%}

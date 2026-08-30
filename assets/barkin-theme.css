@@ -729,6 +729,23 @@ main[data-template="product"] .thumbnail[aria-current] {
   box-shadow: 0 0 0 1px var(--barkin-gold);
 }
 
+@media screen and (min-width: 750px) {
+  main[data-template="product"] .thumbnail-list.slider--tablet-up {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-auto-flow: row;
+    flex: none !important;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  main[data-template="product"] .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
+
 main[data-template="product"] .product__info-container {
   max-width: none;
 }

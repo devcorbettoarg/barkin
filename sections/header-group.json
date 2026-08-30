@@ -15,14 +15,14 @@
       "type": "barkin-header",
       "settings": {
         "announcement": "Free shipping above $35 on all US orders",
-        "menu": "customer-account-main-menu",
+        "menu": "main-menu-copy",
         "logo_width": 240,
         "logo_kicker": "Royale's Care",
         "logo_text": "BARKIN&MEOWSON",
         "mega_title": "Premium Petcare Products.",
         "mega_text": "Discover premium grooming and care products thoughtfully selected for healthier, happier pets.",
-        "mega_product_1": "the-3p-fulfilled-snowboard",
-        "mega_product_2": "the-collection-snowboard-hydrogen"
+        "mega_product_1": "chlorhexidine-dry-foam-shampoo-dog-cat",
+        "mega_product_2": "chlorhexidine-shampoo-dog-cat"
       }
     }
   },

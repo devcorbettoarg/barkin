@@ -284,8 +284,8 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1774",
-        "image": "shopify://shop_images/hero-shopping.jpg",
-        "fallback_asset": "hero-shopping.webp",
+        "image": "shopify://shop_images/hero-about.jpg",
+        "fallback_asset": "hero-about.jpg",
         "heading": "More About \nBarkin & Meowson",
         "heading_tag": "h1",
         "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",

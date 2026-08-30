@@ -666,6 +666,8 @@ main[data-template="product"] .product__info-wrapper.scroll-trigger {
 main[data-template="product"] media-gallery > slider-component:first-of-type {
   grid-column: 2;
   grid-row: 1;
+  width: 100%;
+  max-width: none;
   min-width: 0;
 }
 
@@ -691,6 +693,9 @@ main[data-template="product"] .thumbnail-slider {
   grid-column: 1;
   grid-row: 1;
   align-self: start;
+  width: 111px;
+  max-width: 111px;
+  min-width: 0;
 }
 
 main[data-template="product"] .thumbnail-slider .slider-button {
@@ -701,6 +706,7 @@ main[data-template="product"] .thumbnail-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  width: 100%;
   padding: 0;
 }
 
@@ -1960,6 +1966,8 @@ main[data-template="product"] .related-products .price {
   main[data-template="product"] .thumbnail-slider {
     grid-column: 1;
     grid-row: 2;
+    width: 100%;
+    max-width: 100%;
   }
   main[data-template="product"] .thumbnail-list {
     grid-template-columns: repeat(4, 1fr);
@@ -2151,6 +2159,10 @@ main[data-template="product"] .related-products .price {
   }
   main[data-template="product"] media-gallery {
     grid-template-columns: minmax(0, 1fr) 74px;
+  }
+  main[data-template="product"] .thumbnail-slider {
+    width: 74px;
+    max-width: 74px;
   }
   .barkin-product-review {
     grid-template-columns: 220px 1fr;

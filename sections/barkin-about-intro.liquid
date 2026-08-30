@@ -1,5 +1,5 @@
 {%- liquid
-  assign fallback_asset = section.settings.fallback_asset | default: 'barkin/hero-household.webp'
+  assign fallback_asset = section.settings.fallback_asset | default: 'hero-household.webp'
   if section.settings.image != blank
     assign intro_image = section.settings.image | image_url: width: 1200
   else
@@ -31,11 +31,11 @@
       "type": "select",
       "id": "fallback_asset",
       "label": "Design fallback",
-      "default": "barkin/hero-household.webp",
+      "default": "hero-household.webp",
       "options": [
-        { "value": "barkin/hero-household.webp", "label": "Household" },
-        { "value": "barkin/hero-shopping.webp", "label": "Shopping" },
-        { "value": "barkin/hero-quiz.webp", "label": "Product quiz" }
+        { "value": "hero-household.webp", "label": "Household" },
+        { "value": "hero-shopping.webp", "label": "Shopping" },
+        { "value": "hero-quiz.webp", "label": "Product quiz" }
       ]
     },
     { "type": "text", "id": "image_alt", "label": "Image alt", "default": "A pet enjoying time at home" },

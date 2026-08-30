@@ -1,5 +1,5 @@
 {%- liquid
-  assign fallback_asset = section.settings.fallback_asset | default: 'barkin/hero-shopping.webp'
+  assign fallback_asset = section.settings.fallback_asset | default: 'hero-shopping.webp'
   assign heading_tag = section.settings.heading_tag | default: 'h2'
   if section.settings.image != blank
     assign hero_src = section.settings.image | image_url: width: 2400
@@ -49,11 +49,11 @@
       "type": "select",
       "id": "fallback_asset",
       "label": "Design fallback",
-      "default": "barkin/hero-shopping.webp",
+      "default": "hero-shopping.webp",
       "options": [
-        { "value": "barkin/hero-shopping.webp", "label": "Shopping hero" },
-        { "value": "barkin/hero-household.webp", "label": "Household hero" },
-        { "value": "barkin/hero-quiz.webp", "label": "Product quiz hero" }
+        { "value": "hero-shopping.webp", "label": "Shopping hero" },
+        { "value": "hero-household.webp", "label": "Household hero" },
+        { "value": "hero-quiz.webp", "label": "Product quiz hero" }
       ]
     },
     { "type": "textarea", "id": "heading", "label": "Heading", "default": "Shopping for\nPremium Products" },

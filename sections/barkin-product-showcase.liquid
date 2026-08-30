@@ -64,12 +64,12 @@
                 aria-label="{{ 'products.product.add_to_cart' | t }}: {{ card_title | escape }}"
                 {% unless card_product.available %}disabled{% endunless %}
               >
-                <img src="{{ 'barkin/add-bag.svg' | asset_url }}" alt="" width="18" height="19">
+                <img src="{{ 'add-bag.svg' | asset_url }}" alt="" width="18" height="19">
               </button>
             {%- endform -%}
           {% else %}
             <a class="barkin-product-card__bag" href="{{ card_url }}" aria-label="{{ card_title | escape }}">
-              <img src="{{ 'barkin/add-bag.svg' | asset_url }}" alt="" width="18" height="19">
+              <img src="{{ 'add-bag.svg' | asset_url }}" alt="" width="18" height="19">
             </a>
           {% endif %}
         </article>
@@ -125,12 +125,12 @@
           "type": "select",
           "id": "fallback_asset",
           "label": "Design fallback",
-          "default": "barkin/product-black.webp",
+          "default": "product-black.webp",
           "options": [
-            { "value": "barkin/product-black.webp", "label": "Black bottle" },
-            { "value": "barkin/product-white.webp", "label": "White bottle" },
-            { "value": "barkin/product-spray.webp", "label": "Spray bottle" },
-            { "value": "barkin/product-dental.webp", "label": "Dental care" }
+            { "value": "product-black.webp", "label": "Black bottle" },
+            { "value": "product-white.webp", "label": "White bottle" },
+            { "value": "product-spray.webp", "label": "Spray bottle" },
+            { "value": "product-dental.webp", "label": "Dental care" }
           ]
         },
         { "type": "text", "id": "title", "label": "Fallback title", "default": "Gentle Care Shampoo" },
@@ -143,12 +143,12 @@
     {
       "name": "Barkin product showcase",
       "blocks": [
-        { "type": "product", "settings": { "fallback_asset": "barkin/product-black.webp" } },
-        { "type": "product", "settings": { "fallback_asset": "barkin/product-white.webp" } },
-        { "type": "product", "settings": { "fallback_asset": "barkin/product-spray.webp" } },
-        { "type": "product", "settings": { "fallback_asset": "barkin/product-dental.webp" } },
-        { "type": "product", "settings": { "fallback_asset": "barkin/product-black.webp" } },
-        { "type": "product", "settings": { "fallback_asset": "barkin/product-white.webp" } }
+        { "type": "product", "settings": { "fallback_asset": "product-black.webp" } },
+        { "type": "product", "settings": { "fallback_asset": "product-white.webp" } },
+        { "type": "product", "settings": { "fallback_asset": "product-spray.webp" } },
+        { "type": "product", "settings": { "fallback_asset": "product-dental.webp" } },
+        { "type": "product", "settings": { "fallback_asset": "product-black.webp" } },
+        { "type": "product", "settings": { "fallback_asset": "product-white.webp" } }
       ]
     }
   ]

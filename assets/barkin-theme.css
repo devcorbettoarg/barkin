@@ -584,7 +584,7 @@ main[data-template="collection"] .quick-add__submit {
   padding: 0;
   border: 1px solid var(--barkin-white);
   border-radius: 50%;
-  background: var(--barkin-black) url("barkin/add-bag.svg") center / 18px 19px no-repeat;
+  background: var(--barkin-black) url("add-bag.svg") center / 18px 19px no-repeat;
   color: transparent;
   font-size: 0;
 }

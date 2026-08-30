@@ -2,7 +2,7 @@
   if section.settings.feature_image != blank
     assign feature_image = section.settings.feature_image | image_url: width: 1600
   else
-    assign feature_image = 'barkin/blog-feature.webp' | asset_url
+    assign feature_image = 'blog-feature.webp' | asset_url
   endif
 -%}
 
@@ -83,7 +83,7 @@
       "settings": [
         { "type": "article", "id": "article", "label": "Article" },
         { "type": "image_picker", "id": "image", "label": "Fallback image from Shopify Files" },
-        { "type": "select", "id": "fallback_asset", "label": "Design fallback", "default": "barkin/blog-1.webp", "options": [{ "value": "barkin/blog-1.webp", "label": "Article 1" }, { "value": "barkin/blog-2.webp", "label": "Article 2" }, { "value": "barkin/blog-3.webp", "label": "Article 3" }] },
+        { "type": "select", "id": "fallback_asset", "label": "Design fallback", "default": "blog-1.webp", "options": [{ "value": "blog-1.webp", "label": "Article 1" }, { "value": "blog-2.webp", "label": "Article 2" }, { "value": "blog-3.webp", "label": "Article 3" }] },
         { "type": "text", "id": "tag", "label": "Fallback tag", "default": "Pet Grooming" },
         { "type": "textarea", "id": "title", "label": "Fallback title", "default": "How to Start Your Puppy's First At-Home Bath." },
         { "type": "url", "id": "link", "label": "Fallback link" }
@@ -95,8 +95,8 @@
       "name": "Barkin blog guide",
       "blocks": [
         { "type": "article" },
-        { "type": "article", "settings": { "fallback_asset": "barkin/blog-2.webp", "title": "Can You Use Human Shampoo on Dogs & Cats?" } },
-        { "type": "article", "settings": { "fallback_asset": "barkin/blog-3.webp", "title": "What’s the right shampoo for my pet’s coat type?" } }
+        { "type": "article", "settings": { "fallback_asset": "blog-2.webp", "title": "Can You Use Human Shampoo on Dogs & Cats?" } },
+        { "type": "article", "settings": { "fallback_asset": "blog-3.webp", "title": "What’s the right shampoo for my pet’s coat type?" } }
       ]
     }
   ]

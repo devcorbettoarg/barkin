@@ -67,6 +67,16 @@
       "block_order": ["ingredient_1", "ingredient_2", "ingredient_3", "ingredient_4"],
       "settings": { "heading": "Human Grade\nIngredients", "text": "Choosing premium ingredients helps support healthy skin and a beautiful coat.", "button_label": "Learn More", "button_link": "" }
     },
+    "barkin_coats": {
+      "type": "barkin-coat-guide",
+      "blocks": {
+        "coat_1": { "type": "coat", "settings": { "heading": "Double Coated", "text": "Care designed around the hydration and cleansing needs of this coat type." } },
+        "coat_2": { "type": "coat", "settings": { "heading": "Curly Coated", "text": "Care designed around the hydration and cleansing needs of this coat type." } },
+        "coat_3": { "type": "coat", "settings": { "heading": "Short Coated", "text": "Care designed around the hydration and cleansing needs of this coat type." } }
+      },
+      "block_order": ["coat_1", "coat_2", "coat_3"],
+      "settings": { "heading": "This Product Is Fit For\nThese Pet Coats.", "text": "Different coats have unique needs in terms of hydration, cleansing, and protection.", "carousel_label": "Suitable pet coat types", "pagination_label": "Choose coat type" }
+    },
     "barkin_quiz": {
       "type": "barkin-hero",
       "settings": {
@@ -144,5 +154,5 @@
       }
     }
   },
-  "order": ["main", "disclosures", "barkin_guarantees", "barkin_ingredients", "barkin_quiz", "barkin_review", "related-products", "barkin_blog"]
+  "order": ["main", "disclosures", "barkin_guarantees", "barkin_ingredients", "barkin_coats", "barkin_quiz", "barkin_review", "related-products", "barkin_blog"]
 }

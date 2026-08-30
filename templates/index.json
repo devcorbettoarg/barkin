@@ -280,6 +280,23 @@
         "text": "Premium care made with the health of your pet and the planet in mind."
       }
     },
+    "barkin_hero_UhCXWP": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "20:1774",
+        "image": "shopify://shop_images/hero-shopping.jpg",
+        "fallback_asset": "hero-shopping.webp",
+        "heading": "More About \nBarkin & Meowson",
+        "heading_tag": "h1",
+        "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
+        "button_label": "Go to Shop",
+        "button_link": "shopify://collections/pet-shampoos-conditioners",
+        "desktop_height": 600,
+        "mobile_height": 595,
+        "mobile_only": false,
+        "desktop_only": false
+      }
+    },
     "barkin_ingredients": {
       "type": "barkin-ingredients",
       "blocks": {
@@ -734,6 +751,7 @@
     "barkin_products",
     "barkin_launch",
     "barkin_guarantees",
+    "barkin_hero_UhCXWP",
     "barkin_ingredients",
     "barkin_mobile_quiz_mid",
     "barkin_household",

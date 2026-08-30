@@ -15,10 +15,10 @@
         "figma_node": "20:1774",
         "image": "shopify://shop_images/hero-shopping.jpg",
         "fallback_asset": "hero-shopping.webp",
-        "heading": "Shopping For\nPremium Products",
+        "heading": "Shopping for\nPremium Products",
         "heading_tag": "h1",
-        "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
-        "button_label": "Go to Shop",
+        "text": "An exquisite collection of grooming and home care for discerning pets and their parents. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "button_label": "Go To Shop",
         "button_link": "shopify://collections/pet-shampoos-conditioners",
         "desktop_height": 600,
         "mobile_height": 595,
@@ -286,10 +286,10 @@
         "figma_node": "20:1774",
         "image": "shopify://shop_images/hero-shopping.jpg",
         "fallback_asset": "hero-shopping.webp",
-        "heading": "More About \nBarkin & Meowson",
+        "heading": "More About\nBarkin&Meowson",
         "heading_tag": "h1",
-        "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
-        "button_label": "Go to Shop",
+        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
+        "button_label": "Learn About Us",
         "button_link": "shopify://collections/pet-shampoos-conditioners",
         "desktop_height": 600,
         "mobile_height": 595,
@@ -312,7 +312,7 @@
           "type": "text",
           "settings": {
             "heading": "Premium Grade\nIngredient",
-            "text": "The care products you need to maintain impeccable hygiene and a healthy coat."
+            "text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out."
           }
         },
         "ingredient_3": {
@@ -327,14 +327,14 @@
           "type": "text",
           "settings": {
             "heading": "Premium Grade\nIngredient",
-            "text": "Formulated to support gentle cleansing and everyday comfort."
+            "text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out."
           }
         },
         "ingredient_5": {
           "type": "text",
           "settings": {
             "heading": "Premium Grade\nIngredient",
-            "text": "Thoughtful, high-quality inputs for discerning pets and parents."
+            "text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out."
           }
         },
         "ingredient_6": {
@@ -349,7 +349,7 @@
           "type": "text",
           "settings": {
             "heading": "Premium Grade\nIngredient",
-            "text": "A balanced routine designed for beautiful coats and healthy skin."
+            "text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out."
           }
         },
         "ingredient_8": {
@@ -373,10 +373,24 @@
       ],
       "settings": {
         "heading": "Human Grade\nIngredients",
-        "text": "Choosing premium ingredients helps support healthy skin and a beautiful coat.",
+        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin, while also making your life easier. ",
         "button_label": "Learn More",
         "button_link": ""
       }
+    },
+    "barkin_problem_solver": {
+      "type": "barkin-problem-solver",
+      "blocks": {
+        "problem_1": { "type": "problem", "settings": { "tab": "Sensitive Skin", "fallback_asset": "product-black.webp", "product_title": "Gentle Care Shampoo", "price": "$19.95" } },
+        "problem_2": { "type": "problem", "settings": { "tab": "Dry & Flaky Skin", "fallback_asset": "product-white.webp", "product_title": "Gentle Care Shampoo", "price": "$19.95" } },
+        "problem_3": { "type": "problem", "settings": { "tab": "Itch & Irritation", "fallback_asset": "product-spray.webp", "product_title": "Daily Care Spray", "price": "$19.95" } },
+        "problem_4": { "type": "problem", "settings": { "tab": "Shedding", "fallback_asset": "product-dental.webp", "product_title": "Dental Essentials", "price": "$19.95" } },
+        "problem_5": { "type": "problem", "settings": { "tab": "Tangles", "fallback_asset": "product-black.webp", "product_title": "Gentle Care Shampoo", "price": "$19.95" } },
+        "problem_6": { "type": "problem", "settings": { "tab": "Fleas & Ticks", "fallback_asset": "product-white.webp", "product_title": "Moisturising Conditioner", "price": "$19.95" } },
+        "problem_7": { "type": "problem", "settings": { "tab": "Home Mess", "fallback_asset": "product-spray.webp", "product_title": "Daily Care Spray", "price": "$19.95" } }
+      },
+      "block_order": ["problem_1", "problem_2", "problem_3", "problem_4", "problem_5", "problem_6", "problem_7"],
+      "settings": { "heading": "Products that solve any problem", "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin, while also making your life easier.", "button_label": "Shop All Products", "button_link": "", "tab_label": "Shop by problem", "carousel_label": "Products by pet-care problem" }
     },
     "barkin_mobile_quiz_mid": {
       "type": "barkin-hero",
@@ -403,8 +417,8 @@
         "fallback_asset": "hero-household.webp",
         "heading": "Household\nProducts",
         "heading_tag": "h2",
-        "text": "A considered collection of home-care essentials designed around life with pets.",
-        "button_label": "Shop Household",
+        "text": "An exquisite collection of grooming and home care for discerning pets and their parents. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "button_label": "Go To Shop",
         "button_link": "shopify://collections/all",
         "desktop_height": 875,
         "mobile_height": 595,
@@ -681,8 +695,8 @@
         "fallback_asset": "hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",
-        "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
-        "button_label": "Take the product quiz",
+        "text": "An exquisite collection of grooming and home care for discerning pets and their parents. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "button_label": "Take The Product Quiz",
         "button_link": "",
         "desktop_height": 875,
         "mobile_height": 595,
@@ -753,7 +767,7 @@
     "barkin_guarantees",
     "barkin_hero_UhCXWP",
     "barkin_ingredients",
-    "barkin_mobile_quiz_mid",
+    "barkin_problem_solver",
     "barkin_household",
     "barkin_review",
     "barkin_bundle",

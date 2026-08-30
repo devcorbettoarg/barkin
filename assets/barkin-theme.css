@@ -1750,6 +1750,7 @@ main[data-template="product"] .related-products .price {
 .barkin-blog-item { min-height: 190px; display: grid; grid-template-columns: 1fr 184px; gap: 20px; padding: 20px 0; border-block: 1px solid var(--barkin-border); }
 .barkin-blog-item + .barkin-blog-item { border-top: 0; }
 .barkin-blog-item__content { display: flex; flex-direction: column; align-items: flex-start; }
+.barkin-blog-item .barkin-product-card__title { font-size: 2rem; font-weight: 400; line-height: 2.4rem; letter-spacing: -.04rem; }
 .barkin-blog-item__content .barkin-button { margin-top: auto; }
 .barkin-blog-item img { width: 184px; height: 184px; border-radius: 4px; object-fit: cover; }
 

@@ -646,8 +646,8 @@ main[data-template="product"] .product__media-wrapper {
 }
 
 main[data-template="product"] .product.product--large:not(.product--no-media) .product__media-wrapper {
-  width: 100%;
-  max-width: 100%;
+  width: 100%; 
+  max-width: 100%; 
 }
 
 main[data-template="product"] .product__info-wrapper {

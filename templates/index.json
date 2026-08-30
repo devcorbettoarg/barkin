@@ -503,7 +503,7 @@
         "review_5"
       ],
       "settings": {
-        "desktop_only": true,
+        "desktop_only": false,
         "carousel_label": "Customer reviews",
         "pagination_label": "Choose customer review"
       }

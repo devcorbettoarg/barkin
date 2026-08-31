@@ -1716,6 +1716,7 @@ main[data-template="product"] .related-products .price {
 .barkin-problem-solver__tabs::-webkit-scrollbar { display: none; }
 .barkin-problem-solver__tab { flex: 0 0 auto; padding: 0; border: 0; background: none; color: rgba(255,253,252,.5); font: 500 1.6rem/1.8rem Inter, sans-serif; cursor: pointer; }
 .barkin-problem-solver__tab.is-active { color: var(--barkin-white); }
+.barkin-problem-solver__panel[hidden] { display: none; }
 .barkin-problem-solver__rail { display: grid; grid-auto-flow: column; grid-auto-columns: 352px; gap: 10px; margin-top: 40px; overflow-x: auto; padding-bottom: 1px; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .barkin-problem-solver__rail::-webkit-scrollbar { display: none; }
 .barkin-problem-solver .barkin-product-card { scroll-snap-align: start; }

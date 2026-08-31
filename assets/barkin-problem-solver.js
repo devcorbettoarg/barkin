@@ -4,15 +4,14 @@
       if (section.dataset.problemSolverReady === 'true') return;
 
       const tabs = Array.from(section.querySelectorAll('[data-problem-tab]'));
-      const slides = Array.from(section.querySelectorAll('[data-problem-slide]'));
-      const rail = section.querySelector('[data-carousel-rail]');
+      const panels = Array.from(section.querySelectorAll('[data-problem-panel]'));
 
-      if (!rail || tabs.length === 0 || slides.length === 0) return;
+      if (tabs.length === 0 || panels.length === 0) return;
 
       const activateTab = (index, { focus = false } = {}) => {
         const tab = tabs[index];
-        const slide = slides[index];
-        if (!tab || !slide) return;
+        const panel = panels[index];
+        if (!tab || !panel) return;
 
         tabs.forEach((item, itemIndex) => {
           const isActive = itemIndex === index;
@@ -21,11 +20,11 @@
           item.tabIndex = isActive ? 0 : -1;
         });
 
-        const sideInset = Number.parseFloat(getComputedStyle(rail).paddingLeft) || 0;
-        rail.scrollTo({
-          left: Math.max(0, slide.offsetLeft - sideInset),
-          behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+        panels.forEach((item, itemIndex) => {
+          item.hidden = itemIndex !== index;
         });
+
+        panel.querySelector('[data-carousel-rail]')?.scrollTo({ left: 0, behavior: 'auto' });
 
         if (focus) tab.focus();
       };

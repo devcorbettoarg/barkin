@@ -431,6 +431,7 @@
         "review_2": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/review-feature.jpg",
             "image_alt": "Pet parents enjoying time with their dog",
             "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
             "name": "Marta",
@@ -441,6 +442,7 @@
         "review_3": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/review-feature.jpg",
             "image_alt": "Pet parents enjoying time with their dog",
             "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
             "name": "Daniel",
@@ -451,6 +453,7 @@
         "review_4": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/review-feature.jpg",
             "image_alt": "Pet parents enjoying time with their dog",
             "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
             "name": "Sofia",
@@ -461,6 +464,7 @@
         "review_5": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/review-feature.jpg",
             "image_alt": "Pet parents enjoying time with their dog",
             "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
             "name": "Alex",

@@ -21,12 +21,12 @@
           if block.settings.image != blank
             assign feature_image = block.settings.image | image_url: width: 1200
           else
-            assign feature_image = 'barkin/review-feature.webp' | asset_url
+            assign feature_image = 'review-feature.webp' | asset_url
           endif
           if block.settings.avatar != blank
             assign avatar_image = block.settings.avatar | image_url: width: 100
           else
-            assign avatar_image = 'barkin/reviewer.webp' | asset_url
+            assign avatar_image = 'reviewer.webp' | asset_url
           endif
         -%}
 

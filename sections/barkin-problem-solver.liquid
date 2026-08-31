@@ -1,4 +1,5 @@
 <script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'barkin-problem-solver.js' | asset_url }}" defer="defer"></script>
 
 <section class="barkin-section barkin-problem-solver" data-node-id="1:2649">
   <div class="barkin-shell">
@@ -14,9 +15,19 @@
       </div>
     </header>
 
-    <nav class="barkin-problem-solver__tabs" aria-label="{{ section.settings.tab_label | escape }}">
+    <nav class="barkin-problem-solver__tabs" aria-label="{{ section.settings.tab_label | escape }}" role="tablist">
       {% for tab in section.blocks %}
-        <button type="button" class="barkin-problem-solver__tab{% if forloop.first %} is-active{% endif %}">{{ tab.settings.tab }}</button>
+        <button
+          type="button"
+          class="barkin-problem-solver__tab{% if forloop.first %} is-active{% endif %}"
+          role="tab"
+          data-problem-tab="{{ forloop.index0 }}"
+          aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+          tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"
+          aria-controls="BarkinProblemSlide-{{ section.id }}-{{ forloop.index0 }}"
+        >
+          {{ tab.settings.tab }}
+        </button>
       {% endfor %}
     </nav>
 
@@ -37,12 +48,17 @@
                 assign card_url = routes.all_products_collection_url
               endif
             -%}
-            <article class="barkin-product-card" data-carousel-slide>
+            <article
+              id="BarkinProblemSlide-{{ section.id }}-{{ forloop.index0 }}"
+              class="barkin-product-card"
+              data-carousel-slide
+              data-problem-slide="{{ forloop.index0 }}"
+            >
               <a class="barkin-product-card__link" href="{{ card_url }}">
                 <span class="barkin-product-card__media"><img class="barkin-card-image" src="{{ card_image }}" alt="{{ card_title | escape }}" width="704" height="942" loading="lazy"></span>
                 <span class="barkin-product-card__info"><span class="barkin-product-card__title">{{ card_title }}</span><span class="barkin-product-card__price">{{ card_price }}</span></span>
               </a>
-              <a class="barkin-product-card__bag" href="{{ card_url }}" aria-label="{{ card_title | escape }}"><img src="{{ 'barkin/add-bag.svg' | asset_url }}" alt="" width="18" height="19"></a>
+              <a class="barkin-product-card__bag" href="{{ card_url }}" aria-label="{{ card_title | escape }}"><img src="{{ 'add-bag.svg' | asset_url }}" alt="" width="18" height="19"></a>
             </article>
         {% endfor %}
       </div>
@@ -71,11 +87,11 @@
       "settings": [
         { "type": "text", "id": "tab", "label": "Tab", "default": "Sensitive Skin" },
         { "type": "product", "id": "product", "label": "Product" },
-        { "type": "select", "id": "fallback_asset", "label": "Fallback image", "default": "product-black.webp", "options": [
-          { "value": "product-black.webp", "label": "Black product" },
-          { "value": "product-white.webp", "label": "White product" },
-          { "value": "product-spray.webp", "label": "Spray product" },
-          { "value": "product-dental.webp", "label": "Dental product" }
+        { "type": "select", "id": "fallback_asset", "label": "Fallback image", "default": "barkin/product-black.webp", "options": [
+          { "value": "barkin/product-black.webp", "label": "Black product" },
+          { "value": "barkin/product-white.webp", "label": "White product" },
+          { "value": "barkin/product-spray.webp", "label": "Spray product" },
+          { "value": "barkin/product-dental.webp", "label": "Dental product" }
         ] },
         { "type": "text", "id": "product_title", "label": "Fallback product title", "default": "Gentle Care Shampoo" },
         { "type": "text", "id": "price", "label": "Fallback price", "default": "$19.95" }
@@ -84,9 +100,9 @@
   ],
   "presets": [{ "name": "Barkin problem solver", "blocks": [
     { "type": "problem", "settings": { "tab": "Sensitive Skin" } },
-    { "type": "problem", "settings": { "tab": "Dry & Flaky Skin", "fallback_asset": "product-white.webp" } },
-    { "type": "problem", "settings": { "tab": "Itch & Irritation", "fallback_asset": "product-spray.webp" } },
-    { "type": "problem", "settings": { "tab": "Shedding", "fallback_asset": "product-dental.webp" } },
+    { "type": "problem", "settings": { "tab": "Dry & Flaky Skin", "fallback_asset": "barkin/product-white.webp" } },
+    { "type": "problem", "settings": { "tab": "Itch & Irritation", "fallback_asset": "barkin/product-spray.webp" } },
+    { "type": "problem", "settings": { "tab": "Shedding", "fallback_asset": "barkin/product-dental.webp" } },
     { "type": "problem", "settings": { "tab": "Tangles" } },
     { "type": "problem", "settings": { "tab": "Fleas & Ticks" } },
     { "type": "problem", "settings": { "tab": "Home Mess" } }

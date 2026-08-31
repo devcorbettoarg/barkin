@@ -72,7 +72,7 @@
           "type": "product",
           "settings": {
             "product": "",
-            "fallback_asset": "product-black.webp",
+            "fallback_asset": "barkin/product-black.webp",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",
             "link": ""
@@ -83,7 +83,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-white.jpg",
-            "fallback_asset": "product-white.webp",
+            "fallback_asset": "barkin/product-white.webp",
             "title": "Moisturising Conditioner",
             "price": "$19.95",
             "link": ""
@@ -94,7 +94,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-spray.jpg",
-            "fallback_asset": "product-spray.webp",
+            "fallback_asset": "barkin/product-spray.webp",
             "title": "Daily Care Spray",
             "price": "$19.95",
             "link": ""
@@ -105,7 +105,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-dental.jpg",
-            "fallback_asset": "product-dental.webp",
+            "fallback_asset": "barkin/product-dental.webp",
             "title": "Dental Essentials",
             "price": "$19.95",
             "link": ""
@@ -115,7 +115,7 @@
           "type": "product",
           "settings": {
             "product": "",
-            "fallback_asset": "product-black.webp",
+            "fallback_asset": "barkin/product-black.webp",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",
             "link": ""
@@ -126,7 +126,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-white.jpg",
-            "fallback_asset": "product-white.webp",
+            "fallback_asset": "barkin/product-white.webp",
             "title": "Moisturising Conditioner",
             "price": "$19.95",
             "link": ""
@@ -184,7 +184,7 @@
           "settings": {
             "product": "",
             "image": "shopify://shop_images/product-spray.jpg",
-            "fallback_asset": "product-spray.webp",
+            "fallback_asset": "barkin/product-spray.webp",
             "product_title": "Daily Care Spray",
             "price": "$19.95",
             "link": "",

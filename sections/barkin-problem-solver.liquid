@@ -42,7 +42,7 @@
                 <span class="barkin-product-card__media"><img class="barkin-card-image" src="{{ card_image }}" alt="{{ card_title | escape }}" width="704" height="942" loading="lazy"></span>
                 <span class="barkin-product-card__info"><span class="barkin-product-card__title">{{ card_title }}</span><span class="barkin-product-card__price">{{ card_price }}</span></span>
               </a>
-              <a class="barkin-product-card__bag" href="{{ card_url }}" aria-label="{{ card_title | escape }}"><img src="{{ 'barkin/add-bag.svg' | asset_url }}" alt="" width="18" height="19"></a>
+              <a class="barkin-product-card__bag" href="{{ card_url }}" aria-label="{{ card_title | escape }}"><img src="{{ 'add-bag.svg' | asset_url }}" alt="" width="18" height="19"></a>
             </article>
         {% endfor %}
       </div>

@@ -1,5 +1,12 @@
 <script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
 
+{%- liquid
+  assign initial_testimonial = 0
+  if section.blocks.size > 2
+    assign initial_testimonial = 1
+  endif
+-%}
+
 <section class="barkin-testimonials" data-node-id="20:1764">
   <header class="barkin-testimonials__header">
     <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
@@ -10,7 +17,7 @@
 
   <barkin-carousel
     class="barkin-testimonials__carousel"
-    data-carousel-edges="false"
+    data-initial-slide="{{ initial_testimonial }}"
     role="region"
     aria-roledescription="carousel"
     aria-label="{{ section.settings.carousel_label | escape }}"
@@ -21,12 +28,12 @@
           if block.settings.image != blank
             assign feature_image = block.settings.image | image_url: width: 1200
           else
-            assign feature_image = 'review-feature.webp' | asset_url
+            assign feature_image = 'barkin/review-feature.webp' | asset_url
           endif
           if block.settings.avatar != blank
             assign avatar_image = block.settings.avatar | image_url: width: 100
           else
-            assign avatar_image = 'reviewer.png' | asset_url
+            assign avatar_image = 'barkin/reviewer.webp' | asset_url
           endif
         -%}
 
@@ -60,12 +67,12 @@
       <div class="barkin-showcase__dots barkin-testimonials__dots" role="group" aria-label="{{ section.settings.pagination_label | escape }}">
         {% for block in section.blocks %}
           <button
-            class="barkin-showcase__dot{% if forloop.first %} is-active{% endif %}"
+            class="barkin-showcase__dot{% if forloop.index0 == initial_testimonial %} is-active{% endif %}"
             type="button"
             data-carousel-dot="{{ forloop.index0 }}"
             aria-label="Mostrar reseña {{ forloop.index }}"
             aria-controls="BarkinTestimonialsRail-{{ section.id }}"
-            aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+            aria-current="{% if forloop.index0 == initial_testimonial %}true{% else %}false{% endif %}"
           >
             <span class="visually-hidden">{{ forloop.index }}</span>
           </button>

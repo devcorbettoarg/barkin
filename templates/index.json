@@ -14,6 +14,7 @@
       "settings": {
         "figma_node": "20:1774",
         "image": "shopify://shop_images/General_Fill_Image_Section.jpg",
+        "mobile_image": "shopify://shop_images/Product_Quiz.jpg",
         "fallback_asset": "hero-shopping.webp",
         "heading": "Shopping For\nPremium Products",
         "heading_tag": "h1",
@@ -427,12 +428,54 @@
             "recommendation": "Purchased the Detangling Spray"
           }
         },
-        "review_2": { "type": "review", "settings": { "name": "Marta" } },
-        "review_3": { "type": "review", "settings": { "name": "Daniel" } },
-        "review_4": { "type": "review", "settings": { "name": "Sofia" } },
-        "review_5": { "type": "review", "settings": { "name": "Alex" } }
+        "review_2": {
+          "type": "review",
+          "settings": {
+            "image_alt": "Pet parents enjoying time with their dog",
+            "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
+            "name": "Marta",
+            "buyer_label": "Pet Owner",
+            "recommendation": "Purchased the Detangling Spray"
+          }
+        },
+        "review_3": {
+          "type": "review",
+          "settings": {
+            "image_alt": "Pet parents enjoying time with their dog",
+            "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
+            "name": "Daniel",
+            "buyer_label": "Pet Owner",
+            "recommendation": "Purchased the Detangling Spray"
+          }
+        },
+        "review_4": {
+          "type": "review",
+          "settings": {
+            "image_alt": "Pet parents enjoying time with their dog",
+            "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
+            "name": "Sofia",
+            "buyer_label": "Pet Owner",
+            "recommendation": "Purchased the Detangling Spray"
+          }
+        },
+        "review_5": {
+          "type": "review",
+          "settings": {
+            "image_alt": "Pet parents enjoying time with their dog",
+            "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
+            "name": "Alex",
+            "buyer_label": "Pet Owner",
+            "recommendation": "Purchased the Detangling Spray"
+          }
+        }
       },
-      "block_order": ["review_1", "review_2", "review_3", "review_4", "review_5"],
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3",
+        "review_4",
+        "review_5"
+      ],
       "settings": {
         "heading": "See What People Say\nAbout Barkin&Meowson",
         "text": "Add up to 6 products and save up to 15% on your bundle. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -623,7 +666,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1768",
-        "image": "shopify://shop_images/hero-quiz.jpg",
+        "image": "shopify://shop_images/General_Fill_Image_Section_2.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",

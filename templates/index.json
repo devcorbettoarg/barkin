@@ -144,6 +144,7 @@
       "settings": {
         "heading": "Our Best Selling\nPremium Products.",
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat.",
+        "mobile_text_alignment": "left",
         "button_label": "Shop All Items",
         "button_link": "shopify://collections/all",
         "carousel_label": "Best selling products",

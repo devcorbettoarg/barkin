@@ -10,20 +10,32 @@
       </div>
     </header>
     <div class="barkin-mosaic__grid">
+      {%- assign mobile_image_column = 0 -%}
+      {%- assign mobile_text_column = 0 -%}
       {% for block in section.blocks %}
         {% if block.type == 'image' %}
           {%- liquid
+            assign mobile_image_column = mobile_image_column | plus: 1
             if block.settings.image != blank
               assign image_src = block.settings.image | image_url: width: 900
             else
               assign image_src = block.settings.fallback_asset | asset_url
             endif
           -%}
-          <div class="barkin-mosaic-card" {{ block.shopify_attributes }}>
+          <div
+            class="barkin-mosaic-card barkin-mosaic-card--image"
+            style="--barkin-mobile-mosaic-column: {{ mobile_image_column }};"
+            {{ block.shopify_attributes }}
+          >
             <img class="barkin-card-image" src="{{ image_src }}" alt="{{ block.settings.alt | escape }}" width="704" height="704" loading="lazy">
           </div>
         {% else %}
-          <article class="barkin-mosaic-card barkin-mosaic-card--text" {{ block.shopify_attributes }}>
+          {%- assign mobile_text_column = mobile_text_column | plus: 1 -%}
+          <article
+            class="barkin-mosaic-card barkin-mosaic-card--text"
+            style="--barkin-mobile-mosaic-column: {{ mobile_text_column }};"
+            {{ block.shopify_attributes }}
+          >
             <h3 class="barkin-card-title">{{ block.settings.heading | newline_to_br }}</h3>
             <p class="barkin-copy">{{ block.settings.text }}</p>
           </article>

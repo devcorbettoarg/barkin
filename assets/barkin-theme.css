@@ -2109,24 +2109,17 @@ main[data-template="product"] .related-products .price {
     padding-left: 14px;
     color: rgba(255,253,252,.65) !important;
   }
-  .barkin-site-header__logo-text { font-size: 1.6rem; }
+  .barkin-site-header__logo-text { font-size: 1.8rem; }
   .barkin-site-header__logo-kicker { font-size: .8rem; }
-  .barkin-site-header__logo img { max-width: min(150px, 42vw); max-height: 44px; }
+  .barkin-site-header__logo img {
+    width: var(--barkin-mobile-logo-width, 180px);
+    max-width: min(var(--barkin-mobile-logo-width, 180px), 52vw);
+    max-height: 50px;
+  }
   .barkin-site-header__currency { display: none; }
   .barkin-site-header__actions { gap: 14px; }
   .barkin-site-header__actions a { display: grid; min-width: 32px; min-height: 40px; place-items: center; }
-  .barkin-site-header__search {
-    display: grid !important;
-    flex: 0 0 32px;
-    color: var(--barkin-white);
-    visibility: visible;
-    opacity: 1;
-  }
-  .barkin-site-header__search svg {
-    display: block;
-    overflow: visible;
-    stroke: currentColor;
-  }
+  .barkin-site-header__search { display: none !important; }
   .barkin-site-header__account { display: none !important; }
   .barkin-site-header__cart-count { top: 1px; right: -1px; }
   .barkin-site-footer { padding-top: 30px; }
@@ -2235,6 +2228,14 @@ main[data-template="product"] .related-products .price {
     padding-inline: 20px;
     scroll-padding-inline: 20px;
   }
+  .barkin-centered-intro--mobile-left {
+    justify-items: start;
+    text-align: left;
+  }
+  .barkin-centered-intro--mobile-right {
+    justify-items: end;
+    text-align: right;
+  }
   .barkin-social__rail {
     padding-inline: 20px;
     scroll-padding-inline: 20px;
@@ -2251,10 +2252,36 @@ main[data-template="product"] .related-products .price {
   .barkin-split { padding-top: 50px; padding-bottom: 50px; }
   .barkin-split__grid { gap: 10px; }
   .barkin-split-card__content { left: 24px; right: 24px; bottom: 24px; }
-  .barkin-guarantee { grid-template-columns: 64px 1fr; }
+  .barkin-guarantee {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: start;
+    gap: 16px;
+    min-height: 0;
+    padding: 24px 0;
+    text-align: left;
+  }
   .barkin-guarantee img { width: 64px; height: 64px; }
-  .barkin-mosaic__grid { grid-template-columns: repeat(2, 1fr); }
-  .barkin-mosaic-card { min-height: 240px; }
+  .barkin-mosaic__grid {
+    grid-template-columns: none;
+    grid-template-rows: 240px minmax(240px, auto);
+    grid-auto-columns: min(82vw, 320px);
+    grid-auto-flow: column;
+    margin-inline: -20px;
+    padding-inline: 20px;
+    overflow-x: auto;
+    scroll-padding-inline: 20px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .barkin-mosaic__grid::-webkit-scrollbar { display: none; }
+  .barkin-mosaic-card {
+    grid-column: var(--barkin-mobile-mosaic-column);
+    min-height: 240px;
+    scroll-snap-align: start;
+  }
+  .barkin-mosaic-card--image { grid-row: 1; }
+  .barkin-mosaic-card--text { grid-row: 2; }
   .barkin-problem-solver__header { grid-template-columns: 1fr; gap: 40px; }
   .barkin-problem-solver__tabs { gap: 24px; margin-top: 40px; }
   .barkin-problem-solver__rail { grid-auto-columns: 82vw; margin-top: 30px; }
@@ -2292,7 +2319,7 @@ main[data-template="product"] .related-products .price {
 @media screen and (max-width: 389px) {
   .barkin-title { font-size: 3.6rem; }
   .barkin-site-header__main { width: calc(100% - 28px); }
-  .barkin-site-header__logo img { max-width: min(130px, 38vw); }
+  .barkin-site-header__logo img { max-width: min(var(--barkin-mobile-logo-width, 180px), 50vw); }
   .barkin-site-header__actions { gap: 6px; }
   .barkin-testimonials__rail { --testimonial-width: calc(100vw - 28px); }
 }

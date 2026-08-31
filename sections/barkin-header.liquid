@@ -3,7 +3,10 @@
     <div class="barkin-site-header__announcement">{{ section.settings.announcement }}</div>
   {% endif %}
 
-  <header class="barkin-site-header__main">
+  <header
+    class="barkin-site-header__main"
+    style="--barkin-mobile-logo-width: {{ section.settings.mobile_logo_width }}px;"
+  >
     <details class="barkin-site-header__mobile-menu">
       <summary aria-label="{{ 'sections.header.menu' | t }}">
         <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -170,6 +173,7 @@
     { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" },
     { "type": "image_picker", "id": "logo", "label": "Logo" },
     { "type": "range", "id": "logo_width", "min": 120, "max": 320, "step": 10, "unit": "px", "label": "Logo width", "default": 240 },
+    { "type": "range", "id": "mobile_logo_width", "min": 140, "max": 220, "step": 10, "unit": "px", "label": "Mobile logo width", "default": 180 },
     { "type": "text", "id": "logo_kicker", "label": "Fallback logo small text", "default": "Royale's Care" },
     { "type": "text", "id": "logo_text", "label": "Fallback logo text", "default": "BARKIN&MEOWSON" },
     { "type": "text", "id": "mega_title", "label": "Mega menu title", "default": "Premium Petcare Products." },

@@ -71,7 +71,7 @@
         "product_1": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "chlorhexidine-shampoo-dog-cat",
             "fallback_asset": "product-black.webp",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",
@@ -114,7 +114,7 @@
         "product_5": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "chlorhexidine-spray-dog-cat",
             "fallback_asset": "product-black.webp",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",

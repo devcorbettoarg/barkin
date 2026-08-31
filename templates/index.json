@@ -380,6 +380,98 @@
         "button_link": ""
       }
     },
+    "barkin_problem_solver": {
+      "type": "barkin-problem-solver",
+      "blocks": {
+        "problem_1": {
+          "type": "problem",
+          "settings": {
+            "tab": "Sensitive Skin",
+            "product": "",
+            "fallback_asset": "product-black.webp",
+            "product_title": "Gentle Care Shampoo",
+            "price": "$19.95"
+          }
+        },
+        "problem_2": {
+          "type": "problem",
+          "settings": {
+            "tab": "Dry & Flaky Skin",
+            "product": "",
+            "fallback_asset": "product-white.webp",
+            "product_title": "Moisturising Conditioner",
+            "price": "$19.95"
+          }
+        },
+        "problem_3": {
+          "type": "problem",
+          "settings": {
+            "tab": "Itch & Irritation",
+            "product": "",
+            "fallback_asset": "product-spray.webp",
+            "product_title": "Daily Care Spray",
+            "price": "$19.95"
+          }
+        },
+        "problem_4": {
+          "type": "problem",
+          "settings": {
+            "tab": "Shedding",
+            "product": "",
+            "fallback_asset": "product-dental.webp",
+            "product_title": "Dental Essentials",
+            "price": "$19.95"
+          }
+        },
+        "problem_5": {
+          "type": "problem",
+          "settings": {
+            "tab": "Tangles",
+            "product": "",
+            "fallback_asset": "product-black.webp",
+            "product_title": "Detangling Shampoo",
+            "price": "$19.95"
+          }
+        },
+        "problem_6": {
+          "type": "problem",
+          "settings": {
+            "tab": "Fleas & Ticks",
+            "product": "",
+            "fallback_asset": "product-white.webp",
+            "product_title": "Coat Care Conditioner",
+            "price": "$19.95"
+          }
+        },
+        "problem_7": {
+          "type": "problem",
+          "settings": {
+            "tab": "Home Mess",
+            "product": "",
+            "fallback_asset": "product-spray.webp",
+            "product_title": "Household Care Spray",
+            "price": "$19.95"
+          }
+        }
+      },
+      "block_order": [
+        "problem_1",
+        "problem_2",
+        "problem_3",
+        "problem_4",
+        "problem_5",
+        "problem_6",
+        "problem_7"
+      ],
+      "settings": {
+        "heading": "Products That Solve\nAny Problem",
+        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin, while also making your life easier.",
+        "button_label": "Shop All Products",
+        "button_link": "shopify://collections/all",
+        "tab_label": "Shop by problem",
+        "carousel_label": "Products by pet-care problem"
+      }
+    },
     "barkin_mobile_quiz_mid": {
       "type": "barkin-hero",
       "settings": {
@@ -747,6 +839,7 @@
     "barkin_guarantees",
     "barkin_hero_UhCXWP",
     "barkin_ingredients",
+    "barkin_problem_solver",
     "barkin_mobile_quiz_mid",
     "barkin_household",
     "barkin_testimonials",

@@ -596,35 +596,39 @@
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/bundle-shampoo.jpg",
-            "fallback_asset": "bundle-shampoo.webp",
+            "fallback_asset": "barkin/bundle-shampoo.webp",
             "heading": "Shampoo",
-            "text": "Get your pet squeaky clean."
+            "text": "Get your pet squeaky clean.",
+            "link": ""
           }
         },
         "bundle_2": {
           "type": "step",
           "settings": {
-            "fallback_asset": "bundle-conditioner.webp",
+            "fallback_asset": "barkin/bundle-conditioner.webp",
             "heading": "Conditioner",
-            "text": "Give them a beautifully soft coat."
+            "text": "Give them a beautifully soft coat.",
+            "link": ""
           }
         },
         "bundle_3": {
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/bundle-grooming.jpg",
-            "fallback_asset": "bundle-grooming.webp",
+            "fallback_asset": "barkin/bundle-grooming.webp",
             "heading": "Grooming Essentials",
-            "text": "The devil is in the details."
+            "text": "The devil is in the details.",
+            "link": ""
           }
         },
         "bundle_4": {
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/bundle-home.jpg",
-            "fallback_asset": "bundle-home.webp",
+            "fallback_asset": "barkin/bundle-home.webp",
             "heading": "Home Care",
-            "text": "Easy cleanup, no hassle."
+            "text": "Easy cleanup, no hassle.",
+            "link": ""
           }
         }
       },

@@ -149,6 +149,10 @@ if (!customElements.get('barkin-carousel')) {
         dot.setAttribute('aria-current', isActive ? 'true' : 'false');
       });
 
+      this.cards.forEach((card, index) => {
+        card.classList.toggle('is-active', index === currentIndex);
+      });
+
       if (this.dataset.carouselEdges !== 'false') {
         const railRect = this.rail.getBoundingClientRect();
         const visibleLeft = railRect.left + this.getSideInset();

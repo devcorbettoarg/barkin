@@ -37,7 +37,7 @@
           endif
         -%}
 
-        <article class="barkin-testimonial" data-carousel-slide {{ block.shopify_attributes }}>
+        <article class="barkin-testimonial{% if forloop.index0 == initial_testimonial %} is-active{% else %} is-edge{% endif %}" data-carousel-slide {{ block.shopify_attributes }}>
           <div class="barkin-testimonial__image">
             <img src="{{ feature_image }}" alt="{{ block.settings.image_alt | escape }}" width="960" height="1000" loading="lazy">
           </div>

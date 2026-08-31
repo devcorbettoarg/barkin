@@ -1818,6 +1818,7 @@ main[data-template="product"] .related-products .price {
 }
 
 .barkin-testimonial.is-edge { opacity: .5; }
+.barkin-testimonial.is-active { opacity: 1; }
 
 .barkin-testimonial__image,
 .barkin-testimonial__image img { width: 100%; height: 100%; }

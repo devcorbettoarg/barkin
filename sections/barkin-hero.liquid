@@ -6,6 +6,9 @@
   else
     assign hero_src = fallback_asset | asset_url
   endif
+  if section.settings.mobile_image != blank
+    assign mobile_hero_src = section.settings.mobile_image | image_url: width: 1200
+  endif
 -%}
 
 <section
@@ -13,15 +16,20 @@
   style="--barkin-hero-height: {{ section.settings.desktop_height }}px; --barkin-hero-mobile-height: {{ section.settings.mobile_height | default: 650 }}px;"
   data-node-id="{{ section.settings.figma_node }}"
 >
-  <img
-    class="barkin-hero__image"
-    src="{{ hero_src }}"
-    alt="{{ section.settings.image.alt | default: section.settings.heading | escape }}"
-    width="2400"
-    height="{{ section.settings.desktop_height }}"
-    loading="{% if section.index == 1 %}eager{% else %}lazy{% endif %}"
-    {% if section.index == 1 %}fetchpriority="high"{% endif %}
-  >
+  <picture>
+    {% if mobile_hero_src != blank %}
+      <source media="(max-width: 749px)" srcset="{{ mobile_hero_src }}">
+    {% endif %}
+    <img
+      class="barkin-hero__image"
+      src="{{ hero_src }}"
+      alt="{{ section.settings.image.alt | default: section.settings.mobile_image.alt | default: section.settings.heading | escape }}"
+      width="2400"
+      height="{{ section.settings.desktop_height }}"
+      loading="{% if section.index == 1 %}eager{% else %}lazy{% endif %}"
+      {% if section.index == 1 %}fetchpriority="high"{% endif %}
+    >
+  </picture>
   <div class="barkin-hero__content">
     <{{ heading_tag }} class="barkin-title">{{ section.settings.heading | newline_to_br }}</{{ heading_tag }}>
     {% if section.settings.text != blank %}
@@ -45,6 +53,7 @@
   "settings": [
     { "type": "text", "id": "figma_node", "label": "Figma node", "default": "20:1757" },
     { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "image_picker", "id": "mobile_image", "label": "Mobile image" },
     {
       "type": "select",
       "id": "fallback_asset",

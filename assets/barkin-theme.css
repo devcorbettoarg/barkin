@@ -1750,6 +1750,57 @@ main[data-template="product"] .related-products .price {
 .barkin-muted { color: rgba(255,253,252,.5); }
 .barkin-review-carousel__dots { margin-top: 38px; }
 
+/* Figma review module: rating summary and stacked review cards */
+.barkin-review__shell {
+  position: relative;
+  width: calc(100% - 10vw);
+  max-width: 1440px;
+  min-height: 1200px;
+  margin: 0 auto;
+  padding: 80px 0 120px;
+}
+.barkin-review__summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  min-height: 365px;
+}
+.barkin-review__score-block p,
+.barkin-review__toolbar,
+.barkin-review-card__copy small,
+.barkin-review-card__helpful { color: rgba(255,253,252,.5); }
+.barkin-review__score { display: flex; align-items: baseline; gap: 8px; color: var(--barkin-white); }
+.barkin-review__score strong { font: 400 1.8rem/2.2rem Roboto, sans-serif; }
+.barkin-review__score span { font: 500 1.6rem/1.8rem Inter, sans-serif; }
+.barkin-review__stars { color: var(--barkin-white); font-size: 2rem; letter-spacing: .25rem; line-height: 2rem; }
+.barkin-review__score-block > .barkin-review__stars { margin: 22px 0 24px; }
+.barkin-review__score-block p { margin: 0; font: 400 1.2rem/1.6rem Inter, sans-serif; }
+.barkin-review__breakdown { padding-top: 4px; }
+.barkin-review__breakdown-row { display: grid; grid-template-columns: 30px minmax(0, 255px) 30px; gap: 10px; align-items: center; margin-bottom: 8px; color: var(--barkin-white); font: 400 1.8rem/2.2rem Roboto, sans-serif; }
+.barkin-review__breakdown-row i { display: block; height: 5px; border-radius: 30px; background: linear-gradient(90deg, var(--barkin-gold) var(--bar-width), rgba(255,253,252,.5) var(--bar-width)); }
+.barkin-review__actions { display: flex; justify-content: flex-end; gap: 12px; padding-top: 256px; }
+.barkin-review__actions .barkin-button { color: var(--barkin-white); border-color: var(--barkin-white); background: transparent; }
+.barkin-review__toolbar { display: flex; justify-content: space-between; align-items: center; min-height: 50px; border-block: 1px solid var(--barkin-border); font: 400 1.2rem/1.6rem Roboto, sans-serif; }
+.barkin-review__toolbar button { border: 0; color: inherit; background: none; font: inherit; cursor: pointer; }
+.barkin-review__toolbar strong { margin-left: 18px; color: var(--barkin-white); font-weight: 400; }
+.barkin-review-list { display: grid; }
+.barkin-review-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) 118px 150px; gap: 30px; align-items: start; min-height: 255px; padding: 36px 0; border-bottom: 1px solid var(--barkin-border); }
+.barkin-review-card__buyer { display: flex; gap: 10px; align-items: start; padding: 16px; border: 1px solid rgba(255,253,252,.1); border-radius: 4px; background: rgba(255,253,252,.1); }
+.barkin-review-card__buyer img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+.barkin-review-card__buyer strong, .barkin-review-card__buyer span { display: block; }
+.barkin-review-card__buyer strong { color: var(--barkin-white); font: 400 1.8rem/2.2rem Roboto, sans-serif; }
+.barkin-review-card__buyer span { color: rgba(255,253,252,.5); font: 400 1.2rem/1.6rem Roboto, sans-serif; }
+.barkin-review-card__copy { padding-top: 16px; }
+.barkin-review-card__copy .barkin-review__stars { margin-bottom: 20px; font-size: 1.8rem; }
+.barkin-review-card__copy h3 { margin: 0 0 20px; color: var(--barkin-white); font: 400 2rem/2.4rem Roboto, sans-serif; }
+.barkin-review-card__copy p { margin: 0 0 20px; color: var(--barkin-white); font: 400 1.2rem/1.6rem Roboto, sans-serif; }
+.barkin-review-card__copy small { font: 400 1.2rem/1.6rem Roboto, sans-serif; }
+.barkin-review-card__photo { width: 118px; height: 118px; border-radius: 4px; object-fit: cover; }
+.barkin-review-card__helpful { padding-top: 16px; text-align: right; font: 400 1.2rem/1.6rem Roboto, sans-serif; }
+.barkin-review-card__helpful strong { margin-left: 12px; color: rgba(255,253,252,.5); font-weight: 400; }
+.barkin-review__load-more { display: block; margin: 120px auto 0; color: var(--barkin-white); border-color: var(--barkin-white); background: transparent; }
+
 .barkin-bundle-card {
   overflow: visible;
 }
@@ -2066,6 +2117,16 @@ main[data-template="product"] .related-products .price {
   .barkin-problem-solver__tabs { gap: 24px; margin-top: 40px; }
   .barkin-problem-solver__rail { grid-auto-columns: 82vw; margin-top: 30px; }
   .barkin-review__image, .barkin-review__content { min-height: 440px; }
+  .barkin-review__shell { width: calc(100% - 40px); min-height: 0; padding: 50px 0; }
+  .barkin-review__summary { grid-template-columns: 1fr; gap: 30px; min-height: 0; }
+  .barkin-review__actions { justify-content: flex-start; padding-top: 0; }
+  .barkin-review__breakdown-row { grid-template-columns: 30px minmax(0, 1fr) 30px; }
+  .barkin-review-card { grid-template-columns: 1fr 90px; gap: 20px; min-height: 0; padding: 30px 0; }
+  .barkin-review-card__buyer { grid-column: 1 / -1; }
+  .barkin-review-card__photo { width: 90px; height: 90px; grid-column: 2; grid-row: 2; }
+  .barkin-review-card__copy { grid-column: 1; grid-row: 2; }
+  .barkin-review-card__helpful { grid-column: 1 / -1; grid-row: 3; text-align: left; }
+  .barkin-review__load-more { margin-top: 60px; }
   .barkin-blog-feature { min-height: 520px; }
   .barkin-blog-item { grid-template-columns: 1fr 120px; }
   .barkin-blog-item img { width: 120px; height: 150px; }

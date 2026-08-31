@@ -1,15 +1,37 @@
 <script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
 
 <section class="barkin-section barkin-review{% if section.settings.desktop_only %} barkin-desktop-only{% endif %}" data-node-id="20:1764">
-  <barkin-carousel
-    class="barkin-review-carousel"
-    data-carousel-edges="false"
-    role="region"
-    aria-roledescription="carousel"
-    aria-label="{{ section.settings.carousel_label | escape }}"
-  >
-    <div id="BarkinReviewRail-{{ section.id }}" class="barkin-review-carousel__rail" data-carousel-rail>
-      {% for block in section.blocks %}
+  <div class="barkin-review__shell">
+    <div class="barkin-review__summary">
+      <div class="barkin-review__score-block">
+        <div class="barkin-review__score"><strong>4.7</strong><span>(39 Reviews)</span></div>
+        <div class="barkin-review__stars" aria-label="4.7 out of 5 stars">★★★★★</div>
+        <p>100% of buyers would recommend this product.</p>
+      </div>
+      <div class="barkin-review__breakdown" aria-label="Review rating breakdown">
+        {% assign rating_counts = '16,4,0,0,0' | split: ',' %}
+        {% for count in rating_counts %}
+          {% assign rating = 5 | minus: forloop.index0 %}
+          <div class="barkin-review__breakdown-row">
+            <span>{{ rating }}</span>
+            <i style="--bar-width: {% if rating == 5 %}76{% elsif rating == 4 %}19{% else %}0{% endif %}%"></i>
+            <span>{{ count }}</span>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="barkin-review__actions">
+        <button class="barkin-button" type="button">Filter Reviews</button>
+        <button class="barkin-button" type="button">Write a Review</button>
+      </div>
+    </div>
+
+    <div class="barkin-review__toolbar">
+      <span>20 Reviews</span>
+      <button type="button">Sort by: <strong>Photos &amp; Videos</strong></button>
+    </div>
+
+    <div id="BarkinReviewRail-{{ section.id }}" class="barkin-review-list" role="list">
+      {% for block in section.blocks limit: 2 %}
         {%- liquid
           if block.settings.image != blank
             assign feature_image = block.settings.image | image_url: width: 1600
@@ -23,56 +45,28 @@
           endif
         -%}
 
-        <article class="barkin-review-slide" data-carousel-slide {{ block.shopify_attributes }}>
-          <div class="barkin-shell barkin-review__grid">
-            <div class="barkin-review__image">
-              <img
-                class="barkin-card-image"
-                src="{{ feature_image }}"
-                alt="{{ block.settings.image_alt | escape }}"
-                width="1430"
-                height="1200"
-                loading="lazy"
-              >
-            </div>
-            <div class="barkin-review__content">
-              <div class="barkin-review__quote">
-                <h2 class="barkin-title">{{ block.settings.heading | newline_to_br }}</h2>
-                <p class="barkin-copy">{{ block.settings.quote }}</p>
-              </div>
-              <div class="barkin-review__buyer">
-                <div class="barkin-review__buyer-row">
-                  <img src="{{ avatar_image }}" alt="" width="34" height="34" loading="lazy">
-                  <div>
-                    <div>{{ block.settings.name }}</div>
-                    <div class="barkin-copy barkin-muted">{{ block.settings.buyer_label }}</div>
-                  </div>
-                </div>
-                <p class="barkin-copy barkin-muted">✓ {{ block.settings.recommendation }}</p>
-              </div>
+        <article class="barkin-review-card" data-review-card {{ block.shopify_attributes }}>
+          <div class="barkin-review-card__buyer">
+            <img src="{{ avatar_image }}" alt="" width="34" height="34" loading="lazy">
+            <div>
+              <strong>{{ block.settings.name }}</strong>
+              <span>{{ block.settings.buyer_label }}</span>
             </div>
           </div>
+          <div class="barkin-review-card__copy">
+            <div class="barkin-review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <h3>{{ block.settings.heading | newline_to_br }}</h3>
+            <p>{{ block.settings.quote }}</p>
+            <small>2 years ago</small>
+          </div>
+          <img class="barkin-review-card__photo" src="{{ feature_image }}" alt="{{ block.settings.image_alt | escape }}" width="118" height="118" loading="lazy">
+          <div class="barkin-review-card__helpful">Was this helpful? <strong>4&nbsp;&nbsp;0</strong></div>
         </article>
       {% endfor %}
     </div>
 
-    {% if section.blocks.size > 1 %}
-      <div class="barkin-showcase__dots barkin-review-carousel__dots" role="group" aria-label="{{ section.settings.pagination_label | escape }}">
-        {% for block in section.blocks %}
-          <button
-            class="barkin-showcase__dot{% if forloop.first %} is-active{% endif %}"
-            type="button"
-            data-carousel-dot="{{ forloop.index0 }}"
-            aria-label="Mostrar reseña {{ forloop.index }}"
-            aria-controls="BarkinReviewRail-{{ section.id }}"
-            aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
-          >
-            <span class="visually-hidden">{{ forloop.index }}</span>
-          </button>
-        {% endfor %}
-      </div>
-    {% endif %}
-  </barkin-carousel>
+    <button class="barkin-button barkin-review__load-more" type="button">Load More</button>
+  </div>
 </section>
 
 {% schema %}

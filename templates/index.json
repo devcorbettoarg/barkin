@@ -399,11 +399,11 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1763",
-        "image": "shopify://shop_images/hero-household.jpg",
+        "image": "shopify://shop_images/General_Fill_Image_Section_1.jpg",
         "fallback_asset": "hero-household.webp",
         "heading": "Household\nProducts",
         "heading_tag": "h2",
-        "text": "A considered collection of home-care essentials designed around life with pets.",
+        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
         "button_label": "Shop Household",
         "button_link": "shopify://collections/all",
         "desktop_height": 875,

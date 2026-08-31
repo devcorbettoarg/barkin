@@ -2048,7 +2048,11 @@ main[data-template="product"] .related-products .price {
     box-shadow: 0 100vh 0 100vh rgba(0,0,0,.45);
   }
   .barkin-site-header__mobile-menu nav > a,
-  .barkin-site-header__mobile-menu nav > details > summary { min-height: 52px; }
+  .barkin-site-header__mobile-menu nav > details > summary {
+    display: flex;
+    min-height: 52px;
+    align-items: center;
+  }
   .barkin-site-header__mobile-menu nav details {
     border-bottom: 1px solid var(--barkin-border);
   }
@@ -2174,7 +2178,7 @@ main[data-template="product"] .related-products .price {
   .barkin-about-intro__grid { display: block; min-height: 0; padding: 80px 20px; }
   .barkin-about-intro__image, .barkin-about-intro__copy { width: 100%; }
   .barkin-about-intro__image { height: 350px; border-radius: 4px 4px 0 0; }
-  .barkin-about-intro__copy { height: 319px; border-top: 0; border-radius: 0 0 4px 4px; }
+  .barkin-about-intro__copy { height: auto; min-height: 319px; border-top: 0; border-radius: 0 0 4px 4px; }
   .barkin-about-intro__copy .barkin-title { font-size: 2.4rem; line-height: 1; }
   .barkin-about-intro__copy .barkin-copy { max-width: none; }
   .barkin-marquee__track { gap: 24px; }

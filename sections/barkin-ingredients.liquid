@@ -1,3 +1,5 @@
+<script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
+
 <section class="barkin-section barkin-mosaic" data-node-id="20:1762">
   <div class="barkin-shell">
     <header class="barkin-mosaic__header">
@@ -9,7 +11,21 @@
         {% endif %}
       </div>
     </header>
-    <div class="barkin-mosaic__grid">
+    {%- assign mobile_slide_count = 0 -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'image' -%}
+        {%- assign mobile_slide_count = mobile_slide_count | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    <barkin-carousel
+      class="barkin-mosaic__carousel"
+      data-carousel-edges="false"
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="{{ section.settings.pagination_label | escape }}"
+    >
+    <div id="BarkinIngredientsRail-{{ section.id }}" class="barkin-mosaic__grid" data-carousel-rail>
       {%- assign mobile_image_column = 0 -%}
       {%- assign mobile_text_column = 0 -%}
       {% for block in section.blocks %}
@@ -25,6 +41,7 @@
           <div
             class="barkin-mosaic-card barkin-mosaic-card--image"
             style="--barkin-mobile-mosaic-column: {{ mobile_image_column }};"
+            data-carousel-slide
             {{ block.shopify_attributes }}
           >
             <img class="barkin-card-image" src="{{ image_src }}" alt="{{ block.settings.alt | escape }}" width="704" height="704" loading="lazy">
@@ -42,6 +59,28 @@
         {% endif %}
       {% endfor %}
     </div>
+
+    {% if mobile_slide_count > 1 %}
+      <div class="barkin-showcase__dots barkin-mosaic__dots" role="group" aria-label="{{ section.settings.pagination_label | escape }}">
+        {%- assign mobile_dot_index = 0 -%}
+        {% for block in section.blocks %}
+          {% if block.type == 'image' %}
+            <button
+              class="barkin-showcase__dot{% if mobile_dot_index == 0 %} is-active{% endif %}"
+              type="button"
+              data-carousel-dot="{{ mobile_dot_index }}"
+              aria-label="Ingredient {{ mobile_dot_index | plus: 1 }}"
+              aria-controls="BarkinIngredientsRail-{{ section.id }}"
+              aria-current="{% if mobile_dot_index == 0 %}true{% else %}false{% endif %}"
+            >
+              <span class="visually-hidden">{{ mobile_dot_index | plus: 1 }}</span>
+            </button>
+            {%- assign mobile_dot_index = mobile_dot_index | plus: 1 -%}
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+    </barkin-carousel>
   </div>
 </section>
 
@@ -55,7 +94,8 @@
     { "type": "textarea", "id": "heading", "label": "Heading", "default": "Human Grade\nIngredients" },
     { "type": "textarea", "id": "text", "label": "Text", "default": "Choosing premium ingredients helps support healthy skin and a beautiful coat." },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Learn More" },
-    { "type": "url", "id": "button_link", "label": "Button link" }
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "text", "id": "pagination_label", "label": "Pagination accessibility label", "default": "Choose ingredient slide" }
   ],
   "blocks": [
     {

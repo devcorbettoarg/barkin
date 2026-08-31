@@ -1702,6 +1702,8 @@ main[data-template="product"] .related-products .price {
 }
 
 .barkin-mosaic__side { display: grid; gap: 20px; align-content: start; max-width: 473px; }
+.barkin-mosaic__carousel { display: block; }
+.barkin-mosaic__dots { display: none; }
 .barkin-mosaic__grid { display: grid; grid-template-columns: repeat(4, 1fr); }
 .barkin-mosaic-card { min-height: 352px; border: 1px solid var(--barkin-border); border-radius: 4px; overflow: hidden; }
 .barkin-mosaic-card--text { display: flex; flex-direction: column; justify-content: space-between; padding: 20px; background: rgba(255,253,252,.05); }
@@ -2282,6 +2284,10 @@ main[data-template="product"] .related-products .price {
   }
   .barkin-mosaic-card--image { grid-row: 1; }
   .barkin-mosaic-card--text { grid-row: 2; }
+  .barkin-mosaic__dots {
+    display: flex;
+    margin-top: 38px;
+  }
   .barkin-problem-solver__header { grid-template-columns: 1fr; gap: 40px; }
   .barkin-problem-solver__tabs { gap: 24px; margin-top: 40px; }
   .barkin-problem-solver__rail { grid-auto-columns: 82vw; margin-top: 30px; }

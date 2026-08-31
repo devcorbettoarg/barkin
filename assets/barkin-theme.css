@@ -319,7 +319,24 @@
   gap: 18px;
 }
 
-.barkin-site-header__actions svg {
+.barkin-site-header__cart { position: relative; }
+.barkin-site-header__cart-count {
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  display: grid;
+  width: 16px;
+  height: 16px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--barkin-gold);
+  color: var(--barkin-black);
+  font-size: .9rem;
+  line-height: 1;
+}
+
+.barkin-site-header__actions svg,
+.barkin-site-header__mobile-menu svg {
   width: 20px;
   height: 20px;
 }
@@ -2008,9 +2025,11 @@ main[data-template="product"] .related-products .price {
     min-height: 64px;
     grid-template-columns: 1fr auto 1fr;
   }
+  .barkin-site-header__announcement { padding-inline: 12px; }
   .barkin-site-header__nav { display: none; }
   .barkin-site-header__mobile-menu { display: block; }
   .barkin-site-header__mobile-menu summary {
+    position: relative;
     display: grid;
     width: 40px;
     height: 40px;
@@ -2019,8 +2038,8 @@ main[data-template="product"] .related-products .price {
     cursor: pointer;
     list-style: none;
   }
-  .barkin-site-header__mobile-menu summary img { width: 18px; height: 18px; }
-  .barkin-site-header__mobile-menu[open] > summary img { opacity: 0; }
+  .barkin-site-header__mobile-menu summary svg { width: 18px; height: 18px; }
+  .barkin-site-header__mobile-menu[open] > summary svg { opacity: 0; }
   .barkin-site-header__mobile-menu[open] > summary::before,
   .barkin-site-header__mobile-menu[open] > summary::after {
     position: absolute;
@@ -2081,7 +2100,8 @@ main[data-template="product"] .related-products .price {
   .barkin-site-header__currency { display: none; }
   .barkin-site-header__actions { gap: 14px; }
   .barkin-site-header__actions a { display: grid; min-width: 32px; min-height: 40px; place-items: center; }
-  .barkin-site-header__actions a:first-of-type { display: none; }
+  .barkin-site-header__account { display: none !important; }
+  .barkin-site-header__cart-count { top: 1px; right: -1px; }
   .barkin-site-footer { padding-top: 30px; }
   .barkin-site-footer__grid {
     width: calc(100% - 40px);
@@ -2230,8 +2250,9 @@ main[data-template="product"] .related-products .price {
   .barkin-review-card__helpful { grid-column: 1 / -1; grid-row: 3; text-align: left; }
   .barkin-review__load-more { margin-top: 60px; }
   .barkin-blog-feature { min-height: 520px; }
-  .barkin-blog-item { grid-template-columns: 1fr 120px; }
-  .barkin-blog-item img { width: 120px; height: 150px; }
+  .barkin-blog-item { grid-template-columns: 1fr; gap: 20px; padding-block: 30px; }
+  .barkin-blog-item__content { min-height: 180px; }
+  .barkin-blog-item img { grid-row: 1; width: 100%; height: 240px; }
   .barkin-journal { padding: 50px 0; }
   .barkin-journal__filters { margin-inline: -20px; padding: 0 20px 30px; }
   .barkin-journal__grid { grid-template-columns: 1fr; gap: 20px; padding-top: 30px; }
@@ -2239,6 +2260,14 @@ main[data-template="product"] .related-products .price {
   .barkin-journal-card__media { height: 264px; }
   .barkin-journal-card__body { min-height: 0; }
   .barkin-journal-card__meta { display: grid; gap: 6px; }
+}
+
+@media screen and (max-width: 389px) {
+  .barkin-title { font-size: 3.6rem; }
+  .barkin-site-header__main { width: calc(100% - 28px); }
+  .barkin-site-header__logo img { max-width: min(130px, 38vw); }
+  .barkin-site-header__actions { gap: 6px; }
+  .barkin-testimonials__rail { --testimonial-width: calc(100vw - 28px); }
 }
 
 /* Cart drawer — Barkin & Meowson visual system, retaining Dawn cart behaviour. */

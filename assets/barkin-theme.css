@@ -2115,6 +2115,18 @@ main[data-template="product"] .related-products .price {
   .barkin-site-header__currency { display: none; }
   .barkin-site-header__actions { gap: 14px; }
   .barkin-site-header__actions a { display: grid; min-width: 32px; min-height: 40px; place-items: center; }
+  .barkin-site-header__search {
+    display: grid !important;
+    flex: 0 0 32px;
+    color: var(--barkin-white);
+    visibility: visible;
+    opacity: 1;
+  }
+  .barkin-site-header__search svg {
+    display: block;
+    overflow: visible;
+    stroke: currentColor;
+  }
   .barkin-site-header__account { display: none !important; }
   .barkin-site-header__cart-count { top: 1px; right: -1px; }
   .barkin-site-footer { padding-top: 30px; }

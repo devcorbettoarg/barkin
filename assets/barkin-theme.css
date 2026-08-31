@@ -2023,17 +2023,32 @@ main[data-template="product"] .related-products .price {
   .barkin-site-header__main {
     width: calc(100% - 40px);
     min-height: 64px;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    column-gap: 4px;
   }
   .barkin-site-header__announcement { padding-inline: 12px; }
   .barkin-site-header__nav { display: none; }
-  .barkin-site-header__mobile-menu { display: block; }
+  .barkin-site-header__mobile-menu {
+    grid-column: 3;
+    grid-row: 1;
+    display: block;
+    justify-self: end;
+  }
+  .barkin-site-header__logo {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+  .barkin-site-header__actions {
+    grid-column: 2;
+    grid-row: 1;
+  }
   .barkin-site-header__mobile-menu summary {
     position: relative;
     display: grid;
     width: 40px;
     height: 40px;
-    margin-left: -10px;
+    margin-right: -10px;
     place-items: center;
     cursor: pointer;
     list-style: none;

@@ -412,88 +412,6 @@
         "desktop_only": true
       }
     },
-    "barkin_review": {
-      "type": "barkin-review",
-      "blocks": {
-        "review_1": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
-            "image_alt": "Pet parents enjoying time with their dog",
-            "heading": "Other Products That\nCompliment This One.",
-            "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
-            "name": "Alessandra",
-            "buyer_label": "Verified Buyer",
-            "recommendation": "I recommend this product"
-          }
-        },
-        "review_2": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
-            "image_alt": "Pet parents enjoying time with their dog",
-            "heading": "Other Products That\nCompliment This One.",
-            "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
-            "name": "Marta",
-            "buyer_label": "Verified Buyer",
-            "recommendation": "I recommend this product"
-          }
-        },
-        "review_3": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
-            "image_alt": "Pet parents enjoying time with their dog",
-            "heading": "Other Products That\nCompliment This One.",
-            "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
-            "name": "Daniel",
-            "buyer_label": "Verified Buyer",
-            "recommendation": "I recommend this product"
-          }
-        },
-        "review_4": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
-            "image_alt": "Pet parents enjoying time with their dog",
-            "heading": "Other Products That\nCompliment This One.",
-            "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
-            "name": "Sofia",
-            "buyer_label": "Verified Buyer",
-            "recommendation": "I recommend this product"
-          }
-        },
-        "review_5": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
-            "image_alt": "Pet parents enjoying time with their dog",
-            "heading": "Other Products That\nCompliment This One.",
-            "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
-            "name": "Alex",
-            "buyer_label": "Verified Buyer",
-            "recommendation": "I recommend this product"
-          }
-        }
-      },
-      "block_order": [
-        "review_1",
-        "review_2",
-        "review_3",
-        "review_4",
-        "review_5"
-      ],
-      "settings": {
-        "desktop_only": true,
-        "carousel_label": "Customer reviews",
-        "pagination_label": "Choose customer review"
-      }
-    },
     "barkin_bundle": {
       "type": "barkin-bundle-builder",
       "blocks": {
@@ -755,7 +673,6 @@
     "barkin_ingredients",
     "barkin_mobile_quiz_mid",
     "barkin_household",
-    "barkin_review",
     "barkin_bundle",
     "barkin_blog",
     "barkin_social",

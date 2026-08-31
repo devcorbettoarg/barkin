@@ -605,6 +605,7 @@
         "bundle_2": {
           "type": "step",
           "settings": {
+            "image": "shopify://shop_images/bundle-grooming.jpg",
             "fallback_asset": "bundle-conditioner.webp",
             "heading": "Conditioner",
             "text": "Give them a beautifully soft coat.",

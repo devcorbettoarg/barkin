@@ -412,6 +412,34 @@
         "desktop_only": true
       }
     },
+    "barkin_testimonials": {
+      "type": "barkin-testimonials",
+      "blocks": {
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/review-feature.jpg",
+            "image_alt": "Pet parents enjoying time with their dog",
+            "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
+            "avatar": "shopify://shop_images/reviewer.jpg",
+            "name": "Alessandra",
+            "buyer_label": "Pet Owner",
+            "recommendation": "Purchased the Detangling Spray"
+          }
+        },
+        "review_2": { "type": "review", "settings": { "name": "Marta" } },
+        "review_3": { "type": "review", "settings": { "name": "Daniel" } },
+        "review_4": { "type": "review", "settings": { "name": "Sofia" } },
+        "review_5": { "type": "review", "settings": { "name": "Alex" } }
+      },
+      "block_order": ["review_1", "review_2", "review_3", "review_4", "review_5"],
+      "settings": {
+        "heading": "See What People Say\nAbout Barkin&Meowson",
+        "text": "Add up to 6 products and save up to 15% on your bundle. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "carousel_label": "Customer reviews",
+        "pagination_label": "Choose customer review"
+      }
+    },
     "barkin_bundle": {
       "type": "barkin-bundle-builder",
       "blocks": {
@@ -673,6 +701,7 @@
     "barkin_ingredients",
     "barkin_mobile_quiz_mid",
     "barkin_household",
+    "barkin_testimonials",
     "barkin_bundle",
     "barkin_blog",
     "barkin_social",

@@ -1750,6 +1750,75 @@ main[data-template="product"] .related-products .price {
 .barkin-muted { color: rgba(255,253,252,.5); }
 .barkin-review-carousel__dots { margin-top: 38px; }
 
+.barkin-testimonials {
+  padding: 72px 0 80px;
+  overflow: hidden;
+  background: var(--barkin-black);
+  color: var(--barkin-white);
+}
+
+.barkin-testimonials__header {
+  width: min(600px, calc(100% - 40px));
+  margin: 0 auto 76px;
+  text-align: center;
+}
+
+.barkin-testimonials__header .barkin-copy { margin: 14px auto 0; }
+.barkin-testimonials__carousel { display: block; }
+
+.barkin-testimonials__rail {
+  --testimonial-width: min(956px, calc(100vw - 40px));
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--testimonial-width);
+  gap: 10px;
+  padding-inline: calc((100vw - var(--testimonial-width)) / 2);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-padding-inline: calc((100vw - var(--testimonial-width)) / 2);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.barkin-testimonials__rail::-webkit-scrollbar { display: none; }
+
+.barkin-testimonial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 0;
+  height: 500px;
+  overflow: hidden;
+  border: 1px solid var(--barkin-border);
+  border-radius: 4px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.barkin-testimonial__image,
+.barkin-testimonial__image img { width: 100%; height: 100%; }
+.barkin-testimonial__image img { display: block; object-fit: cover; }
+
+.barkin-testimonial__content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 14px 18px 18px;
+  background: rgba(255,253,252,.1);
+}
+
+.barkin-testimonial__quote > span { font: 700 4rem/.8 Georgia, serif; }
+.barkin-testimonial__quote p { margin: 14px 0 0; font: 400 2rem/2.4rem Roboto, sans-serif; }
+.barkin-testimonial__buyer { margin-top: auto; }
+.barkin-testimonial__buyer-row { display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: center; padding-bottom: 12px; }
+.barkin-testimonial__buyer-row img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+.barkin-testimonial__buyer-row strong,
+.barkin-testimonial__buyer-row small { display: block; }
+.barkin-testimonial__buyer-row strong { font: 400 1.8rem/2.2rem Roboto, sans-serif; }
+.barkin-testimonial__buyer-row small,
+.barkin-testimonial__buyer > p { color: rgba(255,253,252,.5); font: 400 1.2rem/1.6rem Roboto, sans-serif; }
+.barkin-testimonial__buyer > p { margin: 0; padding-top: 12px; border-top: 1px solid var(--barkin-border); }
+.barkin-testimonials__dots { margin-top: 20px; }
+
 /* Figma review module: rating summary and stacked review cards */
 .barkin-review__shell {
   position: relative;
@@ -1936,30 +2005,50 @@ main[data-template="product"] .related-products .price {
   .barkin-desktop-only { display: none; }
   .barkin-site-header__main {
     width: calc(100% - 40px);
-    min-height: 72px;
+    min-height: 64px;
     grid-template-columns: 1fr auto 1fr;
   }
   .barkin-site-header__nav { display: none; }
   .barkin-site-header__mobile-menu { display: block; }
   .barkin-site-header__mobile-menu summary {
-    width: 24px;
-    height: 24px;
+    display: grid;
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+    place-items: center;
     cursor: pointer;
     list-style: none;
   }
+  .barkin-site-header__mobile-menu summary img { width: 18px; height: 18px; }
+  .barkin-site-header__mobile-menu[open] > summary img { opacity: 0; }
+  .barkin-site-header__mobile-menu[open] > summary::before,
+  .barkin-site-header__mobile-menu[open] > summary::after {
+    position: absolute;
+    width: 18px;
+    height: 1px;
+    background: currentColor;
+    content: "";
+  }
+  .barkin-site-header__mobile-menu[open] > summary::before { transform: rotate(45deg); }
+  .barkin-site-header__mobile-menu[open] > summary::after { transform: rotate(-45deg); }
   .barkin-site-header__mobile-menu summary::-webkit-details-marker { display: none; }
   .barkin-site-header__mobile-menu nav {
     position: absolute;
-    z-index: 10;
-    top: 72px;
+    z-index: 30;
+    top: 64px;
     left: -20px;
     right: -20px;
     display: grid;
-    gap: 20px;
-    padding: 24px 20px;
+    align-content: start;
+    gap: 4px;
+    min-height: calc(100dvh - 94px);
+    padding: 18px 20px 40px;
     border-block: 1px solid var(--barkin-border);
     background: var(--barkin-black);
+    box-shadow: 0 100vh 0 100vh rgba(0,0,0,.45);
   }
+  .barkin-site-header__mobile-menu nav > a,
+  .barkin-site-header__mobile-menu nav > details > summary { min-height: 52px; }
   .barkin-site-header__mobile-menu nav details {
     border-bottom: 1px solid var(--barkin-border);
   }
@@ -1984,8 +2073,10 @@ main[data-template="product"] .related-products .price {
   }
   .barkin-site-header__logo-text { font-size: 1.6rem; }
   .barkin-site-header__logo-kicker { font-size: .8rem; }
+  .barkin-site-header__logo img { max-width: min(150px, 42vw); max-height: 44px; }
   .barkin-site-header__currency { display: none; }
-  .barkin-site-header__actions { gap: 12px; }
+  .barkin-site-header__actions { gap: 14px; }
+  .barkin-site-header__actions a { display: grid; min-width: 32px; min-height: 40px; place-items: center; }
   .barkin-site-header__actions a:first-of-type { display: none; }
   .barkin-site-footer { padding-top: 30px; }
   .barkin-site-footer__grid {
@@ -2117,6 +2208,13 @@ main[data-template="product"] .related-products .price {
   .barkin-problem-solver__tabs { gap: 24px; margin-top: 40px; }
   .barkin-problem-solver__rail { grid-auto-columns: 82vw; margin-top: 30px; }
   .barkin-review__image, .barkin-review__content { min-height: 440px; }
+  .barkin-testimonials { padding: 50px 0; }
+  .barkin-testimonials__header { margin-bottom: 40px; }
+  .barkin-testimonials__rail { --testimonial-width: calc(100vw - 40px); }
+  .barkin-testimonial { grid-template-columns: 1fr; height: auto; }
+  .barkin-testimonial__image { height: 280px; }
+  .barkin-testimonial__content { min-height: 340px; }
+  .barkin-testimonial__quote p { font-size: 1.8rem; line-height: 2.2rem; }
   .barkin-review__shell { width: calc(100% - 40px); min-height: 0; padding: 50px 0; }
   .barkin-review__summary { grid-template-columns: 1fr; gap: 30px; min-height: 0; }
   .barkin-review__actions { justify-content: flex-start; padding-top: 0; }

@@ -1236,7 +1236,6 @@ main[data-template="product"] .related-products .price {
 
 .barkin-showcase__rail,
 .barkin-bundle__grid {
-  grid-template-columns:1fr 1fr 1fr 1fr;
   display: grid;
   grid-auto-columns: minmax(280px, 352px);
   grid-auto-flow: column;

@@ -48,7 +48,7 @@
           -%}
           <article class="barkin-blog-item" {{ block.shopify_attributes }}>
             <div class="barkin-blog-item__content">
-              <p class="barkin-copy" style="color:rgba(255,253,252,.5)">{{ article_tag }}</p>
+              <p class="barkin-copy barkin-muted">{{ article_tag }}</p>
               <h3 class="barkin-product-card__title" style="color:inherit">{{ article_title }}</h3>
               <a class="barkin-button" href="{{ article_url | default: routes.root_url }}">{{ section.settings.article_label }}</a>
             </div>

@@ -2042,6 +2042,76 @@ main[data-template="product"] .related-products .price {
 .barkin-journal .pagination__list > li { color: var(--barkin-white); }
 .barkin-journal .pagination__item { color: var(--barkin-white); }
 
+/* Homepage white-color variant — Figma frame 38:15781.
+ * Photo-led heroes, the promise marquee, header and footer intentionally keep
+ * their dark treatment; editorial sections swap to the light Barkin palette.
+ */
+main[data-template="index"] {
+  background: var(--barkin-white);
+}
+
+main[data-template="index"] .barkin-section,
+main[data-template="index"] .barkin-testimonials {
+  --barkin-border: rgba(45, 40, 36, 0.25);
+  background: var(--barkin-white);
+  color: var(--barkin-black);
+}
+
+main[data-template="index"] .barkin-guarantee__copy,
+main[data-template="index"] .barkin-muted,
+main[data-template="index"] .barkin-testimonial__buyer-row small,
+main[data-template="index"] .barkin-testimonial__buyer > p {
+  color: rgba(45, 40, 36, 0.5);
+}
+
+main[data-template="index"] .barkin-guarantee img {
+  filter: brightness(0) saturate(100%);
+}
+
+main[data-template="index"] .barkin-mosaic-card--text,
+main[data-template="index"] .barkin-review__content,
+main[data-template="index"] .barkin-testimonial__content {
+  background: rgba(45, 40, 36, 0.05);
+}
+
+main[data-template="index"] .barkin-problem-solver__tab {
+  color: rgba(45, 40, 36, 0.5);
+}
+
+main[data-template="index"] .barkin-problem-solver__tab.is-active {
+  color: var(--barkin-black);
+}
+
+main[data-template="index"] .barkin-showcase__dot {
+  background: rgba(45, 40, 36, 0.25);
+}
+
+main[data-template="index"] .barkin-showcase__dot.is-active {
+  background: var(--barkin-black);
+}
+
+main[data-template="index"] .barkin-showcase__dot:focus-visible,
+main[data-template="index"] .barkin-bundle-card__link:focus-visible {
+  outline-color: var(--barkin-black);
+}
+
+main[data-template="index"] .barkin-button:hover {
+  background: var(--barkin-black);
+  color: var(--barkin-white);
+}
+
+/* Copy over photography stays light in both color variants. */
+main[data-template="index"] .barkin-split-card--dark,
+main[data-template="index"] .barkin-blog-feature,
+main[data-template="index"] .barkin-blog-feature .barkin-button {
+  color: var(--barkin-white);
+}
+
+main[data-template="index"] .barkin-blog-feature .barkin-button:hover {
+  background: var(--barkin-white);
+  color: var(--barkin-black);
+}
+
 @media screen and (max-width: 749px) {
   .barkin-hero--desktop-only { display: none; }
   .barkin-hero--mobile-only { display: block; }

@@ -81,8 +81,7 @@
         "product_2": {
           "type": "product",
           "settings": {
-            "product": "",
-            "image": "shopify://shop_images/product-white.jpg",
+            "product": "chlorhexidine-shampoo-dog-cat",
             "fallback_asset": "product-white.webp",
             "title": "Moisturising Conditioner",
             "price": "$19.95",

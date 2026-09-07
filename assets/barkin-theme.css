@@ -2774,3 +2774,6 @@ main[data-template="product"] .complementary-products { margin-top: 70px; }
 .barkin-coats .barkin-centered-intro > .barkin-copy { margin: 0; }
 .barkin-coats .barkin-centered-intro > .barkin-copy > :first-child { margin-top: 0; }
 .barkin-coats .barkin-centered-intro > .barkin-copy > :last-child { margin-bottom: 0; }
+
+.barkin-mosaic__intro-copy > :first-child { margin-top: 0; }
+.barkin-mosaic__intro-copy > :last-child { margin-bottom: 0; }

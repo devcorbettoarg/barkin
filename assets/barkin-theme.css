@@ -812,8 +812,8 @@ main[data-template="product"] .thumbnail-slider {
   grid-column: 2;
   grid-row: 1;
   align-self: start;
-  width: 111px;
-  max-width: 111px;
+  width: 101px;
+  max-width: 101px;
   min-width: 0;
 }
 

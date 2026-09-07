@@ -731,8 +731,6 @@ main[data-template="product"] product-component > .page-width {
 }
 
 .barkin-product-breadcrumb {
-  position: absolute;
-  z-index: 3;
   top: 0;
   right: 0;
   width: 473px;

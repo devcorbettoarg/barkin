@@ -55,7 +55,7 @@ if (!customElements.get('media-gallery')) {
 
         this.preventStickyHeader();
         window.setTimeout(() => {
-          if (!this.mql.matches || this.elements.thumbnails) {
+          if (!this.mql.matches || this.elements.thumbnails || this.querySelector('barkin-gallery-controls')) {
             activeMedia.parentElement.scrollTo({ left: activeMedia.offsetLeft });
           }
           const activeMediaRect = activeMedia.getBoundingClientRect();

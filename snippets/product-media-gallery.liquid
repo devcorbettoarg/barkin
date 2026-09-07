@@ -52,6 +52,9 @@
   data-desktop-layout="{{ section.settings.gallery_layout }}"
 >
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
+  {% if request.page_type == 'product' %}
+    <script src="{{ 'barkin-gallery.js' | asset_url }}" defer="defer"></script>
+  {% endif %}
   <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
     <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
       {{ 'accessibility.skip_to_product_info' | t }}
@@ -125,6 +128,9 @@
         {%- endunless -%}
       {%- endfor -%}
     </ul>
+    {% if request.page_type == 'product' %}
+      <barkin-gallery-controls data-label="{{ 'products.product.media.load_image' | t: index: '' | escape }}" aria-label="{{ 'products.product.media.gallery_viewer' | t }}"></barkin-gallery-controls>
+    {% endif %}
     <div class="slider-buttons quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %}">
       <button
         type="button"

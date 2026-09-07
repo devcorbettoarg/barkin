@@ -1815,7 +1815,7 @@ main[data-template="product"] .related-products .price {
   margin-bottom: 70px;
 }
 
-.barkin-mosaic__side { display: grid; gap: 20px; align-content: start; max-width: 473px; }
+.barkin-mosaic__side { display: grid; gap: 20px; align-content: start; max-width: 473px; margin-top:10px; /* margin necesario. */}
 .barkin-mosaic__carousel { display: block; }
 .barkin-mosaic__dots { display: none; }
 .barkin-mosaic__grid { display: grid; grid-template-columns: repeat(4, 1fr); }

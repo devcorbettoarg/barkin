@@ -91,8 +91,7 @@
         "product_3": {
           "type": "product",
           "settings": {
-            "product": "",
-            "image": "shopify://shop_images/product-spray.jpg",
+            "product": "chlorhexidine-spray-dog-cat",
             "fallback_asset": "product-spray.webp",
             "title": "Daily Care Spray",
             "price": "$19.95",
@@ -102,8 +101,7 @@
         "product_4": {
           "type": "product",
           "settings": {
-            "product": "",
-            "image": "shopify://shop_images/product-dental.jpg",
+            "product": "chlorhexidine-spray-dog-cat",
             "fallback_asset": "product-dental.webp",
             "title": "Dental Essentials",
             "price": "$19.95",
@@ -123,8 +121,7 @@
         "product_6": {
           "type": "product",
           "settings": {
-            "product": "",
-            "image": "shopify://shop_images/product-white.jpg",
+            "product": "flea-tick-shampoo-dogs-cats",
             "fallback_asset": "product-white.webp",
             "title": "Moisturising Conditioner",
             "price": "$19.95",

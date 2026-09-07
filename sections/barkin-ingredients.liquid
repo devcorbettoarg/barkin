@@ -25,7 +25,7 @@
     </header>
     {%- assign mobile_slide_count = 0 -%}
     {%- for block in section.blocks -%}
-      {%- if block.type == 'image' -%}
+      {%- if block.type == 'image' or block.type == 'ingredient' -%}
         {%- assign mobile_slide_count = mobile_slide_count | plus: 1 -%}
       {%- endif -%}
     {%- endfor -%}
@@ -41,7 +41,40 @@
       {%- assign mobile_image_column = 0 -%}
       {%- assign mobile_text_column = 0 -%}
       {% for block in section.blocks %}
-        {% if block.type == 'image' %}
+        {% if block.type == 'ingredient' %}
+          {%- liquid
+            assign ingredient = block.settings.ingredient
+            assign ingredient_heading = ingredient.title.value | default: block.settings.heading
+            assign ingredient_text = ingredient.text
+            assign ingredient_image = ingredient.image.value | default: block.settings.image
+            assign ingredient_column = mobile_image_column | at_least: mobile_text_column | plus: 1
+            assign mobile_image_column = ingredient_column
+            assign mobile_text_column = ingredient_column
+          -%}
+          <article class="barkin-ingredient" style="--barkin-mobile-mosaic-column: {{ ingredient_column }};" {{ block.shopify_attributes }}>
+            <div class="barkin-mosaic-card barkin-mosaic-card--image" data-carousel-slide>
+              {% if ingredient_image != blank %}
+                {{ ingredient_image | image_url: width: 900 | image_tag: class: 'barkin-card-image', loading: 'lazy', widths: '360,540,720,900', alt: ingredient_heading }}
+              {% else %}
+                {{ 'image' | placeholder_svg_tag: 'barkin-card-image' }}
+              {% endif %}
+            </div>
+            <div class="barkin-mosaic-card barkin-mosaic-card--text">
+              <h3 class="barkin-card-title">{{ ingredient_heading | escape | newline_to_br }}</h3>
+              <div class="barkin-copy barkin-ingredient__copy">
+                {% if ingredient_text.value != blank %}
+                  {% if ingredient_text.type == 'rich_text_field' %}
+                    {{ ingredient_text | metafield_tag }}
+                  {% else %}
+                    <p>{{ ingredient_text.value | escape | newline_to_br }}</p>
+                  {% endif %}
+                {% else %}
+                  {{ block.settings.text }}
+                {% endif %}
+              </div>
+            </div>
+          </article>
+        {% elsif block.type == 'image' %}
           {%- liquid
             assign mobile_image_column = mobile_image_column | plus: 1
             if block.settings.image != blank
@@ -76,7 +109,7 @@
       <div class="barkin-showcase__dots barkin-mosaic__dots" role="group" aria-label="{{ section.settings.pagination_label | escape }}">
         {%- assign mobile_dot_index = 0 -%}
         {% for block in section.blocks %}
-          {% if block.type == 'image' %}
+          {% if block.type == 'image' or block.type == 'ingredient' %}
             <button
               class="barkin-showcase__dot{% if mobile_dot_index == 0 %} is-active{% endif %}"
               type="button"
@@ -103,15 +136,26 @@
   "class": "section",
   "max_blocks": 8,
   "settings": [
-    { "type": "text", "id": "product_heading", "label": "Product title", "info": "Connect a single-line text metafield using the dynamic source button. When empty, Heading below is used." },
-    { "type": "richtext", "id": "product_text", "label": "Product text", "info": "Connect a rich text metafield using the dynamic source button. When empty, Text below is used." },
-    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Human Grade\nIngredients" },
-    { "type": "textarea", "id": "text", "label": "Text", "default": "Choosing premium ingredients helps support healthy skin and a beautiful coat." },
+    { "type": "text", "id": "product_heading", "label": "Title from metafield", "info": "Connect a single-line text metafield using the dynamic source button. When empty, Heading below is used." },
+    { "type": "richtext", "id": "product_text", "label": "Text from metafield", "info": "Connect a rich text metafield using the dynamic source button. When empty, Text below is used." },
+    { "type": "textarea", "id": "heading", "label": "Fallback heading", "default": "Human Grade\nIngredients" },
+    { "type": "textarea", "id": "text", "label": "Fallback text", "default": "Choosing premium ingredients helps support healthy skin and a beautiful coat." },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Learn More" },
     { "type": "url", "id": "button_link", "label": "Button link" },
     { "type": "text", "id": "pagination_label", "label": "Pagination accessibility label", "default": "Choose ingredient slide" }
   ],
   "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient",
+      "settings": [
+        { "type": "metaobject", "id": "ingredient", "label": "Ingredient", "metaobject_type": "human_grade_ingredients" },
+        { "type": "header", "content": "Fallback content" },
+        { "type": "image_picker", "id": "image", "label": "Fallback image" },
+        { "type": "text", "id": "heading", "label": "Fallback title", "default": "Premium Grade Ingredient" },
+        { "type": "richtext", "id": "text", "label": "Fallback text" }
+      ]
+    },
     {
       "type": "image",
       "name": "Image",

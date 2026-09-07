@@ -2777,3 +2777,11 @@ main[data-template="product"] .complementary-products { margin-top: 70px; }
 
 .barkin-mosaic__intro-copy > :first-child { margin-top: 0; }
 .barkin-mosaic__intro-copy > :last-child { margin-bottom: 0; }
+
+/* A single editor block keeps each ingredient's image and copy together. */
+.barkin-ingredient { display: contents; }
+.barkin-ingredient__copy > :first-child,
+.barkin-ingredient__copy .metafield-rich_text_field > :first-child { margin-top: 0; }
+.barkin-ingredient__copy > :last-child,
+.barkin-ingredient__copy .metafield-rich_text_field > :last-child { margin-bottom: 0; }
+.barkin-ingredient .barkin-mosaic-card--text { max-height: none; }

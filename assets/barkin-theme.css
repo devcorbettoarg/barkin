@@ -1667,7 +1667,7 @@ main[data-template="product"] .related-products .price {
   display: grid;
   grid-template-columns: minmax(0, 473px) minmax(0, 715px);
   justify-content: space-between;
-  gap: 40px;
+  gap: 80px;
 }
 
 .barkin-guarantees__intro { max-width: 473px; display: grid; gap: 20px; align-content: start; }

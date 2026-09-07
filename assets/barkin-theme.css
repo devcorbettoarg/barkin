@@ -1158,6 +1158,7 @@ main[data-template="product"] .related-products .price {
   color: inherit;
   font-size: 1.2rem;
   line-height: 1.6rem;
+  opacity:0.75;
 }
 
 .barkin-button {

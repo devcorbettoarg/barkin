@@ -1214,7 +1214,7 @@ main[data-template="product"] .related-products .price {
 .barkin-marquee {
   height: 54px;
   overflow: hidden;
-  background: var(--barkin-black);
+  background: #2D2824;
   color: var(--barkin-white);
   border-block: 0px solid rgba(255,253,252,.5);
 }

@@ -1819,7 +1819,7 @@ main[data-template="product"] .related-products .price {
 .barkin-mosaic__carousel { display: block; }
 .barkin-mosaic__dots { display: none; }
 .barkin-mosaic__grid { display: grid; grid-template-columns: repeat(4, 1fr);  gap:10px;}
-.barkin-mosaic-card { min-height: 352px; border: 1px solid var(--barkin-border); border-radius: 4px; overflow: hidden; }
+.barkin-mosaic-card { max-height:352px ; min-height: 352px; border: 1px solid var(--barkin-border); border-radius: 4px; overflow: hidden; }
 .barkin-mosaic-card--text { display: flex; flex-direction: column; justify-content: space-between; padding: 20px; background: rgba(255,253,252,.05); }
 
 .barkin-problem-solver { padding: 79px 0; overflow: hidden; background: var(--barkin-black); color: var(--barkin-white); }

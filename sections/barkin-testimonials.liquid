@@ -55,7 +55,11 @@
                 </div>
               </div>
               {% if block.settings.recommendation != blank %}
-                <p>✓&nbsp; {{ block.settings.recommendation }}</p>
+                <p>
+<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.71915 3.72571V8.51591H0.862236C0.383216 8.51591 0 8.1327 0 7.659V4.58795C0 4.11425 0.388539 3.72571 0.862236 3.72571H1.71915ZM7.71222 2.92735H5.16809V1.06449C5.16809 0.47902 4.68907 0 4.10892 0H4.06102C3.84812 0 3.65652 0.127739 3.57136 0.324669L2.11833 3.72571V8.51591H7.01498C7.40352 8.51591 7.73351 8.23915 7.8027 7.85593L8.50526 3.8641C8.59042 3.37443 8.21785 2.92735 7.71754 2.92735H7.71222Z" fill="#FFFDFC" fill-opacity="0.5"/>
+</svg>
+ {{ block.settings.recommendation }}</p>
               {% endif %}
             </div>
           </div>

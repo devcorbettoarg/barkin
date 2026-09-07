@@ -2801,3 +2801,68 @@ main[data-template="product"] .complementary-products { margin-top: 70px; }
 .barkin-ingredient__copy > :last-child,
 .barkin-ingredient__copy .metafield-rich_text_field > :last-child { margin-bottom: 0; }
 .barkin-ingredient .barkin-mosaic-card--text { max-height: none; }
+
+
+
+/* =========================================================
+   BARKIN · PURCHASE GUARANTEES
+   ========================================================= */
+
+.barkin-purchase-guarantees {
+  width: 100%;
+  padding: 18px 0;
+  margin: 28px 0 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.barkin-purchase-guarantees__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: rgb(var(--color-foreground));
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.barkin-purchase-guarantees__item + .barkin-purchase-guarantees__item {
+  margin-top: 7px;
+}
+
+.barkin-purchase-guarantees__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 12px;
+  height: 12px;
+  flex: 0 0 12px;
+
+  color: currentColor;
+}
+
+.barkin-purchase-guarantees__icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.barkin-purchase-guarantees__text {
+  display: block;
+}
+
+
+/* Desktop */
+@media screen and (min-width: 750px) {
+  .barkin-purchase-guarantees {
+    padding: 18px 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .barkin-purchase-guarantees__item {
+    font-size: 12px;
+  }
+}

@@ -42,6 +42,11 @@
       {% endif %}
     </div>
 
+    {% assign footer_menus = section.blocks | where: 'type', 'menu' %}
+    {% assign copyright_block = footer_menus | last %}
+    {% if copyright_block == blank %}
+      {% assign copyright_block = section.blocks | last %}
+    {% endif %}
     {% for block in section.blocks %}
       <div class="barkin-site-footer__column" {{ block.shopify_attributes }}>
         <h2>{{ block.settings.heading }}</h2>
@@ -56,15 +61,21 @@
           {% if block.settings.show_social %}
             <ul class="barkin-site-footer__social" role="list">
               {% if settings.social_instagram_link != blank %}<li><a href="{{ settings.social_instagram_link }}">Instagram</a></li>{% endif %}
+              {% if settings.social_linkedin_link != blank %}<li><a href="{{ settings.social_linkedin_link }}">LinkedIn</a></li>{% endif %}
               {% if settings.social_tiktok_link != blank %}<li><a href="{{ settings.social_tiktok_link }}">TikTok</a></li>{% endif %}
               {% if settings.social_youtube_link != blank %}<li><a href="{{ settings.social_youtube_link }}">Youtube</a></li>{% endif %}
             </ul>
           {% endif %}
         {% endif %}
+        {% if block.id == copyright_block.id %}
+          <p class="barkin-site-footer__copyright">©{{ 'now' | date: '%Y' }} {{ section.settings.copyright | escape }}</p>
+        {% endif %}
       </div>
     {% endfor %}
+    {% if section.blocks.size == 0 %}
+      <p class="barkin-site-footer__copyright">©{{ 'now' | date: '%Y' }} {{ section.settings.copyright | escape }}</p>
+    {% endif %}
   </div>
-  <p class="barkin-site-footer__copyright">© {{ 'now' | date: '%Y' }} {{ section.settings.copyright }}</p>
 </footer>
 
 {% schema %}

@@ -490,16 +490,34 @@
   height: 24px;
 }
 
+.barkin-site-footer__column {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
 .barkin-site-footer__social {
-  margin-top: 24px !important;
+  margin-top: auto !important;
+  padding-top: 40px !important;
+}
+
+.barkin-site-footer__social:empty {
+  display: none;
+}
+
+.barkin-site-footer__column > .rte > p:first-child {
+  margin-top: 0;
+}
+
+.barkin-site-footer__column > .rte > p:last-child {
+  margin-bottom: 0;
 }
 
 .barkin-site-footer__copyright {
-  width: calc(100% - 10vw);
-  max-width: 1440px;
-  margin: 20px auto 0;
-  color: rgba(255,253,252,.6) !important;
-  text-align: right;
+  margin: auto 0 0;
+  padding-top: 40px;
+  color: var(--barkin-white);
+  text-align: left;
 }
 
 /* Collection / PLP */

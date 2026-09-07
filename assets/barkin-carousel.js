@@ -16,7 +16,11 @@ if (!customElements.get('barkin-carousel')) {
       this.onDragStart = this.onDragStart.bind(this);
 
       this.dotHandlers = this.dots.map((dot) => {
-        const handler = () => this.goTo(Number(dot.dataset.carouselDot));
+        const handler = () => {
+          const index = Number(dot.dataset.carouselDot);
+          if (this.dataset.pagination === 'positions') this.goToPage(index);
+          else this.goTo(index);
+        };
         dot.addEventListener('click', handler);
         return handler;
       });
@@ -32,6 +36,7 @@ if (!customElements.get('barkin-carousel')) {
       this.resizeObserver.observe(this.rail);
 
       requestAnimationFrame(() => {
+        this.updatePages();
         const initialIndex = Math.min(Number(this.dataset.initialSlide || 0), this.cards.length - 1);
         this.goTo(initialIndex, false);
       });
@@ -120,7 +125,55 @@ if (!customElements.get('barkin-carousel')) {
     }
 
     onResize() {
+      this.updatePages();
       this.updateState();
+    }
+
+    getCardPosition(card) {
+      return card.getBoundingClientRect().left - this.rail.getBoundingClientRect().left
+        + this.rail.scrollLeft - this.getSideInset();
+    }
+
+    updatePages() {
+      if (this.dataset.pagination !== 'positions') return;
+      const maxScroll = Math.max(0, this.rail.scrollWidth - this.rail.clientWidth);
+      this.pages = [];
+      this.cards.forEach((card) => {
+        const position = Math.min(maxScroll, Math.max(0, this.getCardPosition(card)));
+        if (!this.pages.length || position - this.pages[this.pages.length - 1] > 1) {
+          this.pages.push(position);
+        } else if (position === maxScroll) {
+          this.pages[this.pages.length - 1] = maxScroll;
+        }
+      });
+      this.dots.forEach((dot, index) => {
+        dot.hidden = this.pages.length < 2 || index >= this.pages.length;
+      });
+      const pagination = this.querySelector('.barkin-showcase__dots');
+      if (pagination) pagination.hidden = this.pages.length < 2;
+    }
+
+    goToPage(index) {
+      const position = this.pages?.[index];
+      if (position === undefined) return;
+      this.rail.scrollTo({
+        left: position,
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      });
+      this.updateState();
+    }
+
+    getCurrentPage() {
+      let nearestIndex = 0;
+      let nearestDistance = Infinity;
+      (this.pages || []).forEach((position, index) => {
+        const distance = Math.abs(position - this.rail.scrollLeft);
+        if (distance < nearestDistance) {
+          nearestDistance = distance;
+          nearestIndex = index;
+        }
+      });
+      return nearestIndex;
     }
 
     getCurrentIndex() {
@@ -141,7 +194,9 @@ if (!customElements.get('barkin-carousel')) {
 
     updateState(forcedIndex) {
       const currentIndex = forcedIndex ?? this.getCurrentIndex();
-      const activeDotIndex = Math.min(currentIndex, this.dots.length - 1);
+      const activeDotIndex = this.dataset.pagination === 'positions'
+        ? this.getCurrentPage()
+        : Math.min(currentIndex, this.dots.length - 1);
 
       this.dots.forEach((dot, index) => {
         const isActive = index === activeDotIndex;

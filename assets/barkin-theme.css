@@ -2561,3 +2561,8 @@ main[data-template="product"] .related-products .price {
 @media (prefers-reduced-motion: reduce) {
   .barkin-marquee__track { animation: none; }
 }
+
+.barkin-showcase__dots[hidden],
+.barkin-showcase__dot[hidden] {
+  display: none;
+}

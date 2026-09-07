@@ -14,6 +14,7 @@
   <barkin-carousel
     class="barkin-showcase__carousel"
     data-carousel-edges="false"
+    data-pagination="positions"
     data-initial-slide="{% if section.blocks.size > 4 %}1{% else %}0{% endif %}"
     role="region"
     aria-roledescription="carousel"
@@ -79,12 +80,12 @@
 
     {% if section.blocks.size > 1 %}
       <div class="barkin-showcase__dots" role="group" aria-label="{{ section.settings.pagination_label | escape }}">
-        {% for block in section.blocks limit: 5 %}
+        {% for block in section.blocks %}
           <button
             class="barkin-showcase__dot{% if forloop.first %} is-active{% endif %}"
             type="button"
             data-carousel-dot="{{ forloop.index0 }}"
-            aria-label="Mostrar producto {{ forloop.index }}"
+            aria-label="{{ section.settings.pagination_label | escape }} {{ forloop.index }}"
             aria-controls="BarkinRail-{{ section.id }}"
             aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
           >

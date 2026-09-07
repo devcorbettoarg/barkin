@@ -178,7 +178,7 @@
 
 .barkin-site-header__mega-links {
   margin-top: auto;
-  padding-top: 48px;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, minmax(120px, 1fr));
   gap: 40px;

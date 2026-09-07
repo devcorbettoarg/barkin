@@ -1676,7 +1676,7 @@ main[data-template="product"] .related-products .price {
 .barkin-guarantee { display: grid; grid-template-columns: 84px 1fr; gap: 40px; align-items: center; min-height: 131px; border-bottom: 1px solid var(--barkin-border); }
 .barkin-guarantee:last-child { border-bottom: 0; }
 .barkin-guarantee img { width: 84px; height: 84px; object-fit: contain; }
-.barkin-guarantee__copy { color: rgba(255,253,252,.5); font-size: 1.4rem; line-height: 1.8rem; }
+.barkin-guarantee__copy { color: rgba(255,253,252,.5); font-size: 1.2rem; line-height: 1.6rem; }
 
 .barkin-values {
   padding: 79px 0;

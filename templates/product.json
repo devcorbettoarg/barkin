@@ -27,10 +27,6 @@
             "text_style": "body"
           }
         },
-        "purchase_options": {
-          "type": "purchase_options",
-          "settings": { "heading": "Purchase Options", "one_time_label": "One-time Purchase" }
-        },
         "price": {
           "type": "price",
           "disabled": true,
@@ -41,6 +37,13 @@
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
+          }
+        },
+        "purchase_options": {
+          "type": "purchase_options",
+          "settings": {
+            "heading": "Purchase Options",
+            "one_time_label": "One-time Purchase"
           }
         },
         "quantity_selector": {
@@ -256,32 +259,17 @@
     "barkin_coats": {
       "type": "barkin-coat-guide",
       "blocks": {
-        "coat_1": {
+        "coat_zbmG4X": {
           "type": "coat",
+          "repeater": "{{ product.metafields.custom.coats.value }}",
           "settings": {
-            "heading": "Double Coated",
-            "text": "Care designed around the hydration and cleansing needs of this coat type."
-          }
-        },
-        "coat_2": {
-          "type": "coat",
-          "settings": {
-            "heading": "Curly Coated",
-            "text": "Care designed around the hydration and cleansing needs of this coat type."
-          }
-        },
-        "coat_3": {
-          "type": "coat",
-          "settings": {
-            "heading": "Short Coated",
-            "text": "Care designed around the hydration and cleansing needs of this coat type."
+            "image": "{{ block.repeater.image.value }}",
+            "heading": "{{ block.repeater.name.value }}"
           }
         }
       },
       "block_order": [
-        "coat_1",
-        "coat_2",
-        "coat_3"
+        "coat_zbmG4X"
       ],
       "settings": {
         "heading": "This Product Is Fit For\nThese Pet Coats.",
@@ -384,6 +372,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",

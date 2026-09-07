@@ -211,6 +211,14 @@
     "barkin_ingredients": {
       "type": "barkin-ingredients",
       "blocks": {
+        "image_YRQ3LQ": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.featured_image }}",
+            "fallback_asset": "ingredient-honey.webp",
+            "alt": "Premium ingredient"
+          }
+        },
         "ingredient_1": {
           "type": "image",
           "settings": {
@@ -243,6 +251,7 @@
         }
       },
       "block_order": [
+        "image_YRQ3LQ",
         "ingredient_1",
         "ingredient_2",
         "ingredient_3",

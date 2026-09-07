@@ -20,8 +20,16 @@
           "type": "title",
           "settings": {}
         },
+        "text_KeM4px": {
+          "type": "text",
+          "settings": {
+            "text": "An everyday rinse-out cat and dog conditioner, formulated to pair  with most of our shampoos.",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {}
         },
         "variant_picker": {
@@ -105,6 +113,7 @@
       "block_order": [
         "rating",
         "title",
+        "text_KeM4px",
         "price",
         "variant_picker",
         "quantity_selector",

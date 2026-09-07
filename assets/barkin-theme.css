@@ -1607,7 +1607,7 @@ main[data-template="product"] .related-products .price {
 
 .barkin-launch-slide__media {
   position: absolute;
-  inset: 76px 0 92px;
+  inset: 0px;
   display: block;
 }
 

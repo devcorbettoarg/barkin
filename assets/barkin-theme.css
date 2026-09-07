@@ -1519,7 +1519,6 @@ main[data-template="product"] .related-products .price {
   bottom: 40px;
   display: grid;
   gap: 20px;
-  max-width:400px;
 }
 
 .barkin-split-card--light {

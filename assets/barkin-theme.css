@@ -1150,7 +1150,7 @@ main[data-template="product"] .related-products .price {
 
 .barkin-button {
   display: inline-flex;
-  min-height: 39px;
+  min-height: 28px;
   align-items: center;
   justify-content: center;
   padding: 0 14px;

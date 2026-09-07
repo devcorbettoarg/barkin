@@ -112,7 +112,9 @@ if (!customElements.get('barkin-carousel')) {
       if (!card) return;
 
       this.rail.scrollTo({
-        left: Math.max(0, card.offsetLeft - this.getSideInset()),
+        left: this.dataset.align === 'center'
+          ? this.getCenteredPosition(card)
+          : Math.max(0, card.offsetLeft - this.getSideInset()),
         behavior: smooth && !window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'smooth' : 'auto',
       });
 
@@ -125,6 +127,9 @@ if (!customElements.get('barkin-carousel')) {
     }
 
     onResize() {
+      if (this.dataset.align === 'center' && this.activeIndex !== undefined) {
+        this.goTo(this.activeIndex, false);
+      }
       this.updatePages();
       this.updateState();
     }
@@ -176,13 +181,22 @@ if (!customElements.get('barkin-carousel')) {
       return nearestIndex;
     }
 
+    getCenteredPosition(card) {
+      return Math.max(0, Math.min(
+        this.rail.scrollWidth - this.rail.clientWidth,
+        card.offsetLeft - (this.rail.clientWidth - card.offsetWidth) / 2
+      ));
+    }
+
     getCurrentIndex() {
       const target = this.rail.scrollLeft + this.getSideInset();
       let nearestIndex = 0;
       let nearestDistance = Number.POSITIVE_INFINITY;
 
       this.cards.forEach((card, index) => {
-        const distance = Math.abs(card.offsetLeft - target);
+        const distance = this.dataset.align === 'center'
+          ? Math.abs(this.getCenteredPosition(card) - this.rail.scrollLeft)
+          : Math.abs(card.offsetLeft - target);
         if (distance < nearestDistance) {
           nearestDistance = distance;
           nearestIndex = index;
@@ -194,6 +208,7 @@ if (!customElements.get('barkin-carousel')) {
 
     updateState(forcedIndex) {
       const currentIndex = forcedIndex ?? this.getCurrentIndex();
+      this.activeIndex = currentIndex;
       const activeDotIndex = this.dataset.pagination === 'positions'
         ? this.getCurrentPage()
         : Math.min(currentIndex, this.dots.length - 1);

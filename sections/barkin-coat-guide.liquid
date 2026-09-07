@@ -20,6 +20,8 @@
 
   <barkin-carousel
     class="barkin-coats__carousel"
+    data-align="center"
+    data-carousel-edges="false"
     data-initial-slide="{% if section.blocks.size > 2 %}1{% else %}0{% endif %}"
     role="region"
     aria-roledescription="carousel"
@@ -27,7 +29,8 @@
   >
     <div id="BarkinCoatRail-{{ section.id }}" class="barkin-coats__rail" data-carousel-rail>
       {% for block in section.blocks %}
-        <article class="barkin-coat-card" data-carousel-slide {{ block.shopify_attributes }}>
+        <article class="barkin-coat-card{% if forloop.index0 == 1 and section.blocks.size > 2 or forloop.first and section.blocks.size <= 2 %} is-active{% endif %}" data-carousel-slide {{ block.shopify_attributes }}>
+          <div class="barkin-coat-card__visual">
           {% if block.settings.image != blank %}
             {{
               block.settings.image
@@ -40,6 +43,7 @@
           <div class="barkin-coat-card__content">
             <h3 class="barkin-card-title">{{ block.settings.heading }}</h3>
             <p class="barkin-copy">{{ block.settings.text }}</p>
+          </div>
           </div>
         </article>
       {% endfor %}

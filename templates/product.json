@@ -27,10 +27,6 @@
             "text_style": "body"
           }
         },
-        "purchase_options": {
-          "type": "purchase_options",
-          "settings": { "heading": "Purchase Options", "one_time_label": "One-time Purchase" }
-        },
         "price": {
           "type": "price",
           "disabled": true,
@@ -41,6 +37,13 @@
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
+          }
+        },
+        "purchase_options": {
+          "type": "purchase_options",
+          "settings": {
+            "heading": "Purchase Options",
+            "one_time_label": "One-time Purchase"
           }
         },
         "quantity_selector": {
@@ -384,6 +387,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",

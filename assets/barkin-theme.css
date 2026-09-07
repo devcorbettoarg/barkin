@@ -1519,6 +1519,7 @@ main[data-template="product"] .related-products .price {
   bottom: 40px;
   display: grid;
   gap: 20px;
+  max-width:400px;
 }
 
 .barkin-split-card--light {
@@ -1613,7 +1614,7 @@ main[data-template="product"] .related-products .price {
 .barkin-launch-slide__media img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .barkin-launch-slide__content {
@@ -2571,9 +2572,4 @@ main[data-template="product"] .related-products .price {
 
 @media (prefers-reduced-motion: reduce) {
   .barkin-marquee__track { animation: none; }
-}
-
-.barkin-showcase__dots[hidden],
-.barkin-showcase__dot[hidden] {
-  display: none;
 }

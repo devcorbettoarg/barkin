@@ -1249,7 +1249,10 @@ main[data-template="product"] .related-products .price {
   gap: 20px;
   text-align: center;
 }
+.barkin-showcase {
+    background: var(--barkin-black2);
 
+}
 .barkin-showcase,
 .barkin-bundle,
 .barkin-social {

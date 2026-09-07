@@ -81,8 +81,7 @@
         "product_2": {
           "type": "product",
           "settings": {
-            "product": "",
-            "image": "shopify://shop_images/product-white.jpg",
+            "product": "chlorhexidine-shampoo-dog-cat",
             "fallback_asset": "product-white.webp",
             "title": "Moisturising Conditioner",
             "price": "$19.95",
@@ -92,8 +91,7 @@
         "product_3": {
           "type": "product",
           "settings": {
-            "product": "",
-            "image": "shopify://shop_images/product-spray.jpg",
+            "product": "chlorhexidine-spray-dog-cat",
             "fallback_asset": "product-spray.webp",
             "title": "Daily Care Spray",
             "price": "$19.95",
@@ -103,8 +101,7 @@
         "product_4": {
           "type": "product",
           "settings": {
-            "product": "",
-            "image": "shopify://shop_images/product-dental.jpg",
+            "product": "chlorhexidine-spray-dog-cat",
             "fallback_asset": "product-dental.webp",
             "title": "Dental Essentials",
             "price": "$19.95",
@@ -124,8 +121,7 @@
         "product_6": {
           "type": "product",
           "settings": {
-            "product": "",
-            "image": "shopify://shop_images/product-white.jpg",
+            "product": "flea-tick-shampoo-dogs-cats",
             "fallback_asset": "product-white.webp",
             "title": "Moisturising Conditioner",
             "price": "$19.95",
@@ -158,13 +154,13 @@
           "type": "product_slide",
           "settings": {
             "product": "",
-            "image": "shopify://shop_images/product-white.jpg",
+            "image": "shopify://shop_images/Frame_14_1.jpg",
             "fallback_asset": "collection-product.webp",
             "product_title": "Gentle Care Shampoo",
             "price": "$19.95",
             "link": "",
             "heading": "Easy Detangling",
-            "text": "Premium care for an easier, smoother grooming routine."
+            "text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out."
           }
         },
         "launch_product_2": {

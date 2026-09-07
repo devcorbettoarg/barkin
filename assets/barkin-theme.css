@@ -751,7 +751,7 @@ main[data-template="product"] .product {
   grid-template-columns: minmax(0, 836fr) minmax(0, 473fr);
   align-items: start;
   column-gap: 131px;
-  padding-top: 180px;
+  padding-top: 0px;
 }
 
 main[data-template="product"] .product__media-wrapper {

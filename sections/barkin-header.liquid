@@ -135,9 +135,19 @@
     </a>
 
     <div class="barkin-site-header__actions">
-      <span class="barkin-site-header__currency" aria-label="{{ localization.country.currency.iso_code }}">
-        {{ localization.country.currency.symbol }}⌄
-      </span>
+      {% if section.settings.enable_country_selector and localization.available_countries.size > 1 %}
+        {% assign country_selector_id = 'BarkinHeaderCountry-' | append: section.id %}
+        <div class="barkin-site-header__currency header-localization">
+          <localization-form>
+            {% form 'localization', id: country_selector_id, class: 'localization-form' %}
+              <div>
+                <h2 class="visually-hidden" id="{{ country_selector_id }}Label">{{ 'localization.country_label' | t }}</h2>
+                {% render 'country-localization', localPosition: country_selector_id %}
+              </div>
+            {% endform %}
+          </localization-form>
+        </div>
+      {% endif %}
       <a class="barkin-site-header__search" href="{{ routes.search_url }}" aria-label="{{ 'general.search.search' | t }}">
         <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/>
@@ -171,6 +181,7 @@
   "settings": [
     { "type": "text", "id": "announcement", "label": "Announcement", "default": "Free shipping above $35 on all US orders" },
     { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" },
+    { "type": "checkbox", "id": "enable_country_selector", "default": true, "label": "t:sections.header.settings.enable_country_selector.label", "info": "t:sections.header.settings.enable_country_selector.info" },
     { "type": "image_picker", "id": "logo", "label": "Logo" },
     { "type": "range", "id": "logo_width", "min": 120, "max": 320, "step": 10, "unit": "px", "label": "Logo width", "default": 240 },
     { "type": "range", "id": "mobile_logo_width", "min": 140, "max": 220, "step": 10, "unit": "px", "label": "Mobile logo width", "default": 180 },

@@ -352,11 +352,24 @@
 }
 
 .barkin-site-header__currency {
+  --color-background: 45, 40, 36;
+  --color-foreground: 255, 253, 252;
   min-width: 55px;
-  padding: 10px 12px;
   border: 1px solid var(--barkin-border);
   border-radius: 4px;
   font-size: 1.4rem;
+}
+
+.barkin-site-header__currency .localization-form__select .icon-caret {
+  width: 10px;
+  height: 6px;
+}
+
+.barkin-site-header__currency .localization-form__select > span {
+  max-width: 20ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .barkin-site-header__mobile-menu {

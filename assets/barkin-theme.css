@@ -1809,7 +1809,7 @@ main[data-template="product"] .related-products .price {
 
 .barkin-mosaic__header {
   display: grid;
-  grid-template-columns: minmax(0, 473px) minmax(0, 715px);
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   gap: 40px;
   margin-bottom: 70px;

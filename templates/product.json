@@ -66,7 +66,7 @@
           "settings": {
             "heading": "User Directions",
             "icon": "none",
-            "content": "<p>Follow the directions provided on the product packaging.</p>",
+            "content": "{{ product.metafields.custom.directions | metafield_tag }}",
             "page": ""
           }
         },
@@ -75,7 +75,7 @@
           "settings": {
             "heading": "Suitable For",
             "icon": "none",
-            "content": "<p>Designed for everyday dog and cat care routines.</p>",
+            "content": "{{ product.metafields.custom.suitable_for | metafield_tag }}",
             "page": ""
           }
         },
@@ -84,7 +84,7 @@
           "settings": {
             "heading": "Ingredients List",
             "icon": "none",
-            "content": "<p>Refer to the product packaging for the complete ingredient list.</p>",
+            "content": "{{ product.metafields.custom.ingredients_list | metafield_tag }}",
             "page": ""
           }
         },
@@ -93,7 +93,7 @@
           "settings": {
             "heading": "Safety Warning",
             "icon": "none",
-            "content": "<p>For external use only. Keep out of reach of children.</p>",
+            "content": "{{ product.metafields.custom.safety_warnings | metafield_tag }}",
             "page": ""
           }
         },

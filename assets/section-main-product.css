@@ -983,6 +983,7 @@ a.product__text {
   .thumbnail-slider .thumbnail-list.slider--tablet-up {
     display: flex;
     padding: 0.5rem;
+    padding-top:0px;
     flex: 1;
     scroll-padding-left: 0.5rem;
   }

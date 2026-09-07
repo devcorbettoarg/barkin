@@ -262,6 +262,7 @@
         "coat_1": {
           "type": "coat",
           "settings": {
+            "image": "shopify://shop_images/hero-quiz.jpg",
             "heading": "Double Coated",
             "text": "Care designed around the hydration and cleansing needs of this coat type."
           }

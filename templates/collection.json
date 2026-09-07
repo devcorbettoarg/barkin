@@ -13,14 +13,17 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1774",
-        "heading_tag": "h1",
         "image": "shopify://shop_images/hero-shopping.jpg",
         "fallback_asset": "hero-shopping.webp",
         "heading": "Shopping For\nPremium Products",
-        "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
+        "heading_tag": "h1",
+        "text": "An exquisite collection of grooming and home care for discerning pets and their parents. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "button_label": "",
         "button_link": "",
-        "desktop_height": 600
+        "desktop_height": 600,
+        "mobile_height": 650,
+        "mobile_only": false,
+        "desktop_only": false
       }
     },
     "product-grid": {
@@ -28,6 +31,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
+        "columns_mobile": "2",
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -38,7 +42,6 @@
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
-        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -46,12 +49,52 @@
     "barkin_bundle": {
       "type": "barkin-bundle-builder",
       "blocks": {
-        "bundle_1": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-shampoo.jpg", "fallback_asset": "bundle-shampoo.webp", "heading": "Shampoo", "text": "Get your pet squeaky clean." } },
-        "bundle_2": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-conditioner.jpg", "fallback_asset": "bundle-conditioner.webp", "heading": "Conditioner", "text": "Give them a beautifully soft coat." } },
-        "bundle_3": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-grooming.jpg", "fallback_asset": "bundle-grooming.webp", "heading": "Grooming Essentials", "text": "The devil is in the details." } },
-        "bundle_4": { "type": "step", "settings": { "image": "shopify://shop_images/bundle-home.jpg", "fallback_asset": "bundle-home.webp", "heading": "Home Care", "text": "Easy cleanup, no hassle." } }
+        "bundle_1": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/bundle-shampoo.jpg",
+            "fallback_asset": "bundle-shampoo.webp",
+            "heading": "Shampoo",
+            "text": "Get your pet squeaky clean.",
+            "link": ""
+          }
+        },
+        "bundle_2": {
+          "type": "step",
+          "settings": {
+            "fallback_asset": "bundle-conditioner.webp",
+            "heading": "Conditioner",
+            "text": "Give them a beautifully soft coat.",
+            "link": ""
+          }
+        },
+        "bundle_3": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/bundle-grooming.jpg",
+            "fallback_asset": "bundle-grooming.webp",
+            "heading": "Grooming Essentials",
+            "text": "The devil is in the details.",
+            "link": ""
+          }
+        },
+        "bundle_4": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/bundle-home.jpg",
+            "fallback_asset": "bundle-home.webp",
+            "heading": "Home Care",
+            "text": "Easy cleanup, no hassle.",
+            "link": ""
+          }
+        }
       },
-      "block_order": ["bundle_1", "bundle_2", "bundle_3", "bundle_4"],
+      "block_order": [
+        "bundle_1",
+        "bundle_2",
+        "bundle_3",
+        "bundle_4"
+      ],
       "settings": {
         "heading": "Build Your Pet's Routine,\nGet A Discount.",
         "text": "Add up to 6 products and save up to 15% on your bundle.",
@@ -63,14 +106,17 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1777",
-        "heading_tag": "h2",
         "image": "shopify://shop_images/hero-quiz.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
+        "heading_tag": "h2",
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
         "button_label": "Take the product quiz",
         "button_link": "",
-        "desktop_height": 875
+        "desktop_height": 875,
+        "mobile_height": 650,
+        "mobile_only": false,
+        "desktop_only": false
       }
     }
   },

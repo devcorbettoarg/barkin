@@ -12,13 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "rating": {
           "type": "rating",
           "settings": {}
@@ -110,7 +103,6 @@
         }
       },
       "block_order": [
-        "vendor",
         "rating",
         "title",
         "price",
@@ -243,7 +235,8 @@
         "heading": "Human Grade\nIngredients",
         "text": "Choosing premium ingredients helps support healthy skin and a beautiful coat.",
         "button_label": "Learn More",
-        "button_link": ""
+        "button_link": "",
+        "pagination_label": "Choose ingredient slide"
       }
     },
     "barkin_coats": {

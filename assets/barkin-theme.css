@@ -1341,6 +1341,23 @@ main[data-template="product"] .related-products .price {
   outline: 2px solid var(--barkin-white);
   outline-offset: 4px;
 }
+.barkin-launch-carousel__dots 
+.barkin-showcase__dot {
+
+  background: rgba(0, 0, 0, 0.35);
+
+}
+.barkin-launch-carousel__dots 
+.barkin-showcase__dot.is-active {
+  width: 14px;
+  height: 14px;
+  background: var(--barkin-black);
+}
+.barkin-launch-carousel__dots 
+.barkin-showcase__dot:focus-visible {
+  outline: 2px solid var(--barkin-black);
+  outline-offset: 4px;
+}
 
 .barkin-product-card,
 .barkin-bundle-card {

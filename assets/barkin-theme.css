@@ -547,7 +547,6 @@ main[data-template="collection"] .facets-wrapper {
 main[data-template="collection"] .facets-container {
   padding:20px 0px;
   align-items: center;
-  padding: 0;
 }
 
 main[data-template="collection"] .facets__form {

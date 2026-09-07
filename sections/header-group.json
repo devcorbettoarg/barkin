@@ -16,7 +16,9 @@
       "settings": {
         "announcement": "Free shipping above $35 on all US orders",
         "menu": "main-menu-copy",
-        "logo_width": 240,
+        "logo": "shopify://shop_images/Asset_11logo_1.svg",
+        "logo_width": 230,
+        "mobile_logo_width": 180,
         "logo_kicker": "Royale's Care",
         "logo_text": "BARKIN&MEOWSON",
         "mega_title": "Premium Petcare Products.",

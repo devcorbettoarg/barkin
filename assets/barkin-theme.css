@@ -2067,7 +2067,7 @@ main[data-template="product"] .related-products .price {
 }
 
 .barkin-blog__header { display: grid; grid-template-columns: minmax(0, 715px) minmax(0, 594px); justify-content: space-between; gap: 40px; margin-bottom: 70px; }
-.barkin-blog__header-side { max-width: 473px; display: grid; gap: 20px; align-content: start; }
+.barkin-blog__header-side { max-width: 473px; display: grid; gap: 20px; align-content: start; padding-left:80px;}
 .barkin-blog__grid { display: grid; grid-template-columns: minmax(0, 715px) minmax(0, 594px); justify-content: space-between; gap: 40px; }
 .barkin-blog-feature { position: relative; min-height: 670px; overflow: hidden; border: 1px solid var(--barkin-border); border-radius: 4px; }
 .barkin-blog-feature::after { content: ""; position: absolute; inset: 40% 0 0; background: linear-gradient(0deg, rgba(0,0,0,.75), transparent); }

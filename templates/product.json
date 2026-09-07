@@ -261,9 +261,10 @@
       "blocks": {
         "coat_zbmG4X": {
           "type": "coat",
-          "repeater": "{{ product.metafields.custom.faqs.value }}",
+          "repeater": "{{ product.metafields.custom.coats.value }}",
           "settings": {
-            "heading": "{{ block.repeater.question.value }}"
+            "image": "{{ block.repeater.image.value }}",
+            "heading": "{{ block.repeater.name.value }}"
           }
         }
       },

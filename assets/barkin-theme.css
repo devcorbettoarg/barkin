@@ -186,7 +186,7 @@
 .barkin-site-header__mega-column {
   display: grid;
   align-content: start;
-  gap: 10px;
+  gap: 5px;
 }
 
 .barkin-site-header__mega-heading {

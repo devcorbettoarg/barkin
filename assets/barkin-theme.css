@@ -161,7 +161,7 @@
   margin: 0;
   color: var(--barkin-white);
   font-family: "DM Serif Display", Georgia, serif;
-  font-size: clamp(4.2rem, 3.5vw, 5.6rem);
+  font-size: clamp(4.2rem, 3vw, 5rem);
   font-weight: 400;
   line-height: .96;
 }

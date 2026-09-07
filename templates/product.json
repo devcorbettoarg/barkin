@@ -273,7 +273,8 @@
           "repeater": "{{ product.metafields.custom.coats.value }}",
           "settings": {
             "image": "{{ block.repeater.image.value }}",
-            "heading": "{{ block.repeater.name.value }}"
+            "heading": "{{ block.repeater.name.value }}",
+            "text": "Care designed around the hydration and cleansing needs of this coat type."
           }
         }
       },
@@ -281,6 +282,8 @@
         "coat_zbmG4X"
       ],
       "settings": {
+        "product_heading": "{{ product.metafields.custom.coatst.value }}",
+        "product_text": "{{ product.metafields.custom.coats_text | metafield_tag }}",
         "heading": "This Product Is Fit For\nThese Pet Coats.",
         "text": "Different coats have unique needs in terms of hydration, cleansing, and protection.",
         "carousel_label": "Suitable pet coat types",

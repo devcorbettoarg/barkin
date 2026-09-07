@@ -1947,7 +1947,7 @@ main[data-template="product"] .related-products .price {
 }
 
 .barkin-testimonial__quote > span { font: 700 4rem/.8 Georgia, serif; }
-.barkin-testimonial__quote p { margin: 14px 0 0; font: 400 2rem/2.4rem inter, sans-serif; letter-spacing:-0.02rem;}
+.barkin-testimonial__quote p { margin: 14px 0 0; font: 400 2rem/2.4rem inter, sans-serif; letter-spacing:-0.002rem;}
 .barkin-testimonial__buyer { margin-top: auto; }
 .barkin-testimonial__buyer-row { display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: center; padding-bottom: 12px; }
 .barkin-testimonial__buyer-row img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }

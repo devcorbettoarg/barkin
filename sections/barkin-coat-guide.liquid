@@ -2,8 +2,20 @@
 
 <section class="barkin-section barkin-coats">
   <div class="barkin-centered-intro">
-    <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
-    <p class="barkin-copy">{{ section.settings.text }}</p>
+    <h2 class="barkin-title">
+      {%- if section.settings.product_heading != blank -%}
+        {{- section.settings.product_heading | escape -}}
+      {%- else -%}
+        {{- section.settings.heading | escape | newline_to_br -}}
+      {%- endif -%}
+    </h2>
+    <div class="barkin-copy">
+      {%- if section.settings.product_text != blank -%}
+        {{- section.settings.product_text -}}
+      {%- else -%}
+        <p>{{ section.settings.text | escape | newline_to_br }}</p>
+      {%- endif -%}
+    </div>
   </div>
 
   <barkin-carousel
@@ -57,6 +69,8 @@
   "class": "section",
   "max_blocks": 6,
   "settings": [
+    { "type": "text", "id": "product_heading", "label": "Product title", "info": "Connect the coatst metafield using the dynamic source button. When empty, Heading below is used." },
+    { "type": "richtext", "id": "product_text", "label": "Product text", "info": "Connect the coatstexto metafield using the dynamic source button. When empty, Text below is used." },
     { "type": "textarea", "id": "heading", "label": "Heading", "default": "This Product Is Fit For\nThese Pet Coats." },
     { "type": "textarea", "id": "text", "label": "Text", "default": "Different coats have unique needs in terms of hydration, cleansing, and protection." },
     { "type": "text", "id": "carousel_label", "label": "Carousel accessibility label", "default": "Suitable pet coat types" },

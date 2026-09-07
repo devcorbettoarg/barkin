@@ -2770,3 +2770,7 @@ main[data-template="product"] .complementary-products { margin-top: 70px; }
   .barkin-purchase-option { padding: 12px; gap: 8px; font-size: 16px; }
   main[data-template="product"] .barkin-purchase-buttons { grid-template-columns: 110px minmax(0, 1fr); }
 }
+
+.barkin-coats .barkin-centered-intro > .barkin-copy { margin: 0; }
+.barkin-coats .barkin-centered-intro > .barkin-copy > :first-child { margin-top: 0; }
+.barkin-coats .barkin-centered-intro > .barkin-copy > :last-child { margin-bottom: 0; }

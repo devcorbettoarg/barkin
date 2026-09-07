@@ -1947,15 +1947,15 @@ main[data-template="product"] .related-products .price {
 }
 
 .barkin-testimonial__quote > span { font: 700 4rem/.8 Georgia, serif; }
-.barkin-testimonial__quote p { margin: 14px 0 0; font: 400 2rem/2.4rem Roboto, sans-serif; }
+.barkin-testimonial__quote p { margin: 14px 0 0; font: 400 2rem/2.4rem inter, sans-serif; }
 .barkin-testimonial__buyer { margin-top: auto; }
 .barkin-testimonial__buyer-row { display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: center; padding-bottom: 12px; }
 .barkin-testimonial__buyer-row img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
 .barkin-testimonial__buyer-row strong,
 .barkin-testimonial__buyer-row small { display: block; }
-.barkin-testimonial__buyer-row strong { font: 400 1.8rem/2.2rem Roboto, sans-serif; }
+.barkin-testimonial__buyer-row strong { font: 400 1.8rem/2.2rem inter, sans-serif; }
 .barkin-testimonial__buyer-row small,
-.barkin-testimonial__buyer > p { color: rgba(255,253,252,.5); font: 400 1.2rem/1.6rem Roboto, sans-serif; }
+.barkin-testimonial__buyer > p { color: rgba(255,253,252,.5); font: 400 1.2rem/1.6rem inter, sans-serif; }
 .barkin-testimonial__buyer > p { margin: 0; padding-top: 12px; border-top: 1px solid var(--barkin-border); }
 .barkin-testimonials__dots { margin-top: 20px; }
 
@@ -1980,17 +1980,17 @@ main[data-template="product"] .related-products .price {
 .barkin-review-card__copy small,
 .barkin-review-card__helpful { color: rgba(255,253,252,.5); }
 .barkin-review__score { display: flex; align-items: baseline; gap: 8px; color: var(--barkin-white); }
-.barkin-review__score strong { font: 400 1.8rem/2.2rem Roboto, sans-serif; }
+.barkin-review__score strong { font: 400 1.8rem/2.2rem inter, sans-serif; }
 .barkin-review__score span { font: 500 1.6rem/1.8rem Inter, sans-serif; }
 .barkin-review__stars { color: var(--barkin-white); font-size: 2rem; letter-spacing: .25rem; line-height: 2rem; }
 .barkin-review__score-block > .barkin-review__stars { margin: 22px 0 24px; }
 .barkin-review__score-block p { margin: 0; font: 400 1.2rem/1.6rem Inter, sans-serif; }
 .barkin-review__breakdown { padding-top: 4px; }
-.barkin-review__breakdown-row { display: grid; grid-template-columns: 30px minmax(0, 255px) 30px; gap: 10px; align-items: center; margin-bottom: 8px; color: var(--barkin-white); font: 400 1.8rem/2.2rem Roboto, sans-serif; }
+.barkin-review__breakdown-row { display: grid; grid-template-columns: 30px minmax(0, 255px) 30px; gap: 10px; align-items: center; margin-bottom: 8px; color: var(--barkin-white); font: 400 1.8rem/2.2rem inter, sans-serif; }
 .barkin-review__breakdown-row i { display: block; height: 5px; border-radius: 30px; background: linear-gradient(90deg, var(--barkin-gold) var(--bar-width), rgba(255,253,252,.5) var(--bar-width)); }
 .barkin-review__actions { display: flex; justify-content: flex-end; gap: 12px; padding-top: 256px; }
 .barkin-review__actions .barkin-button { color: var(--barkin-white); border-color: var(--barkin-white); background: transparent; }
-.barkin-review__toolbar { display: flex; justify-content: space-between; align-items: center; min-height: 50px; border-block: 1px solid var(--barkin-border); font: 400 1.2rem/1.6rem Roboto, sans-serif; }
+.barkin-review__toolbar { display: flex; justify-content: space-between; align-items: center; min-height: 50px; border-block: 1px solid var(--barkin-border); font: 400 1.2rem/1.6rem inter, sans-serif; }
 .barkin-review__toolbar button { border: 0; color: inherit; background: none; font: inherit; cursor: pointer; }
 .barkin-review__toolbar strong { margin-left: 18px; color: var(--barkin-white); font-weight: 400; }
 .barkin-review-list { display: grid; }
@@ -1998,15 +1998,15 @@ main[data-template="product"] .related-products .price {
 .barkin-review-card__buyer { display: flex; gap: 10px; align-items: start; padding: 16px; border: 1px solid rgba(255,253,252,.1); border-radius: 4px; background: rgba(255,253,252,.1); }
 .barkin-review-card__buyer img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
 .barkin-review-card__buyer strong, .barkin-review-card__buyer span { display: block; }
-.barkin-review-card__buyer strong { color: var(--barkin-white); font: 400 1.8rem/2.2rem Roboto, sans-serif; }
-.barkin-review-card__buyer span { color: rgba(255,253,252,.5); font: 400 1.2rem/1.6rem Roboto, sans-serif; }
+.barkin-review-card__buyer strong { color: var(--barkin-white); font: 400 1.8rem/2.2rem inter, sans-serif; }
+.barkin-review-card__buyer span { color: rgba(255,253,252,.5); font: 400 1.2rem/1.6rem inter, sans-serif; }
 .barkin-review-card__copy { padding-top: 16px; }
 .barkin-review-card__copy .barkin-review__stars { margin-bottom: 20px; font-size: 1.8rem; }
-.barkin-review-card__copy h3 { margin: 0 0 20px; color: var(--barkin-white); font: 400 2rem/2.4rem Roboto, sans-serif; }
-.barkin-review-card__copy p { margin: 0 0 20px; color: var(--barkin-white); font: 400 1.2rem/1.6rem Roboto, sans-serif; }
-.barkin-review-card__copy small { font: 400 1.2rem/1.6rem Roboto, sans-serif; }
+.barkin-review-card__copy h3 { margin: 0 0 20px; color: var(--barkin-white); font: 400 2rem/2.4rem inter, sans-serif; }
+.barkin-review-card__copy p { margin: 0 0 20px; color: var(--barkin-white); font: 400 1.2rem/1.6rem inter, sans-serif; }
+.barkin-review-card__copy small { font: 400 1.2rem/1.6rem inter, sans-serif; }
 .barkin-review-card__photo { width: 118px; height: 118px; border-radius: 4px; object-fit: cover; }
-.barkin-review-card__helpful { padding-top: 16px; text-align: right; font: 400 1.2rem/1.6rem Roboto, sans-serif; }
+.barkin-review-card__helpful { padding-top: 16px; text-align: right; font: 400 1.2rem/1.6rem inter, sans-serif; }
 .barkin-review-card__helpful strong { margin-left: 12px; color: rgba(255,253,252,.5); font-weight: 400; }
 .barkin-review__load-more { display: block; margin: 120px auto 0; color: var(--barkin-white); border-color: var(--barkin-white); background: transparent; }
 

@@ -106,7 +106,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1777",
-        "image": "shopify://shop_images/hero-quiz.jpg",
+        "image": "shopify://shop_images/General_Fill_Image_Section_4.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",

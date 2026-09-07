@@ -1644,6 +1644,8 @@ main[data-template="product"] .related-products .price {
   justify-items: center;
   gap: 10px;
   text-align: center;
+  max-width: 400px;
+    margin: 0 auto 20px;
 }
 
 .barkin-launch-carousel__dots {

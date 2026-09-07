@@ -1110,7 +1110,10 @@ input.mobile-facets__checkbox {
   line-height: calc(1 + 0.5 / var(--font-body-scale));
   margin: 0;
 }
+ProductCountDesktop {
+  color: var(--barkin-white);
 
+}
 #ProductCountDesktop.loading,
 #ProductCount.loading {
   visibility: hidden;

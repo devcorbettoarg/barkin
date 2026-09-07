@@ -18,7 +18,7 @@
         "fallback_asset": "hero-shopping.webp",
         "heading": "Shopping For\nPremium Products",
         "heading_tag": "h1",
-        "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
+        "text": "An exquisite collection of grooming and home care for discerning pets and their parents. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "button_label": "Go to Shop",
         "button_link": "shopify://collections/pet-shampoos-conditioners",
         "desktop_height": 600,

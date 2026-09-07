@@ -16,7 +16,10 @@
       "blocks": {
         "directory": {
           "type": "menu",
-          "settings": { "heading": "Directory", "menu": "footer" }
+          "settings": {
+            "heading": "Directory",
+            "menu": "footer"
+          }
         },
         "connect": {
           "type": "text",
@@ -28,11 +31,19 @@
         },
         "resources": {
           "type": "menu",
-          "settings": { "heading": "Resources", "menu": "footer" }
+          "settings": {
+            "heading": "Resources",
+            "menu": "footer"
+          }
         }
       },
-      "block_order": ["directory", "connect", "resources"],
+      "block_order": [
+        "directory",
+        "connect",
+        "resources"
+      ],
       "settings": {
+        "logo": "shopify://shop_images/Group_2.png",
         "logo_width": 220,
         "logo_kicker": "Royale's Care",
         "logo_text": "& BARKIN MEOWSON",
@@ -42,5 +53,7 @@
       }
     }
   },
-  "order": ["barkin_footer"]
+  "order": [
+    "barkin_footer"
+  ]
 }

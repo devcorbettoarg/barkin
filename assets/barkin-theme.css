@@ -2696,6 +2696,7 @@ main[data-template="product"] [id^="Slider-Gallery-"] {
   position: relative;
 }
 main[data-template="product"] [id^="Slider-Gallery-"]::-webkit-scrollbar { display: none; }
+main[data-template="product"] [id^="Slider-Gallery-"]::after { display: none; }
 main[data-template="product"] [id^="Slider-Gallery-"] > .product__media-item {
   display: block;
   flex: 0 0 100%;

@@ -161,8 +161,8 @@
         </a>
       {% endif %}
       <a class="barkin-site-header__cart" href="{{ routes.cart_url }}" aria-label="{{ 'templates.cart.cart' | t }}">
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M5.5 8.5h13l-1 12h-11l-1-12Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/>
+        <svg aria-hidden="true" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.8584 0.700195H9.50632C10.2077 0.700195 10.8808 0.981236 11.3779 1.48074C11.8749 1.98214 12.1536 2.66041 12.1531 3.36724V5.14451H4.2116V3.36724C4.2116 2.65952 4.49081 1.98138 4.9868 1.48074C5.23236 1.2335 5.52419 1.03728 5.84556 0.903338C6.16692 0.769395 6.5115 0.700362 6.85953 0.700195M0.699951 5.14451H15.7V14.2653C15.7 14.9104 15.4457 15.5305 14.9917 15.9868C14.5377 16.4442 13.9237 16.7002 13.2824 16.7002H3.11748C2.79978 16.6997 2.48529 16.6364 2.192 16.514C1.89871 16.3916 1.63236 16.2125 1.40818 15.9868C0.954952 15.529 0.700411 14.9103 0.699951 14.2653V5.14451Z" stroke="#FFFDFC" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         {% if cart.item_count > 0 %}
           <span class="barkin-site-header__cart-count" aria-hidden="true">{{ cart.item_count }}</span>

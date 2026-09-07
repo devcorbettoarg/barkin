@@ -345,6 +345,11 @@
   height: 20px;
 }
 
+.barkin-site-header__cart svg {
+  width: 17px;
+  height: 18px;
+}
+
 .barkin-site-header__actions img,
 .barkin-site-header__mobile-menu img {
   display: block;

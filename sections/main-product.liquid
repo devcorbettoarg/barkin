@@ -502,7 +502,100 @@
                   <div id="BarkinPurchaseOptions-{{ section.id }}">
                     {% render 'barkin-purchase-options', product: product, block: block, product_form_id: product_form_id %}
                   </div>
-                {%- when 'buy_buttons' -%}
+              
+              
+              {%- when 'purchase_guarantees' -%}
+
+  <div
+    class="barkin-purchase-guarantees"
+    {{ block.shopify_attributes }}
+  >
+
+    {%- if block.settings.item_1 != blank -%}
+      <div class="barkin-purchase-guarantees__item">
+        <span
+          class="barkin-purchase-guarantees__icon"
+          aria-hidden="true"
+        >
+          <svg
+            viewBox="0 0 12 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 5L4.2 8.2L11 1.4"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+
+        <span class="barkin-purchase-guarantees__text">
+          {{ block.settings.item_1 }}
+        </span>
+      </div>
+    {%- endif -%}
+
+
+    {%- if block.settings.item_2 != blank -%}
+      <div class="barkin-purchase-guarantees__item">
+        <span
+          class="barkin-purchase-guarantees__icon"
+          aria-hidden="true"
+        >
+          <svg
+            viewBox="0 0 12 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 5L4.2 8.2L11 1.4"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+
+        <span class="barkin-purchase-guarantees__text">
+          {{ block.settings.item_2 }}
+        </span>
+      </div>
+    {%- endif -%}
+
+
+    {%- if block.settings.item_3 != blank -%}
+      <div class="barkin-purchase-guarantees__item">
+        <span
+          class="barkin-purchase-guarantees__icon"
+          aria-hidden="true"
+        >
+          <svg
+            viewBox="0 0 12 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 5L4.2 8.2L11 1.4"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+
+        <span class="barkin-purchase-guarantees__text">
+          {{ block.settings.item_3 }}
+        </span>
+      </div>
+    {%- endif -%}
+
+  </div>
+  {%- when 'buy_buttons' -%}
                   {%- render 'buy-buttons',
                     block: block,
                     product: product,

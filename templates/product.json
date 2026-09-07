@@ -27,6 +27,10 @@
             "text_style": "body"
           }
         },
+        "purchase_options": {
+          "type": "purchase_options",
+          "settings": { "heading": "Purchase Options", "one_time_label": "One-time Purchase" }
+        },
         "price": {
           "type": "price",
           "disabled": true,
@@ -116,6 +120,7 @@
         "text_KeM4px",
         "price",
         "variant_picker",
+        "purchase_options",
         "quantity_selector",
         "buy_buttons",
         "description",

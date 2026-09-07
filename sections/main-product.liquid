@@ -41,6 +41,7 @@
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'barkin-purchase-layout.js' | asset_url }}" defer="defer"></script>
   {%- if product.quantity_price_breaks_configured? -%}
     <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
@@ -497,6 +498,10 @@
                     block: block,
                     product_form_id: product_form_id
                   %}
+                {%- when 'purchase_options' -%}
+                  <div id="BarkinPurchaseOptions-{{ section.id }}">
+                    {% render 'barkin-purchase-options', product: product, block: block, product_form_id: product_form_id %}
+                  </div>
                 {%- when 'buy_buttons' -%}
                   {%- render 'buy-buttons',
                     block: block,
@@ -926,6 +931,15 @@
           ],
           "default": "circle"
         }
+      ]
+    },
+    {
+      "type": "purchase_options",
+      "name": "Purchase options",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Purchase Options" },
+        { "type": "text", "id": "one_time_label", "label": "One-time purchase label", "default": "One-time Purchase" }
       ]
     },
     {

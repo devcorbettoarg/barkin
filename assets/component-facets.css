@@ -19,8 +19,11 @@
   }
 
   .facets__form .product-count {
-    grid-column-start: 3;
+    grid-column-start: 2;
     align-self: flex-start;
+  }
+  .facet-filters.sorting {
+        grid-column-start: 3;
   }
 }
 

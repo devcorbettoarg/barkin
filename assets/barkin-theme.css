@@ -889,8 +889,8 @@ main[data-template="product"] .share-button__button {
   color: var(--barkin-white);
   font-family: Inter, sans-serif;
 }
-main[data-template="product"] .product__tax {
-  display:none;
+main[data-template="product"] .product__tax,shopify-payment-terms {
+  display:none !important; 
 }
 main[data-template="product"] .product__description {
   padding-block: 20px;

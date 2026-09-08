@@ -1,3 +1,5 @@
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
 <div class="barkin-site-header">
   {% if section.settings.announcement != blank %}
     <div class="barkin-site-header__announcement">{{ section.settings.announcement }}</div>
@@ -95,16 +97,21 @@
                             </span>
                           </span>
                         </a>
-                        {% form 'product', mega_product, class: 'barkin-site-header__mega-product-form' %}
+                        <product-form>
+                        <div class="product-form__error-message-wrapper barkin-card-add-error" role="alert" hidden><span class="product-form__error-message"></span></div>
+                        {%- assign mega_form_id = 'BarkinMegaForm-' | append: section.id | append: '-' | append: i -%}
+                        {% form 'product', mega_product, id: mega_form_id, class: 'barkin-site-header__mega-product-form' %}
                           <input type="hidden" name="id" value="{{ mega_product.selected_or_first_available_variant.id }}">
                           <button
                             type="submit"
                             aria-label="{{ 'products.product.add_to_cart' | t }}: {{ mega_product.title | escape }}"
                             {% unless mega_product.available %}disabled{% endunless %}
                           >
-                            <img src="{{ 'add-bag.svg' | asset_url }}" alt="" width="18" height="19">
+                            <span><img src="{{ 'barkin-card-bag.svg' | asset_url }}" alt="" width="18" height="20"></span>
+                            {%- render 'loading-spinner' -%}
                           </button>
                         {% endform %}
+                        </product-form>
                       </article>
                     {% endif %}
                   {% endfor %}

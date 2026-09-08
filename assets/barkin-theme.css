@@ -695,6 +695,24 @@ main[data-template="collection"] .quick-add__submit {
   background: var(--barkin-black) url("barkin-card-bag.svg") center / 18px 20px no-repeat;
   color: transparent;
   font-size: 0;
+  transition: transform 1s ease, background-color .2s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  main[data-template="collection"] .quick-add__submit:not(:disabled):hover {
+    background-color: var(--barkin-gold);
+    transform: scale(.9);
+  }
+}
+
+main[data-template="collection"] .quick-add__submit:not(:disabled):focus-visible {
+  background-color: var(--barkin-gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main[data-template="collection"] .quick-add__submit {
+    transition: none;
+  }
 }
 
 main[data-template="collection"] .quick-add__submit.loading {
@@ -1474,37 +1492,42 @@ main[data-template="product"] .related-products .price {
 }
 
 /* Keep zoom inside the card and honor reduced-motion preferences. */
-.barkin-showcase .barkin-card-image {
+.barkin-product-card .barkin-card-image {
   transition: transform .35s ease;
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .barkin-showcase .barkin-product-card:hover .barkin-card-image {
+  .barkin-product-card:hover .barkin-card-image {
     transform: scale(1.06);
   }
 }
 
-.barkin-showcase .barkin-product-card__link:focus-visible .barkin-card-image {
+.barkin-product-card__link:focus-visible .barkin-card-image {
   transform: scale(1.06);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .barkin-showcase .barkin-card-image {
+  .barkin-product-card .barkin-card-image {
     transition: none;
   }
 }
 
-.barkin-showcase .barkin-product-card__bag.loading > span {
+.barkin-product-card__bag.loading > span,
+.barkin-launch-slide__bag.loading > span,
+.barkin-site-header__mega-product-form button.loading > span {
   visibility: hidden;
 }
 
-.barkin-showcase .barkin-product-card__bag .loading__spinner {
+.barkin-product-card__bag .loading__spinner,
+.barkin-launch-slide__bag .loading__spinner,
+.barkin-site-header__mega-product-form button .loading__spinner {
   position: absolute;
   width: 18px;
   color: var(--barkin-white);
 }
 
-.barkin-showcase .barkin-product-card__error {
+.barkin-product-card__error,
+.barkin-card-add-error {
   position: absolute;
   inset: 12px 12px auto;
   z-index: 4;
@@ -1622,23 +1645,31 @@ main[data-template="product"] .related-products .price {
   cursor: pointer;
 }
 
-.barkin-showcase .barkin-product-card__bag {
+.barkin-product-card__bag,
+.barkin-launch-slide__bag,
+.barkin-site-header__mega-product-form button {
   transition: all 1s ease, background-color .2s ease;
 }
 
 @media (hover: hover) {
-  .barkin-showcase .barkin-product-card__bag:not(:disabled):not([aria-disabled="true"]):hover {
+  .barkin-product-card__bag:not(:disabled):not([aria-disabled="true"]):hover,
+  .barkin-launch-slide__bag:not(:disabled):not([aria-disabled="true"]):hover,
+  .barkin-site-header__mega-product-form button:not(:disabled):not([aria-disabled="true"]):hover {
     background-color: var(--barkin-gold);
     scale: 0.9;
   }
 }
 
-.barkin-showcase .barkin-product-card__bag:not(:disabled):not([aria-disabled="true"]):focus-visible {
+.barkin-product-card__bag:not(:disabled):not([aria-disabled="true"]):focus-visible,
+.barkin-launch-slide__bag:not(:disabled):not([aria-disabled="true"]):focus-visible,
+.barkin-site-header__mega-product-form button:not(:disabled):not([aria-disabled="true"]):focus-visible {
   background-color: var(--barkin-gold);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .barkin-showcase .barkin-product-card__bag {
+  .barkin-product-card__bag,
+  .barkin-launch-slide__bag,
+  .barkin-site-header__mega-product-form button {
     transition: none;
   }
 }

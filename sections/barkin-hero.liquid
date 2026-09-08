@@ -1,10 +1,10 @@
 {%- liquid
-  assign fallback_asset = section.settings.fallback_asset | default: 'hero-shopping.webp'
+  assign fallback_asset = 'https://cdn.shopify.com/s/files/1/1043/0454/2035/files/General_Fill_Image_Section_5.jpg?v=1788812467'
   assign heading_tag = section.settings.heading_tag | default: 'h2'
   if section.settings.image != blank
     assign hero_src = section.settings.image | image_url: width: 2400
   else
-    assign hero_src = fallback_asset | asset_url
+    assign hero_src = fallback_asset 
   endif
   if section.settings.mobile_image != blank
     assign mobile_hero_src = section.settings.mobile_image | image_url: width: 1200
@@ -22,7 +22,7 @@
     {% endif %}
     <img
       class="barkin-hero__image"
-      src="{{ hero_src }}"
+      src="{{ hero_src | default: ''}}"
       alt="{{ section.settings.image.alt | default: section.settings.mobile_image.alt | default: section.settings.heading | escape }}"
       width="2400"
       height="{{ section.settings.desktop_height }}"

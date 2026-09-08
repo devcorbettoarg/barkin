@@ -3084,13 +3084,13 @@ barkin-gallery-controls {
   justify-content: center;
   padding: 4px 8px;
   border-radius: 24px;
-  background: rgba(45,40,36,.2);
+  background: transparent;
 }
 barkin-gallery-controls[hidden] { display: none; }
 .barkin-gallery-dot { display: grid; place-items: center; width: 24px; height: 24px; padding: 0; border: 0; background: transparent; cursor: pointer; }
-.barkin-gallery-dot::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: rgba(255,253,252,.5); }
-.barkin-gallery-dot[aria-current="true"]::before { width: 12px; height: 12px; background: var(--barkin-white); }
-.barkin-gallery-dot:focus-visible { outline: 2px solid var(--barkin-white); outline-offset: 2px; }
+.barkin-gallery-dot::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: rgba(45,40,36,.35); }
+.barkin-gallery-dot[aria-current="true"]::before { width: 12px; height: 12px; background: var(--barkin-black); }
+.barkin-gallery-dot:focus-visible { outline: 2px solid var(--barkin-black); outline-offset: 2px; }
 
 /* PDP purchase panel */
 main[data-template="product"] .product__info-container > .product__text {

@@ -2311,7 +2311,11 @@ main[data-template="product"] .related-products .price {
 .barkin-journal .pagination-wrapper { margin-top: 40px; }
 .barkin-journal .pagination__list > li { color: var(--barkin-white); }
 .barkin-journal .pagination__item { color: var(--barkin-white); }
-
+@media (min-width:981px) {
+  .barkin-mosaic__carousel {
+    cursor: default;
+  }
+}
 @media screen and (max-width: 749px) {
   .barkin-hero--desktop-only { display: none; }
   .barkin-hero--mobile-only { display: block; }

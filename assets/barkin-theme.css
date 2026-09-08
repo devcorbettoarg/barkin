@@ -67,6 +67,8 @@
 }
 
 .barkin-site-header__announcement {
+  position: relative;
+  z-index: 32;
   min-height: 30px;
   padding: 7px 20px;
   background: var(--barkin-gold);
@@ -85,6 +87,25 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
+}
+
+@media screen and (min-width: 990px) {
+  .barkin-site-header__main::before {
+    position: absolute;
+    z-index: 31;
+    inset: 0 calc(50% - 50vw);
+    background: var(--barkin-black);
+    content: "";
+    pointer-events: none;
+  }
+
+  .barkin-site-header__nav-item > summary,
+  .barkin-site-header__nav-item > a,
+  .barkin-site-header__logo,
+  .barkin-site-header__actions {
+    position: relative;
+    z-index: 32;
+  }
 }
 
 .barkin-site-header--pdp {

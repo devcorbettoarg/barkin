@@ -87,6 +87,10 @@
   align-items: center;
 }
 
+.barkin-site-header--pdp {
+  border-bottom: 1px solid var(--barkin-border);
+}
+
 .barkin-site-header__nav,
 .barkin-site-header__actions {
   display: flex;

@@ -1,6 +1,6 @@
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-<div class="barkin-site-header">
+<div class="barkin-site-header{% if request.page_type == 'product' %} barkin-site-header--pdp{% endif %}">
   {% if section.settings.announcement != blank %}
     <div class="barkin-site-header__announcement">{{ section.settings.announcement }}</div>
   {% endif %}

@@ -2312,6 +2312,7 @@ main[data-template="product"] .related-products .price {
 .barkin-journal .pagination__list > li { color: var(--barkin-white); }
 .barkin-journal .pagination__item { color: var(--barkin-white); }
 @media (min-width:981px) {
+  .barkin-mosaic__carousel .barkin-mosaic__grid ,
   .barkin-mosaic__carousel {
     cursor: default;
   }

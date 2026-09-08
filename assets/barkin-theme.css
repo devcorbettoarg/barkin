@@ -1623,12 +1623,13 @@ main[data-template="product"] .related-products .price {
 }
 
 .barkin-showcase .barkin-product-card__bag {
-  transition: background-color .2s ease;
+  transition: all 1s ease, background-color .2s ease;
 }
 
 @media (hover: hover) {
   .barkin-showcase .barkin-product-card__bag:not(:disabled):not([aria-disabled="true"]):hover {
     background-color: var(--barkin-gold);
+    scale: 0.9;
   }
 }
 

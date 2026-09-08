@@ -193,7 +193,7 @@ barkin-desktop-mega-menu {
 }
 
 .barkin-site-header__nav-item[open] > summary .menuarrow {
-  transform: rotate(180deg);
+
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -64,15 +64,17 @@ if (!customElements.get('barkin-carousel')) {
       this.dragStartScrollLeft = this.rail.scrollLeft;
       this.isPointerDown = true;
       this.hasDragged = false;
-      this.rail.setPointerCapture?.(event.pointerId);
-      this.rail.classList.add('is-dragging');
     }
 
     onPointerMove(event) {
       if (!this.isPointerDown || event.pointerId !== this.dragPointerId) return;
 
       const distance = event.clientX - this.dragStartX;
-      if (Math.abs(distance) > 5) this.hasDragged = true;
+      if (!this.hasDragged && Math.abs(distance) > 5) {
+        this.hasDragged = true;
+        this.rail.setPointerCapture?.(event.pointerId);
+        this.rail.classList.add('is-dragging');
+      }
       if (!this.hasDragged) return;
 
       event.preventDefault();

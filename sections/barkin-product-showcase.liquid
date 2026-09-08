@@ -1,4 +1,5 @@
 <script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 <section class="barkin-section barkin-showcase" data-node-id="20:1759">
   <div class="barkin-centered-intro barkin-centered-intro--mobile-{{ section.settings.mobile_text_alignment }}">
@@ -58,7 +59,12 @@
           </a>
 
           {% if card_product != blank %}
-            {%- form 'product', card_product, class: 'barkin-product-card__form' -%}
+            {%- assign card_form_id = 'BarkinProductForm-' | append: section.id | append: '-' | append: block.id -%}
+            <product-form>
+              <div class="product-form__error-message-wrapper barkin-product-card__error" role="alert" hidden>
+                <span class="product-form__error-message"></span>
+              </div>
+            {%- form 'product', card_product, id: card_form_id, class: 'barkin-product-card__form' -%}
               <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}">
               <button
                 class="barkin-product-card__bag"
@@ -66,9 +72,11 @@
                 aria-label="{{ 'products.product.add_to_cart' | t }}: {{ card_title | escape }}"
                 {% unless card_product.available %}disabled{% endunless %}
               >
-                <img src="{{ 'barkin-card-bag.svg' | asset_url }}" alt="" width="18" height="20">
+                <span><img src="{{ 'barkin-card-bag.svg' | asset_url }}" alt="" width="18" height="20"></span>
+                {%- render 'loading-spinner' -%}
               </button>
             {%- endform -%}
+            </product-form>
           {% else %}
             <a class="barkin-product-card__bag" href="{{ card_url }}" aria-label="{{ card_title | escape }}">
               <img src="{{ 'barkin-card-bag.svg' | asset_url }}" alt="" width="18" height="20">

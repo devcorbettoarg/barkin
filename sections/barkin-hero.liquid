@@ -1,5 +1,5 @@
 {%- liquid
-  assign fallback_asset = section.settings.fallback_asset | default: 'https://cdn.shopify.com/s/files/1/1043/0454/2035/files/General_Fill_Image_Section_5.jpg?v=1788812467'
+  assign fallback_asset = 'https://cdn.shopify.com/s/files/1/1043/0454/2035/files/General_Fill_Image_Section_5.jpg?v=1788812467'
   assign heading_tag = section.settings.heading_tag | default: 'h2'
   if section.settings.image != blank
     assign hero_src = section.settings.image | image_url: width: 2400

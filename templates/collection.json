@@ -13,7 +13,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1774",
-        "image": "{{ collection.image }}",
+        "image": "{{ collection.metafields.custom.image_banner.value }}",
         "fallback_asset": "hero-shopping.webp",
         "heading": "Shopping For\nPremium Products",
         "heading_tag": "h1",

@@ -127,8 +127,11 @@
   background: var(--barkin-black);
   box-shadow: 0 100vh 0 100vh rgba(0,0,0,.48);
   opacity: 0;
-  transform: translateY(-8px);
-  transition: opacity .18s ease, transform .18s ease, visibility .18s ease;
+  transform: translateY(-12px);
+  transition:
+    opacity .32s ease,
+    transform .4s cubic-bezier(.22, 1, .36, 1),
+    visibility 0s linear .4s;
 }
 
 .barkin-site-header__nav-item:hover .barkin-site-header__mega,
@@ -136,6 +139,7 @@
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+  transition-delay: 0s;
 }
 
 .barkin-site-header__mega-inner {

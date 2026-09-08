@@ -298,78 +298,48 @@
     "barkin_ingredients": {
       "type": "barkin-ingredients",
       "blocks": {
-        "ingredient_1": {
-          "type": "image",
+        "ingredient_R8RGWG": {
+          "type": "ingredient",
           "settings": {
-            "image": "shopify://shop_images/ingredient-honey.jpg",
-            "fallback_asset": "ingredient-honey.webp",
-            "alt": "Honeycomb, a premium natural ingredient"
+            "ingredient": "premium-grade-ingredient",
+            "heading": "Premium Grade Ingredient",
+            "text": ""
           }
         },
-        "ingredient_2": {
-          "type": "text",
+        "ingredient_EgbDMb": {
+          "type": "ingredient",
           "settings": {
-            "heading": "Premium Grade\nIngredient",
-            "text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out."
+            "ingredient": "premium-grade-ingredient-2",
+            "heading": "Premium Grade Ingredient",
+            "text": ""
           }
         },
-        "ingredient_3": {
-          "type": "image",
+        "ingredient_U9zcyq": {
+          "type": "ingredient",
           "settings": {
-            "image": "shopify://shop_images/ingredient-bubbles.jpg",
-            "fallback_asset": "ingredient-bubbles.webp",
-            "alt": "Moisturising ingredient texture"
+            "ingredient": "premium-grade-ingredient-3",
+            "heading": "Premium Grade Ingredient",
+            "text": ""
           }
         },
-        "ingredient_4": {
-          "type": "text",
+        "ingredient_zxAdHF": {
+          "type": "ingredient",
           "settings": {
-            "heading": "Premium Grade\nIngredient",
-            "text": "Formulated to support gentle cleansing and everyday comfort."
-          }
-        },
-        "ingredient_5": {
-          "type": "text",
-          "settings": {
-            "heading": "Premium Grade\nIngredient",
-            "text": "Thoughtful, high-quality inputs for discerning pets and parents."
-          }
-        },
-        "ingredient_6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ingredient-dropper.jpg",
-            "fallback_asset": "ingredient-dropper.webp",
-            "alt": "Ingredient dropper"
-          }
-        },
-        "ingredient_7": {
-          "type": "text",
-          "settings": {
-            "heading": "Premium Grade\nIngredient",
-            "text": "A balanced routine designed for beautiful coats and healthy skin."
-          }
-        },
-        "ingredient_8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ingredient-microscope.jpg",
-            "fallback_asset": "ingredient-microscope.webp",
-            "alt": "Ingredient under a microscope"
+            "ingredient": "premium-grade-ingredient-4",
+            "heading": "Premium Grade Ingredient",
+            "text": ""
           }
         }
       },
       "block_order": [
-        "ingredient_1",
-        "ingredient_2",
-        "ingredient_3",
-        "ingredient_4",
-        "ingredient_5",
-        "ingredient_6",
-        "ingredient_7",
-        "ingredient_8"
+        "ingredient_R8RGWG",
+        "ingredient_EgbDMb",
+        "ingredient_U9zcyq",
+        "ingredient_zxAdHF"
       ],
       "settings": {
+        "product_heading": "",
+        "product_text": "",
         "heading": "Human Grade\nIngredients",
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin, while also making your life easier.",
         "button_label": "Learn More",

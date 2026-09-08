@@ -1173,9 +1173,21 @@ main[data-template="product"] .quantity__input {
 }
 
 main[data-template="product"] .product-form__submit {
+  gap: 10px;
   border-radius: 4px;
   background: var(--barkin-white);
   color: var(--barkin-black);
+}
+
+main[data-template="product"] .barkin-pdp-cart-icon {
+  display: block;
+  flex: 0 0 auto;
+  width: 13px;
+  height: 17px;
+}
+
+main[data-template="product"] .product-form__submit.loading .barkin-pdp-cart-icon {
+  opacity: 0;
 }
 
 main[data-template="product"] .accordion {

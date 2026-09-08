@@ -22,7 +22,7 @@
     {% endif %}
     <img
       class="barkin-hero__image"
-      src="{{ hero_src | default: 'https://cdn.shopify.com/s/files/1/1043/0454/2035/files/General_Fill_Image_Section_5.jpg?v=1788812467'}}"
+      src="{{ hero_src | default: 'https://cdn.shopify.com/s/files/1/1043/0454/2035/files/General_Fill_Image_Section_5.jpg?v=1788812467' }}"
       alt="{{ section.settings.image.alt | default: section.settings.mobile_image.alt | default: section.settings.heading | escape }}"
       width="2400"
       height="{{ section.settings.desktop_height }}"

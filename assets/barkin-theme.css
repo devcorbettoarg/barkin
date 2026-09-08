@@ -3074,7 +3074,7 @@ main[data-template="product"] [id^="Slider-Gallery-"].is-dragging { scroll-snap-
 main[data-template="product"] [id^="GalleryViewer-"] > .slider-buttons { display: none; }
 barkin-gallery-controls {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;

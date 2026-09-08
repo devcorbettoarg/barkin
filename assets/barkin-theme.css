@@ -98,6 +98,10 @@
   gap: 30px;
 }
 
+barkin-desktop-mega-menu {
+  display: block;
+}
+
 .barkin-site-header__nav-item {
   display: flex;
   min-height: 99px;
@@ -105,11 +109,29 @@
 }
 
 .barkin-site-header__nav a,
+.barkin-site-header__nav summary,
 .barkin-site-header__actions a,
 .barkin-site-header__mobile-menu a {
   color: inherit;
   font-size: 16px;
   text-decoration: none;
+}
+
+.barkin-site-header__nav summary {
+  display: flex;
+  min-height: 99px;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.barkin-site-header__nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.barkin-site-header__nav summary::marker {
+  content: "";
 }
 .menuarrow {
   position: relative;
@@ -123,23 +145,40 @@
   right: calc(50% - 50vw);
   left: calc(50% - 50vw);
   visibility: hidden;
+  pointer-events: none;
   border-block: 1px solid var(--barkin-border);
   background: var(--barkin-black);
   box-shadow: 0 100vh 0 100vh rgba(0,0,0,.48);
   opacity: 0;
-  transform: translateY(-12px);
-  transition:
-    opacity .32s ease,
-    transform .4s cubic-bezier(.22, 1, .36, 1),
-    visibility 0s linear .4s;
+  transform: translateY(-50.5rem);
+  transition: opacity 450ms ease, transform 450ms ease;
 }
 
-.barkin-site-header__nav-item:hover .barkin-site-header__mega,
-.barkin-site-header__nav-item:focus-within .barkin-site-header__mega {
+.barkin-site-header__nav-item[open] .barkin-site-header__mega {
   visibility: visible;
+}
+
+.barkin-site-header__nav-item.is-opening .barkin-site-header__mega,
+.barkin-site-header__nav-item.is-open .barkin-site-header__mega {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: 0s;
+  pointer-events: auto;
+}
+
+.barkin-site-header__nav-item.is-closing .barkin-site-header__mega {
+  opacity: 0;
+  transform: translateY(-50.5rem);
+  pointer-events: none;
+}
+
+.barkin-site-header__nav-item[open] > summary .menuarrow {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .barkin-site-header__mega {
+    transition: none;
+  }
 }
 
 .barkin-site-header__mega-inner {

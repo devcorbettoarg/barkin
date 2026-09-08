@@ -1,4 +1,5 @@
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'barkin-mega-menu.js' | asset_url }}" defer="defer"></script>
 
 <div class="barkin-site-header{% if request.page_type == 'product' %} barkin-site-header--pdp{% endif %}">
   {% if section.settings.announcement != blank %}
@@ -41,14 +42,15 @@
 
     <nav class="barkin-site-header__nav" aria-label="{{ 'sections.header.menu' | t }}">
       {% for link in section.settings.menu.links %}
-        <div class="barkin-site-header__nav-item">
-          <a href="{{ link.url }}">
-            {{ link.title }}
-            {% if link.links != blank %}<span class="menuarrow" aria-hidden="true">⌄</span>{% endif %}
-          </a>
+        {% if link.links != blank %}
+          <barkin-desktop-mega-menu>
+            <details class="barkin-site-header__nav-item">
+              <summary aria-expanded="false" aria-controls="BarkinMegaMenu-{{ section.id }}-{{ forloop.index }}">
+                <span>{{ link.title }}</span>
+                <span class="menuarrow" aria-hidden="true">⌄</span>
+              </summary>
 
-          {% if link.links != blank %}
-            <div class="barkin-site-header__mega">
+              <div id="BarkinMegaMenu-{{ section.id }}-{{ forloop.index }}" class="barkin-site-header__mega">
               <div class="barkin-site-header__mega-inner">
                 <div class="barkin-site-header__mega-content">
                   <div class="barkin-site-header__mega-intro">
@@ -123,8 +125,13 @@
                 </div>
               </div>
             </div>
-          {% endif %}
-        </div>
+            </details>
+          </barkin-desktop-mega-menu>
+        {% else %}
+          <div class="barkin-site-header__nav-item">
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </div>
+        {% endif %}
       {% endfor %}
     </nav>
 

@@ -13,6 +13,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18776",
+        "image": "shopify://shop_images/01-hero.jpg",
         "fallback_asset": "hero-shopping.webp",
         "heading": "Pet Luxury, thoughtfully defined.",
         "heading_tag": "h1",
@@ -66,7 +67,7 @@
     "about_intro": {
       "type": "barkin-about-intro",
       "settings": {
-        "image": "shopify://shop_images/11-social-03.jpg",
+        "image": "shopify://shop_images/02-founder-intro.jpg",
         "fallback_asset": "hero-household.webp",
         "image_alt": "A pet enjoying time at home",
         "heading": "Barkin&Meowson came to life thanks to a certain hair care product manager who felt like pets were underserved.",
@@ -77,6 +78,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18779",
+        "image": "shopify://shop_images/03-vision.jpg",
         "fallback_asset": "hero-household.webp",
         "heading": "Our Vision, Goal\n& Process",
         "heading_tag": "h2",
@@ -136,15 +138,16 @@
         "product_text": "",
         "heading": "Barkin&Meowson’s\nNon-Negotiables",
         "text": "The standards behind every product we make and every choice we take.",
+        "text_alignment": "center",
         "button_label": "",
         "button_link": "",
         "pagination_label": ""
       }
     },
-    "about_guarantees": {
+    "barkin_guarantees_iH7cR8": {
       "type": "barkin-guarantees",
       "blocks": {
-        "guarantee_1": {
+        "guarantee_kd4Ndw": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-cruelty-free.svg",
@@ -152,48 +155,52 @@
             "text": "Thoughtful formulas created without animal testing."
           }
         },
-        "guarantee_2": {
+        "guarantee_FBy3fE": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-paraben-free.svg",
             "heading": "Paraben & Sulfate Free.",
-            "text": "Considered care without unnecessary compromises."
+            "text": "Gentle formulas made for regular pet-care routines."
           }
         },
-        "guarantee_3": {
+        "guarantee_t6yhmC": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-gmp.svg",
             "heading": "GMP Certified.",
-            "text": "Produced to consistent quality and manufacturing standards."
+            "text": "Made with consistent standards and careful quality control."
           }
         },
-        "guarantee_4": {
+        "guarantee_eaa9wg": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-vet.svg",
             "heading": "Vet Recommended.",
-            "text": "Care designed with pet health and everyday wellbeing in mind."
+            "text": "Pet-first care developed with expert guidance."
           }
         }
       },
       "block_order": [
-        "guarantee_1",
-        "guarantee_2",
-        "guarantee_3",
-        "guarantee_4"
+        "guarantee_kd4Ndw",
+        "guarantee_FBy3fE",
+        "guarantee_t6yhmC",
+        "guarantee_eaa9wg"
+      ],
+      "custom_css": [
+        "{background: black;}"
       ],
       "settings": {
-        "button_label": "View All Products",
-        "button_link": "shopify://collections/all",
-        "heading": "Barkin&Meowson’s\nProduct Standard",
-        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat."
+        "button_label": "",
+        "button_link": "",
+        "heading": "Premium Product\nGuarantees",
+        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double.."
       }
     },
     "about_manifesto": {
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18782",
+        "image": "shopify://shop_images/08-luxury-banner.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Pet Luxury, thoughtfully defined.",
         "heading_tag": "h2",
@@ -206,65 +213,74 @@
         "desktop_only": false
       }
     },
-    "about_social": {
+    "barkin_social_gallery_t3VLQz": {
       "type": "barkin-social-gallery",
       "blocks": {
-        "social_1": {
+        "image_LetbMT": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-1.jpg",
             "fallback_asset": "social-1.webp",
             "alt": "Pet parents and their dog",
             "link": ""
           }
         },
-        "social_2": {
+        "image_wbXH9D": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-2.jpg",
             "fallback_asset": "social-2.webp",
             "alt": "A dog with its parent",
             "link": ""
           }
         },
-        "social_3": {
+        "image_xEgg8G": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-3.jpg",
             "fallback_asset": "social-3.webp",
-            "alt": "Barkin and Meowson product",
+            "alt": "Barkin & Meowson product",
             "link": ""
           }
         },
-        "social_4": {
+        "image_9bbMwJ": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-4.jpg",
             "fallback_asset": "social-4.webp",
             "alt": "A pet parent holding a dog",
             "link": ""
           }
         },
-        "social_5": {
+        "image_9UcMkb": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-1.jpg",
             "fallback_asset": "social-1.webp",
-            "alt": "Barkin and Meowson community",
+            "alt": "Pet parents and their dog",
             "link": ""
           }
         },
-        "social_6": {
+        "image_mHJtLx": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-2.jpg",
             "fallback_asset": "social-2.webp",
-            "alt": "Barkin and Meowson community",
+            "alt": "A dog with its parent",
             "link": ""
           }
         }
       },
       "block_order": [
-        "social_1",
-        "social_2",
-        "social_3",
-        "social_4",
-        "social_5",
-        "social_6"
+        "image_LetbMT",
+        "image_wbXH9D",
+        "image_xEgg8G",
+        "image_9bbMwJ",
+        "image_9UcMkb",
+        "image_mHJtLx"
+      ],
+      "custom_css": [
+        "{background: black;}"
       ],
       "settings": {
         "heading": "We’re Social, Come\nConnect With Us.",
@@ -274,33 +290,36 @@
         "carousel_label": "Barkin and Meowson social gallery"
       }
     },
-    "about_blog": {
+    "barkin_blog_guide_Wc3A3d": {
       "type": "barkin-blog-guide",
       "blocks": {
-        "article_1": {
+        "article_47zEMh": {
           "type": "article",
           "settings": {
             "article": "",
+            "image": "shopify://shop_images/blog-1.jpg",
             "fallback_asset": "blog-1.webp",
             "tag": "Pet Grooming",
             "title": "How to Start Your Puppy's First At-Home Bath.",
             "link": ""
           }
         },
-        "article_2": {
+        "article_wA6tRq": {
           "type": "article",
           "settings": {
             "article": "",
+            "image": "shopify://shop_images/blog-2.jpg",
             "fallback_asset": "blog-2.webp",
             "tag": "Pet Grooming",
             "title": "Can You Use Human Shampoo on Dogs & Cats?",
             "link": ""
           }
         },
-        "article_3": {
+        "article_QymBxN": {
           "type": "article",
           "settings": {
             "article": "",
+            "image": "shopify://shop_images/blog-3.jpg",
             "fallback_asset": "blog-3.webp",
             "tag": "Pet Grooming",
             "title": "What’s the right shampoo for my pet’s coat type?",
@@ -309,62 +328,74 @@
         }
       },
       "block_order": [
-        "article_1",
-        "article_2",
-        "article_3"
+        "article_47zEMh",
+        "article_wA6tRq",
+        "article_QymBxN"
       ],
       "settings": {
         "heading": "Barkin&Meowson’s\nPet-Care Guide.",
         "text": "Practical guides for healthier skin, better coats and happier pets.",
         "button_label": "View Full Blog",
         "button_link": "",
+        "feature_image": "shopify://shop_images/Frame_14.jpg",
         "feature_title": "How Natural Flea & Tick Protection Works.",
         "feature_link": "",
         "article_label": "Read Article"
       }
     },
-    "about_faq": {
+    "barkin_faq_NPWq4H": {
       "type": "barkin-faq",
       "blocks": {
-        "faq_1": {
+        "question_MbUfFJ": {
           "type": "question",
           "settings": {
             "question": "What makes Barkin & Meowson different?",
-            "answer": "<p>We combine premium-grade ingredients, thoughtful formulas and a pet-first approach to everyday care.</p>"
+            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
           }
         },
-        "faq_2": {
+        "question_83N78R": {
           "type": "question",
           "settings": {
             "question": "Are the products cruelty free?",
             "answer": "<p>Yes. Our formulas are created without animal testing.</p>"
           }
         },
-        "faq_3": {
+        "question_fB9Wrc": {
           "type": "question",
           "settings": {
             "question": "How do I choose the right routine?",
             "answer": "<p>Use our product quiz or shop by coat and skin concern to build a routine that fits your pet.</p>"
           }
         },
-        "faq_4": {
+        "question_pMXr8g": {
           "type": "question",
           "settings": {
-            "question": "Where can I learn more about the ingredients?",
-            "answer": "<p>Each product page explains its formula, benefits and suggested use.</p>"
+            "question": "Can I build a custom bundle?",
+            "answer": "<p>Yes. Combine complementary products and save on a complete care routine.</p>"
+          }
+        },
+        "question_t7HGNt": {
+          "type": "question",
+          "settings": {
+            "question": "When will my order arrive?",
+            "answer": "<p>Delivery timing is shown during checkout and depends on your shipping destination.</p>"
           }
         }
       },
       "block_order": [
-        "faq_1",
-        "faq_2",
-        "faq_3",
-        "faq_4"
+        "question_MbUfFJ",
+        "question_83N78R",
+        "question_fB9Wrc",
+        "question_pMXr8g",
+        "question_t7HGNt"
+      ],
+      "custom_css": [
+        "{background: black;}"
       ],
       "settings": {
         "heading": "Frequently Asked\nQuestions.",
-        "text": "Everything you need to know about our approach to premium pet care.",
-        "button_label": "",
+        "text": "Everything you need to choose and use the best care for your pet.",
+        "button_label": "See Full FAQ",
         "button_link": "",
         "open_first": true
       }
@@ -376,10 +407,10 @@
     "about_intro",
     "about_story",
     "barkin_ingredients_EwxVnk",
-    "about_guarantees",
+    "barkin_guarantees_iH7cR8",
     "about_manifesto",
-    "about_social",
-    "about_blog",
-    "about_faq"
+    "barkin_social_gallery_t3VLQz",
+    "barkin_blog_guide_Wc3A3d",
+    "barkin_faq_NPWq4H"
   ]
 }

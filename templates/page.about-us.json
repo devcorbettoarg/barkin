@@ -187,7 +187,7 @@
         "guarantee_eaa9wg"
       ],
       "custom_css": [
-        "{background:black;}"
+        "{background: black;}"
       ],
       "settings": {
         "button_label": "",
@@ -200,6 +200,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18782",
+        "image": "shopify://shop_images/08-luxury-banner.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Pet Luxury, thoughtfully defined.",
         "heading_tag": "h2",

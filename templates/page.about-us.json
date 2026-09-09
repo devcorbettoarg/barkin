@@ -144,10 +144,10 @@
         "pagination_label": ""
       }
     },
-    "about_guarantees": {
+    "barkin_guarantees_iH7cR8": {
       "type": "barkin-guarantees",
       "blocks": {
-        "guarantee_1": {
+        "guarantee_kd4Ndw": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-cruelty-free.svg",
@@ -155,42 +155,45 @@
             "text": "Thoughtful formulas created without animal testing."
           }
         },
-        "guarantee_2": {
+        "guarantee_FBy3fE": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-paraben-free.svg",
             "heading": "Paraben & Sulfate Free.",
-            "text": "Considered care without unnecessary compromises."
+            "text": "Gentle formulas made for regular pet-care routines."
           }
         },
-        "guarantee_3": {
+        "guarantee_t6yhmC": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-gmp.svg",
             "heading": "GMP Certified.",
-            "text": "Produced to consistent quality and manufacturing standards."
+            "text": "Made with consistent standards and careful quality control."
           }
         },
-        "guarantee_4": {
+        "guarantee_eaa9wg": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-vet.svg",
             "heading": "Vet Recommended.",
-            "text": "Care designed with pet health and everyday wellbeing in mind."
+            "text": "Pet-first care developed with expert guidance."
           }
         }
       },
       "block_order": [
-        "guarantee_1",
-        "guarantee_2",
-        "guarantee_3",
-        "guarantee_4"
+        "guarantee_kd4Ndw",
+        "guarantee_FBy3fE",
+        "guarantee_t6yhmC",
+        "guarantee_eaa9wg"
+      ],
+      "custom_css": [
+        "{background:black;}"
       ],
       "settings": {
-        "button_label": "View All Products",
-        "button_link": "shopify://collections/all",
-        "heading": "Barkin&Meowson’s\nProduct Standard",
-        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat."
+        "button_label": "",
+        "button_link": "",
+        "heading": "Premium Product\nGuarantees",
+        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double.."
       }
     },
     "about_manifesto": {
@@ -379,7 +382,7 @@
     "about_intro",
     "about_story",
     "barkin_ingredients_EwxVnk",
-    "about_guarantees",
+    "barkin_guarantees_iH7cR8",
     "about_manifesto",
     "about_social",
     "about_blog",

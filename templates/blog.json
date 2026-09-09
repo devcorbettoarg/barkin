@@ -50,56 +50,71 @@
         "written_by_label": "Written by"
       }
     },
-    "journal_social": {
+    "barkin_social_gallery_pAXTtN": {
       "type": "barkin-social-gallery",
       "blocks": {
-        "social_1": {
+        "image_8QrUM3": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-1.jpg",
             "fallback_asset": "social-1.webp",
-            "alt": "Pet parent and dog",
+            "alt": "Pet parents and their dog",
             "link": ""
           }
         },
-        "social_2": {
+        "image_qx3cAe": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-2.jpg",
             "fallback_asset": "social-2.webp",
-            "alt": "Pet parent and dog",
+            "alt": "A dog with its parent",
             "link": ""
           }
         },
-        "social_3": {
+        "image_LTpztd": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-3.jpg",
             "fallback_asset": "social-3.webp",
-            "alt": "Barkin and Meowson product",
+            "alt": "Barkin & Meowson product",
             "link": ""
           }
         },
-        "social_4": {
+        "image_rdXYBQ": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-4.jpg",
             "fallback_asset": "social-4.webp",
-            "alt": "Pet parent and dog",
+            "alt": "A pet parent holding a dog",
             "link": ""
           }
         },
-        "social_5": {
+        "image_7jeKjU": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-1.jpg",
             "fallback_asset": "social-1.webp",
-            "alt": "Barkin and Meowson community",
+            "alt": "Pet parents and their dog",
+            "link": ""
+          }
+        },
+        "image_HDk7id": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/social-2.jpg",
+            "fallback_asset": "social-2.webp",
+            "alt": "A dog with its parent",
             "link": ""
           }
         }
       },
       "block_order": [
-        "social_1",
-        "social_2",
-        "social_3",
-        "social_4",
-        "social_5"
+        "image_8QrUM3",
+        "image_qx3cAe",
+        "image_LTpztd",
+        "image_rdXYBQ",
+        "image_7jeKjU",
+        "image_HDk7id"
       ],
       "settings": {
         "heading": "We’re Social, Come\nConnect With Us.",
@@ -112,6 +127,6 @@
   },
   "order": [
     "main",
-    "journal_social"
+    "barkin_social_gallery_pAXTtN"
   ]
 }

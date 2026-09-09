@@ -13,6 +13,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18776",
+        "image": "shopify://shop_images/01-hero.jpg",
         "fallback_asset": "hero-shopping.webp",
         "heading": "Pet Luxury, thoughtfully defined.",
         "heading_tag": "h1",
@@ -66,7 +67,7 @@
     "about_intro": {
       "type": "barkin-about-intro",
       "settings": {
-        "image": "shopify://shop_images/11-social-03.jpg",
+        "image": "shopify://shop_images/02-founder-intro.jpg",
         "fallback_asset": "hero-household.webp",
         "image_alt": "A pet enjoying time at home",
         "heading": "Barkin&Meowson came to life thanks to a certain hair care product manager who felt like pets were underserved.",

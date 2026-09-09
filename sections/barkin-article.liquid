@@ -35,15 +35,17 @@
     <aside class="barkin-article__sidebar">
       <p class="barkin-article__date">{{ article.published_at | date: '%B %d, %Y' }}</p>
       <h1 class="barkin-title">{{ article.title | escape }}</h1>
-      <div class="barkin-article__author">
-        {%- if author_image != blank -%}
-          {{ author_image | image_url: width: 96 | image_tag: class: 'barkin-article__author-image', loading: 'lazy', widths: '48,96', alt: author_name }}
+      <div class="barkin-article__author-card">
+        <div class="barkin-article__author">
+          {%- if author_image != blank -%}
+            {{ author_image | image_url: width: 96 | image_tag: class: 'barkin-article__author-image', loading: 'lazy', widths: '48,96', alt: author_name }}
+          {%- endif -%}
+          <div><strong>{{ author_name | escape }}</strong>{% if author_subtitle != blank %}<span>{{ author_subtitle | escape }}</span>{% endif %}</div>
+        </div>
+        {%- if author_text != blank -%}
+          <div class="barkin-article__author-bio">{% if author != blank %}{{ author_text | metafield_tag }}{% else %}{{ author_text | escape | newline_to_br }}{% endif %}</div>
         {%- endif -%}
-        <div><strong>{{ author_name | escape }}</strong>{% if author_subtitle != blank %}<span>{{ author_subtitle | escape }}</span>{% endif %}</div>
       </div>
-      {%- if author_text != blank -%}
-        <div class="barkin-article__author-bio">{% if author != blank %}{{ author_text | metafield_tag }}{% else %}{{ author_text | escape | newline_to_br }}{% endif %}</div>
-      {%- endif -%}
     </aside>
 
     <div class="barkin-article__content rte">

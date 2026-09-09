@@ -1,4 +1,4 @@
-<section class="barkin-section barkin-values" data-node-id="28:8100">
+<section class="barkin-section barkin-values{% if section.settings.layout == 'checkerboard' %} barkin-values--checkerboard{% endif %}" data-node-id="1:18780">
   <div class="barkin-shell">
     <header class="barkin-values__header">
       <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
@@ -18,10 +18,12 @@
                 | image_tag:
                   loading: 'lazy',
                   widths: '360,540,720,960,1200',
-                  sizes: '(min-width: 750px) 45vw, 100vw',
+                  sizes: '(min-width: 990px) 23vw, (min-width: 750px) 45vw, 100vw',
                   alt: block.settings.image.alt
               }}
             </div>
+          {% elsif section.settings.layout == 'checkerboard' %}
+            <div class="barkin-value__media" aria-hidden="true"></div>
           {% endif %}
 
           <div class="barkin-value__content">
@@ -46,6 +48,7 @@
   "class": "section",
   "max_blocks": 4,
   "settings": [
+    { "type": "select", "id": "layout", "label": "Layout", "default": "list", "options": [{ "value": "list", "label": "Numbered list" }, { "value": "checkerboard", "label": "Alternating image and text" }] },
     { "type": "textarea", "id": "heading", "label": "Heading", "default": "Our\nNon-Negotiables." },
     { "type": "textarea", "id": "text", "label": "Text", "default": "The standards behind every product we make and every choice we take." }
   ],

@@ -1,0 +1,50 @@
+/* Loaded only by the About Us template; shared sections keep their defaults elsewhere. */
+.barkin-hero { border-block: 1px solid var(--barkin-border); }
+.barkin-hero__content { left: max(5%, calc((100% - 1440px) / 2)); bottom: 80px; }
+.barkin-hero[data-node-id="1:18776"] { height: 596px; min-height: 596px; }
+.barkin-hero[data-node-id="1:18782"]::after {
+  background: linear-gradient(90deg, rgba(0,0,0,.35), transparent 50%), linear-gradient(0deg, rgba(0,0,0,.35), transparent 46%);
+}
+.barkin-marquee { border-block: 1px solid var(--barkin-border); }
+.barkin-about-intro { border-bottom: 1px solid var(--barkin-border); }
+.barkin-about-intro__grid { width: min(1198px, 90%); margin-inline: auto; padding-block: 80px; }
+.barkin-about-intro__copy { height: auto; min-height: 594px; overflow: visible; }
+.barkin-about-intro__copy .barkin-title { text-transform: capitalize; }
+.barkin-values--checkerboard { border-block: 1px solid var(--barkin-border); }
+.barkin-values--checkerboard .barkin-values__header { display: grid; grid-template-columns: minmax(0, 635px); justify-content: center; justify-items: center; text-align: center; gap: 20px; margin-bottom: 80px; }
+.barkin-values--checkerboard .barkin-values__header .barkin-copy { max-width: 500px; }
+.barkin-values--checkerboard .barkin-values__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; border: 0; }
+.barkin-values--checkerboard .barkin-value { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 0; border: 0; }
+.barkin-values--checkerboard .barkin-value__media,
+.barkin-values--checkerboard .barkin-value__content { height: auto; min-height: 0; aspect-ratio: 1; margin: 0; border: 1px solid var(--barkin-border); border-radius: 4px; }
+.barkin-values--checkerboard .barkin-value__content { display: flex; padding: 20px; background: rgba(255,253,252,.1); }
+.barkin-values--checkerboard .barkin-value__number { display: none; }
+.barkin-values--checkerboard .barkin-value__content > div { display: flex; flex-direction: column; justify-content: space-between; gap: 24px; width: 100%; }
+.barkin-values--checkerboard .barkin-value__content .barkin-copy { color: var(--barkin-white); font-size: 14px; line-height: 18px; }
+.barkin-values--checkerboard .barkin-value:nth-child(4n+3) .barkin-value__media,
+.barkin-values--checkerboard .barkin-value:nth-child(4n+4) .barkin-value__media { order: 2; }
+.barkin-guarantees { background: rgba(255,253,252,.035); border-block: 1px solid var(--barkin-border); }
+.barkin-social { background: rgba(255,253,252,.05); border-top: 1px solid var(--barkin-border); }
+.barkin-blog { border-top: 1px solid var(--barkin-border); }
+.barkin-faq { background: rgba(255,253,252,.05); border-block: 1px solid var(--barkin-border); }
+@media screen and (min-width: 750px) and (max-width: 1199px) {
+  .barkin-about-intro__copy .barkin-title { font-size: 40px; line-height: 1; }
+  .barkin-values--checkerboard .barkin-values__grid { grid-template-columns: minmax(0, 1fr); }
+  .barkin-values--checkerboard .barkin-value__media { order: 0 !important; }
+  .barkin-values--checkerboard .barkin-value:nth-child(even) .barkin-value__media { order: 2 !important; }
+}
+@media screen and (max-width: 749px) {
+  .barkin-hero[data-node-id="1:18776"] { height: var(--barkin-hero-mobile-height); min-height: 0; }
+  .barkin-hero__content { left: 20px; bottom: 40px; width: calc(100% - 40px); }
+  .barkin-about-intro { min-height: 0; }
+  .barkin-about-intro__grid { width: calc(100% - 40px); padding: 50px 0; }
+  .barkin-about-intro__image { height: auto; aspect-ratio: 1; }
+  .barkin-about-intro__copy { min-height: 0; gap: 32px; }
+  .barkin-about-intro__copy .barkin-title { font-size: 32px; line-height: 1; }
+  .barkin-values--checkerboard .barkin-values__header { margin-bottom: 40px; }
+  .barkin-values--checkerboard .barkin-values__grid,
+  .barkin-values--checkerboard .barkin-value { grid-template-columns: minmax(0, 1fr); }
+  .barkin-values--checkerboard .barkin-value__media { order: 0 !important; }
+  .barkin-values--checkerboard .barkin-value__content { aspect-ratio: auto; min-height: 220px; }
+  .barkin-blog-list { padding-left: 0; }
+}

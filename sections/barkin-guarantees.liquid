@@ -3,6 +3,9 @@
     <div class="barkin-guarantees__intro">
       <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
       <p class="barkin-copy">{{ section.settings.text }}</p>
+      {% if section.settings.button_label != blank %}
+        <div><a class="barkin-button" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}">{{ section.settings.button_label | escape }}</a></div>
+      {% endif %}
     </div>
     <div class="barkin-guarantees__list">
       {% for block in section.blocks %}
@@ -25,6 +28,8 @@
   "class": "section",
   "max_blocks": 4,
   "settings": [
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
     { "type": "textarea", "id": "heading", "label": "Heading", "default": "Premium Product\nGuarantees" },
     { "type": "textarea", "id": "text", "label": "Text", "default": "Premium care made with the health of your pet and the planet in mind." }
   ],

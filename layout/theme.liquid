@@ -346,6 +346,9 @@
       tabindex="-1"
       data-template="{{ template.name }}"
     >
+      {% if template.name == 'page' and template.suffix == 'about-us' %}
+        {{ 'barkin-about.css' | asset_url | stylesheet_tag }}
+      {% endif %}
       {{ content_for_layout }}
     </main>
 

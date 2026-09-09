@@ -4,9 +4,18 @@
   else
     assign hero_image = 'barkin/blog-feature.webp' | asset_url
   endif
-  assign article_category = article.tags.first | default: blog.title
-  assign author_image = article.metafields.custom.author_image.value
-  assign author_bio = article.metafields.custom.author_bio.value | default: section.settings.author_bio
+  assign author = article.metafields.custom.author.value
+  if author != blank
+    assign author_name = author.name.value | default: article.author
+    assign author_subtitle = author.subtitle.value
+    assign author_image = author.image.value
+    assign author_text = author.text
+  else
+    assign author_name = article.author
+    assign author_subtitle = article.tags.first | default: blog.title
+    assign author_image = article.metafields.custom.author_image.value
+    assign author_text = article.metafields.custom.author_bio.value | default: section.settings.author_bio
+  endif
 -%}
 
 <article class="barkin-article">
@@ -20,11 +29,13 @@
       <h1 class="barkin-title">{{ article.title | escape }}</h1>
       <div class="barkin-article__author">
         {%- if author_image != blank -%}
-          {{ author_image | image_url: width: 96 | image_tag: class: 'barkin-article__author-image', loading: 'lazy', widths: '48,96', alt: article.author }}
+          {{ author_image | image_url: width: 96 | image_tag: class: 'barkin-article__author-image', loading: 'lazy', widths: '48,96', alt: author_name }}
         {%- endif -%}
-        <div><strong>{{ article.author | escape }}</strong><span>{{ article_category | escape }}</span></div>
+        <div><strong>{{ author_name | escape }}</strong>{% if author_subtitle != blank %}<span>{{ author_subtitle | escape }}</span>{% endif %}</div>
       </div>
-      {%- if author_bio != blank -%}<div class="barkin-article__author-bio">{{ author_bio | escape | newline_to_br }}</div>{%- endif -%}
+      {%- if author_text != blank -%}
+        <div class="barkin-article__author-bio">{% if author != blank %}{{ author_text | metafield_tag }}{% else %}{{ author_text | escape | newline_to_br }}{% endif %}</div>
+      {%- endif -%}
     </aside>
 
     <div class="barkin-article__content rte">
@@ -45,7 +56,7 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    { "type": "textarea", "id": "author_bio", "label": "Fallback author bio", "info": "An article metafield custom.author_bio takes priority." },
+    { "type": "textarea", "id": "author_bio", "label": "Fallback author bio", "info": "The Author metaobject in custom.author takes priority." },
     { "type": "text", "id": "share_label", "label": "Share label", "default": "Share This Post" }
   ],
   "presets": [{ "name": "Barkin article" }]

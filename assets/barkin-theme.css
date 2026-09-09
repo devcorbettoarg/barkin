@@ -3182,6 +3182,14 @@ main[data-template="product"] .complementary-products { margin-top: 70px; }
 
 .barkin-mosaic__intro-copy > :first-child { margin-top: 0; }
 .barkin-mosaic__intro-copy > :last-child { margin-bottom: 0; }
+.barkin-mosaic--text-centered .barkin-mosaic__header,
+.barkin-mosaic--text-centered .barkin-mosaic__side,
+.barkin-mosaic--text-centered .barkin-mosaic__intro-copy {
+  text-align: center;
+}
+.barkin-mosaic--text-centered .barkin-mosaic__side {
+  justify-items: center;
+}
 
 /* A single editor block keeps each ingredient's image and copy together. */
 .barkin-ingredient { display: contents; }

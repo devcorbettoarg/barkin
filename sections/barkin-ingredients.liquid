@@ -1,6 +1,6 @@
 <script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
 
-<section class="barkin-section barkin-mosaic" data-node-id="20:1762">
+<section class="barkin-section barkin-mosaic{% if section.settings.text_alignment == 'center' %} barkin-mosaic--text-centered{% endif %}" data-node-id="20:1762">
   <div class="barkin-shell">
     <header class="barkin-mosaic__header">
       <h2 class="barkin-title">
@@ -140,6 +140,10 @@
     { "type": "richtext", "id": "product_text", "label": "Text from metafield", "info": "Connect a rich text metafield using the dynamic source button. When empty, Text below is used." },
     { "type": "textarea", "id": "heading", "label": "Fallback heading", "default": "Human Grade\nIngredients" },
     { "type": "textarea", "id": "text", "label": "Fallback text", "default": "Choosing premium ingredients helps support healthy skin and a beautiful coat." },
+    { "type": "select", "id": "text_alignment", "label": "Text alignment", "default": "left", "options": [
+      { "value": "left", "label": "Left" },
+      { "value": "center", "label": "Center" }
+    ] },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Learn More" },
     { "type": "url", "id": "button_link", "label": "Button link" },
     { "type": "text", "id": "pagination_label", "label": "Pagination accessibility label", "default": "Choose ingredient slide" }

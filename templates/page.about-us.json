@@ -213,65 +213,74 @@
         "desktop_only": false
       }
     },
-    "about_social": {
+    "barkin_social_gallery_t3VLQz": {
       "type": "barkin-social-gallery",
       "blocks": {
-        "social_1": {
+        "image_LetbMT": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-1.jpg",
             "fallback_asset": "social-1.webp",
             "alt": "Pet parents and their dog",
             "link": ""
           }
         },
-        "social_2": {
+        "image_wbXH9D": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-2.jpg",
             "fallback_asset": "social-2.webp",
             "alt": "A dog with its parent",
             "link": ""
           }
         },
-        "social_3": {
+        "image_xEgg8G": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-3.jpg",
             "fallback_asset": "social-3.webp",
-            "alt": "Barkin and Meowson product",
+            "alt": "Barkin & Meowson product",
             "link": ""
           }
         },
-        "social_4": {
+        "image_9bbMwJ": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-4.jpg",
             "fallback_asset": "social-4.webp",
             "alt": "A pet parent holding a dog",
             "link": ""
           }
         },
-        "social_5": {
+        "image_9UcMkb": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-1.jpg",
             "fallback_asset": "social-1.webp",
-            "alt": "Barkin and Meowson community",
+            "alt": "Pet parents and their dog",
             "link": ""
           }
         },
-        "social_6": {
+        "image_mHJtLx": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-2.jpg",
             "fallback_asset": "social-2.webp",
-            "alt": "Barkin and Meowson community",
+            "alt": "A dog with its parent",
             "link": ""
           }
         }
       },
       "block_order": [
-        "social_1",
-        "social_2",
-        "social_3",
-        "social_4",
-        "social_5",
-        "social_6"
+        "image_LetbMT",
+        "image_wbXH9D",
+        "image_xEgg8G",
+        "image_9bbMwJ",
+        "image_9UcMkb",
+        "image_mHJtLx"
+      ],
+      "custom_css": [
+        "{background:black;}"
       ],
       "settings": {
         "heading": "We’re Social, Come\nConnect With Us.",
@@ -385,7 +394,7 @@
     "barkin_ingredients_EwxVnk",
     "barkin_guarantees_iH7cR8",
     "about_manifesto",
-    "about_social",
+    "barkin_social_gallery_t3VLQz",
     "about_blog",
     "about_faq"
   ]

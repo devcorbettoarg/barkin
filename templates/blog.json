@@ -2,12 +2,43 @@
   "sections": {
     "main": {
       "type": "barkin-journal",
+      "blocks": {
+        "grooming": { "type": "category", "settings": { "tag": "Grooming", "label": "Grooming" } },
+        "pet_behaviour": { "type": "category", "settings": { "tag": "Pet Behaviour", "label": "Pet Behaviour" } },
+        "home_care": { "type": "category", "settings": { "tag": "Home Care", "label": "Home Care" } }
+      },
+      "block_order": ["grooming", "pet_behaviour", "home_care"],
       "settings": {
-        "articles_per_page": "12"
+        "articles_per_page": "12",
+        "all_posts_label": "All Posts",
+        "posts_label": "Posts",
+        "sort_label": "Sort by",
+        "sort_value": "Newest",
+        "read_article_label": "Read Article",
+        "written_by_label": "Written by"
+      }
+    },
+    "journal_social": {
+      "type": "barkin-social-gallery",
+      "blocks": {
+        "social_1": { "type": "image", "settings": { "fallback_asset": "social-1.webp", "alt": "Pet parent and dog" } },
+        "social_2": { "type": "image", "settings": { "fallback_asset": "social-2.webp", "alt": "Pet parent and dog" } },
+        "social_3": { "type": "image", "settings": { "fallback_asset": "social-3.webp", "alt": "Barkin and Meowson product" } },
+        "social_4": { "type": "image", "settings": { "fallback_asset": "social-4.webp", "alt": "Pet parent and dog" } },
+        "social_5": { "type": "image", "settings": { "fallback_asset": "social-1.webp", "alt": "Barkin and Meowson community" } }
+      },
+      "block_order": ["social_1", "social_2", "social_3", "social_4", "social_5"],
+      "settings": {
+        "heading": "We’re Social, Come\nConnect With Us.",
+        "text": "Join our community of discerning pets and their parents.",
+        "button_label": "Connect With Us",
+        "button_link": "",
+        "carousel_label": "Barkin and Meowson social gallery"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "journal_social"
   ]
 }

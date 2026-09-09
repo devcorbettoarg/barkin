@@ -138,7 +138,7 @@
         "product_text": "",
         "heading": "Barkin&Meowson’s\nNon-Negotiables",
         "text": "The standards behind every product we make and every choice we take.",
-        "text_alignment": "center",
+        "center_text": true,
         "button_label": "",
         "button_link": "",
         "pagination_label": ""

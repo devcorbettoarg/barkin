@@ -342,6 +342,63 @@
         "feature_link": "",
         "article_label": "Read Article"
       }
+    },
+    "barkin_faq_NPWq4H": {
+      "type": "barkin-faq",
+      "blocks": {
+        "question_MbUfFJ": {
+          "type": "question",
+          "settings": {
+            "question": "What makes Barkin & Meowson different?",
+            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+          }
+        },
+        "question_83N78R": {
+          "type": "question",
+          "settings": {
+            "question": "Are the products cruelty free?",
+            "answer": "<p>Yes. Our formulas are created without animal testing.</p>"
+          }
+        },
+        "question_fB9Wrc": {
+          "type": "question",
+          "settings": {
+            "question": "How do I choose the right routine?",
+            "answer": "<p>Use our product quiz or shop by coat and skin concern to build a routine that fits your pet.</p>"
+          }
+        },
+        "question_pMXr8g": {
+          "type": "question",
+          "settings": {
+            "question": "Can I build a custom bundle?",
+            "answer": "<p>Yes. Combine complementary products and save on a complete care routine.</p>"
+          }
+        },
+        "question_t7HGNt": {
+          "type": "question",
+          "settings": {
+            "question": "When will my order arrive?",
+            "answer": "<p>Delivery timing is shown during checkout and depends on your shipping destination.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_MbUfFJ",
+        "question_83N78R",
+        "question_fB9Wrc",
+        "question_pMXr8g",
+        "question_t7HGNt"
+      ],
+      "custom_css": [
+        "{background: black;}"
+      ],
+      "settings": {
+        "heading": "Frequently Asked\nQuestions.",
+        "text": "Everything you need to choose and use the best care for your pet.",
+        "button_label": "See Full FAQ",
+        "button_link": "",
+        "open_first": true
+      }
     }
   },
   "order": [
@@ -353,6 +410,7 @@
     "barkin_guarantees_iH7cR8",
     "about_manifesto",
     "barkin_social_gallery_t3VLQz",
-    "barkin_blog_guide_Wc3A3d"
+    "barkin_blog_guide_Wc3A3d",
+    "barkin_faq_NPWq4H"
   ]
 }

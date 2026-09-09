@@ -8,7 +8,7 @@
       <strong>{{ purchase_variant.price | money }}</strong>
     </label>
   {% endunless %}
-  {% for allocation in purchase_variant.selling_plan_allocations %}
+  {% for allocation in purchase_variant.selling_plan_allocations limit:1 %}
     <label class="barkin-purchase-option">
       <input type="radio" name="selling_plan" value="{{ allocation.selling_plan.id }}" form="{{ product_form_id }}" {% if purchase_variant.requires_selling_plan and forloop.first %}checked{% endif %}>
       <span>{{ allocation.selling_plan.name | escape }}</span>

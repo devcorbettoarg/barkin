@@ -1,21 +1,34 @@
 {%- assign purchase_variant = product.selected_or_first_available_variant -%}
-<fieldset class="barkin-purchase-options" {{ block.shopify_attributes }}>
-  <legend>{{ block.settings.heading | escape }}</legend>
-  {% unless purchase_variant.requires_selling_plan %}
-    <label class="barkin-purchase-option">
-      <input type="radio" name="selling_plan" value="" form="{{ product_form_id }}" checked>
-      <span>{{ block.settings.one_time_label | escape }}</span>
-      <strong>{{ purchase_variant.price | money }}</strong>
-    </label>
-  {% endunless %}
-  {% for allocation in purchase_variant.selling_plan_allocations %}
-    <label class="barkin-purchase-option">
-      <input type="radio" name="selling_plan" value="{{ allocation.selling_plan.id }}" form="{{ product_form_id }}" {% if purchase_variant.requires_selling_plan and forloop.first %}checked{% endif %}>
-      <span>{{ allocation.selling_plan.name | escape }}</span>
-      <strong>{{ allocation.price | money }}</strong>
-      {% if allocation.selling_plan.description != blank %}
-        <span class="barkin-purchase-option__description">{{ allocation.selling_plan.description }}</span>
-      {% endif %}
-    </label>
-  {% endfor %}
-</fieldset>
+{%- assign first_allocation = purchase_variant.selling_plan_allocations | first -%}
+<barkin-purchase-options>
+  <fieldset class="barkin-purchase-options" {{ block.shopify_attributes }}>
+    <legend>{{ block.settings.heading | escape }}</legend>
+    {% unless purchase_variant.requires_selling_plan %}
+      <label class="barkin-purchase-option">
+        <input type="radio" name="selling_plan" value="" form="{{ product_form_id }}" checked>
+        <span>{{ block.settings.one_time_label | escape }}</span>
+        <strong>{{ purchase_variant.price | money }}</strong>
+      </label>
+    {% endunless %}
+    {% if first_allocation %}
+      <label class="barkin-purchase-option">
+        <input type="radio" name="selling_plan" value="{{ first_allocation.selling_plan.id }}" form="{{ product_form_id }}" data-subscription {% if purchase_variant.requires_selling_plan %}checked{% endif %}>
+        <span>{{ block.settings.subscription_label | default: 'Subscribe & save' | escape }}</span>
+        <strong data-subscription-price>{{ first_allocation.price | money }}</strong>
+      </label>
+      <div class="barkin-purchase-plans" {% unless purchase_variant.requires_selling_plan %}hidden{% endunless %}>
+        <label for="PurchasePlan-{{ section.id }}-{{ block.id }}">{{ block.settings.plan_label | default: 'Delivery frequency' | escape }}</label>
+        <select id="PurchasePlan-{{ section.id }}-{{ block.id }}" data-subscription-plan>
+          {% for allocation in purchase_variant.selling_plan_allocations %}
+            <option value="{{ allocation.selling_plan.id }}" data-price="{{ allocation.price | money | escape }}">{{ allocation.selling_plan.name | escape }} — {{ allocation.price | money }}</option>
+          {% endfor %}
+        </select>
+        {% for allocation in purchase_variant.selling_plan_allocations %}
+          {% if allocation.selling_plan.description != blank %}
+            <div class="barkin-purchase-option__description" data-plan-description="{{ allocation.selling_plan.id }}" {% unless forloop.first %}hidden{% endunless %}>{{ allocation.selling_plan.description }}</div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </fieldset>
+</barkin-purchase-options>

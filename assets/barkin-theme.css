@@ -2760,7 +2760,7 @@ main[data-template="product"] .related-products .price {
     margin-top: 40px;
   }
   main[data-template="product"] media-gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   main[data-template="product"] media-gallery > slider-component:first-of-type {
     grid-column: 1;
@@ -2771,12 +2771,30 @@ main[data-template="product"] .related-products .price {
     grid-row: 2;
     width: 100%;
     max-width: 100%;
+    margin-inline: 0;
   }
-  main[data-template="product"] .thumbnail-list {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-flow: row;
+  main[data-template="product"] .thumbnail-slider .thumbnail-list.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    min-width: 0;
+    max-width: 100%;
     max-height: none;
-    overflow: visible;
+    margin: 0;
+    padding: 4px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-padding-inline: 4px;
+  }
+  main[data-template="product"] .thumbnail-list .thumbnail-list__item.slider__slide {
+    flex: 0 0 56px;
+    width: 56px !important;
+    min-width: 0;
+    max-width: 56px;
+    padding: 0;
+  }
+  main[data-template="product"] .thumbnail-list.slider::after {
+    display: none;
   }
   .barkin-coats { padding-block: 50px; }
   .barkin-coats__rail { margin-top: 40px; }
@@ -3211,3 +3229,11 @@ main[data-template="product"] .complementary-products { margin-top: 70px; }
     font-size: 12px;
   }
 }
+
+/* Subscription plans expand when the subscription purchase option is selected. */
+barkin-purchase-options { display: block; }
+.barkin-purchase-plans { margin: 0 0 10px; padding: 4px 20px 16px; }
+.barkin-purchase-plans[hidden], .barkin-purchase-plans [hidden] { display: none; }
+.barkin-purchase-plans > label { display: block; margin-bottom: 8px; font-size: 14px; }
+.barkin-purchase-plans select { width: 100%; min-height: 44px; padding: 10px 12px; border: 1px solid var(--barkin-white); border-radius: 4px; background: var(--barkin-white); color: var(--barkin-black); font: inherit; }
+.barkin-purchase-plans .barkin-purchase-option__description { margin-top: 10px; }

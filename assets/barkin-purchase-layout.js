@@ -11,3 +11,24 @@ if (!customElements.get('barkin-purchase-layout')) {
     }
   });
 }
+
+if (!customElements.get('barkin-purchase-options')) {
+  customElements.define('barkin-purchase-options', class extends HTMLElement {
+    connectedCallback() {
+      if (this.onPurchaseChange) return;
+      this.onPurchaseChange = () => {
+        const subscription = this.querySelector('[data-subscription]');
+        const select = this.querySelector('[data-subscription-plan]');
+        if (!subscription || !select) return;
+        this.querySelector('.barkin-purchase-plans').hidden = !subscription.checked;
+        subscription.value = select.value;
+        this.querySelector('[data-subscription-price]').textContent = select.selectedOptions[0].dataset.price;
+        this.querySelectorAll('[data-plan-description]').forEach((description) => {
+          description.hidden = description.dataset.planDescription !== select.value;
+        });
+      };
+      this.addEventListener('change', this.onPurchaseChange);
+      this.onPurchaseChange();
+    }
+  });
+}

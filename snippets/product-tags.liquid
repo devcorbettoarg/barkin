@@ -1,6 +1,10 @@
 {%- assign product_tags = product.metafields.custom.tags.value | default: product.metafields.custom.tags -%}
 {%- if product_tags != blank -%}
-  {%- assign product_tag_lines = product_tags | newline_to_br | split: '<br />' -%}
+  {%- if product_tags contains '[' and product_tags contains ']' -%}
+    {%- assign product_tag_lines = product_tags | remove: '[' | remove: ']' | remove: '"' | split: ',' -%}
+  {%- else -%}
+    {%- assign product_tag_lines = product_tags | newline_to_br | split: '<br />' -%}
+  {%- endif -%}
   <div class="barkin-product-tags" {{ block.shopify_attributes }}>
     <div class="barkin-product-tags__list" role="list" aria-label="Product tags">
       {%- for tag in product_tag_lines -%}

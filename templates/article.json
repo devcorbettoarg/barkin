@@ -1,10 +1,28 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "main": { "type": "barkin-article", "settings": {} },
+    "main": {
+      "type": "barkin-article",
+      "settings": {
+        "author_bio": "",
+        "share_label": "Share This Post"
+      }
+    },
     "related_products": {
       "type": "barkin-article-products",
+      "custom_css": [
+        "{background: black;}"
+      ],
       "settings": {
-        "collection": "",
+        "collection": "pet-shampoos-conditioners",
         "heading": "Explore Products\nRelated To This Post.",
         "text": "Discover products selected to support your pet’s care routine.",
         "button_label": "Shop All Products",
@@ -12,25 +30,63 @@
         "products_to_show": 4
       }
     },
-    "related_posts": {
+    "barkin_blog_guide_PAct8a": {
       "type": "barkin-blog-guide",
       "blocks": {
-        "article_1": { "type": "article", "settings": { "article": "", "fallback_asset": "blog-1.webp", "tag": "Pet Grooming", "title": "How Natural Flea & Tick Protection Works.", "link": "" } },
-        "article_2": { "type": "article", "settings": { "article": "", "fallback_asset": "blog-2.webp", "tag": "Pet Grooming", "title": "Can You Use Human Shampoo on Dogs & Cats?", "link": "" } },
-        "article_3": { "type": "article", "settings": { "article": "", "fallback_asset": "blog-3.webp", "tag": "Pet Grooming", "title": "What’s the right shampoo for my pet’s coat type?", "link": "" } }
+        "article_nkHRqx": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "image": "shopify://shop_images/blog-1.jpg",
+            "fallback_asset": "blog-1.webp",
+            "tag": "Pet Grooming",
+            "title": "How to Start Your Puppy's First At-Home Bath.",
+            "link": ""
+          }
+        },
+        "article_Wjc8xe": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "image": "shopify://shop_images/blog-2.jpg",
+            "fallback_asset": "blog-2.webp",
+            "tag": "Pet Grooming",
+            "title": "Can You Use Human Shampoo on Dogs & Cats?",
+            "link": ""
+          }
+        },
+        "article_zYLUz8": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "image": "shopify://shop_images/blog-3.jpg",
+            "fallback_asset": "blog-3.webp",
+            "tag": "Pet Grooming",
+            "title": "What’s the right shampoo for my pet’s coat type?",
+            "link": ""
+          }
+        }
       },
-      "block_order": ["article_1", "article_2", "article_3"],
+      "block_order": [
+        "article_nkHRqx",
+        "article_Wjc8xe",
+        "article_zYLUz8"
+      ],
       "settings": {
-        "heading": "Related Pet Care\nJournal Posts.",
-        "text": "Explore more practical guides for your pet’s everyday care.",
+        "heading": "Barkin&Meowson’s\nPet-Care Guide.",
+        "text": "Practical guides for healthier skin, better coats and happier pets.",
         "button_label": "View Full Blog",
-        "button_link": "/blogs/news",
-        "feature_image": "",
+        "button_link": "",
+        "feature_image": "shopify://shop_images/Frame_14.jpg",
         "feature_title": "How Natural Flea & Tick Protection Works.",
         "feature_link": "",
         "article_label": "Read Article"
       }
     }
   },
-  "order": ["main", "related_products", "related_posts"]
+  "order": [
+    "main",
+    "related_products",
+    "barkin_blog_guide_PAct8a"
+  ]
 }

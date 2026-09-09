@@ -1,19 +1,34 @@
 {%- assign related_collection = section.settings.collection -%}
 {%- if related_collection != blank -%}
+  {{ 'component-card.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+
   <section class="barkin-section barkin-article-products">
     <div class="barkin-centered-intro">
       <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
       {%- if section.settings.text != blank -%}<p class="barkin-copy">{{ section.settings.text }}</p>{%- endif -%}
       {%- if section.settings.button_label != blank -%}<a class="barkin-button" href="{{ section.settings.button_link | default: related_collection.url }}">{{ section.settings.button_label | escape }}</a>{%- endif -%}
     </div>
-    <div class="barkin-shell barkin-article-products__grid">
+    <ul class="barkin-shell barkin-article-products__grid grid" role="list">
       {%- for product in related_collection.products limit: section.settings.products_to_show -%}
-        <article class="barkin-article-product-card">
-          <a href="{{ product.url }}" class="barkin-article-product-card__image"><img src="{{ product.featured_image | image_url: width: 800 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" width="704" height="704" loading="lazy"></a>
-          <div class="barkin-article-product-card__body"><a href="{{ product.url }}">{{ product.title | escape }}</a><span>{{ product.price | money }}</span></div>
-        </article>
+        <li class="grid__item">
+          {% render 'card-product',
+            card_product: product,
+            media_aspect_ratio: 'square',
+            show_secondary_image: true,
+            show_vendor: false,
+            show_rating: false,
+            lazy_load: true,
+            section_id: section.id,
+            quick_add: 'standard',
+            product_view_context: 'collection'
+          %}
+        </li>
       {%- endfor -%}
-    </div>
+    </ul>
   </section>
 {%- endif -%}
 

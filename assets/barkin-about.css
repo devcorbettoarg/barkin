@@ -1,7 +1,6 @@
 /* Loaded only by the About Us template; shared sections keep their defaults elsewhere. */
 .barkin-hero { border-block: 1px solid var(--barkin-border); }
 .barkin-hero__content { left: max(5%, calc((100% - 1440px) / 2)); bottom: 80px; }
-.barkin-hero[data-node-id="1:18776"] { height: 596px; min-height: 596px; }
 .barkin-hero[data-node-id="1:18782"]::after {
   background: linear-gradient(90deg, rgba(0,0,0,.35), transparent 50%), linear-gradient(0deg, rgba(0,0,0,.35), transparent 46%);
 }
@@ -17,7 +16,7 @@
 .barkin-values--checkerboard .barkin-value { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 0; border: 0; }
 .barkin-values--checkerboard .barkin-value__media,
 .barkin-values--checkerboard .barkin-value__content { height: auto; min-height: 0; aspect-ratio: 1; margin: 0; border: 1px solid var(--barkin-border); border-radius: 4px; }
-.barkin-values--checkerboard .barkin-value__content { display: flex; padding: 20px; background: rgba(255,253,252,.1); }
+.barkin-values--checkerboard .barkin-value__content { display: flex; align-items: stretch; padding: 20px; background: rgba(255,253,252,.1); }
 .barkin-values--checkerboard .barkin-value__number { display: none; }
 .barkin-values--checkerboard .barkin-value__content > div { display: flex; flex-direction: column; justify-content: space-between; gap: 24px; width: 100%; }
 .barkin-values--checkerboard .barkin-value__content .barkin-copy { color: var(--barkin-white); font-size: 14px; line-height: 18px; }
@@ -26,7 +25,11 @@
 .barkin-guarantees { background: rgba(255,253,252,.035); border-block: 1px solid var(--barkin-border); }
 .barkin-social { background: rgba(255,253,252,.05); border-top: 1px solid var(--barkin-border); }
 .barkin-blog { border-top: 1px solid var(--barkin-border); }
+.barkin-blog-list, .barkin-blog__header-side { padding-left: 0; }
 .barkin-faq { background: rgba(255,253,252,.05); border-block: 1px solid var(--barkin-border); }
+@media screen and (min-width: 1200px) {
+  .barkin-values--checkerboard .barkin-values__header { min-height: 150px; align-content: start; }
+}
 @media screen and (min-width: 750px) and (max-width: 1199px) {
   .barkin-about-intro__copy .barkin-title { font-size: 40px; line-height: 1; }
   .barkin-values--checkerboard .barkin-values__grid { grid-template-columns: minmax(0, 1fr); }

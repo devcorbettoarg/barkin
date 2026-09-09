@@ -20,13 +20,6 @@
           "type": "title",
           "settings": {}
         },
-        "text_KeM4px": {
-          "type": "text",
-          "settings": {
-            "text": "An everyday rinse-out cat and dog conditioner, formulated to pair  with most of our shampoos.",
-            "text_style": "body"
-          }
-        },
         "price": {
           "type": "price",
           "disabled": true,
@@ -43,7 +36,9 @@
           "type": "purchase_options",
           "settings": {
             "heading": "Purchase Options",
-            "one_time_label": "One-time Purchase"
+            "one_time_label": "One-time Purchase",
+            "subscription_label": "Subscribe & save",
+            "plan_label": "Delivery frequency"
           }
         },
         "loop_subscriptions_loop_widget_9dJi6P": {
@@ -136,7 +131,6 @@
       "block_order": [
         "rating",
         "title",
-        "text_KeM4px",
         "price",
         "variant_picker",
         "purchase_options",
@@ -223,6 +217,8 @@
         "guarantee_4"
       ],
       "settings": {
+        "button_label": "",
+        "button_link": "",
         "heading": "Premium Product\nGuarantees",
         "text": "Premium care made with the health of your pet and the planet in mind."
       }

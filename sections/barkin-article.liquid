@@ -5,6 +5,14 @@
     assign hero_image = 'barkin/blog-feature.webp' | asset_url
   endif
   assign author = article.metafields.custom.author.value
+  if author == blank
+    for author_entry in shop.metaobjects.author.values
+      if author_entry.name.value == article.author
+        assign author = author_entry
+        break
+      endif
+    endfor
+  endif
   if author != blank
     assign author_name = author.name.value | default: article.author
     assign author_subtitle = author.subtitle.value

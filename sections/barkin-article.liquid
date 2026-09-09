@@ -1,0 +1,53 @@
+{%- liquid
+  if article.image != blank
+    assign hero_image = article.image | image_url: width: 2000
+  else
+    assign hero_image = 'barkin/blog-feature.webp' | asset_url
+  endif
+  assign article_category = article.tags.first | default: blog.title
+  assign author_image = article.metafields.custom.author_image.value
+  assign author_bio = article.metafields.custom.author_bio.value | default: section.settings.author_bio
+-%}
+
+<article class="barkin-article">
+  <div class="barkin-article__hero">
+    <img src="{{ hero_image }}" alt="{{ article.image.alt | default: article.title | escape }}" width="1600" height="475" fetchpriority="high">
+  </div>
+
+  <div class="barkin-shell barkin-article__layout">
+    <aside class="barkin-article__sidebar">
+      <p class="barkin-article__date">{{ article.published_at | date: '%B %d, %Y' }}</p>
+      <h1 class="barkin-title">{{ article.title | escape }}</h1>
+      <div class="barkin-article__author">
+        {%- if author_image != blank -%}
+          {{ author_image | image_url: width: 96 | image_tag: class: 'barkin-article__author-image', loading: 'lazy', widths: '48,96', alt: article.author }}
+        {%- endif -%}
+        <div><strong>{{ article.author | escape }}</strong><span>{{ article_category | escape }}</span></div>
+      </div>
+      {%- if author_bio != blank -%}<div class="barkin-article__author-bio">{{ author_bio | escape | newline_to_br }}</div>{%- endif -%}
+    </aside>
+
+    <div class="barkin-article__content rte">
+      {{ article.content }}
+      <div class="barkin-article__share">
+        {% assign share_url = request.origin | append: article.url %}
+        {% render 'share-button', block: section, share_link: share_url %}
+      </div>
+    </div>
+  </div>
+</article>
+
+<script type="application/ld+json">{{ article | structured_data }}</script>
+
+{% schema %}
+{
+  "name": "Barkin article",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "textarea", "id": "author_bio", "label": "Fallback author bio", "info": "An article metafield custom.author_bio takes priority." },
+    { "type": "text", "id": "share_label", "label": "Share label", "default": "Share This Post" }
+  ],
+  "presets": [{ "name": "Barkin article" }]
+}
+{% endschema %}

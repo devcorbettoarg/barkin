@@ -2595,6 +2595,7 @@ main[data-template="product"] .related-products .price {
   }
 }
 @media screen and (max-width: 749px) {
+  .barkin-blog-list { padding-left: 0; }
   .barkin-hero--desktop-only { display: none; }
   .barkin-hero--mobile-only { display: block; }
   .barkin-desktop-only { display: none; }
@@ -2775,7 +2776,7 @@ main[data-template="product"] .related-products .price {
     width: 100%;
     margin-inline: 0;
   }
-  main[data-template="product"] .thumbnail-slider {
+  main[data-template="product"] .product__media-wrapper .thumbnail-slider {
     grid-column: 1;
     grid-row: 2;
     width: 100%;
@@ -2785,6 +2786,7 @@ main[data-template="product"] .related-products .price {
   main[data-template="product"] .thumbnail-slider .thumbnail-list.slider {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: safe center;
     gap: 8px;
     min-width: 0;
     max-width: 100%;

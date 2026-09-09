@@ -3187,7 +3187,12 @@ main[data-template="product"] .complementary-products { margin-top: 70px; }
 .barkin-mosaic--text-centered .barkin-mosaic__intro-copy {
   text-align: center;
 }
+.barkin-mosaic--text-centered .barkin-mosaic__header {
+  grid-template-columns: 1fr;
+}
 .barkin-mosaic--text-centered .barkin-mosaic__side {
+  max-width: 650px;
+  margin: 0 auto;
   justify-items: center;
 }
 

@@ -280,7 +280,7 @@
         "image_mHJtLx"
       ],
       "custom_css": [
-        "{background:black;}"
+        "{background: black;}"
       ],
       "settings": {
         "heading": "We’re Social, Come\nConnect With Us.",
@@ -290,33 +290,36 @@
         "carousel_label": "Barkin and Meowson social gallery"
       }
     },
-    "about_blog": {
+    "barkin_blog_guide_Wc3A3d": {
       "type": "barkin-blog-guide",
       "blocks": {
-        "article_1": {
+        "article_47zEMh": {
           "type": "article",
           "settings": {
             "article": "",
+            "image": "shopify://shop_images/blog-1.jpg",
             "fallback_asset": "blog-1.webp",
             "tag": "Pet Grooming",
             "title": "How to Start Your Puppy's First At-Home Bath.",
             "link": ""
           }
         },
-        "article_2": {
+        "article_wA6tRq": {
           "type": "article",
           "settings": {
             "article": "",
+            "image": "shopify://shop_images/blog-2.jpg",
             "fallback_asset": "blog-2.webp",
             "tag": "Pet Grooming",
             "title": "Can You Use Human Shampoo on Dogs & Cats?",
             "link": ""
           }
         },
-        "article_3": {
+        "article_QymBxN": {
           "type": "article",
           "settings": {
             "article": "",
+            "image": "shopify://shop_images/blog-3.jpg",
             "fallback_asset": "blog-3.webp",
             "tag": "Pet Grooming",
             "title": "What’s the right shampoo for my pet’s coat type?",
@@ -325,64 +328,19 @@
         }
       },
       "block_order": [
-        "article_1",
-        "article_2",
-        "article_3"
+        "article_47zEMh",
+        "article_wA6tRq",
+        "article_QymBxN"
       ],
       "settings": {
         "heading": "Barkin&Meowson’s\nPet-Care Guide.",
         "text": "Practical guides for healthier skin, better coats and happier pets.",
         "button_label": "View Full Blog",
         "button_link": "",
+        "feature_image": "shopify://shop_images/Frame_14.jpg",
         "feature_title": "How Natural Flea & Tick Protection Works.",
         "feature_link": "",
         "article_label": "Read Article"
-      }
-    },
-    "about_faq": {
-      "type": "barkin-faq",
-      "blocks": {
-        "faq_1": {
-          "type": "question",
-          "settings": {
-            "question": "What makes Barkin & Meowson different?",
-            "answer": "<p>We combine premium-grade ingredients, thoughtful formulas and a pet-first approach to everyday care.</p>"
-          }
-        },
-        "faq_2": {
-          "type": "question",
-          "settings": {
-            "question": "Are the products cruelty free?",
-            "answer": "<p>Yes. Our formulas are created without animal testing.</p>"
-          }
-        },
-        "faq_3": {
-          "type": "question",
-          "settings": {
-            "question": "How do I choose the right routine?",
-            "answer": "<p>Use our product quiz or shop by coat and skin concern to build a routine that fits your pet.</p>"
-          }
-        },
-        "faq_4": {
-          "type": "question",
-          "settings": {
-            "question": "Where can I learn more about the ingredients?",
-            "answer": "<p>Each product page explains its formula, benefits and suggested use.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_1",
-        "faq_2",
-        "faq_3",
-        "faq_4"
-      ],
-      "settings": {
-        "heading": "Frequently Asked\nQuestions.",
-        "text": "Everything you need to know about our approach to premium pet care.",
-        "button_label": "",
-        "button_link": "",
-        "open_first": true
       }
     }
   },
@@ -395,7 +353,6 @@
     "barkin_guarantees_iH7cR8",
     "about_manifesto",
     "barkin_social_gallery_t3VLQz",
-    "about_blog",
-    "about_faq"
+    "barkin_blog_guide_Wc3A3d"
   ]
 }

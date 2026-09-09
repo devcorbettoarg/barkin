@@ -19,7 +19,7 @@
     "related_products": {
       "type": "barkin-article-products",
       "custom_css": [
-        "{background:black;}"
+        "{background: black;}"
       ],
       "settings": {
         "collection": "pet-shampoos-conditioners",
@@ -29,10 +29,64 @@
         "button_link": "",
         "products_to_show": 4
       }
+    },
+    "barkin_blog_guide_PAct8a": {
+      "type": "barkin-blog-guide",
+      "blocks": {
+        "article_nkHRqx": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "image": "shopify://shop_images/blog-1.jpg",
+            "fallback_asset": "blog-1.webp",
+            "tag": "Pet Grooming",
+            "title": "How to Start Your Puppy's First At-Home Bath.",
+            "link": ""
+          }
+        },
+        "article_Wjc8xe": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "image": "shopify://shop_images/blog-2.jpg",
+            "fallback_asset": "blog-2.webp",
+            "tag": "Pet Grooming",
+            "title": "Can You Use Human Shampoo on Dogs & Cats?",
+            "link": ""
+          }
+        },
+        "article_zYLUz8": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "image": "shopify://shop_images/blog-3.jpg",
+            "fallback_asset": "blog-3.webp",
+            "tag": "Pet Grooming",
+            "title": "What’s the right shampoo for my pet’s coat type?",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "article_nkHRqx",
+        "article_Wjc8xe",
+        "article_zYLUz8"
+      ],
+      "settings": {
+        "heading": "Barkin&Meowson’s\nPet-Care Guide.",
+        "text": "Practical guides for healthier skin, better coats and happier pets.",
+        "button_label": "View Full Blog",
+        "button_link": "",
+        "feature_image": "shopify://shop_images/Frame_14.jpg",
+        "feature_title": "How Natural Flea & Tick Protection Works.",
+        "feature_link": "",
+        "article_label": "Read Article"
+      }
     }
   },
   "order": [
     "main",
-    "related_products"
+    "related_products",
+    "barkin_blog_guide_PAct8a"
   ]
 }

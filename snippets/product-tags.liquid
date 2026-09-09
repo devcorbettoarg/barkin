@@ -1,16 +1,22 @@
-{%- assign product_tags = product.metafields.custom.tags.value | default: product.metafields.custom.tags -%}
+{%- assign product_tags = product.metafields.custom.tags.value -%}
+
 {%- if product_tags != blank -%}
-  {%- if product_tags contains '[' and product_tags contains ']' -%}
-    {%- assign product_tag_lines = product_tags | remove: '[' | remove: ']' | remove: '"' | split: ',' -%}
-  {%- else -%}
-    {%- assign product_tag_lines = product_tags | newline_to_br | split: '<br />' -%}
-  {%- endif -%}
   <div class="barkin-product-tags" {{ block.shopify_attributes }}>
-    <div class="barkin-product-tags__list" role="list" aria-label="Product tags">
-      {%- for tag in product_tag_lines -%}
-        {%- assign tag_label = tag | strip_html | strip -%}
+    <div
+      class="barkin-product-tags__list"
+      role="list"
+      aria-label="Product tags"
+    >
+      {%- for tag in product_tags -%}
+        {%- assign tag_label = tag | strip -%}
+
         {%- if tag_label != blank -%}
-          <span class="barkin-product-tags__pill" role="listitem">{{ tag_label | escape }}</span>
+          <span
+            class="barkin-product-tags__pill"
+            role="listitem"
+          >
+            {{ tag_label | escape }}
+          </span>
         {%- endif -%}
       {%- endfor -%}
     </div>

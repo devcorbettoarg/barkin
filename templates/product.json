@@ -20,6 +20,10 @@
           "type": "title",
           "settings": {}
         },
+        "product_tags": {
+          "type": "product_tags",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "disabled": true,
@@ -66,10 +70,6 @@
         },
         "description": {
           "type": "description",
-          "settings": {}
-        },
-        "product_tags": {
-          "type": "product_tags",
           "settings": {}
         },
         "directions": {
@@ -131,6 +131,7 @@
       "block_order": [
         "rating",
         "title",
+        "product_tags",
         "price",
         "variant_picker",
         "purchase_options",
@@ -139,7 +140,6 @@
         "buy_buttons",
         "purchase_guarantees_e3UCbG",
         "description",
-        "product_tags",
         "directions",
         "suitable",
         "ingredients",

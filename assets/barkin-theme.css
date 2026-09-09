@@ -3266,9 +3266,9 @@ barkin-purchase-options { display: block; }
   align-items: center;
   min-height: 32px;
   padding: 6px 12px;
-  border: 1px solid rgba(var(--color-foreground), 0.2);
+  border: 1px solid #fffdfc;
   border-radius: 999px;
-  color: rgb(var(--color-foreground));
+  color: #fffdfc;
   font-size: 1.2rem;
   line-height: 1.2;
 }

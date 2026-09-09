@@ -19,7 +19,10 @@
         "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
         "button_label": "",
         "button_link": "",
-        "desktop_height": 595
+        "desktop_height": 595,
+        "mobile_height": 650,
+        "mobile_only": false,
+        "desktop_only": false
       }
     },
     "about_promise": {
@@ -63,6 +66,7 @@
     "about_intro": {
       "type": "barkin-about-intro",
       "settings": {
+        "image": "shopify://shop_images/11-social-03.jpg",
         "fallback_asset": "hero-household.webp",
         "image_alt": "A pet enjoying time at home",
         "heading": "Barkin&Meowson came to life thanks to a certain hair care product manager who felt like pets were underserved.",
@@ -79,51 +83,62 @@
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
         "button_label": "",
         "button_link": "",
-        "desktop_height": 875
+        "desktop_height": 875,
+        "mobile_height": 650,
+        "mobile_only": false,
+        "desktop_only": false
       }
     },
-    "about_values": {
-      "type": "barkin-values",
+    "barkin_ingredients_EwxVnk": {
+      "type": "barkin-ingredients",
       "blocks": {
-        "value_1": {
-          "type": "value",
+        "ingredient_b6t8NR": {
+          "type": "ingredient",
           "settings": {
-            "heading": "Efficacy",
-            "text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out."
+            "ingredient": "premium-grade-ingredient",
+            "heading": "Premium Grade Ingredient",
+            "text": ""
           }
         },
-        "value_2": {
-          "type": "value",
+        "ingredient_kQitPy": {
+          "type": "ingredient",
           "settings": {
-            "heading": "Pleasant Pet Parent Experience",
-            "text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out."
+            "ingredient": "premium-grade-ingredient-2",
+            "heading": "Premium Grade Ingredient",
+            "text": ""
           }
         },
-        "value_3": {
-          "type": "value",
+        "ingredient_U4YX4q": {
+          "type": "ingredient",
           "settings": {
-            "heading": "Safety",
-            "text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out."
+            "ingredient": "premium-grade-ingredient-3",
+            "heading": "Premium Grade Ingredient",
+            "text": ""
           }
         },
-        "value_4": {
-          "type": "value",
+        "ingredient_RKXc7L": {
+          "type": "ingredient",
           "settings": {
-            "heading": "Pleasant Pet Experience",
-            "text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out."
+            "ingredient": "premium-grade-ingredient-4",
+            "heading": "Premium Grade Ingredient",
+            "text": ""
           }
         }
       },
       "block_order": [
-        "value_1",
-        "value_2",
-        "value_3",
-        "value_4"
+        "ingredient_b6t8NR",
+        "ingredient_kQitPy",
+        "ingredient_U4YX4q",
+        "ingredient_RKXc7L"
       ],
       "settings": {
+        "product_heading": "",
+        "product_text": "",
         "heading": "Barkin&Meowson’s\nNon-Negotiables",
         "text": "The standards behind every product we make and every choice we take.",
-        "layout": "checkerboard"
+        "button_label": "",
+        "button_link": "",
+        "pagination_label": ""
       }
     },
     "about_guarantees": {
@@ -169,10 +184,10 @@
         "guarantee_4"
       ],
       "settings": {
-        "heading": "Barkin&Meowson’s\nProduct Standard",
-        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat.",
         "button_label": "View All Products",
-        "button_link": "shopify://collections/all"
+        "button_link": "shopify://collections/all",
+        "heading": "Barkin&Meowson’s\nProduct Standard",
+        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat."
       }
     },
     "about_manifesto": {
@@ -185,7 +200,10 @@
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
         "button_label": "",
         "button_link": "",
-        "desktop_height": 875
+        "desktop_height": 875,
+        "mobile_height": 650,
+        "mobile_only": false,
+        "desktop_only": false
       }
     },
     "about_social": {
@@ -262,6 +280,7 @@
         "article_1": {
           "type": "article",
           "settings": {
+            "article": "",
             "fallback_asset": "blog-1.webp",
             "tag": "Pet Grooming",
             "title": "How to Start Your Puppy's First At-Home Bath.",
@@ -271,6 +290,7 @@
         "article_2": {
           "type": "article",
           "settings": {
+            "article": "",
             "fallback_asset": "blog-2.webp",
             "tag": "Pet Grooming",
             "title": "Can You Use Human Shampoo on Dogs & Cats?",
@@ -280,6 +300,7 @@
         "article_3": {
           "type": "article",
           "settings": {
+            "article": "",
             "fallback_asset": "blog-3.webp",
             "tag": "Pet Grooming",
             "title": "What’s the right shampoo for my pet’s coat type?",
@@ -354,7 +375,7 @@
     "about_promise",
     "about_intro",
     "about_story",
-    "about_values",
+    "barkin_ingredients_EwxVnk",
     "about_guarantees",
     "about_manifesto",
     "about_social",

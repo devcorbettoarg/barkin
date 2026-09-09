@@ -3259,6 +3259,19 @@ main[data-template="product"] .complementary-products { margin-top: 70px; }
 
 /* Subscription plans expand when the subscription purchase option is selected. */
 barkin-purchase-options { display: block; }
+.barkin-product-tags { margin: 1.5rem 0; }
+.barkin-product-tags__list { display: flex; flex-wrap: wrap; gap: 8px; }
+.barkin-product-tags__pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 12px;
+  border: 1px solid rgba(var(--color-foreground), 0.2);
+  border-radius: 999px;
+  color: rgb(var(--color-foreground));
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
 .barkin-purchase-plans { margin: 0 0 10px; padding: 4px 20px 16px; }
 .barkin-purchase-plans[hidden], .barkin-purchase-plans [hidden] { display: none; }
 .barkin-purchase-plans > label { display: block; margin-bottom: 8px; font-size: 14px; }

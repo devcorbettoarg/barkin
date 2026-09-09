@@ -73,6 +73,10 @@
           "type": "description",
           "settings": {}
         },
+        "product_tags": {
+          "type": "product_tags",
+          "settings": {}
+        },
         "directions": {
           "type": "collapsible_tab",
           "settings": {
@@ -141,6 +145,7 @@
         "buy_buttons",
         "purchase_guarantees_e3UCbG",
         "description",
+        "product_tags",
         "directions",
         "suitable",
         "ingredients",

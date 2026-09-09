@@ -2715,11 +2715,15 @@ main[data-template="product"] .related-products .price {
     padding-inline: 20px;
   }
   main[data-template="collection"] .product-grid-container .collection,
-  main[data-template="product"] product-component > .page-width,
   main[data-template="product"] .related-products {
     width: calc(100% - 40px);
     padding-top: 50px !important;
     padding-bottom: 50px !important;
+  }
+  main[data-template="product"] product-component > .page-width {
+    width: calc(100% - 40px);
+    margin-inline: auto;
+    padding: 0 0 50px;
   }
   main[data-template="collection"] #product-grid {
     row-gap: 10px;
@@ -2765,6 +2769,11 @@ main[data-template="product"] .related-products .price {
   main[data-template="product"] media-gallery > slider-component:first-of-type {
     grid-column: 1;
     grid-row: 1;
+    margin-inline: 0;
+  }
+  main[data-template="product"] .product__media-list {
+    width: 100%;
+    margin-inline: 0;
   }
   main[data-template="product"] .thumbnail-slider {
     grid-column: 1;

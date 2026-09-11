@@ -2997,36 +2997,6 @@ body,
   margin-inline: auto;
 }
 
-.barkin-site-header,
-.barkin-site-header__main {
-  background: var(--barkin-white);
-  color: var(--barkin-ink);
-}
-
-.barkin-site-header__main::before { background: var(--barkin-white); }
-.barkin-site-header__announcement { background: var(--barkin-ink); color: var(--barkin-white); }
-.barkin-site-header__nav a,
-.barkin-site-header__nav summary,
-.barkin-site-header__actions a,
-.barkin-site-header__mobile-menu a { color: var(--barkin-ink); }
-.barkin-site-header__logo-text { border-color: var(--barkin-ink); }
-.barkin-site-header__cart-count { background: var(--barkin-ink); color: var(--barkin-white); }
-.barkin-site-header--pdp { border-bottom-color: var(--barkin-border); }
-
-.barkin-site-header__mega,
-.barkin-site-header__mobile-menu nav {
-  background: var(--barkin-white);
-  color: var(--barkin-ink);
-  border-color: var(--barkin-border);
-  box-shadow: 0 100vh 0 100vh rgba(23,22,20,.18);
-}
-.barkin-site-header__mega-intro h2,
-.barkin-site-header__mega-intro p,
-.barkin-site-header__mega a,
-.barkin-site-header__mega-empty { color: var(--barkin-ink); }
-.barkin-site-header__mega-content { border-color: var(--barkin-border); }
-.barkin-site-header__mega-product-form button { background: var(--barkin-ink); border-color: var(--barkin-ink); }
-
 .barkin-button {
   min-height: 42px;
   padding: 11px 18px;
@@ -3496,12 +3466,6 @@ barkin-purchase-options { display: block; }
 
 /* Final Barkin White cascade: keep the new visual system above legacy section rules. */
 body { background: var(--barkin-white); color: var(--barkin-ink); }
-.barkin-site-header, .barkin-site-header__main { background: var(--barkin-white); color: var(--barkin-ink); }
-.barkin-site-header__main::before { background: var(--barkin-white); }
-.barkin-site-header__announcement { background: var(--barkin-ink); color: var(--barkin-white); }
-.barkin-site-header__nav a, .barkin-site-header__nav summary, .barkin-site-header__actions a, .barkin-site-header__mobile-menu a { color: var(--barkin-ink); }
-.barkin-site-header__mega, .barkin-site-header__mobile-menu nav { background: var(--barkin-white); color: var(--barkin-ink); border-color: var(--barkin-border); }
-.barkin-site-header__mega-intro h2, .barkin-site-header__mega-intro p, .barkin-site-header__mega a { color: var(--barkin-ink); }
 .barkin-hero, .barkin-journal-hero { border-color: var(--barkin-border); }
 .barkin-button { border-color: var(--barkin-ink); background: var(--barkin-ink); color: var(--barkin-white); }
 .barkin-button--outline { background: transparent; color: var(--barkin-ink); border-color: var(--barkin-ink); }

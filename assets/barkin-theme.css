@@ -3494,6 +3494,73 @@ body { background: var(--barkin-white); color: var(--barkin-ink); }
 .barkin-testimonial__buyer > p { border-color: var(--barkin-border); }
 .barkin-testimonials .barkin-showcase__dot { background: rgba(23,22,20,.25); }
 .barkin-testimonials .barkin-showcase__dot.is-active { background: var(--barkin-ink); }
+/* White treatment for the remaining storefront templates. */
+main[data-template="collection"],
+main[data-template="search"],
+main[data-template="cart"],
+main[data-template="page"],
+main[data-template="404"],
+main[data-template="product"] {
+  background: var(--barkin-white);
+  color: var(--barkin-ink);
+}
+main[data-template="collection"] .collection-hero,
+main[data-template="collection"] .facets-wrapper,
+main[data-template="collection"] .product-grid-container,
+main[data-template="search"] .template-search,
+main[data-template="search"] .template-search__header,
+main[data-template="cart"] .cart__items,
+main[data-template="cart"] .cart__footer,
+main[data-template="page"] .page-width,
+main[data-template="404"] .template-404 {
+  background: var(--barkin-white);
+  color: var(--barkin-ink);
+}
+main[data-template="collection"] .facets__form,
+main[data-template="collection"] .facets__summary,
+main[data-template="collection"] .facets__display,
+main[data-template="collection"] .active-facets__button,
+main[data-template="search"] .field__input,
+main[data-template="cart"] .cart-item,
+main[data-template="cart"] .totals,
+main[data-template="cart"] .cart__ctas { color: var(--barkin-ink); border-color: var(--barkin-border); }
+main[data-template="collection"] .facets__heading,
+main[data-template="collection"] .product-count__text,
+main[data-template="search"] .h2,
+main[data-template="cart"] .title,
+main[data-template="cart"] .cart-item__name,
+main[data-template="cart"] .price,
+main[data-template="page"] h1,
+main[data-template="page"] h2,
+main[data-template="404"] h1 { color: var(--barkin-ink); }
+main[data-template="collection"] .card-wrapper,
+main[data-template="search"] .card-wrapper { background: var(--barkin-white); color: var(--barkin-ink); }
+main[data-template="collection"] .button,
+main[data-template="search"] .button,
+main[data-template="cart"] .cart__checkout-button { background: var(--barkin-ink); color: var(--barkin-white); }
+
+main[data-template="product"] .product__info-container,
+main[data-template="product"] .product__info-container > *,
+main[data-template="product"] .product__accordion,
+main[data-template="product"] .product__accordion .accordion__content { color: var(--barkin-ink); }
+main[data-template="product"] .barkin-purchase-option,
+main[data-template="product"] .barkin-product-tags__pill { border-color: var(--barkin-border); color: var(--barkin-ink); }
+main[data-template="product"] .barkin-purchase-option:has(input:checked) { background: var(--barkin-ink); color: var(--barkin-white); }
+main[data-template="product"] .barkin-purchase-guarantees { border-color: var(--barkin-border); color: var(--barkin-ink); }
+main[data-template="product"] .barkin-purchase-guarantees__item,
+main[data-template="product"] .shopify-payment-button__more-options { color: var(--barkin-muted); }
+main[data-template="product"] .product__accordion .accordion__title { color: var(--barkin-ink); }
+
+/* Keep PDP controls readable after legacy product rules. */
+main[data-template="product"] .barkin-purchase-option { color: var(--barkin-ink); border-color: var(--barkin-border); }
+main[data-template="product"] .barkin-purchase-option:has(input:checked) { background: var(--barkin-ink); color: var(--barkin-white); }
+main[data-template="product"] .barkin-purchase-option:has(input:checked) * { color: var(--barkin-white); }
+main[data-template="product"] .barkin-purchase-guarantees,
+main[data-template="product"] .barkin-purchase-guarantees__item { color: var(--barkin-muted); }
+
+.barkin-problem-solver { background: var(--barkin-white); color: var(--barkin-ink); border-block: 1px solid var(--barkin-border); }
+.barkin-problem-solver__tab, .barkin-problem-solver__copy, .barkin-problem-solver h2, .barkin-problem-solver h3 { color: var(--barkin-ink); }
+.barkin-article-products { background: var(--barkin-paper); color: var(--barkin-ink); }
 main[data-template="product"] .product__info-container, main[data-template="product"] .product__info-container * { color: var(--barkin-ink); }
 main[data-template="product"] .product__info-container .product-form__submit { background: var(--barkin-ink); color: var(--barkin-white); }
 main[data-template="product"] .product__accordion .accordion__title { color: var(--barkin-ink); }

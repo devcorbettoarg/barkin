@@ -3479,6 +3479,21 @@ body { background: var(--barkin-white); color: var(--barkin-ink); }
 .barkin-journal-card__content { border-color: var(--barkin-border); }
 .barkin-site-footer { background: var(--barkin-ink); color: var(--barkin-white); border-top-color: var(--barkin-ink); }
 .barkin-site-footer a, .barkin-site-footer h2, .barkin-site-footer p { color: var(--barkin-white); }
+.barkin-testimonials {
+  background: var(--barkin-white);
+  color: var(--barkin-ink);
+  border-block: 1px solid var(--barkin-border);
+}
+.barkin-testimonials__header .barkin-copy { color: var(--barkin-muted); }
+.barkin-testimonial { border-color: var(--barkin-border); }
+.barkin-testimonial__content { background: var(--barkin-paper); color: var(--barkin-ink); }
+.barkin-testimonial__quote p,
+.barkin-testimonial__buyer-row strong { color: var(--barkin-ink); }
+.barkin-testimonial__buyer-row small,
+.barkin-testimonial__buyer > p { color: var(--barkin-muted); }
+.barkin-testimonial__buyer > p { border-color: var(--barkin-border); }
+.barkin-testimonials .barkin-showcase__dot { background: rgba(23,22,20,.25); }
+.barkin-testimonials .barkin-showcase__dot.is-active { background: var(--barkin-ink); }
 main[data-template="product"] .product__info-container, main[data-template="product"] .product__info-container * { color: var(--barkin-ink); }
 main[data-template="product"] .product__info-container .product-form__submit { background: var(--barkin-ink); color: var(--barkin-white); }
 main[data-template="product"] .product__accordion .accordion__title { color: var(--barkin-ink); }

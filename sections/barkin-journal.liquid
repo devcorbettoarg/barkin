@@ -21,44 +21,135 @@
 
 {%- paginate blog.articles by section.settings.articles_per_page -%}
   <section class="barkin-journal" data-node-id="1:15744">
-    <div class="barkin-journal__toolbar"><div class="barkin-shell barkin-journal__toolbar-inner">
-      <nav class="barkin-journal__filters" aria-label="Filter journal articles">
-        <a class="barkin-journal__filter{% if current_tags == blank %} is-active{% endif %}" href="{{ blog.url }}">{{ section.settings.all_posts_label | escape }}</a>
-        {%- if section.blocks.size > 0 -%}
-          {%- for block in section.blocks -%}
-            {%- assign filter_tag = block.settings.tag | strip -%}
-            {%- if filter_tag != blank -%}<a class="barkin-journal__filter{% if current_tags contains filter_tag %} is-active{% endif %}" href="{{ blog.url }}/tagged/{{ filter_tag | handle }}" {{ block.shopify_attributes }}>{{ block.settings.label | default: filter_tag | escape }}</a>{%- endif -%}
-          {%- endfor -%}
-        {%- else -%}
-          {%- for tag in blog.all_tags -%}<a class="barkin-journal__filter{% if current_tags contains tag %} is-active{% endif %}" href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{%- endfor -%}
-        {%- endif -%}
-      </nav>
-      <div class="barkin-journal__utilities"><span>{{ blog.articles_count }} {{ section.settings.posts_label | escape }}</span><span class="barkin-journal__sort" aria-label="{{ section.settings.sort_label | escape }}">{{ section.settings.sort_label | escape }}: {{ section.settings.sort_value | escape }}</span></div>
-    </div></div>
+    <div class="barkin-journal__toolbar">
+      <div class="barkin-shell barkin-journal__toolbar-inner">
 
-    <div class="barkin-shell"><div class="barkin-journal__grid">
-      {%- for article in articles.posts -%}
-        {%- liquid
-          if article.image != blank
-            assign image_src = article.image | image_url: width: 1000
-          else
-            assign image_src = 'blog-feature.webp' | asset_url
-          endif
-          assign category = article.tags.first | default: 'Journal'
-        -%}
-        <article class="barkin-journal-card">
-          <a class="barkin-journal-card__media" href="{{ article.url }}" aria-label="{{ article.title | escape }}"><img src="{{ image_src }}" alt="{{ article.image.alt | default: article.title | escape }}" width="946" height="712" loading="lazy"></a>
-          <div class="barkin-journal-card__content">
-            <div class="barkin-journal-card__topline"><p class="barkin-journal-card__category">{{ category | escape }}</p><time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%d/%m/%Y' }}</time></div>
-            <h2 class="barkin-journal-card__title"><a href="{{ article.url }}">{{ article.title | escape }}</a></h2>
-            <div class="barkin-journal-card__footer"><a class="barkin-button barkin-button--outline" href="{{ article.url }}">{{ section.settings.read_article_label | escape }}</a><span>{{ section.settings.written_by_label | escape }} {{ article.author | escape }}</span></div>
-          </div>
-        </article>
-      {%- else -%}
-        <p class="barkin-journal__empty">No articles have been published yet.</p>
-      {%- endfor -%}
+        <nav class="barkin-journal__filters" aria-label="Filter journal articles">
+          <a
+            class="barkin-journal__filter{% if current_tags == blank %} is-active{% endif %}"
+            href="{{ blog.url }}"
+          >
+            {{ section.settings.all_posts_label | escape }}
+          </a>
+
+          {%- if section.blocks.size > 0 -%}
+            {%- for block in section.blocks -%}
+              {%- assign filter_tag = block.settings.tag | strip -%}
+
+              {%- if filter_tag != blank -%}
+                <a
+                  class="barkin-journal__filter{% if current_tags contains filter_tag %} is-active{% endif %}"
+                  href="{{ blog.url }}/tagged/{{ filter_tag | handle }}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{ block.settings.label | default: filter_tag | escape }}
+                </a>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- else -%}
+            {%- for tag in blog.all_tags -%}
+              <a
+                class="barkin-journal__filter{% if current_tags contains tag %} is-active{% endif %}"
+                href="{{ blog.url }}/tagged/{{ tag | handle }}"
+              >
+                {{ tag }}
+              </a>
+            {%- endfor -%}
+          {%- endif -%}
+        </nav>
+
+        <div class="barkin-journal__utilities">
+          <span>
+            {{ blog.articles_count }}
+            {{ section.settings.posts_label | escape }}
+          </span>
+
+          <span
+            class="barkin-journal__sort"
+            aria-label="{{ section.settings.sort_label | escape }}"
+          >
+            {{ section.settings.sort_label | escape }}:
+            {{ section.settings.sort_value | escape }}
+          </span>
+        </div>
+
+      </div>
     </div>
-    {%- if paginate.pages > 1 -%}{% render 'pagination', paginate: paginate %}{%- endif -%}
+
+    <div class="barkin-shell">
+      <div class="barkin-journal__grid">
+
+        {%- for article in blog.articles -%}
+          {%- liquid
+            if article.image != blank
+              assign image_src = article.image | image_url: width: 1000
+            else
+              assign image_src = 'blog-feature.webp' | asset_url
+            endif
+
+            assign category = article.tags.first | default: 'Journal'
+          -%}
+
+          <article class="barkin-journal-card">
+            <a
+              class="barkin-journal-card__media"
+              href="{{ article.url }}"
+              aria-label="{{ article.title | escape }}"
+            >
+              <img
+                src="{{ image_src }}"
+                alt="{{ article.image.alt | default: article.title | escape }}"
+                width="946"
+                height="712"
+                loading="lazy"
+              >
+            </a>
+
+            <div class="barkin-journal-card__content">
+              <div class="barkin-journal-card__topline">
+                <p class="barkin-journal-card__category">
+                  {{ category | escape }}
+                </p>
+
+                <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">
+                  {{ article.published_at | date: '%d/%m/%Y' }}
+                </time>
+              </div>
+
+              <h2 class="barkin-journal-card__title">
+                <a href="{{ article.url }}">
+                  {{ article.title | escape }}
+                </a>
+              </h2>
+
+              <div class="barkin-journal-card__footer">
+                <a
+                  class="barkin-button barkin-button--outline"
+                  href="{{ article.url }}"
+                >
+                  {{ section.settings.read_article_label | escape }}
+                </a>
+
+                <span>
+                  {{ section.settings.written_by_label | escape }}
+                  {{ article.author | escape }}
+                </span>
+              </div>
+            </div>
+          </article>
+
+        {%- else -%}
+          <p class="barkin-journal__empty">
+            No articles have been published yet.
+          </p>
+        {%- endfor -%}
+
+      </div>
+
+      {%- if paginate.pages > 1 -%}
+        {% render 'pagination', paginate: paginate %}
+      {%- endif -%}
+
     </div>
   </section>
 {%- endpaginate -%}

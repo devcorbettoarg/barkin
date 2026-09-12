@@ -3669,30 +3669,6 @@ main[data-template="collection"] .quick-add__submit.loading { background-image: 
 
 .barkin-problem-solver { background: var(--barkin-white); color: var(--barkin-ink); border-block: 1px solid var(--barkin-border); }
 .barkin-problem-solver__tab, .barkin-problem-solver__copy, .barkin-problem-solver h2, .barkin-problem-solver h3 { color: var(--barkin-ink); }
-.barkin-problem-solver__tab {
-  position: relative;
-  color: var(--barkin-muted);
-  transition: color .2s ease;
-}
-.barkin-problem-solver__tab:hover,
-.barkin-problem-solver__tab.is-active,
-.barkin-problem-solver__tab[aria-selected="true"] {
-  color: var(--barkin-ink);
-}
-.barkin-problem-solver__tab.is-active::after,
-.barkin-problem-solver__tab[aria-selected="true"]::after {
-  position: absolute;
-  right: 0;
-  bottom: -21px;
-  left: 0;
-  height: 2px;
-  background: var(--barkin-ink);
-  content: "";
-}
-.barkin-problem-solver__tab:focus-visible {
-  outline: 2px solid var(--barkin-ink);
-  outline-offset: 5px;
-}
 .barkin-article-products { background: var(--barkin-paper); color: var(--barkin-ink); }
 main[data-template="product"] .product__info-container, main[data-template="product"] .product__info-container * { color: var(--barkin-ink); }
 main[data-template="product"] .product__info-container .product-form__submit { background: var(--barkin-ink); color: var(--barkin-white); }

@@ -37,7 +37,7 @@
     </div></div>
 
     <div class="barkin-shell"><div class="barkin-journal__grid">
-      {%- for article in paginate.items -%}
+      {%- for article in blog.articles -%}
         {%- liquid
           if article.image != blank
             assign image_src = article.image | image_url: width: 1000

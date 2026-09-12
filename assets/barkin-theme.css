@@ -3622,6 +3622,21 @@ main[data-template="search"] .active-facets__button-inner {
 .barkin-guarantee > img {
   filter: invert(1);
 }
+.barkin-split-card--dark .barkin-split-card__content,
+.barkin-split-card--dark .barkin-title2,
+.barkin-split-card--dark .barkin-copy {
+  color: var(--barkin-white);
+}
+.barkin-split-card--dark .barkin-button {
+  border-color: var(--barkin-white);
+  background: transparent;
+  color: var(--barkin-white);
+}
+.barkin-split-card--dark .barkin-button:hover,
+.barkin-split-card--dark .barkin-button:focus-visible {
+  background: var(--barkin-white);
+  color: var(--barkin-ink);
+}
 main[data-template="product"] .product__accordion .accordion__title { color: var(--barkin-ink); }
 
 /* Keep PDP controls readable after legacy product rules. */

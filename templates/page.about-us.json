@@ -150,7 +150,7 @@
         "guarantee_kd4Ndw": {
           "type": "guarantee",
           "settings": {
-            "icon": "guarantee-cruelty-free.svg",
+            "icon": "barkin/guarantee-cruelty-free.svg",
             "heading": "Always Cruelty Free.",
             "text": "Thoughtful formulas created without animal testing."
           }
@@ -158,7 +158,7 @@
         "guarantee_FBy3fE": {
           "type": "guarantee",
           "settings": {
-            "icon": "guarantee-paraben-free.svg",
+            "icon": "barkin/guarantee-paraben-free.svg",
             "heading": "Paraben & Sulfate Free.",
             "text": "Gentle formulas made for regular pet-care routines."
           }
@@ -166,7 +166,7 @@
         "guarantee_t6yhmC": {
           "type": "guarantee",
           "settings": {
-            "icon": "guarantee-gmp.svg",
+            "icon": "barkin/guarantee-gmp.svg",
             "heading": "GMP Certified.",
             "text": "Made with consistent standards and careful quality control."
           }
@@ -174,7 +174,7 @@
         "guarantee_eaa9wg": {
           "type": "guarantee",
           "settings": {
-            "icon": "guarantee-vet.svg",
+            "icon": "barkin/guarantee-vet.svg",
             "heading": "Vet Recommended.",
             "text": "Pet-first care developed with expert guidance."
           }

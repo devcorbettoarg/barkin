@@ -3,7 +3,7 @@
     {% for repeat in (1..2) %}
       {% for block in section.blocks %}
         <div class="barkin-marquee__item" {{ block.shopify_attributes }}>
-          <img src="{{ 'barkin/cruelty-free.svg' | asset_url }}" alt="" width="35" height="35" loading="lazy">
+          <img src="{{ 'cruelty-free.svg' | asset_url }}" alt="" width="35" height="35" loading="lazy">
           <span>{{ block.settings.text }}</span>
         </div>
       {% endfor %}

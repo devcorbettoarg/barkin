@@ -1306,6 +1306,79 @@ main[data-template="article"] .related-products .price {
   color: var(--barkin-ink);
 }
 
+/* PDP light color correction. */
+main[data-template="product"],
+main[data-template="product"] > .shopify-section,
+main[data-template="product"] .gradient,
+main[data-template="product"] .color-scheme-1 {
+  background: var(--barkin-white);
+  color: var(--barkin-ink);
+}
+
+main[data-template="product"] .product__title h1,
+main[data-template="product"] .product__text,
+main[data-template="product"] .product__description,
+main[data-template="product"] .price,
+main[data-template="product"] .form__label,
+main[data-template="product"] .rating-count,
+main[data-template="product"] .share-button__button,
+main[data-template="product"] .accordion summary,
+main[data-template="product"] .accordion__content {
+  color: var(--barkin-ink);
+}
+
+main[data-template="product"] .product__description,
+main[data-template="product"] .accordion,
+main[data-template="product"] .complementary-products {
+  border-color: var(--barkin-border);
+}
+
+main[data-template="product"] .product-form__input--pill input[type=radio] + label {
+  border-color: var(--barkin-border);
+  background: transparent;
+  color: var(--barkin-ink);
+}
+
+main[data-template="product"] .product-form__input--pill input[type=radio]:checked + label {
+  background: var(--barkin-ink);
+  color: var(--barkin-white);
+}
+
+main[data-template="product"] .quantity {
+  background: var(--barkin-white);
+  color: var(--barkin-ink);
+}
+
+main[data-template="product"] .quantity::after {
+  box-shadow: 0 0 0 1px var(--barkin-border);
+}
+
+main[data-template="product"] .quantity__button,
+main[data-template="product"] .quantity__input {
+  color: var(--barkin-ink);
+}
+
+main[data-template="product"] .product-form__submit {
+  background: var(--barkin-ink);
+  color: var(--barkin-white);
+}
+
+/* About page light color correction. */
+main[data-template="page"] .barkin-about-intro__copy {
+  background: var(--barkin-white);
+  color: var(--barkin-ink);
+}
+
+main[data-template="page"] .barkin-about-intro__copy .barkin-title,
+main[data-template="page"] .barkin-about-intro__copy .barkin-copy,
+main[data-template="page"] .barkin-about-intro__copy .barkin-copy p {
+  color: var(--barkin-ink);
+}
+
+main[data-template="page"] .barkin-about-intro__copy .barkin-copy {
+  opacity: 1;
+}
+
 @media screen and (max-width: 749px) {
   main[data-template="article"] .related-products {
     width: calc(100% - 40px);

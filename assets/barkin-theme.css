@@ -3471,6 +3471,19 @@ body { background: var(--barkin-white); color: var(--barkin-ink); }
 .barkin-button { border-color: var(--barkin-ink); background: var(--barkin-ink); color: var(--barkin-white); }
 .barkin-button--outline { background: transparent; color: var(--barkin-ink); border-color: var(--barkin-ink); }
 .barkin-button--outline:hover, .barkin-button--outline:focus-visible { background: var(--barkin-ink); color: var(--barkin-white); }
+.barkin-hero__content .barkin-button--outline,
+.barkin-journal-hero__content .barkin-button--outline {
+  background: transparent;
+  color: var(--barkin-white);
+  border-color: var(--barkin-white);
+}
+.barkin-hero__content .barkin-button--outline:hover,
+.barkin-hero__content .barkin-button--outline:focus-visible,
+.barkin-journal-hero__content .barkin-button--outline:hover,
+.barkin-journal-hero__content .barkin-button--outline:focus-visible {
+  background: var(--barkin-white);
+  color: var(--barkin-ink);
+}
 .barkin-section, .barkin-social, .barkin-faq, .barkin-guarantees, .barkin-about-intro, .barkin-values--checkerboard { background: var(--barkin-white); border-color: var(--barkin-border); color: var(--barkin-ink); }
 .barkin-guarantees, .barkin-faq { background: var(--barkin-paper); }
 .barkin-journal__toolbar { background: var(--barkin-white); border-color: var(--barkin-border); }

@@ -3648,6 +3648,25 @@ main[data-template="product"] .barkin-purchase-option:has(input:checked) * { col
 main[data-template="product"] .barkin-purchase-guarantees,
 main[data-template="product"] .barkin-purchase-guarantees__item { color: var(--barkin-muted); }
 
+/* Collection quick add: preserve the bag icon after the white button cascade. */
+main[data-template="collection"] .quick-add__submit {
+  min-width: 38px;
+  width: 38px;
+  min-height: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid var(--barkin-white);
+  border-radius: 50%;
+  background-color: var(--barkin-black);
+  background-image: url("barkin-card-bag.svg");
+  background-position: center;
+  background-size: 18px 20px;
+  background-repeat: no-repeat;
+  color: transparent;
+  font-size: 0;
+}
+main[data-template="collection"] .quick-add__submit.loading { background-image: none; }
+
 .barkin-problem-solver { background: var(--barkin-white); color: var(--barkin-ink); border-block: 1px solid var(--barkin-border); }
 .barkin-problem-solver__tab, .barkin-problem-solver__copy, .barkin-problem-solver h2, .barkin-problem-solver h3 { color: var(--barkin-ink); }
 .barkin-problem-solver__tab {

@@ -1588,11 +1588,12 @@ main[data-template="product"] .related-products .price {
 }
 
 .barkin-marquee__track {
+  --barkin-marquee-gap: 40px;
   width: max-content;
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: var(--barkin-marquee-gap);
   animation: barkin-marquee 28s linear infinite;
 }
 
@@ -1606,7 +1607,7 @@ main[data-template="product"] .related-products .price {
 }
 
 .barkin-marquee__item img { width: 35px; height: 35px; }
-@keyframes barkin-marquee { to { transform: translateX(-50%); } }
+@keyframes barkin-marquee { to { transform: translateX(calc(-50% - (var(--barkin-marquee-gap) / 2))); } }
 
 .barkin-centered-intro {
   width: min(635px, calc(100% - 40px));
@@ -2849,7 +2850,7 @@ main[data-template="product"] .related-products .price {
   .barkin-about-intro__copy { height: auto; min-height: 319px; border-top: 0; border-radius: 0 0 4px 4px; }
   .barkin-about-intro__copy .barkin-title { font-size: 2.4rem; line-height: 1; }
   .barkin-about-intro__copy .barkin-copy { max-width: none; }
-  .barkin-marquee__track { gap: 24px; }
+  .barkin-marquee__track { --barkin-marquee-gap: 24px; gap: var(--barkin-marquee-gap); }
   .barkin-showcase, .barkin-bundle, .barkin-social, .barkin-split, .barkin-guarantees, .barkin-values, .barkin-mosaic, .barkin-review, .barkin-blog, .barkin-faq, .barkin-problem-solver { padding-top: 50px; padding-bottom: 50px; }
   .barkin-showcase__rail, .barkin-bundle__grid, .barkin-social__rail { margin-top: 50px; grid-auto-columns: 82vw; }
   .barkin-showcase__rail {

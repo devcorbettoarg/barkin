@@ -25,18 +25,13 @@
       {% for block in section.blocks %}
         {%- liquid
           assign card_product = block.settings.product
-          if card_product != blank and card_product.featured_image != blank
+          if card_product != blank
             assign card_image = card_product.featured_image | image_url: width: 900
             assign card_title = card_product.title
             assign card_price = card_product.price | money
             assign card_url = card_product.url
           elsif block.settings.image != blank
             assign card_image = block.settings.image | image_url: width: 900
-            assign card_title = block.settings.title
-            assign card_price = block.settings.price
-            assign card_url = block.settings.link | default: routes.all_products_collection_url
-          else
-            assign card_image = block.settings.fallback_asset | asset_url
             assign card_title = block.settings.title
             assign card_price = block.settings.price
             assign card_url = block.settings.link | default: routes.all_products_collection_url
@@ -50,7 +45,9 @@
         >
           <a class="barkin-product-card__link" href="{{ card_url }}">
             <span class="barkin-product-card__media">
-              <img class="barkin-card-image" src="{{ card_image }}" alt="{{ card_title | escape }}" width="704" height="942" loading="lazy">
+              {% if card_image != blank %}
+                <img class="barkin-card-image" src="{{ card_image }}" alt="{{ card_title | escape }}" width="704" height="942" loading="lazy">
+              {% endif %}
             </span>
             <span class="barkin-product-card__info">
               <span class="barkin-product-card__title">{{ card_title }}</span>
@@ -141,11 +138,11 @@
       "name": "Product",
       "settings": [
         { "type": "product", "id": "product", "label": "Product" },
-        { "type": "image_picker", "id": "image", "label": "Fallback image from Shopify Files" },
+        { "type": "image_picker", "id": "image", "label": "Optional image when no product is selected" },
         {
           "type": "select",
           "id": "fallback_asset",
-          "label": "Design fallback",
+          "label": "Legacy fallback (not used when a product is selected)",
           "default": "product-black.webp",
           "options": [
             { "value": "product-black.webp", "label": "Black bottle" },

@@ -3699,36 +3699,6 @@ main[data-template="collection"] .facets__header {
 .barkin-problem-solver { background: var(--barkin-white); color: var(--barkin-ink); border-block: 1px solid var(--barkin-border); }
 .barkin-problem-solver__tab, .barkin-problem-solver__copy, .barkin-problem-solver h2, .barkin-problem-solver h3 { color: var(--barkin-ink); }
 .barkin-article-products { background: var(--barkin-paper); color: var(--barkin-ink); }
-.barkin-article__author-bio,
-.barkin-article__author-bio p,
-.barkin-article__author-bio .metafield-rich_text_field,
-.barkin-article__author-bio .metafield-rich_text_field * {
-  color: var(--barkin-ink);
-}
-.barkin-journal {
-  background: var(--barkin-white);
-  color: var(--barkin-ink);
-}
-.barkin-journal__empty {
-  color: var(--barkin-ink);
-}
-.barkin-journal-card__category,
-.barkin-journal-card__topline time,
-.barkin-journal-card__footer span {
-  color: var(--barkin-muted);
-}
-.barkin-journal-hero .barkin-button--outline,
-.barkin-hero .barkin-button--outline {
-  border-color: var(--barkin-white);
-  color: var(--barkin-white);
-}
-.barkin-journal-hero .barkin-button--outline:hover,
-.barkin-journal-hero .barkin-button--outline:focus-visible,
-.barkin-hero .barkin-button--outline:hover,
-.barkin-hero .barkin-button--outline:focus-visible {
-  background: var(--barkin-white);
-  color: var(--barkin-ink);
-}
 main[data-template="product"] .product__info-container, main[data-template="product"] .product__info-container * { color: var(--barkin-ink); }
 main[data-template="product"] .product__info-container .product-form__submit { background: var(--barkin-ink); color: var(--barkin-white); }
 main[data-template="product"] .product__accordion .accordion__title { color: var(--barkin-ink); }

@@ -3549,6 +3549,75 @@ main[data-template="product"] .barkin-purchase-option:has(input:checked) { backg
 main[data-template="product"] .barkin-purchase-guarantees { border-color: var(--barkin-border); color: var(--barkin-ink); }
 main[data-template="product"] .barkin-purchase-guarantees__item,
 main[data-template="product"] .shopify-payment-button__more-options { color: var(--barkin-muted); }
+
+/* Collection/search filters and mobile filter drawer. */
+main[data-template="collection"] .facets-container,
+main[data-template="search"] .facets-container,
+main[data-template="collection"] .facets,
+main[data-template="search"] .facets,
+main[data-template="collection"] .facet-filters,
+main[data-template="search"] .facet-filters {
+  color: var(--barkin-ink);
+}
+main[data-template="collection"] .facets__summary,
+main[data-template="collection"] .facets__heading,
+main[data-template="collection"] .facet-filters__label,
+main[data-template="collection"] .facet-filters__sort,
+main[data-template="collection"] .product-count__text,
+main[data-template="search"] .facets__summary,
+main[data-template="search"] .facets__heading,
+main[data-template="search"] .facet-filters__label,
+main[data-template="search"] .facet-filters__sort,
+main[data-template="search"] .product-count__text,
+main[data-template="collection"] .facets__label,
+main[data-template="search"] .facets__label {
+  color: var(--barkin-ink);
+}
+main[data-template="collection"] .facets__display,
+main[data-template="search"] .facets__display,
+main[data-template="collection"] .facets__header,
+main[data-template="search"] .facets__header,
+main[data-template="collection"] .mobile-facets__inner,
+main[data-template="search"] .mobile-facets__inner {
+  background: var(--barkin-white);
+  color: var(--barkin-ink);
+  border-color: var(--barkin-border);
+}
+main[data-template="collection"] .facets__display a,
+main[data-template="search"] .facets__display a,
+main[data-template="collection"] .mobile-facets__inner a,
+main[data-template="search"] .mobile-facets__inner a,
+main[data-template="collection"] .mobile-facets__heading,
+main[data-template="search"] .mobile-facets__heading,
+main[data-template="collection"] .mobile-facets__count,
+main[data-template="search"] .mobile-facets__count,
+main[data-template="collection"] .mobile-facets__label,
+main[data-template="search"] .mobile-facets__label {
+  color: var(--barkin-ink);
+}
+main[data-template="collection"] .mobile-facets__footer,
+main[data-template="search"] .mobile-facets__footer {
+  background: var(--barkin-white);
+  border-color: var(--barkin-border);
+}
+main[data-template="collection"] .mobile-facets__clear,
+main[data-template="search"] .mobile-facets__clear,
+main[data-template="collection"] .mobile-facets__apply-button,
+main[data-template="search"] .mobile-facets__apply-button {
+  color: var(--barkin-ink);
+  border-color: var(--barkin-ink);
+}
+main[data-template="collection"] .mobile-facets__apply-button,
+main[data-template="search"] .mobile-facets__apply-button {
+  background: var(--barkin-ink);
+  color: var(--barkin-white);
+}
+main[data-template="collection"] .active-facets__button-inner,
+main[data-template="search"] .active-facets__button-inner {
+  color: var(--barkin-ink);
+  box-shadow: 0 0 0 1px var(--barkin-ink);
+}
+.barkin-journal__sort { color: var(--barkin-muted); }
 main[data-template="product"] .product__accordion .accordion__title { color: var(--barkin-ink); }
 
 /* Keep PDP controls readable after legacy product rules. */

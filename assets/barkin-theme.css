@@ -3667,6 +3667,35 @@ main[data-template="collection"] .quick-add__submit {
 }
 main[data-template="collection"] .quick-add__submit.loading { background-image: none; }
 
+main[data-template="collection"] .facets__summary,
+main[data-template="collection"] .facets__summary span,
+main[data-template="collection"] .facets__heading,
+main[data-template="collection"] .facet-filters__label,
+main[data-template="collection"] .facet-filters__sort,
+main[data-template="collection"] .product-count__text,
+main[data-template="collection"] .facets__label,
+main[data-template="collection"] .facets__label .facet-checkbox__text,
+main[data-template="collection"] .facets__label .facet-checkbox__text-label {
+  color: var(--barkin-ink);
+}
+main[data-template="collection"] .facets__summary .icon-caret,
+main[data-template="collection"] .facets__summary svg,
+main[data-template="collection"] .facet-checkbox > svg,
+main[data-template="collection"] .facet-checkbox .svg-wrapper svg {
+  color: var(--barkin-ink);
+  stroke: currentColor;
+}
+main[data-template="collection"] .facet-checkbox input:checked + svg {
+  color: var(--barkin-ink);
+  background: var(--barkin-ink);
+}
+main[data-template="collection"] .facets__display,
+main[data-template="collection"] .facets__header {
+  background: var(--barkin-white);
+  color: var(--barkin-ink);
+  border-color: var(--barkin-border);
+}
+
 .barkin-problem-solver { background: var(--barkin-white); color: var(--barkin-ink); border-block: 1px solid var(--barkin-border); }
 .barkin-problem-solver__tab, .barkin-problem-solver__copy, .barkin-problem-solver h2, .barkin-problem-solver h3 { color: var(--barkin-ink); }
 .barkin-article-products { background: var(--barkin-paper); color: var(--barkin-ink); }

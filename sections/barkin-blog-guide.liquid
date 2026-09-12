@@ -2,7 +2,7 @@
   if section.settings.feature_image != blank
     assign feature_image = section.settings.feature_image | image_url: width: 1600
   else
-    assign feature_image = 'barkin/blog-feature.webp' | asset_url
+    assign feature_image = 'blog-feature.webp' | asset_url
   endif
 -%}
 
@@ -40,7 +40,7 @@
               assign article_url = block.settings.link
               assign article_tag = block.settings.tag
             else
-              assign image_src = 'barkin/' | append: block.settings.fallback_asset | asset_url
+              assign image_src = '' | append: block.settings.fallback_asset | asset_url
               assign article_title = block.settings.title
               assign article_url = block.settings.link
               assign article_tag = block.settings.tag

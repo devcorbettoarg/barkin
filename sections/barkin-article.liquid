@@ -2,7 +2,7 @@
   if article.image != blank
     assign hero_image = article.image | image_url: width: 2000
   else
-    assign hero_image = 'barkin/blog-feature.webp' | asset_url
+    assign hero_image = 'blog-feature.webp' | asset_url
   endif
   assign author = article.metafields.custom.author.value
   if author == blank

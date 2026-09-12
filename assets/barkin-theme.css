@@ -1263,6 +1263,66 @@ main[data-template="product"] .related-products .price {
   color: var(--barkin-black);
 }
 
+main[data-template="article"] .related-products {
+  width: min(1440px, calc(100% - 160px));
+  max-width: none;
+  margin-inline: auto;
+  padding: 80px 0 !important;
+}
+
+main[data-template="article"] .related-products__heading {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  color: var(--barkin-ink);
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(3.8rem, 3.5vw, 5.6rem);
+  font-weight: 400;
+  line-height: .93;
+  text-align: center;
+}
+
+main[data-template="article"] .related-products .product-grid {
+  column-gap: 40px;
+  row-gap: 48px;
+}
+
+main[data-template="article"] .related-products .grid__item,
+main[data-template="article"] .related-products .card-wrapper,
+main[data-template="article"] .related-products .card {
+  width: 100%;
+  max-width: none;
+}
+
+main[data-template="article"] .related-products .card {
+  overflow: hidden;
+  border-radius: 0;
+  background: var(--barkin-paper);
+  color: var(--barkin-ink);
+}
+
+main[data-template="article"] .related-products .card__heading,
+main[data-template="article"] .related-products .card__heading a,
+main[data-template="article"] .related-products .price {
+  color: var(--barkin-ink);
+}
+
+@media screen and (max-width: 749px) {
+  main[data-template="article"] .related-products {
+    width: calc(100% - 40px);
+    padding: 50px 0 !important;
+  }
+
+  main[data-template="article"] .related-products__heading {
+    margin-bottom: 32px;
+    font-size: 4rem;
+  }
+
+  main[data-template="article"] .related-products .product-grid {
+    column-gap: 12px;
+    row-gap: 28px;
+  }
+}
+
 .barkin-coats {
   padding: 79px 0;
   overflow: hidden;
@@ -3491,6 +3551,7 @@ body { background: var(--barkin-white); color: var(--barkin-ink); }
 .barkin-journal__filter:hover, .barkin-journal__filter.is-active, .barkin-journal-card__title a { color: var(--barkin-ink); }
 .barkin-journal-card { background: var(--barkin-white); border-color: var(--barkin-border); border-radius: 0; }
 .barkin-journal-card__content { border-color: var(--barkin-border); }
+.barkin-article__author-bio { color: var(--barkin-ink); }
 .barkin-site-footer { background: var(--barkin-ink); color: var(--barkin-white); border-top-color: var(--barkin-ink); }
 .barkin-site-footer a, .barkin-site-footer h2, .barkin-site-footer p { color: var(--barkin-white); }
 .barkin-testimonials {

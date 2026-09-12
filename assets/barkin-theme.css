@@ -1379,6 +1379,10 @@ main[data-template="page"] .barkin-about-intro__copy .barkin-copy {
   opacity: 1;
 }
 
+main[data-template="page"] .barkin-hero__content .barkin-title {
+  color: var(--barkin-white);
+}
+
 @media screen and (max-width: 749px) {
   main[data-template="article"] .related-products {
     width: calc(100% - 40px);

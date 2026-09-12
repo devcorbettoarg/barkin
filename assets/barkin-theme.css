@@ -3637,6 +3637,7 @@ main[data-template="search"] .active-facets__button-inner {
   background: var(--barkin-white);
   color: var(--barkin-ink);
 }
+
 main[data-template="product"] .product__accordion .accordion__title { color: var(--barkin-ink); }
 
 /* Keep PDP controls readable after legacy product rules. */

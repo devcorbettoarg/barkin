@@ -2551,8 +2551,8 @@ main[data-template="product"] .related-products .price {
 
 .barkin-journal {
   padding: 0 0 80px;
-  background: var(--barkin-black);
-  color: var(--barkin-white);
+  background: var(--barkin-white);
+  color: var(--barkin-black);
 }
 
 .barkin-journal-hero { position: relative; min-height: 596px; overflow: hidden; background: var(--barkin-black); color: var(--barkin-white); }

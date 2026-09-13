@@ -3840,6 +3840,26 @@ main[data-template="collection"] .facet-checkbox input:checked + svg {
   color: var(--barkin-ink);
   background: var(--barkin-ink);
 }
+main[data-template="collection"] .facets__summary .icon-caret,
+main[data-template="collection"] .facet-filters .icon-caret,
+main[data-template="collection"] .facets__summary > svg {
+  width: 12px;
+  height: 7px;
+  min-width: 12px;
+  flex: 0 0 12px;
+}
+main[data-template="collection"] .facet-checkbox > svg {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  flex: 0 0 16px;
+}
+main[data-template="collection"] .facet-checkbox .svg-wrapper,
+main[data-template="collection"] .facet-checkbox .svg-wrapper svg {
+  width: 12px;
+  height: 9px;
+}
 main[data-template="collection"] .facets__display,
 main[data-template="collection"] .facets__header {
   background: var(--barkin-white);

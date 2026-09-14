@@ -1773,7 +1773,10 @@ main[data-template="page"] .barkin-hero__content .barkin-title {
   padding: 79px 0;
   overflow: hidden;
 }
-
+.barkin-showcase .barkin-copy {
+  max-width:500px;
+  margin:0 auto;
+}
 .barkin-showcase__rail,
 .barkin-bundle__grid {
   display: grid;
@@ -3150,7 +3153,7 @@ body,
 }
 
 .barkin-button {
-  min-height: 28px;
+  min-height: 42px;
   padding: 11px 18px;
   border: 1px solid var(--barkin-ink);
   border-radius: 0;

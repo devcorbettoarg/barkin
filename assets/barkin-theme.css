@@ -600,8 +600,8 @@ main[data-template="collection"] {
 main[data-template="collection"] .section:not(:first-child),
 main[data-template="collection"] .color-scheme-1,
 main[data-template="collection"] .gradient {
-  background: var(--barkin-black);
-  color: var(--barkin-white);
+  background: var(--barkin-white);
+  color: var(--barkin-black);
 }
 
 main[data-template="collection"] .facets-wrapper {

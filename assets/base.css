@@ -692,7 +692,7 @@ summary::-webkit-details-marker {
 }
 
 {
-  border:1px solid #FFFDFC;
+  border:1px solid #fffdfc25;
 }
 .disclosure-has-popup[open] > summary::before {
   position: fixed;

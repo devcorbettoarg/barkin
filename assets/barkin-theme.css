@@ -4058,7 +4058,7 @@ main[data-template="blog"] .article-card__footer .barkin-button:focus-visible {
 /* Shared 1440px content standard and final collection filter treatment. */
 main[data-template="collection"] .facets-container,
 main[data-template="collection"] .facets-wrapper {
-  width: min(1440px, calc(100% - 160px));
+  width: 100%;
   max-width: none;
   margin-inline: auto;
 }

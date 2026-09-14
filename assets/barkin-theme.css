@@ -1851,6 +1851,21 @@ main[data-template="page"] .barkin-hero__content .barkin-title {
 .barkin-showcase  .barkin-showcase__dot  {
 background: rgba(0, 0, 0, 0.35);
 }
+
+.barkin-showcase
+.barkin-showcase__dot.is-active {
+  width: 14px;
+  height: 14px;
+  background: var(--barkin-black);
+}
+.barkin-showcase
+.barkin-showcase__dot:focus-visible {
+  outline: 2px solid var(--barkin-black);
+  outline-offset: 4px;
+}
+
+
+
 .barkin-launch-carousel__dots 
 .barkin-showcase__dot {
 

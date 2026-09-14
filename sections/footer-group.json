@@ -18,7 +18,7 @@
           "type": "menu",
           "settings": {
             "heading": "Directory",
-            "menu": "footer"
+            "menu": "footer-menu-1"
           }
         },
         "connect": {
@@ -33,7 +33,7 @@
           "type": "menu",
           "settings": {
             "heading": "Resources",
-            "menu": "footer"
+            "menu": "footer-menu-2"
           }
         }
       },

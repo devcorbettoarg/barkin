@@ -690,6 +690,10 @@ summary::-webkit-details-marker {
     margin-left: 5px;
 
 }
+
+{
+  border:1px solid #FFFDFC;
+}
 .disclosure-has-popup[open] > summary::before {
   position: fixed;
   top: 0;

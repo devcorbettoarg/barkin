@@ -121,6 +121,15 @@
             "enable_quick_add": true
           }
         },
+        "rebuy_personalization_engine_rebuy_widget_ziPFgP": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "287960",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -145,6 +154,7 @@
         "ingredients",
         "safety",
         "complementary",
+        "rebuy_personalization_engine_rebuy_widget_ziPFgP",
         "share"
       ],
       "settings": {
@@ -245,6 +255,7 @@
         "product_text": "{{ product.metafields.custom.ingredients_text | metafield_tag }}",
         "heading": "Human Grade\nIngredients",
         "text": "Choosing premium ingredients helps support healthy skin and a beautiful coat.",
+        "center_text": false,
         "button_label": "Learn More",
         "button_link": "",
         "pagination_label": "Choose ingredient slide"

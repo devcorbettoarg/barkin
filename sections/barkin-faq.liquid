@@ -4,7 +4,7 @@
       <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
       <p class="barkin-copy">{{ section.settings.text }}</p>
       {% if section.settings.button_label != blank %}
-        <a class="barkin-button" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+        <a class="barkin-button barkin-button--outline" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
       {% endif %}
     </div>
     <div class="barkin-faq__items">

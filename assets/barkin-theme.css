@@ -3642,8 +3642,11 @@ body { background: var(--barkin-white); color: var(--barkin-ink); }
 .barkin-journal-card__content { border-color: var(--barkin-border); }
 .barkin-article__author-bio { color: var(--barkin-ink); }
 .barkin-journal-card .barkin-button.barkin-button--outline {
+  text-decoration: none;
+}
+.barkin-journal-card__footer > span {
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 8px;
 }
 .barkin-site-footer { background: var(--barkin-ink); color: var(--barkin-white); border-top-color: var(--barkin-ink); }
 .barkin-site-footer a, .barkin-site-footer h2, .barkin-site-footer p { color: var(--barkin-white); }

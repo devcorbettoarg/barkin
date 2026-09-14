@@ -38,6 +38,7 @@
         },
         "purchase_options": {
           "type": "purchase_options",
+          "disabled": true,
           "settings": {
             "heading": "Purchase Options",
             "one_time_label": "One-time Purchase",

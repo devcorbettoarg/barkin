@@ -690,8 +690,10 @@ summary::-webkit-details-marker {
     margin-left: 5px;
 
 }
-
+.barkin-site-header__actions
+.disclosure__button 
 {
+      padding: 5px;
   border:1px solid #fffdfc25;
 }
 .disclosure-has-popup[open] > summary::before {

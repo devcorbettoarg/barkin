@@ -693,7 +693,7 @@ summary::-webkit-details-marker {
 .barkin-site-header__actions
 .disclosure__button 
 {
-      padding: 5px;
+      padding: 5px !important;
   border:1px solid #fffdfc25;
 }
 .disclosure-has-popup[open] > summary::before {

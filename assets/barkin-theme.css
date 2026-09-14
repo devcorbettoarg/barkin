@@ -3150,7 +3150,7 @@ body,
 }
 
 .barkin-button {
-  min-height: 42px;
+  min-height: 28px;
   padding: 11px 18px;
   border: 1px solid var(--barkin-ink);
   border-radius: 0;

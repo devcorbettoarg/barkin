@@ -736,7 +736,7 @@ main[data-template="collection"] span.active-facets__button-inner {
   padding: 6px 12px;
   border: 1px solid rgba(200, 170, 110, .65);
   border-radius: 999px;
-  background: rgba(200, 170, 110, .12);
+  background: rgba(200, 170, 110, 1);
   box-shadow: none;
   color: var(--barkin-white);
   font: 400 1.2rem/1.6rem Inter, sans-serif;

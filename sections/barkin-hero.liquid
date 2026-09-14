@@ -38,7 +38,7 @@
     {% endif %}
     {% if section.settings.button_label != blank %}
       <div>
-        <a class="barkin-button" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}">
+        <a class="barkin-button  barkin-button--outline" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}">
           {{ section.settings.button_label }}
         </a>
       </div>

@@ -683,7 +683,12 @@ summary::-webkit-details-marker {
 .disclosure-has-popup {
   position: relative;
 }
+.disclosure svg {
+  width: 12px;
+    height: 12px;
+    margin-left: 5px;
 
+}
 .disclosure-has-popup[open] > summary::before {
   position: fixed;
   top: 0;

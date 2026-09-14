@@ -1847,6 +1847,10 @@ main[data-template="page"] .barkin-hero__content .barkin-title {
   outline: 2px solid var(--barkin-white);
   outline-offset: 4px;
 }
+
+.barkin-showcase  .barkin-showcase__dot  {
+background: rgba(0, 0, 0, 0.35);
+}
 .barkin-launch-carousel__dots 
 .barkin-showcase__dot {
 

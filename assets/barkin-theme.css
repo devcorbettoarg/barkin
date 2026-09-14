@@ -4015,3 +4015,87 @@ main[data-template="blog"] .article-card__footer .barkin-button:focus-visible {
   main[data-template="blog"] .blog-articles,
   main[data-template="blog"] .blog-articles--collage { grid-template-columns: 1fr; row-gap: 20px; }
 }
+
+/* Shared 1440px content standard and final collection filter treatment. */
+main[data-template="collection"] .facets-container,
+main[data-template="collection"] .facets-wrapper {
+  width: min(1440px, calc(100% - 160px));
+  max-width: none;
+  margin-inline: auto;
+}
+
+main[data-template="collection"] .facets-container {
+  min-height: 96px;
+  padding-block: 24px;
+  border-bottom: 1px solid var(--barkin-border);
+}
+
+main[data-template="collection"] .facets__form,
+main[data-template="collection"] .facets__display,
+main[data-template="collection"] .facet-filters {
+  color: var(--barkin-ink);
+}
+
+main[data-template="collection"] .facets__summary,
+main[data-template="collection"] .facet-filters__label,
+main[data-template="collection"] .facet-filters__sort {
+  min-height: 24px;
+  color: var(--barkin-ink);
+  font-family: Inter, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+main[data-template="collection"] .facets__summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 0;
+}
+
+main[data-template="collection"] .facets__summary:hover,
+main[data-template="collection"] .facets__disclosure[open] > .facets__summary {
+  color: var(--barkin-ink);
+  text-decoration-color: var(--barkin-gold);
+}
+
+main[data-template="collection"] .facets__display,
+main[data-template="collection"] .facets__header,
+main[data-template="collection"] .facets__list {
+  background: var(--barkin-white);
+  color: var(--barkin-ink);
+  border-color: var(--barkin-border);
+}
+
+main[data-template="collection"] .facets__list {
+  padding: 16px 20px;
+}
+
+main[data-template="collection"] .facet-checkbox {
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 8px 0;
+  color: var(--barkin-ink);
+}
+
+main[data-template="collection"] .facet-checkbox__text,
+main[data-template="collection"] .facet-checkbox__text-label {
+  color: var(--barkin-ink);
+  font-family: Inter, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 749px) {
+  main[data-template="collection"] .facets-container,
+  main[data-template="collection"] .facets-wrapper {
+    width: calc(100% - 40px);
+  }
+
+  main[data-template="collection"] .facets-container {
+    min-height: 0;
+    padding-block: 14px;
+  }
+}

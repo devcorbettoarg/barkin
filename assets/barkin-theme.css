@@ -1476,8 +1476,9 @@ main[data-template="page"] .barkin-hero__content .barkin-title {
   gap: 14px;
   max-width: 400px;
 }
-.barkin-coat-card__content .barkin-card-title { margin: 0; font: 400 32px/32px "DM Serif Display", Georgia, serif; letter-spacing: -.32px; }
-.barkin-coat-card__content .barkin-copy { margin: 0; font-size: 14px; line-height: 18px; }
+.barkin-coat-card__content .barkin-card-title { margin: 0; font: 400 32px/32px "DM Serif Display", Georgia, serif; letter-spacing: -.32px;
+color: var(--barkin-white); }
+.barkin-coat-card__content .barkin-copy { margin: 0; font-size: 14px; line-height: 18px;  color: var(--barkin-white);}
 .barkin-coats .barkin-showcase__dots { margin-top: 20px; }
 @media (prefers-reduced-motion: reduce) {
   .barkin-coat-card__visual { transition: none; }

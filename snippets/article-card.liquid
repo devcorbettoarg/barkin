@@ -99,6 +99,7 @@
                 </p>
               {%- endif -%}
               <div class="article-card__footer">
+                <a class="barkin-button barkin-button--outline" href="{{ article.url }}">Read Article</a>
                 {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                   <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
                 {%- endif -%}
@@ -138,7 +139,8 @@
               </p>
             {%- endif -%}
             <div class="article-card__footer">
-              {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+                <a class="barkin-button barkin-button--outline" href="{{ article.url }}">Read Article</a>
+                {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                 <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
               {%- endif -%}
             </div>

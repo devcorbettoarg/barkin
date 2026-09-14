@@ -2743,7 +2743,7 @@ main[data-template="page"] .barkin-hero__content .barkin-title {
 .barkin-journal-card__title a { color: var(--barkin-white); text-decoration: none; }
 .barkin-journal-card__footer { align-items: center; margin-top: auto; }
 .barkin-journal-card__footer .barkin-button { flex: none;
-min-height:28px; }
+min-height:28px; max-height:28px; }
 .barkin-button--outline { border-color: var(--barkin-white); background: transparent; color: var(--barkin-white); }
 .barkin-journal__empty { padding: 80px 0; }
 .barkin-journal .pagination-wrapper { margin-top: 40px; }
@@ -3642,8 +3642,8 @@ body { background: var(--barkin-white); color: var(--barkin-ink); }
 .barkin-journal-card__content { border-color: var(--barkin-border); }
 .barkin-article__author-bio { color: var(--barkin-ink); }
 .barkin-journal-card .barkin-button.barkin-button--outline {
-  text-decoration: none;
-  text-underline-offset: initial;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 .barkin-site-footer { background: var(--barkin-ink); color: var(--barkin-white); border-top-color: var(--barkin-ink); }
 .barkin-site-footer a, .barkin-site-footer h2, .barkin-site-footer p { color: var(--barkin-white); }

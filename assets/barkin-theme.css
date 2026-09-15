@@ -2771,7 +2771,10 @@ background: rgba(0, 0, 0, 0.35);
 .barkin-journal-card__footer { align-items: center; margin-top: auto; }
 .barkin-journal-card__footer .barkin-button { flex: none;
 min-height:28px; max-height:28px; }
-.barkin-button--outline { border-color: var(--barkin-white); background: transparent; color: var(--barkin-white); }
+.barkin-button--outline { 
+  border-color: var(--barkin-white); background: transparent;
+   color: var(--barkin-white);
+  border-radius:4px; }
 .barkin-journal__empty { padding: 80px 0; }
 .barkin-journal .pagination-wrapper { margin-top: 40px; }
 .barkin-journal .pagination__list > li { color: var(--barkin-white); }

@@ -4189,6 +4189,9 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-showcase__carousel {
     margin-top:80px;
   }
+  .barkin-showcase__dots {
+    margin-bottom:80px;
+  }
   .barkin-button { min-height: 28px;
     max-width:28px; border-radius: 4px; font-size: 12px; line-height: 16px;          border-radius: 4px;}
   .barkin-showcase { padding-top: 80px; padding-bottom: 10px; }

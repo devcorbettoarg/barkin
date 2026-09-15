@@ -2678,7 +2678,8 @@ background: rgba(0, 0, 0, 0.35);
 .barkin-blog__grid { display: grid; grid-template-columns: minmax(0, 715px) minmax(0, 594px); justify-content: space-between; gap: 40px; }
 .barkin-blog-feature { position: relative; min-height: 670px; overflow: hidden; border: 1px solid var(--barkin-border); border-radius: 4px; }
 .barkin-blog-feature::after { content: ""; position: absolute; inset: 40% 0 0; background: linear-gradient(0deg, rgba(0,0,0,.75), transparent); }
-.barkin-blog-feature__content { position: absolute; z-index: 1; left: 40px; right: 40px; bottom: 40px; display: grid; gap: 20px; justify-items: start; }
+.barkin-blog-feature__content { 
+  max-width:400px; position: absolute; z-index: 1; left: 40px; right: 40px; bottom: 40px; display: grid; gap: 20px; justify-items: start; }
 .barkin-blog-list {  padding-left:80px; display: grid; }
 .barkin-blog-item { min-height: 190px; display: grid; grid-template-columns: minmax(0, 352px) 184px; column-gap: 58px; padding: 20px 0; border-block: 1px solid var(--barkin-border); }
 .barkin-blog-item + .barkin-blog-item { border-top: 0; }
@@ -4240,6 +4241,17 @@ main[data-template="collection"] .facet-checkbox__text-label {
 
 .barkin-blog-feature__content .barkin-button {
   border-color: #FFFDFC;
+}
+
+/* The blog feature has later theme color rules; keep its overlay readable. */
+.barkin-blog-feature .barkin-blog-feature__content h3.barkin-card-title,
+.barkin-blog-feature .barkin-blog-feature__content a.barkin-button {
+  color: #FFFDFC !important;
+  -webkit-text-fill-color: #FFFDFC;
+}
+
+.barkin-blog-feature .barkin-blog-feature__content a.barkin-button {
+  border-color: #FFFDFC !important;
 }
 
 @media screen and (max-width: 749px) {

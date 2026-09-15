@@ -509,7 +509,6 @@ barkin-desktop-mega-menu {
 }
 
 .barkin-site-footer__brand--mobile { display: none; }
-.barkin-site-footer__copyright--mobile { display: none; }
 
 .barkin-site-footer__mark {
   color: var(--barkin-gold);
@@ -4318,7 +4317,7 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-site-footer__column ul { display: grid; gap: 11px; }
   .barkin-site-footer__copyright { margin-top: 24px; }
   .barkin-site-footer__copyright--column { display: none; }
-  .barkin-site-footer__copyright--mobile {
+  .barkin-site-footer > .barkin-site-footer__grid > .barkin-site-footer__copyright {
     display: block;
     grid-column: 1 / -1;
     grid-row: 5;

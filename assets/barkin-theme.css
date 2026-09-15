@@ -3213,7 +3213,9 @@ body,
 .barkin-button--outline:hover,
 .barkin-button--outline:focus-visible { background: var(--barkin-ink); color: var(--barkin-white); }
 
-.barkin-title { color: inherit; font-family: "DM Serif Display", Georgia, serif; font-weight: 400; letter-spacing: -.035em; }
+.barkin-title { color: inherit; 
+  font-family: "DM Serif Display", Georgia, serif; font-weight: 400;
+    }
 .barkin-copy { color: var(--barkin-muted); }
 
 

@@ -3143,7 +3143,10 @@ min-height:28px; max-height:28px; }
   .barkin-review__load-more { margin-top: 60px; }
   .barkin-blog-feature { min-height: 520px; }
   .barkin-blog-item { grid-template-columns: 1fr; gap: 20px; padding-block: 30px; }
-  .barkin-blog-item__content { min-height: 180px; }
+  .barkin-blog-item__content { min-height: 150px; }
+  .barkin-blog-item {
+    padding-block:10px;
+  }
   .barkin-blog-item img { grid-row: 1; width: 100%; height: 240px; 
   display:none;}
   .barkin-journal { padding: 50px 0; }

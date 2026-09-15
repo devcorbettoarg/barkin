@@ -3048,7 +3048,8 @@ min-height:28px; max-height:28px; }
     padding-inline: 20px;
     scroll-padding-inline: 20px;
   }
-  .barkin-split__grid, .barkin-guarantees__layout, .barkin-values__header, .barkin-mosaic__header, .barkin-review__grid, .barkin-blog__header, .barkin-blog__grid, .barkin-faq__layout { grid-template-columns: 1fr; gap: 40px; }
+  .barkin-split__grid, .barkin-guarantees__layout, .barkin-values__header, .barkin-mosaic__header, .barkin-review__grid, .barkin-blog__header, .barkin-blog__grid, .barkin-faq__layout 
+  { grid-template-columns: 1fr; gap: 20px; }
   .barkin-values__header { margin-bottom: 40px; }
   .barkin-values__grid { grid-template-columns: 1fr; }
   .barkin-value:nth-child(odd),
@@ -4188,7 +4189,7 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-guarantee { border-color: #2D2824A6; }
   .barkin-guarantee__copy { color: #2D2824A6; }
   .barkin-launch-carousel { min-height: 596px; }
-  .barkin-mosaic__header { margin-bottom: 20px; }
+  .barkin-mosaic__header { margin-bottom: 40px; }
   .barkin-problem-solver__header { gap: 20px; }
   .barkin-problem-solver__tabs { height: 40px; min-height: 40px; margin-top: 80px; padding-block: 0; align-items: center; }
   .barkin-testimonials__header { margin-bottom: 20px; }

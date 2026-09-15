@@ -4232,6 +4232,16 @@ main[data-template="collection"] .facet-checkbox__text-label {
   outline-color: #2D2824;
 }
 
+.barkin-blog-feature__content,
+.barkin-blog-feature__content .barkin-card-title,
+.barkin-blog-feature__content .barkin-button {
+  color: #FFFDFC;
+}
+
+.barkin-blog-feature__content .barkin-button {
+  border-color: #FFFDFC;
+}
+
 @media screen and (max-width: 749px) {
   .barkin-blog-feature__content,
   .barkin-blog-feature__content .barkin-card-title,

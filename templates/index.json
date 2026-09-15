@@ -274,6 +274,8 @@
         "guarantee_4"
       ],
       "settings": {
+        "button_label": "",
+        "button_link": "",
         "heading": "Premium Product\nGuarantees",
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double.."
       }
@@ -298,50 +300,55 @@
     "barkin_ingredients": {
       "type": "barkin-ingredients",
       "blocks": {
-        "ingredient_R8RGWG": {
+        "ingredient_BzGNEn": {
           "type": "ingredient",
+          "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"] }}",
           "settings": {
-            "ingredient": "premium-grade-ingredient",
-            "heading": "Premium Grade Ingredient",
-            "text": ""
+            "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].text | metafield_tag }}"
           }
         },
-        "ingredient_EgbDMb": {
+        "ingredient_KDgfMH": {
           "type": "ingredient",
+          "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"] }}",
           "settings": {
-            "ingredient": "premium-grade-ingredient-2",
-            "heading": "Premium Grade Ingredient",
-            "text": ""
+            "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].text | metafield_tag }}"
           }
         },
-        "ingredient_U9zcyq": {
+        "ingredient_ya9x6P": {
           "type": "ingredient",
+          "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-2\"] }}",
           "settings": {
-            "ingredient": "premium-grade-ingredient-3",
-            "heading": "Premium Grade Ingredient",
-            "text": ""
+            "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-2\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-2\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-2\"].text | metafield_tag }}"
           }
         },
-        "ingredient_zxAdHF": {
+        "ingredient_FALhwA": {
           "type": "ingredient",
+          "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-4\"] }}",
           "settings": {
-            "ingredient": "premium-grade-ingredient-4",
-            "heading": "Premium Grade Ingredient",
-            "text": ""
+            "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-4\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-4\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-4\"].text | metafield_tag }}"
           }
         }
       },
       "block_order": [
-        "ingredient_R8RGWG",
-        "ingredient_EgbDMb",
-        "ingredient_U9zcyq",
-        "ingredient_zxAdHF"
+        "ingredient_BzGNEn",
+        "ingredient_KDgfMH",
+        "ingredient_ya9x6P",
+        "ingredient_FALhwA"
       ],
       "settings": {
         "product_heading": "",
         "product_text": "",
         "heading": "Human Grade\nIngredients",
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin, while also making your life easier.",
+        "center_text": false,
         "button_label": "Learn More",
         "button_link": "",
         "pagination_label": "Choose ingredient slide"
@@ -484,69 +491,49 @@
     "barkin_testimonials": {
       "type": "barkin-testimonials",
       "blocks": {
-        "review_1": {
+        "review_B394RK": {
           "type": "review",
+          "source": "{{ metaobjects.reviews.peter }}",
           "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
-            "image_alt": "Pet parents enjoying time with their dog",
-            "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
-            "name": "Alessandra",
-            "buyer_label": "Pet Owner",
-            "recommendation": "Purchased the Detangling Spray"
+            "image": "{{ metaobjects.reviews.peter.image.value }}",
+            "image_alt": "{{ metaobjects.reviews.peter.name.value }}",
+            "avatar": "{{ metaobjects.reviews.peter.image_author.value }}",
+            "name": "{{ metaobjects.reviews.peter.author.value }}",
+            "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}",
+            "recommendation": "{{ metaobjects.reviews.peter.subtitle.value }}"
           }
         },
-        "review_2": {
+        "review_hg9hrQ": {
           "type": "review",
+          "source": "{{ metaobjects.reviews.peter }}",
           "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
-            "image_alt": "Pet parents enjoying time with their dog",
-            "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
-            "name": "Marta",
-            "buyer_label": "Pet Owner",
-            "recommendation": "Purchased the Detangling Spray"
-          }
-        },
-        "review_3": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
-            "image_alt": "Pet parents enjoying time with their dog",
+            "image": "{{ metaobjects.reviews.peter.image.value }}",
+            "image_alt": "{{ metaobjects.reviews.peter.name.value }}",
             "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
-            "name": "Daniel",
-            "buyer_label": "Pet Owner",
-            "recommendation": "Purchased the Detangling Spray"
+            "avatar": "{{ metaobjects.reviews.peter.image_author.value }}",
+            "name": "{{ metaobjects.reviews.peter.author.value }}",
+            "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}",
+            "recommendation": "{{ metaobjects.reviews.peter.subtitle.value }}"
           }
         },
-        "review_4": {
+        "review_emPpBN": {
           "type": "review",
+          "source": "{{ metaobjects.reviews.peter }}",
           "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
-            "image_alt": "Pet parents enjoying time with their dog",
+            "image": "{{ metaobjects.reviews.peter.image.value }}",
+            "image_alt": "{{ metaobjects.reviews.peter.name.value }}",
             "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
-            "name": "Sofia",
-            "buyer_label": "Pet Owner",
-            "recommendation": "Purchased the Detangling Spray"
-          }
-        },
-        "review_5": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
-            "image_alt": "Pet parents enjoying time with their dog",
-            "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
-            "name": "Alex",
-            "buyer_label": "Pet Owner",
-            "recommendation": "Purchased the Detangling Spray"
+            "avatar": "{{ metaobjects.reviews.peter.image_author.value }}",
+            "name": "{{ metaobjects.reviews.peter.author.value }}",
+            "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}",
+            "recommendation": "{{ metaobjects.reviews.peter.subtitle.value }}"
           }
         }
       },
       "block_order": [
-        "review_1",
-        "review_2",
-        "review_3",
-        "review_4",
-        "review_5"
+        "review_B394RK",
+        "review_hg9hrQ",
+        "review_emPpBN"
       ],
       "settings": {
         "heading": "See What People Say\nAbout Barkin&Meowson",

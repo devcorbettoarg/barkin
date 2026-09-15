@@ -4173,8 +4173,9 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-showcase { padding-top: 80px; padding-bottom: 10px; }
   .barkin-showcase__rail { margin-top: 20px; }
   .barkin-product-card { height: 471px; }
-  .barkin-product-card__bag,
-  .barkin-launch-slide__bag { width: 32px; height: 32px; border-color: #2D2824; background: transparent; }
+
+  .barkin-launch-slide__bag { width: 32px; height: 32px; 
+    border-color: #2D2824; background: transparent; }
   .barkin-product-card__bag img,
   .barkin-launch-slide__bag img { width: 16px; height: 18px; }
   .barkin-guarantees,

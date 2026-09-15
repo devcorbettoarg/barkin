@@ -3819,7 +3819,6 @@ main[data-template="search"] .active-facets__button-inner {
   box-shadow: 0 0 0 1px var(--barkin-ink);
 }
 .barkin-journal__sort { color: var(--barkin-muted); }
-.barkin-marquee__item img,
 .barkin-guarantee > img {
   filter: invert(1);
 }

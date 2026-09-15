@@ -4242,6 +4242,28 @@ main[data-template="collection"] .facet-checkbox__text-label {
 }
 
 @media screen and (max-width: 749px) {
+  .barkin-site-footer__brand {
+    grid-column: 1 / -1;
+    display: flex;
+    min-height: 82px;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .barkin-site-footer__brand img {
+    display: block;
+    width: min(220px, 72vw);
+    max-width: 220px;
+    height: auto;
+    min-height: 48px;
+    object-fit: contain;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 749px) {
   .barkin-social > .barkin-shell > .barkin-centered-intro,
   .barkin-social > .barkin-centered-intro {
     width: calc(100% - 40px);

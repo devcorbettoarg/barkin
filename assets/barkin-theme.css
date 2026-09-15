@@ -508,6 +508,8 @@ barkin-desktop-mega-menu {
   object-fit: contain;
 }
 
+.barkin-site-footer__brand--mobile { display: none; }
+
 .barkin-site-footer__mark {
   color: var(--barkin-gold);
   font-size: 5rem;
@@ -4243,6 +4245,10 @@ main[data-template="collection"] .facet-checkbox__text-label {
 
 @media screen and (max-width: 749px) {
   .barkin-site-footer__brand {
+    display: none;
+  }
+
+  .barkin-site-footer__brand--mobile {
     grid-column: 2;
     grid-row: 4;
     display: flex;

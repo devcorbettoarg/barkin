@@ -3096,7 +3096,13 @@ min-height:28px; max-height:28px; }
     margin-top: 38px;
   }
   .barkin-problem-solver__header { grid-template-columns: 1fr; gap: 40px; }
-  .barkin-problem-solver__tabs { gap: 24px; margin-top: 40px; }
+  .barkin-problem-solver__tabs { gap: 24px; margin-top: 40px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .barkin-problem-solver__carousel {
     display: block;
     width: 100%;

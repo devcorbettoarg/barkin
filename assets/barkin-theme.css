@@ -3148,11 +3148,11 @@ min-height:28px; max-height:28px; }
 
 /* Barkin White system overrides */
 :root {
-  --barkin-black: #171614;
+  --barkin-black: #2D2824;
   --barkin-black2: #24211e;
   --barkin-white: #fffdfb;
   --barkin-paper: #f7f5f1;
-  --barkin-ink: #171614;
+  --barkin-ink: #2D2824;
   --barkin-muted: #706a63;
   --barkin-gold: #d9bd83;
   --barkin-border: rgba(23, 22, 20, .16);

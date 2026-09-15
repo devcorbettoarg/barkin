@@ -68,7 +68,7 @@
           {% endif %}
         {% endif %}
         {% if block.id == copyright_block.id %}
-          <p class="barkin-site-footer__copyright">©{{ 'now' | date: '%Y' }} {{ section.settings.copyright | escape }}</p>
+          <p class="barkin-site-footer__copyright barkin-site-footer__copyright--column">©{{ 'now' | date: '%Y' }} {{ section.settings.copyright | escape }}</p>
         {% endif %}
       </div>
     {% endfor %}
@@ -81,6 +81,9 @@
         <span class="barkin-site-footer__logo-text">{{ section.settings.logo_text }}</span>
       {% endif %}
     </a>
+    {% if section.blocks.size > 0 %}
+      <p class="barkin-site-footer__copyright barkin-site-footer__copyright--mobile">©{{ 'now' | date: '%Y' }} {{ section.settings.copyright | escape }}</p>
+    {% endif %}
     {% if section.blocks.size == 0 %}
       <p class="barkin-site-footer__copyright">©{{ 'now' | date: '%Y' }} {{ section.settings.copyright | escape }}</p>
     {% endif %}

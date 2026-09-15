@@ -3195,7 +3195,7 @@ body,
 .barkin-title { color: inherit; font-family: "DM Serif Display", Georgia, serif; font-weight: 400; letter-spacing: -.035em; }
 .barkin-copy { color: var(--barkin-muted); }
 
-.barkin-hero,
+
 .barkin-journal-hero { border-block: 1px solid var(--barkin-border); background: var(--barkin-paper); }
 .barkin-hero::after,
 .barkin-journal-hero::after { background: linear-gradient(0deg, rgba(23,22,20,.62), transparent 58%); }

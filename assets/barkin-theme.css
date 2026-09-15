@@ -4243,24 +4243,69 @@ main[data-template="collection"] .facet-checkbox__text-label {
 
 @media screen and (max-width: 749px) {
   .barkin-site-footer__brand {
-    grid-column: 1 / -1;
+    grid-column: 2;
+    grid-row: 5;
     display: flex;
-    min-height: 82px;
+    min-height: 80px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     visibility: visible;
     opacity: 1;
   }
 
   .barkin-site-footer__brand img {
     display: block;
-    width: min(220px, 72vw);
-    max-width: 220px;
+    width: min(160px, 42vw);
+    max-width: 160px;
     height: auto;
-    min-height: 48px;
+    min-height: 40px;
     object-fit: contain;
     opacity: 1;
   }
+
+  .barkin-site-footer__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 0 0;
+    padding-block: 0;
+    border-block: 0;
+  }
+
+  .barkin-site-footer__newsletter {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    padding: 40px 0 0;
+    border-top: 1px solid rgba(255, 253, 252, .5);
+  }
+
+  .barkin-site-footer__newsletter h2,
+  .barkin-site-footer__newsletter p,
+  .barkin-site-footer__form {
+    width: 100%;
+  }
+
+  .barkin-site-footer__form { height: 39px; }
+  .barkin-site-footer__payments { margin-top: 39px; justify-content: center; }
+
+  .barkin-site-footer__column {
+    min-width: 0;
+    padding-top: 60px;
+  }
+
+  .barkin-site-footer__column:nth-child(3) { grid-column: 1; grid-row: 2; }
+  .barkin-site-footer__column:nth-child(4) { grid-column: 2; grid-row: 2; }
+  .barkin-site-footer__column:nth-child(5) {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    padding-top: 48px;
+  }
+
+  .barkin-site-footer__column h2 { font-size: 20px; line-height: 24px; letter-spacing: -.4px; }
+  .barkin-site-footer__column a,
+  .barkin-site-footer__column li,
+  .barkin-site-footer__column p { font-size: 12px; line-height: 16px; }
+  .barkin-site-footer__column ul { display: grid; gap: 11px; }
+  .barkin-site-footer__copyright { margin-top: 24px; }
 }
 
 @media screen and (max-width: 749px) {

@@ -4196,3 +4196,15 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-testimonial__content { background: #2D28241A; }
   body { overflow-x: hidden; }
 }
+
+.barkin-mosaic__dots .barkin-showcase__dot {
+  background: rgba(45, 40, 36, 0.35);
+}
+
+.barkin-mosaic__dots .barkin-showcase__dot.is-active {
+  background: #2D2824;
+}
+
+.barkin-mosaic__dots .barkin-showcase__dot:focus-visible {
+  outline-color: #2D2824;
+}

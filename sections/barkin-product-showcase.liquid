@@ -84,7 +84,7 @@
     </div>
 
     {% if section.blocks.size > 1 %}
-      <div class="barkin-showcase__dots" role="group" aria-label="{{ section.settings.pagination_label | escape }}">
+      <div class="barkin-showcase__dots barkin-showcase__dots2" role="group" aria-label="{{ section.settings.pagination_label | escape }}">
         {% for block in section.blocks %}
           <button
             class="barkin-showcase__dot{% if forloop.first %} is-active{% endif %}"

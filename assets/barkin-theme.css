@@ -4250,7 +4250,7 @@ main[data-template="collection"] .facet-checkbox__text-label {
 
   .barkin-site-footer__brand--mobile {
     grid-column: 2;
-    grid-row: 4;
+    grid-row: 3;
     display: flex;
     min-height: 80px;
     align-items: center;
@@ -4272,7 +4272,7 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-site-footer__grid {
     min-height: 861px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 239px 260px 164px 80px;
+    grid-template-rows: 239px 260px 260px 36px;
     gap: 0 0;
     padding-block: 0;
     border-block: 0;
@@ -4319,7 +4319,7 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-site-footer__copyright--column { display: none; }
   .barkin-site-footer > .barkin-site-footer__grid > .barkin-site-footer__copyright {
     display: block;
-    grid-column: 1;
+    grid-column: 1 / -1;
     grid-row: 4;
     margin: 0;
     padding-top: 20px;

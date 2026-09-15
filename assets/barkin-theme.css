@@ -3195,9 +3195,10 @@ body,
 
 .barkin-button {
   min-height: 28px;
+  max-height:28px;
   padding: 11px 18px;
   border: 1px solid var(--barkin-ink);
-  border-radius: 0;
+  border-radius: 4px;
   background: var(--barkin-ink);
   color: var(--barkin-white);
   font-family: Inter, var(--font-body-family), sans-serif;

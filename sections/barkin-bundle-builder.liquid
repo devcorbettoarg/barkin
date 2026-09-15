@@ -1,4 +1,10 @@
-<section class="barkin-section barkin-bundle" data-node-id="20:1765">
+<section
+  class="barkin-section barkin-bundle{% if section.settings.mobile_background_image != blank %} barkin-bundle--has-mobile-background{% endif %}"
+  {% if section.settings.mobile_background_image != blank %}
+    style="--barkin-bundle-mobile-background: url('{{ section.settings.mobile_background_image | image_url: width: 1200 }}');"
+  {% endif %}
+  data-node-id="20:1765"
+>
   <div class="barkin-shell">
     <div class="barkin-centered-intro">
       <h2 class="barkin-title">{{ section.settings.heading | newline_to_br }}</h2>
@@ -40,6 +46,7 @@
   "class": "section",
   "max_blocks": 4,
   "settings": [
+    { "type": "image_picker", "id": "mobile_background_image", "label": "Mobile background image", "info": "Optional. Used only below 750px." },
     { "type": "textarea", "id": "heading", "label": "Heading", "default": "Build Your Pet's Routine,\nGet A Discount." },
     { "type": "textarea", "id": "text", "label": "Text", "default": "Add up to 6 products and save up to 15% on your bundle." },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Build Your Bundle" },

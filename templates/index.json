@@ -502,10 +502,38 @@
             "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}",
             "recommendation": "{{ metaobjects.reviews.peter.subtitle.value }}"
           }
+        },
+        "review_hg9hrQ": {
+          "type": "review",
+          "source": "{{ metaobjects.reviews.peter }}",
+          "settings": {
+            "image": "{{ metaobjects.reviews.peter.image.value }}",
+            "image_alt": "{{ metaobjects.reviews.peter.name.value }}",
+            "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
+            "avatar": "{{ metaobjects.reviews.peter.image_author.value }}",
+            "name": "{{ metaobjects.reviews.peter.author.value }}",
+            "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}",
+            "recommendation": "{{ metaobjects.reviews.peter.subtitle.value }}"
+          }
+        },
+        "review_emPpBN": {
+          "type": "review",
+          "source": "{{ metaobjects.reviews.peter }}",
+          "settings": {
+            "image": "{{ metaobjects.reviews.peter.image.value }}",
+            "image_alt": "{{ metaobjects.reviews.peter.name.value }}",
+            "quote": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier.",
+            "avatar": "{{ metaobjects.reviews.peter.image_author.value }}",
+            "name": "{{ metaobjects.reviews.peter.author.value }}",
+            "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}",
+            "recommendation": "{{ metaobjects.reviews.peter.subtitle.value }}"
+          }
         }
       },
       "block_order": [
-        "review_B394RK"
+        "review_B394RK",
+        "review_hg9hrQ",
+        "review_emPpBN"
       ],
       "settings": {
         "heading": "See What People Say\nAbout Barkin&Meowson",

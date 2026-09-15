@@ -4307,7 +4307,7 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-site-footer__column:nth-child(5) {
     grid-column: 1 / -1;
     grid-row: 3;
-    padding-top: 48px;
+    margin-top: 20px;
   }
 
   .barkin-site-footer__column h2 { font-size: 20px; line-height: 24px; letter-spacing: -.4px; }

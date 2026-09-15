@@ -3211,7 +3211,7 @@ body,
 .barkin-faq,
 .barkin-about-intro,
 .barkin-values--checkerboard { background: var(--barkin-white); border-color: var(--barkin-border); }
-.barkin-marquee { color: var(--barkin-ink); }
+
 .barkin-guarantees { background: var(--barkin-paper); }
 .barkin-social { background: var(--barkin-white); }
 .barkin-faq { background: var(--barkin-paper); }

@@ -4230,6 +4230,18 @@ main[data-template="collection"] .facet-checkbox__text-label {
 }
 
 @media screen and (max-width: 749px) {
+  .barkin-blog-feature__content,
+  .barkin-blog-feature__content .barkin-card-title,
+  .barkin-blog-feature__content .barkin-button {
+    color: #FFFDFC;
+  }
+
+  .barkin-blog-feature__content .barkin-button {
+    border-color: #FFFDFC;
+  }
+}
+
+@media screen and (max-width: 749px) {
   .barkin-social > .barkin-shell > .barkin-centered-intro,
   .barkin-social > .barkin-centered-intro {
     width: calc(100% - 40px);

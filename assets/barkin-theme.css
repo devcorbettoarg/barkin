@@ -4320,6 +4320,11 @@ main[data-template="collection"] .facet-checkbox__text-label {
     display: block;
     margin-top: 24px;
   }
+
+  .barkin-site-footer__payments svg {
+    width: 32px;
+    height: 20px;
+  }
 }
 
 @media screen and (max-width: 749px) {

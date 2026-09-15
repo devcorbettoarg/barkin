@@ -4140,3 +4140,54 @@ main[data-template="collection"] .facet-checkbox__text-label {
     padding-block: 14px;
   }
 }
+
+/* Final homepage mobile overrides: keep these after Dawn/theme breakpoint rules. */
+@media screen and (max-width: 749px) {
+  .barkin-site-header__main { min-height: 78px; }
+  .barkin-site-header__logo img { width: 230px; max-width: calc(100vw - 96px); max-height: 54px; }
+  .barkin-site-header__actions svg,
+  .barkin-site-header__actions img,
+  .barkin-site-header__mobile-menu summary svg { width: 16px; height: 16px; }
+  .barkin-site-header__mobile-menu summary { width: 32px; height: 32px; }
+  .barkin-site-header__mobile-menu nav { top: 78px; }
+  .barkin-site-header__announcement,
+  .announcement-bar-section .utility-bar { background: #CEAA68; }
+
+  .barkin-title,
+  .barkin-title2,
+  .barkin-about-intro__copy .barkin-title,
+  .barkin-mosaic-card--text .barkin-card-title,
+  .barkin-hero__content .barkin-title { font-size: 36px; line-height: 1; }
+  .barkin-copy,
+  .barkin-copy p,
+  .barkin-showcase .barkin-copy,
+  .barkin-guarantee__copy,
+  .barkin-about-intro__copy .barkin-copy,
+  .barkin-mosaic__side .barkin-copy,
+  .barkin-problem-solver__intro .barkin-copy,
+  .barkin-split-card__content .barkin-copy {
+    font-family: Inter, var(--font-body-family), sans-serif;
+    font-size: 12px; font-weight: 400; font-style: normal; line-height: 16px; letter-spacing: 0;
+  }
+  .barkin-button { min-height: 28px; border-radius: 4px; font-size: 12px; line-height: 16px; }
+  .barkin-showcase { padding-top: 80px; padding-bottom: 10px; }
+  .barkin-showcase__rail { margin-top: 20px; }
+  .barkin-product-card { height: 596px; }
+  .barkin-product-card__bag,
+  .barkin-launch-slide__bag { width: 32px; height: 32px; border-color: #2D2824; background: transparent; }
+  .barkin-product-card__bag img,
+  .barkin-launch-slide__bag img { width: 16px; height: 18px; }
+  .barkin-guarantees,
+  .barkin-mosaic,
+  .barkin-problem-solver { padding-top: 80px; }
+  .barkin-guarantees__list,
+  .barkin-guarantee { border-color: #2D2824A6; }
+  .barkin-guarantee__copy { color: #2D2824A6; }
+  .barkin-launch-carousel { min-height: 596px; }
+  .barkin-mosaic__header { margin-bottom: 80px; }
+  .barkin-problem-solver__header { gap: 20px; }
+  .barkin-problem-solver__tabs { height: 40px; min-height: 40px; margin-top: 80px; padding-block: 0; align-items: center; }
+  .barkin-testimonials__header { margin-bottom: 20px; }
+  .barkin-testimonial__content { background: #2D28241A; }
+  body { overflow-x: hidden; }
+}

@@ -4316,14 +4316,9 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-site-footer__column p { font-size: 12px; line-height: 16px; }
   .barkin-site-footer__column ul { display: grid; gap: 11px; }
   .barkin-site-footer__copyright { margin-top: 24px; }
-  .barkin-site-footer__copyright--column { display: none; }
-  .barkin-site-footer > .barkin-site-footer__grid > .barkin-site-footer__copyright {
+  .barkin-site-footer__copyright--column {
     display: block;
-    grid-column: 1 / -1;
-    grid-row: 4;
-    margin: 0;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 253, 252, .5);
+    margin-top: 24px;
   }
 }
 

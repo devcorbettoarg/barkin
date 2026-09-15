@@ -3201,7 +3201,7 @@ body,
 .barkin-journal-hero::after { background: linear-gradient(0deg, rgba(23,22,20,.62), transparent 58%); }
 .barkin-hero__content,
 .barkin-journal-hero__content { color: var(--barkin-white); }
-.barkin-hero__content .barkin-copy,
+
 .barkin-journal-hero__content .barkin-copy { color: rgba(255,253,251,.86); }
 
 .barkin-section,

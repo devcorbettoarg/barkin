@@ -4186,7 +4186,8 @@ main[data-template="collection"] .facet-checkbox__text-label {
     font-family: Inter, var(--font-body-family), sans-serif;
     font-size: 12px; font-weight: 400; font-style: normal; line-height: 16px; letter-spacing: 0;
   }
-  .barkin-button { min-height: 28px; border-radius: 4px; font-size: 12px; line-height: 16px; }
+  .barkin-button { min-height: 28px;
+    max-width:28px; border-radius: 4px; font-size: 12px; line-height: 16px;          border-radius: 4px;}
   .barkin-showcase { padding-top: 80px; padding-bottom: 10px; }
   .barkin-showcase__rail { margin-top: 20px; }
   .barkin-product-card { height: 471px; }

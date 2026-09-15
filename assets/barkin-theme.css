@@ -4222,6 +4222,22 @@ main[data-template="collection"] .facet-checkbox__text-label {
   outline-color: #2D2824;
 }
 
+@media screen and (max-width: 749px) {
+  .barkin-social > .barkin-shell > .barkin-centered-intro,
+  .barkin-social > .barkin-centered-intro {
+    width: calc(100% - 40px);
+    margin-inline: 20px;
+    justify-items: start;
+    align-items: start;
+    text-align: left;
+  }
+
+  .barkin-social > .barkin-centered-intro .barkin-button,
+  .barkin-social > .barkin-shell > .barkin-centered-intro .barkin-button {
+    justify-self: start;
+  }
+}
+
 /* Bundle Builder: mobile composition from the 390px Figma frame. */
 @media screen and (max-width: 749px) {
   .barkin-bundle {

@@ -3048,6 +3048,9 @@ min-height:28px; max-height:28px; }
     padding-inline: 20px;
     scroll-padding-inline: 20px;
   }
+  .barkin-blog__header-side {
+    padding-left:0px;
+  }
   .barkin-split__grid, .barkin-guarantees__layout, .barkin-values__header, .barkin-mosaic__header, .barkin-review__grid, .barkin-blog__header, .barkin-blog__grid, .barkin-faq__layout 
   { grid-template-columns: 1fr; gap: 20px; }
   .barkin-values__header { margin-bottom: 40px; }

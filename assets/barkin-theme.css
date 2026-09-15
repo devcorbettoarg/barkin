@@ -4185,7 +4185,7 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-guarantee { border-color: #2D2824A6; }
   .barkin-guarantee__copy { color: #2D2824A6; }
   .barkin-launch-carousel { min-height: 596px; }
-  .barkin-mosaic__header { margin-bottom: 80px; }
+  .barkin-mosaic__header { margin-bottom: 20px; }
   .barkin-problem-solver__header { gap: 20px; }
   .barkin-problem-solver__tabs { height: 40px; min-height: 40px; margin-top: 80px; padding-block: 0; align-items: center; }
   .barkin-testimonials__header { margin-bottom: 20px; }

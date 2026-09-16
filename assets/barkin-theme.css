@@ -4421,6 +4421,49 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
 }
 
 @media screen and (max-width: 749px) {
+  main[data-template="collection"] .mobile-facets__open,
+  main[data-template="search"] .mobile-facets__open {
+    color: #2D2824 !important;
+    border-color: #2D2824 !important;
+    background: #FFFDFC !important;
+  }
+
+  main[data-template="collection"] .mobile-facets__open-label,
+  main[data-template="search"] .mobile-facets__open-label,
+  main[data-template="collection"] .mobile-facets__open .svg-wrapper,
+  main[data-template="search"] .mobile-facets__open .svg-wrapper,
+  main[data-template="collection"] .mobile-facets__open svg,
+  main[data-template="search"] .mobile-facets__open svg,
+  main[data-template="collection"] .mobile-facets__open line,
+  main[data-template="search"] .mobile-facets__open line,
+  main[data-template="collection"] .mobile-facets__open circle,
+  main[data-template="search"] .mobile-facets__open circle {
+    color: #2D2824 !important;
+    stroke: #2D2824 !important;
+  }
+
+  main[data-template="collection"] .mobile-facets__inner,
+  main[data-template="search"] .mobile-facets__inner,
+  main[data-template="collection"] .mobile-facets__header,
+  main[data-template="search"] .mobile-facets__header,
+  main[data-template="collection"] .mobile-facets__submenu,
+  main[data-template="search"] .mobile-facets__submenu,
+  main[data-template="collection"] .mobile-facets__footer,
+  main[data-template="search"] .mobile-facets__footer {
+    background: #FFFDFC !important;
+    color: #2D2824 !important;
+    border-color: #2D2824 !important;
+  }
+
+  main[data-template="collection"] .mobile-facets__inner *,
+  main[data-template="search"] .mobile-facets__inner *,
+  main[data-template="collection"] .mobile-facets__header *,
+  main[data-template="search"] .mobile-facets__header *,
+  main[data-template="collection"] .mobile-facets__submenu *,
+  main[data-template="search"] .mobile-facets__submenu * {
+    color: #2D2824 !important;
+  }
+
   .barkin-blog-item {
     min-height: 120px;
   }

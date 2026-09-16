@@ -715,7 +715,7 @@ main[data-template="collection"] .facet-checkbox > input[type="checkbox"]:checke
 }
 
 main[data-template="collection"] .active-facets-desktop {
-  grid-column: 1 / -1;
+  grid-column: 1 / -1; 
   grid-row: 2;
   gap: 8px;
   align-items: center;

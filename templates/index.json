@@ -506,10 +506,52 @@
             "name": "{{ metaobjects.reviews.peter.author.value }}",
             "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}"
           }
+        },
+        "review_dNdQrn": {
+          "type": "review",
+          "source": "{{ metaobjects.reviews.peter }}",
+          "settings": {
+            "image": "{{ metaobjects.reviews.peter.image.value }}",
+            "image_alt": "{{ metaobjects.reviews.peter.name.value }}",
+            "quote": "<p>{{ metaobjects.reviews.peter.text | metafield_tag }}</p>",
+            "avatar": "{{ metaobjects.reviews.peter.image_author.value }}",
+            "name": "{{ metaobjects.reviews.peter.author.value }}",
+            "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}",
+            "recommendation": "Purchased the Detangling Spray"
+          }
+        },
+        "review_fPJJxx": {
+          "type": "review",
+          "source": "{{ metaobjects.reviews.peter }}",
+          "settings": {
+            "image": "{{ metaobjects.reviews.peter.image.value }}",
+            "image_alt": "{{ metaobjects.reviews.peter.name.value }}",
+            "quote": "<p>{{ metaobjects.reviews.peter.text | metafield_tag }}</p>",
+            "avatar": "{{ metaobjects.reviews.peter.image_author.value }}",
+            "name": "{{ metaobjects.reviews.peter.author.value }}",
+            "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}",
+            "recommendation": "Purchased the Detangling Spray"
+          }
+        },
+        "review_HjUxMf": {
+          "type": "review",
+          "source": "{{ metaobjects.reviews.peter }}",
+          "settings": {
+            "image": "{{ metaobjects.reviews.peter.image.value }}",
+            "image_alt": "{{ metaobjects.reviews.peter.name.value }}",
+            "quote": "<p>{{ metaobjects.reviews.peter.text | metafield_tag }}</p>",
+            "avatar": "{{ metaobjects.reviews.peter.image_author.value }}",
+            "name": "{{ metaobjects.reviews.peter.author.value }}",
+            "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}",
+            "recommendation": "Purchased the Detangling Spray"
+          }
         }
       },
       "block_order": [
-        "review_mXbAiD"
+        "review_mXbAiD",
+        "review_dNdQrn",
+        "review_fPJJxx",
+        "review_HjUxMf"
       ],
       "settings": {
         "heading": "See What People Say\nAbout Barkin&Meowson",

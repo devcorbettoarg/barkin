@@ -722,6 +722,8 @@ main[data-template="collection"] .active-facets-desktop {
   margin: 0;
   padding-top: 18px;
   border-top: 1px solid rgba(255, 253, 252, .12);
+  margin-bottom:-30px;
+  z-index:2;
 }
 
 main[data-template="collection"] .active-facets-desktop:not(:has(.active-facets__button)) {
@@ -4103,7 +4105,7 @@ main[data-template="collection"] .facets-wrapper {
 
 main[data-template="collection"] .facets-container {
   min-height: 96px;
-  padding-block: 24px 24px 0px ;
+  padding-block: 24px;
   border-bottom: 0;
 }
 

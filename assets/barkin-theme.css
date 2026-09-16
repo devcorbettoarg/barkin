@@ -4275,6 +4275,16 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
 }
 
 @media screen and (max-width: 749px) {
+  .barkin-section.barkin-coats > .barkin-centered-intro {
+    justify-items: start;
+    align-items: start;
+    text-align: left;
+  }
+
+  .barkin-section.barkin-coats > .barkin-centered-intro .barkin-button {
+    justify-self: start;
+  }
+
   main[data-template="product"] .barkin-mosaic__header .barkin-title {
     width: 100%;
     max-width: 300px;

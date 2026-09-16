@@ -4257,6 +4257,26 @@ main[data-template="collection"] .facet-checkbox__text-label {
 }
 
 @media screen and (max-width: 749px) {
+  main[data-template="product"] .product__media-toggle.product__media-zoom-lightbox::before {
+    content: "+";
+    position: absolute;
+    z-index: 3;
+    top: 12px;
+    right: 12px;
+    display: grid;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    border: 1px solid #2D2824;
+    border-radius: 50%;
+    background: transparent;
+    color: #2D2824;
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+  }
+
   .barkin-blog-feature__content,
   .barkin-blog-feature__content .barkin-card-title,
   .barkin-blog-feature__content .barkin-button {

@@ -4421,6 +4421,10 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
 }
 
 @media screen and (max-width: 749px) {
+  .barkin-bundle__grid {
+    display: none;
+  }
+
   main[data-template="collection"] .mobile-facets__open,
   main[data-template="search"] .mobile-facets__open {
     color: #2D2824 !important;

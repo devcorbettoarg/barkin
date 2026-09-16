@@ -4131,6 +4131,43 @@ main[data-template="collection"] .active-facets-desktop::before {
   transform: translateX(-50%);
 }
 
+@media screen and (max-width: 749px) {
+  main[data-template="collection"] .active-facets-mobile {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    margin: 16px 0 0;
+    padding: 16px 20px 0;
+  }
+
+  main[data-template="collection"] .active-facets-mobile::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    content: '';
+    border-top: 1px solid var(--barkin-border);
+    transform: translateX(-50%);
+  }
+
+  main[data-template="collection"] .active-facets-mobile .active-facets__button,
+  main[data-template="collection"] .active-facets-mobile .active-facets__button-remove {
+    padding: 0;
+  }
+
+  main[data-template="collection"] .active-facets-mobile span.active-facets__button-inner {
+    min-height: 32px;
+    padding: 6px 12px;
+    white-space: nowrap;
+  }
+
+  main[data-template="collection"] .active-facets-mobile .active-facets__button-wrapper {
+    margin-left: auto;
+  }
+}
+
 main[data-template="collection"] .facets__form,
 main[data-template="collection"] .facets__display,
 main[data-template="collection"] .facet-filters {

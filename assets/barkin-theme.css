@@ -607,6 +607,8 @@ main[data-template="collection"] .gradient {
 }
 
 main[data-template="collection"] .facets-wrapper {
+    z-index: 2;
+    position: relative;
   width: 100%;
   max-width: none;
   margin: 0;
@@ -723,7 +725,7 @@ main[data-template="collection"] .active-facets-desktop {
   padding-top: 18px;
   border-top: 1px solid rgba(255, 253, 252, .12);
   margin-bottom:-30px;
-  z-index:2;
+  
 }
 
 main[data-template="collection"] .active-facets-desktop:not(:has(.active-facets__button)) {

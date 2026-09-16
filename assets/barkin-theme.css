@@ -3908,6 +3908,9 @@ main[data-template="collection"] .facets__label .facet-checkbox__text,
 main[data-template="collection"] .facets__label .facet-checkbox__text-label {
   color: var(--barkin-ink);
 }
+main[data-template="collection"] .facets__label .facet-checkbox__text {
+  margin-top:2px;
+}
 main[data-template="collection"] .facets__summary .icon-caret,
 main[data-template="collection"] .facets__summary svg,
 main[data-template="collection"] .facet-checkbox > svg,

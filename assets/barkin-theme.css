@@ -4095,7 +4095,23 @@ main[data-template="collection"] .facets-wrapper {
 main[data-template="collection"] .facets-container {
   min-height: 96px;
   padding-block: 24px;
-  border-bottom: 1px solid var(--barkin-border);
+  border-bottom: 0;
+}
+
+/* Keep selected filter pills below the filter separator. */
+main[data-template="collection"] .active-facets-desktop {
+  position: relative;
+  margin-top: 24px;
+  padding-top: 18px;
+}
+
+main[data-template="collection"] .active-facets-desktop::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  content: '';
+  border-top: 1px solid var(--barkin-border);
 }
 
 main[data-template="collection"] .facets__form,

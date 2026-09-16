@@ -47,7 +47,6 @@ class CartDrawer extends HTMLElement {
       { once: true },
     );
 
-    document.body.classList.add('overflow-hidden');
 
     // cart-drawer-items is a CartItems subclass that extends createViewEventElement.
     // Its `view-event-trigger="manual"` skips auto-dispatch on connect; we fire
@@ -58,7 +57,6 @@ class CartDrawer extends HTMLElement {
   close() {
     this.classList.remove('active');
     removeTrapFocus(this.activeElement);
-    document.body.classList.remove('overflow-hidden');
   }
 
   setSummaryAccessibility(cartDrawerNote) {

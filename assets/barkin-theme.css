@@ -4416,6 +4416,11 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
 }
 
 @media screen and (max-width: 749px) {
+  /* Rebuy owns the cart UI; keep Dawn's drawer mounted but invisible. */
+  cart-drawer {
+    display: none !important;
+  }
+
   .barkin-blog-item {
     min-height: 120px;
   }

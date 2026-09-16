@@ -44,7 +44,7 @@
           <div class="barkin-testimonial__content">
             <div class="barkin-testimonial__quote">
               <span aria-hidden="true">“</span>
-              <p>{{ block.settings.quote }}</p>
+              {{ block.settings.quote }}
             </div>
             <div class="barkin-testimonial__buyer">
               <div class="barkin-testimonial__buyer-row">
@@ -105,7 +105,7 @@
       "settings": [
         { "type": "image_picker", "id": "image", "label": "Feature image" },
         { "type": "text", "id": "image_alt", "label": "Image alt", "default": "Pet parents enjoying time with their dog" },
-        { "type": "textarea", "id": "quote", "label": "Review", "default": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier." },
+        { "type": "richtext", "id": "quote", "label": "Review"},
         { "type": "image_picker", "id": "avatar", "label": "Buyer avatar" },
         { "type": "text", "id": "name", "label": "Buyer name", "default": "Alessandra" },
         { "type": "text", "id": "buyer_label", "label": "Buyer label", "default": "Pet Owner" },

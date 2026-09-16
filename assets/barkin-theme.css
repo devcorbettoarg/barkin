@@ -4139,7 +4139,7 @@ main[data-template="collection"] .facet-filters__sort {
   color: var(--barkin-ink);
   font-family: Inter, sans-serif;
   font-size: 1.3rem;
-  line-height: 1.6rem;
+  line-height: 24px;
 }
 
 main[data-template="collection"] .facets__summary {

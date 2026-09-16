@@ -1,13 +1,8 @@
 const restoreBarkinCartIcon = (button) => {
   if (!button?.matches('main[data-template="product"] .product-form__submit')) return;
 
-  let icon = button.querySelector('.barkin-pdp-cart-icon');
-  if (icon?.querySelector('path')) return;
-  if (!icon) {
-    icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    icon.classList.add('barkin-pdp-cart-icon');
-    button.insertBefore(icon, button.querySelector('span'));
-  }
+  const icon = button.querySelector('.barkin-pdp-cart-icon');
+  if (!icon || icon.querySelector('path')) return;
 
   icon.setAttribute('width', '13');
   icon.setAttribute('height', '17');

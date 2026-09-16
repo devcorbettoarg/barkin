@@ -3910,8 +3910,13 @@ main[data-template="collection"] .facet-checkbox > svg,
 main[data-template="collection"] .facet-checkbox .svg-wrapper svg {
   color: var(--barkin-ink);
   stroke: currentColor;
-  width:12px;
-  height:12px;
+  width:10px;
+  transform: translateY(2px);
+  height:10px;
+
+}
+main[data-template="collection"] .facets__summary svg {
+  margin-left:5px;
 }
 main[data-template="collection"] .facet-checkbox input:checked + svg {
   color: var(--barkin-ink);

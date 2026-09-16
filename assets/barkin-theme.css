@@ -4184,7 +4184,7 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-hero__content .barkin-title { font-size: 36px; line-height: 1; 
   max-width:320px;}
    .barkin-hero__content .barkin-title  br {
-    display:none;
+    display:none !important;
    }
   .barkin-copy,
   .barkin-copy p,

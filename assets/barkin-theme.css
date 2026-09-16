@@ -790,7 +790,10 @@ main[data-template="collection"] .mobile-facets__summary .icon-caret,
 main[data-template="collection"] .mobile-facets__arrow {
   color: var(--barkin-gold);
 }
-
+main[data-template="collection"] .mobile-facets__arrow {
+  width:15px;
+  height:15px;
+}
 main[data-template="collection"] .facets__heading {
   display: none;
 }

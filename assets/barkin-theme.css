@@ -4103,7 +4103,7 @@ main[data-template="collection"] .facets-wrapper {
 
 main[data-template="collection"] .facets-container {
   min-height: 96px;
-  padding-block: 24px;
+  padding-block: 24px 24px 0px;
   border-bottom: 0;
 }
 

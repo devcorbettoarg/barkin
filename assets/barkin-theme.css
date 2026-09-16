@@ -4416,6 +4416,11 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
 }
 
 @media screen and (max-width: 749px) {
+  .barkin-blog-feature__content {
+    width: 100%;
+    margin: 20px;
+  }
+
   .barkin-site-footer__brand {
     display: none;
   }

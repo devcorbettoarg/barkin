@@ -96,7 +96,11 @@
         "bundle_3",
         "bundle_4"
       ],
+      "custom_css": [
+        ".barkin-bundle__grid {display: none;}"
+      ],
       "settings": {
+        "mobile_background_image": "shopify://shop_images/Bundle_Mobile.jpg",
         "heading": "Build Your Pet's Routine,\nGet A Discount.",
         "text": "Add up to 6 products and save up to 15% on your bundle.",
         "button_label": "Build Your Bundle",

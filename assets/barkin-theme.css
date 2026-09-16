@@ -4105,7 +4105,7 @@ main[data-template="collection"] .facets-container {
 /* Keep selected filter pills below the filter separator. */
 main[data-template="collection"] .active-facets-desktop {
   position: relative;
-  margin-top: 24px;
+ 
   padding-top: 18px;
 }
 

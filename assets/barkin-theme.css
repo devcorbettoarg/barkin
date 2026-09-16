@@ -1176,11 +1176,6 @@ main[data-template="product"] .quantity__input {
   color: var(--barkin-white);
 }
 
-/* Rebuy owns the cart UI; keep Dawn's drawer mounted but invisible. */
-cart-drawer {
-  display: none !important;
-}
-
 main[data-template="product"] .product-form__submit {
   gap: 8px;
   border-radius: 4px;

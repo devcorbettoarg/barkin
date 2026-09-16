@@ -4182,7 +4182,10 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-about-intro__copy .barkin-title,
   .barkin-mosaic-card--text .barkin-card-title,
   .barkin-hero__content .barkin-title { font-size: 36px; line-height: 1; 
-  max-width:300px;}
+  max-width:320px;}
+   .barkin-hero__content .barkin-title  br {
+    display:none;
+   }
   .barkin-copy,
   .barkin-copy p,
   .barkin-showcase .barkin-copy,

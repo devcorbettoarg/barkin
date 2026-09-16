@@ -4275,6 +4275,11 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
 }
 
 @media screen and (max-width: 749px) {
+  main[data-template="product"] .barkin-mosaic__header .barkin-title {
+    width: 100%;
+    max-width: 300px;
+  }
+
   main[data-template="product"] .thumbnail-slider,
   main[data-template="product"] .thumbnail-list {
     display: none;
@@ -4292,6 +4297,12 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
     display: flex;
     width: 100%;
     margin: 0 0 20px;
+    color: #2D2824;
+  }
+
+  main[data-template="product"] .barkin-product-breadcrumb--mobile a,
+  main[data-template="product"] .barkin-product-breadcrumb--mobile span {
+    color: #2D2824;
   }
 
   main[data-template="product"] .share-button {
@@ -4315,8 +4326,10 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
 
   main[data-template="product"] barkin-gallery-controls {
     bottom: 20px;
+    width:100%;
     padding: 6px 10px;
   }
+
 
   main[data-template="product"] .barkin-gallery-dot {
     width: 32px;

@@ -4256,7 +4256,83 @@ main[data-template="collection"] .facet-checkbox__text-label {
   border-color: #FFFDFC !important;
 }
 
+main[data-template="product"] .product-form__submit {
+  border-color: #2D2824;
+  background: #2D2824;
+  color: #FFFDFC;
+}
+
+main[data-template="product"] .product-form__submit .barkin-pdp-cart-icon {
+  display: block;
+  flex: 0 0 auto;
+  width: 13px;
+  height: 17px;
+  color: #FFFDFC;
+}
+
+main[data-template="product"] .barkin-product-breadcrumb--mobile {
+  display: none;
+}
+
 @media screen and (max-width: 749px) {
+  main[data-template="product"] .thumbnail-slider,
+  main[data-template="product"] .thumbnail-list {
+    display: none;
+  }
+
+  main[data-template="product"] .product__media-icon.product__media-icon--lightbox {
+    left: auto;
+  }
+
+  main[data-template="product"] .barkin-product-breadcrumb--desktop {
+    display: none;
+  }
+
+  main[data-template="product"] .barkin-product-breadcrumb--mobile {
+    display: flex;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  main[data-template="product"] .share-button {
+    display: none;
+  }
+
+  main[data-template="product"] .product__info-container .product-form__submit,
+  main[data-template="product"] .product-form__submit {
+    min-height: 39px;
+    border-color: #2D2824;
+    background: #2D2824;
+    color: #FFFDFC;
+  }
+
+  main[data-template="product"] .product-form__submit .barkin-pdp-cart-icon {
+    display: block;
+    width: 13px;
+    height: 17px;
+    color: #FFFDFC;
+  }
+
+  main[data-template="product"] barkin-gallery-controls {
+    bottom: 20px;
+    padding: 6px 10px;
+  }
+
+  main[data-template="product"] .barkin-gallery-dot {
+    width: 32px;
+    height: 32px;
+  }
+
+  main[data-template="product"] .barkin-gallery-dot::before {
+    width: 10px;
+    height: 10px;
+  }
+
+  main[data-template="product"] .barkin-gallery-dot[aria-current="true"]::before {
+    width: 14px;
+    height: 14px;
+  }
+
   main[data-template="product"] .product__media-icon.product__media-icon--lightbox {
     top: 12px;
     right: 12px;

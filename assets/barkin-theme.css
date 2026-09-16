@@ -4181,7 +4181,8 @@ main[data-template="collection"] .facet-checkbox__text-label {
   .barkin-title2,
   .barkin-about-intro__copy .barkin-title,
   .barkin-mosaic-card--text .barkin-card-title,
-  .barkin-hero__content .barkin-title { font-size: 36px; line-height: 1; }
+  .barkin-hero__content .barkin-title { font-size: 36px; line-height: 1; 
+  max-width:300px;}
   .barkin-copy,
   .barkin-copy p,
   .barkin-showcase .barkin-copy,
@@ -4270,6 +4271,17 @@ main[data-template="product"] .product-form__submit .barkin-pdp-cart-icon {
   height: 17px;
   color: #FFFDFC !important;
   fill: #FFFDFC !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+main[data-template="product"] .product-form__submit.loading {
+  color: #FFFDFC !important;
+}
+
+main[data-template="product"] .product-form__submit.loading .barkin-pdp-cart-icon {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 main[data-template="product"] .product__info-container .product-form__submit,

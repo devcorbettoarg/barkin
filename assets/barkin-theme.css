@@ -4268,7 +4268,16 @@ main[data-template="product"] .product-form__submit .barkin-pdp-cart-icon {
   flex: 0 0 auto;
   width: 13px;
   height: 17px;
-  color: #FFFDFC;
+  color: #FFFDFC !important;
+  fill: #FFFDFC !important;
+}
+
+main[data-template="product"] .product__info-container .product-form__submit,
+main[data-template="product"] .product__info-container .product-form__submit span,
+main[data-template="product"] .product__info-container .product-form__submit .barkin-pdp-cart-icon,
+main[data-template="product"] .product__info-container .product-form__submit .barkin-pdp-cart-icon path {
+  color: #FFFDFC !important;
+  fill: #FFFDFC !important;
 }
 
 main[data-template="product"] .barkin-product-breadcrumb--mobile {

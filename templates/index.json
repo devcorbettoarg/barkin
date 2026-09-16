@@ -504,7 +504,8 @@
             "quote": "{{ metaobjects.reviews.peter.text | metafield_tag }}",
             "avatar": "{{ metaobjects.reviews.peter.image_author.value }}",
             "name": "{{ metaobjects.reviews.peter.author.value }}",
-            "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}"
+            "buyer_label": "{{ metaobjects.reviews.peter.rol.value }}",
+            "recommendation": "Purchased the Detangling Spray"
           }
         },
         "review_dNdQrn": {

@@ -4416,6 +4416,18 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
 }
 
 @media screen and (max-width: 749px) {
+  main[data-template="collection"] .mobile-facets__label > svg,
+  main[data-template="search"] .mobile-facets__label > svg {
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px !important;
+    min-height: 16px !important;
+    max-width: 16px !important;
+    max-height: 16px !important;
+    flex: 0 0 16px !important;
+    margin-right: 12px;
+  }
+
   .barkin-bundle__grid {
     display: none;
   }

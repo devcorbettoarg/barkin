@@ -4133,7 +4133,7 @@ main[data-template="collection"] .active-facets-desktop::before {
 
 @media screen and (max-width: 749px) {
   .product-count__text  {
-    opacity:0.6;
+    opacity:0.6; 
   }
   main[data-template="collection"] .mobile-facets__open > .svg-wrapper,
   main[data-template="search"] .mobile-facets__open > .svg-wrapper {

@@ -4145,6 +4145,13 @@ main[data-template="collection"] .active-facets-desktop::before {
     margin-left: 0;
   }
 
+  main[data-template="collection"] .mobile-facets__open > .mobile-facets__open-label::after,
+  main[data-template="search"] .mobile-facets__open > .mobile-facets__open-label::after {
+    display: inline-block;
+    margin-left: 8px;
+    content: '→';
+  }
+
   main[data-template="collection"] .active-facets-mobile {
     position: relative;
     display: none;

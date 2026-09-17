@@ -3249,7 +3249,9 @@ body,
 .barkin-guarantees { background: var(--barkin-paper); }
 .barkin-social { background: var(--barkin-white); }
 .barkin-faq { background: var(--barkin-paper); }
-
+.barkin-journal__utilities .opacity6 {
+  opacity:0.6;
+}
 .barkin-journal__toolbar { background: var(--barkin-white); border-color: var(--barkin-border); }
 .barkin-journal__filter,
 .barkin-journal__utilities,

@@ -3799,7 +3799,10 @@ body { background: var(--barkin-white); color: var(--barkin-ink); }
 .barkin-section, .barkin-social, .barkin-faq, .barkin-guarantees, .barkin-about-intro, .barkin-values--checkerboard { background: var(--barkin-white); border-color: var(--barkin-border); color: var(--barkin-ink); }
 .barkin-guarantees, .barkin-faq { background: var(--barkin-paper); }
 .barkin-journal__toolbar { background: var(--barkin-white); border-color: var(--barkin-border); }
-.barkin-journal__filter, .barkin-journal__utilities, .barkin-journal-card__topline, .barkin-journal-card__footer { color: var(--barkin-muted); }
+.barkin-journal__filter, .barkin-journal__utilities {
+ color: var(--barkin-muted2);
+}
+ .barkin-journal-card__topline, .barkin-journal-card__footer { color: var(--barkin-muted); }
 .barkin-journal__filter:hover, .barkin-journal__filter.is-active, .barkin-journal-card__title a { color: var(--barkin-ink); }
 .barkin-journal-card { background: var(--barkin-white); border-color: var(--barkin-border); border-radius: 0; }
 .barkin-journal-card__content { border-color: var(--barkin-border); }

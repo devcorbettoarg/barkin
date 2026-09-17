@@ -4256,7 +4256,9 @@ main[data-template="collection"] .facet-checkbox__text-label {
   main[data-template="collection"] .facets-wrapper {
     width:100%;
   }
-
+  main[data-template="collection"] .facets-wrapper {
+    border-bottom: 1px solid var(--barkin-border);
+  }
   main[data-template="collection"] .facets-container {
     min-height: 0;
     padding-block: 14px;

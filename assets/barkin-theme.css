@@ -3781,7 +3781,7 @@ body { background: var(--barkin-white); color: var(--barkin-ink); }
   border-color: var(--barkin-white);
 }
 .barkin-journal-hero__content .barkin-button--outline  {
-  max-width:content;
+  max-width:max-content;
   max-height:28px;
 }
 .barkin-hero__content .barkin-button--outline:hover,

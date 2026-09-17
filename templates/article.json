@@ -54,7 +54,17 @@
           "settings": {
             "product": "curly-coat-detangling-dog-shampoo",
             "fallback_asset": "product-dental.webp",
-            "title": "Gentle Care Shampoo",
+            "title": "",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_YXhjbR": {
+          "type": "product",
+          "settings": {
+            "product": "dark-coat-shampoo-dog-cat",
+            "fallback_asset": "product-dental.webp",
+            "title": "",
             "price": "$19.95",
             "link": ""
           }
@@ -64,7 +74,8 @@
         "product_dmRfJi",
         "product_DTqMUt",
         "product_kn8PCn",
-        "product_xGt8dj"
+        "product_xGt8dj",
+        "product_YXhjbR"
       ],
       "name": "Barkin product showcase",
       "settings": {

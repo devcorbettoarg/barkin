@@ -4148,62 +4148,8 @@ main[data-template="collection"] .active-facets-desktop::before {
   main[data-template="collection"] .mobile-facets__open > .mobile-facets__open-label::after,
   main[data-template="search"] .mobile-facets__open > .mobile-facets__open-label::after {
     display: inline-block;
-    width: 7px;
-    height: 7px;
-    margin: 0 0 3px 8px;
-    content: '';
-    border-right: 1.5px solid currentColor;
-    border-bottom: 1.5px solid currentColor;
-    transform: rotate(45deg);
-  }
-
-  main[data-template="collection"] .facets-container,
-  main[data-template="search"] .facets-container {
-    position: relative;
-    display: block;
-    padding: 0;
-  }
-
-  main[data-template="collection"] .mobile-facets__wrapper,
-  main[data-template="search"] .mobile-facets__wrapper {
-    display: block;
-    width: 100%;
-  }
-
-  main[data-template="collection"] .mobile-facets__open-wrapper,
-  main[data-template="search"] .mobile-facets__open-wrapper {
-    display: block;
-    height: 54px;
-    border-top: 1px solid rgba(45, 40, 36, .25);
-    border-bottom: 1px solid rgba(45, 40, 36, .25);
-  }
-
-  main[data-template="collection"] .mobile-facets__open,
-  main[data-template="search"] .mobile-facets__open {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 20px;
-    color: var(--barkin-ink);
-    font: 500 16px/18px Inter, sans-serif;
-    letter-spacing: -.16px;
-  }
-
-  main[data-template="collection"] .facets-container > .product-count,
-  main[data-template="search"] .facets-container > .product-count {
-    position: absolute;
-    top: 18px;
-    right: 20px;
-    margin: 0;
-  }
-
-  main[data-template="collection"] .facets-container > .product-count__text,
-  main[data-template="search"] .facets-container > .product-count__text,
-  main[data-template="collection"] .facets-container > .product-count .product-count__text,
-  main[data-template="search"] .facets-container > .product-count .product-count__text {
-    color: rgba(45, 40, 36, .25);
-    font: 500 16px/18px Inter, sans-serif;
-    letter-spacing: -.16px;
+    margin-left: 8px;
+    content: '→';
   }
 
   main[data-template="collection"] .active-facets-mobile {

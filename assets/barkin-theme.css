@@ -4134,7 +4134,7 @@ main[data-template="collection"] .active-facets-desktop::before {
 @media screen and (max-width: 749px) {
   main[data-template="collection"] .active-facets-mobile {
     position: relative;
-    display: flex;
+    display: none;
     gap: 8px;
     align-items: center;
     width: 100%;

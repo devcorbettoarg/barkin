@@ -16,77 +16,81 @@
         "share_label": "Share This Post"
       }
     },
-    "related_products": {
-      "type": "barkin-article-products",
-      "custom_css": [
-        "{background: black;}"
-      ],
-      "settings": {
-        "collection": "pet-shampoos-conditioners",
-        "heading": "Explore Products\nRelated To This Post.",
-        "text": "Discover products selected to support your pet’s care routine.",
-        "button_label": "Shop All Products",
-        "button_link": "",
-        "products_to_show": 4
-      }
-    },
-    "barkin_blog_guide_PAct8a": {
-      "type": "barkin-blog-guide",
+    "barkin_product_showcase_h8DVEK": {
+      "type": "barkin-product-showcase",
       "blocks": {
-        "article_nkHRqx": {
-          "type": "article",
+        "product_dmRfJi": {
+          "type": "product",
           "settings": {
-            "article": "",
-            "image": "shopify://shop_images/blog-1.jpg",
-            "fallback_asset": "blog-1.webp",
-            "tag": "Pet Grooming",
-            "title": "How to Start Your Puppy's First At-Home Bath.",
+            "product": "light-coat-pet-brightening-shampoo",
+            "fallback_asset": "product-black.webp",
+            "title": "Gentle Care Shampoo",
+            "price": "$19.95",
             "link": ""
           }
         },
-        "article_Wjc8xe": {
-          "type": "article",
+        "product_DTqMUt": {
+          "type": "product",
           "settings": {
-            "article": "",
-            "image": "shopify://shop_images/blog-2.jpg",
-            "fallback_asset": "blog-2.webp",
-            "tag": "Pet Grooming",
-            "title": "Can You Use Human Shampoo on Dogs & Cats?",
+            "product": "cats-kittens-shampoo",
+            "fallback_asset": "product-white.webp",
+            "title": "Gentle Care Shampoo",
+            "price": "$19.95",
             "link": ""
           }
         },
-        "article_zYLUz8": {
-          "type": "article",
+        "product_kn8PCn": {
+          "type": "product",
           "settings": {
-            "article": "",
-            "image": "shopify://shop_images/blog-3.jpg",
-            "fallback_asset": "blog-3.webp",
-            "tag": "Pet Grooming",
-            "title": "What’s the right shampoo for my pet’s coat type?",
+            "product": "chlorhexidine-dry-foam-shampoo-dog-cat",
+            "fallback_asset": "product-spray.webp",
+            "title": "Gentle Care Shampoo",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_xGt8dj": {
+          "type": "product",
+          "settings": {
+            "product": "curly-coat-detangling-dog-shampoo",
+            "fallback_asset": "product-dental.webp",
+            "title": "Gentle Care Shampoo",
+            "price": "$19.95",
             "link": ""
           }
         }
       },
       "block_order": [
-        "article_nkHRqx",
-        "article_Wjc8xe",
-        "article_zYLUz8"
+        "product_dmRfJi",
+        "product_DTqMUt",
+        "product_kn8PCn",
+        "product_xGt8dj"
       ],
+      "name": "Barkin product showcase",
+      "settings": {
+        "heading": "Explore Products\nRelated To This Post.",
+        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
+        "mobile_text_alignment": "left",
+        "button_label": "Shop All Products",
+        "button_link": "",
+        "carousel_label": "Best selling products",
+        "pagination_label": "Choose carousel position"
+      }
+    },
+    "barkin_blog_guide_PAct8a": {
+      "type": "barkin-blog-guide",
       "settings": {
         "heading": "Barkin&Meowson’s\nPet-Care Guide.",
         "text": "Practical guides for healthier skin, better coats and happier pets.",
+        "blog": "",
         "button_label": "View Full Blog",
-        "button_link": "",
-        "feature_image": "shopify://shop_images/Frame_14.jpg",
-        "feature_title": "How Natural Flea & Tick Protection Works.",
-        "feature_link": "",
         "article_label": "Read Article"
       }
     }
   },
   "order": [
     "main",
-    "related_products",
+    "barkin_product_showcase_h8DVEK",
     "barkin_blog_guide_PAct8a"
   ]
 }

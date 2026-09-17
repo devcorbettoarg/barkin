@@ -2760,7 +2760,9 @@ background: rgba(0, 0, 0, 0.35);
 .barkin-journal__filter:hover, .barkin-journal__filter.is-active { color: var(--barkin-white); }
 .barkin-journal__utilities { display: flex; flex: none; align-items: center; 
   gap: 28px; color: rgba(255,253,252,.55); font-size: 16px; line-height: 1.6rem; white-space: nowrap; }
-.barkin-journal__sort::after { content: "⌄"; margin-left: 5px; color: var(--barkin-white); }
+.barkin-journal__sort::after { content: "⌄"; margin-left: 5px; color: var(--barkin-white); 
+position:relative;
+top:-4px;}
 
 .barkin-journal__grid {
   display: grid;

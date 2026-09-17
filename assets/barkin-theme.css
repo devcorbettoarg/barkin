@@ -4148,8 +4148,13 @@ main[data-template="collection"] .active-facets-desktop::before {
   main[data-template="collection"] .mobile-facets__open > .mobile-facets__open-label::after,
   main[data-template="search"] .mobile-facets__open > .mobile-facets__open-label::after {
     display: inline-block;
-    margin-left: 8px;
-    content: '→';
+    width: 7px;
+    height: 7px;
+    margin: 0 0 3px 8px;
+    content: "";
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg);
   }
 
   main[data-template="collection"] .active-facets-mobile {

@@ -3230,7 +3230,7 @@ body,
 .barkin-title { color: inherit; 
   font-family: "DM Serif Display", Georgia, serif; font-weight: 400;
     }
-.barkin-copy { color: var(--barkin-muted); }
+.barkin-copy { color: var(--barkin-black); }
 
 
 .barkin-journal-hero { border-block: 1px solid var(--barkin-border); background: var(--barkin-paper); }

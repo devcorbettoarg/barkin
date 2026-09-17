@@ -3204,7 +3204,7 @@ body,
 .barkin-shell,
 .barkin-centered-intro,
 .barkin-section > .barkin-shell {
-  width: min(1440px, calc(100% - 160px));
+  width: min(1440px, calc(100% - 80px));
   margin-inline: auto;
 }
 

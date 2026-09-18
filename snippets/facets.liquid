@@ -345,7 +345,8 @@
           </div>
           {% comment %} Pills after filtes on filter type horizontal {% endcomment %}
           {%- if filter_type == 'horizontal' -%}
-            {% capture active_facets_markup %}
+            </div>
+            <div class="facets-divider" aria-hidden="true"></div>
             <div class="active-facets active-facets-desktop">
               {%- for filter in results.filters -%}
                 {%- for value in filter.active_values -%}
@@ -385,7 +386,6 @@
                 </a>
               </facet-remove>
             </div>
-            {% endcapture %}
           {%- endif -%}
         {% endif %}
 
@@ -638,7 +638,8 @@
                                             | image_url: width: 300
                                             | image_tag: class: 'facets__image', alt: value.alt
                                           }}
-                                    {%- endif -%}
+                                          {%- endif -%}
+                                        </div>
                                     {%- else -%}
                                       <span class="mobile-facets__highlight"></span>
                                       {{- 'square.svg' | inline_asset_content -}}

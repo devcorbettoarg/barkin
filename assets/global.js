@@ -488,6 +488,9 @@ class MenuDrawer extends HTMLElement {
     summaryElement.setAttribute('aria-expanded', true);
     trapFocus(this.mainDetailsToggle, summaryElement);
     document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
+    if (this.classList.contains('mobile-facets__wrapper')) {
+      document.body.classList.add('mobile-facets-open');
+    }
   }
 
   closeMenuDrawer(event, elementToFocus = false) {
@@ -502,6 +505,9 @@ class MenuDrawer extends HTMLElement {
       submenu.classList.remove('submenu-open');
     });
     document.body.classList.remove(`overflow-hidden-${this.dataset.breakpoint}`);
+    if (this.classList.contains('mobile-facets__wrapper')) {
+      document.body.classList.remove('mobile-facets-open');
+    }
     removeTrapFocus(elementToFocus);
     this.closeAnimation(this.mainDetailsToggle);
 

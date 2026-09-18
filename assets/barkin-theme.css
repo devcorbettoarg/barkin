@@ -633,6 +633,9 @@ main[data-template="collection"] .facets-controls {
   grid-column: 1 / -1;
   grid-template-columns: minmax(0, 1fr) max-content max-content;
   row-gap: 18px;
+}
+
+main[data-template="collection"] facet-filters-form {
   padding: 20px 0;
   border-bottom: 1px solid var(--barkin-border);
 }

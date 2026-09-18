@@ -612,7 +612,6 @@ main[data-template="collection"] .facets-wrapper {
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 0 max(5vw, calc((100vw - 1440px) / 2));
   border-block: 1px solid var(--barkin-border);
 }
 

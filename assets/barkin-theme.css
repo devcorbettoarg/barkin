@@ -621,9 +621,8 @@ main[data-template="collection"] .facets-container {
 }
 
 main[data-template="collection"] .facets__form {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) max-content max-content;
-  row-gap: 18px;
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 

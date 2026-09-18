@@ -46,6 +46,9 @@
         {%- endif -%}
 
         {% if enable_filtering %}
+          {%- if filter_type == 'horizontal' -%}
+            <div class="facets-controls">
+          {%- endif -%}
           {% comment %} Heading is the first tabbable element on filter type horizontal {% endcomment %}
           <div
             id="FacetsWrapperDesktop"
@@ -405,6 +408,9 @@
             </h2>
             {%- render 'loading-spinner' -%}
           </div>
+        {%- if filter_type == 'horizontal' -%}
+          </div>
+        {%- endif -%}
         {%- if filter_type == 'horizontal' -%}
           {% comment %} Sorting and product count are the last elements when filter type is horizontal {% endcomment %}
           {%- if enable_sorting -%}

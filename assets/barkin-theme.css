@@ -628,6 +628,10 @@ main[data-template="collection"] .facets__form {
   margin: 0;
 }
 
+main[data-template="collection"] .facets-controls {
+  display: contents;
+}
+
 main[data-template="collection"] .facets__wrapper {
   gap: 32px;
   flex-wrap: nowrap;
@@ -774,6 +778,10 @@ main[data-template="collection"] .active-facets__button-remove {
 
 main[data-template="collection"] .product-count__text {
   color: rgba(255, 253, 252, .72);
+}
+
+main[data-template="collection"] #ProductCountDesktop {
+  color: var(--barkin-ink);
 }
 
 main[data-template="collection"] .mobile-facets__inner,

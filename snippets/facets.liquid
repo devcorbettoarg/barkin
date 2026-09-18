@@ -45,10 +45,10 @@
           <input name="options[prefix]" type="hidden" value="last">
         {%- endif -%}
 
+        {%- if filter_type == 'horizontal' -%}
+          <div class="facets-controls">
+        {%- endif -%}
         {% if enable_filtering %}
-          {%- if filter_type == 'horizontal' -%}
-            <div class="facets-controls">
-          {%- endif -%}
           {% comment %} Heading is the first tabbable element on filter type horizontal {% endcomment %}
           <div
             id="FacetsWrapperDesktop"
@@ -700,7 +700,7 @@
                     {% when 'price_range' %}
                       <details
                         id="Details-Mobile-{{ filter.param_name | escape }}-{{ section.id }}"
-                        class="mobile-facets__details js-filter"
+                        class="mobile-facets__details mobile-facets__details--price js-filter"
                         data-index="mobile-{{ forloop.index }}"
                       >
                         <summary class="mobile-facets__summary focus-inset">

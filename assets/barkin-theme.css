@@ -9,6 +9,10 @@
 
 /* Figma 1:5331 — mobile collection filter drawer. */
 @media screen and (max-width: 749px) {
+  main[data-template="collection"] .mobile-facets__details--price {
+    display: none;
+  }
+
   main[data-template="collection"] .mobile-facets__wrapper .disclosure-has-popup[open] > summary::before {
     background: rgba(255, 253, 252, 0.5);
   }

@@ -638,11 +638,7 @@
                                             | image_url: width: 300
                                             | image_tag: class: 'facets__image', alt: value.alt
                                           }}
-          {%- endif -%}
-          </div>
-          <div class="facets-divider" aria-hidden="true"></div>
-          {{ active_facets_markup }}
-        </div>
+                                    {%- endif -%}
                                     {%- else -%}
                                       <span class="mobile-facets__highlight"></span>
                                       {{- 'square.svg' | inline_asset_content -}}

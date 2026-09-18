@@ -9,6 +9,10 @@
 
 /* Figma 1:5331 — mobile collection filter drawer. */
 @media screen and (max-width: 749px) {
+  .section-header.shopify-section-group-header-group {
+    z-index: 1;
+  }
+
   main[data-template="collection"] .mobile-facets__details--price {
     display: none;
   }

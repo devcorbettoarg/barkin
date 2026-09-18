@@ -7,6 +7,270 @@
   --barkin-border: rgba(255, 253, 252, 0.25);
 }
 
+/* Figma 1:5331 — mobile collection filter drawer. */
+@media screen and (max-width: 749px) {
+  main[data-template="collection"] .mobile-facets__wrapper .disclosure-has-popup[open] > summary::before {
+    background: rgba(255, 253, 252, 0.5);
+  }
+
+  main[data-template="collection"] .mobile-facets__inner {
+    width: calc(100vw - 70px);
+    min-width: 280px;
+    max-width: 360px;
+    height: 100dvh;
+    background: #fffdfc;
+    border-left: 1px solid rgba(45, 40, 36, 0.65);
+    filter: none;
+    overflow: hidden;
+  }
+
+  main[data-template="collection"] .mobile-facets__header {
+    position: relative;
+    flex: 0 0 78px;
+    min-height: 78px;
+    padding: 36px 20px 20px;
+    border-bottom: 0;
+    background: #fffdfc;
+    text-align: left;
+  }
+
+  main[data-template="collection"] .mobile-facets__header::after {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+    height: 1px;
+    content: "";
+    background: rgba(45, 40, 36, 0.65);
+  }
+
+  main[data-template="collection"] .mobile-facets__heading {
+    margin: 0;
+    color: #2d2824;
+    font: 400 20px/24px Inter, var(--font-body-family), sans-serif;
+    letter-spacing: -0.4px;
+    text-align: left;
+  }
+
+  main[data-template="collection"] .mobile-facets__count {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  main[data-template="collection"] .mobile-facets__close {
+    top: 22px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  main[data-template="collection"] .mobile-facets__close .svg-wrapper {
+    width: 15px;
+    height: 15px;
+  }
+
+  main[data-template="collection"] .mobile-facets__main {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 0;
+    padding: 0 0 76px;
+    overflow-y: auto;
+    background: #fffdfc;
+  }
+
+  main[data-template="collection"] #Details-Mobile-SortBy-collection,
+  main[data-template="collection"] .mobile-facets__main > .mobile-facets__details:not([data-filter-param]) {
+    order: -1;
+  }
+
+  main[data-template="collection"] .mobile-facets__main > div.mobile-facets__details {
+    order: -1;
+    border-bottom: 1px solid rgba(45, 40, 36, 0.65);
+  }
+
+  main[data-template="collection"] .mobile-facets__main > div.mobile-facets__details .mobile-facets__summary {
+    min-height: 29px;
+    padding: 6px 20px 7px;
+  }
+
+  main[data-template="collection"] .mobile-facets__sort {
+    align-items: center;
+    color: #2d2824;
+    font: 400 12px/16px Inter, var(--font-body-family), sans-serif;
+  }
+
+  main[data-template="collection"] .mobile-facets__sort .select {
+    width: 156px;
+  }
+
+  main[data-template="collection"] .mobile-facets__sort .select__select {
+    width: 100%;
+    height: 16px;
+    min-height: 16px;
+    padding: 0 22px 0 0;
+    margin: 0;
+    color: #2d2824;
+    font: inherit;
+    text-align: left;
+  }
+
+  main[data-template="collection"] .mobile-facets__sort .select .icon-caret {
+    right: 0;
+    width: 7px;
+    height: 7px;
+  }
+
+  main[data-template="collection"] .mobile-facets__details[data-filter-param] {
+    flex: 0 0 auto;
+  }
+
+  main[data-template="collection"] .mobile-facets__details[data-filter-param] > .mobile-facets__summary {
+    min-height: 64px;
+    padding: 37px 20px 11px;
+    color: #2d2824;
+    font: 400 12px/16px Inter, var(--font-body-family), sans-serif;
+  }
+
+  main[data-template="collection"] .mobile-facets__details[data-filter-param] .mobile-facets__arrow {
+    width: 7px;
+    height: 7px;
+    transform: rotate(90deg);
+  }
+
+  main[data-template="collection"] .mobile-facets__details[data-filter-param][open] .mobile-facets__arrow {
+    transform: rotate(-90deg);
+  }
+
+  .js main[data-template="collection"] .mobile-facets__details[data-filter-param] > .mobile-facets__submenu {
+    position: static;
+    display: block;
+    width: auto;
+    min-height: 0;
+    visibility: visible;
+    transform: none;
+  }
+
+  main[data-template="collection"] .mobile-facets__close-button,
+  main[data-template="collection"] .mobile-facets__submenu > .mobile-facets__footer {
+    display: none;
+  }
+
+  main[data-template="collection"] .mobile-facets__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  main[data-template="collection"] .mobile-facets__item {
+    width: auto;
+  }
+
+  main[data-template="collection"] .mobile-facets__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    min-height: 33px;
+    padding: 7px 16px 8px 12px;
+    color: rgba(45, 40, 36, 0.65) !important;
+    background: rgba(45, 40, 36, 0.02);
+    border: 1px solid rgba(45, 40, 36, 0.65);
+    border-radius: 4px;
+    font: 400 12px/16px Inter, var(--font-body-family), sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  main[data-template="collection"] .mobile-facets__label.active,
+  main[data-template="collection"] .mobile-facets__label:has(.mobile-facets__checkbox:checked) {
+    color: #fffdfc !important;
+    background: #ceaa68;
+    border-color: #ceaa68;
+  }
+
+  main[data-template="collection"] .mobile-facets__label.active *,
+  main[data-template="collection"] .mobile-facets__label:has(.mobile-facets__checkbox:checked) * {
+    color: #fffdfc !important;
+  }
+
+  main[data-template="collection"] input.mobile-facets__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  main[data-template="collection"] .mobile-facets__label > svg,
+  main[data-template="collection"] .mobile-facets__highlight {
+    display: none !important;
+  }
+
+  main[data-template="collection"] .mobile-facets__label .facet-checkbox__text {
+    margin: 0;
+    padding: 0;
+    color: inherit !important;
+    line-height: 16px;
+  }
+
+  main[data-template="collection"] .mobile-facets__label.disabled {
+    opacity: 0.45;
+  }
+
+  main[data-template="collection"] .mobile-facets__main > .mobile-facets__footer {
+    position: sticky;
+    z-index: 5;
+    bottom: -76px;
+    display: flex;
+    flex: 0 0 76px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    margin-top: auto;
+    background: #fffdfc;
+    border-top: 0;
+  }
+
+  main[data-template="collection"] .mobile-facets__main > .mobile-facets__footer > * {
+    width: auto;
+    margin: 0;
+  }
+
+  main[data-template="collection"] .mobile-facets__clear {
+    color: #2d2824 !important;
+    font: 400 12px/16px Inter, var(--font-body-family), sans-serif;
+    text-decoration: none;
+  }
+
+  main[data-template="collection"] .mobile-facets__main > .mobile-facets__footer .barkin-button {
+    width: 93px;
+    min-width: 93px;
+    min-height: 28px;
+    padding: 5px 10px;
+    color: #2d2824 !important;
+    background: #fffdfc;
+    border: 0.8px solid #2d2824;
+    border-radius: 4px;
+    font: 400 12px/16px Inter, var(--font-body-family), sans-serif;
+  }
+}
+
 .announcement-bar-section .utility-bar {
   min-height: 30px;
   background: var(--barkin-gold);

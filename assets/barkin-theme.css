@@ -4236,19 +4236,6 @@ main[data-template="collection"] .facets-divider {
   transform: translateX(-50%);
 }
 
-main[data-template="collection"] .active-facets-desktop::before {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100vw;
-  content: '';
-  border-top: 1px solid var(--barkin-border);
-  transform: translateX(-50%);
-}
-  border-top: 1px solid var(--barkin-border);
-  transform: translateX(-50%);
-}
-
 main[data-template="collection"] .facets__form > .active-facets-desktop {
   grid-row: 3;
 }

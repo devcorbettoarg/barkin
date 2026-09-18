@@ -633,6 +633,12 @@ main[data-template="collection"] .facets__wrapper {
   flex-wrap: nowrap;
 }
 
+main[data-template="collection"] .facets__form > .product-count {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+}
+
 main[data-template="collection"] .facets__disclosure {
   margin: 0;
 }

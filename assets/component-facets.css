@@ -1111,7 +1111,7 @@ input.mobile-facets__checkbox {
   margin: 0;
 }
 #ProductCountDesktop {
-  color: var(--barkin-white);
+  color: var(--barkin-black);
 
 }
 #ProductCountDesktop.loading,

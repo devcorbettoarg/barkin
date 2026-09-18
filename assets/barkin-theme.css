@@ -629,7 +629,12 @@ main[data-template="collection"] .facets__form {
 }
 
 main[data-template="collection"] .facets-controls {
-  display: contents;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1fr) max-content max-content;
+  row-gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--barkin-border);
 }
 
 main[data-template="collection"] .facets__wrapper {
@@ -637,7 +642,7 @@ main[data-template="collection"] .facets__wrapper {
   flex-wrap: nowrap;
 }
 
-main[data-template="collection"] .facets__form > .product-count {
+main[data-template="collection"] .facets-controls > .product-count {
   grid-column: 2;
   grid-row: 1;
   align-self: center;

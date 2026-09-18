@@ -536,10 +536,20 @@
                         id="Details-Mobile-{{ filter.param_name | escape }}-{{ section.id }}"
                         class="mobile-facets__details js-filter"
                         data-index="mobile-{{ forloop.index }}"
+                        data-filter-param="{{ filter.param_name | escape }}"
+                        open
                       >
                         <summary class="mobile-facets__summary focus-inset">
                           <div>
-                            <span>{{ filter.label | escape }}</span>
+                            <span>
+                              {%- if filter.param_name == 'filter.p.product_type' -%}
+                                Filter by Product
+                              {%- elsif filter.label == 'Problem' -%}
+                                Filter by Problem
+                              {%- else -%}
+                                {{ filter.label | escape }}
+                              {%- endif -%}
+                            </span>
                             <span class="mobile-facets__arrow">
                               {{- 'icon-arrow.svg' | inline_asset_content -}}
                             </span>
@@ -563,6 +573,20 @@
                             {%- endif -%}
                           </button>
                           <ul class="{{ visual_layout_class }} mobile-facets__list list-unstyled" role="list">
+                            {%- if filter.param_name == 'filter.p.product_type' -%}
+                              <li class="mobile-facets__item mobile-facets__item--all-products list-menu__item">
+                                <facet-remove>
+                                  <a
+                                    href="{{ filter.url_to_remove }}"
+                                    class="mobile-facets__label mobile-facets__all-products{% if filter.active_values == empty %} active{% endif %}"
+                                  >
+                                    <span class="facet-checkbox__text">
+                                      <span class="facet-checkbox__text-label">All Products</span>
+                                    </span>
+                                  </a>
+                                </facet-remove>
+                              </li>
+                            {%- endif -%}
                             {%- liquid
                               assign sorted_values = filter.values
                               # Keep the selected values grouped together when operator is AND

@@ -639,6 +639,12 @@ main[data-template="collection"] facet-filters-form {
   border-bottom: 1px solid var(--barkin-border);
 }
 
+@media screen and (min-width: 750px) {
+  main[data-template="collection"] facet-filters-form {
+    padding-inline: 80px;
+  }
+}
+
 main[data-template="collection"] .facets__wrapper {
   gap: 32px;
   flex-wrap: nowrap;

@@ -637,7 +637,7 @@ main[data-template="collection"] .facets-controls {
 }
 
 @media screen and (min-width: 750px) {
-  main[data-template="collection"] facet-filters-form {
+  main[data-template="collection"] facet-filters-form .facets-control {
     padding-inline: 80px;
   }
 }
@@ -4249,15 +4249,6 @@ main[data-template="collection"] .active-facets-desktop {
   position: relative;
  
   padding-top: 18px;
-}
-
-main[data-template="collection"] .facets-divider {
-  grid-column: 1 / -1;
-  grid-row: 2;
-  width: 100vw;
-  margin-left: 50%;
-  border-top: 1px solid var(--barkin-border);
-  transform: translateX(-50%);
 }
 
 main[data-template="collection"] .facets__form > .active-facets-desktop {

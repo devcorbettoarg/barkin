@@ -783,7 +783,7 @@ main[data-template="collection"] .active-facets__button-wrapper {
 }
 
 main[data-template="collection"] .active-facets__button-remove {
-  color: var(--barkin-white);
+  color: var(--barkin-muted);
   font: 400 1.2rem/1.6rem Inter, sans-serif;
   text-underline-offset: 3px;
 }

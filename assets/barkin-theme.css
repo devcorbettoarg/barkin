@@ -66,7 +66,7 @@
 
   main[data-template="collection"] .mobile-facets__close {
     top: 22px;
-    right: 0;
+    right: 20px;
     width: 40px;
     height: 40px;
   }
@@ -81,7 +81,7 @@
     flex: 1 1 auto;
     flex-direction: column;
     min-height: 0;
-    padding: 0 0 76px;
+    padding: 0;
     overflow-y: auto;
     background: #fffdfc;
   }
@@ -156,6 +156,10 @@
     min-height: 0;
     visibility: visible;
     transform: none;
+  }
+
+  .js main[data-template="collection"] .mobile-facets__details[data-filter-param]:not([open]) > .mobile-facets__submenu {
+    display: none;
   }
 
   main[data-template="collection"] .mobile-facets__close-button,
@@ -235,7 +239,7 @@
   main[data-template="collection"] .mobile-facets__main > .mobile-facets__footer {
     position: sticky;
     z-index: 5;
-    bottom: -76px;
+    bottom: 0;
     display: flex;
     flex: 0 0 76px;
     align-items: center;

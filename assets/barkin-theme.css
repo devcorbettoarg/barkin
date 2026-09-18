@@ -630,7 +630,7 @@ main[data-template="collection"] .facets__form {
 
 main[data-template="collection"] .facets-controls {
   display: grid;
-  grid-column: 1 / -1;
+  grid-column: 1;
   grid-template-columns: minmax(0, 1fr) max-content max-content;
   row-gap: 18px;
 }

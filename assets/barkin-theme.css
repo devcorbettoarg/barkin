@@ -4215,8 +4215,8 @@ main[data-template="collection"] .facets-wrapper {
 }
 
 main[data-template="collection"] .facets-container {
-  min-height: 96px;
-  padding-block: 24px;
+  min-height: 46px;
+  padding-block: 0px;
   border-bottom: 0;
 }
 

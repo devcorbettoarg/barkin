@@ -5185,3 +5185,6 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
 .jm-review-content__body {
   color:var(--barkin-black) !important;
 }
+.jm-button {
+  background:transparent !important;
+}

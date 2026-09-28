@@ -5187,4 +5187,5 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
 }
 .jm-button {
   background:transparent !important;
+  border-color:var(--barkin-black) !important;
 }

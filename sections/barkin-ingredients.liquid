@@ -1,6 +1,27 @@
-<script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
+{%- liquid
+  assign has_ingredient_content = false
+  for block in section.blocks
+    if block.type == 'ingredient'
+      if block.settings.ingredient != blank or block.settings.image != blank or block.settings.heading != blank
+        assign has_ingredient_content = true
+        break
+      endif
+    elsif block.type == 'image'
+      if block.settings.image != blank or block.settings.fallback_asset != blank
+        assign has_ingredient_content = true
+        break
+      endif
+    elsif block.settings.heading != blank or block.settings.text != blank
+      assign has_ingredient_content = true
+      break
+    endif
+  endfor
+-%}
 
-<section class="barkin-section barkin-mosaic{% if section.settings.center_text %} barkin-mosaic--text-centered{% endif %}" data-node-id="20:1762">
+{%- if has_ingredient_content -%}
+  <script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
+
+  <section class="barkin-section barkin-mosaic{% if section.settings.center_text %} barkin-mosaic--text-centered{% endif %}" data-node-id="20:1762">
   <div class="barkin-shell">
     <header class="barkin-mosaic__header">
       <h2 class="barkin-title">
@@ -127,7 +148,8 @@
     {% endif %}
     </barkin-carousel>
   </div>
-</section>
+  </section>
+{%- endif -%}
 
 {% schema %}
 {

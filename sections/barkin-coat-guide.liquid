@@ -1,6 +1,17 @@
-<script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
+{%- liquid
+  assign has_coat_content = false
+  for block in section.blocks
+    if block.settings.image != blank or block.settings.heading != blank
+      assign has_coat_content = true
+      break
+    endif
+  endfor
+-%}
 
-<section class="barkin-section barkin-coats">
+{%- if has_coat_content -%}
+  <script src="{{ 'barkin-carousel.js' | asset_url }}" defer="defer"></script>
+
+  <section class="barkin-section barkin-coats">
   <div class="barkin-centered-intro">
     <h2 class="barkin-title">
       {%- if section.settings.product_heading != blank -%}
@@ -64,7 +75,8 @@
       </div>
     {% endif %}
   </barkin-carousel>
-</section>
+  </section>
+{%- endif -%}
 
 {% schema %}
 {

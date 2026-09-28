@@ -2809,6 +2809,7 @@ background: rgba(0, 0, 0, 0.35);
   color: var(--barkin-white);
 }
 
+
 .barkin-testimonials__header {
   width: min(600px, calc(100% - 40px));
   margin: 0 auto 76px;
@@ -5178,4 +5179,9 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
     mix-blend-mode: multiply;
   }
   .barkin-bundle-card__info { display: none; }
+}
+
+
+.jm-review-content__body {
+  color:var(--barkin-black) !important;
 }

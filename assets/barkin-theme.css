@@ -3027,6 +3027,15 @@ background: rgba(0, 0, 0, 0.35);
 .barkin-faq { padding: 79px 0; }
 .barkin-faq__intro { max-width: 473px; display: grid; gap: 20px; align-content: start; justify-items: start; }
 .barkin-faq__items { border-top: 1px solid var(--barkin-border); }
+.barkin-faq__category {
+  margin: 40px 0 8px;
+  color: var(--barkin-ink, var(--barkin-black));
+  font-family: var(--font-heading-family);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.barkin-faq__category:first-child { margin-top: 20px; }
 .barkin-faq details { border-bottom: 1px solid var(--barkin-border); }
 .barkin-faq summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; cursor: pointer; list-style: none; }
 .barkin-faq summary::-webkit-details-marker { display: none; }

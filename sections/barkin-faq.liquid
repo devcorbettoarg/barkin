@@ -8,7 +8,12 @@
       {% endif %}
     </div>
     <div class="barkin-faq__items">
+      {% assign previous_category = blank %}
       {% for block in section.blocks %}
+        {% if block.settings.category != blank and block.settings.category != previous_category %}
+          <h3 class="barkin-faq__category">{{ block.settings.category }}</h3>
+          {% assign previous_category = block.settings.category %}
+        {% endif %}
         <details name="BarkinFaq-{{ section.id }}" {% if forloop.first and section.settings.open_first %}open{% endif %} {{ block.shopify_attributes }}>
           <summary><span class="barkin-card-title">{{ block.settings.question }}</span></summary>
           <div class="barkin-faq__answer rte">{{ block.settings.answer }}</div>
@@ -23,7 +28,7 @@
   "name": "Barkin FAQ",
   "tag": "section",
   "class": "section",
-  "max_blocks": 8,
+  "max_blocks": 30,
   "settings": [
     { "type": "textarea", "id": "heading", "label": "Heading", "default": "Frequently Asked\nQuestions." },
     { "type": "textarea", "id": "text", "label": "Text", "default": "Everything you need to choose and use the best care for your pet." },
@@ -36,6 +41,7 @@
       "type": "question",
       "name": "Question",
       "settings": [
+        { "type": "text", "id": "category", "label": "Category", "info": "Shown when it changes from the previous question." },
         { "type": "text", "id": "question", "label": "Question", "default": "What makes Barkin & Meowson different?" },
         { "type": "richtext", "id": "answer", "label": "Answer", "default": "<p>We combine premium-grade ingredients, thoughtful formulas and a pet-first approach to everyday care.</p>" }
       ]

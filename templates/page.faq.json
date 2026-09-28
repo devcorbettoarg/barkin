@@ -1,0 +1,164 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "faq": {
+      "type": "barkin-faq",
+      "blocks": {
+        "ordering_payment": {
+          "type": "question",
+          "settings": {
+            "category": "Ordering",
+            "question": "What payment methods do you accept?",
+            "answer": "<p>We accept all major credit cards, as well as payments through third-party processors.</p>"
+          }
+        },
+        "ordering_stock": {
+          "type": "question",
+          "settings": {
+            "category": "Ordering",
+            "question": "Will my favorite product be back in stock soon?",
+            "answer": "<p>We do our best to keep all products in our inventory in stock, so your go-to item should be available soon! When an item is unavailable, the product listing will include an email submission form, allowing you to be notified as soon as it’s back in stock.</p>"
+          }
+        },
+        "ordering_confirmation": {
+          "type": "question",
+          "settings": {
+            "category": "Ordering",
+            "question": "Will I receive an order confirmation?",
+            "answer": "<p>Yes, after placing your order, you should receive an email confirmation. If you don’t see it, please check your spam folder.</p>"
+          }
+        },
+        "shipping_where": {
+          "type": "question",
+          "settings": {
+            "category": "Shipping",
+            "question": "Where do you ship?",
+            "answer": "<p>We currently ship in the UK and the US.</p>"
+          }
+        },
+        "shipping_time": {
+          "type": "question",
+          "settings": {
+            "category": "Shipping",
+            "question": "How long will shipping take?",
+            "answer": "<p>We strive to ship promptly. Shipping time frames vary widely depending on your location, with most of our orders taking 2-5 business days.</p>"
+          }
+        },
+        "returns_product": {
+          "type": "question",
+          "settings": {
+            "category": "Returns & Exchanges",
+            "question": "Can I return or exchange a product?",
+            "answer": "<p>We hope that you are happy with your purchase. However, if for any reason you are not completely satisfied you may return your item in its original condition for a full refund within 30 days of delivery. Due to hygienic reasons we cannot accept items that may have been used or opened.</p><p>The cost of returning the item is payable by the customer unless being returned due to our negligence.</p><p>Please view our <a href=\"/policies/refund-policy\">return policy</a> for more information.</p>"
+          }
+        },
+        "returns_shipping": {
+          "type": "question",
+          "settings": {
+            "category": "Returns & Exchanges",
+            "question": "Are shipping fees refundable?",
+            "answer": "<p>Shipping fees are non-refundable, and the customer is responsible for the return shipping costs.</p>"
+          }
+        },
+        "returns_initiate": {
+          "type": "question",
+          "settings": {
+            "category": "Returns & Exchanges",
+            "question": "How do I initiate a return?",
+            "answer": "<p>Please email us at <a href=\"mailto:returns@barkinandmeowson.com\">returns@barkinandmeowson.com</a> to initiate a return.</p>"
+          }
+        },
+        "products_parabens": {
+          "type": "question",
+          "settings": {
+            "category": "Products",
+            "question": "Are your products paraben-free?",
+            "answer": "<p>Absolutely! Only the best for our 4-legged loved ones! Shop with confidence, knowing we never use parabens.</p>"
+          }
+        },
+        "products_sulphates": {
+          "type": "question",
+          "settings": {
+            "category": "Products",
+            "question": "Are your pet shampoos sulphate-free?",
+            "answer": "<p>Shipping fees are non-refundable, and the customer is responsible for the return shipping costs.</p>"
+          }
+        },
+        "products_chemicals": {
+          "type": "question",
+          "settings": {
+            "category": "Products",
+            "question": "Do any of your products contain harmful chemicals?",
+            "answer": "<p>No. We only use pet-friendly ingredients!</p>"
+          }
+        },
+        "products_vets": {
+          "type": "question",
+          "settings": {
+            "category": "Products",
+            "question": "Are your products recommended by vets?",
+            "answer": "<p>Yes, we work closely with reputable vets to ensure that our products meet the rigid standards of pet health professionals. Shop with confidence!</p>"
+          }
+        },
+        "products_safe": {
+          "type": "question",
+          "settings": {
+            "category": "Products",
+            "question": "Are the ingredients in your products considered pet safe?",
+            "answer": "<p>While highly qualified veterinarians recommend all ingredients in our formulas, we cannot legally state that they’re 100% safe, as some pets may have certain medical conditions or allergies that could cause interactions. Please consult with a vet if you’re not sure if a product is safe for your prince or princess.</p>"
+          }
+        },
+        "products_coat": {
+          "type": "question",
+          "settings": {
+            "category": "Products",
+            "question": "Do you have a shampoo for my pet’s coat type?",
+            "answer": "<p>Most likely! We offer a comprehensive line of <a href=\"/collections/pet-shampoos-conditioners\">shampoos and conditioners</a> that address the unique needs of all different coat types, including single, double, short, long, wavy, dark, light, and curly.</p>"
+          }
+        },
+        "products_ingredients": {
+          "type": "question",
+          "settings": {
+            "category": "Products",
+            "question": "What types of ingredients are in your products?",
+            "answer": "<p>Only the finest! Formulas vary depending on the product, but some of the luxurious ingredients we use include argan oil, macadamia oil, keratin, silk protein, and hyaluronic acid.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "ordering_payment",
+        "ordering_stock",
+        "ordering_confirmation",
+        "shipping_where",
+        "shipping_time",
+        "returns_product",
+        "returns_shipping",
+        "returns_initiate",
+        "products_parabens",
+        "products_sulphates",
+        "products_chemicals",
+        "products_vets",
+        "products_safe",
+        "products_coat",
+        "products_ingredients"
+      ],
+      "settings": {
+        "heading": "Frequently Asked\nQuestions.",
+        "text": "Everything you need to know about ordering, shipping, returns and our products.",
+        "button_label": "",
+        "button_link": "",
+        "open_first": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq"
+  ]
+}

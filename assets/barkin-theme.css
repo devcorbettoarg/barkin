@@ -7,6 +7,12 @@
   --barkin-border: rgba(255, 253, 252, 0.25);
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 /* Figma 1:5331 — mobile collection filter drawer. */
 @media screen and (max-width: 749px) {
   body.mobile-facets-open .section-header.shopify-section-group-header-group {

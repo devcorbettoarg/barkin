@@ -5180,7 +5180,7 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
   }
   .barkin-bundle-card__info { display: none; }
 }
-
+.jm-review-widget__header-and-body *,
 .jm-review-content__title,
 .jm-review-content__body {
   color:var(--barkin-black) !important;

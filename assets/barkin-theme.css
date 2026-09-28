@@ -5198,3 +5198,224 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
   background:transparent !important;
   border-color:var(--barkin-black) !important;
 }
+
+/* Search results: align controls and product cards with the collection UI. */
+main[data-template="search"] .template-search__search .field__button {
+  width: 44px;
+  height: 44px;
+}
+
+main[data-template="search"] .template-search__search .search__button .svg-wrapper,
+main[data-template="search"] .template-search__search .search__button svg {
+  width: 20px;
+  height: 20px;
+}
+
+main[data-template="search"] .template-search__search .reset__button .svg-wrapper,
+main[data-template="search"] .template-search__search .reset__button svg {
+  width: 18px;
+  height: 18px;
+}
+
+main[data-template="search"] .facets__summary > div {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+main[data-template="search"] .facets__summary > div > svg,
+main[data-template="search"] .facets__summary .icon-caret,
+main[data-template="search"] .facet-filters .icon-caret {
+  width: 12px;
+  min-width: 12px;
+  height: 7px;
+  margin: 0;
+  flex: 0 0 12px;
+  color: var(--barkin-ink);
+  stroke: currentColor;
+}
+
+main[data-template="search"] .facet-checkbox > svg {
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  min-height: 16px;
+  flex: 0 0 16px;
+  color: var(--barkin-ink);
+  stroke: currentColor;
+}
+
+main[data-template="search"] .facet-checkbox .svg-wrapper,
+main[data-template="search"] .facet-checkbox .svg-wrapper svg {
+  width: 12px;
+  height: 9px;
+}
+
+main[data-template="search"] .facets__list {
+  padding: 16px 20px;
+}
+
+main[data-template="search"] .facet-checkbox {
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 8px 0;
+}
+
+main[data-template="search"] .facet-checkbox__text,
+main[data-template="search"] .facet-checkbox__text-label {
+  color: var(--barkin-ink);
+  font: 400 1.3rem/1.6rem Inter, sans-serif;
+}
+
+main[data-template="search"] .template-search__results {
+  width: calc(100% - 10vw);
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 79px 0;
+}
+
+main[data-template="search"] #product-grid {
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+main[data-template="search"] product-component,
+main[data-template="search"] product-component .card-wrapper {
+  display: block;
+  height: 100%;
+}
+
+main[data-template="search"] product-component .card {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid rgba(45, 40, 36, .05);
+  border-radius: 4px;
+  background: #eeece9;
+  color: var(--barkin-black);
+}
+
+main[data-template="search"] product-component .card__inner,
+main[data-template="search"] product-component .card__media,
+main[data-template="search"] product-component .media {
+  background: #eeece9;
+}
+
+main[data-template="search"] product-component .card--media > .card__inner {
+  --ratio-percent: 133.8068% !important;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+main[data-template="search"] product-component .card .card__media {
+  inset: 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+main[data-template="search"] product-component .card__media .media img {
+  object-fit: cover;
+}
+
+main[data-template="search"] product-component .card--media > .card__content {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, .35));
+}
+
+main[data-template="search"] product-component .card--media > .card__content::before {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  left: 20px;
+  content: "";
+  border-top: .8px solid rgba(45, 40, 36, .25);
+  pointer-events: none;
+}
+
+main[data-template="search"] product-component .card--media > .card__content > .card__information {
+  min-height: 76px;
+  padding: 20px 68px 18px 20px;
+  text-align: left;
+}
+
+main[data-template="search"] product-component .card__heading,
+main[data-template="search"] product-component .card__heading a {
+  color: var(--barkin-black);
+  font: 500 16px/18px Inter, sans-serif;
+  letter-spacing: -.16px;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+main[data-template="search"] product-component .card-information {
+  text-align: left;
+}
+
+main[data-template="search"] product-component .card-information > .price {
+  margin-top: 4px;
+  color: var(--barkin-taupe);
+  font: 400 12px/16px Inter, sans-serif;
+}
+
+main[data-template="search"] product-component .quick-add {
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+  bottom: 18px;
+  margin: 0;
+}
+
+main[data-template="search"] product-component .quick-add__submit {
+  width: 38px;
+  min-width: 38px;
+  height: 38px;
+  min-height: 38px;
+  padding: 0;
+  border: 1px solid var(--barkin-white);
+  border-radius: 50%;
+  background: var(--barkin-black) url("add-bag.svg") center / 18px 20px no-repeat;
+  color: transparent;
+  font-size: 0;
+}
+
+main[data-template="search"] product-component .quick-add__submit::before,
+main[data-template="search"] product-component .quick-add__submit::after {
+  display: none;
+}
+
+main[data-template="search"] product-component .quick-add__submit.loading {
+  background-image: none;
+}
+
+@media screen and (max-width: 749px) {
+  main[data-template="search"] .template-search__results {
+    width: calc(100% - 40px);
+    padding: 50px 0;
+  }
+
+  main[data-template="search"] product-component .card--media > .card__content::before {
+    right: 12px;
+    left: 12px;
+  }
+
+  main[data-template="search"] product-component .card--media > .card__content > .card__information {
+    padding: 14px 54px 14px 12px;
+  }
+
+  main[data-template="search"] product-component .card__heading,
+  main[data-template="search"] product-component .card__heading a {
+    font-size: 14px;
+  }
+
+  main[data-template="search"] product-component .quick-add {
+    right: 12px;
+    bottom: 14px;
+  }
+}

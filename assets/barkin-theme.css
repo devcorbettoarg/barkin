@@ -1326,6 +1326,28 @@ main[data-template="product"] .product.product--large:not(.product--no-media) .p
   max-width: 100%; 
 }
 
+@media screen and (min-width: 990px) {
+  main[data-template="product"] > .shopify-section,
+  main[data-template="product"] product-component,
+  main[data-template="product"] product-component > .page-width,
+  main[data-template="product"] .product {
+    overflow: visible;
+  }
+
+  main[data-template="product"] .product__media-wrapper {
+    position: sticky;
+    z-index: 2;
+    top: 30px;
+    align-self: start;
+    height: max-content;
+  }
+
+  main[data-template="product"] .product__media-wrapper > media-gallery.product__column-sticky {
+    position: relative;
+    top: auto;
+  }
+}
+
 main[data-template="product"] .product__info-wrapper {
   width: 100%;
   max-width: none;

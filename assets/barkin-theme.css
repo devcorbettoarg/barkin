@@ -4920,7 +4920,7 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
   }
 
   main[data-template="product"] [id^="Slider-Gallery-"] .media-type-image .product__media > img {
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
   }
 

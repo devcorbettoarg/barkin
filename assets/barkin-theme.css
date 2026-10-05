@@ -4941,6 +4941,8 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
     content: "+";
     color: #2D2824;
     font: 400 22px/1 Inter, sans-serif;
+    top:-2px;
+    position:relative;
   }
 
   .barkin-blog-feature__content,

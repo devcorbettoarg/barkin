@@ -3779,6 +3779,10 @@ body,
 }
 
 /* Product gallery: one full-width slide, with controls over the media. */
+main[data-template="product"] .product__media-icon--lightbox > .svg-wrapper {
+  display: none;
+}
+
 main[data-template="product"] [id^="GalleryViewer-"] { position: relative; }
 main[data-template="product"] [id^="Slider-Gallery-"] {
   display: flex;
@@ -4898,9 +4902,34 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
     color: #FFFDFC;
   }
 
+  /* Keep mixed image proportions inside one stable 3:4 mobile frame. */
+  main[data-template="product"] [id^="Slider-Gallery-"] .product-media-container.media-type-image {
+    --aspect-ratio: 0.75;
+    --ratio-percent: calc(100% / 0.75);
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  main[data-template="product"] [id^="Slider-Gallery-"] .media-type-image .product__media {
+    position: relative;
+    height: 0;
+    padding-top: calc(100% / 0.75);
+    padding-bottom: 0;
+  }
+
+  main[data-template="product"] [id^="Slider-Gallery-"] .media-type-image .product__media > img {
+    object-fit: contain;
+    object-position: center;
+  }
+
   main[data-template="product"] barkin-gallery-controls {
-    bottom: 20px;
-    width:100%;
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 8px;
     padding: 6px 10px;
   }
 

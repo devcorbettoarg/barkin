@@ -286,9 +286,9 @@
         "figma_node": "20:1774",
         "image": "shopify://shop_images/hero-about.jpg",
         "fallback_asset": "hero-about.jpg",
-        "heading": "More About \nBarkin & Meowson",
+        "heading": "More About Barkin & Meowson",
         "heading_tag": "h1",
-        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
+        "text": "Our team spent years formulating for humans and babies. Now we bring the same proven ingredients, gentle formulas and odor-neutralizing, pet-approved fragrances to your pet – for healthy skin and the most huggable coat in the house.",
         "button_label": "Learn About Us",
         "button_link": "shopify://collections/pet-shampoos-conditioners",
         "desktop_height": 600,
@@ -350,8 +350,8 @@
       "settings": {
         "product_heading": "",
         "product_text": "",
-        "heading": "Human Grade\nIngredients",
-        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin, while also making your life easier.",
+        "heading": "Ingredients Borrowed from Human Skincare",
+        "text": "We know what works in human skin and hair care, and we've brought it to pet care. Our ingredients create the instant \"wow\" our customers notice from the first use, and they make your pet's skin and coat its most glamorous and comfortable outfit.",
         "center_text": false,
         "button_label": "Learn More",
         "button_link": "",
@@ -449,8 +449,8 @@
         "problem_7"
       ],
       "settings": {
-        "heading": "Products That Solve\nAny Problem",
-        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin, while also making your life easier.",
+        "heading": "Products That Address Problems",
+        "text": "We are just not here to bring glamour and shine. We are here for their skin and coat needs too",
         "button_label": "Shop All Products",
         "button_link": "shopify://collections/all",
         "tab_label": "Shop by problem",
@@ -481,9 +481,9 @@
         "figma_node": "20:1763",
         "image": "shopify://shop_images/General_Fill_Image_Section_1.jpg",
         "fallback_asset": "hero-household.webp",
-        "heading": "Household\nProducts",
+        "heading": "Household Products",
         "heading_tag": "h2",
-        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
+        "text": "“A home with pets is stinky and dirty.” – it doesn’t have to. Barkin & Meowson’s household products utilize oxygen technology for stain removal and odor neutralizing pet-friendly fragrances to help your home look and feel fresh and spotless.",
         "button_label": "Shop Household",
         "button_link": "shopify://collections/all",
         "desktop_height": 875,
@@ -555,8 +555,8 @@
         "review_HjUxMf"
       ],
       "settings": {
-        "heading": "See What People Say\nAbout Barkin&Meowson",
-        "text": "Add up to 6 products and save up to 15% on your bundle. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "heading": "See what our customers say about Barkin & Meowson",
+        "text": "We are so proud and thankful for all the happy members of the Barkin & Meowson family.",
         "carousel_label": "Customer reviews",
         "pagination_label": "Choose customer review"
       }

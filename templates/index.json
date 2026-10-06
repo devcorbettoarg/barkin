@@ -571,7 +571,7 @@
             "fallback_asset": "bundle-shampoo.webp",
             "heading": "Shampoo",
             "text": "Get your pet squeaky clean.",
-            "link": ""
+            "link": "https://barkinandmeowson.com/pages/collection-bundle"
           }
         },
         "bundle_2": {
@@ -619,7 +619,7 @@
         "heading": "Build Your Pet's Routine,\nGet A Discount.",
         "text": "Add up to 6 products and save up to 15% on your bundle.",
         "button_label": "Build Your Bundle",
-        "button_link": ""
+        "button_link": "https://barkinandmeowson.com/pages/collection-bundle"
       }
     },
     "barkin_blog": {

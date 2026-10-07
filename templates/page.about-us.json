@@ -105,12 +105,11 @@
         },
         "ingredient_Bej4wY": {
           "type": "ingredient",
-          "source": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"] }}",
+          "source": "{{ metaobjects.human_grade_ingredients[\"argan-oil\"] }}",
           "settings": {
-            "ingredient": "",
-            "image": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].image.value }}",
-            "heading": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].name.value }}",
-            "text": "<p>{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].text | metafield_tag }}</p>"
+            "image": "{{ metaobjects.human_grade_ingredients[\"argan-oil\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"argan-oil\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"argan-oil\"].text | metafield_tag }}"
           }
         },
         "ingredient_4J3Cq4": {

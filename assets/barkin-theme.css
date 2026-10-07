@@ -343,8 +343,23 @@ body {
 
 .barkin-header-section.shopify-section-group-header-group {
   position: sticky;
-  top: 0;
+  top: calc(-1 * var(--barkin-announcement-height, 0px));
   z-index: 10;
+  transition: transform 180ms ease;
+}
+
+.barkin-header-section.shopify-section-group-header-group.barkin-header-section--hidden {
+  transform: translateY(-100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .barkin-header-section.shopify-section-group-header-group {
+    transition: none;
+  }
+}
+
+.barkin-site-header {
+  display: block;
 }
 
 .barkin-site-header,

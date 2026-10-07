@@ -1,7 +1,8 @@
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'barkin-mega-menu.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'barkin-sticky-header.js' | asset_url }}" defer="defer"></script>
 
-<div class="barkin-site-header{% if request.page_type == 'product' %} barkin-site-header--pdp{% endif %}">
+<barkin-sticky-header class="barkin-site-header{% if request.page_type == 'product' %} barkin-site-header--pdp{% endif %}">
   {% if section.settings.announcement != blank %}
     <div class="barkin-site-header__announcement">{{ section.settings.announcement }}</div>
   {% endif %}
@@ -185,7 +186,7 @@
       </a>
     </div>
   </header>
-</div>
+</barkin-sticky-header>
 
 {% schema %}
 {

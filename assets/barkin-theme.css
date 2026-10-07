@@ -3872,7 +3872,8 @@ main[data-template="product"] .barkin-purchase-buttons > .shopify-payment-button
 main[data-template="product"] .shopify-payment-button__more-options { color: var(--barkin-white); font-family: Inter, var(--font-body-family), sans-serif; font-size: 12px; line-height: 16px; opacity: .65; }
 main[data-template="product"] .product__accordion {  }
 main[data-template="product"] .product__accordion summary { padding-inline: 0; }
-main[data-template="product"] .product__accordion .accordion__title { font: 400 20px/24px Inter, sans-serif; color: var(--barkin-white); }
+main[data-template="product"] .product__accordion .accordion__title 
+{ font: 400 18px/22px Inter, sans-serif; color: var(--barkin-white); }
 main[data-template="product"] .complementary-products { margin-top: 70px; }
 @media screen and (max-width: 749px) {
   .barkin-purchase-option { padding: 12px; gap: 8px; font-size: 16px; }

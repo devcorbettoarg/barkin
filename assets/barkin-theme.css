@@ -1392,9 +1392,9 @@ main[data-template="product"] .product__media {
   background: #eeece9;
 }
 
-/* Keep the image width and reduce its natural frame height by 15%. */
+/* Keep the image width and reduce its natural frame height by 10%. */
 main[data-template="product"] .product-media-container.media-type-image {
-  --ratio-percent: calc(85% / var(--preview-ratio));
+  --ratio-percent: calc(90% / var(--preview-ratio));
 }
 
 main[data-template="product"] .product-media-container.media-type-image .product__media img {
@@ -1422,7 +1422,7 @@ main[data-template="product"] .thumbnail-list {
   grid-auto-rows: max-content;
   gap: 10px;
   width: 100%;
-  max-height: 828.75px;
+  max-height: 877.5px;
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0;
@@ -1433,7 +1433,7 @@ main[data-template="product"] .thumbnail-list__item {
 }
 
 main[data-template="product"] .thumbnail-list__item::before {
-  padding-bottom: 85%;
+  padding-bottom: 90%;
 }
 
 main[data-template="product"] .thumbnail {
@@ -4917,10 +4917,10 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
     color: #FFFDFC;
   }
 
-  /* Keep mixed image proportions inside one stable 3:4 mobile frame. */
+  /* Keep a stable mobile frame, 10% shorter than the original 3:4 frame. */
   main[data-template="product"] [id^="Slider-Gallery-"] .product-media-container.media-type-image {
     --aspect-ratio: 0.75;
-    --ratio-percent: calc(100% / 0.75);
+    --ratio-percent: calc(90% / 0.75);
     display: block;
     width: 100%;
     max-width: 100%;
@@ -4930,7 +4930,7 @@ main[data-template="product"] .barkin-product-breadcrumb--mobile {
   main[data-template="product"] [id^="Slider-Gallery-"] .media-type-image .product__media {
     position: relative;
     height: 0;
-    padding-top: calc(100% / 0.75);
+    padding-top: calc(90% / 0.75);
     padding-bottom: 0;
   }
 

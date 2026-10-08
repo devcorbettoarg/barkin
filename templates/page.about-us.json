@@ -15,9 +15,9 @@
         "figma_node": "1:18776",
         "image": "shopify://shop_images/01-hero.jpg",
         "fallback_asset": "hero-shopping.webp",
-        "heading": "Pet Luxury, thoughtfully defined.",
+        "heading": "Pet Luxury, thoughtfully defined:",
         "heading_tag": "h1",
-        "text": "An exquisite collection of grooming and home care for discerning pets and their parents.",
+        "text": "Treating pets like Royalty for us means making no compromises to providing the best, safest and most effective products out there.",
         "button_label": "",
         "button_link": "",
         "desktop_height": 595,
@@ -71,7 +71,7 @@
         "fallback_asset": "hero-household.webp",
         "image_alt": "A pet enjoying time at home",
         "heading": "Barkin&Meowson came to life thanks to a certain hair care product manager who felt like pets were underserved.",
-        "text": "<p>Dorothy Miteva, proud rescuer of three cats, Oliver, Olivia and Gigi, mom of a golden retriever, Benji, and a regular helping hand at several rescue organizations, thought the pet care market is not reaching its potential in delivering products that help pets feel better in their skin, and shine brighter on the outside.</p><p>For her, bringing better at home care to pets and their parents, is a mission.</p>"
+        "text": "<p>Dorothy, a proud rescuer of three cats, Oliver, Olivia and Gigi, mom of a golden retriever, Benji, and a regular helping hand at several rescue organizations, thought the pet care market is not reaching its potential in delivering products that help pets feel better in their skin, and shine brighter on the outside.</p><p>For her, bringing better at home care to pets and their parents, is a mission.</p>"
       }
     },
     "about_story": {
@@ -82,7 +82,7 @@
         "fallback_asset": "hero-household.webp",
         "heading": "Our Vision, Goal\n& Process",
         "heading_tag": "h2",
-        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
+        "text": "Choosing the right care for your pet’s coat and skin type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier and cuddle time this much more pleasant. Which is our ultimate goal: healthy and happy pets, eased and satisfied pet parents, and the warmest and softest bond between them.\n\nDifferent coats and skins—whether double, single, curly, sensitive or itchy—have unique needs and we aim at providing the safest and most effective care to them —always consulted with a veterinary dermatologist, free of harsh ingredients, and produced at a GMP certified facility — and that's at the very least.",
         "button_label": "",
         "button_link": "",
         "desktop_height": 875,
@@ -98,6 +98,7 @@
           "type": "ingredient",
           "source": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"] }}",
           "settings": {
+            "ingredient": "",
             "image": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].image.value }}",
             "heading": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].name.value }}",
             "text": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].text | metafield_tag }}"
@@ -107,6 +108,7 @@
           "type": "ingredient",
           "source": "{{ metaobjects.human_grade_ingredients[\"argan-oil\"] }}",
           "settings": {
+            "ingredient": "",
             "image": "{{ metaobjects.human_grade_ingredients[\"argan-oil\"].image.value }}",
             "heading": "{{ metaobjects.human_grade_ingredients[\"argan-oil\"].name.value }}",
             "text": "{{ metaobjects.human_grade_ingredients[\"argan-oil\"].text | metafield_tag }}"
@@ -114,22 +116,20 @@
         },
         "ingredient_4J3Cq4": {
           "type": "ingredient",
-          "source": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"] }}",
+          "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient\"] }}",
           "settings": {
-            "ingredient": "",
-            "image": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].image.value }}",
-            "heading": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].name.value }}",
-            "text": "<p>{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].text | metafield_tag }}</p>"
+            "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient\"].text | metafield_tag }}"
           }
         },
         "ingredient_kXkh3g": {
           "type": "ingredient",
-          "source": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"] }}",
+          "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"] }}",
           "settings": {
-            "ingredient": "",
-            "image": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].image.value }}",
-            "heading": "{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].name.value }}",
-            "text": "<p>{{ metaobjects.human_grade_ingredients[\"cotton-seed-oil\"].text | metafield_tag }}</p>"
+            "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].text | metafield_tag }}"
           }
         }
       },
@@ -143,7 +143,7 @@
         "product_heading": "",
         "product_text": "",
         "heading": "Barkin&Meowson’s\nNon-Negotiables",
-        "text": "The standards behind every product we make and every choice we take.",
+        "text": "The standards behind every product we make and every choice we take.\n\nWe include highly effective ingredients, known to human dermatology, to pet care, because we know they elevate how your pet's skin and coat look and feel.",
         "center_text": true,
         "button_label": "",
         "button_link": "",
@@ -157,32 +157,32 @@
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-cruelty-free.svg",
-            "heading": "Always Cruelty Free.",
-            "text": "Thoughtful formulas created without animal testing."
+            "heading": "Always Cruelty Free",
+            "text": "Thoughtful formulas created without animal testing"
           }
         },
         "guarantee_FBy3fE": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-paraben-free.svg",
-            "heading": "Paraben & Sulfate Free.",
-            "text": "Gentle formulas made for regular pet-care routines."
+            "heading": "Paraben & Sulfate Free",
+            "text": "Gentle formulas made for regular pet-care routines"
           }
         },
         "guarantee_t6yhmC": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-gmp.svg",
-            "heading": "GMP Certified.",
-            "text": "Made with consistent standards and careful quality control."
+            "heading": "GMP Certified",
+            "text": "Made with consistent standards and careful quality control"
           }
         },
         "guarantee_eaa9wg": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-vet.svg",
-            "heading": "Vet Recommended.",
-            "text": "Pet-first care developed with expert guidance."
+            "heading": "Vet Recommended",
+            "text": "Pet-first care reviewed and approved by a veterinary dermatologist"
           }
         }
       },
@@ -197,7 +197,7 @@
         "button_label": "",
         "button_link": "",
         "heading": "Premium Product\nGuarantees",
-        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double.."
+        "text": "We take pet care seriously, and contrary to the old belief that a pet-bath is unnecessary and pretentious, we find it vital for your pet’s skin and health. Skin is your pet's largest organ and their first line of defense. A good bath keeps it hydrated, nourished and protected – so we make products that do exactly that. Developed with a veterinary dermatologist, free from harsh ingredients and made to GMP standards.\n\nAnd their coat is what sits on your couch, what you snuggle and cuddle – and so Barkin & Meowson’s products make it soft, shinny, deodorized, and most huggable!"
       }
     },
     "about_manifesto": {
@@ -206,9 +206,9 @@
         "figma_node": "1:18782",
         "image": "shopify://shop_images/08-luxury-banner.jpg",
         "fallback_asset": "hero-quiz.webp",
-        "heading": "Pet Luxury, thoughtfully defined.",
+        "heading": "Because we know they take a royal place in our heart, we are here to provide the royal care.",
         "heading_tag": "h2",
-        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
+        "text": "With love, Barkin & Meowson",
         "button_label": "",
         "button_link": "",
         "desktop_height": 875,

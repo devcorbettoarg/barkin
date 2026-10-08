@@ -13,7 +13,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18776",
-        "image": "shopify://shop_images/01-hero.jpg",
+        "image": "shopify://shop_images/Thomas---Shampoo-and-cond.jpg",
         "fallback_asset": "hero-shopping.webp",
         "heading": "Pet Luxury, thoughtfully defined:",
         "heading_tag": "h1",
@@ -67,7 +67,7 @@
     "about_intro": {
       "type": "barkin-about-intro",
       "settings": {
-        "image": "shopify://shop_images/02-founder-intro.jpg",
+        "image": "shopify://shop_images/Website_Header_Sections_4096x2725-2.jpg",
         "fallback_asset": "hero-household.webp",
         "image_alt": "A pet enjoying time at home",
         "heading": "Barkin&Meowson came to life thanks to a certain hair care product manager who felt like pets were underserved.",
@@ -78,7 +78,8 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18779",
-        "image": "shopify://shop_images/03-vision.jpg",
+        "image": "shopify://shop_images/Poodle-_-Products.jpg",
+        "mobile_image": "shopify://shop_images/Styling_7d750a1f-43f4-4280-890d-504be0c2bd5b.jpg",
         "fallback_asset": "hero-household.webp",
         "heading": "Our Vision, Goal\n& Process",
         "heading_tag": "h2",
@@ -118,6 +119,7 @@
           "type": "ingredient",
           "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient\"] }}",
           "settings": {
+            "ingredient": "",
             "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient\"].image.value }}",
             "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient\"].name.value }}",
             "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient\"].text | metafield_tag }}"
@@ -127,6 +129,7 @@
           "type": "ingredient",
           "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"] }}",
           "settings": {
+            "ingredient": "",
             "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].image.value }}",
             "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].name.value }}",
             "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].text | metafield_tag }}"

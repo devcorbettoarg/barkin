@@ -238,32 +238,32 @@
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-cruelty-free.svg",
-            "heading": "Always Cruelty Free.",
-            "text": "Thoughtful formulas created without animal testing."
+            "heading": "Always Cruelty-Free",
+            "text": "Thoughtful formulas created without animal testing"
           }
         },
         "guarantee_2": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-paraben-free.svg",
-            "heading": "Paraben & Sulfate Free.",
-            "text": "Gentle formulas made for regular pet-care routines."
+            "heading": "Paraben & Sulfate-Free",
+            "text": "Gentle formulas made for regular pet-care routines"
           }
         },
         "guarantee_3": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-gmp.svg",
-            "heading": "GMP Certified.",
-            "text": "Made with consistent standards and careful quality control."
+            "heading": "GMP Certified",
+            "text": "Made with consistent standards and careful quality control"
           }
         },
         "guarantee_4": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-vet.svg",
-            "heading": "Vet Recommended.",
-            "text": "Pet-first care developed with expert guidance."
+            "heading": "Vet Recommended",
+            "text": "Pet-first care approved and recommended by a veterinary dermatologist"
           }
         }
       },
@@ -302,12 +302,11 @@
       "blocks": {
         "ingredient_BzGNEn": {
           "type": "ingredient",
-          "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"] }}",
+          "source": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"] }}",
           "settings": {
-            "ingredient": "",
-            "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].image.value }}",
-            "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].name.value }}",
-            "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].text | metafield_tag }}"
+            "image": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"].text | metafield_tag }}"
           }
         },
         "ingredient_KDgfMH": {

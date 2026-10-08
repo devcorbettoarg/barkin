@@ -14,7 +14,7 @@
       "settings": {
         "figma_node": "1:18776",
         "image": "shopify://shop_images/Thomas---Shampoo-and-cond.jpg",
-        "mobile_image": "shopify://shop_images/Thomas---Shampoo-and-cond.jpg",
+        "mobile_image": "shopify://shop_images/Website_Header_Sections_4096x2725_Instagram_Reel_Cover_-4.jpg",
         "fallback_asset": "hero-shopping.webp",
         "heading": "Pet Luxury, thoughtfully defined:",
         "heading_tag": "h1",
@@ -208,7 +208,8 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18782",
-        "image": "shopify://shop_images/Olya-_-Rockie.jpg",
+        "image": "shopify://shop_images/Olya-_-Rockie-Affection.jpg",
+        "mobile_image": "shopify://shop_images/Website_Header_Sections_4096x2725_Instagram_Reel_Cover_-5.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Because we know they take a royal place in our heart, we are here to provide the royal care.",
         "heading_tag": "h2",

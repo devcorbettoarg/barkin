@@ -14,6 +14,7 @@
       "settings": {
         "figma_node": "1:18776",
         "image": "shopify://shop_images/Thomas---Shampoo-and-cond.jpg",
+        "mobile_image": "shopify://shop_images/Thomas---Shampoo-and-cond.jpg",
         "fallback_asset": "hero-shopping.webp",
         "heading": "Pet Luxury, thoughtfully defined:",
         "heading_tag": "h1",

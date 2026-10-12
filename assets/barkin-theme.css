@@ -3685,7 +3685,7 @@ body,
 @media screen and (max-width: 389px) {
   .barkin-title { font-size: 3.6rem; }
   .barkin-site-header__main { width: calc(100% - 28px); }
-  .barkin-site-header__logo img { max-width: min(var(--barkin-mobile-logo-width, 180px), 50vw); }
+  .barkin-site-header__logo img { max-width: 100px; }
   .barkin-site-header__actions { gap: 6px; }
   .barkin-testimonials__rail { --testimonial-width: calc(100vw - 28px); }
 }
@@ -4763,7 +4763,7 @@ main[data-template="collection"] .facet-checkbox__text-label {
 /* Final homepage mobile overrides: keep these after Dawn/theme breakpoint rules. */
 @media screen and (max-width: 749px) {
   .barkin-site-header__main { min-height: 78px; }
-  .barkin-site-header__logo img { width: 230px; max-width: calc(100vw - 96px); max-height: 54px; }
+  .barkin-site-header__logo img { width: 100px; max-width: calc(100vw - 96px); max-height: 54px; }
   .barkin-site-header__actions svg,
   .barkin-site-header__actions img,
   .barkin-site-header__mobile-menu summary svg { width: 16px; height: 16px; }

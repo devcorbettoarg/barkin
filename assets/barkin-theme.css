@@ -4763,7 +4763,7 @@ main[data-template="collection"] .facet-checkbox__text-label {
 /* Final homepage mobile overrides: keep these after Dawn/theme breakpoint rules. */
 @media screen and (max-width: 749px) {
   .barkin-site-header__main { min-height: 78px; }
-  .barkin-site-header__logo img { width: 100px; max-width: calc(100vw - 96px); max-height: 54px; }
+  .barkin-site-header__logo img { width: 80px; max-width: calc(100vw - 96px); max-height: 80px; }
   .barkin-site-header__actions svg,
   .barkin-site-header__actions img,
   .barkin-site-header__mobile-menu summary svg { width: 16px; height: 16px; }

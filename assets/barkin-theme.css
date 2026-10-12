@@ -1713,7 +1713,9 @@ main[data-template="product"] .accordion,
 main[data-template="product"] .complementary-products {
   border-color: var(--barkin-border);
 }
-
+main[data-template="product"] .product__description {
+  border-color:transparent;
+} 
 main[data-template="product"] .product-form__input--pill input[type=radio] + label {
   border-color: var(--barkin-border);
   background: transparent;
@@ -2134,7 +2136,7 @@ color: var(--barkin-white); }
   white-space: nowrap;
 }
 
-.barkin-marquee__item img { width: 35px; height: 35px; object-fit: contain; flex-shrink: 0; }
+.barkin-marquee__item img { width: 35px; height: 35px; }
 @keyframes barkin-marquee { to { transform: translateX(calc(-50% - (var(--barkin-marquee-gap) / 2))); } }
 
 .barkin-centered-intro {

@@ -2134,7 +2134,7 @@ color: var(--barkin-white); }
   white-space: nowrap;
 }
 
-.barkin-marquee__item img { width: 35px; height: 35px; }
+.barkin-marquee__item img { width: 35px; height: 35px; object-fit: contain; flex-shrink: 0; }
 @keyframes barkin-marquee { to { transform: translateX(calc(-50% - (var(--barkin-marquee-gap) / 2))); } }
 
 .barkin-centered-intro {

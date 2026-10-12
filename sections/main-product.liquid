@@ -610,7 +610,11 @@
                   -%}
                 {%- when 'rating' -%}
                   {%- if product.metafields.reviews.rating.value != blank -%}
-                    <div class="rating-wrapper">
+                    {%- if block.settings.rating_link != blank -%}
+                      <a class="rating-wrapper rating-wrapper--link" href="{{ block.settings.rating_link | escape }}" {{ block.shopify_attributes }}>
+                    {%- else -%}
+                      <div class="rating-wrapper" {{ block.shopify_attributes }}>
+                    {%- endif -%}
                       {% liquid
                         assign rating_decimal = 0
                         assign decimal = product.metafields.reviews.rating.value.rating | modulo: 1
@@ -644,7 +648,11 @@
                           {{ 'accessibility.total_reviews' | t -}}
                         </span>
                       </p>
-                    </div>
+                    {%- if block.settings.rating_link != blank -%}
+                      </a>
+                    {%- else -%}
+                      </div>
+                    {%- endif -%}
                   {%- endif -%}
                 {%- when 'complementary' -%}
                   <product-recommendations
@@ -1394,6 +1402,12 @@
       "name": "t:sections.main-product.blocks.rating.name",
       "limit": 1,
       "settings": [
+        {
+          "type": "url",
+          "id": "rating_link",
+          "label": "Rating link",
+          "info": "Choose a page or enter a URL, such as #reviews, to make the rating clickable."
+        },
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"

@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+.rating-wrapper--link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
 .rating {
   display: inline-block;
   margin: 0;

@@ -14,7 +14,9 @@
       "blocks": {
         "rating": {
           "type": "rating",
-          "settings": {}
+          "settings": {
+            "rating_link": "#shopify-section-template--32018025414995__178881270223fbf85e"
+          }
         },
         "title": {
           "type": "title",
@@ -163,7 +165,7 @@
         "color_scheme": "scheme-1",
         "media_size": "large",
         "constrain_to_viewport": false,
-        "media_fit": "cover",
+        "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
         "mobile_thumbnails": "show",
         "media_position": "left",
@@ -400,54 +402,11 @@
     },
     "barkin_blog": {
       "type": "barkin-blog-guide",
-      "blocks": {
-        "article_1": {
-          "type": "article",
-          "settings": {
-            "article": "",
-            "image": "shopify://shop_images/blog-1.jpg",
-            "fallback_asset": "blog-1.webp",
-            "tag": "Pet Grooming",
-            "title": "How to Start Your Puppy's First At-Home Bath.",
-            "link": ""
-          }
-        },
-        "article_2": {
-          "type": "article",
-          "settings": {
-            "article": "",
-            "image": "shopify://shop_images/blog-2.jpg",
-            "fallback_asset": "blog-2.webp",
-            "tag": "Pet Grooming",
-            "title": "Can You Use Human Shampoo on Dogs & Cats?",
-            "link": ""
-          }
-        },
-        "article_3": {
-          "type": "article",
-          "settings": {
-            "article": "",
-            "image": "shopify://shop_images/blog-3.jpg",
-            "fallback_asset": "blog-3.webp",
-            "tag": "Pet Grooming",
-            "title": "What’s the right shampoo for my pet’s coat type?",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "article_1",
-        "article_2",
-        "article_3"
-      ],
       "settings": {
         "heading": "Barkin&Meowson’s\nPet-Care Guide.",
         "text": "Practical guides for healthier skin, better coats and happier pets.",
+        "blog": "",
         "button_label": "View Full Blog",
-        "button_link": "",
-        "feature_image": "shopify://shop_images/Frame_14.jpg",
-        "feature_title": "How Natural Flea & Tick Protection Works.",
-        "feature_link": "",
         "article_label": "Read Article"
       }
     }

@@ -66,9 +66,9 @@
         "purchase_guarantees_e3UCbG": {
           "type": "purchase_guarantees",
           "settings": {
-            "item_1": "Earn 30 be coins with this product in be club",
-            "item_2": "Free shipping on orders +55€ (Spain & Balearic Islands)",
-            "item_3": "Receive it in 1-3 business days in Spain"
+            "item_1": "Customer satisfaction guarantee: we accept returns within 30 days on your first order",
+            "item_2": "Free shipping above $35 on all orders within the US",
+            "item_3": "Earn loyalty points on all orders and reviews and get special discounts"
           }
         },
         "description": {

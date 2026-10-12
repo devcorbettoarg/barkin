@@ -33,6 +33,7 @@
         "promise_1": {
           "type": "promise",
           "settings": {
+            "icon": "shopify://shop_images/guarantee-paraben-free.svg",
             "text": "Always Cruelty Free"
           }
         },
@@ -304,6 +305,7 @@
           "type": "ingredient",
           "source": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"] }}",
           "settings": {
+            "ingredient": "",
             "image": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"].image.value }}",
             "heading": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"].name.value }}",
             "text": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"].text | metafield_tag }}"

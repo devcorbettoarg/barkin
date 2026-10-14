@@ -152,6 +152,35 @@
         "type": "shopify://apps/smile-io/blocks/smile-shopify-app/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
         "disabled": false,
         "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "10641372206048101839": {
+        "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "disabled": false,
+        "settings": {}
+      },
+      "10936144425145618957": {
+        "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-ab-testing-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "disabled": true,
+        "settings": {
+          "rebuy_search_template_wrapper": ""
+        }
+      },
+      "5537102726230261467": {
+        "type": "shopify://apps/revenuehunt-product-quiz-maker/blocks/v2-link-quiz/672f3d48-fd3b-4227-8778-c6e58c4f8a98",
+        "disabled": false,
+        "settings": {
+          "quiz_width": "100",
+          "quiz_height": "100",
+          "quiz_z_index": 100,
+          "popup_close_color": "#777777",
+          "show_list": true,
+          "quiz_id": ""
+        }
       }
     },
     "color_schemes": {

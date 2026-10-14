@@ -174,51 +174,52 @@
           "type": "product_slide",
           "settings": {
             "product": "",
-            "image": "shopify://shop_images/Frame_14_1.jpg",
+            "image": "shopify://shop_images/2_a4d39e4e-7e07-43de-b99c-9ebc87696511.jpg",
             "fallback_asset": "collection-product.webp",
-            "product_title": "Gentle Care Shampoo",
+            "product_title": "Curly & Wavy Coat Shampoo",
             "price": "$19.95",
-            "link": "",
-            "heading": "Easy Detangling",
-            "text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out."
+            "link": "shopify://products/curly-coat-detangling-dog-shampoo",
+            "heading": "Targeted Shampoo",
+            "text": "With Silk Protein, Macadamia Oil and Keratin."
           }
         },
         "launch_product_2": {
           "type": "product_slide",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/4_c56cc2b7-724d-4ddc-87b8-8e9aa78eeec0.jpg",
             "fallback_asset": "product-black.webp",
-            "product_title": "Gentle Care Shampoo",
+            "product_title": "Moisturizing Conditioner",
             "price": "$19.95",
-            "link": "",
-            "heading": "Gentle Cleansing",
-            "text": "A premium everyday cleanse for healthy skin and a beautiful coat."
+            "link": "shopify://products/moisturizing-cat-dog-conditioner",
+            "heading": "Supporting Conditioner",
+            "text": "With Argan Oil and Keratin"
           }
         },
         "launch_product_3": {
           "type": "product_slide",
           "settings": {
             "product": "",
-            "image": "shopify://shop_images/product-spray.jpg",
+            "image": "shopify://shop_images/3_8fa484f1-eb4d-4360-b830-28a74e89c15a.jpg",
             "fallback_asset": "product-spray.webp",
-            "product_title": "Daily Care Spray",
-            "price": "$19.95",
-            "link": "",
-            "heading": "Everyday Freshness",
-            "text": "Simple daily care between washes."
+            "product_title": "Detangle Spray",
+            "price": "$16.95",
+            "link": "shopify://products/cat-dog-detangling-spray",
+            "heading": "Detangle Spray",
+            "text": "For in-between bath combing, oil-free and deodorizing."
           }
         },
         "launch_product_4": {
           "type": "product_slide",
           "settings": {
             "product": "",
-            "image": "shopify://shop_images/product-dental.jpg",
-            "fallback_asset": "product-dental.webp",
-            "product_title": "Dental Essentials",
-            "price": "$19.95",
+            "image": "shopify://shop_images/5_a01af5f9-6346-413b-aa2d-4a0c118eadc7.jpg",
+            "fallback_asset": "product-black.webp",
+            "product_title": "Detangle Set",
+            "price": "$49.95",
             "link": "",
-            "heading": "Easy Detangling",
-            "text": "Premium care for an easier, smoother grooming routine."
+            "heading": "Detangle Set",
+            "text": "The full routine every curly and wavy coat thrives with"
           }
         },
         "launch_product_5": {
@@ -242,9 +243,9 @@
         "launch_product_5"
       ],
       "settings": {
-        "left_image": "shopify://shop_images/Frame_15.jpg",
-        "left_heading": "Summer Essentials",
-        "left_text": "The care products you need to maintain an impeccable hygiene, freshly scented company & complain-free check-out.",
+        "left_image": "shopify://shop_images/1_39ed3fce-1890-40b0-9fba-5725e7e4c85f.jpg",
+        "left_heading": "Detangle Set",
+        "left_text": "The care curly and wavy coated aristocracy needs to look and feel comfortable, soft and shinny",
         "left_button_label": "View All Essentials",
         "left_link": "shopify://collections/all",
         "carousel_label": "Featured collection products",

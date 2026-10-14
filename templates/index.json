@@ -30,33 +30,52 @@
     "barkin_promise": {
       "type": "barkin-promise-banner",
       "blocks": {
+        "promise_CBeq9a": {
+          "type": "promise",
+          "settings": {
+            "icon": "shopify://shop_images/GMP_Badge_White.png",
+            "text": "GMP Certified Production"
+          }
+        },
+        "promise_Q64dyc": {
+          "type": "promise",
+          "settings": {
+            "icon": "shopify://shop_images/Non-Formula_White.png",
+            "text": "Sulphate and Paraben-Free"
+          }
+        },
         "promise_1": {
           "type": "promise",
           "settings": {
-            "icon": "shopify://shop_images/guarantee-paraben-free.svg",
+            "icon": "shopify://shop_images/Cruelty_Free_White.png",
             "text": "Always Cruelty Free"
           }
         },
         "promise_2": {
           "type": "promise",
           "settings": {
-            "text": "Premium Grade Ingredients"
+            "icon": "shopify://shop_images/Natural_Ingredients_White.png",
+            "text": "Premium Ingredients"
           }
         },
         "promise_3": {
           "type": "promise",
           "settings": {
+            "icon": "shopify://shop_images/Vet_Approved_White.png",
             "text": "Vet Recommended"
           }
         },
         "promise_4": {
           "type": "promise",
           "settings": {
-            "text": "Free Shipping Over $35"
+            "icon": "shopify://shop_images/Pet_Certified_White.png",
+            "text": "Pet-Friendly Fragrances"
           }
         }
       },
       "block_order": [
+        "promise_CBeq9a",
+        "promise_Q64dyc",
         "promise_1",
         "promise_2",
         "promise_3",

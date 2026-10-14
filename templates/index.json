@@ -91,7 +91,7 @@
         "product_1": {
           "type": "product",
           "settings": {
-            "product": "chlorhexidine-shampoo-dog-cat",
+            "product": "cat-dog-detangling-spray",
             "fallback_asset": "product-black.webp",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",
@@ -101,7 +101,7 @@
         "product_2": {
           "type": "product",
           "settings": {
-            "product": "chlorhexidine-shampoo-dog-cat",
+            "product": "universal-2-in-1-pet-shampoo-conditioner",
             "fallback_asset": "product-white.webp",
             "title": "Moisturising Conditioner",
             "price": "$19.95",
@@ -111,7 +111,7 @@
         "product_3": {
           "type": "product",
           "settings": {
-            "product": "chlorhexidine-spray-dog-cat",
+            "product": "flea-tick-shampoo-dogs-cats",
             "fallback_asset": "product-spray.webp",
             "title": "Daily Care Spray",
             "price": "$19.95",
@@ -121,7 +121,7 @@
         "product_4": {
           "type": "product",
           "settings": {
-            "product": "chlorhexidine-spray-dog-cat",
+            "product": "chlorhexidine-shampoo-dog-cat",
             "fallback_asset": "product-dental.webp",
             "title": "Dental Essentials",
             "price": "$19.95",

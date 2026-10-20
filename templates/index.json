@@ -374,8 +374,8 @@
         "heading": "Ingredients Borrowed from Human Skincare",
         "text": "We know what works in human skin and hair care, and we've brought it to pet care. Our ingredients create the instant \"wow\" our customers notice from the first use, and they make your pet's skin and coat its most glamorous and comfortable outfit.",
         "center_text": false,
-        "button_label": "Learn More",
-        "button_link": "",
+        "button_label": "Learn More About Us",
+        "button_link": "shopify://pages/about-us",
         "pagination_label": "Choose ingredient slide"
       }
     },

@@ -25,7 +25,7 @@
           "type": "text",
           "settings": {
             "heading": "Connect",
-            "content": "<p>+34 623 78 46 04<br>Email Address</p>",
+            "content": "",
             "show_social": true
           }
         },

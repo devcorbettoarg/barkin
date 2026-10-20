@@ -6126,8 +6126,8 @@ main[data-template="search"] product-component .quick-add__submit.loading {
     display: block;
     filter: none;
     width: 100%;
-    height: 100px;
-    object-fit: contain;
+    height: 160px;
+    object-fit: cover;
     background: var(--barkin-white);
     border-radius: 4px;
     filter:none;

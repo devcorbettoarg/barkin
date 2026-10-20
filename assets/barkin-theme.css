@@ -6118,6 +6118,7 @@ main[data-template="search"] product-component .quick-add__submit.loading {
     object-fit: contain;
     background: var(--barkin-white);
     border-radius: 4px;
+    filter:none;
   }
 
   .barkin-mobile-product > span {

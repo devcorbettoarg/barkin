@@ -5973,3 +5973,109 @@ main[data-template="search"] product-component .quick-add__submit.loading {
     bottom: 14px;
   }
 }
+
+/* Mobile navigation: persistent header and a panel that fits the viewport. */
+@media screen and (max-width: 749px) {
+  .barkin-header-section.shopify-section-group-header-group.barkin-header-section--hidden {
+    transform: none;
+  }
+
+  .barkin-site-header__mobile-menu nav {
+    top: 100%;
+    left: calc((100% - 100vw) / 2);
+    right: calc((100% - 100vw) / 2);
+    min-height: 0;
+    max-height: calc(100dvh - var(--barkin-mobile-menu-top, 108px));
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
+  }
+
+  .barkin-mobile-search {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    margin-bottom: 12px;
+    border: 1px solid var(--barkin-border);
+    border-radius: 4px;
+  }
+
+  .barkin-mobile-search input {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    min-height: 48px;
+    padding: 12px;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 16px;
+  }
+
+  .barkin-mobile-search input::placeholder {
+    color: rgba(255, 253, 252, .7);
+  }
+
+  .barkin-mobile-search button {
+    display: grid;
+    flex: 0 0 48px;
+    min-height: 48px;
+    place-items: center;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .barkin-mobile-products {
+    display: grid;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .barkin-mobile-products:empty {
+    display: none;
+  }
+
+  .barkin-mobile-product {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border: 1px solid var(--barkin-border);
+    border-radius: 4px;
+  }
+
+  .barkin-mobile-product img {
+    flex: 0 0 80px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background: var(--barkin-white);
+    border-radius: 2px;
+  }
+
+  .barkin-mobile-product > span {
+    display: grid;
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .barkin-mobile-product strong {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .barkin-mobile-product small {
+    color: var(--barkin-gold);
+    font-size: 13px;
+  }
+
+  .barkin-mobile-account {
+    margin-top: 16px;
+    border-top: 1px solid var(--barkin-border);
+  }
+}

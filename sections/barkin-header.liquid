@@ -27,11 +27,17 @@
             {% if link.handle == 'shop' %}{% assign featured_link = link %}{% endif %}
           {% endfor %}
           {% for link in mobile_menu.links %}
+            {%- liquid
+              assign is_product_menu = false
+              if link.handle == 'our-products' or link.handle == 'products'
+                assign is_product_menu = true
+              endif
+            -%}
             {% if link == featured_link %}
               <div class="barkin-mobile-shop">
                 <a class="barkin-mobile-row barkin-mobile-shop-title" href="{{ link.url }}">{{ link.title | escape }}</a>
                 {% if link.links != blank %}
-                  <details class="barkin-mobile-categories"> 
+                  <details class="barkin-mobile-categories">
                     <summary>Our Products <span class="barkin-mobile-chevron" aria-hidden="true"></span></summary>
                     <div class="barkin-mobile-category-grid">
                       <div class="barkin-mobile-category-column">
@@ -57,11 +63,11 @@
                 {% endif %}
               </div>
             {% elsif link.links != blank %}
-              <details class="barkin-mobile-section">
+              <details class="barkin-mobile-section{% if is_product_menu %} barkin-mobile-categories{% endif %}">
                 <summary>{{ link.title | escape }} <span class="barkin-mobile-chevron" aria-hidden="true"></span></summary>
                 <div class="barkin-mobile-category-grid">
                   <div class="barkin-mobile-category-column">
-                    <a class="barkin-mobile-category-heading" href="{{ link.url }}">View all {{ link.title | escape }}</a>
+                    <a class="barkin-mobile-category-heading{% if is_product_menu %} barkin-mobile-shop-all{% endif %}" href="{{ link.url }}">{% if is_product_menu %}Shop All Products{% else %}View all {{ link.title | escape }}{% endif %}</a>
                     {% for child_link in link.links %}
                       <a href="{{ child_link.url }}">{{ child_link.title | escape }}</a>
                       {% for grandchild_link in child_link.links %}

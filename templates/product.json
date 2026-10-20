@@ -259,8 +259,8 @@
         "heading": "Human Grade\nIngredients",
         "text": "Choosing premium ingredients helps support healthy skin and a beautiful coat.",
         "center_text": false,
-        "button_label": "Learn More",
-        "button_link": "",
+        "button_label": "Learn More About Us",
+        "button_link": "https://barkinandmeowson.com/pages/about-us",
         "pagination_label": "Choose ingredient slide"
       }
     },

@@ -16,6 +16,7 @@
       "settings": {
         "announcement": "Free shipping above $35 on all US orders",
         "menu": "main-menu-copy",
+        "mobile_menu": "new-design-main-menu-mobile",
         "enable_country_selector": true,
         "logo": "shopify://shop_images/B_M_Logo-_2.png",
         "logo_width": 310,

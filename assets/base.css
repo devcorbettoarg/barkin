@@ -3627,3 +3627,7 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+more-payment-options-link {
+  display:none;
+}

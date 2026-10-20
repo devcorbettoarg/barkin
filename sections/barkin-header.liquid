@@ -17,65 +17,124 @@
           <path d="M3 6h18M3 12h18M3 18h18"/>
         </svg>
       </summary>
-      <nav aria-label="{{ 'sections.header.menu' | t }}">
-        <form class="barkin-mobile-search" action="{{ routes.search_url }}" method="get" role="search">
-          <label class="visually-hidden" for="BarkinMobileSearch-{{ section.id }}">{{ 'general.search.search' | t }}</label>
-          <input
-            id="BarkinMobileSearch-{{ section.id }}"
-            type="search"
-            name="q"
-            value="{{ search.terms | escape }}"
-            placeholder="{{ 'general.search.search' | t }}"
-          >
-          <input type="hidden" name="options[prefix]" value="last">
-          <button type="submit" aria-label="{{ 'general.search.search' | t }}">
-            <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/>
-            </svg>
-          </button>
-        </form>
-        {% for link in section.settings.menu.links %}
-          {% if link.links != blank %}
-            <details>
-              <summary>{{ link.title }} <span aria-hidden="true">+</span></summary>
-              <div>
-                <a href="{{ link.url }}">View all {{ link.title }}</a>
-                {% for child_link in link.links %}
-                  <a href="{{ child_link.url }}">{{ child_link.title }}</a>
-                  {% for grandchild_link in child_link.links %}
-                    <a class="barkin-site-header__mobile-grandchild" href="{{ grandchild_link.url }}">
-                      {{ grandchild_link.title }}
-                    </a>
-                  {% endfor %}
-                {% endfor %}
-              </div>
-            </details>
-          {% else %}
-            <a href="{{ link.url }}">{{ link.title }}</a>
-          {% endif %}
-        {% endfor %}
-        <div class="barkin-mobile-products">
-          {% for i in (1..2) %}
-            {%- liquid
-              assign product_setting_id = 'mega_product_' | append: i
-              assign mobile_product = section.settings[product_setting_id]
-            -%}
-            {% if mobile_product != blank %}
-              <a class="barkin-mobile-product" href="{{ mobile_product.url }}">
-                {% if mobile_product.featured_image != blank %}
-                  {{ mobile_product.featured_image | image_url: width: 360 | image_tag: loading: 'lazy', widths: '120,180,240,360', sizes: '80px', alt: '' }}
+      <nav class="barkin-mobile-panel" aria-label="{{ 'sections.header.menu' | t }}">
+        <div class="barkin-mobile-links">
+          {%- assign featured_link = section.settings.menu.links.first -%}
+          {% for link in section.settings.menu.links %}
+            {% if link.handle == 'shop' %}{% assign featured_link = link %}{% endif %}
+          {% endfor %}
+          {% for link in section.settings.menu.links %}
+            {% if link == featured_link %}
+              <div class="barkin-mobile-shop">
+                <a class="barkin-mobile-row barkin-mobile-shop-title" href="{{ link.url }}">{{ link.title | escape }}</a>
+                {% if link.links != blank %}
+                  <details class="barkin-mobile-categories" open>
+                    <summary>Our Products <span class="barkin-mobile-chevron" aria-hidden="true"></span></summary>
+                    <div class="barkin-mobile-category-grid">
+                      <div class="barkin-mobile-category-column">
+                        <a class="barkin-mobile-shop-all" href="{{ link.url }}">Shop All Products</a>
+                        {% for child_link in link.links %}
+                          {% if child_link.links == blank %}
+                            <a href="{{ child_link.url }}">{{ child_link.title | escape }}</a>
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                      {% for child_link in link.links %}
+                        {% if child_link.links != blank %}
+                          <div class="barkin-mobile-category-column">
+                            <a class="barkin-mobile-category-heading" href="{{ child_link.url }}">{{ child_link.title | escape }}</a>
+                            {% for grandchild_link in child_link.links %}
+                              <a href="{{ grandchild_link.url }}">{{ grandchild_link.title | escape }}</a>
+                            {% endfor %}
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  </details>
                 {% endif %}
-                <span>
-                  <strong>{{ mobile_product.title | escape }}</strong>
-                  <small>{{ mobile_product.price | money }}</small>
-                </span>
-              </a>
+                {% if section.settings.mega_product_1 != blank or section.settings.mega_product_2 != blank %}
+                  <div class="barkin-mobile-products">
+                    {% for i in (1..2) %}
+                      {%- liquid
+                        assign product_setting_id = 'mega_product_' | append: i
+                        assign mobile_product = section.settings[product_setting_id]
+                      -%}
+                      {% if mobile_product != blank %}
+                        <a class="barkin-mobile-product" href="{{ mobile_product.url }}">
+                          {% if mobile_product.featured_image != blank %}
+                            {{ mobile_product.featured_image | image_url: width: 360 | image_tag: loading: 'lazy', widths: '120,180,240,360', sizes: '(max-width: 749px) calc((100vw - 52px) / 2), 160px', alt: '' }}
+                          {% endif %}
+                          <span>
+                            <strong>{{ mobile_product.title | escape }}</strong>
+                            <small>{{ mobile_product.price | money }}</small>
+                          </span>
+                        </a>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+            {% elsif link.links != blank %}
+              <details class="barkin-mobile-section">
+                <summary>{{ link.title | escape }} <span class="barkin-mobile-chevron" aria-hidden="true"></span></summary>
+                <div class="barkin-mobile-category-grid">
+                  <div class="barkin-mobile-category-column">
+                    <a class="barkin-mobile-category-heading" href="{{ link.url }}">View all {{ link.title | escape }}</a>
+                    {% for child_link in link.links %}
+                      <a href="{{ child_link.url }}">{{ child_link.title | escape }}</a>
+                      {% for grandchild_link in child_link.links %}
+                        <a href="{{ grandchild_link.url }}">{{ grandchild_link.title | escape }}</a>
+                      {% endfor %}
+                    {% endfor %}
+                  </div>
+                </div>
+              </details>
+            {% else %}
+              <a class="barkin-mobile-row" href="{{ link.url }}">{{ link.title | escape }}</a>
             {% endif %}
           {% endfor %}
         </div>
-        {% if shop.customer_accounts_enabled %}
-          <a class="barkin-mobile-account" href="{{ routes.account_url }}">My account</a>
-        {% endif %}
+        <div class="barkin-mobile-footer">
+          <small class="barkin-mobile-copyright">&copy; {{ 'now' | date: '%Y' }} {{ shop.name | escape }}</small>
+          {% if section.settings.enable_country_selector and localization.available_countries.size > 1 %}
+            {% assign mobile_country_id = 'BarkinMobileCountry-' | append: section.id %}
+            {% form 'localization', id: mobile_country_id, class: 'barkin-mobile-localization' %}
+              <label class="visually-hidden" for="{{ mobile_country_id }}Select">{{ 'localization.country_label' | t }}</label>
+              <select id="{{ mobile_country_id }}Select" name="country_code" data-mobile-country>
+                {% for country in localization.available_countries %}
+                  <option value="{{ country.iso_code }}" {% if country.iso_code == localization.country.iso_code %}selected{% endif %}>
+                    {{ country.currency.symbol }} · {{ country.name | escape }} ({{ country.currency.iso_code }})
+                  </option>
+                {% endfor %}
+              </select>
+              <span class="barkin-mobile-chevron" aria-hidden="true"></span>
+              <noscript><button type="submit">{{ 'localization.update_country' | t }}</button></noscript>
+            {% endform %}
+          {% endif %}
+          <details class="barkin-mobile-search-toggle">
+            <summary aria-label="{{ 'general.search.search' | t }}">
+              <span class="barkin-mobile-search-icon" aria-hidden="true">
+                <img class="barkin-mobile-search-circle" src="{{ 'barkin-mobile-search-circle.svg' | asset_url }}" alt="" width="13.44" height="15.87">
+                <img class="barkin-mobile-search-handle" src="{{ 'barkin-mobile-search-handle.svg' | asset_url }}" alt="" width="4.18" height="6.01">
+              </span>
+            </summary>
+            <form class="barkin-mobile-search" action="{{ routes.search_url }}" method="get" role="search">
+              <label class="visually-hidden" for="BarkinMobileSearch-{{ section.id }}">{{ 'general.search.search' | t }}</label>
+              <input id="BarkinMobileSearch-{{ section.id }}" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
+              <input type="hidden" name="options[prefix]" value="last">
+              <button type="submit">{{ 'general.search.search' | t }}</button>
+            </form>
+          </details>
+          {% if shop.customer_accounts_enabled %}
+            <a class="barkin-mobile-account" href="{{ routes.account_url }}" aria-label="My account" title="My account">
+              <span class="barkin-mobile-account-icon" aria-hidden="true">
+                <img class="barkin-mobile-account-head" src="{{ 'barkin-mobile-account-head.svg' | asset_url }}" alt="" width="8.33" height="8.38">
+                <img class="barkin-mobile-account-body" src="{{ 'barkin-mobile-account-body.svg' | asset_url }}" alt="" width="14.87" height="7.36">
+              </span>
+              <span class="visually-hidden">My account</span>
+            </a>
+          {% endif %}
+        </div>
       </nav>
     </details>
 

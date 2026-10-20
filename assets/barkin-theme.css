@@ -598,7 +598,7 @@ barkin-desktop-mega-menu {
 .barkin-site-header__mega-product-media img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .barkin-site-header__mega-product-info {

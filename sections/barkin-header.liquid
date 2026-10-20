@@ -28,7 +28,7 @@
               <div class="barkin-mobile-shop">
                 <a class="barkin-mobile-row barkin-mobile-shop-title" href="{{ link.url }}">{{ link.title | escape }}</a>
                 {% if link.links != blank %}
-                  <details class="barkin-mobile-categories" open>
+                  <details class="barkin-mobile-categories">
                     <summary>Our Products <span class="barkin-mobile-chevron" aria-hidden="true"></span></summary>
                     <div class="barkin-mobile-category-grid">
                       <div class="barkin-mobile-category-column">
@@ -52,27 +52,7 @@
                     </div>
                   </details>
                 {% endif %}
-                {% if section.settings.mega_product_1 != blank or section.settings.mega_product_2 != blank %}
-                  <div class="barkin-mobile-products">
-                    {% for i in (1..2) %}
-                      {%- liquid
-                        assign product_setting_id = 'mega_product_' | append: i
-                        assign mobile_product = section.settings[product_setting_id]
-                      -%}
-                      {% if mobile_product != blank %}
-                        <a class="barkin-mobile-product" href="{{ mobile_product.url }}">
-                          {% if mobile_product.featured_image != blank %}
-                            {{ mobile_product.featured_image | image_url: width: 360 | image_tag: loading: 'lazy', widths: '120,180,240,360', sizes: '(max-width: 749px) calc((100vw - 52px) / 2), 160px', alt: '' }}
-                          {% endif %}
-                          <span>
-                            <strong>{{ mobile_product.title | escape }}</strong>
-                            <small>{{ mobile_product.price | money }}</small>
-                          </span>
-                        </a>
-                      {% endif %}
-                    {% endfor %}
-                  </div>
-                {% endif %}
+
               </div>
             {% elsif link.links != blank %}
               <details class="barkin-mobile-section">
@@ -93,6 +73,27 @@
               <a class="barkin-mobile-row" href="{{ link.url }}">{{ link.title | escape }}</a>
             {% endif %}
           {% endfor %}
+          {% if section.settings.mega_product_1 != blank or section.settings.mega_product_2 != blank %}
+            <div class="barkin-mobile-products">
+              {% for i in (1..2) %}
+                {%- liquid
+                  assign product_setting_id = 'mega_product_' | append: i
+                  assign mobile_product = section.settings[product_setting_id]
+                -%}
+                {% if mobile_product != blank %}
+                  <a class="barkin-mobile-product" href="{{ mobile_product.url }}">
+                    {% if mobile_product.featured_image != blank %}
+                      {{ mobile_product.featured_image | image_url: width: 360 | image_tag: loading: 'lazy', widths: '120,180,240,360', sizes: '(max-width: 749px) calc((100vw - 52px) / 2), 160px', alt: '' }}
+                    {% endif %}
+                    <span>
+                      <strong>{{ mobile_product.title | escape }}</strong>
+                      <small>{{ mobile_product.price | money }}</small>
+                    </span>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
         </div>
         <div class="barkin-mobile-footer">
           <small class="barkin-mobile-copyright">&copy; {{ 'now' | date: '%Y' }} {{ shop.name | escape }}</small>

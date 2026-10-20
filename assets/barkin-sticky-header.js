@@ -48,7 +48,7 @@ if (!customElements.get('barkin-sticky-header')) {
       this.onFocusIn = () => this.section.classList.remove('barkin-header-section--hidden');
       this.onMenuToggle = () => {
         if (this.mobileMenu.open) this.updateHeight();
-        else if (this.mobileSearch) this.mobileSearch.open = false;
+        else this.mobileMenu.querySelectorAll('details[open]').forEach((details) => { details.open = false; });
       };
       this.onSearchToggle = () => {
         if (this.mobileSearch.open) this.mobileSearch.querySelector('input[type="search"]').focus();

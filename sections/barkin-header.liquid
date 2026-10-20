@@ -19,11 +19,14 @@
       </summary>
       <nav class="barkin-mobile-panel" aria-label="{{ 'sections.header.menu' | t }}">
         <div class="barkin-mobile-links">
-          {%- assign featured_link = section.settings.menu.links.first -%}
-          {% for link in section.settings.menu.links %}
+          {%- liquid
+            assign mobile_menu = section.settings.mobile_menu | default: section.settings.menu
+            assign featured_link = mobile_menu.links.first
+          -%}
+          {% for link in mobile_menu.links %}
             {% if link.handle == 'shop' %}{% assign featured_link = link %}{% endif %}
           {% endfor %}
-          {% for link in section.settings.menu.links %}
+          {% for link in mobile_menu.links %}
             {% if link == featured_link %}
               <div class="barkin-mobile-shop">
                 <a class="barkin-mobile-row barkin-mobile-shop-title" href="{{ link.url }}">{{ link.title | escape }}</a>
@@ -52,7 +55,6 @@
                     </div>
                   </details>
                 {% endif %}
-
               </div>
             {% elsif link.links != blank %}
               <details class="barkin-mobile-section">
@@ -108,6 +110,7 @@
                   </option>
                 {% endfor %}
               </select>
+              <span class="barkin-mobile-currency-symbol" aria-hidden="true">{{ localization.country.currency.symbol }}</span>
               <span class="barkin-mobile-chevron" aria-hidden="true"></span>
               <noscript><button type="submit">{{ 'localization.update_country' | t }}</button></noscript>
             {% endform %}
@@ -293,7 +296,8 @@
   "class": "section-header barkin-header-section",
   "settings": [
     { "type": "text", "id": "announcement", "label": "Announcement", "default": "Free shipping above $35 on all US orders" },
-    { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" },
+    { "type": "link_list", "id": "menu", "label": "Desktop menu", "default": "main-menu" },
+    { "type": "link_list", "id": "mobile_menu", "label": "Mobile menu", "info": "Uses the desktop menu when no mobile menu is selected." },
     { "type": "checkbox", "id": "enable_country_selector", "default": true, "label": "t:sections.header.settings.enable_country_selector.label", "info": "t:sections.header.settings.enable_country_selector.info" },
     { "type": "image_picker", "id": "logo", "label": "Logo" },
     { "type": "range", "id": "logo_width", "min": 120, "max": 320, "step": 10, "unit": "px", "label": "Logo width", "default": 240 },

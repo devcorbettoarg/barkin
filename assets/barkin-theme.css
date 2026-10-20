@@ -6122,6 +6122,12 @@ main[data-template="search"] product-component .quick-add__submit.loading {
     min-width: 0;
   }
 
+  .barkin-mobile-product-link {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .barkin-mobile-product img {
     display: block;
     filter: none;
@@ -6133,7 +6139,7 @@ main[data-template="search"] product-component .quick-add__submit.loading {
     filter:none;
   }
 
-  .barkin-mobile-product > span {
+  .barkin-mobile-product-link > span {
     display: grid;
     gap: 6px;
   }
@@ -6145,6 +6151,50 @@ main[data-template="search"] product-component .quick-add__submit.loading {
 
   .barkin-mobile-product small {
     color: var(--barkin-gold);
+  }
+
+  .barkin-mobile-product product-form {
+    display: block;
+    margin-top: auto;
+  }
+
+  .barkin-mobile-product-form {
+    margin: 0;
+  }
+
+  .barkin-mobile-product-add {
+    position: relative;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 8px;
+    border: 1px solid var(--barkin-white);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--barkin-white);
+    font: 400 12px/16px Inter, sans-serif;
+    cursor: pointer;
+  }
+
+  .barkin-mobile-product-add:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+  .barkin-mobile-product-add.loading > span {
+    visibility: hidden;
+  }
+
+  .barkin-mobile-product-add .loading__spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    transform: translate(-50%, -50%);
+  }
+
+  .barkin-mobile-product .product-form__error-message-wrapper {
+    margin-bottom: 8px;
+    font: 400 12px/16px Inter, sans-serif;
   }
 
   .barkin-mobile-footer {

@@ -89,15 +89,43 @@
                   assign mobile_product = section.settings[product_setting_id]
                 -%}
                 {% if mobile_product != blank %}
-                  <a class="barkin-mobile-product" href="{{ mobile_product.url }}">
-                    {% if mobile_product.featured_image != blank %}
-                      {{ mobile_product.featured_image | image_url: width: 360 | image_tag: loading: 'lazy', widths: '120,180,240,360', sizes: '(max-width: 749px) calc((100vw - 52px) / 2), 160px', alt: '' }}
-                    {% endif %}
-                    <span>
-                      <strong>{{ mobile_product.title | escape }}</strong>
-                      <small>{{ mobile_product.price | money }}</small>
-                    </span>
-                  </a>
+                  <article class="barkin-mobile-product">
+                    <a class="barkin-mobile-product-link" href="{{ mobile_product.url }}">
+                      {% if mobile_product.featured_image != blank %}
+                        {{ mobile_product.featured_image | image_url: width: 360 | image_tag: loading: 'lazy', widths: '120,180,240,360', sizes: '(max-width: 749px) calc((100vw - 52px) / 2), 160px', alt: '' }}
+                      {% endif %}
+                      <span>
+                        <strong>{{ mobile_product.title | escape }}</strong>
+                        <small>{{ mobile_product.price | money }}</small>
+                      </span>
+                    </a>
+                    <product-form>
+                      <div class="product-form__error-message-wrapper" role="alert" hidden>
+                        <span class="product-form__error-message"></span>
+                      </div>
+                      {%- assign mobile_form_id = 'BarkinMobileForm-' | append: section.id | append: '-' | append: i -%}
+                      {% form 'product', mobile_product, id: mobile_form_id, class: 'barkin-mobile-product-form' %}
+                        <input type="hidden" name="id" value="{{ mobile_product.selected_or_first_available_variant.id }}">
+                        <input type="hidden" name="quantity" value="1">
+                        <button
+                          class="barkin-mobile-product-add"
+                          type="submit"
+                          name="add"
+                          aria-label="{{ 'products.product.add_to_cart' | t }}: {{ mobile_product.title | escape }}"
+                          {% unless mobile_product.selected_or_first_available_variant.available %}disabled{% endunless %}
+                        >
+                          <span>
+                            {% if mobile_product.selected_or_first_available_variant.available %}
+                              {{ 'products.product.add_to_cart' | t }}
+                            {% else %}
+                              {{ 'products.product.sold_out' | t }}
+                            {% endif %}
+                          </span>
+                          {%- render 'loading-spinner' -%}
+                        </button>
+                      {% endform %}
+                    </product-form>
+                  </article>
                 {% endif %}
               {% endfor %}
             </div>

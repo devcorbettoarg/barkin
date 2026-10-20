@@ -4,6 +4,7 @@ if (!customElements.get('barkin-sticky-header')) {
       this.section = this.closest('.barkin-header-section');
       this.mobileViewport = window.matchMedia('(max-width: 749px)');
       this.mobileMenu = this.querySelector('.barkin-site-header__mobile-menu');
+      this.mobileSearch = this.querySelector('.barkin-mobile-search-toggle');
       const mainHeader = this.querySelector('.barkin-site-header__main');
       const announcement = this.querySelector('.barkin-site-header__announcement');
       if (!this.section) return;
@@ -47,9 +48,21 @@ if (!customElements.get('barkin-sticky-header')) {
       this.onFocusIn = () => this.section.classList.remove('barkin-header-section--hidden');
       this.onMenuToggle = () => {
         if (this.mobileMenu.open) this.updateHeight();
+        else if (this.mobileSearch) this.mobileSearch.open = false;
+      };
+      this.onSearchToggle = () => {
+        if (this.mobileSearch.open) this.mobileSearch.querySelector('input[type="search"]').focus();
+      };
+      this.onCountryChange = (event) => {
+        if (event.target.matches('[data-mobile-country]')) event.target.form.requestSubmit();
       };
       this.onKeyDown = (event) => {
         if (event.key === 'Escape' && this.mobileMenu?.open) {
+          if (this.mobileSearch?.open) {
+            this.mobileSearch.open = false;
+            this.mobileSearch.querySelector('summary').focus();
+            return;
+          }
           this.mobileMenu.open = false;
           this.mobileMenu.querySelector('summary').focus();
         }
@@ -67,6 +80,8 @@ if (!customElements.get('barkin-sticky-header')) {
       window.addEventListener('resize', this.updateHeight);
       this.mobileViewport.addEventListener('change', this.onViewportChange);
       this.mobileMenu?.addEventListener('toggle', this.onMenuToggle);
+      this.mobileSearch?.addEventListener('toggle', this.onSearchToggle);
+      this.addEventListener('change', this.onCountryChange);
       document.addEventListener('keydown', this.onKeyDown);
       document.addEventListener('click', this.onOutsideClick);
       this.addEventListener('focusin', this.onFocusIn);
@@ -78,6 +93,8 @@ if (!customElements.get('barkin-sticky-header')) {
       window.removeEventListener('resize', this.updateHeight);
       this.mobileViewport?.removeEventListener('change', this.onViewportChange);
       this.mobileMenu?.removeEventListener('toggle', this.onMenuToggle);
+      this.mobileSearch?.removeEventListener('toggle', this.onSearchToggle);
+      this.removeEventListener('change', this.onCountryChange);
       document.removeEventListener('keydown', this.onKeyDown);
       document.removeEventListener('click', this.onOutsideClick);
       this.removeEventListener('focusin', this.onFocusIn);

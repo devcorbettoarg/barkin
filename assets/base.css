@@ -3634,3 +3634,10 @@ more-payment-options-link {
 .rebuy-cart__flyout-empty-cart h4 {
   color:white;
 }
+#rebuy-cart {
+  display:none;
+}
+#rebuy-cart 
+.is-visible {
+    display:block;
+}

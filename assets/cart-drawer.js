@@ -26,6 +26,12 @@ class CartDrawer extends HTMLElement {
   }
 
   open(triggeredBy) {
+    // Let Rebuy own the drawer so Dawn does not open a second panel underneath it.
+    if (typeof window.Rebuy?.SmartCart?.show === 'function') {
+      window.Rebuy.SmartCart.show();
+      return;
+    }
+
     if (this.classList.contains('active')) return;
     if (triggeredBy) this.setActiveElement(triggeredBy);
     const cartDrawerNote = this.querySelector('[id^="Details-"] summary');

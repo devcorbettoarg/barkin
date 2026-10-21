@@ -3640,3 +3640,6 @@ more-payment-options-link {
 #rebuy-cart.is-visible {
     display:block;
 }
+cart-drawer {
+  display:none;
+}

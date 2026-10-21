@@ -3631,3 +3631,6 @@ details-disclosure > details {
 more-payment-options-link {
   display:none;
 }
+.rebuy-cart__flyout-empty-cart h4 {
+  color:white;
+}

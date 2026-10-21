@@ -143,3 +143,30 @@ class CartDrawerItems extends CartItems {
 }
 
 customElements.define('cart-drawer-items', CartDrawerItems);
+
+// Rebuy can update the cart without running Dawn's product-form rendering.
+// Refresh the header section independently from either drawer's visibility.
+let rebuyCartIconTimer;
+let rebuyCartIconVersion = 0;
+document.addEventListener('rebuy:cart.change', () => {
+  const version = ++rebuyCartIconVersion;
+  clearTimeout(rebuyCartIconTimer);
+  rebuyCartIconTimer = setTimeout(async () => {
+    try {
+      const url = new URL(window.routes.cart_url, window.location.origin);
+      url.searchParams.set('sections', 'cart-icon-bubble');
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`Cart icon refresh failed: ${response.status}`);
+      const sections = await response.json();
+      if (version !== rebuyCartIconVersion || !sections['cart-icon-bubble']) return;
+
+      const section = new DOMParser()
+        .parseFromString(sections['cart-icon-bubble'], 'text/html')
+        .querySelector('.shopify-section');
+      const cartIcon = document.getElementById('cart-icon-bubble');
+      if (cartIcon && section) cartIcon.innerHTML = section.innerHTML;
+    } catch (error) {
+      console.error(error);
+    }
+  }, 100);
+});

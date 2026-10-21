@@ -3637,7 +3637,6 @@ more-payment-options-link {
 #rebuy-cart {
   display:none;
 }
-#rebuy-cart 
-.is-visible {
+#rebuy-cart.is-visible {
     display:block;
 }

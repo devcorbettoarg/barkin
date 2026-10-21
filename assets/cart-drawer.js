@@ -26,9 +26,8 @@ class CartDrawer extends HTMLElement {
   }
 
   open(triggeredBy) {
-    // Let Rebuy own the drawer so Dawn does not open a second panel underneath it.
+    // Rebuy handles opening its own cart; keep Dawn's drawer closed.
     if (typeof window.Rebuy?.SmartCart?.show === 'function') {
-      window.Rebuy.SmartCart.show();
       return;
     }
 

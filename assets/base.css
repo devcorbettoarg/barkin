@@ -3645,11 +3645,11 @@ cart-drawer {
 }
 
  #rebuy-widget-310947 .rebuy-bundle-builder__main-body {
-  min-height:600px;
+  min-height:500px;
  }
 
  @media (max-width:980px) {
    #rebuy-widget-310947 .rebuy-bundle-builder__main-body {
-  min-height:400px;
+  min-height:450px;
  }
  }

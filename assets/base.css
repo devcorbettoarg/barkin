@@ -3643,3 +3643,7 @@ more-payment-options-link {
 cart-drawer {
   display:none;
 }
+
+ #rebuy-widget-310947 .rebuy-bundle-builder__main-body {
+  min-height:600px;
+ }

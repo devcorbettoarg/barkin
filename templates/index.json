@@ -538,7 +538,8 @@
             "quote": "<p>{{ metaobjects.reviews[\"copy-of-alessandra-3\"].subtitle.value }}</p>",
             "avatar": "{{ metaobjects.reviews[\"copy-of-alessandra-3\"].image_author.value }}",
             "name": "{{ metaobjects.reviews[\"copy-of-alessandra-3\"].author.value }}",
-            "buyer_label": "{{ metaobjects.reviews[\"copy-of-alessandra-3\"].rol.value }}"
+            "buyer_label": "{{ metaobjects.reviews[\"copy-of-alessandra-3\"].rol.value }}",
+            "recommendation": "Purchased the Detangling Spray"
           }
         },
         "review_fPJJxx": {
@@ -550,7 +551,8 @@
             "quote": "{{ metaobjects.reviews[\"copy-of-alessandra-2\"].text | metafield_tag }}",
             "avatar": "{{ metaobjects.reviews[\"copy-of-alessandra-2\"].image_author.value }}",
             "name": "{{ metaobjects.reviews[\"copy-of-alessandra-2\"].author.value }}",
-            "buyer_label": "{{ metaobjects.reviews[\"copy-of-alessandra-2\"].rol.value }}"
+            "buyer_label": "{{ metaobjects.reviews[\"copy-of-alessandra-2\"].rol.value }}",
+            "recommendation": "Purchased the Detangling Spray"
           }
         },
         "review_HjUxMf": {
@@ -562,7 +564,8 @@
             "quote": "<p>{{ metaobjects.reviews[\"copy-of-alessandra\"].subtitle.value }}</p>{{ metaobjects.reviews[\"copy-of-alessandra\"].text | metafield_tag }}",
             "avatar": "{{ metaobjects.reviews[\"copy-of-alessandra\"].image_author.value }}",
             "name": "{{ metaobjects.reviews[\"copy-of-alessandra\"].author.value }}",
-            "buyer_label": "{{ metaobjects.reviews[\"copy-of-alessandra\"].rol.value }}"
+            "buyer_label": "{{ metaobjects.reviews[\"copy-of-alessandra\"].rol.value }}",
+            "recommendation": "Purchased the Detangling Spray"
           }
         }
       },

@@ -620,6 +620,7 @@
         "text": "Practical guides for healthier skin, better coats and happier pets.",
         "button_label": "View Full Blog",
         "button_link": "",
+        "feature_image": "shopify://shop_images/how-to-get-rid-of-ticks-on-dogs_4f5e4970-a1cc-459b-86d2-73fecbf36e99.webp",
         "feature_title": "How Natural Flea & Tick Protection Works.",
         "feature_link": "",
         "article_label": "Read Article"
@@ -697,6 +698,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1768",
+        "image": "shopify://shop_images/General_Fill_Image_Section_2.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",

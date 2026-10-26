@@ -18,7 +18,7 @@
           "type": "menu",
           "settings": {
             "heading": "Directory",
-            "menu": "footer-menu-1"
+            "menu": "footer-menu-directory"
           }
         },
         "connect": {
@@ -33,7 +33,7 @@
           "type": "menu",
           "settings": {
             "heading": "Resources",
-            "menu": "footer-menu-2"
+            "menu": "footer-menu-directory"
           }
         }
       },
@@ -43,7 +43,7 @@
         "resources"
       ],
       "settings": {
-        "logo": "shopify://shop_images/Group_2.png",
+        "logo": "shopify://shop_images/Group_2.avif",
         "logo_width": 220,
         "logo_kicker": "Royale's Care",
         "logo_text": "& BARKIN MEOWSON",

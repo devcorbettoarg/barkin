@@ -221,26 +221,13 @@
             "heading": "Detangle Set",
             "text": "The full routine every curly and wavy coat thrives with"
           }
-        },
-        "launch_product_5": {
-          "type": "product_slide",
-          "settings": {
-            "product": "",
-            "fallback_asset": "collection-product.webp",
-            "product_title": "Moisturising Conditioner",
-            "price": "$19.95",
-            "link": "",
-            "heading": "Soft, Healthy Coats",
-            "text": "Moisturising care for easy detangling and a soft finish."
-          }
         }
       },
       "block_order": [
         "launch_product_1",
         "launch_product_2",
         "launch_product_3",
-        "launch_product_4",
-        "launch_product_5"
+        "launch_product_4"
       ],
       "settings": {
         "left_image": "shopify://shop_images/quiz-Screenshot_2026-10-12_at_5.05.55_PM.png",

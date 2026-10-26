@@ -475,6 +475,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1763",
+        "image": "shopify://shop_images/General_Fill_Image_Section_1.jpg",
         "fallback_asset": "hero-household.webp",
         "heading": "Household Products",
         "heading_tag": "h2",

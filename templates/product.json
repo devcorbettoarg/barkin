@@ -48,10 +48,6 @@
             "plan_label": "Delivery frequency"
           }
         },
-        "loop_subscriptions_loop_widget_9dJi6P": {
-          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
-          "settings": {}
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -67,7 +63,7 @@
           "type": "purchase_guarantees",
           "settings": {
             "item_1": "Customer satisfaction guarantee: we accept returns within 30 days on your first order",
-            "item_2": "Free shipping above $35 on all orders within the US",
+            "item_2": "Shipping rates and eligibility are shown at checkout.",
             "item_3": "Earn loyalty points on all orders and reviews and get special discounts"
           }
         },
@@ -147,7 +143,6 @@
         "price",
         "variant_picker",
         "purchase_options",
-        "loop_subscriptions_loop_widget_9dJi6P",
         "quantity_selector",
         "buy_buttons",
         "purchase_guarantees_e3UCbG",
@@ -257,10 +252,10 @@
         "product_heading": "{{ product.metafields.custom.ingredients_title.value }}",
         "product_text": "{{ product.metafields.custom.ingredients_text | metafield_tag }}",
         "heading": "Hero Ingredients in This Product",
-        "text": "This is how Barkin & Meowson's products impeccable results.",
+        "text": "Discover the key ingredients selected for your pet’s care routine.",
         "center_text": false,
         "button_label": "Learn More About Us",
-        "button_link": "https://barkinandmeowson.com/pages/about-us",
+        "button_link": "/pages/about-us",
         "pagination_label": "Choose ingredient slide"
       }
     },
@@ -281,7 +276,7 @@
         "coat_zbmG4X"
       ],
       "settings": {
-        "product_heading": "{{ product.metafields.custom.coatst.value }}",
+        "product_heading": "{{ product.metafields.custom.coats_title.value }}",
         "product_text": "{{ product.metafields.custom.coats_text | metafield_tag }}",
         "heading": "This Product Is For:",
         "text": "",
@@ -298,7 +293,7 @@
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
-        "button_label": "Do The Product Quiz",
+        "button_label": "",
         "button_link": "",
         "desktop_height": 875,
         "mobile_height": 650,
@@ -405,7 +400,6 @@
       "settings": {
         "heading": "Barkin&Meowson’s\nPet-Care Guide.",
         "text": "Practical guides for healthier skin, better coats and happier pets.",
-        "blog": "",
         "button_label": "View Full Blog",
         "article_label": "Read Article"
       }

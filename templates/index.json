@@ -14,7 +14,6 @@
       "settings": {
         "figma_node": "20:1774",
         "image": "shopify://shop_images/General_Fill_Image_Section.jpg",
-        "mobile_image": "shopify://shop_images/Product_Quiz.jpg",
         "fallback_asset": "hero-shopping.webp",
         "heading": "Premium pet care for parents who treat their pets royally",
         "heading_tag": "h1",
@@ -33,42 +32,36 @@
         "promise_CBeq9a": {
           "type": "promise",
           "settings": {
-            "icon": "shopify://shop_images/GMP_Badge_White.png",
             "text": "GMP Certified Production"
           }
         },
         "promise_Q64dyc": {
           "type": "promise",
           "settings": {
-            "icon": "shopify://shop_images/Non-Formula_White.png",
             "text": "Sulphate and Paraben-Free"
           }
         },
         "promise_1": {
           "type": "promise",
           "settings": {
-            "icon": "shopify://shop_images/Cruelty_Free_White.png",
             "text": "Always Cruelty Free"
           }
         },
         "promise_2": {
           "type": "promise",
           "settings": {
-            "icon": "shopify://shop_images/Natural_Ingredients_White.png",
             "text": "Premium Ingredients"
           }
         },
         "promise_3": {
           "type": "promise",
           "settings": {
-            "icon": "shopify://shop_images/Vet_Approved_White.png",
             "text": "Vet Recommended"
           }
         },
         "promise_4": {
           "type": "promise",
           "settings": {
-            "icon": "shopify://shop_images/Pet_Certified_White.png",
             "text": "Pet-Friendly Fragrances"
           }
         }
@@ -187,7 +180,6 @@
           "type": "product_slide",
           "settings": {
             "product": "",
-            "image": "shopify://shop_images/4_c56cc2b7-724d-4ddc-87b8-8e9aa78eeec0.jpg",
             "fallback_asset": "product-black.webp",
             "product_title": "Moisturizing Conditioner",
             "price": "$19.95",
@@ -200,7 +192,6 @@
           "type": "product_slide",
           "settings": {
             "product": "",
-            "image": "shopify://shop_images/3_8fa484f1-eb4d-4360-b830-28a74e89c15a.jpg",
             "fallback_asset": "product-spray.webp",
             "product_title": "Detangle Spray",
             "price": "$16.95",
@@ -213,7 +204,6 @@
           "type": "product_slide",
           "settings": {
             "product": "",
-            "image": "shopify://shop_images/5_a01af5f9-6346-413b-aa2d-4a0c118eadc7.jpg",
             "fallback_asset": "product-black.webp",
             "product_title": "Shop the Set",
             "price": "$49.95",
@@ -292,7 +282,6 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1774",
-        "image": "shopify://shop_images/hero-about.jpg",
         "fallback_asset": "hero-about.jpg",
         "heading": "More About Barkin & Meowson",
         "heading_tag": "h1",
@@ -470,7 +459,6 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18429",
-        "image": "shopify://shop_images/hero-quiz.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",
@@ -487,7 +475,6 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1763",
-        "image": "shopify://shop_images/General_Fill_Image_Section_1.jpg",
         "fallback_asset": "hero-household.webp",
         "heading": "Household Products",
         "heading_tag": "h2",
@@ -575,7 +562,6 @@
         "bundle_1": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/bundle-shampoo.jpg",
             "fallback_asset": "bundle-shampoo.webp",
             "heading": "Shampoo",
             "text": "Get your pet squeaky clean.",
@@ -585,7 +571,6 @@
         "bundle_2": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/bundle-grooming.jpg",
             "fallback_asset": "bundle-conditioner.webp",
             "heading": "Conditioner",
             "text": "Give them a beautifully soft coat.",
@@ -595,7 +580,6 @@
         "bundle_3": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/bundle-grooming.jpg",
             "fallback_asset": "bundle-grooming.webp",
             "heading": "Grooming Essentials",
             "text": "The devil is in the details.",
@@ -605,7 +589,6 @@
         "bundle_4": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/bundle-home.jpg",
             "fallback_asset": "bundle-home.webp",
             "heading": "Home Care",
             "text": "Easy cleanup, no hassle.",
@@ -623,7 +606,6 @@
         "@media (max-width: 980px) {article {display: none; }}"
       ],
       "settings": {
-        "mobile_background_image": "shopify://shop_images/Bundle_Mobile.jpg",
         "heading": "Build Your Pet's Routine,\nGet A Discount.",
         "text": "Add up to 6 products and save up to 15% on your bundle.",
         "button_label": "Build Your Bundle",
@@ -636,6 +618,9 @@
         "heading": "Barkin&Meowson’s\nPet-Care Guide.",
         "text": "Practical guides for healthier skin, better coats and happier pets.",
         "button_label": "View Full Blog",
+        "button_link": "",
+        "feature_title": "How Natural Flea & Tick Protection Works.",
+        "feature_link": "",
         "article_label": "Read Article"
       }
     },
@@ -645,7 +630,6 @@
         "social_1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-1.jpg",
             "fallback_asset": "social-1.webp",
             "alt": "Pet parents and their dog",
             "link": ""
@@ -654,7 +638,6 @@
         "social_2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-2.jpg",
             "fallback_asset": "social-2.webp",
             "alt": "A dog with its parent",
             "link": ""
@@ -663,7 +646,6 @@
         "social_3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-3.jpg",
             "fallback_asset": "social-3.webp",
             "alt": "Barkin & Meowson product",
             "link": ""
@@ -672,7 +654,6 @@
         "social_4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-4.jpg",
             "fallback_asset": "social-4.webp",
             "alt": "A pet parent holding a dog",
             "link": ""
@@ -681,7 +662,6 @@
         "social_5": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-1.jpg",
             "fallback_asset": "social-1.webp",
             "alt": "Pet parents and their dog",
             "link": ""
@@ -690,7 +670,6 @@
         "social_6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-2.jpg",
             "fallback_asset": "social-2.webp",
             "alt": "A dog with its parent",
             "link": ""
@@ -717,7 +696,6 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1768",
-        "image": "shopify://shop_images/General_Fill_Image_Section_2.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",

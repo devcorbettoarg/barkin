@@ -8,6 +8,804 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {},
-  "order": []
+  "sections": {
+    "barkin_hero_qDHxdw": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "20:1774",
+        "image": "shopify://shop_images/General_Fill_Image_Section.jpg",
+        "mobile_image": "shopify://shop_images/Product_Quiz.jpg",
+        "fallback_asset": "hero-shopping.webp",
+        "heading": "Premium pet care for parents who treat their pets royally",
+        "heading_tag": "h1",
+        "text": "",
+        "button_label": "Go to Shop",
+        "button_link": "shopify://collections/pet-shampoos-conditioners",
+        "desktop_height": 600,
+        "mobile_height": 595,
+        "mobile_only": false,
+        "desktop_only": false
+      }
+    },
+    "barkin_promise": {
+      "type": "barkin-promise-banner",
+      "blocks": {
+        "promise_CBeq9a": {
+          "type": "promise",
+          "settings": {
+            "icon": "shopify://shop_images/GMP_Badge_White.png",
+            "text": "GMP Certified Production"
+          }
+        },
+        "promise_Q64dyc": {
+          "type": "promise",
+          "settings": {
+            "icon": "shopify://shop_images/Non-Formula_White.png",
+            "text": "Sulphate and Paraben-Free"
+          }
+        },
+        "promise_1": {
+          "type": "promise",
+          "settings": {
+            "icon": "shopify://shop_images/Cruelty_Free_White.png",
+            "text": "Always Cruelty Free"
+          }
+        },
+        "promise_2": {
+          "type": "promise",
+          "settings": {
+            "icon": "shopify://shop_images/Natural_Ingredients_White.png",
+            "text": "Premium Ingredients"
+          }
+        },
+        "promise_3": {
+          "type": "promise",
+          "settings": {
+            "icon": "shopify://shop_images/Vet_Approved_White.png",
+            "text": "Vet Recommended"
+          }
+        },
+        "promise_4": {
+          "type": "promise",
+          "settings": {
+            "icon": "shopify://shop_images/Pet_Certified_White.png",
+            "text": "Pet-Friendly Fragrances"
+          }
+        }
+      },
+      "block_order": [
+        "promise_CBeq9a",
+        "promise_Q64dyc",
+        "promise_1",
+        "promise_2",
+        "promise_3",
+        "promise_4"
+      ],
+      "settings": {
+        "accessibility_label": "Our promises"
+      }
+    },
+    "barkin_products": {
+      "type": "barkin-product-showcase",
+      "blocks": {
+        "product_1": {
+          "type": "product",
+          "settings": {
+            "product": "cat-dog-detangling-spray",
+            "fallback_asset": "product-black.webp",
+            "title": "Gentle Care Shampoo",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_2": {
+          "type": "product",
+          "settings": {
+            "product": "universal-2-in-1-pet-shampoo-conditioner",
+            "fallback_asset": "product-white.webp",
+            "title": "Moisturising Conditioner",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_3": {
+          "type": "product",
+          "settings": {
+            "product": "flea-tick-shampoo-dogs-cats",
+            "fallback_asset": "product-spray.webp",
+            "title": "Daily Care Spray",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_4": {
+          "type": "product",
+          "settings": {
+            "product": "chlorhexidine-shampoo-dog-cat",
+            "fallback_asset": "product-dental.webp",
+            "title": "Dental Essentials",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_5": {
+          "type": "product",
+          "settings": {
+            "product": "chlorhexidine-spray-dog-cat",
+            "fallback_asset": "product-black.webp",
+            "title": "Gentle Care Shampoo",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_6": {
+          "type": "product",
+          "settings": {
+            "product": "flea-tick-shampoo-dogs-cats",
+            "fallback_asset": "product-white.webp",
+            "title": "Moisturising Conditioner",
+            "price": "$19.95",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_1",
+        "product_2",
+        "product_3",
+        "product_4",
+        "product_5",
+        "product_6"
+      ],
+      "settings": {
+        "heading": "Our Best Selling Products.",
+        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
+        "mobile_text_alignment": "left",
+        "button_label": "Shop All Products",
+        "button_link": "shopify://collections/all",
+        "carousel_label": "Best selling products",
+        "pagination_label": "Choose carousel position"
+      }
+    },
+    "barkin_launch": {
+      "type": "barkin-collection-launch",
+      "blocks": {
+        "launch_product_1": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/2_a4d39e4e-7e07-43de-b99c-9ebc87696511.jpg",
+            "fallback_asset": "collection-product.webp",
+            "product_title": "Curly & Wavy Coat Shampoo",
+            "price": "$19.95",
+            "link": "shopify://products/curly-coat-detangling-dog-shampoo",
+            "heading": "Targeted Shampoo",
+            "text": "With Silk Protein, Macadamia Oil and Keratin."
+          }
+        },
+        "launch_product_2": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/4_c56cc2b7-724d-4ddc-87b8-8e9aa78eeec0.jpg",
+            "fallback_asset": "product-black.webp",
+            "product_title": "Moisturizing Conditioner",
+            "price": "$19.95",
+            "link": "shopify://products/moisturizing-cat-dog-conditioner",
+            "heading": "Supporting Conditioner",
+            "text": "With Argan Oil and Keratin"
+          }
+        },
+        "launch_product_3": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/3_8fa484f1-eb4d-4360-b830-28a74e89c15a.jpg",
+            "fallback_asset": "product-spray.webp",
+            "product_title": "Detangle Spray",
+            "price": "$16.95",
+            "link": "shopify://products/cat-dog-detangling-spray",
+            "heading": "Detangle Spray",
+            "text": "For in-between bath combing, oil-free and deodorizing."
+          }
+        },
+        "launch_product_4": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/5_a01af5f9-6346-413b-aa2d-4a0c118eadc7.jpg",
+            "fallback_asset": "product-black.webp",
+            "product_title": "Shop the Set",
+            "price": "$49.95",
+            "link": "",
+            "heading": "Detangle Set",
+            "text": "The full routine every curly and wavy coat thrives with"
+          }
+        }
+      },
+      "block_order": [
+        "launch_product_1",
+        "launch_product_2",
+        "launch_product_3",
+        "launch_product_4"
+      ],
+      "settings": {
+        "left_image": "shopify://shop_images/quiz-Screenshot_2026-10-12_at_5.05.55_PM.png",
+        "left_heading": "Detangle Set",
+        "left_text": "The care curly and wavy coated aristocracy needs to look and feel comfortable, soft and shinny",
+        "left_button_label": "View All Essentials",
+        "left_link": "shopify://collections/all",
+        "carousel_label": "Featured collection products",
+        "pagination_label": "Choose featured product"
+      }
+    },
+    "barkin_guarantees": {
+      "type": "barkin-guarantees",
+      "blocks": {
+        "guarantee_1": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "guarantee-cruelty-free.svg",
+            "heading": "Always Cruelty-Free",
+            "text": "Thoughtful formulas created without animal testing"
+          }
+        },
+        "guarantee_2": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "guarantee-paraben-free.svg",
+            "heading": "Paraben & Sulfate-Free",
+            "text": "Gentle formulas made for regular pet-care routines"
+          }
+        },
+        "guarantee_3": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "guarantee-gmp.svg",
+            "heading": "GMP Certified",
+            "text": "Made with consistent standards and careful quality control"
+          }
+        },
+        "guarantee_4": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "guarantee-vet.svg",
+            "heading": "Vet Recommended",
+            "text": "Pet-first care approved and recommended by a veterinary dermatologist"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee_1",
+        "guarantee_2",
+        "guarantee_3",
+        "guarantee_4"
+      ],
+      "settings": {
+        "button_label": "",
+        "button_link": "",
+        "heading": "Premium Product\nGuarantees",
+        "text": "We take pet care seriously, and contrary to the old belief that a pet-bath is unnecessary and pretentious, we find it vital for your pet’s skin and health. Skin is your pet's largest organ and their first line of defense. A good bath keeps it hydrated, nourished and protected – so we make products that do exactly that. Developed with a veterinary dermatologist, free from harsh ingredients and made to GMP standards.\nAnd their coat is what sits on your couch, what you snuggle and cuddle – and so Barkin & Meowson’s products make it soft, shinny, deodorized, and most huggable!"
+      }
+    },
+    "barkin_hero_UhCXWP": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "20:1774",
+        "image": "shopify://shop_images/hero-about.jpg",
+        "fallback_asset": "hero-about.jpg",
+        "heading": "More About Barkin & Meowson",
+        "heading_tag": "h1",
+        "text": "Our team spent years formulating for humans and babies. Now we bring the same proven ingredients, gentle formulas and odor-neutralizing, pet-approved fragrances to your pet – for healthy skin and the most huggable coat in the house.",
+        "button_label": "Learn About Us",
+        "button_link": "shopify://collections/pet-shampoos-conditioners",
+        "desktop_height": 600,
+        "mobile_height": 595,
+        "mobile_only": false,
+        "desktop_only": false
+      }
+    },
+    "barkin_ingredients": {
+      "type": "barkin-ingredients",
+      "blocks": {
+        "ingredient_BzGNEn": {
+          "type": "ingredient",
+          "source": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"] }}",
+          "settings": {
+            "ingredient": "",
+            "image": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"shea-butter\"].text | metafield_tag }}"
+          }
+        },
+        "ingredient_KDgfMH": {
+          "type": "ingredient",
+          "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"] }}",
+          "settings": {
+            "ingredient": "",
+            "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-3\"].text | metafield_tag }}"
+          }
+        },
+        "ingredient_ya9x6P": {
+          "type": "ingredient",
+          "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-2\"] }}",
+          "settings": {
+            "ingredient": "",
+            "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-2\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-2\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-2\"].text | metafield_tag }}"
+          }
+        },
+        "ingredient_FALhwA": {
+          "type": "ingredient",
+          "source": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-4\"] }}",
+          "settings": {
+            "ingredient": "",
+            "image": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-4\"].image.value }}",
+            "heading": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-4\"].name.value }}",
+            "text": "{{ metaobjects.human_grade_ingredients[\"premium-grade-ingredient-4\"].text | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "ingredient_BzGNEn",
+        "ingredient_KDgfMH",
+        "ingredient_ya9x6P",
+        "ingredient_FALhwA"
+      ],
+      "settings": {
+        "product_heading": "",
+        "product_text": "",
+        "heading": "Ingredients Borrowed from Human Skincare",
+        "text": "We know what works in human skin and hair care, and we've brought it to pet care. Our ingredients create the instant \"wow\" our customers notice from the first use, and they make your pet's skin and coat its most glamorous and comfortable outfit.",
+        "center_text": false,
+        "button_label": "Learn More About Us",
+        "button_link": "shopify://pages/about-us",
+        "pagination_label": "Choose ingredient slide"
+      }
+    },
+    "barkin_problem_solver": {
+      "type": "barkin-problem-solver",
+      "blocks": {
+        "problem_1": {
+          "type": "problem",
+          "settings": {
+            "tab": "Sensitive Skin",
+            "collection": "pet-shampoos-conditioners",
+            "product": "",
+            "fallback_asset": "product-black.webp",
+            "product_title": "Gentle Care Shampoo",
+            "price": "$19.95"
+          }
+        },
+        "problem_2": {
+          "type": "problem",
+          "settings": {
+            "tab": "Dry & Flaky Skin",
+            "collection": "no-rinse-pet-cleaning",
+            "product": "",
+            "fallback_asset": "product-white.webp",
+            "product_title": "Moisturising Conditioner",
+            "price": "$19.95"
+          }
+        },
+        "problem_3": {
+          "type": "problem",
+          "settings": {
+            "tab": "Itch & Irritation",
+            "collection": "chlorhexidine-for-irritation-prone-skin-pets",
+            "product": "",
+            "fallback_asset": "product-spray.webp",
+            "product_title": "Daily Care Spray",
+            "price": "$19.95"
+          }
+        },
+        "problem_4": {
+          "type": "problem",
+          "settings": {
+            "tab": "Shedding",
+            "collection": "spring-summer-essentials",
+            "product": "",
+            "fallback_asset": "product-dental.webp",
+            "product_title": "Dental Essentials",
+            "price": "$19.95"
+          }
+        },
+        "problem_5": {
+          "type": "problem",
+          "settings": {
+            "tab": "Tangles",
+            "collection": "cats-grooming-supplies",
+            "product": "",
+            "fallback_asset": "product-black.webp",
+            "product_title": "Detangling Shampoo",
+            "price": "$19.95"
+          }
+        },
+        "problem_6": {
+          "type": "problem",
+          "settings": {
+            "tab": "Fleas & Ticks",
+            "collection": "pet-conditioners",
+            "product": "",
+            "fallback_asset": "product-white.webp",
+            "product_title": "Coat Care Conditioner",
+            "price": "$19.95"
+          }
+        },
+        "problem_7": {
+          "type": "problem",
+          "settings": {
+            "tab": "Home Mess",
+            "collection": "chlorhexidine-for-irritation-prone-skin-pets",
+            "product": "",
+            "fallback_asset": "product-spray.webp",
+            "product_title": "Household Care Spray",
+            "price": "$19.95"
+          }
+        }
+      },
+      "block_order": [
+        "problem_1",
+        "problem_2",
+        "problem_3",
+        "problem_4",
+        "problem_5",
+        "problem_6",
+        "problem_7"
+      ],
+      "settings": {
+        "heading": "Products That Address Problems",
+        "text": "We are just not here to bring glamour and shine. We are here for their skin and coat needs too",
+        "button_label": "Shop All Products",
+        "button_link": "shopify://collections/all",
+        "tab_label": "Shop by problem",
+        "carousel_label": "Products by pet-care problem",
+        "products_per_tab": 4
+      }
+    },
+    "barkin_mobile_quiz_mid": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "1:18429",
+        "image": "shopify://shop_images/hero-quiz.jpg",
+        "fallback_asset": "hero-quiz.webp",
+        "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
+        "heading_tag": "h2",
+        "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
+        "button_label": "Take the product quiz",
+        "button_link": "",
+        "desktop_height": 595,
+        "mobile_height": 595,
+        "mobile_only": true,
+        "desktop_only": false
+      }
+    },
+    "barkin_household": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "20:1763",
+        "image": "shopify://shop_images/General_Fill_Image_Section_1.jpg",
+        "fallback_asset": "hero-household.webp",
+        "heading": "Household Products",
+        "heading_tag": "h2",
+        "text": "“A home with pets is stinky and dirty.” – it doesn’t have to. Barkin & Meowson’s household products utilize oxygen technology for stain removal and odor neutralizing pet-friendly fragrances to help your home look and feel fresh and spotless.",
+        "button_label": "Shop Household",
+        "button_link": "shopify://collections/all",
+        "desktop_height": 875,
+        "mobile_height": 595,
+        "mobile_only": false,
+        "desktop_only": true
+      }
+    },
+    "barkin_testimonials": {
+      "type": "barkin-testimonials",
+      "blocks": {
+        "review_mXbAiD": {
+          "type": "review",
+          "source": "{{ metaobjects.testimonials.peter }}",
+          "settings": {
+            "image": "{{ metaobjects.testimonials.peter.image.value }}",
+            "image_alt": "{{ metaobjects.testimonials.peter.name.value }}",
+            "quote": "{{ metaobjects.testimonials.peter.text | metafield_tag }}",
+            "avatar": "{{ metaobjects.testimonials.peter.image_author.value }}",
+            "name": "{{ metaobjects.testimonials.peter.author.value }}",
+            "buyer_label": "{{ metaobjects.testimonials.peter.rol.value }}",
+            "recommendation": "Purchased the Detangling Spray"
+          }
+        },
+        "review_dNdQrn": {
+          "type": "review",
+          "source": "{{ metaobjects.testimonials[\"copy-of-alessandra-3\"] }}",
+          "settings": {
+            "image": "{{ metaobjects.testimonials[\"copy-of-alessandra-3\"].image.value }}",
+            "image_alt": "{{ metaobjects.testimonials[\"copy-of-alessandra-3\"].name.value }}",
+            "quote": "<p>{{ metaobjects.testimonials[\"copy-of-alessandra-3\"].subtitle.value }}</p>",
+            "avatar": "{{ metaobjects.testimonials[\"copy-of-alessandra-3\"].image_author.value }}",
+            "name": "{{ metaobjects.testimonials[\"copy-of-alessandra-3\"].author.value }}",
+            "buyer_label": "{{ metaobjects.testimonials[\"copy-of-alessandra-3\"].rol.value }}",
+            "recommendation": "Purchased the Detangling Spray"
+          }
+        },
+        "review_fPJJxx": {
+          "type": "review",
+          "source": "{{ metaobjects.testimonials[\"copy-of-alessandra-2\"] }}",
+          "settings": {
+            "image": "{{ metaobjects.testimonials[\"copy-of-alessandra-2\"].image.value }}",
+            "image_alt": "{{ metaobjects.testimonials[\"copy-of-alessandra-2\"].name.value }}",
+            "quote": "{{ metaobjects.testimonials[\"copy-of-alessandra-2\"].text | metafield_tag }}",
+            "avatar": "{{ metaobjects.testimonials[\"copy-of-alessandra-2\"].image_author.value }}",
+            "name": "{{ metaobjects.testimonials[\"copy-of-alessandra-2\"].author.value }}",
+            "buyer_label": "{{ metaobjects.testimonials[\"copy-of-alessandra-2\"].rol.value }}",
+            "recommendation": "Purchased the Detangling Spray"
+          }
+        },
+        "review_HjUxMf": {
+          "type": "review",
+          "source": "{{ metaobjects.testimonials[\"copy-of-alessandra\"] }}",
+          "settings": {
+            "image": "{{ metaobjects.testimonials[\"copy-of-alessandra\"].image.value }}",
+            "image_alt": "{{ metaobjects.testimonials[\"copy-of-alessandra\"].name.value }}",
+            "quote": "<p>{{ metaobjects.testimonials[\"copy-of-alessandra\"].subtitle.value }}</p>{{ metaobjects.testimonials[\"copy-of-alessandra\"].text | metafield_tag }}",
+            "avatar": "{{ metaobjects.testimonials[\"copy-of-alessandra\"].image_author.value }}",
+            "name": "{{ metaobjects.testimonials[\"copy-of-alessandra\"].author.value }}",
+            "buyer_label": "{{ metaobjects.testimonials[\"copy-of-alessandra\"].rol.value }}",
+            "recommendation": "Purchased the Detangling Spray"
+          }
+        }
+      },
+      "block_order": [
+        "review_mXbAiD",
+        "review_dNdQrn",
+        "review_fPJJxx",
+        "review_HjUxMf"
+      ],
+      "settings": {
+        "heading": "See what our customers say about Barkin & Meowson",
+        "text": "We are so proud and thankful for all the happy members of the Barkin & Meowson family.",
+        "carousel_label": "Customer reviews",
+        "pagination_label": "Choose customer review"
+      }
+    },
+    "barkin_bundle": {
+      "type": "barkin-bundle-builder",
+      "blocks": {
+        "bundle_1": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/bundle-shampoo.jpg",
+            "fallback_asset": "bundle-shampoo.webp",
+            "heading": "Shampoo",
+            "text": "Get your pet squeaky clean.",
+            "link": "https://barkinandmeowson.com/pages/collection-bundle"
+          }
+        },
+        "bundle_2": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/bundle-grooming.jpg",
+            "fallback_asset": "bundle-conditioner.webp",
+            "heading": "Conditioner",
+            "text": "Give them a beautifully soft coat.",
+            "link": "https://barkinandmeowson.com/pages/collection-bundle"
+          }
+        },
+        "bundle_3": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/bundle-grooming.jpg",
+            "fallback_asset": "bundle-grooming.webp",
+            "heading": "Grooming Essentials",
+            "text": "The devil is in the details.",
+            "link": "https://barkinandmeowson.com/pages/collection-bundle"
+          }
+        },
+        "bundle_4": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/bundle-home.jpg",
+            "fallback_asset": "bundle-home.webp",
+            "heading": "Home Care",
+            "text": "Easy cleanup, no hassle.",
+            "link": "https://barkinandmeowson.com/pages/collection-bundle"
+          }
+        }
+      },
+      "block_order": [
+        "bundle_1",
+        "bundle_2",
+        "bundle_3",
+        "bundle_4"
+      ],
+      "custom_css": [
+        "@media (max-width: 980px) {article {display: none; }}"
+      ],
+      "settings": {
+        "mobile_background_image": "shopify://shop_images/Bundle_Mobile.jpg",
+        "heading": "Build Your Pet's Routine,\nGet A Discount.",
+        "text": "Add up to 6 products and save up to 15% on your bundle.",
+        "button_label": "Build Your Bundle",
+        "button_link": "https://barkinandmeowson.com/pages/collection-bundle"
+      }
+    },
+    "barkin_blog": {
+      "type": "barkin-blog-guide",
+      "settings": {
+        "heading": "Barkin&Meowson’s\nPet-Care Guide.",
+        "text": "Practical guides for healthier skin, better coats and happier pets.",
+        "button_label": "View Full Blog",
+        "article_label": "Read Article"
+      }
+    },
+    "barkin_social": {
+      "type": "barkin-social-gallery",
+      "blocks": {
+        "social_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/social-1.jpg",
+            "fallback_asset": "social-1.webp",
+            "alt": "Pet parents and their dog",
+            "link": ""
+          }
+        },
+        "social_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/social-2.jpg",
+            "fallback_asset": "social-2.webp",
+            "alt": "A dog with its parent",
+            "link": ""
+          }
+        },
+        "social_3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/social-3.jpg",
+            "fallback_asset": "social-3.webp",
+            "alt": "Barkin & Meowson product",
+            "link": ""
+          }
+        },
+        "social_4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/social-4.jpg",
+            "fallback_asset": "social-4.webp",
+            "alt": "A pet parent holding a dog",
+            "link": ""
+          }
+        },
+        "social_5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/social-1.jpg",
+            "fallback_asset": "social-1.webp",
+            "alt": "Pet parents and their dog",
+            "link": ""
+          }
+        },
+        "social_6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/social-2.jpg",
+            "fallback_asset": "social-2.webp",
+            "alt": "A dog with its parent",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_1",
+        "social_2",
+        "social_3",
+        "social_4",
+        "social_5",
+        "social_6"
+      ],
+      "settings": {
+        "heading": "We’re Social, Come\nConnect With Us.",
+        "text": "Join our community of discerning pets and their parents.",
+        "button_label": "Connect With Us",
+        "button_link": "https://www.instagram.com/barkin_and_meowson$",
+        "carousel_label": "Barkin and Meowson social gallery"
+      }
+    },
+    "barkin_quiz": {
+      "type": "barkin-hero",
+      "settings": {
+        "figma_node": "20:1768",
+        "image": "shopify://shop_images/General_Fill_Image_Section_2.jpg",
+        "fallback_asset": "hero-quiz.webp",
+        "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
+        "heading_tag": "h2",
+        "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
+        "button_label": "Take the product quiz",
+        "button_link": "https://barkinandmeowson.com/#quiz",
+        "desktop_height": 875,
+        "mobile_height": 595,
+        "mobile_only": false,
+        "desktop_only": false
+      }
+    },
+    "barkin_faq": {
+      "type": "barkin-faq",
+      "blocks": {
+        "faq_1": {
+          "type": "question",
+          "settings": {
+            "category": "",
+            "question": "What makes Barkin & Meowson different?",
+            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "question",
+          "settings": {
+            "category": "",
+            "question": "Are the products cruelty free?",
+            "answer": "<p>Yes. Our formulas are created without animal testing.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "question",
+          "settings": {
+            "category": "",
+            "question": "How do I choose the right routine?",
+            "answer": "<p>Use our product quiz or shop by coat and skin concern to build a routine that fits your pet.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "question",
+          "settings": {
+            "category": "",
+            "question": "Can I build a custom bundle?",
+            "answer": "<p>Yes. Combine complementary products and save on a complete care routine.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "question",
+          "settings": {
+            "category": "",
+            "question": "When will my order arrive?",
+            "answer": "<p>Delivery timing is shown during checkout and depends on your shipping destination.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5"
+      ],
+      "settings": {
+        "heading": "Frequently Asked\nQuestions.",
+        "text": "Everything you need to choose and use the best care for your pet.",
+        "button_label": "See Full FAQ",
+        "button_link": "",
+        "open_first": true
+      }
+    }
+  },
+  "order": [
+    "barkin_hero_qDHxdw",
+    "barkin_promise",
+    "barkin_products",
+    "barkin_launch",
+    "barkin_guarantees",
+    "barkin_hero_UhCXWP",
+    "barkin_ingredients",
+    "barkin_problem_solver",
+    "barkin_mobile_quiz_mid",
+    "barkin_household",
+    "barkin_testimonials",
+    "barkin_bundle",
+    "barkin_blog",
+    "barkin_social",
+    "barkin_quiz",
+    "barkin_faq"
+  ]
 }

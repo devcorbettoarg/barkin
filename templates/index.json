@@ -567,7 +567,7 @@
             "fallback_asset": "bundle-shampoo.webp",
             "heading": "Shampoo",
             "text": "Get your pet squeaky clean.",
-            "link": "https://barkinandmeowson.com/pages/collection-bundle"
+            "link": "https://barkinandmeowson.co.uk/pages/collection-bundle"
           }
         },
         "bundle_2": {
@@ -576,7 +576,7 @@
             "fallback_asset": "bundle-conditioner.webp",
             "heading": "Conditioner",
             "text": "Give them a beautifully soft coat.",
-            "link": "https://barkinandmeowson.com/pages/collection-bundle"
+            "link": "https://barkinandmeowson.co.uk/pages/collection-bundle"
           }
         },
         "bundle_3": {
@@ -585,7 +585,7 @@
             "fallback_asset": "bundle-grooming.webp",
             "heading": "Grooming Essentials",
             "text": "The devil is in the details.",
-            "link": "https://barkinandmeowson.com/pages/collection-bundle"
+            "link": "https://barkinandmeowson.co.uk/pages/collection-bundle"
           }
         },
         "bundle_4": {
@@ -594,7 +594,7 @@
             "fallback_asset": "bundle-home.webp",
             "heading": "Home Care",
             "text": "Easy cleanup, no hassle.",
-            "link": "https://barkinandmeowson.com/pages/collection-bundle"
+            "link": "https://barkinandmeowson.co.uk/pages/collection-bundle"
           }
         }
       },
@@ -611,7 +611,7 @@
         "heading": "Build Your Pet's Routine,\nGet A Discount.",
         "text": "Add up to 6 products and save up to 15% on your bundle.",
         "button_label": "Build Your Bundle",
-        "button_link": "https://barkinandmeowson.com/pages/collection-bundle"
+        "button_link": "https://barkinandmeowson.co.uk/pages/collection-bundle"
       }
     },
     "barkin_blog": {
@@ -702,7 +702,7 @@
         "heading_tag": "h2",
         "text": "Find the products best suited to your pet’s coat, skin and everyday routine.",
         "button_label": "Take the product quiz",
-        "button_link": "https://barkinandmeowson.com/#quiz",
+        "button_link": "https://barkinandmeowson.co.uk/#quiz",
         "desktop_height": 875,
         "mobile_height": 595,
         "mobile_only": false,

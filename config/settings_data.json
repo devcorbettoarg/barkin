@@ -9,7 +9,9 @@
  */
 {
   "current": {
+    "logo": "shopify://shop_images/B_M_Logo-_2.png",
     "logo_width": 90,
+    "favicon": "shopify://shop_images/B_M_Logo-_2.png",
     "type_header_font": "dm_serif_display_n4",
     "heading_scale": 100,
     "type_body_font": "inter_n4",

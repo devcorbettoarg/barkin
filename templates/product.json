@@ -288,7 +288,6 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1768",
-        "image": "shopify://shop_images/General_Fill_Image_Section_5.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",
@@ -307,11 +306,9 @@
         "review_1": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
             "image_alt": "Pet parents enjoying time with their dog",
             "heading": "A Routine Made\nFor Your Pet.",
             "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
             "name": "Alessandra",
             "buyer_label": "Verified Buyer",
             "recommendation": "I recommend this product"
@@ -320,11 +317,9 @@
         "review_2": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
             "image_alt": "Pet parents enjoying time with their dog",
             "heading": "Other Products That\nCompliment This One.",
             "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
             "name": "Marta",
             "buyer_label": "Verified Buyer",
             "recommendation": "I recommend this product"
@@ -333,11 +328,9 @@
         "review_3": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
             "image_alt": "Pet parents enjoying time with their dog",
             "heading": "Other Products That\nCompliment This One.",
             "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
             "name": "Daniel",
             "buyer_label": "Verified Buyer",
             "recommendation": "I recommend this product"
@@ -400,6 +393,7 @@
       "settings": {
         "heading": "Barkin&Meowson’s\nPet-Care Guide.",
         "text": "Practical guides for healthier skin, better coats and happier pets.",
+        "blog": "care-guide",
         "button_label": "View Full Blog",
         "article_label": "Read Article"
       }

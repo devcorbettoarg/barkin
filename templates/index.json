@@ -297,7 +297,7 @@
         "heading_tag": "h1",
         "text": "Our team spent years formulating for humans and babies. Now we bring the same proven ingredients, gentle formulas and odour-neutralising, pet-approved fragrances to your pet – for healthy skin and the most huggable coat in the house.",
         "button_label": "Learn About Us",
-        "button_link": "shopify://collections/pet-shampoos-conditioners",
+        "button_link": "shopify://pages/about-us",
         "desktop_height": 600,
         "mobile_height": 595,
         "mobile_only": false,
@@ -491,7 +491,7 @@
         "heading_tag": "h2",
         "text": "“A home with pets is smelly and dirty.” – It doesn’t have to be! Barkin & Meowson’s household products harness oxygen-based technology for effective stain removal, alongside odour-neutralising, pet-friendly fragrances, to keep your home looking spotless and smelling fresh.",
         "button_label": "Shop Household",
-        "button_link": "shopify://collections/all",
+        "button_link": "shopify://collections/pet-home-cleaning",
         "desktop_height": 875,
         "mobile_height": 595,
         "mobile_only": false,
@@ -620,7 +620,7 @@
         "heading": "Build Your Pet's Routine,\nGet A Discount.",
         "text": "Add up to 6 products and save up to 15% on your bundle.",
         "button_label": "Build Your Bundle",
-        "button_link": "https://barkinandmeowson.co.uk/pages/collection-bundle"
+        "button_link": "shopify://pages/collection-bundle"
       }
     },
     "barkin_blog": {

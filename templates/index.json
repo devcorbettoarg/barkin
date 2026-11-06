@@ -177,7 +177,7 @@
             "image": "shopify://shop_images/2_a4d39e4e-7e07-43de-b99c-9ebc87696511.jpg",
             "fallback_asset": "collection-product.webp",
             "product_title": "Curly & Wavy Coat Shampoo",
-            "price": "$19.95",
+            "price": "£19.95",
             "link": "shopify://products/curly-coat-detangling-dog-shampoo",
             "heading": "Targeted Shampoo",
             "text": "With Silk Protein, Macadamia Oil and Keratin."
@@ -187,9 +187,10 @@
           "type": "product_slide",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/4_1efc6b16-2007-4ea1-bfe8-7f07fab68d5f.jpg",
             "fallback_asset": "product-black.webp",
-            "product_title": "Moisturizing Conditioner",
-            "price": "$19.95",
+            "product_title": "Supporting Conditioner",
+            "price": "£15.95",
             "link": "shopify://products/moisturizing-cat-dog-conditioner",
             "heading": "Supporting Conditioner",
             "text": "With Argan Oil and Keratin"
@@ -199,9 +200,10 @@
           "type": "product_slide",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/3_e50387b7-20d2-49fd-a0b3-0760c6c9a963.jpg",
             "fallback_asset": "product-spray.webp",
             "product_title": "Detangle Spray",
-            "price": "$16.95",
+            "price": "£16.95",
             "link": "shopify://products/cat-dog-detangling-spray",
             "heading": "Detangle Spray",
             "text": "For in-between bath combing, oil-free and deodorizing."
@@ -211,9 +213,10 @@
           "type": "product_slide",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/5_87c0439e-ee8c-46c5-91e5-f7eeb50cf881.jpg",
             "fallback_asset": "product-black.webp",
             "product_title": "Shop the Set",
-            "price": "$49.95",
+            "price": "£42.95",
             "link": "",
             "heading": "Detangle Set",
             "text": "The full routine every curly and wavy coat thrives with"

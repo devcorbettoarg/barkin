@@ -573,6 +573,7 @@
         "bundle_1": {
           "type": "step",
           "settings": {
+            "image": "shopify://shop_images/Deshedding_Shampoo.jpg",
             "fallback_asset": "bundle-shampoo.webp",
             "heading": "Shampoo",
             "text": "Get your pet squeaky clean.",
@@ -582,6 +583,7 @@
         "bundle_2": {
           "type": "step",
           "settings": {
+            "image": "shopify://shop_images/Moisturizing_Conditioner.jpg",
             "fallback_asset": "bundle-conditioner.webp",
             "heading": "Conditioner",
             "text": "Give them a beautifully soft coat.",
@@ -591,6 +593,7 @@
         "bundle_3": {
           "type": "step",
           "settings": {
+            "image": "shopify://shop_images/Paw_Nose_2c308bd1-e2ae-42a0-9923-2da96166a90e.jpg",
             "fallback_asset": "bundle-grooming.webp",
             "heading": "Grooming Essentials",
             "text": "The devil is in the details.",
@@ -600,6 +603,7 @@
         "bundle_4": {
           "type": "step",
           "settings": {
+            "image": "shopify://shop_images/Textile_Cleaner.jpg",
             "fallback_asset": "bundle-home.webp",
             "heading": "Home Care",
             "text": "Easy cleanup, no hassle.",

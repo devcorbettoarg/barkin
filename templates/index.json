@@ -170,6 +170,19 @@
     "barkin_launch": {
       "type": "barkin-collection-launch",
       "blocks": {
+        "launch_product_4": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/5_a01af5f9-6346-413b-aa2d-4a0c118eadc7.jpg",
+            "fallback_asset": "product-black.webp",
+            "product_title": "Shop the Set",
+            "price": "$49.95",
+            "link": "",
+            "heading": "Detangle Set",
+            "text": "The full routine every curly and wavy coat thrives with"
+          }
+        },
         "launch_product_1": {
           "type": "product_slide",
           "settings": {
@@ -208,26 +221,13 @@
             "heading": "Detangle Spray",
             "text": "For in-between bath combing, oil-free and deodorizing."
           }
-        },
-        "launch_product_4": {
-          "type": "product_slide",
-          "settings": {
-            "product": "",
-            "image": "shopify://shop_images/5_a01af5f9-6346-413b-aa2d-4a0c118eadc7.jpg",
-            "fallback_asset": "product-black.webp",
-            "product_title": "Shop the Set",
-            "price": "$49.95",
-            "link": "",
-            "heading": "Detangle Set",
-            "text": "The full routine every curly and wavy coat thrives with"
-          }
         }
       },
       "block_order": [
+        "launch_product_4",
         "launch_product_1",
         "launch_product_2",
-        "launch_product_3",
-        "launch_product_4"
+        "launch_product_3"
       ],
       "settings": {
         "left_image": "shopify://shop_images/quiz-Screenshot_2026-10-12_at_5.05.55_PM.png",

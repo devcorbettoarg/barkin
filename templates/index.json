@@ -161,8 +161,8 @@
         "heading": "Our Best Selling Products.",
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
         "mobile_text_alignment": "left",
-        "button_label": "Shop All Products",
-        "button_link": "shopify://collections/all",
+        "button_label": "Shop Best Sellers",
+        "button_link": "shopify://collections/best-sellers",
         "carousel_label": "Best selling products",
         "pagination_label": "Choose carousel position"
       }
@@ -234,7 +234,7 @@
         "left_heading": "Detangle Set",
         "left_text": "The care curly and wavy coated aristocracy needs to look and feel comfortable, soft and shinny",
         "left_button_label": "View All Essentials",
-        "left_link": "shopify://collections/all",
+        "left_link": "shopify://collections/pet-detangling",
         "carousel_label": "Featured collection products",
         "pagination_label": "Choose featured product"
       }

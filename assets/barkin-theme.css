@@ -3316,8 +3316,18 @@ min-height:28px; max-height:28px; }
     margin-inline: auto;
     padding: 0 0 50px;
   }
-  main[data-template="collection"] #product-grid {
-    row-gap: 10px;
+  main[data-template="collection"] #product-grid.grid--2-col-tablet-down {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  main[data-template="collection"] #product-grid.grid--2-col-tablet-down > .grid__item {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  main[data-template="collection"] #product-grid.grid--2-col-tablet-down .card--media > .card__inner {
+    height: 55vh;
   }
   main[data-template="collection"] .card > .card__content > .card__information {
     min-height: 76px;

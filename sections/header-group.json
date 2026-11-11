@@ -14,7 +14,7 @@
     "barkin_header": {
       "type": "barkin-header",
       "settings": {
-        "announcement": "Free shipping above $35 on all US orders",
+        "announcement": "Free shipping above £25 on all UK orders",
         "menu": "main-menu-desktop",
         "mobile_menu": "main-menu-mobile",
         "enable_country_selector": true,

@@ -3333,6 +3333,9 @@ min-height:28px; max-height:28px; }
     object-fit: contain;
     object-position: top;
   }
+  main[data-template="collection"] .card {
+    border: 0;
+  }
   main[data-template="collection"] .card > .card__content > .card__information {
     min-height: 76px;
     padding: 14px 54px 14px 12px;

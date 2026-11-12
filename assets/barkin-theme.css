@@ -3344,6 +3344,7 @@ min-height:28px; max-height:28px; }
     border: 0px;
     left: 12px;
     right: 12px;
+    opacity:0;
   }
   main[data-template="collection"] .quick-add {
     right: 12px;

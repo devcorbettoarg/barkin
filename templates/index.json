@@ -91,7 +91,7 @@
         "product_1": {
           "type": "product",
           "settings": {
-            "product": "cat-dog-detangling-spray",
+            "product": "sensitive-skin-newborns",
             "fallback_asset": "product-black.webp",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",
@@ -101,7 +101,7 @@
         "product_2": {
           "type": "product",
           "settings": {
-            "product": "universal-2-in-1-pet-shampoo-conditioner",
+            "product": "deshedding-set",
             "fallback_asset": "product-white.webp",
             "title": "Moisturising Conditioner",
             "price": "$19.95",
@@ -111,7 +111,7 @@
         "product_3": {
           "type": "product",
           "settings": {
-            "product": "flea-tick-shampoo-dogs-cats",
+            "product": "detangle-set",
             "fallback_asset": "product-spray.webp",
             "title": "Daily Care Spray",
             "price": "$19.95",
@@ -121,7 +121,7 @@
         "product_4": {
           "type": "product",
           "settings": {
-            "product": "chlorhexidine-shampoo-dog-cat",
+            "product": "the-gift",
             "fallback_asset": "product-dental.webp",
             "title": "Dental Essentials",
             "price": "$19.95",
@@ -131,7 +131,7 @@
         "product_5": {
           "type": "product",
           "settings": {
-            "product": "chlorhexidine-spray-dog-cat",
+            "product": "puppy-kitten-starter-set",
             "fallback_asset": "product-black.webp",
             "title": "Gentle Care Shampoo",
             "price": "$19.95",
@@ -141,7 +141,7 @@
         "product_6": {
           "type": "product",
           "settings": {
-            "product": "flea-tick-shampoo-dogs-cats",
+            "product": "rinse-free-fabulous",
             "fallback_asset": "product-white.webp",
             "title": "Moisturising Conditioner",
             "price": "$19.95",
@@ -157,6 +157,89 @@
         "product_5",
         "product_6"
       ],
+      "settings": {
+        "heading": "Targeted Sets",
+        "text": "Every coat has its own story, so we’ve paired our favourite formulas into complete routines, from detangling and deshedding to sensitive skin, new puppies and kittens, and those muddy in-between days. Each set brings together products designed to work as a team, at a better price than buying them separately – the simplest way to give your pet the royal treatment.",
+        "mobile_text_alignment": "left",
+        "button_label": "Shop the Sets",
+        "button_link": "shopify://collections/sets",
+        "carousel_label": "Best selling products",
+        "pagination_label": "Choose carousel position"
+      }
+    },
+    "barkin_product_showcase_GAtyf8": {
+      "type": "barkin-product-showcase",
+      "blocks": {
+        "product_9CkPTp": {
+          "type": "product",
+          "settings": {
+            "product": "cat-dog-detangling-spray",
+            "fallback_asset": "product-black.webp",
+            "title": "Gentle Care Shampoo",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_EKTLD3": {
+          "type": "product",
+          "settings": {
+            "product": "universal-2-in-1-pet-shampoo-conditioner",
+            "fallback_asset": "product-white.webp",
+            "title": "Moisturising Conditioner",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_mxTEW6": {
+          "type": "product",
+          "settings": {
+            "product": "flea-tick-shampoo-dogs-cats",
+            "fallback_asset": "product-spray.webp",
+            "title": "Daily Care Spray",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_hQajmP": {
+          "type": "product",
+          "settings": {
+            "product": "chlorhexidine-shampoo-dog-cat",
+            "fallback_asset": "product-dental.webp",
+            "title": "Dental Essentials",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_GGVRnw": {
+          "type": "product",
+          "settings": {
+            "product": "chlorhexidine-spray-dog-cat",
+            "fallback_asset": "product-black.webp",
+            "title": "Gentle Care Shampoo",
+            "price": "$19.95",
+            "link": ""
+          }
+        },
+        "product_LqEybw": {
+          "type": "product",
+          "settings": {
+            "product": "flea-tick-shampoo-dogs-cats",
+            "fallback_asset": "product-white.webp",
+            "title": "Moisturising Conditioner",
+            "price": "$19.95",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_9CkPTp",
+        "product_EKTLD3",
+        "product_mxTEW6",
+        "product_hQajmP",
+        "product_GGVRnw",
+        "product_LqEybw"
+      ],
+      "disabled": true,
       "settings": {
         "heading": "Our Best Selling Products.",
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
@@ -786,6 +869,7 @@
     "barkin_hero_qDHxdw",
     "barkin_promise",
     "barkin_products",
+    "barkin_product_showcase_GAtyf8",
     "barkin_launch",
     "barkin_guarantees",
     "barkin_hero_UhCXWP",

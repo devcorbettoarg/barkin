@@ -214,10 +214,6 @@
 }
 
 @media screen and (max-width: 749px) {
-  .card__media .media img {
-    max-height: 39vh;
-  }
-
   .grid--2-col-tablet-down .card__content quick-add-bulk .quantity__button {
     width: calc(3.5rem / var(--font-body-scale));
   }
@@ -298,6 +294,12 @@
   object-fit: cover;
   object-position: center center;
   width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .card__media .media img {
+    height: 39vh;
+  }
 }
 
 .card__inner:not(.ratio) > .card__content {

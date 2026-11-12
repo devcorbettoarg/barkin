@@ -3341,6 +3341,7 @@ min-height:28px; max-height:28px; }
     padding: 14px 54px 14px 12px;
   }
   main[data-template="collection"] .card > .card__content::before {
+    border: 0px;
     left: 12px;
     right: 12px;
   }

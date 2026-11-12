@@ -298,7 +298,7 @@
 
 @media screen and (max-width: 749px) {
   .card__media .media img {
-    height: 26vh !important;
+    height: 26vh;
   }
 }
 

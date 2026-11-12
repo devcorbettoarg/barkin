@@ -3327,7 +3327,11 @@ min-height:28px; max-height:28px; }
     min-width: 0;
   }
   main[data-template="collection"] #product-grid.grid--2-col-tablet-down .card--media > .card__inner {
-    height: 55vh;
+    height: 39vh;
+  }
+  main[data-template="collection"] #product-grid.grid--2-col-tablet-down .card__media .media img {
+    object-fit: contain;
+    object-position: top;
   }
   main[data-template="collection"] .card > .card__content > .card__information {
     min-height: 76px;

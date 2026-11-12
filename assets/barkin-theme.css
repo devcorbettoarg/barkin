@@ -3332,6 +3332,7 @@ min-height:28px; max-height:28px; }
   main[data-template="collection"] #product-grid.grid--2-col-tablet-down .card__media .media img {
     object-fit: cover;
     object-position: top;
+    height:26vh !important;
   }
   main[data-template="collection"] .card {
     border: 0;

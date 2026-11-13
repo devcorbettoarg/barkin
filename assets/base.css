@@ -3653,3 +3653,76 @@ cart-drawer {
   min-height:450px;
  }
  }
+
+
+/* ==========================================
+   REBUY - PRODUCT CAROUSEL
+   CSS ONLY / HORIZONTAL SCROLL
+========================================== */
+
+/* Track */
+#splide01-track {
+  width: 100% !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+
+  scrollbar-width: none;
+}
+
+#splide01-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Product list */
+#splide01-list {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+
+  width: 100% !important;
+  gap: 12px !important;
+
+  transform: none !important;
+  transition: none !important;
+
+  padding: 0 2px 8px !important;
+  margin: 0 !important;
+}
+
+/* Individual products */
+#splide01-list > .rebuy-product-block {
+  flex: 0 0 76% !important;
+  width: 76% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+
+  margin: 0 !important;
+
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+  box-sizing: border-box;
+}
+
+/* Product image */
+#splide01-list .rebuy-product-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Smaller devices */
+@media (max-width: 480px) {
+  #splide01-list > .rebuy-product-block {
+    flex-basis: 78% !important;
+    width: 78% !important;
+  }
+}

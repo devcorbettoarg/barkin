@@ -3658,3 +3658,44 @@ cart-drawer {
  button {
 padding:0px !important;
  }
+
+
+/* ==========================================
+   REBUY - PRODUCT CAROUSEL
+   CSS ONLY / HORIZONTAL SCROLL
+========================================== */
+body #rebuy-cart [data-rebuy-component="cross-sell-widget"] .splide__list {
+  gap:20px !important;
+}
+.rebuy-cart-selectable-gift-with-purchase__title {
+  color:white !important;
+  margin-bottom:10px;
+  font-family: Inter, Arial, sans-serif !important;
+}
+.rebuy-cart-selectable-gift-with-purchase__header {
+  padding-top:0px !important;
+}
+
+.rebuy-cart-selectable-gift-with-purchase__header-actions svg {
+  color:white;
+  
+}
+#rebuy-cart [data-rebuy-component="cross-sell-widget"] {
+  border:0px !important;
+}
+
+#rebuy-cart [data-rebuy-component="cross-sell-widget"] .rebuy-product-block {
+      justify-items: start;
+}
+body 
+#rebuy-cart [data-rebuy-component="cross-sell-widget"] .splide__arrows {
+  right:40px !important;
+}
+
+@media (max-width: 749px) {
+   body #rebuy-cart [data-rebuy-component="cross-sell-widget"] .rebuy-product-block {
+        grid-template-columns: 90px minmax(0, 1fr) !important;
+        grid-template-rows: auto auto 1fr auto !important;
+        min-height: 90px !important;
+    }
+}

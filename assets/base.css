@@ -3686,3 +3686,11 @@ body
 #rebuy-cart [data-rebuy-component="cross-sell-widget"] .splide__arrows {
   right:40px !important;
 }
+
+@media (max-width: 749px) {
+   body #rebuy-cart [data-rebuy-component="cross-sell-widget"] .rebuy-product-block {
+        grid-template-columns: 90px minmax(0, 1fr) !important;
+        grid-template-rows: auto auto 1fr auto !important;
+        min-height: 90px !important;
+    }
+}

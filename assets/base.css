@@ -3662,3 +3662,7 @@ cart-drawer {
 body #rebuy-cart [data-rebuy-component="cross-sell-widget"] .splide__list {
   gap:20px !important;
 }
+.rebuy-cart-selectable-gift-with-purchase__title {
+  color:white !important;
+  margin-bottom:10px;
+}

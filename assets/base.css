@@ -3659,3 +3659,6 @@ cart-drawer {
    REBUY - PRODUCT CAROUSEL
    CSS ONLY / HORIZONTAL SCROLL
 ========================================== */
+body #rebuy-cart [data-rebuy-component="cross-sell-widget"] .splide__list {
+  gap:20px !important;
+}

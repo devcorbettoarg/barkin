@@ -3694,3 +3694,7 @@ body
         min-height: 90px !important;
     }
 }
+
+.rebuy-cart__flyout-item-bundle * {
+    color: white !important;
+}

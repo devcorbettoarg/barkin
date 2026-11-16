@@ -33,12 +33,14 @@
         "promise_CBeq9a": {
           "type": "promise",
           "settings": {
+            "icon": "shopify://shop_images/svgexport-17.svg",
             "text": "GMP Certified Production"
           }
         },
         "promise_Q64dyc": {
           "type": "promise",
           "settings": {
+            "icon": "shopify://shop_images/svgexport-16.svg",
             "text": "Sulphate and Paraben-Free"
           }
         },
@@ -51,18 +53,21 @@
         "promise_2": {
           "type": "promise",
           "settings": {
+            "icon": "shopify://shop_images/Natural_Ingredients_White.webp",
             "text": "Premium Ingredients"
           }
         },
         "promise_3": {
           "type": "promise",
           "settings": {
+            "icon": "shopify://shop_images/Vet_Approved_White.webp",
             "text": "Vet Recommended"
           }
         },
         "promise_4": {
           "type": "promise",
           "settings": {
+            "icon": "shopify://shop_images/Pet_Certified_White_1.webp",
             "text": "Pet-Friendly Fragrances"
           }
         }

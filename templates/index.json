@@ -588,6 +588,7 @@
         "bundle_2": {
           "type": "step",
           "settings": {
+            "image": "shopify://shop_images/bundle-grooming.webp",
             "fallback_asset": "bundle-conditioner.webp",
             "heading": "Conditioner",
             "text": "Give them a beautifully soft coat.",
@@ -647,6 +648,7 @@
         "social_1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/09-2026_Barkin_Meowson_MCP_05.webp",
             "fallback_asset": "social-1.webp",
             "alt": "Pet parents and their dog",
             "link": ""
@@ -655,6 +657,7 @@
         "social_2": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/09-2026_Barkin_Meowson_MCP_02_a.webp",
             "fallback_asset": "social-2.webp",
             "alt": "A dog with its parent",
             "link": ""
@@ -671,6 +674,7 @@
         "social_4": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/09-2026_Barkin_Meowson_MCP_06.webp",
             "fallback_asset": "social-4.webp",
             "alt": "A pet parent holding a dog",
             "link": ""
@@ -679,6 +683,7 @@
         "social_5": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/social-1.webp",
             "fallback_asset": "social-1.webp",
             "alt": "Pet parents and their dog",
             "link": ""

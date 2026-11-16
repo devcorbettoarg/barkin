@@ -52,6 +52,13 @@
           "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
           "settings": {}
         },
+        "text_a6AMaU": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.add_to_cart_text.value }}",
+            "text_style": "body"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -148,6 +155,7 @@
         "variant_picker",
         "purchase_options",
         "loop_subscriptions_loop_widget_9dJi6P",
+        "text_a6AMaU",
         "quantity_selector",
         "buy_buttons",
         "purchase_guarantees_e3UCbG",

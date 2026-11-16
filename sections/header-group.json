@@ -15,8 +15,8 @@
       "type": "barkin-header",
       "settings": {
         "announcement": "Free shipping above $35 on all US orders",
-        "menu": "customer-account-main-menu",
-        "mobile_menu": "customer-account-main-menu",
+        "menu": "link-list-1",
+        "mobile_menu": "link-list",
         "enable_country_selector": true,
         "logo_width": 310,
         "mobile_logo_width": 140,

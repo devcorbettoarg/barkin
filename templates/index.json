@@ -251,6 +251,7 @@
           "type": "product_slide",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/Collection_Landing_Intro_-_Barkin_715x715_70401469-7e3b-4e01-9d10-bf9767c5789c.jpg",
             "fallback_asset": "product-black.webp",
             "product_title": "Shop the Set",
             "price": "$49.95",
@@ -303,6 +304,7 @@
         "launch_product_3"
       ],
       "settings": {
+        "left_image": "shopify://shop_images/quiz-Screenshot_2026-10-12_at_5.05.55_PM.png",
         "left_heading": "Detangle Set",
         "left_text": "The care curly and wavy coated aristocracy needs to look and feel comfortable, soft and shinny",
         "left_button_label": "View All Essentials",
@@ -364,6 +366,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1774",
+        "image": "shopify://shop_images/hero-about.webp",
         "fallback_asset": "hero-about.jpg",
         "heading": "More About Barkin & Meowson",
         "heading_tag": "h1",
@@ -557,6 +560,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1763",
+        "image": "shopify://shop_images/General_Fill_Image_Section_1.webp",
         "fallback_asset": "hero-household.webp",
         "heading": "Household Products",
         "heading_tag": "h2",

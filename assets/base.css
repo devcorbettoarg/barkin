@@ -3713,7 +3713,8 @@ body #rebuy-cart [data-rebuy-component=cross-sell-widget] .splide__arrows {
     right: 0px !important;
     top:30px !important;
 }
+body
 .rebuy-cart-selectable-gift-with-purchase__title {
-  font-size:14px;
+  font-size:14px !impportant;
 }
 }

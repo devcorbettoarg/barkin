@@ -3698,3 +3698,7 @@ body
 .rebuy-cart__flyout-item-bundle * {
     color: white !important;
 }
+
+body #rebuy-cart [data-rebuy-component=cross-sell-widget] .splide__arrows {
+    right: 40px !important;
+}

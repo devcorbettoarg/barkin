@@ -3711,6 +3711,7 @@ body #rebuy-cart [data-rebuy-component=cross-sell-widget] .splide__arrows {
       color: white !important; 
       text-align:left;
       margin-bottom:15px;
+          font-family: Inter, Arial, sans-serif !important;
 }
 
 @media (max-width: 749px) {

@@ -3715,6 +3715,6 @@ body #rebuy-cart [data-rebuy-component=cross-sell-widget] .splide__arrows {
 }
 body
 .rebuy-cart-selectable-gift-with-purchase__title {
-  font-size:14px !impportant;
+  font-size:120px !important;
 }
 }

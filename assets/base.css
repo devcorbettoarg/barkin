@@ -3713,7 +3713,7 @@ body #rebuy-cart [data-rebuy-component=cross-sell-widget] .splide__arrows {
       padding-top:0px;
       margin-bottom:15px;
           font-family: Inter, Arial, sans-serif !important;
-          font-size:14px !important;
+          font-size:16px !important;
 }
 
 @media (max-width: 749px) {
@@ -3721,6 +3721,7 @@ body #rebuy-cart [data-rebuy-component=cross-sell-widget] .splide__arrows {
     right: 0px !important;
     top:30px !important;
 }
+#rebuy-cart [data-rebuy-component="cross-sell-widget"] h4.primary-title, 
 body
 .rebuy-cart-selectable-gift-with-purchase__title {
   font-size:12px !important;

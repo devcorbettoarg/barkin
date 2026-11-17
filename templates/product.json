@@ -30,6 +30,10 @@
           "type": "price",
           "settings": {}
         },
+        "loop_subscriptions_loop_widget_RKbkhn": {
+          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -140,6 +144,7 @@
         "title",
         "product_tags",
         "price",
+        "loop_subscriptions_loop_widget_RKbkhn",
         "variant_picker",
         "purchase_options",
         "quantity_selector",

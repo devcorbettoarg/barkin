@@ -97,11 +97,11 @@
         "bundle_3",
         "bundle_4"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 980px) {.barkin-bundle__grid {display: none; }}"
       ],
       "settings": {
-        "mobile_background_image": "shopify://shop_images/Bundle_Mobile.jpg",
         "heading": "Build Your Pet's Routine,\nGet A Discount.",
         "text": "Add up to 6 products and save up to 15% on your bundle.",
         "button_label": "Build Your Bundle",
@@ -112,13 +112,11 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1777",
-        "image": "shopify://shop_images/General_Fill_Image_Section_4.jpg",
-        "mobile_image": "shopify://shop_images/Product_Quiz_1.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Not sure Which \nProducts fit your \npet’s needs?",
         "heading_tag": "h2",
         "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
-        "button_label": "Add to Cart",
+        "button_label": "",
         "button_link": "shopify://collections/all",
         "desktop_height": 875,
         "mobile_height": 650,

@@ -13,6 +13,8 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18776",
+        "image": "shopify://shop_images/Thomas---Shampoo-and-cond_a698591d-e031-49b1-b217-e9a2abe2396b.jpg",
+        "mobile_image": "shopify://shop_images/Website_Header_Sections_4096x2725_Instagram_Reel_Cover_-4_fe3a0bba-a1ab-4361-9334-80a75e0cb279.jpg",
         "fallback_asset": "hero-shopping.webp",
         "heading": "Pet Luxury, thoughtfully defined:",
         "heading_tag": "h1",
@@ -66,6 +68,7 @@
     "about_intro": {
       "type": "barkin-about-intro",
       "settings": {
+        "image": "shopify://shop_images/Website_Header_Sections_4096x2725-2.jpg",
         "fallback_asset": "hero-household.webp",
         "image_alt": "A pet enjoying time at home",
         "heading": "Barkin&Meowson came to life thanks to a certain hair care product manager who felt like pets were underserved.",
@@ -76,6 +79,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18779",
+        "image": "shopify://shop_images/quiz-Screenshot_2026-10-12_at_5.05.55_PM_1b7b5eac-fb32-4e1a-8383-8cb82106f356.png",
         "fallback_asset": "hero-household.webp",
         "heading": "Our Vision, Goal\n& Process",
         "heading_tag": "h2",
@@ -203,6 +207,8 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18782",
+        "image": "shopify://shop_images/Olya-_-Rockie-Affection.jpg",
+        "mobile_image": "shopify://shop_images/Website_Header_Sections_4096x2725_Instagram_Reel_Cover_-5.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Because we know they take a royal place in our heart, we are here to provide the royal care.",
         "heading_tag": "h2",

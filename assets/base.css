@@ -3706,3 +3706,11 @@ body #rebuy-cart [data-rebuy-component=cross-sell-widget] .splide__arrows {
 .rebuy-carousel__pagination {
   display:None;
 }
+
+
+@media (max-width: 749px) {
+body #rebuy-cart [data-rebuy-component=cross-sell-widget] .splide__arrows {
+    right: 0px !important;
+    top:30px !important;
+}
+}

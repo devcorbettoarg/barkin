@@ -115,12 +115,16 @@ class CartItems extends window.StandardEvents.createViewEventElement(HTMLElement
         .then((response) => response.text())
         .then((responseText) => {
           const html = new DOMParser().parseFromString(responseText, 'text/html');
-          const selectors = ['cart-drawer-items', '.cart-drawer__footer'];
-          for (const selector of selectors) {
-            const targetElement = document.querySelector(selector);
-            const sourceElement = html.querySelector(selector);
-            if (targetElement && sourceElement) {
-              targetElement.replaceWith(sourceElement);
+          const drawer = document.querySelector('cart-drawer');
+          const source = html.querySelector('.drawer__inner');
+          const target = drawer?.querySelector('.drawer__inner');
+          if (target && source) {
+            const focusedId = drawer.contains(document.activeElement) ? document.activeElement.id : null;
+            target.innerHTML = source.innerHTML;
+            drawer.classList.toggle('is-empty', !!target.querySelector('cart-drawer-items.is-empty'));
+            if (drawer.classList.contains('active')) {
+              const focusedElement = focusedId && document.getElementById(focusedId);
+              trapFocus(target, focusedElement || target);
             }
           }
         })

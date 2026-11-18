@@ -48,10 +48,6 @@
             "plan_label": "Delivery frequency"
           }
         },
-        "loop_subscriptions_loop_widget_9dJi6P": {
-          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
-          "settings": {}
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -124,15 +120,6 @@
             "enable_quick_add": true
           }
         },
-        "rebuy_personalization_engine_rebuy_widget_ziPFgP": {
-          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
-          "settings": {
-            "enabled": true,
-            "id": "310549",
-            "product_id_enabled": true,
-            "collection_id_enabled": false
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -147,7 +134,6 @@
         "price",
         "variant_picker",
         "purchase_options",
-        "loop_subscriptions_loop_widget_9dJi6P",
         "quantity_selector",
         "buy_buttons",
         "purchase_guarantees_e3UCbG",
@@ -157,7 +143,6 @@
         "ingredients",
         "safety",
         "complementary",
-        "rebuy_personalization_engine_rebuy_widget_ziPFgP",
         "share"
       ],
       "settings": {
@@ -293,7 +278,6 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1768",
-        "image": "shopify://shop_images/General_Fill_Image_Section_5.jpg",
         "fallback_asset": "hero-quiz.webp",
         "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
         "heading_tag": "h2",
@@ -312,11 +296,9 @@
         "review_1": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
             "image_alt": "Pet parents enjoying time with their dog",
             "heading": "A Routine Made\nFor Your Pet.",
             "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
             "name": "Alessandra",
             "buyer_label": "Verified Buyer",
             "recommendation": "I recommend this product"
@@ -325,11 +307,9 @@
         "review_2": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
             "image_alt": "Pet parents enjoying time with their dog",
             "heading": "Other Products That\nCompliment This One.",
             "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
             "name": "Marta",
             "buyer_label": "Verified Buyer",
             "recommendation": "I recommend this product"
@@ -338,11 +318,9 @@
         "review_3": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/review-feature.jpg",
             "image_alt": "Pet parents enjoying time with their dog",
             "heading": "Other Products That\nCompliment This One.",
             "quote": "Choosing the right care routine made a visible difference to our dog’s skin and coat.",
-            "avatar": "shopify://shop_images/reviewer.jpg",
             "name": "Daniel",
             "buyer_label": "Verified Buyer",
             "recommendation": "I recommend this product"
@@ -363,20 +341,6 @@
     },
     "178881270223fbf85e": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_ncn8yq": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_ncn8yq"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -405,9 +369,31 @@
       "settings": {
         "heading": "Barkin&Meowson’s\nPet-Care Guide.",
         "text": "Practical guides for healthier skin, better coats and happier pets.",
-        "blog": "",
         "button_label": "View Full Blog",
+        "button_link": "",
+        "feature_title": "How Natural Flea & Tick Protection Works.",
+        "feature_link": "",
         "article_label": "Read Article"
+      }
+    },
+    "1795009133d1891c1c": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_aGRHX4": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_aGRHX4"
+      ],
+      "settings": {
+        "include_margins": true
       }
     }
   },
@@ -421,6 +407,7 @@
     "barkin_review",
     "178881270223fbf85e",
     "related-products",
-    "barkin_blog"
+    "barkin_blog",
+    "1795009133d1891c1c"
   ]
 }

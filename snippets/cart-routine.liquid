@@ -1,0 +1,41 @@
+{%- liquid
+  assign routine_collection = settings.cart_routine_collection | default: collections.all
+  assign cart_product_ids = cart.items | map: 'product_id'
+-%}
+{%- for routine_product in routine_collection.products limit: 50 -%}
+  {%- unless cart_product_ids contains routine_product.id or routine_product.available == false -%}
+    {%- assign routine_variant = routine_product.selected_or_first_available_variant -%}
+    <aside class="barkin-cart-routine" aria-labelledby="CartRoutineHeading">
+      <h3 id="CartRoutineHeading" class="barkin-cart-routine__heading">Complete the routine</h3>
+      <div class="barkin-cart-routine__item">
+        <a class="barkin-cart-routine__media" href="{{ routine_product.url }}">
+          {%- if routine_product.featured_image -%}
+            {{ routine_product.featured_image | image_url: width: 226 | image_tag: loading: 'lazy', width: 113, height: 113 }}
+          {%- endif -%}
+        </a>
+        <a class="barkin-cart-routine__title" href="{{ routine_product.url }}">{{ routine_product.title | escape }}</a>
+        {%- if routine_product.metafields.reviews.rating.value != blank -%}
+          <span class="barkin-cart-routine__rating" aria-label="{{ routine_product.metafields.reviews.rating.value }} out of 5 stars">
+            <img src="{{ 'cart-rating-stars.svg' | asset_url }}" alt="" width="69" height="13">
+            {{ routine_product.metafields.reviews.rating.value }}
+          </span>
+        {%- endif -%}
+        <product-form class="barkin-cart-routine__form" data-section-id="cart-drawer">
+          <div class="product-form__error-message-wrapper" role="alert" hidden>
+            <span class="product-form__error-message"></span>
+          </div>
+          {%- form 'product', routine_product, id: 'CartRoutineForm', novalidate: 'novalidate' -%}
+            <input type="hidden" name="id" value="{{ routine_variant.id }}">
+            <input type="hidden" name="quantity" value="{{ routine_variant.quantity_rule.min }}">
+            <button type="submit" name="add" class="button barkin-cart-routine__add">
+              <span>{{ 'products.product.add_to_cart' | t }}</span>
+              {% render 'loading-spinner' %}
+            </button>
+          {%- endform -%}
+        </product-form>
+        <span class="barkin-cart-routine__price">{{ routine_variant.price | money }}</span>
+      </div>
+    </aside>
+    {%- break -%}
+  {%- endunless -%}
+{%- endfor -%}

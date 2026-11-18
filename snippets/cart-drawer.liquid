@@ -10,6 +10,7 @@
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 <style>
   .drawer {
@@ -74,6 +75,7 @@
           </span>
         </button>
       </div>
+      <div class="barkin-cart-announcement">Treat Your Pet Like Royalty</div>
       {%- if cart != empty and settings.free_shipping_threshold > 0 -%}
         {%- liquid
           assign free_shipping_threshold = settings.free_shipping_threshold | times: 100
@@ -385,15 +387,12 @@
                               >
                                 <button
                                   type="button"
-                                  class="button button--tertiary cart-remove-button"
+                                  class="button button--tertiary cart-remove-button{% if item.instructions and item.instructions.can_remove == false %} hidden{% endif %}"
                                   aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
                                   data-variant-id="{{ item.variant.id }}"
-                                  {% if item.instructions and item.instructions.can_remove == false %}
-                                    class="hidden"
-                                  {% endif %}
                                 >
                                   <span class="svg-wrapper">
-                                    {{- 'icon-remove.svg' | inline_asset_content -}}
+                                    {{- 'icon-close.svg' | inline_asset_content -}}
                                   </span>
                                 </button>
                               </cart-remove-button>
@@ -508,6 +507,9 @@
           </div>
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
+        {%- if cart != empty -%}
+          {% render 'cart-routine' %}
+        {%- endif -%}
       </cart-drawer-items>
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
@@ -549,8 +551,8 @@
           </div>
 
           <div class="totals" role="status">
-            <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
-            <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
+            <h2 class="totals__total">Subtotal ({{ cart.item_count }} {% if cart.item_count == 1 %}Item{% else %}Items{% endif %})</h2>
+            <p class="totals__total-value">{{ cart.total_price | money }}</p>
           </div>
 
           <small class="tax-note caption-large rte">
@@ -607,9 +609,11 @@
               disabled
             {% endif %}
           >
+            <img src="{{ 'cart-checkout-bag.svg' | asset_url }}" alt="" width="13" height="17">
             {{ 'sections.cart.checkout' | t }}
           </button>
         </div>
+        {% render 'cart-payment-icons' %}
       </div>
     </div>
   </div>

@@ -26,11 +26,6 @@ class CartDrawer extends HTMLElement {
   }
 
   open(triggeredBy) {
-    // Rebuy handles opening its own cart; keep Dawn's drawer closed.
-    if (typeof window.Rebuy?.SmartCart?.show === 'function') {
-      return;
-    }
-
     if (this.classList.contains('active')) return;
     if (triggeredBy) this.setActiveElement(triggeredBy);
     const cartDrawerNote = this.querySelector('[id^="Details-"] summary');
@@ -38,6 +33,7 @@ class CartDrawer extends HTMLElement {
     // here the animation doesn't seem to always get triggered. A timeout seem to help
     setTimeout(() => {
       this.classList.add('animate', 'active');
+      document.body.classList.add('cart-drawer-open');
     });
 
     this.addEventListener(
@@ -61,6 +57,7 @@ class CartDrawer extends HTMLElement {
 
   close() {
     this.classList.remove('active');
+    document.body.classList.remove('cart-drawer-open');
     removeTrapFocus(this.activeElement);
   }
 
@@ -92,6 +89,7 @@ class CartDrawer extends HTMLElement {
       sectionElement.innerHTML = this.getSectionInnerHTML(parsedState.sections[section.id], section.selector);
     });
 
+    this.classList.toggle('is-empty', !!this.querySelector('cart-drawer-items.is-empty'));
     setTimeout(() => {
       this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
       this.open();
@@ -144,29 +142,3 @@ class CartDrawerItems extends CartItems {
 
 customElements.define('cart-drawer-items', CartDrawerItems);
 
-// Rebuy can update the cart without running Dawn's product-form rendering.
-// Refresh the header section independently from either drawer's visibility.
-let rebuyCartIconTimer;
-let rebuyCartIconVersion = 0;
-document.addEventListener('rebuy:cart.change', () => {
-  const version = ++rebuyCartIconVersion;
-  clearTimeout(rebuyCartIconTimer);
-  rebuyCartIconTimer = setTimeout(async () => {
-    try {
-      const url = new URL(window.routes.cart_url, window.location.origin);
-      url.searchParams.set('sections', 'cart-icon-bubble');
-      const response = await fetch(url);
-      if (!response.ok) throw new Error(`Cart icon refresh failed: ${response.status}`);
-      const sections = await response.json();
-      if (version !== rebuyCartIconVersion || !sections['cart-icon-bubble']) return;
-
-      const section = new DOMParser()
-        .parseFromString(sections['cart-icon-bubble'], 'text/html')
-        .querySelector('.shopify-section');
-      const cartIcon = document.getElementById('cart-icon-bubble');
-      if (cartIcon && section) cartIcon.innerHTML = section.innerHTML;
-    } catch (error) {
-      console.error(error);
-    }
-  }, 100);
-});

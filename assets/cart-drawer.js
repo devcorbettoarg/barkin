@@ -36,17 +36,15 @@ class CartDrawer extends HTMLElement {
       document.body.classList.add('cart-drawer-open');
     });
 
-    const focusDrawer = () => {
-      if (!this.classList.contains('active')) return;
-      const container = this.querySelector('.drawer__inner');
-      trapFocus(container, container);
-    };
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setTimeout(focusDrawer);
-    }
     this.addEventListener(
       'transitionend',
-      focusDrawer,
+      () => {
+        const containerToTrapFocusOn = this.classList.contains('is-empty')
+          ? this.querySelector('.drawer__inner-empty')
+          : document.getElementById('CartDrawer');
+        const focusElement = this.querySelector('.drawer__inner') || this.querySelector('.drawer__close');
+        trapFocus(containerToTrapFocusOn, focusElement);
+      },
       { once: true },
     );
 
@@ -143,3 +141,4 @@ class CartDrawerItems extends CartItems {
 }
 
 customElements.define('cart-drawer-items', CartDrawerItems);
+

@@ -26,7 +26,11 @@ class CartDrawer extends HTMLElement {
   }
 
   open(triggeredBy) {
-    if (this.classList.contains('active')) return;
+    if (this.classList.contains('active')) {
+      const container = this.querySelector('.drawer__inner');
+      trapFocus(container, container);
+      return;
+    }
     if (triggeredBy) this.setActiveElement(triggeredBy);
     const cartDrawerNote = this.querySelector('[id^="Details-"] summary');
     if (cartDrawerNote && !cartDrawerNote.hasAttribute('role')) this.setSummaryAccessibility(cartDrawerNote);
@@ -60,7 +64,7 @@ class CartDrawer extends HTMLElement {
   close() {
     this.classList.remove('active');
     document.body.classList.remove('cart-drawer-open');
-    removeTrapFocus(this.activeElement);
+    removeTrapFocus(this.activeElement?.isConnected ? this.activeElement : document.getElementById('cart-icon-bubble'));
   }
 
   setSummaryAccessibility(cartDrawerNote) {

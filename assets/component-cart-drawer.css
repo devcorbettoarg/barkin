@@ -499,14 +499,14 @@ cart-drawer.drawer { inset: 0; width: 100%; height: 100%; height: 100dvh; }
 .barkin-cart-routine__add { min-width: 0; min-height: 28px; padding: 6px 14px; border-radius: 4px; background: var(--cart-gold); color: var(--barkin-white); font: inherit; }
 .barkin-cart-routine__add::before, .barkin-cart-routine__add::after { display: none; }
 .barkin-cart-routine__price { grid-area: 3 / 3; align-self: end; }
-.cart-drawer.is-empty .drawer__inner { display: flex; padding: 0 40px; }
-.cart-drawer.is-empty .drawer__inner-empty { flex: 1; padding: 0; }
-.cart-drawer.is-empty .barkin-cart-announcement { display: none; }
+cart-drawer.is-empty .drawer__inner { display: flex; padding: 0 40px; }
+cart-drawer.is-empty .drawer__inner-empty { flex: 1; padding: 0; }
+cart-drawer.is-empty .barkin-cart-announcement { display: none; }
 .cart-drawer .cart__empty-text { color: inherit; }
 .cart-drawer :focus-visible { outline: 2px solid var(--cart-gold); outline-offset: 3px; }
 @media (max-width: 749px) {
   .cart-drawer .drawer__inner { padding-inline: 20px; }
-  .cart-drawer.is-empty .drawer__inner { padding-inline: 20px; }
+  cart-drawer.is-empty .drawer__inner { padding-inline: 20px; }
   .barkin-cart-announcement { margin-inline: -20px; }
   .cart-drawer cart-drawer-items { margin-inline: -20px; padding-inline: 20px; }
   .cart-drawer .cart-item { grid-template-columns: 90px minmax(0,1fr) auto; }
@@ -526,3 +526,15 @@ cart-drawer.drawer { inset: 0; width: 100%; height: 100%; height: 100dvh; }
 @media (prefers-reduced-motion: reduce) {
   .cart-drawer .drawer__inner { transition: none; }
 }
+
+.barkin-cart-routine__item:has(.barkin-cart-routine__rating) .barkin-cart-routine__title { padding-right: 98px; }
+.barkin-cart-routine__rating { grid-area: 1 / 2 / 2 / 4; justify-self: end; align-self: start; }
+@media (max-width: 749px) {
+  .barkin-cart-routine__item:has(.barkin-cart-routine__rating) .barkin-cart-routine__title { padding-right: 0; }
+  .barkin-cart-routine__rating { grid-area: 2 / 2 / 3 / 4; justify-self: start; }
+}
+/* Keep the dark cart palette independent of the page's light theme tokens. */
+.cart-drawer .drawer__inner { --barkin-border: rgba(255,253,252,.25); }
+.cart-drawer .cart-item__error:has(.cart-item__error-text:empty) { display: none; }
+cart-drawer.is-empty .drawer__inner { align-items: stretch; }
+cart-drawer.is-empty cart-drawer-items { display: none; }

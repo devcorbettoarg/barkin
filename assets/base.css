@@ -3707,7 +3707,7 @@ body
 }
 
 body #rebuy-cart [data-rebuy-component=cross-sell-widget] .splide__arrows {
-    right: 40px !important;
+    right: 0px !important;
     top:40px !important;
 }
 .rebuy-carousel__pagination {

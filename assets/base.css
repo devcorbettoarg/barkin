@@ -3672,7 +3672,7 @@ body #rebuy-cart [data-rebuy-component="cross-sell-widget"] .splide__list {
 }
 
 .rebuy-cart-selectable-gift-with-purchase__header-actions svg {
-  color:white;
+  color:#ceaa68;
   
 }
 #rebuy-cart [data-rebuy-component="cross-sell-widget"] {

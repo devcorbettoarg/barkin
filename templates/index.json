@@ -13,7 +13,7 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "20:1774",
-        "image": "shopify://shop_images/Above_The_Fold_-_Header_-_Web_Landing_Barkin.jpg",
+        "image": "shopify://shop_images/V2_Above_The_Fold_-_Header_-_Web_Landing_Barkin.jpg",
         "mobile_image": "shopify://shop_images/Above_The_Fold_-_Header_-_Q2_Mobile_Landing_Barkin.jpg",
         "fallback_asset": "hero-shopping.webp",
         "heading": "Explore full premium care routines at 20% off",

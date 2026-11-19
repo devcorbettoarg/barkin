@@ -11,6 +11,7 @@
   "sections": {
     "barkin_hero_qDHxdw": {
       "type": "barkin-hero",
+      "disabled": true,
       "settings": {
         "figma_node": "20:1774",
         "image": "shopify://shop_images/General_Fill_Image_Section.jpg",
@@ -21,6 +22,25 @@
         "text": "",
         "button_label": "Go to Shop",
         "button_link": "shopify://collections/all-products",
+        "desktop_height": 600,
+        "mobile_height": 595,
+        "mobile_only": false,
+        "desktop_only": false
+      }
+    },
+    "barkin_hero_MiRtqW": {
+      "type": "barkin-hero",
+      "name": "Barkin hero - BFCM",
+      "settings": {
+        "figma_node": "20:1774",
+        "image": "shopify://shop_images/V2_Above_The_Fold_-_Header_-_Web_Landing_Barkin.jpg",
+        "mobile_image": "shopify://shop_images/Above_The_Fold_-_Header_-_Q2_Mobile_Landing_Barkin.jpg",
+        "fallback_asset": "hero-shopping.webp",
+        "heading": "Explore full premium care routines at 20% off",
+        "heading_tag": "h1",
+        "text": "",
+        "button_label": "Shop Black Friday",
+        "button_link": "shopify://collections/sets",
         "desktop_height": 600,
         "mobile_height": 595,
         "mobile_only": false,
@@ -876,6 +896,7 @@
   },
   "order": [
     "barkin_hero_qDHxdw",
+    "barkin_hero_MiRtqW",
     "barkin_promise",
     "barkin_products",
     "barkin_product_showcase_GNGjHd",

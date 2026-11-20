@@ -4,6 +4,8 @@ if (!customElements.get('barkin-carousel')) {
       this.rail = this.querySelector('[data-carousel-rail]');
       this.cards = Array.from(this.querySelectorAll('[data-carousel-slide]'));
       this.dots = Array.from(this.querySelectorAll('[data-carousel-dot]'));
+      this.previousButton = this.querySelector('[data-carousel-previous]');
+      this.nextButton = this.querySelector('[data-carousel-next]');
 
       if (!this.rail || this.cards.length < 2) return;
 
@@ -14,6 +16,10 @@ if (!customElements.get('barkin-carousel')) {
       this.onPointerEnd = this.onPointerEnd.bind(this);
       this.onClick = this.onClick.bind(this);
       this.onDragStart = this.onDragStart.bind(this);
+      this.onPrevious = () => this.goToPage(Math.max(0, this.getCurrentPage() - 1));
+      this.onNext = () => this.goToPage(Math.min(this.pages.length - 1, this.getCurrentPage() + 1));
+      this.previousButton?.addEventListener('click', this.onPrevious);
+      this.nextButton?.addEventListener('click', this.onNext);
 
       this.dotHandlers = this.dots.map((dot) => {
         const handler = () => {
@@ -34,6 +40,8 @@ if (!customElements.get('barkin-carousel')) {
       this.rail.addEventListener('dragstart', this.onDragStart);
       this.resizeObserver = new ResizeObserver(this.onResize);
       this.resizeObserver.observe(this.rail);
+      const cardInfo = this.cards[0].querySelector('.barkin-product-card__info');
+      if (cardInfo) this.resizeObserver.observe(cardInfo);
 
       requestAnimationFrame(() => {
         this.updatePages();
@@ -51,6 +59,8 @@ if (!customElements.get('barkin-carousel')) {
       this.rail?.removeEventListener('click', this.onClick, true);
       this.rail?.removeEventListener('dragstart', this.onDragStart);
       this.dots?.forEach((dot, index) => dot.removeEventListener('click', this.dotHandlers?.[index]));
+      this.previousButton?.removeEventListener('click', this.onPrevious);
+      this.nextButton?.removeEventListener('click', this.onNext);
       this.resizeObserver?.disconnect();
       if (this.scrollFrame) cancelAnimationFrame(this.scrollFrame);
     }
@@ -158,6 +168,13 @@ if (!customElements.get('barkin-carousel')) {
       });
       const pagination = this.querySelector('.barkin-showcase__dots');
       if (pagination) pagination.hidden = this.pages.length < 2;
+      if (this.previousButton || this.nextButton) {
+        const card = this.cards[0];
+        const infoHeight = card.querySelector('.barkin-product-card__info')?.offsetHeight || 0;
+        const imageCenter = this.rail.getBoundingClientRect().top - this.getBoundingClientRect().top
+          + (card.offsetHeight - infoHeight) / 2;
+        this.style.setProperty('--barkin-arrow-top', `${imageCenter}px`);
+      }
     }
 
     goToPage(index) {
@@ -224,6 +241,16 @@ if (!customElements.get('barkin-carousel')) {
       this.cards.forEach((card, index) => {
         card.classList.toggle('is-active', index === currentIndex);
       });
+
+      const maxScroll = Math.max(0, this.rail.scrollWidth - this.rail.clientWidth);
+      if (this.previousButton) {
+        this.previousButton.hidden = maxScroll <= 1;
+        this.previousButton.disabled = this.rail.scrollLeft <= 1;
+      }
+      if (this.nextButton) {
+        this.nextButton.hidden = maxScroll <= 1;
+        this.nextButton.disabled = this.rail.scrollLeft >= maxScroll - 1;
+      }
 
       if (this.dataset.carouselEdges !== 'false') {
         const railRect = this.rail.getBoundingClientRect();

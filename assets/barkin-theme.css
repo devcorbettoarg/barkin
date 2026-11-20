@@ -2420,6 +2420,12 @@ background: rgba(0, 0, 0, 0.35);
   font-size: 1.2rem;
 }
 
+.barkin-product-card__compare-price {
+  display: inline-block;
+  margin-inline-end: 8px;
+  text-decoration: line-through;
+}
+
 .barkin-product-card__form {
   margin: 0;
 }

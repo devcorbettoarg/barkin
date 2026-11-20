@@ -65,7 +65,7 @@
                       </span>
                       <span class="barkin-product-card__info">
                         <span class="barkin-product-card__title">{{ card_product.title }}</span>
-                        <span class="barkin-product-card__price">{{ card_product.price | money }}</span>
+                        <span class="barkin-product-card__price">{% render 'barkin-card-price', product: card_product %}</span>
                       </span>
                     </a>
                     <product-form>
@@ -101,7 +101,7 @@
                 <article class="barkin-product-card" data-carousel-slide>
                   <a class="barkin-product-card__link" href="{{ card_url }}">
                     <span class="barkin-product-card__media"><img class="barkin-card-image" src="{{ card_image }}" alt="{{ card_title | escape }}" width="704" height="942" loading="lazy"></span>
-                    <span class="barkin-product-card__info"><span class="barkin-product-card__title">{{ card_title }}</span><span class="barkin-product-card__price">{{ card_price }}</span></span>
+                    <span class="barkin-product-card__info"><span class="barkin-product-card__title">{{ card_title }}</span><span class="barkin-product-card__price">{% render 'barkin-card-price', product: card_product, fallback_price: card_price %}</span></span>
                   </a>
                   {% if card_product != blank %}
                     <product-form>

@@ -1,0 +1,14 @@
+{% comment %}
+  Product card prices, with an optional formatted fallback for placeholder cards.
+  Accepts: product, fallback_price.
+{% endcomment %}
+{%- if product != blank -%}
+  {%- if product.compare_at_price > product.price -%}
+    <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
+    <s class="barkin-product-card__compare-price">{{ product.compare_at_price | money }}</s>
+    <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
+  {%- endif -%}
+  <span>{{ product.price | money }}</span>
+{%- else -%}
+  {{ fallback_price }}
+{%- endif -%}

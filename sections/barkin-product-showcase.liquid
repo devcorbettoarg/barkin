@@ -51,7 +51,7 @@
             </span>
             <span class="barkin-product-card__info">
               <span class="barkin-product-card__title">{{ card_title }}</span>
-              <span class="barkin-product-card__price">{{ card_price }}</span>
+              <span class="barkin-product-card__price">{% render 'barkin-card-price', product: card_product, fallback_price: card_price %}</span>
             </span>
           </a>
 

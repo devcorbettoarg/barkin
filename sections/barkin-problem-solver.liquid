@@ -48,8 +48,8 @@
           {% unless forloop.first %}hidden{% endunless %}
           {{ block.shopify_attributes }}
         >
-          <barkin-carousel class="barkin-problem-solver__carousel" role="region" aria-roledescription="carousel" aria-label="{{ block.settings.tab | escape }}">
-            <div class="barkin-problem-solver__rail" data-carousel-rail>
+          <barkin-carousel class="barkin-problem-solver__carousel" data-pagination="positions" role="region" aria-roledescription="carousel" aria-label="{{ block.settings.tab | escape }}">
+            <div id="BarkinProblemRail-{{ section.id }}-{{ block.id }}" class="barkin-problem-solver__rail" data-carousel-rail>
               {% if problem_collection != blank and problem_collection.products.size > 0 %}
                 {% for card_product in problem_collection.products limit: section.settings.products_per_tab %}
                   <article class="barkin-product-card" data-carousel-slide>
@@ -120,6 +120,12 @@
                 </article>
               {% endif %}
             </div>
+            <button class="barkin-showcase__arrow barkin-showcase__arrow--previous" type="button" data-carousel-previous aria-label="{{ 'general.slider.previous_slide' | t }}" aria-controls="BarkinProblemRail-{{ section.id }}-{{ block.id }}" hidden>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="barkin-showcase__arrow barkin-showcase__arrow--next" type="button" data-carousel-next aria-label="{{ 'general.slider.next_slide' | t }}" aria-controls="BarkinProblemRail-{{ section.id }}-{{ block.id }}" hidden>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="m10 6 6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
           </barkin-carousel>
         </div>
       {% endfor %}

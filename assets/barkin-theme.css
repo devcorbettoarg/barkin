@@ -2190,6 +2190,38 @@ color: var(--barkin-white); }
 
 .barkin-showcase__carousel {
   display: block;
+  position: relative;
+}
+
+.barkin-showcase__arrow {
+  position: absolute;
+  top: var(--barkin-arrow-top, 200px);
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid rgba(45, 40, 36, .2);
+  border-radius: 50%;
+  background: var(--barkin-white);
+  color: var(--barkin-black);
+  box-shadow: 0 2px 8px rgba(45, 40, 36, .1);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.barkin-showcase__arrow[hidden] { display: none; }
+.barkin-showcase__arrow--previous { left: max(24px, calc((100vw - 1440px) / 2 - 24px)); }
+.barkin-showcase__arrow--next { right: max(24px, calc((100vw - 1440px) / 2 - 24px)); }
+.barkin-showcase__arrow svg { width: 24px; height: 24px; }
+.barkin-showcase__arrow:disabled { opacity: .4; cursor: default; }
+.barkin-showcase__arrow:focus-visible { outline: 2px solid var(--barkin-black); outline-offset: 4px; }
+
+@media screen and (max-width: 749px) {
+  .barkin-showcase__arrow { width: 40px; height: 40px; }
+  .barkin-showcase__arrow--previous { left: 8px; }
+  .barkin-showcase__arrow--next { right: 8px; }
 }
 
 .barkin-showcase__rail {

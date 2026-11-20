@@ -25,6 +25,7 @@
         });
 
         panel.querySelector('[data-carousel-rail]')?.scrollTo({ left: 0, behavior: 'auto' });
+        requestAnimationFrame(() => panel.querySelector('barkin-carousel')?.onResize?.());
 
         if (focus) tab.focus();
       };

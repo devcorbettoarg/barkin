@@ -8,6 +8,7 @@
   - show_badges: {Boolean} Renders 'Sale' and 'Sold Out' tags if the product matches the condition (optional)
   - price_class: {String} Adds a price class to the price element (optional)
   - show_compare_at_price: {Boolean} Renders the compare at price if the product matches the condition (optional)
+  - hide_unit_price: {Boolean} Hides the price per unit of measurement (optional)
 
   Usage:
   {% render 'price', product: product %}
@@ -108,7 +109,7 @@
           {{ money_price }}
         </span>
       </div>
-      {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
+      {%- if hide_unit_price != true and product.selected_or_first_available_variant.unit_price_measurement -%}
         {% render 'unit-price', price: product.selected_or_first_available_variant.unit_price, measurement: product.selected_or_first_available_variant.unit_price_measurement %}
       {%- endif -%}
     </div>

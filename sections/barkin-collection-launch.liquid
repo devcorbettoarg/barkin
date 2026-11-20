@@ -68,7 +68,7 @@
             <div class="barkin-launch-slide__header">
               <div>
                 <h3 class="barkin-product-card__title">{{ product_title }}</h3>
-                <p class="barkin-product-card__price">{{ product_price }}</p>
+                <p class="barkin-product-card__price">{% render 'barkin-card-price', product: card_product, fallback_price: product_price %}</p>
               </div>
 
               {% if card_product != blank %}

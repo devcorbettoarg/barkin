@@ -51,7 +51,7 @@
             </span>
             <span class="barkin-product-card__info">
               <span class="barkin-product-card__title">{{ card_title }}</span>
-              <span class="barkin-product-card__price">{{ card_price }}</span>
+              <span class="barkin-product-card__price">{% render 'barkin-card-price', product: card_product, fallback_price: card_price %}</span>
             </span>
           </a>
 
@@ -84,6 +84,12 @@
     </div>
 
     {% if section.blocks.size > 1 %}
+      <button class="barkin-showcase__arrow barkin-showcase__arrow--previous" type="button" data-carousel-previous aria-label="{{ 'general.slider.previous_slide' | t }}" aria-controls="BarkinRail-{{ section.id }}" hidden>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="barkin-showcase__arrow barkin-showcase__arrow--next" type="button" data-carousel-next aria-label="{{ 'general.slider.next_slide' | t }}" aria-controls="BarkinRail-{{ section.id }}" hidden>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="m10 6 6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
       <div class="barkin-showcase__dots barkin-showcase__dots2" role="group" aria-label="{{ section.settings.pagination_label | escape }}">
         {% for block in section.blocks %}
           <button

@@ -510,7 +510,7 @@
           "type": "problem",
           "settings": {
             "tab": "Fleas & Ticks",
-            "collection": "pet-conditioners",
+            "collection": "flea-tick-care",
             "product": "",
             "fallback_asset": "product-white.webp",
             "product_title": "Coat Care Conditioner",
@@ -521,7 +521,7 @@
           "type": "problem",
           "settings": {
             "tab": "Home Mess",
-            "collection": "chlorhexidine-for-irritation-prone-skin-pets",
+            "collection": "pet-home-cleaning",
             "product": "",
             "fallback_asset": "product-spray.webp",
             "product_title": "Household Care Spray",
@@ -542,7 +542,7 @@
         "heading": "Продукти насочени към конкретни проблеми",
         "text": "Грижим се не само за красивата и блестяща козина, но и за потребностите на кожата и козината.",
         "button_label": "Разгледайте всички продукти",
-        "button_link": "shopify://collections/pet-home-cleaning",
+        "button_link": "shopify://collections/all",
         "tab_label": "Shop by problem",
         "carousel_label": "Products by pet-care problem",
         "products_per_tab": 4
@@ -570,11 +570,11 @@
         "figma_node": "20:1763",
         "image": "shopify://shop_images/General_Fill_Image_Section_1.webp",
         "fallback_asset": "hero-household.webp",
-        "heading": "Household Products",
+        "heading": "Продукти за чист дом",
         "heading_tag": "h2",
-        "text": "“A home with pets is stinky and dirty.” – it doesn’t have to. Barkin & Meowson’s household products utilize oxygen technology for stain removal and odor neutralizing pet-friendly fragrances to help your home look and feel fresh and spotless.",
-        "button_label": "Shop Household",
-        "button_link": "shopify://collections/all",
+        "text": "„Домът с любимци е мръсен и мирише.“ Не е задължително да е така. Почистващите продукти на Barkin & Meowson използват активен кислород за премахване на петна и щадящи за любимците аромати, които неутрализират неприятните миризми – за безупречно чист и свеж дом.",
+        "button_label": "Открийте грижата за дома",
+        "button_link": "shopify://collections/pet-home-cleaning",
         "desktop_height": 875,
         "mobile_height": 595,
         "mobile_only": false,
@@ -587,37 +587,40 @@
         "bundle_1": {
           "type": "step",
           "settings": {
+            "image": "shopify://shop_images/Detangling_Shampoo.jpg",
             "fallback_asset": "bundle-shampoo.webp",
-            "heading": "Shampoo",
-            "text": "Get your pet squeaky clean.",
+            "heading": "Шампоан",
+            "text": "За безупречно чист любимец.",
             "link": "https://barkinandmeowson.com/pages/collection-bundle"
           }
         },
         "bundle_2": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/bundle-grooming.webp",
+            "image": "shopify://shop_images/Moisturizing_Conditioner.jpg",
             "fallback_asset": "bundle-conditioner.webp",
-            "heading": "Conditioner",
-            "text": "Give them a beautifully soft coat.",
+            "heading": "Балсам",
+            "text": "За неустоимо мека козина.",
             "link": "https://barkinandmeowson.com/pages/collection-bundle"
           }
         },
         "bundle_3": {
           "type": "step",
           "settings": {
+            "image": "shopify://shop_images/Detangling_Spray.jpg",
             "fallback_asset": "bundle-grooming.webp",
-            "heading": "Grooming Essentials",
-            "text": "The devil is in the details.",
+            "heading": "Основна грижа",
+            "text": "Всичко е в детайлите.",
             "link": "https://barkinandmeowson.com/pages/collection-bundle"
           }
         },
         "bundle_4": {
           "type": "step",
           "settings": {
+            "image": "shopify://shop_images/Textile_Cleaner.jpg",
             "fallback_asset": "bundle-home.webp",
-            "heading": "Home Care",
-            "text": "Easy cleanup, no hassle.",
+            "heading": "Грижа за дома",
+            "text": "Лесно почистване без усилия.",
             "link": "https://barkinandmeowson.com/pages/collection-bundle"
           }
         }
@@ -632,9 +635,9 @@
         "@media (max-width: 980px) {article {display: none; }}"
       ],
       "settings": {
-        "heading": "Build Your Pet's Routine,\nGet A Discount.",
-        "text": "Add up to 6 products and save up to 15% on your bundle.",
-        "button_label": "Build Your Bundle",
+        "heading": "Създайте комплект за своя любимец\nи получете отстъпка.",
+        "text": "Добавете до 6 продукта и спестете до 15% от цената на комплекта.",
+        "button_label": "Създайте своя комплект",
         "button_link": "https://barkinandmeowson.com/pages/collection-bundle"
       }
     },

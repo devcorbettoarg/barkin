@@ -68,7 +68,7 @@
           "type": "promise",
           "settings": {
             "icon": "shopify://shop_images/Pet_Certified_White_1.webp",
-            "text": "Pet-Friendly Fragrances"
+            "text": "Щадящи аромати за любимци"
           }
         }
       },
@@ -157,10 +157,10 @@
         "product_6"
       ],
       "settings": {
-        "heading": "Targeted Sets",
-        "text": "Every coat has its own story, so we’ve paired our favourite formulas into complete routines, from detangling and deshedding to sensitive skin, new puppies and kittens, and those muddy in-between days. Each set brings together products designed to work as a team, at a better price than buying them separately – the simplest way to give your pet the royal treatment.",
+        "heading": "Комплекти за специфични нужди",
+        "text": "Всяка козина има своя история. Затова съчетахме любимите си формули в комплекти за цялостна грижа – за лесно разресване, отстраняване на падналата козина, чувствителна кожа, първите грижи за кученца и котенца и калните дни между къпанията. Всеки комплект включва продукти, които се допълват, на по-изгодна цена спрямо покупката им поотделно. Лесен начин да подарите на любимеца си кралска грижа.",
         "mobile_text_alignment": "left",
-        "button_label": "Shop the Sets",
+        "button_label": "Разгледайте комплектите",
         "button_link": "shopify://collections/sets",
         "carousel_label": "Best selling products",
         "pagination_label": "Choose carousel position"
@@ -258,47 +258,50 @@
             "product": "",
             "image": "shopify://shop_images/Collection_Landing_Intro_-_Barkin_715x715_70401469-7e3b-4e01-9d10-bf9767c5789c.jpg",
             "fallback_asset": "product-black.webp",
-            "product_title": "Shop the Set",
+            "product_title": "Купи комплекта",
             "price": "$49.95",
-            "link": "shopify://products/detangle-set-1",
-            "heading": "Detangle Set",
-            "text": "The full routine every curly and wavy coat thrives with"
+            "link": "shopify://products/комплект-за-лесно-разресване",
+            "heading": "Комплект за лесно разресване",
+            "text": "Цялостна грижа за красива и здрава къдрава козина."
           }
         },
         "launch_product_1": {
           "type": "product_slide",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/DetanglingShampoo_homepageAsset.webp",
             "fallback_asset": "collection-product.webp",
-            "product_title": "Curly & Wavy Coat Shampoo",
+            "product_title": "Шампоан за лесно разресване на къдрава козина",
             "price": "$19.95",
             "link": "shopify://products/curly-coat-detangling-dog-shampoo",
-            "heading": "Targeted Shampoo",
-            "text": "With Silk Protein, Macadamia Oil and Keratin."
+            "heading": "Избраният шампоан",
+            "text": "С копринен протеин, масло от макадамия и кератин."
           }
         },
         "launch_product_2": {
           "type": "product_slide",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/MoisturisingCat_DogConditioner_HompageAsset.webp",
             "fallback_asset": "product-black.webp",
-            "product_title": "Moisturizing Conditioner",
+            "product_title": "Хидратиращ балсам всеки тип козина",
             "price": "$19.95",
             "link": "shopify://products/moisturizing-cat-dog-conditioner",
-            "heading": "Supporting Conditioner",
-            "text": "With Argan Oil and Keratin"
+            "heading": "Допълващият балсам",
+            "text": "С арганово масло и кератин."
           }
         },
         "launch_product_3": {
           "type": "product_slide",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/DetanglingSpray_homepageAsset.webp",
             "fallback_asset": "product-spray.webp",
-            "product_title": "Detangle Spray",
+            "product_title": "Разплитащ спрей без отмиване",
             "price": "$16.95",
             "link": "shopify://products/cat-dog-detangling-spray",
-            "heading": "Detangle Spray",
-            "text": "For in-between bath combing, oil-free and deodorizing."
+            "heading": "Разплитащ Спрей",
+            "text": "За разресване между къпанията. Без масла, неутрализира миризмите."
           }
         }
       },
@@ -310,9 +313,9 @@
       ],
       "settings": {
         "left_image": "shopify://shop_images/quiz-Screenshot_2026-10-12_at_5.05.55_PM.png",
-        "left_heading": "Detangle Set",
-        "left_text": "The care curly and wavy coated aristocracy needs to look and feel comfortable, soft and shinny",
-        "left_button_label": "View All Essentials",
+        "left_heading": "Лесно Разресване",
+        "left_text": "Грижата, от която къдравата и вълниста аристокрация се нуждае за мека, блестяща козина и усещане за комфорт.",
+        "left_button_label": "Разгледайте продуктите",
         "left_link": "shopify://collections/pet-detangling",
         "carousel_label": "Featured collection products",
         "pagination_label": "Choose featured product"

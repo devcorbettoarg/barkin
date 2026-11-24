@@ -41,6 +41,13 @@
           "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
           "settings": {}
         },
+        "text_HbayKV": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.add_to_cart_text.value }}",
+            "text_style": "body"
+          }
+        },
         "purchase_options": {
           "type": "purchase_options",
           "disabled": true,
@@ -146,6 +153,7 @@
         "price",
         "variant_picker",
         "loop_subscriptions_loop_widget_RKbkhn",
+        "text_HbayKV",
         "purchase_options",
         "quantity_selector",
         "buy_buttons",

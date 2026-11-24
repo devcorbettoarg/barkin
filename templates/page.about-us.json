@@ -13,12 +13,10 @@
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18776",
-        "image": "shopify://shop_images/Thomas---Shampoo-and-cond.jpg",
-        "mobile_image": "shopify://shop_images/Website_Header_Sections_4096x2725_Instagram_Reel_Cover_-4.jpg",
         "fallback_asset": "hero-shopping.webp",
-        "heading": "Pet Luxury, thoughtfully defined:",
+        "heading": "Лукс за любимци с внимание към всеки детайл",
         "heading_tag": "h1",
-        "text": "Treating pets like Royalty for us means making no compromises to providing the best, safest and most effective products out there.",
+        "text": "За нас кралската грижа означава да не правим компромиси с качеството, безопасността и ефективността на продуктите, които създаваме.",
         "button_label": "",
         "button_link": "",
         "desktop_height": 595,
@@ -33,25 +31,25 @@
         "promise_1": {
           "type": "promise",
           "settings": {
-            "text": "Always Cruelty Free"
+            "text": "Без сулфати и парабени"
           }
         },
         "promise_2": {
           "type": "promise",
           "settings": {
-            "text": "Premium Grade Ingredients"
+            "text": "Висококачествени съставки"
           }
         },
         "promise_3": {
           "type": "promise",
           "settings": {
-            "text": "Vet Recommended"
+            "text": "Препоръчано от ветеринарни лекари"
           }
         },
         "promise_4": {
           "type": "promise",
           "settings": {
-            "text": "Made With Purpose"
+            "text": "Създадени с мисъл и грижа"
           }
         }
       },
@@ -68,23 +66,20 @@
     "about_intro": {
       "type": "barkin-about-intro",
       "settings": {
-        "image": "shopify://shop_images/Website_Header_Sections_4096x2725-2.jpg",
         "fallback_asset": "hero-household.webp",
-        "image_alt": "A pet enjoying time at home",
-        "heading": "Barkin&Meowson came to life thanks to a certain hair care product manager who felt like pets were underserved.",
-        "text": "<p>Dorothy, a proud rescuer of three cats, Oliver, Olivia and Gigi, mom of a golden retriever, Benji, and a regular helping hand at several rescue organizations, thought the pet care market is not reaching its potential in delivering products that help pets feel better in their skin, and shine brighter on the outside.</p><p>For her, bringing better at home care to pets and their parents, is a mission.</p>"
+        "image_alt": "Любимец, който се наслаждава на времето у дома",
+        "heading": "Barkin & Meowson се ражда благодарение на продуктов мениджър в грижата за косата, убеден, че домашните любимци заслужават по-добра грижа.",
+        "text": "<p>Дороти е спасила три котки – Оливър, Оливия и Джиджи, грижи се за голдън ретривъра Бенджи и редовно помага на няколко организации за спасяване на животни. Според нея пазарът на продукти за домашни любимци има още какво да предложи – грижа, която им помага да се чувстват по-добре в кожата си и да се радват на красива, блестяща козина.</p><p>За нея по-добрата грижа у дома за любимците и техните стопани е мисия.</p>"
       }
     },
     "about_story": {
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18779",
-        "image": "shopify://shop_images/Poodle-_-Products.jpg",
-        "mobile_image": "shopify://shop_images/Styling_7d750a1f-43f4-4280-890d-504be0c2bd5b.jpg",
         "fallback_asset": "hero-household.webp",
-        "heading": "Our Vision, Goal\n& Process",
+        "heading": "Нашата визия, цел\nи подход",
         "heading_tag": "h2",
-        "text": "Choosing the right care for your pet’s coat and skin type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier and cuddle time this much more pleasant. Which is our ultimate goal: healthy and happy pets, eased and satisfied pet parents, and the warmest and softest bond between them.\n\nDifferent coats and skins—whether double, single, curly, sensitive or itchy—have unique needs and we aim at providing the safest and most effective care to them —always consulted with a veterinary dermatologist, free of harsh ingredients, and produced at a GMP certified facility — and that's at the very least.",
+        "text": "Правилната грижа, съобразена с типа кожа и козина на любимеца, е важна за здравата кожа и добре поддържаната козина. Тя улеснява ежедневието ви и прави гушкането още по-приятно. Именно това е нашата цел: здрави и щастливи любимци, спокойни и доволни стопани и още по-топла връзка помежду им.\n\nДвойната, еднослойната и къдравата козина, както и чувствителната или сърбяща кожа, изискват различна грижа. Стремим се да предложим възможно най-безопасните и ефективни продукти за всяка от тези особености – разработени с ветеринарен дерматолог, без агресивни съставки и произведени в предприятие, сертифицирано по GMP. Това е минимумът, от който започваме.",
         "button_label": "",
         "button_link": "",
         "desktop_height": 875,
@@ -146,8 +141,8 @@
       "settings": {
         "product_heading": "",
         "product_text": "",
-        "heading": "Barkin&Meowson’s\nNon-Negotiables",
-        "text": "The standards behind every product we make and every choice we take.\n\nWe include highly effective ingredients, known to human dermatology, to pet care, because we know they elevate how your pet's skin and coat look and feel.",
+        "heading": "Barkin & Meowson\nБез компромиси",
+        "text": "Стандартите зад всеки наш продукт и всяко наше решение.\n\nВлагаме в грижата за любимците високоефективни съставки, познати от човешката дерматология, защото знаем, че подобряват вида и състоянието на кожата и козината им.",
         "center_text": true,
         "button_label": "",
         "button_link": "",
@@ -161,32 +156,32 @@
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-cruelty-free.svg",
-            "heading": "Always Cruelty Free",
-            "text": "Thoughtful formulas created without animal testing"
+            "heading": "Без тестване върху животни",
+            "text": "Внимателно разработени формули без тестване върху животни."
           }
         },
         "guarantee_FBy3fE": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-paraben-free.svg",
-            "heading": "Paraben & Sulfate Free",
-            "text": "Gentle formulas made for regular pet-care routines"
+            "heading": "Без парабени и сулфати",
+            "text": "Нежни формули за редовна грижа за любимците."
           }
         },
         "guarantee_t6yhmC": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-gmp.svg",
-            "heading": "GMP Certified",
-            "text": "Made with consistent standards and careful quality control"
+            "heading": "GMP Сертифицирано",
+            "text": "Произведено по утвърдени стандарти със строг контрол на качеството."
           }
         },
         "guarantee_eaa9wg": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-vet.svg",
-            "heading": "Vet Recommended",
-            "text": "Pet-first care reviewed and approved by a veterinary dermatologist"
+            "heading": "Препоръчано от ветеринари",
+            "text": "Грижа, съобразена с нуждите на любимците, одобрена и препоръчана от ветеринарен дерматолог."
           }
         }
       },
@@ -200,20 +195,18 @@
       "settings": {
         "button_label": "",
         "button_link": "",
-        "heading": "Premium Product\nGuarantees",
-        "text": "We take pet care seriously, and contrary to the old belief that a pet-bath is unnecessary and pretentious, we find it vital for your pet’s skin and health. Skin is your pet's largest organ and their first line of defense. A good bath keeps it hydrated, nourished and protected – so we make products that do exactly that. Developed with a veterinary dermatologist, free from harsh ingredients and made to GMP standards.\n\nAnd their coat is what sits on your couch, what you snuggle and cuddle – and so Barkin & Meowson’s products make it soft, shinny, deodorized, and most huggable!"
+        "heading": "Гарантирано премиално качество",
+        "text": "Приемаме грижата за любимците сериозно. Въпреки остарялото схващане, че къпането е ненужно глезене, за нас то е важна част от грижата за кожата и здравето им. Кожата е най-големият им орган и първата им защитна бариера. Правилното къпане я поддържа хидратирана, подхранена и защитена – затова създаваме продукти, които правят точно това. Разработени съвместно с ветеринарен дерматолог, без агресивни съставки и произведени по стандартите на GMP.\n\nА козината? Тя е върху дивана ви и се сгушва във вас с всяка прегръдка. Затова продуктите на Barkin & Meowson я правят мека, блестяща, без неприятни миризми и неустоима за гушкане!"
       }
     },
     "about_manifesto": {
       "type": "barkin-hero",
       "settings": {
         "figma_node": "1:18782",
-        "image": "shopify://shop_images/Olya-_-Rockie-Affection.jpg",
-        "mobile_image": "shopify://shop_images/Website_Header_Sections_4096x2725_Instagram_Reel_Cover_-5.jpg",
         "fallback_asset": "hero-quiz.webp",
-        "heading": "Because we know they take a royal place in our heart, we are here to provide the royal care.",
+        "heading": "Защото знаем, че заемат кралско място в сърцата ни, им подаряваме грижата, достойна за кралски особи.",
         "heading_tag": "h2",
-        "text": "With love, Barkin & Meowson",
+        "text": "С обич, Barkin & Meowson",
         "button_label": "",
         "button_link": "",
         "desktop_height": 875,
@@ -228,7 +221,6 @@
         "image_LetbMT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-1.jpg",
             "fallback_asset": "social-1.webp",
             "alt": "Pet parents and their dog",
             "link": ""
@@ -237,7 +229,6 @@
         "image_wbXH9D": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-2.jpg",
             "fallback_asset": "social-2.webp",
             "alt": "A dog with its parent",
             "link": ""
@@ -246,7 +237,6 @@
         "image_xEgg8G": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-3.jpg",
             "fallback_asset": "social-3.webp",
             "alt": "Barkin & Meowson product",
             "link": ""
@@ -255,7 +245,6 @@
         "image_9bbMwJ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-4.jpg",
             "fallback_asset": "social-4.webp",
             "alt": "A pet parent holding a dog",
             "link": ""
@@ -264,7 +253,6 @@
         "image_9UcMkb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-1.jpg",
             "fallback_asset": "social-1.webp",
             "alt": "Pet parents and their dog",
             "link": ""
@@ -273,7 +261,6 @@
         "image_mHJtLx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/social-2.jpg",
             "fallback_asset": "social-2.webp",
             "alt": "A dog with its parent",
             "link": ""
@@ -290,21 +277,23 @@
       ],
       "custom_css": [],
       "settings": {
-        "heading": "We’re Social, Come\nConnect With Us.",
-        "text": "Join our community of discerning pets and their parents.",
-        "button_label": "Connect With Us",
-        "button_link": "",
+        "heading": "Последвайте ни\nв социалните мрежи.",
+        "text": "Присъединете се към нашата общност от взискателни любимци и техните стопани.",
+        "button_label": "Свържи се с нас",
+        "button_link": "https://www.instagram.com/barkin.and.meowson.bg",
         "carousel_label": "Barkin and Meowson social gallery"
       }
     },
     "barkin_blog_guide_Wc3A3d": {
       "type": "barkin-blog-guide",
       "settings": {
-        "heading": "Barkin&Meowson’s\nPet-Care Guide.",
-        "text": "Practical guides for healthier skin, better coats and happier pets.",
-        "blog": "",
-        "button_label": "View Full Blog",
-        "article_label": "Read Article"
+        "heading": "Barkin & Meowson\nНаръчник за грижа за любимците",
+        "text": "Практични съвети за по-здрава кожа, красива козина и щастливи любимци.",
+        "button_label": "Към блога",
+        "button_link": "",
+        "feature_title": "Как действа естествената защита срещу бълхи и кърлежи",
+        "feature_link": "",
+        "article_label": "Прочетете статията"
       }
     },
     "barkin_faq_NPWq4H": {
@@ -314,40 +303,40 @@
           "type": "question",
           "settings": {
             "category": "",
-            "question": "What makes Barkin & Meowson different?",
-            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+            "question": "Какво отличава Barkin & Meowson?",
+            "answer": "<p>В основата на Barkin & Meowson стои една цел: <strong>здрава кожа и козина.</strong> Всеки продукт е внимателно разработен с висококачествена формула, която почиства нежно и се грижи за кожата на любимеца. Продуктите ни са одобрени и препоръчани от ветеринарни лекари, с pH, съобразено с деликатната кожа на кучетата и котките, и винаги без сулфати и парабени. Така можете да сте спокойни за грижата, която избирате. А приятната им употреба прави къпането и ежедневната поддръжка по-лесни и за двама ви.<br/><br/></p>"
           }
         },
         "question_83N78R": {
           "type": "question",
           "settings": {
             "category": "",
-            "question": "Are the products cruelty free?",
-            "answer": "<p>Yes. Our formulas are created without animal testing.</p>"
+            "question": "Тествани ли са продуктите върху животни?",
+            "answer": "<p>Не. Формулите ни са разработени &nbsp;<strong>БЕЗ</strong> тестване върху животни.</p>"
           }
         },
         "question_fB9Wrc": {
           "type": "question",
           "settings": {
             "category": "",
-            "question": "How do I choose the right routine?",
-            "answer": "<p>Use our product quiz or shop by coat and skin concern to build a routine that fits your pet.</p>"
+            "question": "Как да избера подходящата грижа?",
+            "answer": "<p>Попълнете продуктовия ни въпросник или разгледайте продуктите според типа козина и състоянието на кожата, за да създадете подходяща грижа за своя любимец.</p>"
           }
         },
         "question_pMXr8g": {
           "type": "question",
           "settings": {
             "category": "",
-            "question": "Can I build a custom bundle?",
-            "answer": "<p>Yes. Combine complementary products and save on a complete care routine.</p>"
+            "question": "Мога ли да създам собствен комплект?",
+            "answer": "<p>Да. Комбинирайте продукти, които се допълват, и спестете от цялостната грижа за своя любимец.</p>"
           }
         },
         "question_t7HGNt": {
           "type": "question",
           "settings": {
             "category": "",
-            "question": "When will my order arrive?",
-            "answer": "<p>Delivery timing is shown during checkout and depends on your shipping destination.</p>"
+            "question": "Кога ще пристигне поръчката ми?",
+            "answer": "<p>Срокът за доставка се показва при завършване на поръчката и зависи от адреса за доставка.</p>"
           }
         }
       },
@@ -360,9 +349,9 @@
       ],
       "custom_css": [],
       "settings": {
-        "heading": "Frequently Asked\nQuestions.",
-        "text": "Everything you need to choose and use the best care for your pet.",
-        "button_label": "See Full FAQ",
+        "heading": "Често задавани\nвъпроси",
+        "text": "Всичко необходимо, за да изберете и използвате най-подходящата грижа за своя любимец.",
+        "button_label": "Вижте всички",
         "button_link": "",
         "open_first": true
       }

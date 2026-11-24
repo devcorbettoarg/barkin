@@ -440,10 +440,10 @@
       "settings": {
         "product_heading": "",
         "product_text": "",
-        "heading": "Ingredients Borrowed from Human Skincare",
-        "text": "We know what works in human skin and hair care, and we've brought it to pet care. Our ingredients create the instant \"wow\" our customers notice from the first use, and they make your pet's skin and coat its most glamorous and comfortable outfit.",
+        "heading": "Съставки заимствани от козметиката за хора",
+        "text": "Знаем кои съставки дават резултат в грижата за човешката кожа и коса и ги влагаме в продуктите за любимци. Те създават онзи „уау“ ефект, който клиентите ни забелязват още при първата употреба – за здрава кожа и мека, блестяща козина, в която любимецът ви се чувства прекрасно.",
         "center_text": false,
-        "button_label": "Learn More About Us",
+        "button_label": "Научете повече за нас",
         "button_link": "shopify://pages/about-us",
         "pagination_label": "Choose ingredient slide"
       }
@@ -454,7 +454,7 @@
         "problem_1": {
           "type": "problem",
           "settings": {
-            "tab": "Sensitive Skin",
+            "tab": "Чувствителна кожа",
             "collection": "pet-shampoos-conditioners",
             "product": "",
             "fallback_asset": "product-black.webp",
@@ -539,10 +539,10 @@
         "problem_7"
       ],
       "settings": {
-        "heading": "Products That Address Problems",
-        "text": "We are just not here to bring glamour and shine. We are here for their skin and coat needs too",
-        "button_label": "Shop All Products",
-        "button_link": "shopify://collections/all",
+        "heading": "Продукти насочени към конкретни проблеми",
+        "text": "Грижим се не само за красивата и блестяща козина, но и за потребностите на кожата и козината.",
+        "button_label": "Разгледайте всички продукти",
+        "button_link": "shopify://collections/pet-home-cleaning",
         "tab_label": "Shop by problem",
         "carousel_label": "Products by pet-care problem",
         "products_per_tab": 4

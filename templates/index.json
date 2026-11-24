@@ -472,58 +472,25 @@
     "barkin_problem_solver": {
       "type": "barkin-problem-solver",
       "blocks": {
-        "problem_1": {
-          "type": "problem",
-          "settings": {
-            "tab": "Sensitive Skin",
-            "collection": "pet-shampoos-conditioners",
-            "product": "",
-            "fallback_asset": "product-black.webp",
-            "product_title": "Gentle Care Shampoo",
-            "price": "$19.95"
-          }
-        },
         "problem_2": {
           "type": "problem",
           "settings": {
-            "tab": "Dry & Flaky Skin",
-            "collection": "no-rinse-pet-cleaning",
+            "tab": "Itch & Irritation",
+            "collection": "chlorhexidine-for-irritation-prone-skin-pets",
             "product": "",
             "fallback_asset": "product-white.webp",
             "product_title": "Moisturising Conditioner",
             "price": "$19.95"
           }
         },
-        "problem_3": {
+        "problem_1": {
           "type": "problem",
           "settings": {
-            "tab": "Itch & Irritation",
-            "collection": "chlorhexidine-for-irritation-prone-skin-pets",
-            "product": "",
-            "fallback_asset": "product-spray.webp",
-            "product_title": "Daily Care Spray",
-            "price": "$19.95"
-          }
-        },
-        "problem_4": {
-          "type": "problem",
-          "settings": {
-            "tab": "Shedding",
-            "collection": "spring-summer-essentials",
-            "product": "",
-            "fallback_asset": "product-dental.webp",
-            "product_title": "Dental Essentials",
-            "price": "$19.95"
-          }
-        },
-        "problem_5": {
-          "type": "problem",
-          "settings": {
-            "tab": "Tangles",
-            "collection": "cats-grooming-supplies",
+            "tab": "Sensitive Skin",
+            "collection": "hypoallergenic-pet-products",
             "product": "",
             "fallback_asset": "product-black.webp",
-            "product_title": "Detangling Shampoo",
+            "product_title": "Gentle Care Shampoo",
             "price": "$19.95"
           }
         },
@@ -531,7 +498,7 @@
           "type": "problem",
           "settings": {
             "tab": "Fleas & Ticks",
-            "collection": "pet-conditioners",
+            "collection": "flea-tick-care",
             "product": "",
             "fallback_asset": "product-white.webp",
             "product_title": "Coat Care Conditioner",
@@ -542,22 +509,55 @@
           "type": "problem",
           "settings": {
             "tab": "Home Mess",
-            "collection": "chlorhexidine-for-irritation-prone-skin-pets",
+            "collection": "pet-home-cleaning",
             "product": "",
             "fallback_asset": "product-spray.webp",
             "product_title": "Household Care Spray",
             "price": "$19.95"
           }
+        },
+        "problem_3": {
+          "type": "problem",
+          "settings": {
+            "tab": "Tangles",
+            "collection": "pet-detangling",
+            "product": "",
+            "fallback_asset": "product-spray.webp",
+            "product_title": "Daily Care Spray",
+            "price": "$19.95"
+          }
+        },
+        "problem_4": {
+          "type": "problem",
+          "settings": {
+            "tab": "Puppy & Kitten",
+            "collection": "puppies-kittens-care",
+            "product": "",
+            "fallback_asset": "product-dental.webp",
+            "product_title": "Dental Essentials",
+            "price": "$19.95"
+          }
+        },
+        "problem_5": {
+          "type": "problem",
+          "settings": {
+            "tab": "Cats",
+            "collection": "cats-grooming-supplies",
+            "product": "",
+            "fallback_asset": "product-black.webp",
+            "product_title": "Detangling Shampoo",
+            "price": "$19.95"
+          }
         }
       },
       "block_order": [
-        "problem_1",
         "problem_2",
+        "problem_1",
+        "problem_6",
+        "problem_7",
         "problem_3",
         "problem_4",
-        "problem_5",
-        "problem_6",
-        "problem_7"
+        "problem_5"
       ],
       "settings": {
         "heading": "Products That Address Problems",

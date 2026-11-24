@@ -258,7 +258,7 @@
           "settings": {
             "image": "{{ block.repeater.image.value }}",
             "heading": "{{ block.repeater.name.value }}",
-            "text": "Care designed around the hydration and cleansing needs of this coat type."
+            "text": "Грижа, съобразена с потребностите на този тип козина от хидратация и почистване."
           }
         }
       },

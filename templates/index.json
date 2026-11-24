@@ -54,14 +54,14 @@
           "type": "promise",
           "settings": {
             "icon": "shopify://shop_images/Natural_Ingredients_White.webp",
-            "text": "Premium Ingredients"
+            "text": "Висококачествени съставки"
           }
         },
         "promise_3": {
           "type": "promise",
           "settings": {
             "icon": "shopify://shop_images/Vet_Approved_White.webp",
-            "text": "Vet Recommended"
+            "text": "Препоръчано от ветеринарни лекари"
           }
         },
         "promise_4": {

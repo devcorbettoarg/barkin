@@ -455,7 +455,7 @@
           "type": "problem",
           "settings": {
             "tab": "Sensitive Skin",
-            "collection": "pet-shampoos-conditioners",
+            "collection": "hypoallergenic-pet-products",
             "product": "",
             "fallback_asset": "product-black.webp",
             "product_title": "Gentle Care Shampoo",
@@ -465,8 +465,8 @@
         "problem_2": {
           "type": "problem",
           "settings": {
-            "tab": "Dry & Flaky Skin",
-            "collection": "no-rinse-pet-cleaning",
+            "tab": "Itch & Irritation",
+            "collection": "chlorhexidine-for-irritation-prone-skin-pets",
             "product": "",
             "fallback_asset": "product-white.webp",
             "product_title": "Moisturising Conditioner",
@@ -476,8 +476,8 @@
         "problem_3": {
           "type": "problem",
           "settings": {
-            "tab": "Itch & Irritation",
-            "collection": "chlorhexidine-for-irritation-prone-skin-pets",
+            "tab": "Fleas & Ticks",
+            "collection": "flea-tick-care",
             "product": "",
             "fallback_asset": "product-spray.webp",
             "product_title": "Daily Care Spray",
@@ -487,8 +487,8 @@
         "problem_4": {
           "type": "problem",
           "settings": {
-            "tab": "Shedding",
-            "collection": "spring-summer-essentials",
+            "tab": "Home mess",
+            "collection": "pet-home-cleaning",
             "product": "",
             "fallback_asset": "product-dental.webp",
             "product_title": "Dental Essentials",
@@ -498,7 +498,7 @@
         "problem_5": {
           "type": "problem",
           "settings": {
-            "tab": "Tangles",
+            "tab": "Cats",
             "collection": "cats-grooming-supplies",
             "product": "",
             "fallback_asset": "product-black.webp",
@@ -509,8 +509,8 @@
         "problem_6": {
           "type": "problem",
           "settings": {
-            "tab": "Fleas & Ticks",
-            "collection": "pet-conditioners",
+            "tab": "Rinse-Free",
+            "collection": "no-rinse-pet-cleaning",
             "product": "",
             "fallback_asset": "product-white.webp",
             "product_title": "Coat Care Conditioner",

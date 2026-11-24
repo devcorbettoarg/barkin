@@ -41,13 +41,13 @@
           "type": "promise",
           "settings": {
             "icon": "shopify://shop_images/svgexport-16.svg",
-            "text": "Sulphate and Paraben-Free"
+            "text": "Без сулфати и парабени"
           }
         },
         "promise_1": {
           "type": "promise",
           "settings": {
-            "text": "Always Cruelty Free"
+            "text": "Без тестване върху животни"
           }
         },
         "promise_2": {

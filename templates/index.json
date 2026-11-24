@@ -455,7 +455,7 @@
           "type": "problem",
           "settings": {
             "tab": "Чувствителна кожа",
-            "collection": "pet-shampoos-conditioners",
+            "collection": "hypoallergenic-pet-products",
             "product": "",
             "fallback_asset": "product-black.webp",
             "product_title": "Gentle Care Shampoo",
@@ -464,6 +464,7 @@
         },
         "problem_2": {
           "type": "problem",
+          "disabled": true,
           "settings": {
             "tab": "Dry & Flaky Skin",
             "collection": "no-rinse-pet-cleaning",
@@ -476,7 +477,7 @@
         "problem_3": {
           "type": "problem",
           "settings": {
-            "tab": "Itch & Irritation",
+            "tab": "Раздразнения",
             "collection": "chlorhexidine-for-irritation-prone-skin-pets",
             "product": "",
             "fallback_asset": "product-spray.webp",
@@ -484,22 +485,11 @@
             "price": "$19.95"
           }
         },
-        "problem_4": {
-          "type": "problem",
-          "settings": {
-            "tab": "Shedding",
-            "collection": "spring-summer-essentials",
-            "product": "",
-            "fallback_asset": "product-dental.webp",
-            "product_title": "Dental Essentials",
-            "price": "$19.95"
-          }
-        },
         "problem_5": {
           "type": "problem",
           "settings": {
-            "tab": "Tangles",
-            "collection": "cats-grooming-supplies",
+            "tab": "Разресване",
+            "collection": "pet-detangling",
             "product": "",
             "fallback_asset": "product-black.webp",
             "product_title": "Detangling Shampoo",
@@ -509,11 +499,22 @@
         "problem_6": {
           "type": "problem",
           "settings": {
-            "tab": "Fleas & Ticks",
+            "tab": "Натурални Репеленти",
             "collection": "flea-tick-care",
             "product": "",
             "fallback_asset": "product-white.webp",
             "product_title": "Coat Care Conditioner",
+            "price": "$19.95"
+          }
+        },
+        "problem_4": {
+          "type": "problem",
+          "settings": {
+            "tab": "Стилизиране",
+            "collection": "pet-styling-sprays",
+            "product": "",
+            "fallback_asset": "product-dental.webp",
+            "product_title": "Dental Essentials",
             "price": "$19.95"
           }
         },
@@ -533,9 +534,9 @@
         "problem_1",
         "problem_2",
         "problem_3",
-        "problem_4",
         "problem_5",
         "problem_6",
+        "problem_4",
         "problem_7"
       ],
       "settings": {

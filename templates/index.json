@@ -328,32 +328,32 @@
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-cruelty-free.svg",
-            "heading": "Always Cruelty-Free",
-            "text": "Thoughtful formulas created without animal testing"
+            "heading": "Без тестване върху животни",
+            "text": "Внимателно разработени формули без тестване върху животни."
           }
         },
         "guarantee_2": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-paraben-free.svg",
-            "heading": "Paraben & Sulfate-Free",
-            "text": "Gentle formulas made for regular pet-care routines"
+            "heading": "Без парабени и сулфати",
+            "text": "Нежни формули за редовна грижа за любимците."
           }
         },
         "guarantee_3": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-gmp.svg",
-            "heading": "GMP Certified",
-            "text": "Made with consistent standards and careful quality control"
+            "heading": "GMP Сертифицирано",
+            "text": "Произведено по утвърдени стандарти със строг контрол на качеството."
           }
         },
         "guarantee_4": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-vet.svg",
-            "heading": "Vet Recommended",
-            "text": "Pet-first care approved and recommended by a veterinary dermatologist"
+            "heading": "Препоръчано от ветеринарни лекари",
+            "text": "Грижа, съобразена с нуждите на любимците, одобрена и препоръчана от ветеринарен дерматолог."
           }
         }
       },
@@ -366,8 +366,8 @@
       "settings": {
         "button_label": "",
         "button_link": "",
-        "heading": "Premium Product\nGuarantees",
-        "text": "We take pet care seriously, and contrary to the old belief that a pet-bath is unnecessary and pretentious, we find it vital for your pet’s skin and health. Skin is your pet's largest organ and their first line of defense. A good bath keeps it hydrated, nourished and protected – so we make products that do exactly that. Developed with a veterinary dermatologist, free from harsh ingredients and made to GMP standards.\nAnd their coat is what sits on your couch, what you snuggle and cuddle – and so Barkin & Meowson’s products make it soft, shinny, deodorized, and most huggable!"
+        "heading": "Гарантирано премиално качество",
+        "text": "Приемаме грижата за любимците сериозно. Въпреки остарялото схващане, че къпането е ненужно глезене, за нас то е важна част от грижата за кожата и здравето им. Кожата е най-големият им орган и първата им защитна бариера. Правилното къпане я поддържа хидратирана, подхранена и защитена – затова създаваме продукти, които правят точно това. Разработени съвместно с ветеринарен дерматолог, без агресивни съставки и произведени по стандартите на GMP.\n\nА козината? Тя е върху дивана ви и се сгушва във вас с всяка прегръдка. Затова продуктите на Barkin & Meowson я правят мека, блестяща, без неприятни миризми и неустоима за гушкане!"
       }
     },
     "barkin_hero_UhCXWP": {

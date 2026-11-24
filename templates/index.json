@@ -678,7 +678,7 @@
         "bundle_1": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/bundle-shampoo.jpg",
+            "image": "shopify://shop_images/Brightening_Shampoo.jpg",
             "fallback_asset": "bundle-shampoo.webp",
             "heading": "Shampoo",
             "text": "Get your pet squeaky clean.",
@@ -688,7 +688,7 @@
         "bundle_2": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/bundle-grooming.jpg",
+            "image": "shopify://shop_images/Moisturizing_Conditioner.jpg",
             "fallback_asset": "bundle-conditioner.webp",
             "heading": "Conditioner",
             "text": "Give them a beautifully soft coat.",
@@ -698,7 +698,7 @@
         "bundle_3": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/bundle-grooming.jpg",
+            "image": "shopify://shop_images/Protecting_Balm_2.jpg",
             "fallback_asset": "bundle-grooming.webp",
             "heading": "Grooming Essentials",
             "text": "The devil is in the details.",
@@ -708,7 +708,7 @@
         "bundle_4": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/bundle-home.jpg",
+            "image": "shopify://shop_images/All_Purpose_Cleaner.jpg",
             "fallback_asset": "bundle-home.webp",
             "heading": "Home Care",
             "text": "Easy cleanup, no hassle.",

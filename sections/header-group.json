@@ -14,7 +14,7 @@
     "barkin_header": {
       "type": "barkin-header",
       "settings": {
-        "announcement": "Free shipping above $35 on all US orders",
+        "announcement": "Безплатна доставка за поръчки над €40.",
         "menu": "link-list-1",
         "mobile_menu": "link-list",
         "enable_country_selector": true,
@@ -23,8 +23,8 @@
         "mobile_logo_width": 140,
         "logo_kicker": "Royale's Care",
         "logo_text": "BARKIN&MEOWSON",
-        "mega_title": "Premium Petcare Products.",
-        "mega_text": "Discover premium grooming and care products thoughtfully selected for healthier, happier pets.",
+        "mega_title": "Премиални продукти за домашни любимци.",
+        "mega_text": "Открийте внимателно подбрани премиални продукти за хигиена и грижа – за по-здрави и щастливи любимци.",
         "mega_product_1": "chlorhexidine-dry-foam-shampoo-dog-cat",
         "mega_product_2": "chlorhexidine-shampoo-dog-cat"
       }

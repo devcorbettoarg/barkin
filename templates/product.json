@@ -62,9 +62,9 @@
         "purchase_guarantees_e3UCbG": {
           "type": "purchase_guarantees",
           "settings": {
-            "item_1": "Customer satisfaction guarantee: we accept returns within 30 days on your first order",
-            "item_2": "Free shipping above $35 on all orders within the US",
-            "item_3": "Earn loyalty points on all orders and reviews and get special discounts"
+            "item_1": "Гаранция за удовлетвореност: приемаме връщане на продукти в срок до 14 дни след получаване на поръчката.",
+            "item_2": "Безплатна доставка за поръчки над 40€.",
+            "item_3": "Събирайте точки за лоялност с всяка поръчка и отзив и получавайте специални отстъпки."
           }
         },
         "description": {
@@ -74,7 +74,7 @@
         "directions": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "User Directions",
+            "heading": "Начин на употреба",
             "icon": "none",
             "content": "{{ product.metafields.custom.directions | metafield_tag }}",
             "page": ""
@@ -83,7 +83,7 @@
         "suitable": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Suitable For",
+            "heading": "Подходящ за",
             "icon": "none",
             "content": "{{ product.metafields.custom.suitable_for | metafield_tag }}",
             "page": ""
@@ -92,7 +92,7 @@
         "ingredients": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Ingredients List",
+            "heading": "Състав",
             "icon": "none",
             "content": "{{ product.metafields.custom.ingredients_list | metafield_tag }}",
             "page": ""
@@ -101,7 +101,7 @@
         "safety": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Safety Warning",
+            "heading": "Предупреждения за безопасност",
             "icon": "none",
             "content": "{{ product.metafields.custom.safety_warnings | metafield_tag }}",
             "page": ""
@@ -179,32 +179,32 @@
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-cruelty-free.svg",
-            "heading": "Always Cruelty Free.",
-            "text": "Thoughtful formulas created without animal testing."
+            "heading": "Без тестване върху животни",
+            "text": "Внимателно разработени формули без тестване върху животни."
           }
         },
         "guarantee_2": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-paraben-free.svg",
-            "heading": "Paraben & Sulfate Free.",
-            "text": "Gentle formulas made for regular pet-care routines."
+            "heading": "Без парабени и сулфати",
+            "text": "Нежни формули за редовна грижа за любимците."
           }
         },
         "guarantee_3": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-gmp.svg",
-            "heading": "GMP Certified.",
-            "text": "Made with consistent standards and careful quality control."
+            "heading": "GMP Сертифицирано",
+            "text": "Произведено по утвърдени стандарти със строг контрол на качеството."
           }
         },
         "guarantee_4": {
           "type": "guarantee",
           "settings": {
             "icon": "guarantee-vet.svg",
-            "heading": "Vet Recommended.",
-            "text": "Pet-first care developed with expert guidance."
+            "heading": "Препоръчано от ветеринари",
+            "text": "Грижа, съобразена с нуждите на любимците, одобрена и препоръчана от ветеринарен дерматолог."
           }
         }
       },
@@ -217,7 +217,7 @@
       "settings": {
         "button_label": "",
         "button_link": "",
-        "heading": "Premium Product\nGuarantees",
+        "heading": "Гарантирано премиално качество",
         "text": "Premium care made with the health of your pet and the planet in mind."
       }
     },
@@ -241,11 +241,11 @@
       "settings": {
         "product_heading": "{{ product.metafields.custom.ingredients_title.value }}",
         "product_text": "{{ product.metafields.custom.ingredients_text | metafield_tag }}",
-        "heading": "Hero Ingredients in This Product",
-        "text": "This is how Barkin & Meowson's products impeccable results.",
+        "heading": "Ключови съставки в продукта",
+        "text": "Тайната зад безупречните резултати на Barkin & Meowson.",
         "center_text": false,
-        "button_label": "Learn More About Us",
-        "button_link": "https://barkinandmeowson.com/pages/about-us",
+        "button_label": "Научете повече за нас",
+        "button_link": "shopify://pages/about-us",
         "pagination_label": "Choose ingredient slide"
       }
     },
@@ -268,7 +268,7 @@
       "settings": {
         "product_heading": "{{ product.metafields.custom.coatst.value }}",
         "product_text": "{{ product.metafields.custom.coats_text | metafield_tag }}",
-        "heading": "This Product Is For:",
+        "heading": "Този продукт е подходящ за:",
         "text": "",
         "carousel_label": "Suitable pet coat types",
         "pagination_label": "Choose coat type"
@@ -279,10 +279,10 @@
       "settings": {
         "figma_node": "20:1768",
         "fallback_asset": "hero-quiz.webp",
-        "heading": "Not Sure Which Products\nFit Your Pet’s Needs?",
+        "heading": "Не сте сигурни кои продукти\nса подходящи за вашия любимец?",
         "heading_tag": "h2",
-        "text": "Choosing the right shampoo for your dog’s coat type is essential to maintain both the health of their skin and the condition of their coat, while also making your life easier. Different coats—whether double, single, curly, or short—have unique needs in terms of hydration, cleansing, and protection.",
-        "button_label": "Do The Product Quiz",
+        "text": "Правилният шампоан, съобразен с типа козина на кучето, помага за поддържане на здрава кожа и красива козина и улеснява ежедневната грижа. Двойната, еднослойната, къдравата и късата козина имат различни потребности от хидратация, почистване и защита.",
+        "button_label": "Попълнете въпросника",
         "button_link": "",
         "desktop_height": 875,
         "mobile_height": 650,
@@ -367,11 +367,11 @@
     "barkin_blog": {
       "type": "barkin-blog-guide",
       "settings": {
-        "heading": "Barkin&Meowson’s\nPet-Care Guide.",
-        "text": "Practical guides for healthier skin, better coats and happier pets.",
-        "button_label": "View Full Blog",
+        "heading": "Barkin & Meowson\nНаръчник за грижа за любимците",
+        "text": "Практични съвети за по-здрава кожа, красива козина и щастливи любимци.",
+        "button_label": "Към блога",
         "button_link": "",
-        "feature_title": "How Natural Flea & Tick Protection Works.",
+        "feature_title": "Как действа естествената защита срещу бълхи и кърлежи",
         "feature_link": "",
         "article_label": "Read Article"
       }

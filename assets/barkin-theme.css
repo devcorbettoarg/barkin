@@ -4246,7 +4246,7 @@ main[data-template="product"] .product__accordion .accordion__content { color: v
 main[data-template="product"] .shopify-payment-button__button--unbranded,
 main[data-template="product"] .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   background-color: #5433EB;
-  color: #fff;
+  color: #fff !important;
   border: 0;
   box-shadow: none;
 }

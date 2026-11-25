@@ -8,20 +8,22 @@ class CartDrawer extends HTMLElement {
   }
 
   setHeaderCartIconAccessibility() {
-    const cartLink = document.querySelector('#cart-icon-bubble');
-    if (!cartLink) return;
+    const cartLinks = document.querySelectorAll('#cart-icon-bubble, .barkin-site-header__cart');
 
-    cartLink.setAttribute('role', 'button');
-    cartLink.setAttribute('aria-haspopup', 'dialog');
-    cartLink.addEventListener('click', (event) => {
-      event.preventDefault();
-      this.open(cartLink);
-    });
-    cartLink.addEventListener('keydown', (event) => {
-      if (event.code.toUpperCase() === 'SPACE') {
+    cartLinks.forEach((cartLink) => {
+      cartLink.setAttribute('role', 'button');
+      cartLink.setAttribute('aria-haspopup', 'dialog');
+      cartLink.setAttribute('aria-controls', 'CartDrawer');
+      cartLink.addEventListener('click', (event) => {
         event.preventDefault();
         this.open(cartLink);
-      }
+      });
+      cartLink.addEventListener('keydown', (event) => {
+        if (event.code.toUpperCase() === 'SPACE') {
+          event.preventDefault();
+          this.open(cartLink);
+        }
+      });
     });
   }
 
@@ -62,7 +64,11 @@ class CartDrawer extends HTMLElement {
   close() {
     this.classList.remove('active');
     document.body.classList.remove('cart-drawer-open');
-    removeTrapFocus(this.activeElement?.isConnected ? this.activeElement : document.getElementById('cart-icon-bubble'));
+    removeTrapFocus(
+      this.activeElement?.isConnected
+        ? this.activeElement
+        : document.querySelector('#cart-icon-bubble, .barkin-site-header__cart'),
+    );
   }
 
   setSummaryAccessibility(cartDrawerNote) {

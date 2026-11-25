@@ -4245,8 +4245,20 @@ main[data-template="product"] .product__accordion .accordion__content { color: v
 
 main[data-template="product"] .shopify-payment-button__button--unbranded,
 main[data-template="product"] .shopify-payment-button__button--unbranded:hover:not([disabled]) {
-  background-color: var(--barkin-black);
-  color: var(--barkin-white);
+  background-color: #5433EB;
+  color: #fff;
+  border: 0;
+  box-shadow: none;
+}
+
+main[data-template="product"] .shopify-payment-button__button--unbranded::before,
+main[data-template="product"] .shopify-payment-button__button--unbranded::after {
+  content: none;
+}
+
+main[data-template="product"] .shopify-payment-button__button--unbranded:focus-visible {
+  outline: 2px solid #5433EB;
+  outline-offset: 3px;
 }
 
 main[data-template="product"] .barkin-purchase-option,

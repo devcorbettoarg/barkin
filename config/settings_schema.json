@@ -102,6 +102,27 @@
     ]
   },
   {
+    "name": "Botón de pago",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Colores del botón de pago sin marca en la página de producto."
+      },
+      {
+        "type": "color",
+        "id": "payment_button_background",
+        "label": "Color de fondo",
+        "default": "#5433EB"
+      },
+      {
+        "type": "color",
+        "id": "payment_button_text",
+        "label": "Color del texto",
+        "default": "#FFFFFF"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.typography.name",
     "settings": [
       {

@@ -4245,8 +4245,8 @@ main[data-template="product"] .product__accordion .accordion__content { color: v
 
 main[data-template="product"] .shopify-payment-button__button--unbranded,
 main[data-template="product"] .shopify-payment-button__button--unbranded:hover:not([disabled]) {
-  background-color: #5433EB;
-  color: #fff !important;
+  background-color: var(--barkin-payment-button-background, #5433EB);
+  color: var(--barkin-payment-button-text, #fff) !important;
   border: 0;
   box-shadow: none;
 }
@@ -4257,7 +4257,7 @@ main[data-template="product"] .shopify-payment-button__button--unbranded::after 
 }
 
 main[data-template="product"] .shopify-payment-button__button--unbranded:focus-visible {
-  outline: 2px solid #5433EB;
+  outline: 2px solid var(--barkin-payment-button-background, #5433EB);
   outline-offset: 3px;
 }
 

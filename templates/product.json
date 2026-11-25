@@ -32,6 +32,7 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
@@ -174,6 +175,21 @@
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 0
+      }
+    },
+    "17956172101a09683f": {
+      "type": "apps",
+      "blocks": {
+        "loop_subscriptions_loop_widget_44nen7": {
+          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "loop_subscriptions_loop_widget_44nen7"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "barkin_guarantees": {
@@ -404,6 +420,7 @@
   "order": [
     "main",
     "disclosures",
+    "17956172101a09683f",
     "barkin_guarantees",
     "barkin_ingredients",
     "barkin_coats",

@@ -272,7 +272,7 @@
             "image": "shopify://shop_images/DetanglingShampoo_homepageAsset.webp",
             "fallback_asset": "collection-product.webp",
             "product_title": "Шампоан за лесно разресване на къдрава козина",
-            "price": "$19.95",
+            "price": "$13.49",
             "link": "shopify://products/curly-coat-detangling-dog-shampoo",
             "heading": "Избраният шампоан",
             "text": "С копринен протеин, масло от макадамия и кератин."
@@ -285,7 +285,7 @@
             "image": "shopify://shop_images/MoisturisingCat_DogConditioner_HompageAsset.webp",
             "fallback_asset": "product-black.webp",
             "product_title": "Хидратиращ балсам всеки тип козина",
-            "price": "$19.95",
+            "price": "$13.49",
             "link": "shopify://products/moisturizing-cat-dog-conditioner",
             "heading": "Допълващият балсам",
             "text": "С арганово масло и кератин."
@@ -298,7 +298,7 @@
             "image": "shopify://shop_images/DetanglingSpray_homepageAsset.webp",
             "fallback_asset": "product-spray.webp",
             "product_title": "Разплитащ спрей без отмиване",
-            "price": "$16.95",
+            "price": "$13.49",
             "link": "shopify://products/cat-dog-detangling-spray",
             "heading": "Разплитащ Спрей",
             "text": "За разресване между къпанията. Без масла, неутрализира миризмите."

@@ -435,6 +435,26 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "179570720649c4199e": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_qc4H8X": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_qc4H8X"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -450,6 +470,7 @@
     "related-products",
     "barkin_blog",
     "1795009133d1891c1c",
-    "1795700891efa7c458"
+    "1795700891efa7c458",
+    "179570720649c4199e"
   ]
 }
